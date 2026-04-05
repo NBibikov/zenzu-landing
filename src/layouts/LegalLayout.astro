@@ -15,10 +15,22 @@ const strings = t(locale)
 
 <BaseLayout title={`${title} — Zenzu`}>
   <Header t={strings} locale={locale} />
-  <main class="pt-24 pb-20 px-6">
-    <article class="max-w-3xl mx-auto prose prose-headings:text-moss-dark prose-a:text-moss prose-strong:text-moss-dark">
+  <main class="pt-28 pb-20 px-6">
+    <article class="max-w-3xl mx-auto
+      prose prose-lg
+      prose-headings:text-moss-dark prose-headings:font-bold
+      prose-h1:text-3xl prose-h1:mb-2
+      prose-h2:text-xl prose-h2:mt-10 prose-h2:mb-4 prose-h2:border-b prose-h2:border-sand-dark prose-h2:pb-2
+      prose-h3:text-lg prose-h3:mt-6
+      prose-p:text-on-surface-muted prose-p:leading-relaxed
+      prose-a:text-moss prose-a:no-underline hover:prose-a:underline
+      prose-li:text-on-surface-muted
+      prose-strong:text-moss-dark
+      prose-ul:space-y-1
+    ">
       <h1>{title}</h1>
-      <p class="text-on-surface-muted text-sm">Last updated: April 6, 2026</p>
+      <p class="text-sm !text-on-surface-muted/60 !mt-0">Last updated: April 6, 2026</p>
+      <hr class="!mt-4 !mb-8 border-sand-dark" />
       <slot />
     </article>
   </main>
