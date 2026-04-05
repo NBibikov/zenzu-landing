@@ -26,7 +26,7 @@ const currentYear = new Date().getFullYear()
         <ul class="space-y-2 text-sm opacity-80">
           <li><a href={localePath('/privacy', locale)} class="hover:text-white transition-colors">{t.footer.privacy}</a></li>
           <li><a href={localePath('/terms', locale)} class="hover:text-white transition-colors">{t.footer.terms}</a></li>
-          <li><a href="mailto:n.bibikov@me.com" class="hover:text-white transition-colors">{t.footer.contact}</a></li>
+          <li><a href={localePath('/contact', locale)} class="hover:text-white transition-colors">{t.footer.contact}</a></li>
         </ul>
       </div>
     </div>
