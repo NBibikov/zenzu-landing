@@ -1,0 +1,37 @@
+---
+const navLinks = [
+  { href: '#features', label: 'Features' },
+  { href: '#how-it-works', label: 'How it works' },
+  { href: '#languages', label: 'Languages' },
+]
+---
+
+<header class="fixed top-0 left-0 right-0 z-50 bg-surface/80 backdrop-blur-lg border-b border-sand-dark/50">
+  <nav class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+    <!-- Logo -->
+    <a href="/" class="flex items-center gap-2 font-bold text-lg text-moss-dark">
+      <img src="/favicon.png" alt="Zenzu" class="w-7 h-7" />
+      Zenzu
+    </a>
+
+    <!-- Nav links (desktop) -->
+    <div class="hidden md:flex items-center gap-8">
+      {navLinks.map(({ href, label }) => (
+        <a
+          href={href}
+          class="text-sm text-on-surface-muted hover:text-moss transition-colors"
+        >
+          {label}
+        </a>
+      ))}
+    </div>
+
+    <!-- CTA -->
+    <a
+      href="https://app.zenzu.app"
+      class="bg-moss text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-moss-dark transition-colors"
+    >
+      Get started
+    </a>
+  </nav>
+</header>

@@ -1,0 +1,46 @@
+---
+const steps = [
+  {
+    step: '01',
+    title: 'Import content you enjoy',
+    description: 'Paste a YouTube link, search for a podcast, or snap a photo of text. Zenzu handles the rest.',
+  },
+  {
+    step: '02',
+    title: 'Tap words to learn',
+    description: 'See instant translations. AI shows you context, examples, and pronunciation. Add words to your deck in one tap.',
+  },
+  {
+    step: '03',
+    title: 'Review with spaced repetition',
+    description: 'FSRS-5 algorithm schedules perfect review timing. 5 minutes a day keeps your vocabulary growing.',
+  },
+]
+---
+
+<section id="how-it-works" class="py-20 px-6">
+  <div class="max-w-4xl mx-auto">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold text-moss-dark mb-4">
+        Three steps to fluency
+      </h2>
+      <p class="text-on-surface-muted text-lg">
+        No textbooks. No boring drills. Just content you actually want to consume.
+      </p>
+    </div>
+
+    <div class="space-y-12">
+      {steps.map(({ step, title, description }) => (
+        <div class="flex items-start gap-6">
+          <div class="flex-shrink-0 w-12 h-12 bg-moss-container rounded-full flex items-center justify-center">
+            <span class="text-moss-dark font-bold text-sm">{step}</span>
+          </div>
+          <div>
+            <h3 class="font-bold text-xl text-moss-dark mb-2">{title}</h3>
+            <p class="text-on-surface-muted leading-relaxed">{description}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+/* ============================================================
+   Zenzu Design Tokens
+   Source of truth: Flutter AppTheme (lib/src/core/theme/app_theme.dart)
+   ============================================================ */
+
+@theme {
+  /* Primary — Moss Green family */
+  --color-moss: #5B7052;
+  --color-moss-dark: #2D3D2A;
+  --color-moss-light: #A2B895;
+  --color-moss-container: #D4E6CC;
+
+  /* Secondary — Warm Sand */
+  --color-sand: #F5F0E8;
+  --color-sand-dark: #E8DFD1;
+  --color-warm: #C4A882;
+
+  /* Accent */
+  --color-teal: #66A5AD;
+
+  /* Surfaces */
+  --color-surface: #FAFAF5;
+  --color-surface-dim: #F0EDE5;
+  --color-on-surface: #1A1C18;
+  --color-on-surface-muted: #6B6E68;
+
+  /* Font */
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background-color: var(--color-moss-container);
+  color: var(--color-moss-dark);
+}
