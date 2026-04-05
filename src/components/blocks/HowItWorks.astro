@@ -1,20 +1,11 @@
 ---
+interface Props { t: any }
+const { t } = Astro.props
+
 const steps = [
-  {
-    step: '01',
-    title: 'Import content you enjoy',
-    description: 'Paste a YouTube link, search for a podcast, or snap a photo of text. Zenzu handles the rest.',
-  },
-  {
-    step: '02',
-    title: 'Tap words to learn',
-    description: 'See instant translations. AI shows you context, examples, and pronunciation. Add words to your deck in one tap.',
-  },
-  {
-    step: '03',
-    title: 'Review with spaced repetition',
-    description: 'FSRS-5 algorithm schedules perfect review timing. 5 minutes a day keeps your vocabulary growing.',
-  },
+  { step: '01', ...t.howItWorks.step1 },
+  { step: '02', ...t.howItWorks.step2 },
+  { step: '03', ...t.howItWorks.step3 },
 ]
 ---
 
@@ -22,23 +13,19 @@ const steps = [
   <img src="/bridge.png" alt="" class="absolute bottom-0 right-0 w-64 opacity-8 pointer-events-none select-none" />
   <div class="relative max-w-4xl mx-auto">
     <div class="text-center mb-16">
-      <h2 class="text-3xl md:text-4xl font-bold text-moss-dark mb-4">
-        Three steps to fluency
-      </h2>
-      <p class="text-on-surface-muted text-lg">
-        No textbooks. No boring drills. Just content you actually want to consume.
-      </p>
+      <h2 class="text-3xl md:text-4xl font-bold text-moss-dark mb-4">{t.howItWorks.title}</h2>
+      <p class="text-on-surface-muted text-lg">{t.howItWorks.subtitle}</p>
     </div>
 
     <div class="space-y-12">
-      {steps.map(({ step, title, description }) => (
+      {steps.map(({ step, title, desc }) => (
         <div class="flex items-start gap-6">
           <div class="flex-shrink-0 w-12 h-12 bg-moss-container rounded-full flex items-center justify-center">
             <span class="text-moss-dark font-bold text-sm">{step}</span>
           </div>
           <div>
             <h3 class="font-bold text-xl text-moss-dark mb-2">{title}</h3>
-            <p class="text-on-surface-muted leading-relaxed">{description}</p>
+            <p class="text-on-surface-muted leading-relaxed">{desc}</p>
           </div>
         </div>
       ))}

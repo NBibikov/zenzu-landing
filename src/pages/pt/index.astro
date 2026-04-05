@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro'
+import Header from '../../components/layout/Header.astro'
+import Footer from '../../components/layout/Footer.astro'
+import Hero from '../../components/blocks/Hero.astro'
+import Features from '../../components/blocks/Features.astro'
+import HowItWorks from '../../components/blocks/HowItWorks.astro'
+import CTA from '../../components/blocks/CTA.astro'
+import { t, type Locale } from '../../i18n'
+
+const locale = 'pt' as Locale
+const strings = t(locale)
+---
+
+<BaseLayout title="Zenzu — Learn Languages from Real Content">
+  <Header t={strings} locale={locale} />
+  <main>
+    <Hero t={strings} />
+    <Features t={strings} />
+    <HowItWorks t={strings} />
+    <CTA t={strings} />
+  </main>
+  <Footer t={strings} locale={locale} />
+</BaseLayout>

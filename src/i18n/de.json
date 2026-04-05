@@ -1,0 +1,78 @@
+{
+  "nav": {
+    "features": "Funktionen",
+    "howItWorks": "Wie es funktioniert",
+    "languages": "Sprachen",
+    "getStarted": "Loslegen"
+  },
+  "hero": {
+    "badge": "KI-gestütztes Sprachenlernen",
+    "headline1": "Lerne Sprachen mit",
+    "headlineHighlight": "echten Inhalten,",
+    "headline2": "die du liebst",
+    "subheadline": "Importiere YouTube-Videos, Podcasts und Artikel. Tippe auf ein beliebiges Wort zum Übersetzen. Erstelle Karteikarten mit KI-gestützter verteilter Wiederholung.",
+    "cta": "Lernen beginnen — es ist kostenlos",
+    "ctaSecondary": "Sieh, wie es funktioniert",
+    "supported": "Englisch · Deutsch",
+    "comingSoon": "Französisch · Spanisch · Portugiesisch — demnächst verfügbar"
+  },
+  "features": {
+    "title": "Alles, was du zum Lernen brauchst",
+    "subtitle": "Eine App für alle deine Inhalte zum Sprachenlernen. Importiere, was du liebst, lerne, was wichtig ist.",
+    "youtube": {
+      "title": "YouTube-Videos",
+      "desc": "Mit synchronisierten Untertiteln ansehen. Tippe auf ein Wort für eine sofortige Übersetzung. Mit einem Tippen zu deinem Stapel hinzufügen."
+    },
+    "podcasts": {
+      "title": "Podcasts",
+      "desc": "KI-transkribierte Episoden mit Hervorhebung auf Wortebene. Verfolge den Text beim Hören und Lernen."
+    },
+    "courses": {
+      "title": "KI-Kurse",
+      "desc": "Personalisierte, von KI generierte Grammatik- und Vokabellektionen. Die Übungen passen sich deinem Niveau an."
+    },
+    "srs": {
+      "title": "FSRS-5 Verteilte Wiederholung",
+      "desc": "Ein wissenschaftlich fundierter Algorithmus plant Wiederholungen zum optimalen Zeitpunkt. Erinnere dich für immer an Wörter."
+    },
+    "tts": {
+      "title": "Muttersprachliche Aussprache",
+      "desc": "Cloud-TTS für jedes Wort und jeden Satz. Höre vom ersten Tag an, wie es klingt."
+    },
+    "import": {
+      "title": "Von überall importieren",
+      "desc": "Texte, Fotos, Artikel — kopiere oder fotografiere alles. Die KI extrahiert Vokabeln, die deinem Niveau entsprechen."
+    }
+  },
+  "howItWorks": {
+    "title": "Drei Schritte zur Sprachkompetenz",
+    "subtitle": "Keine Lehrbücher. Keine langweiligen Übungen. Nur Inhalte, die du auch wirklich konsumieren möchtest.",
+    "step1": {
+      "title": "Importiere Inhalte, die dir gefallen",
+      "desc": "Füge einen YouTube-Link ein, suche nach einem Podcast oder fotografiere einen Text. Zenzu kümmert sich um den Rest."
+    },
+    "step2": {
+      "title": "Tippe auf Wörter, um sie zu lernen",
+      "desc": "Erhalte sofortige Übersetzungen. Die KI zeigt dir Kontext, Beispiele und Aussprache. Füge Wörter mit einem Tippen hinzu."
+    },
+    "step3": {
+      "title": "Wiederholung mit System",
+      "desc": "Der FSRS-5-Algorithmus plant das perfekte Timing. 5 Minuten am Tag erweitern deinen Wortschatz stetig."
+    }
+  },
+  "cta": {
+    "title": "Beginne mit Inhalten zu lernen, die du liebst",
+    "subtitle": "Kostenlos starten. Keine Kreditkarte erforderlich. Importiere dein erstes Video oder deinen ersten Podcast in Sekunden.",
+    "button": "Kostenlos loslegen"
+  },
+  "footer": {
+    "brand": "Lerne Sprachen mit echten Inhalten, die du liebst. YouTube, Podcasts, Artikel — von KI in Karteikarten verwandelt.",
+    "product": "Produkt",
+    "legal": "Rechtliches",
+    "openApp": "App öffnen",
+    "privacy": "Datenschutzerklärung",
+    "terms": "Nutzungsbedingungen",
+    "contact": "Kontakt",
+    "rights": "Alle Rechte vorbehalten."
+  }
+}

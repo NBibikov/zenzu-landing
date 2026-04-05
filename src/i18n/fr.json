@@ -1,0 +1,78 @@
+{
+  "nav": {
+    "features": "Fonctionnalités",
+    "howItWorks": "Comment ça marche",
+    "languages": "Langues",
+    "getStarted": "Commencer"
+  },
+  "hero": {
+    "badge": "Apprentissage des langues par IA",
+    "headline1": "Apprenez des langues avec",
+    "headlineHighlight": "du vrai contenu",
+    "headline2": "que vous aimez",
+    "subheadline": "Importez des vidéos YouTube, des podcasts et des articles. Touchez un mot pour le traduire. Créez des flashcards avec la répétition espacée par IA.",
+    "cta": "Commencer à apprendre — c'est gratuit",
+    "ctaSecondary": "Voir comment ça marche",
+    "supported": "Anglais · Allemand",
+    "comingSoon": "Français · Espagnol · Portugais — bientôt disponible"
+  },
+  "features": {
+    "title": "Tout ce dont vous avez besoin pour apprendre",
+    "subtitle": "Une seule application pour tous vos contenus d'apprentissage. Importez ce que vous aimez, apprenez ce qui compte.",
+    "youtube": {
+      "title": "Vidéos YouTube",
+      "desc": "Regardez avec des sous-titres synchronisés. Touchez un mot pour voir sa traduction instantanément. Ajoutez-le à votre paquet en un clic."
+    },
+    "podcasts": {
+      "title": "Podcasts",
+      "desc": "Épisodes transcrits par l'IA avec surbrillance mot par mot. Suivez tout en écoutant et en apprenant."
+    },
+    "courses": {
+      "title": "Cours par IA",
+      "desc": "Leçons de grammaire et de vocabulaire personnalisées générées par l'IA. Les exercices s'adaptent à votre niveau."
+    },
+    "srs": {
+      "title": "Répétition Espacée FSRS-5",
+      "desc": "Un algorithme scientifique planifie les révisions au moment optimal. Mémorisez les mots pour toujours."
+    },
+    "tts": {
+      "title": "Prononciation Native",
+      "desc": "Synthèse vocale cloud pour chaque mot et phrase. Écoutez la bonne prononciation dès le premier jour."
+    },
+    "import": {
+      "title": "Importez de N'importe Où",
+      "desc": "Textes, photos, articles — collez ou photographiez n'importe quoi. L'IA extrait le vocabulaire adapté à votre niveau."
+    }
+  },
+  "howItWorks": {
+    "title": "Trois étapes vers la fluidité",
+    "subtitle": "Pas de manuels. Pas d'exercices ennuyeux. Juste du contenu que vous voulez vraiment consommer.",
+    "step1": {
+      "title": "Importez le contenu que vous aimez",
+      "desc": "Collez un lien YouTube, cherchez un podcast ou prenez un texte en photo. Zenzu s'occupe du reste."
+    },
+    "step2": {
+      "title": "Touchez les mots pour apprendre",
+      "desc": "Obtenez des traductions instantanées. L'IA vous montre le contexte, des exemples et la prononciation. Ajoutez des mots à votre paquet en un clic."
+    },
+    "step3": {
+      "title": "Révisez avec la répétition espacée",
+      "desc": "L'algorithme FSRS-5 planifie le moment de révision idéal. 5 minutes par jour suffisent pour enrichir votre vocabulaire."
+    }
+  },
+  "cta": {
+    "title": "Commencez à apprendre avec du contenu que vous aimez",
+    "subtitle": "Démarrage gratuit. Pas de carte de crédit requise. Importez votre première vidéo ou podcast en quelques secondes.",
+    "button": "Commencer gratuitement"
+  },
+  "footer": {
+    "brand": "Apprenez des langues à partir de contenus réels que vous aimez. YouTube, podcasts, articles — transformés en flashcards grâce à l'IA.",
+    "product": "Produit",
+    "legal": "Légal",
+    "openApp": "Ouvrir l'application",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d'utilisation",
+    "contact": "Contact",
+    "rights": "Tous droits réservés."
+  }
+}

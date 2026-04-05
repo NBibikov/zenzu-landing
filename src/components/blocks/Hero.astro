@@ -1,52 +1,49 @@
+---
+interface Props { t: any }
+const { t } = Astro.props
+---
+
 <section class="relative pt-32 pb-20 px-6 overflow-hidden">
-  <!-- Background decorations -->
   <img src="/lantern.png" alt="" class="absolute top-20 -left-16 w-48 opacity-10 pointer-events-none select-none" />
   <img src="/butterfly.png" alt="" class="absolute top-32 -right-12 w-40 opacity-10 pointer-events-none select-none" />
 
   <div class="relative max-w-4xl mx-auto text-center">
-    <!-- Icon -->
     <img src="/zenzu-icon.png" alt="Zenzu" class="w-20 h-20 mx-auto mb-6 rounded-2xl shadow-lg" />
 
-    <!-- Badge -->
     <div class="inline-flex items-center gap-2 bg-moss-container/50 text-moss-dark px-4 py-1.5 rounded-full text-sm font-medium mb-8">
       <span class="w-2 h-2 bg-moss rounded-full animate-pulse"></span>
-      AI-powered language learning
+      {t.hero.badge}
     </div>
 
-    <!-- Headline -->
     <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-moss-dark leading-tight mb-6">
-      Learn languages from
-      <span class="text-moss">real content</span>
-      you love
+      {t.hero.headline1}
+      <span class="text-moss"> {t.hero.headlineHighlight} </span>
+      {t.hero.headline2}
     </h1>
 
-    <!-- Subheadline -->
     <p class="text-lg md:text-xl text-on-surface-muted max-w-2xl mx-auto mb-10 leading-relaxed">
-      Import YouTube videos, podcasts, and articles. Tap any word to translate.
-      Build flashcards with AI-powered spaced repetition.
+      {t.hero.subheadline}
     </p>
 
-    <!-- CTA buttons -->
     <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
       <a
         href="https://app.zenzu.app"
         class="bg-moss text-white px-8 py-3.5 rounded-full text-base font-semibold hover:bg-moss-dark transition-colors shadow-lg shadow-moss/20"
       >
-        Start learning — it's free
+        {t.hero.cta}
       </a>
       <a
         href="#how-it-works"
         class="text-moss font-semibold px-8 py-3.5 rounded-full border-2 border-moss/20 hover:border-moss/40 transition-colors"
       >
-        See how it works
+        {t.hero.ctaSecondary}
       </a>
     </div>
 
-    <!-- Supported languages -->
     <div class="mt-8 text-sm text-on-surface-muted">
-      <span class="font-medium">🇬🇧 English · 🇩🇪 German</span>
+      <span class="font-medium">🇬🇧 🇩🇪 {t.hero.supported}</span>
       <span class="mx-2 text-on-surface-muted/40">|</span>
-      <span class="opacity-60">🇫🇷 French · 🇪🇸 Spanish · 🇵🇹 Portuguese — coming soon</span>
+      <span class="opacity-60">🇫🇷 🇪🇸 🇵🇹 {t.hero.comingSoon}</span>
     </div>
   </div>
 </section>

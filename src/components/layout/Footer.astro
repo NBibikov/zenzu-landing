@@ -1,41 +1,37 @@
 ---
+import { localePath, type Locale } from '../../i18n'
+
+interface Props { t: any; locale: Locale }
+const { t, locale } = Astro.props
 const currentYear = new Date().getFullYear()
 ---
 
 <footer class="bg-moss-dark text-moss-light py-16">
   <div class="max-w-6xl mx-auto px-6">
     <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-      <!-- Brand -->
       <div>
         <h3 class="font-bold text-white text-lg mb-3">Zenzu</h3>
-        <p class="text-sm leading-relaxed opacity-80">
-          Learn languages from real content you love. YouTube, podcasts, articles — turned into flashcards with AI.
-        </p>
+        <p class="text-sm leading-relaxed opacity-80">{t.footer.brand}</p>
       </div>
-
-      <!-- Links -->
       <div>
-        <h4 class="font-semibold text-white text-sm mb-3">Product</h4>
+        <h4 class="font-semibold text-white text-sm mb-3">{t.footer.product}</h4>
         <ul class="space-y-2 text-sm opacity-80">
-          <li><a href="#features" class="hover:text-white transition-colors">Features</a></li>
-          <li><a href="#how-it-works" class="hover:text-white transition-colors">How it works</a></li>
-          <li><a href="https://app.zenzu.app" class="hover:text-white transition-colors">Open App</a></li>
+          <li><a href="#features" class="hover:text-white transition-colors">{t.nav.features}</a></li>
+          <li><a href="#how-it-works" class="hover:text-white transition-colors">{t.nav.howItWorks}</a></li>
+          <li><a href="https://app.zenzu.app" class="hover:text-white transition-colors">{t.footer.openApp}</a></li>
         </ul>
       </div>
-
-      <!-- Legal -->
       <div>
-        <h4 class="font-semibold text-white text-sm mb-3">Legal</h4>
+        <h4 class="font-semibold text-white text-sm mb-3">{t.footer.legal}</h4>
         <ul class="space-y-2 text-sm opacity-80">
-          <li><a href="/privacy" class="hover:text-white transition-colors">Privacy Policy</a></li>
-          <li><a href="/terms" class="hover:text-white transition-colors">Terms of Service</a></li>
-          <li><a href="mailto:n.bibikov@me.com" class="hover:text-white transition-colors">Contact</a></li>
+          <li><a href={localePath('/privacy', locale)} class="hover:text-white transition-colors">{t.footer.privacy}</a></li>
+          <li><a href={localePath('/terms', locale)} class="hover:text-white transition-colors">{t.footer.terms}</a></li>
+          <li><a href="mailto:n.bibikov@me.com" class="hover:text-white transition-colors">{t.footer.contact}</a></li>
         </ul>
       </div>
     </div>
-
     <div class="mt-12 pt-8 border-t border-moss-light/20 text-sm opacity-60 text-center">
-      &copy; {currentYear} Zenzu. All rights reserved.
+      &copy; {currentYear} Zenzu. {t.footer.rights}
     </div>
   </div>
 </footer>

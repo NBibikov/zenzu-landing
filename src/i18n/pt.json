@@ -1,0 +1,78 @@
+{
+  "nav": {
+    "features": "Recursos",
+    "howItWorks": "Como funciona",
+    "languages": "Idiomas",
+    "getStarted": "Começar"
+  },
+  "hero": {
+    "badge": "Aprendizado de idiomas com IA",
+    "headline1": "Aprenda idiomas com",
+    "headlineHighlight": "conteúdo real",
+    "headline2": "que você ama",
+    "subheadline": "Importe vídeos do YouTube, podcasts e artigos. Toque em qualquer palavra para traduzir. Crie flashcards com repetição espaçada por IA.",
+    "cta": "Comece a aprender — é grátis",
+    "ctaSecondary": "Veja como funciona",
+    "supported": "Inglês · Alemão",
+    "comingSoon": "Francês · Espanhol · Português — em breve"
+  },
+  "features": {
+    "title": "Tudo o que você precisa para aprender",
+    "subtitle": "Um único app para todo o seu conteúdo de aprendizado. Importe o que você ama, aprenda o que importa.",
+    "youtube": {
+      "title": "Vídeos do YouTube",
+      "desc": "Assista com legendas sincronizadas. Toque em qualquer palavra para traduzir instantaneamente. Adicione ao seu baralho com um toque."
+    },
+    "podcasts": {
+      "title": "Podcasts",
+      "desc": "Episódios transcritos por IA com destaque palavra por palavra. Acompanhe enquanto ouve e aprende."
+    },
+    "courses": {
+      "title": "Cursos com IA",
+      "desc": "Lições de gramática e vocabulário personalizadas geradas por IA. Os exercícios se adaptam ao seu nível."
+    },
+    "srs": {
+      "title": "Repetição Espaçada FSRS-5",
+      "desc": "Algoritmo baseado em ciência agenda as revisões no momento ideal. Lembre-se das palavras para sempre."
+    },
+    "tts": {
+      "title": "Pronúncia Nativa",
+      "desc": "TTS em nuvem para cada palavra e frase. Ouça como soa desde o primeiro dia."
+    },
+    "import": {
+      "title": "Importe de Qualquer Lugar",
+      "desc": "Texto, fotos, artigos — cole ou fotografe qualquer coisa. A IA extrai o vocabulário adequado ao seu nível."
+    }
+  },
+  "howItWorks": {
+    "title": "Três passos para a fluência",
+    "subtitle": "Sem livros didáticos. Sem exercícios chatos. Apenas o conteúdo que você realmente quer consumir.",
+    "step1": {
+      "title": "Importe conteúdo que você gosta",
+      "desc": "Cole um link do YouTube, procure um podcast ou tire foto de um texto. O Zenzu cuida do resto."
+    },
+    "step2": {
+      "title": "Toque nas palavras para aprender",
+      "desc": "Veja traduções instantâneas. A IA mostra contexto, exemplos e pronúncia. Adicione palavras ao seu baralho com um toque."
+    },
+    "step3": {
+      "title": "Revise com repetição espaçada",
+      "desc": "O algoritmo FSRS-5 programa o momento perfeito para revisar. 5 minutos por dia mantêm seu vocabulário crescendo."
+    }
+  },
+  "cta": {
+    "title": "Comece a aprender com o conteúdo que você ama",
+    "subtitle": "Comece de graça. Sem cartão de crédito. Importe seu primeiro vídeo ou podcast em segundos.",
+    "button": "Comece de graça"
+  },
+  "footer": {
+    "brand": "Aprenda idiomas com conteúdo real que você ama. YouTube, podcasts, artigos — transformados em flashcards com IA.",
+    "product": "Produto",
+    "legal": "Legal",
+    "openApp": "Abrir App",
+    "privacy": "Política de Privacidade",
+    "terms": "Termos de Serviço",
+    "contact": "Contato",
+    "rights": "Todos os direitos reservados."
+  }
+}
