@@ -3,8 +3,11 @@ interface Props { t: any }
 const { t } = Astro.props
 
 const features = [
+  { icon: '💬', ...t.features.lisa },
   { icon: '🎬', ...t.features.youtube },
   { icon: '🎙️', ...t.features.podcasts },
+  { icon: '🌱', ...t.features.starterDecks },
+  { icon: '🌍', ...t.features.interface },
   { icon: '📚', ...t.features.courses },
   { icon: '🧠', ...t.features.srs },
   { icon: '🔊', ...t.features.tts },

@@ -10,7 +10,7 @@
     "headline1": "Lerne Sprachen mit",
     "headlineHighlight": "echten Inhalten,",
     "headline2": "die du liebst",
-    "subheadline": "Importiere YouTube-Videos, Podcasts und Artikel. Tippe auf ein beliebiges Wort zum Übersetzen. Erstelle Karteikarten mit KI-gestützter verteilter Wiederholung.",
+    "subheadline": "Importiere YouTube-Videos, Podcasts und Artikel. Markiere ein Wort oder eine Phrase und speichere sie als Karte. Sprich mit Lisa — deinem KI-Sprachcoach — in deiner eigenen Sprache.",
     "cta": "Lernen beginnen — es ist kostenlos",
     "ctaSecondary": "Sieh, wie es funktioniert",
     "appStoreBadge": "Jetzt für iOS verfügbar",
@@ -21,13 +21,25 @@
   "features": {
     "title": "Alles, was du zum Lernen brauchst",
     "subtitle": "Eine App für alle deine Inhalte zum Sprachenlernen. Importiere, was du liebst, lerne, was wichtig ist.",
+    "lisa": {
+      "title": "Lisa — dein KI-Coach",
+      "desc": "Frag Lisa nach einem Lernplan, Worterklärungen oder täglichen Wiederholungen. Sie antwortet in deiner Sprache — Englisch, Ukrainisch, Deutsch, Spanisch, Französisch oder Portugiesisch."
+    },
     "youtube": {
       "title": "YouTube-Videos",
-      "desc": "Mit synchronisierten Untertiteln ansehen. Tippe auf ein Wort für eine sofortige Übersetzung. Mit einem Tippen zu deinem Stapel hinzufügen."
+      "desc": "Mit Live-Transkript ansehen. Tippe auf ein Wort oder markiere eine Phrase — Zenzu speichert sie als Karte mit vollständigem Satzkontext und muttersprachlicher Aussprache."
     },
     "podcasts": {
       "title": "Podcasts",
-      "desc": "KI-transkribierte Episoden mit Hervorhebung auf Wortebene. Verfolge den Text beim Hören und Lernen."
+      "desc": "KI-transkribierte Episoden, die du beim Hören mitlesen kannst. Markiere eine Phrase, um sie als Karte mit Aussprache für jedes Wort zu speichern."
+    },
+    "starterDecks": {
+      "title": "Starter-Stapel",
+      "desc": "Fünf handverlesene Stapel mit 108 Illustrationen — Verben, Körper, Alltag, Technik, Büro. Die Stapelnamen passen sich deiner Oberflächensprache an."
+    },
+    "interface": {
+      "title": "Oberfläche in 6 Sprachen",
+      "desc": "Nutze die App auf Englisch, Ukrainisch, Deutsch, Spanisch, Französisch oder Portugiesisch. Lerne aus deiner Muttersprache heraus, nicht über Englisch."
     },
     "courses": {
       "title": "KI-Kurse",
@@ -54,8 +66,8 @@
       "desc": "Füge einen YouTube-Link ein, suche nach einem Podcast oder fotografiere einen Text. Zenzu kümmert sich um den Rest."
     },
     "step2": {
-      "title": "Tippe auf Wörter, um sie zu lernen",
-      "desc": "Erhalte sofortige Übersetzungen. Die KI zeigt dir Kontext, Beispiele und Aussprache. Füge Wörter mit einem Tippen hinzu."
+      "title": "Tippe auf Wörter oder markiere Phrasen",
+      "desc": "Sofortige Übersetzungen. Lisa zeigt Kontext, Beispiele und Aussprache. Phrasen werden mit automatischer Lückenfüllung gespeichert."
     },
     "step3": {
       "title": "Wiederholung mit System",

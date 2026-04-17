@@ -10,7 +10,7 @@
     "headline1": "Apprenez des langues avec",
     "headlineHighlight": "du vrai contenu",
     "headline2": "que vous aimez",
-    "subheadline": "Importez des vidéos YouTube, des podcasts et des articles. Touchez un mot pour le traduire. Créez des flashcards avec la répétition espacée par IA.",
+    "subheadline": "Importez des vidéos YouTube, des podcasts et des articles. Sélectionnez un mot ou une phrase pour l'enregistrer comme carte. Discutez avec Lisa — votre coach linguistique IA — dans votre propre langue.",
     "cta": "Commencer à apprendre — c'est gratuit",
     "ctaSecondary": "Voir comment ça marche",
     "appStoreBadge": "Maintenant disponible sur iOS",
@@ -21,13 +21,25 @@
   "features": {
     "title": "Tout ce dont vous avez besoin pour apprendre",
     "subtitle": "Une seule application pour tous vos contenus d'apprentissage. Importez ce que vous aimez, apprenez ce qui compte.",
+    "lisa": {
+      "title": "Lisa — votre coach IA",
+      "desc": "Demandez à Lisa un plan d'étude, des explications de mots ou des révisions quotidiennes. Elle répond dans votre langue — anglais, ukrainien, allemand, espagnol, français ou portugais."
+    },
     "youtube": {
       "title": "Vidéos YouTube",
-      "desc": "Regardez avec des sous-titres synchronisés. Touchez un mot pour voir sa traduction instantanément. Ajoutez-le à votre paquet en un clic."
+      "desc": "Regardez avec une transcription en direct. Touchez un mot ou sélectionnez une phrase — Zenzu l'enregistre comme carte avec le contexte complet de la phrase et la prononciation native."
     },
     "podcasts": {
       "title": "Podcasts",
-      "desc": "Épisodes transcrits par l'IA avec surbrillance mot par mot. Suivez tout en écoutant et en apprenant."
+      "desc": "Épisodes transcrits par IA que vous pouvez lire en écoutant. Sélectionnez n'importe quelle phrase pour l'enregistrer comme carte avec la prononciation de chaque mot."
+    },
+    "starterDecks": {
+      "title": "Paquets de démarrage",
+      "desc": "Cinq paquets sélectionnés avec 108 illustrations originales — verbes, corps, objets du quotidien, technologie, bureau. Les noms des paquets s'adaptent à la langue de votre interface."
+    },
+    "interface": {
+      "title": "Interface en 6 langues",
+      "desc": "Utilisez l'app en anglais, ukrainien, allemand, espagnol, français ou portugais. Apprenez depuis votre langue maternelle, pas à travers l'anglais."
     },
     "courses": {
       "title": "Cours par IA",
@@ -54,8 +66,8 @@
       "desc": "Collez un lien YouTube, cherchez un podcast ou prenez un texte en photo. Zenzu s'occupe du reste."
     },
     "step2": {
-      "title": "Touchez les mots pour apprendre",
-      "desc": "Obtenez des traductions instantanées. L'IA vous montre le contexte, des exemples et la prononciation. Ajoutez des mots à votre paquet en un clic."
+      "title": "Touchez des mots ou sélectionnez des phrases",
+      "desc": "Traductions instantanées. Lisa montre le contexte, les exemples et la prononciation. Les phrases sont enregistrées avec lacune cloze automatique."
     },
     "step3": {
       "title": "Révisez avec la répétition espacée",

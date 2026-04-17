@@ -10,7 +10,7 @@
     "headline1": "Aprende idiomas con",
     "headlineHighlight": "contenido real",
     "headline2": "que te encanta",
-    "subheadline": "Importa videos de YouTube, podcasts y artículos. Toca cualquier palabra para traducirla. Crea tarjetas didácticas con repetición espaciada mediante IA.",
+    "subheadline": "Importa videos de YouTube, podcasts y artículos. Selecciona cualquier palabra o frase para guardarla como tarjeta. Habla con Lisa — tu coach de idiomas con IA — en tu propio idioma.",
     "cta": "Empieza a aprender — es gratis",
     "ctaSecondary": "Mira cómo funciona",
     "appStoreBadge": "Ya disponible en iOS",
@@ -21,13 +21,25 @@
   "features": {
     "title": "Todo lo que necesitas para aprender",
     "subtitle": "Una sola app para todo tu contenido de aprendizaje de idiomas. Importa lo que te gusta, aprende lo que importa.",
+    "lisa": {
+      "title": "Lisa — tu coach con IA",
+      "desc": "Pídele a Lisa planes de estudio, explicaciones de palabras o repasos diarios. Responde en tu idioma — inglés, ucraniano, alemán, español, francés o portugués."
+    },
     "youtube": {
       "title": "Videos de YouTube",
-      "desc": "Mira con subtítulos sincronizados. Toca cualquier palabra para ver su traducción al instante. Añádela a tu mazo con un toque."
+      "desc": "Mira con transcripción en vivo. Toca una palabra o selecciona una frase — Zenzu la guarda como tarjeta con el contexto completo de la oración y pronunciación nativa."
     },
     "podcasts": {
       "title": "Podcasts",
-      "desc": "Episodios transcritos por IA con resaltado a nivel de palabra. Sigue el texto mientras escuchas y aprendes."
+      "desc": "Episodios transcritos por IA para leer mientras escuchas. Selecciona cualquier frase para guardarla como tarjeta con pronunciación en cada palabra."
+    },
+    "starterDecks": {
+      "title": "Mazos iniciales",
+      "desc": "Cinco mazos seleccionados con 108 ilustraciones originales — verbos, cuerpo, objetos cotidianos, tecnología, oficina. Los nombres de los mazos se adaptan al idioma de tu interfaz."
+    },
+    "interface": {
+      "title": "Interfaz en 6 idiomas",
+      "desc": "Usa la app en inglés, ucraniano, alemán, español, francés o portugués. Aprende desde tu lengua materna, no a través del inglés."
     },
     "courses": {
       "title": "Cursos con IA",
@@ -54,8 +66,8 @@
       "desc": "Pega un enlace de YouTube, busca un podcast o toma una foto de un texto. Zenzu se encarga del resto."
     },
     "step2": {
-      "title": "Toca palabras para aprender",
-      "desc": "Ve traducciones instantáneas. La IA te muestra contexto, ejemplos y pronunciación. Añade palabras a tu mazo con un toque."
+      "title": "Toca palabras o selecciona frases",
+      "desc": "Traducciones instantáneas. Lisa muestra contexto, ejemplos y pronunciación. Las frases se guardan con hueco cloze automático."
     },
     "step3": {
       "title": "Repasa con repetición espaciada",

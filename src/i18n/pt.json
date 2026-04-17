@@ -10,7 +10,7 @@
     "headline1": "Aprenda idiomas com",
     "headlineHighlight": "conteúdo real",
     "headline2": "que você ama",
-    "subheadline": "Importe vídeos do YouTube, podcasts e artigos. Toque em qualquer palavra para traduzir. Crie flashcards com repetição espaçada por IA.",
+    "subheadline": "Importe vídeos do YouTube, podcasts e artigos. Selecione qualquer palavra ou frase para salvar como cartão. Converse com a Lisa — sua coach de idiomas com IA — no seu próprio idioma.",
     "cta": "Comece a aprender — é grátis",
     "ctaSecondary": "Veja como funciona",
     "appStoreBadge": "Já disponível no iOS",
@@ -21,13 +21,25 @@
   "features": {
     "title": "Tudo o que você precisa para aprender",
     "subtitle": "Um único app para todo o seu conteúdo de aprendizado. Importe o que você ama, aprenda o que importa.",
+    "lisa": {
+      "title": "Lisa — sua coach com IA",
+      "desc": "Peça à Lisa planos de estudo, explicações de palavras ou revisões diárias. Ela responde no seu idioma — inglês, ucraniano, alemão, espanhol, francês ou português."
+    },
     "youtube": {
       "title": "Vídeos do YouTube",
-      "desc": "Assista com legendas sincronizadas. Toque em qualquer palavra para traduzir instantaneamente. Adicione ao seu baralho com um toque."
+      "desc": "Assista com transcrição ao vivo. Toque numa palavra ou selecione uma frase — o Zenzu salva como cartão com o contexto completo da frase e pronúncia nativa."
     },
     "podcasts": {
       "title": "Podcasts",
-      "desc": "Episódios transcritos por IA com destaque palavra por palavra. Acompanhe enquanto ouve e aprende."
+      "desc": "Episódios transcritos por IA para ler enquanto ouve. Selecione qualquer frase para salvá-la como cartão com pronúncia em cada palavra."
+    },
+    "starterDecks": {
+      "title": "Baralhos iniciais",
+      "desc": "Cinco baralhos selecionados com 108 ilustrações originais — verbos, corpo, objetos do dia a dia, tecnologia, escritório. Os nomes dos baralhos se adaptam ao idioma da sua interface."
+    },
+    "interface": {
+      "title": "Interface em 6 idiomas",
+      "desc": "Use o app em inglês, ucraniano, alemão, espanhol, francês ou português. Aprenda a partir da sua língua nativa, não através do inglês."
     },
     "courses": {
       "title": "Cursos com IA",
@@ -54,8 +66,8 @@
       "desc": "Cole um link do YouTube, procure um podcast ou tire foto de um texto. O Zenzu cuida do resto."
     },
     "step2": {
-      "title": "Toque nas palavras para aprender",
-      "desc": "Veja traduções instantâneas. A IA mostra contexto, exemplos e pronúncia. Adicione palavras ao seu baralho com um toque."
+      "title": "Toque em palavras ou selecione frases",
+      "desc": "Traduções instantâneas. A Lisa mostra contexto, exemplos e pronúncia. As frases são salvas com lacuna cloze automática."
     },
     "step3": {
       "title": "Revise com repetição espaçada",
