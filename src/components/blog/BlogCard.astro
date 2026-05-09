@@ -1,0 +1,50 @@
+---
+import type { Locale } from '../../i18n'
+
+interface Props {
+  slug: string
+  title: string
+  excerpt: string
+  date: string
+  image: string
+  locale: Locale
+  readMore: string
+}
+
+const { slug, title, excerpt, date, image, locale, readMore } = Astro.props
+
+const href = locale === 'en' ? `/blog/${slug}` : `/${locale}/blog/${slug}`
+
+const formattedDate = new Intl.DateTimeFormat(locale, {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+}).format(new Date(date))
+---
+
+<article class="group bg-white rounded-2xl overflow-hidden border border-sand-dark hover:shadow-lg transition-shadow duration-300">
+  <a href={href} class="block aspect-video overflow-hidden">
+    <img
+      src={image}
+      alt={title}
+      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+      loading="lazy"
+    />
+  </a>
+  <div class="p-6">
+    <time class="text-xs text-on-surface-muted uppercase tracking-wide">{formattedDate}</time>
+    <h2 class="mt-2 text-lg font-semibold text-moss-dark leading-snug group-hover:text-moss transition-colors">
+      <a href={href}>{title}</a>
+    </h2>
+    <p class="mt-2 text-sm text-on-surface-muted leading-relaxed line-clamp-3">{excerpt}</p>
+    <a
+      href={href}
+      class="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-moss hover:text-moss-dark transition-colors"
+    >
+      {readMore}
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+      </svg>
+    </a>
+  </div>
+</article>

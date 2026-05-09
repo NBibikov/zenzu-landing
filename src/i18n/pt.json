@@ -3,6 +3,7 @@
     "features": "Recursos",
     "howItWorks": "Como funciona",
     "languages": "Idiomas",
+    "blog": "Blog",
     "getStarted": "Começar"
   },
   "hero": {
@@ -88,5 +89,14 @@
     "terms": "Termos de Serviço",
     "contact": "Contato",
     "rights": "Todos os direitos reservados."
+  },
+  "blog": {
+    "title": "Blog de aprendizado de idiomas",
+    "subtitle": "Dicas, guias e insights para quem aprende idiomas",
+    "readMore": "Leia mais",
+    "backToBlog": "Voltar ao blog",
+    "publishedOn": "Publicado em",
+    "readIn": "Leia este artigo em",
+    "noArticles": "Nenhum artigo ainda. Volte em breve!"
   }
 }

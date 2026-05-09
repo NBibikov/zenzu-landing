@@ -3,6 +3,7 @@
     "features": "Features",
     "howItWorks": "How it works",
     "languages": "Languages",
+    "blog": "Blog",
     "getStarted": "Get started"
   },
   "hero": {
@@ -88,5 +89,14 @@
     "terms": "Terms of Service",
     "contact": "Contact",
     "rights": "All rights reserved."
+  },
+  "blog": {
+    "title": "Language Learning Blog",
+    "subtitle": "Tips, guides, and insights for language learners",
+    "readMore": "Read more",
+    "backToBlog": "Back to blog",
+    "publishedOn": "Published on",
+    "readIn": "Read this article in",
+    "noArticles": "No articles yet. Check back soon!"
   }
 }

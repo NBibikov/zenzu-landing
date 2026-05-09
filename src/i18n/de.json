@@ -3,6 +3,7 @@
     "features": "Funktionen",
     "howItWorks": "Wie es funktioniert",
     "languages": "Sprachen",
+    "blog": "Blog",
     "getStarted": "Loslegen"
   },
   "hero": {
@@ -88,5 +89,14 @@
     "terms": "Nutzungsbedingungen",
     "contact": "Kontakt",
     "rights": "Alle Rechte vorbehalten."
+  },
+  "blog": {
+    "title": "Sprachlern-Blog",
+    "subtitle": "Tipps, Anleitungen und Einblicke für Sprachenlernende",
+    "readMore": "Weiterlesen",
+    "backToBlog": "Zurück zum Blog",
+    "publishedOn": "Veröffentlicht am",
+    "readIn": "Diesen Artikel lesen auf",
+    "noArticles": "Noch keine Artikel. Schau bald wieder vorbei!"
   }
 }

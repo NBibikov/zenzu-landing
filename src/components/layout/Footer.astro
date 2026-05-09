@@ -18,6 +18,7 @@ const currentYear = new Date().getFullYear()
         <ul class="space-y-2 text-sm opacity-80">
           <li><a href="#features" class="hover:text-white transition-colors">{t.nav.features}</a></li>
           <li><a href="#how-it-works" class="hover:text-white transition-colors">{t.nav.howItWorks}</a></li>
+          <li><a href={localePath('/blog', locale)} class="hover:text-white transition-colors">{t.nav.blog}</a></li>
           <li><a href="https://app.zenzu.app" class="hover:text-white transition-colors">{t.footer.openApp}</a></li>
         </ul>
       </div>

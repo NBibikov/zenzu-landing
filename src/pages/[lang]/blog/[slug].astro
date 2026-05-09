@@ -1,0 +1,106 @@
+---
+import { getCollection, render } from 'astro:content'
+import BaseLayout from '../../../layouts/BaseLayout.astro'
+import Header from '../../../components/layout/Header.astro'
+import Footer from '../../../components/layout/Footer.astro'
+import { t, localeNames, type Locale } from '../../../i18n'
+
+export async function getStaticPaths() {
+  const entries = await getCollection('blog')
+  const nonEn = entries.filter(e => !e.id.endsWith('/en'))
+  return nonEn.map(e => {
+    const [slug, lang] = e.id.split('/')
+    return { params: { lang, slug }, props: { entry: e } }
+  })
+}
+
+const { lang, slug: articleSlug } = Astro.params
+const { entry } = Astro.props
+
+const locale = lang as Locale
+const strings = t(locale)
+
+const { Content } = await render(entry)
+
+const formattedDate = new Intl.DateTimeFormat(locale, {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+}).format(new Date(entry.data.date))
+
+// Available translations for this article
+const allEntries = await getCollection('blog')
+const otherTranslations = allEntries.filter(
+  e => e.id.startsWith(`${articleSlug}/`) && !e.id.endsWith(`/${locale}`)
+)
+---
+
+<BaseLayout
+  title={`${entry.data.title} — Zenzu Blog`}
+  description={entry.data.excerpt}
+  ogImage={entry.data.image}
+  lang={locale}
+>
+  <Header t={strings} locale={locale} />
+  <main class="pt-24 pb-20">
+    <div class="max-w-3xl mx-auto px-6">
+      <!-- Back link -->
+      <a
+        href={`/${locale}/blog`}
+        class="inline-flex items-center gap-1 text-sm text-on-surface-muted hover:text-moss transition-colors mb-8"
+      >
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg>
+        {strings.blog.backToBlog}
+      </a>
+
+      <!-- Cover image -->
+      <img
+        src={entry.data.image}
+        alt={entry.data.title}
+        class="w-full rounded-2xl aspect-video object-cover mb-8"
+      />
+
+      <!-- Meta -->
+      <div class="flex items-center justify-between flex-wrap gap-4 mb-6">
+        <time class="text-sm text-on-surface-muted">{strings.blog.publishedOn} {formattedDate}</time>
+
+        <!-- Language switcher -->
+        {otherTranslations.length > 0 && (
+          <div class="flex items-center gap-2 flex-wrap">
+            <span class="text-xs text-on-surface-muted">{strings.blog.readIn}:</span>
+            <!-- EN always available -->
+            <a
+              href={`/blog/${articleSlug}`}
+              class="text-xs px-2 py-1 rounded-full bg-sand hover:bg-sand-dark text-moss-dark transition-colors font-medium"
+            >
+              {localeNames['en']}
+            </a>
+            {otherTranslations
+              .map(e => e.id.split('/')[1] as Locale)
+              .filter(l => l !== locale)
+              .map(loc => (
+                <a
+                  href={`/${loc}/blog/${articleSlug}`}
+                  class="text-xs px-2 py-1 rounded-full bg-sand hover:bg-sand-dark text-moss-dark transition-colors font-medium"
+                >
+                  {localeNames[loc]}
+                </a>
+              ))
+            }
+          </div>
+        )}
+      </div>
+
+      <h1 class="text-3xl md:text-4xl font-bold text-moss-dark mb-4 leading-tight">{entry.data.title}</h1>
+      <p class="text-lg text-on-surface-muted mb-8 leading-relaxed">{entry.data.excerpt}</p>
+
+      <!-- Article body -->
+      <article class="prose prose-lg prose-headings:text-moss-dark prose-a:text-moss prose-strong:text-moss-dark max-w-none">
+        <Content />
+      </article>
+    </div>
+  </main>
+  <Footer t={strings} locale={locale} />
+</BaseLayout>

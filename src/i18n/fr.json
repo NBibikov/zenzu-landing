@@ -3,6 +3,7 @@
     "features": "Fonctionnalités",
     "howItWorks": "Comment ça marche",
     "languages": "Langues",
+    "blog": "Blog",
     "getStarted": "Commencer"
   },
   "hero": {
@@ -88,5 +89,14 @@
     "terms": "Conditions d'utilisation",
     "contact": "Contact",
     "rights": "Tous droits réservés."
+  },
+  "blog": {
+    "title": "Blog d'apprentissage des langues",
+    "subtitle": "Conseils, guides et astuces pour les apprenants de langues",
+    "readMore": "Lire la suite",
+    "backToBlog": "Retour au blog",
+    "publishedOn": "Publié le",
+    "readIn": "Lire cet article en",
+    "noArticles": "Pas encore d'articles. Revenez bientôt !"
   }
 }

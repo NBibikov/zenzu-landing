@@ -5,19 +5,21 @@ interface Props {
   title: string
   description?: string
   ogImage?: string
+  lang?: string
 }
 
 const {
   title,
   description = 'Learn languages from real content — YouTube, podcasts, articles. AI flashcards with spaced repetition.',
   ogImage = '/og-default.png',
+  lang = 'en',
 } = Astro.props
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site)
 ---
 
 <!doctype html>
-<html lang="en" class="antialiased">
+<html lang={lang} class="antialiased">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />

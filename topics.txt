@@ -1,0 +1,54 @@
+# Zenzu blog topics — one per line
+# The automation script picks the first unused line (no [done] prefix)
+# and marks it with [done] after generating the article.
+
+Why spaced repetition beats traditional vocabulary lists
+How to maintain a language learning streak without burnout
+The shadowing technique: how to improve your accent fast
+10 most common mistakes English speakers make in German
+How to learn 1000 words in 30 days with flashcards
+Active vs passive vocabulary: what language learners need to know
+Why immersion learning works and how to create it at home
+How to use TV shows to improve your listening skills
+The polyglot method: what language learning masters do differently
+How to read a book in a foreign language as a beginner
+Using music to learn a new language: a practical guide
+Why you should start speaking a language from day one
+How long does it really take to become fluent?
+Common false friends between English and German
+How to build vocabulary with word families and roots
+Grammar or vocabulary first? The debate settled
+Using AI to get personalized language feedback
+How to learn a language during your commute
+The best podcasts for intermediate language learners
+Why learning phrases beats learning single words
+How to use a language notebook effectively
+The science behind why we forget words and how to fight it
+How to practice speaking when you have no one to talk to
+Comprehensible input: the theory that is changing language learning
+How to handle a language learning plateau
+Building a daily language habit: what actually works
+Why context matters more than definitions when learning vocabulary
+How to learn a language while watching Netflix
+How to use writing to improve your speaking skills
+Learning idioms: why they matter and how to remember them
+How to set realistic language learning goals and track progress
+The power of massive input in language acquisition
+Why native materials are better than textbook exercises
+How to get over the fear of making mistakes in a foreign language
+The role of pronunciation in language learning success
+How to choose which language to learn next
+Memory palaces for vocabulary: does it actually work?
+The best time of day to study a foreign language
+Connecting language learning to your interests for faster progress
+What A1 A2 B1 B2 C1 C2 really mean and how to level up
+How to prepare for a language exam in 90 days
+Learning formal versus informal register in a foreign language
+Using mnemonics to memorize difficult vocabulary
+How to learn noun gender rules in German French and Spanish
+Cultural knowledge and language learning: why they go together
+Five minutes a day: the minimum viable language learning routine
+How sentence mining can supercharge your vocabulary learning
+The difference between language learning and language acquisition
+How to overcome the intermediate plateau in language learning
+Why output practice is just as important as input for fluency

@@ -24,6 +24,9 @@ const { t, locale } = Astro.props
       <a href="#how-it-works" class="text-sm text-on-surface-muted hover:text-moss transition-colors">
         {t.nav.howItWorks}
       </a>
+      <a href={localePath('/blog', locale)} class="text-sm text-on-surface-muted hover:text-moss transition-colors">
+        {t.nav.blog}
+      </a>
 
       <!-- Language switcher -->
       <div class="relative group">
