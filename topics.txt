@@ -2,7 +2,7 @@
 # The automation script picks the first unused line (no [done] prefix)
 # and marks it with [done] after generating the article.
 
-Why spaced repetition beats traditional vocabulary lists
+[done] Why spaced repetition beats traditional vocabulary lists
 How to maintain a language learning streak without burnout
 The shadowing technique: how to improve your accent fast
 10 most common mistakes English speakers make in German
