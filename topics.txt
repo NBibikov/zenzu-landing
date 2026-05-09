@@ -3,7 +3,7 @@
 # and marks it with [done] after generating the article.
 
 [done] Why spaced repetition beats traditional vocabulary lists
-How to maintain a language learning streak without burnout
+[done] How to maintain a language learning streak without burnout
 The shadowing technique: how to improve your accent fast
 10 most common mistakes English speakers make in German
 How to learn 1000 words in 30 days with flashcards
