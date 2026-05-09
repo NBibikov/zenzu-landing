@@ -18,10 +18,10 @@ const { t, locale } = Astro.props
 
     <!-- Nav links (desktop) -->
     <div class="hidden md:flex items-center gap-8">
-      <a href="#features" class="text-sm text-on-surface-muted hover:text-moss transition-colors">
+      <a href={localePath('/', locale) + '#features'} class="text-sm text-on-surface-muted hover:text-moss transition-colors">
         {t.nav.features}
       </a>
-      <a href="#how-it-works" class="text-sm text-on-surface-muted hover:text-moss transition-colors">
+      <a href={localePath('/', locale) + '#how-it-works'} class="text-sm text-on-surface-muted hover:text-moss transition-colors">
         {t.nav.howItWorks}
       </a>
       <a href={localePath('/blog', locale)} class="text-sm text-on-surface-muted hover:text-moss transition-colors">
