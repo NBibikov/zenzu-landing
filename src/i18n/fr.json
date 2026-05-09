@@ -59,9 +59,31 @@
       "desc": "Textes, photos, articles — collez ou photographiez n'importe quoi. L'IA extrait le vocabulaire adapté à votre niveau."
     }
   },
+  "forWhom": {
+    "title": "Pour ceux qui prennent les langues au sérieux",
+    "subtitle": "Apprendre une langue est l'une des choses les plus exigeantes — et les plus gratifiantes — que l'on puisse faire. Zenzu est conçu pour ceux qui le comprennent.",
+    "forLabel": "Zenzu est pour vous si…",
+    "for1": "Vous croyez que la vraie maîtrise vient du contact avec du contenu authentique",
+    "for2": "Vous vous engagez à des révisions quotidiennes, même les jours difficiles",
+    "for3": "Vous avez des objectifs ambitieux : lire un roman, travailler ou vivre dans une autre langue",
+    "for4": "Vous voulez des outils qui respectent votre mémoire, pas seulement votre temps d'écran",
+    "notForLabel": "Ce n'est pas pour vous si…",
+    "notFor1": "Vous cherchez un jeu avec des séries et des trophées virtuels",
+    "notFor2": "Vous attendez de parler couramment après quelques sessions décontractées",
+    "notFor3": "Vous avez besoin de gamification pour rester motivé"
+  },
+  "quotes": {
+    "title": "Les mots de ceux qui savaient",
+    "quote1Text": "Avoir une autre langue, c'est posséder une deuxième âme.",
+    "quote1Author": "Charlemagne",
+    "quote2Text": "Les limites de mon langage signifient les limites de mon monde.",
+    "quote2Author": "Ludwig Wittgenstein",
+    "quote3Text": "Une langue vous place dans un couloir pour la vie. Deux langues ouvrent toutes les portes sur le chemin.",
+    "quote3Author": "Frank Smith"
+  },
   "howItWorks": {
     "title": "Trois étapes vers la fluidité",
-    "subtitle": "Pas de manuels. Pas d'exercices ennuyeux. Juste du contenu que vous voulez vraiment consommer.",
+    "subtitle": "Contenu réel. Répétition scientifique. Un vocabulaire qui reste vraiment.",
     "step1": {
       "title": "Importez le contenu que vous aimez",
       "desc": "Collez un lien YouTube, cherchez un podcast ou prenez un texte en photo. Zenzu s'occupe du reste."

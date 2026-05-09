@@ -59,9 +59,31 @@
       "desc": "Texto, fotos, artículos — pega o fotografía lo que sea. La IA extrae el vocabulario adaptado a tu nivel."
     }
   },
+  "forWhom": {
+    "title": "Para quienes toman los idiomas en serio",
+    "subtitle": "Aprender un idioma es una de las cosas más exigentes — y más gratificantes — que puedes hacer. Zenzu está construido para quienes lo entienden.",
+    "forLabel": "Zenzu es para ti si…",
+    "for1": "Crees que la verdadera fluidez viene de interactuar con contenido auténtico",
+    "for2": "Te comprometes a repasar diariamente, incluso en los días difíciles",
+    "for3": "Tienes objetivos ambiciosos: leer una novela, trabajar o vivir en otro idioma",
+    "for4": "Quieres herramientas que respeten tu memoria, no solo tu tiempo de pantalla",
+    "notForLabel": "No es para ti si…",
+    "notFor1": "Buscas un juego con rachas y trofeos virtuales",
+    "notFor2": "Esperas hablar con fluidez después de unas pocas sesiones relajadas",
+    "notFor3": "Necesitas gamificación para mantenerte motivado"
+  },
+  "quotes": {
+    "title": "Palabras de quienes lo sabían",
+    "quote1Text": "Tener otra lengua es poseer una segunda alma.",
+    "quote1Author": "Carlomagno",
+    "quote2Text": "Los límites de mi lenguaje significan los límites de mi mundo.",
+    "quote2Author": "Ludwig Wittgenstein",
+    "quote3Text": "Un idioma te sitúa en un corredor para toda la vida. Dos idiomas abren cada puerta en el camino.",
+    "quote3Author": "Frank Smith"
+  },
   "howItWorks": {
     "title": "Tres pasos para la fluidez",
-    "subtitle": "Sin libros de texto. Sin ejercicios aburridos. Solo contenido que realmente quieres consumir.",
+    "subtitle": "Contenido real. Repetición científica. Vocabulario que de verdad se queda.",
     "step1": {
       "title": "Importa contenido que disfrutes",
       "desc": "Pega un enlace de YouTube, busca un podcast o toma una foto de un texto. Zenzu se encarga del resto."

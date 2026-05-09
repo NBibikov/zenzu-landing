@@ -59,9 +59,31 @@
       "desc": "Texte, Fotos, Artikel — kopiere oder fotografiere alles. Die KI extrahiert Vokabeln, die deinem Niveau entsprechen."
     }
   },
+  "forWhom": {
+    "title": "Für alle, die Sprachen ernstnehmen",
+    "subtitle": "Eine Sprache zu lernen ist eine der anspruchsvollsten — und lohnendsten — Aufgaben. Zenzu wurde für Menschen entwickelt, die das verstehen.",
+    "forLabel": "Zenzu ist für dich, wenn…",
+    "for1": "Du glaubst, dass echte Sprachkompetenz durch authentische Inhalte entsteht",
+    "for2": "Du dich zu täglichen Wiederholungen verpflichtest, auch an schwierigen Tagen",
+    "for3": "Du ambitionierte Ziele hast: einen Roman lesen, arbeiten oder in einer anderen Sprache leben",
+    "for4": "Du Werkzeuge willst, die dein Gedächtnis respektieren, nicht nur deine Bildschirmzeit",
+    "notForLabel": "Es ist nicht für dich, wenn…",
+    "notFor1": "Du ein Spiel mit Serien und virtuellen Trophäen suchst",
+    "notFor2": "Du erwartest, nach ein paar lockeren Einheiten fließend zu sprechen",
+    "notFor3": "Du externe Gamifizierung brauchst, um motiviert zu bleiben"
+  },
+  "quotes": {
+    "title": "Worte derer, die es wussten",
+    "quote1Text": "Eine andere Sprache zu haben bedeutet, eine zweite Seele zu besitzen.",
+    "quote1Author": "Karl der Große",
+    "quote2Text": "Die Grenzen meiner Sprache bedeuten die Grenzen meiner Welt.",
+    "quote2Author": "Ludwig Wittgenstein",
+    "quote3Text": "Eine Sprache stellt dich für dein Leben in einen Korridor. Zwei Sprachen öffnen jede Tür auf dem Weg.",
+    "quote3Author": "Frank Smith"
+  },
   "howItWorks": {
     "title": "Drei Schritte zur Sprachkompetenz",
-    "subtitle": "Keine Lehrbücher. Keine langweiligen Übungen. Nur Inhalte, die du auch wirklich konsumieren möchtest.",
+    "subtitle": "Echter Inhalt. Wissenschaftlich fundierte Wiederholungen. Vokabeln, die wirklich haften.",
     "step1": {
       "title": "Importiere Inhalte, die dir gefallen",
       "desc": "Füge einen YouTube-Link ein, suche nach einem Podcast oder fotografiere einen Text. Zenzu kümmert sich um den Rest."

@@ -59,9 +59,31 @@
       "desc": "Text, photos, articles — paste or snap anything. AI extracts vocabulary matched to your level."
     }
   },
+  "forWhom": {
+    "title": "For those who take language seriously",
+    "subtitle": "Learning a language is one of the most demanding — and most rewarding — things you can do. Zenzu is built for people who understand that.",
+    "forLabel": "Zenzu is for you if…",
+    "for1": "You believe real fluency comes from engaging with authentic content",
+    "for2": "You're committed to daily review, even on hard days",
+    "for3": "You have ambitious goals: reading a novel, working, or living in another language",
+    "for4": "You want tools that respect your memory, not just your screen time",
+    "notForLabel": "It's not for you if…",
+    "notFor1": "You're looking for a game with streaks and virtual trophies",
+    "notFor2": "You expect to speak fluently after a few casual sessions",
+    "notFor3": "You need gamification to stay motivated"
+  },
+  "quotes": {
+    "title": "Words from those who knew",
+    "quote1Text": "To have another language is to possess a second soul.",
+    "quote1Author": "Charlemagne",
+    "quote2Text": "The limits of my language mean the limits of my world.",
+    "quote2Author": "Ludwig Wittgenstein",
+    "quote3Text": "One language sets you in a corridor for life. Two languages open every door along the way.",
+    "quote3Author": "Frank Smith"
+  },
   "howItWorks": {
     "title": "Three steps to fluency",
-    "subtitle": "No textbooks. No boring drills. Just content you actually want to consume.",
+    "subtitle": "Real content. Science-backed repetition. Vocabulary that actually sticks.",
     "step1": {
       "title": "Import content you enjoy",
       "desc": "Paste a YouTube link, search for a podcast, or snap a photo of text. Zenzu handles the rest."

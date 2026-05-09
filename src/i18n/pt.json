@@ -59,9 +59,31 @@
       "desc": "Texto, fotos, artigos — cole ou fotografe qualquer coisa. A IA extrai o vocabulário adequado ao seu nível."
     }
   },
+  "forWhom": {
+    "title": "Para quem leva o aprendizado de idiomas a sério",
+    "subtitle": "Aprender um idioma é uma das coisas mais exigentes — e mais gratificantes — que você pode fazer. O Zenzu foi criado para quem entende isso.",
+    "forLabel": "O Zenzu é para você se…",
+    "for1": "Você acredita que a verdadeira fluência vem de se envolver com conteúdo autêntico",
+    "for2": "Você se compromete com revisões diárias, mesmo nos dias difíceis",
+    "for3": "Você tem objetivos ambiciosos: ler um romance, trabalhar ou viver em outro idioma",
+    "for4": "Você quer ferramentas que respeitem sua memória, não apenas seu tempo de tela",
+    "notForLabel": "Não é para você se…",
+    "notFor1": "Você procura um jogo com sequências e troféus virtuais",
+    "notFor2": "Você espera falar fluentemente depois de algumas sessões descontraídas",
+    "notFor3": "Você precisa de gamificação para se manter motivado"
+  },
+  "quotes": {
+    "title": "Palavras de quem sabia",
+    "quote1Text": "Ter outro idioma é possuir uma segunda alma.",
+    "quote1Author": "Carlos Magno",
+    "quote2Text": "Os limites da minha linguagem significam os limites do meu mundo.",
+    "quote2Author": "Ludwig Wittgenstein",
+    "quote3Text": "Um idioma te coloca num corredor para a vida. Dois idiomas abrem cada porta no caminho.",
+    "quote3Author": "Frank Smith"
+  },
   "howItWorks": {
     "title": "Três passos para a fluência",
-    "subtitle": "Sem livros didáticos. Sem exercícios chatos. Apenas o conteúdo que você realmente quer consumir.",
+    "subtitle": "Conteúdo real. Repetição científica. Vocabulário que realmente fica.",
     "step1": {
       "title": "Importe conteúdo que você gosta",
       "desc": "Cole um link do YouTube, procure um podcast ou tire foto de um texto. O Zenzu cuida do resto."
