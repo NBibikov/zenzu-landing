@@ -14,7 +14,7 @@
 [done] How to read a book in a foreign language as a beginner
 [done] Using music to learn a new language: a practical guide
 [done] Why you should start speaking a language from day one
-How long does it really take to become fluent?
+[done] How long does it really take to become fluent?
 Common false friends between English and German
 How to build vocabulary with word families and roots
 Grammar or vocabulary first? The debate settled
