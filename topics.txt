@@ -16,7 +16,7 @@
 [done] Why you should start speaking a language from day one
 [done] How long does it really take to become fluent?
 [done] Common false friends between English and German
-How to build vocabulary with word families and roots
+[done] How to build vocabulary with word families and roots
 Grammar or vocabulary first? The debate settled
 Using AI to get personalized language feedback
 How to learn a language during your commute
