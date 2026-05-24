@@ -17,7 +17,7 @@
 [done] How long does it really take to become fluent?
 [done] Common false friends between English and German
 [done] How to build vocabulary with word families and roots
-Grammar or vocabulary first? The debate settled
+[done] Grammar or vocabulary first? The debate settled
 Using AI to get personalized language feedback
 How to learn a language during your commute
 The best podcasts for intermediate language learners
