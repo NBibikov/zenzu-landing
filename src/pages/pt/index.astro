@@ -5,6 +5,7 @@ import Footer from '../../components/layout/Footer.astro'
 import Hero from '../../components/blocks/Hero.astro'
 import Features from '../../components/blocks/Features.astro'
 import HowItWorks from '../../components/blocks/HowItWorks.astro'
+import NewsPreview from '../../components/blocks/NewsPreview.astro'
 import CTA from '../../components/blocks/CTA.astro'
 import { t, type Locale } from '../../i18n'
 
@@ -18,6 +19,7 @@ const strings = t(locale)
     <Hero t={strings} />
     <Features t={strings} />
     <HowItWorks t={strings} />
+    <NewsPreview t={strings} />
     <CTA t={strings} />
   </main>
   <Footer t={strings} locale={locale} />

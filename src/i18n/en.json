@@ -120,5 +120,10 @@
     "publishedOn": "Published on",
     "readIn": "Read this article in",
     "noArticles": "No articles yet. Check back soon!"
+  },
+  "news": {
+    "title": "Today's News",
+    "subtitle": "Read real news summaries in the language you're learning — tap any sentence to translate.",
+    "empty": "No news yet — check back soon"
   }
 }

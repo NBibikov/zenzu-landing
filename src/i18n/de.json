@@ -120,5 +120,10 @@
     "publishedOn": "Veröffentlicht am",
     "readIn": "Diesen Artikel lesen auf",
     "noArticles": "Noch keine Artikel. Schau bald wieder vorbei!"
+  },
+  "news": {
+    "title": "Nachrichten heute",
+    "subtitle": "Lies echte Nachrichtenzusammenfassungen in der Sprache, die du lernst — tippe auf einen Satz zum Übersetzen.",
+    "empty": "Noch keine Nachrichten — schau bald wieder vorbei"
   }
 }

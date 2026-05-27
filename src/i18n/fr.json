@@ -120,5 +120,10 @@
     "publishedOn": "Publié le",
     "readIn": "Lire cet article en",
     "noArticles": "Pas encore d'articles. Revenez bientôt !"
+  },
+  "news": {
+    "title": "Actualités du jour",
+    "subtitle": "Lisez des résumés d'actualités réelles dans la langue que vous apprenez — appuyez sur une phrase pour la traduire.",
+    "empty": "Pas encore d'actualités — revenez bientôt"
   }
 }
