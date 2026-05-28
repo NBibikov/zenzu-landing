@@ -21,7 +21,7 @@
 [done] Using AI to get personalized language feedback
 [done] How to learn a language during your commute
 [done] The best podcasts for intermediate language learners
-Why learning phrases beats learning single words
+[done] Why learning phrases beats learning single words
 How to use a language notebook effectively
 The science behind why we forget words and how to fight it
 How to practice speaking when you have no one to talk to
