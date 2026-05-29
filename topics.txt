@@ -22,7 +22,7 @@
 [done] How to learn a language during your commute
 [done] The best podcasts for intermediate language learners
 [done] Why learning phrases beats learning single words
-How to use a language notebook effectively
+[done] How to use a language notebook effectively
 The science behind why we forget words and how to fight it
 How to practice speaking when you have no one to talk to
 Comprehensible input: the theory that is changing language learning
