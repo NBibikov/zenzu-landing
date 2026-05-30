@@ -23,7 +23,7 @@
 [done] The best podcasts for intermediate language learners
 [done] Why learning phrases beats learning single words
 [done] How to use a language notebook effectively
-The science behind why we forget words and how to fight it
+[done] The science behind why we forget words and how to fight it
 How to practice speaking when you have no one to talk to
 Comprehensible input: the theory that is changing language learning
 How to handle a language learning plateau
