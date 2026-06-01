@@ -25,7 +25,7 @@
 [done] How to use a language notebook effectively
 [done] The science behind why we forget words and how to fight it
 [done] How to practice speaking when you have no one to talk to
-Comprehensible input: the theory that is changing language learning
+[done] Comprehensible input: the theory that is changing language learning
 How to handle a language learning plateau
 Building a daily language habit: what actually works
 Why context matters more than definitions when learning vocabulary
