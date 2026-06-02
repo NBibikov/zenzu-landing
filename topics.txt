@@ -26,7 +26,7 @@
 [done] The science behind why we forget words and how to fight it
 [done] How to practice speaking when you have no one to talk to
 [done] Comprehensible input: the theory that is changing language learning
-How to handle a language learning plateau
+[done] How to handle a language learning plateau
 Building a daily language habit: what actually works
 Why context matters more than definitions when learning vocabulary
 How to learn a language while watching Netflix
