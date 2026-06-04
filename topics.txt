@@ -28,7 +28,7 @@
 [done] Comprehensible input: the theory that is changing language learning
 [done] How to handle a language learning plateau
 [done] Building a daily language habit: what actually works
-Why context matters more than definitions when learning vocabulary
+[done] Why context matters more than definitions when learning vocabulary
 How to learn a language while watching Netflix
 How to use writing to improve your speaking skills
 Learning idioms: why they matter and how to remember them
