@@ -30,7 +30,7 @@
 [done] Building a daily language habit: what actually works
 [done] Why context matters more than definitions when learning vocabulary
 [done] How to learn a language while watching Netflix
-How to use writing to improve your speaking skills
+[done] How to use writing to improve your speaking skills
 Learning idioms: why they matter and how to remember them
 How to set realistic language learning goals and track progress
 The power of massive input in language acquisition
