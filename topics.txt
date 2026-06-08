@@ -32,7 +32,7 @@
 [done] How to learn a language while watching Netflix
 [done] How to use writing to improve your speaking skills
 [done] Learning idioms: why they matter and how to remember them
-How to set realistic language learning goals and track progress
+[done] How to set realistic language learning goals and track progress
 The power of massive input in language acquisition
 Why native materials are better than textbook exercises
 How to get over the fear of making mistakes in a foreign language
