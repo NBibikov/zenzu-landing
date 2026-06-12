@@ -36,7 +36,7 @@
 [done] The power of massive input in language acquisition
 [done] Why native materials are better than textbook exercises
 [done] How to get over the fear of making mistakes in a foreign language
-The role of pronunciation in language learning success
+[done] The role of pronunciation in language learning success
 How to choose which language to learn next
 Memory palaces for vocabulary: does it actually work?
 The best time of day to study a foreign language
