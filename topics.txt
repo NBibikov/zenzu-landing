@@ -37,7 +37,7 @@
 [done] Why native materials are better than textbook exercises
 [done] How to get over the fear of making mistakes in a foreign language
 [done] The role of pronunciation in language learning success
-How to choose which language to learn next
+[done] How to choose which language to learn next
 Memory palaces for vocabulary: does it actually work?
 The best time of day to study a foreign language
 Connecting language learning to your interests for faster progress
