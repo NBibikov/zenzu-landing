@@ -1,6 +1,6 @@
 ---
 title: "Metas de aprendizaje de idiomas que realmente funcionan: una guía práctica"
-excerpt: "Deja de fijarte metas vagas como "hablar con fluidez". Aprende a establecer hitos realistas en tu aprendizaje de idiomas, medir tu progreso de verdad y mantenerte motivado a largo plazo."
+excerpt: 'Deja de fijarte metas vagas como "hablar con fluidez". Aprende a establecer hitos realistas en tu aprendizaje de idiomas, medir tu progreso de verdad y mantenerte motivado a largo plazo.'
 date: "2026-06-08"
 image: "/blog/how-to-set-realistic-language-learning-goals-and-track-progr/cover.jpg"
 ---

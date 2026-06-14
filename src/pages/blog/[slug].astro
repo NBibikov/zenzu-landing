@@ -34,13 +34,51 @@ const allEntries = await getCollection('blog')
 const translationLocales = allEntries
   .filter(e => e.id.startsWith(`${articleSlug}/`) && !e.id.endsWith('/en'))
   .map(e => e.id.split('/')[1] as Locale)
+
+const site = Astro.site!.toString().replace(/\/$/, '')
+
+// hreflang alternates: EN canonical + every translation (trailing slash to match canonical)
+const alternates = [
+  { hreflang: 'en', href: `${site}/blog/${articleSlug}/` },
+  ...translationLocales.map(loc => ({
+    hreflang: loc,
+    href: `${site}/${loc}/blog/${articleSlug}/`,
+  })),
+]
+
+const ogImageAbs = new URL(entry.data.image, Astro.site).toString()
+const selfUrl = `${site}/blog/${articleSlug}/`
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: entry.data.title,
+  description: entry.data.excerpt,
+  image: ogImageAbs,
+  datePublished: entry.data.date,
+  dateModified: entry.data.date,
+  inLanguage: 'en',
+  url: selfUrl,
+  mainEntityOfPage: { '@type': 'WebPage', '@id': selfUrl },
+  author: { '@type': 'Organization', name: 'Zenzu', url: site },
+  publisher: {
+    '@type': 'Organization',
+    name: 'Zenzu',
+    url: site,
+    logo: { '@type': 'ImageObject', url: `${site}/zenzu-icon.png` },
+  },
+}
 ---
 
 <BaseLayout
   title={`${entry.data.title} — Zenzu Blog`}
+  ogTitle={entry.data.title}
   description={entry.data.excerpt}
   ogImage={entry.data.image}
+  ogType="article"
   lang="en"
+  alternates={alternates}
+  jsonLd={jsonLd}
 >
   <Header t={strings} locale={locale} />
   <main class="pt-24 pb-20">

@@ -23,12 +23,21 @@ const { entries } = Astro.props
 
 const locale = lang as Locale
 const strings = t(locale)
+
+const site = Astro.site!.toString().replace(/\/$/, '')
+const blogLocales = ['en', 'uk', 'de', 'fr', 'es', 'pt'] as const
+const alternates = blogLocales.map(loc => ({
+  hreflang: loc,
+  href: loc === 'en' ? `${site}/blog/` : `${site}/${loc}/blog/`,
+}))
 ---
 
 <BaseLayout
   title={`${strings.blog.title} — Zenzu`}
+  ogTitle={strings.blog.title}
   description={strings.blog.subtitle}
   lang={locale}
+  alternates={alternates}
 >
   <Header t={strings} locale={locale} />
   <main class="pt-24 pb-20">

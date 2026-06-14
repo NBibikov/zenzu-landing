@@ -1,6 +1,6 @@
 ---
 title: "Metas de Aprendizado de Idiomas que Realmente Funcionam: Um Guia Prático"
-excerpt: "Pare de definir metas vagas como "ficar fluente." Aprenda a estabelecer marcos realistas no aprendizado de idiomas, medir o progresso de verdade e manter a motivação a longo prazo."
+excerpt: 'Pare de definir metas vagas como "ficar fluente." Aprenda a estabelecer marcos realistas no aprendizado de idiomas, medir o progresso de verdade e manter a motivação a longo prazo.'
 date: "2026-06-08"
 image: "/blog/how-to-set-realistic-language-learning-goals-and-track-progr/cover.jpg"
 ---

@@ -33,13 +33,52 @@ const allEntries = await getCollection('blog')
 const otherTranslations = allEntries.filter(
   e => e.id.startsWith(`${articleSlug}/`) && !e.id.endsWith(`/${locale}`)
 )
+
+const site = Astro.site!.toString().replace(/\/$/, '')
+
+// Every locale that has this article (EN lives at /blog/<slug>, others at /<loc>/blog/<slug>)
+const allLocalesForArticle = allEntries
+  .filter(e => e.id.startsWith(`${articleSlug}/`))
+  .map(e => e.id.split('/')[1] as Locale)
+
+const alternates = allLocalesForArticle.map(loc => ({
+  hreflang: loc,
+  href: loc === 'en' ? `${site}/blog/${articleSlug}/` : `${site}/${loc}/blog/${articleSlug}/`,
+}))
+
+const ogImageAbs = new URL(entry.data.image, Astro.site).toString()
+const selfUrl = `${site}/${locale}/blog/${articleSlug}/`
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: entry.data.title,
+  description: entry.data.excerpt,
+  image: ogImageAbs,
+  datePublished: entry.data.date,
+  dateModified: entry.data.date,
+  inLanguage: locale,
+  url: selfUrl,
+  mainEntityOfPage: { '@type': 'WebPage', '@id': selfUrl },
+  author: { '@type': 'Organization', name: 'Zenzu', url: site },
+  publisher: {
+    '@type': 'Organization',
+    name: 'Zenzu',
+    url: site,
+    logo: { '@type': 'ImageObject', url: `${site}/zenzu-icon.png` },
+  },
+}
 ---
 
 <BaseLayout
   title={`${entry.data.title} — Zenzu Blog`}
+  ogTitle={entry.data.title}
   description={entry.data.excerpt}
   ogImage={entry.data.image}
+  ogType="article"
   lang={locale}
+  alternates={alternates}
+  jsonLd={jsonLd}
 >
   <Header t={strings} locale={locale} />
   <main class="pt-24 pb-20">

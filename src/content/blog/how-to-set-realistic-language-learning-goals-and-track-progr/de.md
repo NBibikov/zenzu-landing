@@ -1,6 +1,6 @@
 ---
 title: "Sprachlernziele, die wirklich halten: Ein praktischer Leitfaden"
-excerpt: "Hör auf, vage Ziele wie „fließend werden" zu setzen. Lerne, wie du realistische Meilensteine im Sprachenlernen definierst, echten Fortschritt misst und langfristig motiviert bleibst."
+excerpt: 'Hör auf, vage Ziele wie „fließend werden" zu setzen. Lerne, wie du realistische Meilensteine im Sprachenlernen definierst, echten Fortschritt misst und langfristig motiviert bleibst.'
 date: "2026-06-08"
 image: "/blog/how-to-set-realistic-language-learning-goals-and-track-progr/cover.jpg"
 ---

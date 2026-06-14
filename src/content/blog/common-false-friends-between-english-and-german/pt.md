@@ -1,6 +1,6 @@
 ---
 title: "Falsos Cognatos Inglês-Alemão: 15 Palavras Que Vão Te Enganar"
-excerpt: "Acha que sabe o que "Gift" ou "Chef" significam em alemão? Esses pares enganosos vão te surpreender — e dominá-los vai afiar sua fluência rapidamente."
+excerpt: 'Acha que sabe o que "Gift" ou "Chef" significam em alemão? Esses pares enganosos vão te surpreender — e dominá-los vai afiar sua fluência rapidamente.'
 date: "2026-05-22"
 image: "/blog/common-false-friends-between-english-and-german/cover.jpg"
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Habla Desde el Primer Día: Por Qué Producir Lenguaje Desde el Inicio Acelera la Fluidez"
-excerpt: "Esperar a estar "listo" para hablar un nuevo idioma es el mayor error que cometen los estudiantes. Aquí te explicamos por qué abrir la boca desde el primer día lo cambia todo."
+excerpt: 'Esperar a estar "listo" para hablar un nuevo idioma es el mayor error que cometen los estudiantes. Aquí te explicamos por qué abrir la boca desde el primer día lo cambia todo.'
 date: "2026-05-20"
 image: "/blog/why-you-should-start-speaking-a-language-from-day-one/cover.jpg"
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Fale Desde o Primeiro Dia: Por Que Produzir Linguagem Cedo Acelera a Fluência"
-excerpt: "Esperar até estar "pronto" para falar uma nova língua é o maior erro que os aprendizes cometem. Veja por que abrir a boca desde o primeiro dia muda tudo."
+excerpt: 'Esperar até estar "pronto" para falar uma nova língua é o maior erro que os aprendizes cometem. Veja por que abrir a boca desde o primeiro dia muda tudo.'
 date: "2026-05-20"
 image: "/blog/why-you-should-start-speaking-a-language-from-day-one/cover.jpg"
 ---

@@ -13,12 +13,47 @@ const allEntries = await getCollection('blog')
 const articles = allEntries
   .filter(e => e.id.endsWith('/en'))
   .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime())
+
+const site = Astro.site!.toString().replace(/\/$/, '')
+const blogLocales = ['en', 'uk', 'de', 'fr', 'es', 'pt'] as const
+const alternates = blogLocales.map(loc => ({
+  hreflang: loc,
+  href: loc === 'en' ? `${site}/blog/` : `${site}/${loc}/blog/`,
+}))
+
+const blogJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Blog',
+  name: 'Zenzu Blog',
+  url: `${site}/blog/`,
+  inLanguage: 'en',
+  publisher: {
+    '@type': 'Organization',
+    name: 'Zenzu',
+    url: site,
+    logo: { '@type': 'ImageObject', url: `${site}/zenzu-icon.png` },
+  },
+  blogPost: articles.map(entry => {
+    const [slug] = entry.id.split('/')
+    return {
+      '@type': 'BlogPosting',
+      headline: entry.data.title,
+      description: entry.data.excerpt,
+      datePublished: entry.data.date,
+      url: `${site}/blog/${slug}/`,
+      image: new URL(entry.data.image, Astro.site).toString(),
+    }
+  }),
+}
 ---
 
 <BaseLayout
   title={`${strings.blog.title} — Zenzu`}
+  ogTitle={strings.blog.title}
   description={strings.blog.subtitle}
   lang="en"
+  alternates={alternates}
+  jsonLd={blogJsonLd}
 >
   <Header t={strings} locale={locale} />
   <main class="pt-24 pb-20">

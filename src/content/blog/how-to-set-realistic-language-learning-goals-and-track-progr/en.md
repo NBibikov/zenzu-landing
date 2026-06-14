@@ -1,6 +1,6 @@
 ---
 title: "Language Learning Goals That Actually Stick: A Practical Guide"
-excerpt: "Stop setting vague goals like "become fluent." Learn how to set realistic language learning milestones, measure real progress, and stay motivated for the long haul."
+excerpt: 'Stop setting vague goals like "become fluent." Learn how to set realistic language learning milestones, measure real progress, and stay motivated for the long haul.'
 date: "2026-06-08"
 image: "/blog/how-to-set-realistic-language-learning-goals-and-track-progr/cover.jpg"
 ---
