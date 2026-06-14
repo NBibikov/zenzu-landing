@@ -1,6 +1,6 @@
 ---
 title: "Englisch-Deutsche Falsche Freunde: 15 Wörter, die dich in die Irre führen"
-excerpt: "Du glaubst zu wissen, was „Gift" oder „Chef" auf Englisch bedeutet? Diese täuschend ähnlichen Wörter werden dich überraschen – und wer sie beherrscht, verbessert sein Sprachgefühl enorm."
+excerpt: 'Du glaubst zu wissen, was „Gift" oder „Chef" auf Englisch bedeutet? Diese täuschend ähnlichen Wörter werden dich überraschen – und wer sie beherrscht, verbessert sein Sprachgefühl enorm.'
 date: "2026-05-22"
 image: "/blog/common-false-friends-between-english-and-german/cover.jpg"
 ---

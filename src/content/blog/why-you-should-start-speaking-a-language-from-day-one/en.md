@@ -1,6 +1,6 @@
 ---
 title: "Speak From Day One: Why Early Output Accelerates Fluency"
-excerpt: "Waiting until you're "ready" to speak a new language is the biggest mistake learners make. Here's why opening your mouth from day one changes everything."
+excerpt: 'Waiting until you''re "ready" to speak a new language is the biggest mistake learners make. Here''s why opening your mouth from day one changes everything.'
 date: "2026-05-20"
 image: "/blog/why-you-should-start-speaking-a-language-from-day-one/cover.jpg"
 ---

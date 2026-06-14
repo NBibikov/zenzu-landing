@@ -1,6 +1,6 @@
 ---
 title: "Von Anfang an sprechen: Warum frühe Sprachproduktion die Sprachkompetenz beschleunigt"
-excerpt: "Zu warten, bis man „bereit" ist, eine neue Sprache zu sprechen, ist der größte Fehler, den Lernende machen. Warum es alles verändert, von Tag eins an den Mund aufzumachen."
+excerpt: 'Zu warten, bis man „bereit" ist, eine neue Sprache zu sprechen, ist der größte Fehler, den Lernende machen. Warum es alles verändert, von Tag eins an den Mund aufzumachen.'
 date: "2026-05-20"
 image: "/blog/why-you-should-start-speaking-a-language-from-day-one/cover.jpg"
 ---

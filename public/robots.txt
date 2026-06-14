@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://zenzu.app/sitemap-index.xml

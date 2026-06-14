@@ -6,6 +6,13 @@ interface Props {
   description?: string
   ogImage?: string
   lang?: string
+  ogType?: 'website' | 'article'
+  /** Used for og:title / twitter:title — defaults to `title` without any " — Zenzu" suffix noise. */
+  ogTitle?: string
+  /** hreflang alternates: { hreflang, href }. An x-default entry is auto-added from the en/default one. */
+  alternates?: { hreflang: string; href: string }[]
+  /** JSON-LD structured data object (rendered as application/ld+json). */
+  jsonLd?: Record<string, unknown>
 }
 
 const {
@@ -13,9 +20,15 @@ const {
   description = 'Learn languages from real content — YouTube, podcasts, articles. AI flashcards with spaced repetition.',
   ogImage = '/og-default.png',
   lang = 'en',
+  ogType = 'website',
+  ogTitle,
+  alternates,
+  jsonLd,
 } = Astro.props
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site)
+const ogImageURL = new URL(ogImage, Astro.site)
+const socialTitle = ogTitle ?? title
 ---
 
 <!doctype html>
@@ -30,31 +43,56 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site)
     <meta name="description" content={description} />
     <link rel="canonical" href={canonicalURL} />
 
+    <!-- hreflang alternates -->
+    {alternates?.map(alt => (
+      <link rel="alternate" hreflang={alt.hreflang} href={alt.href} />
+    ))}
+    {alternates && alternates.length > 0 && (
+      <link
+        rel="alternate"
+        hreflang="x-default"
+        href={(alternates.find(a => a.hreflang === 'en') ?? alternates[0]).href}
+      />
+    )}
+
     <!-- Open Graph -->
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content={ogType} />
     <meta property="og:url" content={canonicalURL} />
-    <meta property="og:title" content={title} />
+    <meta property="og:title" content={socialTitle} />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content={new URL(ogImage, Astro.site)} />
+    <meta property="og:image" content={ogImageURL} />
     <meta property="og:site_name" content="Zenzu" />
+    <meta property="og:locale" content={lang} />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content={title} />
+    <meta name="twitter:title" content={socialTitle} />
     <meta name="twitter:description" content={description} />
-    <meta name="twitter:image" content={new URL(ogImage, Astro.site)} />
+    <meta name="twitter:image" content={ogImageURL} />
+
+    {jsonLd && (
+      <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+    )}
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/zenzu-icon.png" />
     <link rel="apple-touch-icon" href="/zenzu-icon.png" />
 
-    <!-- Font: Inter -->
+    <!-- Font: Inter (non-render-blocking) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      media="print"
+      onload="this.media='all'"
     />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      />
+    </noscript>
   </head>
   <body class="bg-surface text-on-surface font-sans">
     <slot />

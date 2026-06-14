@@ -1,6 +1,6 @@
 ---
 title: "Falsos amigos inglés-alemán: 15 palabras que te engañarán"
-excerpt: "¿Crees saber qué significa "Gift" o "Chef" en alemán? Estos engañosos parecidos te sorprenderán — y dominarlos afilará tu fluidez rápidamente."
+excerpt: '¿Crees saber qué significa "Gift" o "Chef" en alemán? Estos engañosos parecidos te sorprenderán — y dominarlos afilará tu fluidez rápidamente.'
 date: "2026-05-22"
 image: "/blog/common-false-friends-between-english-and-german/cover.jpg"
 ---

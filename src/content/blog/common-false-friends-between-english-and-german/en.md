@@ -1,6 +1,6 @@
 ---
 title: "English-German False Friends: 15 Words That Will Trick You"
-excerpt: "Think you know what "Gift" or "Chef" means in German? These deceptive look-alikes will surprise you — and mastering them will sharpen your fluency fast."
+excerpt: 'Think you know what "Gift" or "Chef" means in German? These deceptive look-alikes will surprise you — and mastering them will sharpen your fluency fast.'
 date: "2026-05-22"
 image: "/blog/common-false-friends-between-english-and-german/cover.jpg"
 ---
