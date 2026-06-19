@@ -43,7 +43,7 @@
 [done] Connecting language learning to your interests for faster progress
 [done] What A1 A2 B1 B2 C1 C2 really mean and how to level up
 [done] How to prepare for a language exam in 90 days
-Learning formal versus informal register in a foreign language
+[done] Learning formal versus informal register in a foreign language
 Using mnemonics to memorize difficult vocabulary
 How to learn noun gender rules in German French and Spanish
 Cultural knowledge and language learning: why they go together
