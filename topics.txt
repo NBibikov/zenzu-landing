@@ -45,7 +45,7 @@
 [done] How to prepare for a language exam in 90 days
 [done] Learning formal versus informal register in a foreign language
 [done] Using mnemonics to memorize difficult vocabulary
-How to learn noun gender rules in German French and Spanish
+[done] How to learn noun gender rules in German French and Spanish
 Cultural knowledge and language learning: why they go together
 Five minutes a day: the minimum viable language learning routine
 How sentence mining can supercharge your vocabulary learning
