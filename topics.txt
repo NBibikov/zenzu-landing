@@ -46,7 +46,7 @@
 [done] Learning formal versus informal register in a foreign language
 [done] Using mnemonics to memorize difficult vocabulary
 [done] How to learn noun gender rules in German French and Spanish
-Cultural knowledge and language learning: why they go together
+[done] Cultural knowledge and language learning: why they go together
 Five minutes a day: the minimum viable language learning routine
 How sentence mining can supercharge your vocabulary learning
 The difference between language learning and language acquisition
