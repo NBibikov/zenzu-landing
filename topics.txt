@@ -49,6 +49,6 @@
 [done] Cultural knowledge and language learning: why they go together
 [done] Five minutes a day: the minimum viable language learning routine
 [done] How sentence mining can supercharge your vocabulary learning
-The difference between language learning and language acquisition
+[done] The difference between language learning and language acquisition
 How to overcome the intermediate plateau in language learning
 Why output practice is just as important as input for fluency
