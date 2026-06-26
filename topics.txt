@@ -50,5 +50,5 @@
 [done] Five minutes a day: the minimum viable language learning routine
 [done] How sentence mining can supercharge your vocabulary learning
 [done] The difference between language learning and language acquisition
-How to overcome the intermediate plateau in language learning
+[done] How to overcome the intermediate plateau in language learning
 Why output practice is just as important as input for fluency
