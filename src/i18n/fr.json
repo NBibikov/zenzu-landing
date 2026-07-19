@@ -11,13 +11,18 @@
     "headline1": "Apprenez des langues avec",
     "headlineHighlight": "du vrai contenu",
     "headline2": "que vous aimez",
-    "subheadline": "Importez des vidéos YouTube, des podcasts et des articles. Sélectionnez un mot ou une phrase pour l'enregistrer comme carte. Discutez avec Lisa — votre coach linguistique IA — dans votre propre langue.",
+    "subheadline": "Importez des vidéos YouTube, des podcasts et des articles. Sélectionnez un mot ou une phrase pour l'enregistrer comme carte. Discutez avec Lisa — votre coach linguistique IA — dans votre propre langue. Votre apprentissage, vos données — toujours avec vous.",
     "cta": "Commencer à apprendre — c'est gratuit",
     "ctaSecondary": "Voir comment ça marche",
     "appStoreBadge": "Maintenant disponible sur iOS",
     "appStoreCta": "Télécharger dans l'App Store",
     "supported": "Anglais · Allemand · Français · Espagnol",
     "comingSoon": "Portugais — bientôt disponible"
+  },
+  "name": {
+    "kicker": "Le nom",
+    "title": "D'un esprit calme naît une nouvelle langue.",
+    "body": "Zenzu naît du zen — le calme, la présence, le silence intérieur. La maîtrise d'une langue ne vient pas de séries frénétiques, mais d'un esprit posé et sans hâte. Parler une autre langue devrait ressembler à entrer dans une forêt : vous respirez, vous ralentissez, et chaque mot prend racine comme un arbre dans votre bosquet."
   },
   "features": {
     "title": "Tout ce dont vous avez besoin pour apprendre",
@@ -61,12 +66,13 @@
   },
   "forWhom": {
     "title": "Pour ceux qui prennent les langues au sérieux",
-    "subtitle": "Apprendre une langue est l'une des choses les plus exigeantes — et les plus gratifiantes — que l'on puisse faire. Zenzu est conçu pour ceux qui le comprennent.",
+    "subtitle": "Zenzu est un outil sérieux, pas un jouet — pas de mascottes mignonnes, pas de jeu à gagner, pas d'animations sans fin. Il est fait pour ceux qui veulent posséder leur progression et leurs données. Apprendre une langue est l'une des choses les plus exigeantes et les plus gratifiantes qui soient. Zenzu est conçu exactement pour cela.",
     "forLabel": "Zenzu est pour vous si…",
     "for1": "Vous croyez que la vraie maîtrise vient du contact avec du contenu authentique",
     "for2": "Vous vous engagez à des révisions quotidiennes, même les jours difficiles",
     "for3": "Vous avez des objectifs ambitieux : lire un roman, travailler ou vivre dans une autre langue",
     "for4": "Vous voulez des outils qui respectent votre mémoire, pas seulement votre temps d'écran",
+    "for5": "Vous voulez que vos mots, vos cartes et votre progression restent portables et vraiment vôtres",
     "notForLabel": "Ce n'est pas pour vous si…",
     "notFor1": "Vous cherchez un jeu avec des séries et des trophées virtuels",
     "notFor2": "Vous attendez de parler couramment après quelques sessions décontractées",
@@ -96,6 +102,12 @@
       "title": "Révisez avec la répétition espacée",
       "desc": "L'algorithme FSRS-5 planifie les révisions au moment optimal — chaque minute investie compte."
     }
+  },
+  "mcp": {
+    "kicker": "Bientôt",
+    "title": "Vos données, où que vous travailliez.",
+    "body": "Bientôt, vous connecterez Zenzu à vos propres agents IA via MCP — accédez à vos paquets, cartes et progression depuis votre ordinateur, vos outils préférés, partout. Faites entrer de nouveaux contenus, emportez vos données. Elles restent vôtres et vous suivent partout.",
+    "badge": "Accès anticipé — bientôt"
   },
   "cta": {
     "title": "Commencez à apprendre avec du contenu que vous aimez",

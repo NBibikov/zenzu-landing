@@ -11,13 +11,18 @@
     "headline1": "Learn languages from",
     "headlineHighlight": "real content",
     "headline2": "you love",
-    "subheadline": "Import YouTube videos, podcasts, and articles. Select any word or phrase to save it as a card. Chat with Lisa — your AI language coach — in your own language.",
+    "subheadline": "Import YouTube videos, podcasts, and articles. Select any word or phrase to save it as a card. Chat with Lisa — your AI language coach — in your own language. Your learning, your data — always yours to take with you.",
     "cta": "Start learning — it's free",
     "ctaSecondary": "See how it works",
     "appStoreBadge": "Now available on iOS",
     "appStoreCta": "Download on the App Store",
     "supported": "English · German · French · Spanish",
     "comingSoon": "Portuguese — coming soon"
+  },
+  "name": {
+    "kicker": "The name",
+    "title": "From a quiet mind, a new language grows.",
+    "body": "Zenzu grows from Zen — calm, presence, inner quiet. Fluency doesn't come from frantic streaks, but from a steady, unhurried mind. Speaking another language should feel like walking into a forest: you breathe, you slow down, and every word takes root like a tree in your grove."
   },
   "features": {
     "title": "Everything you need to learn",
@@ -61,12 +66,13 @@
   },
   "forWhom": {
     "title": "For those who take language seriously",
-    "subtitle": "Learning a language is one of the most demanding — and most rewarding — things you can do. Zenzu is built for people who understand that.",
+    "subtitle": "Zenzu is a serious tool, not a toy — no cute mascots, no game to win, no endless animations. It's for people who want to own their progress and their data. Learning a language is one of the most demanding, most rewarding things you can do. Zenzu is built for that.",
     "forLabel": "Zenzu is for you if…",
     "for1": "You believe real fluency comes from engaging with authentic content",
     "for2": "You're committed to daily review, even on hard days",
     "for3": "You have ambitious goals: reading a novel, working, or living in another language",
     "for4": "You want tools that respect your memory, not just your screen time",
+    "for5": "You want your words, cards, and progress to stay portable and truly yours",
     "notForLabel": "It's not for you if…",
     "notFor1": "You're looking for a game with streaks and virtual trophies",
     "notFor2": "You expect to speak fluently after a few casual sessions",
@@ -96,6 +102,12 @@
       "title": "Review with spaced repetition",
       "desc": "FSRS-5 algorithm schedules your reviews at the optimal moment — so every minute you invest counts."
     }
+  },
+  "mcp": {
+    "kicker": "Coming soon",
+    "title": "Your data, wherever you work.",
+    "body": "Soon you'll connect Zenzu to your own AI agents through MCP — reach your decks, cards, and progress from your computer, from your favorite tools, from anywhere. Bring new material in, take your data out. It stays yours, and it goes where you go.",
+    "badge": "Early access — coming soon"
   },
   "cta": {
     "title": "Start learning from content you love",

@@ -11,13 +11,18 @@
     "headline1": "Aprende idiomas con",
     "headlineHighlight": "contenido real",
     "headline2": "que te encanta",
-    "subheadline": "Importa videos de YouTube, podcasts y artículos. Selecciona cualquier palabra o frase para guardarla como tarjeta. Habla con Lisa — tu coach de idiomas con IA — en tu propio idioma.",
+    "subheadline": "Importa videos de YouTube, podcasts y artículos. Selecciona cualquier palabra o frase para guardarla como tarjeta. Habla con Lisa — tu coach de idiomas con IA — en tu propio idioma. Tu aprendizaje, tus datos — siempre contigo.",
     "cta": "Empieza a aprender — es gratis",
     "ctaSecondary": "Mira cómo funciona",
     "appStoreBadge": "Ya disponible en iOS",
     "appStoreCta": "Descargar en App Store",
     "supported": "Inglés · Alemán · Francés · Español",
     "comingSoon": "Portugués — próximamente"
+  },
+  "name": {
+    "kicker": "El nombre",
+    "title": "De una mente serena nace un nuevo idioma.",
+    "body": "Zenzu nace del zen — la calma, la presencia, el silencio interior. La fluidez no llega con rachas frenéticas, sino desde una mente serena y sin prisa. Hablar otro idioma debería sentirse como entrar en un bosque: respiras, vas más despacio, y cada palabra echa raíces como un árbol en tu arboleda."
   },
   "features": {
     "title": "Todo lo que necesitas para aprender",
@@ -61,12 +66,13 @@
   },
   "forWhom": {
     "title": "Para quienes toman los idiomas en serio",
-    "subtitle": "Aprender un idioma es una de las cosas más exigentes — y más gratificantes — que puedes hacer. Zenzu está construido para quienes lo entienden.",
+    "subtitle": "Zenzu es una herramienta seria, no un juguete: sin mascotas adorables, sin un juego que ganar, sin animaciones infinitas. Es para quienes quieren ser dueños de su progreso y de sus datos. Aprender un idioma es una de las cosas más exigentes y más gratificantes que puedes hacer. Zenzu está creado justo para eso.",
     "forLabel": "Zenzu es para ti si…",
     "for1": "Crees que la verdadera fluidez viene de interactuar con contenido auténtico",
     "for2": "Te comprometes a repasar diariamente, incluso en los días difíciles",
     "for3": "Tienes objetivos ambiciosos: leer una novela, trabajar o vivir en otro idioma",
     "for4": "Quieres herramientas que respeten tu memoria, no solo tu tiempo de pantalla",
+    "for5": "Quieres que tus palabras, tarjetas y progreso sigan siendo portables y verdaderamente tuyos",
     "notForLabel": "No es para ti si…",
     "notFor1": "Buscas un juego con rachas y trofeos virtuales",
     "notFor2": "Esperas hablar con fluidez después de unas pocas sesiones relajadas",
@@ -96,6 +102,12 @@
       "title": "Repasa con repetición espaciada",
       "desc": "El algoritmo FSRS-5 programa los repasos en el momento óptimo — para que cada minuto que inviertas cuente."
     }
+  },
+  "mcp": {
+    "kicker": "Próximamente",
+    "title": "Tus datos, dondequiera que trabajes.",
+    "body": "Pronto conectarás Zenzu con tus propios agentes de IA mediante MCP — accede a tus mazos, tarjetas y progreso desde tu ordenador, desde tus herramientas favoritas, desde cualquier lugar. Trae material nuevo, llévate tus datos. Siguen siendo tuyos y van contigo a donde vayas.",
+    "badge": "Acceso anticipado — próximamente"
   },
   "cta": {
     "title": "Empieza a aprender con el contenido que amas",
