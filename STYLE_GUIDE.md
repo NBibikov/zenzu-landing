@@ -11,13 +11,20 @@ Every blog image is a quiet moment in a Japanese garden. No clutter, no noise â€
 | Token | Name | Hex |
 |-------|------|-----|
 | Primary | Moss Green | `#5B7052` |
-| Accent | Warm Sand | `#D4A373` |
-| Background | Rice Paper | `#FAF9F6` |
-| Surface | Raked Sand | `#F2EFE9` |
-| Stone | River Stone | `#79747E` |
-| Dark | Ink | `#1A1C18` |
+| Background | Paper | `#FBFAF7` |
+| Surface | Paper 2 | `#F5F3EC` |
+| Hairline | Hairline | `#E9E5DC` |
+| Stone | River Stone | `#8B8678` |
+| Dark | Ink | `#1C1B18` |
 
 These six values are the only colors that appear in blog images. No other hues.
+
+**Moss is the only accent.** The palette used to carry a Warm Sand accent
+(`#D4A373`) alongside a cream paper (`#FAF9F6`), which is why the first 50
+covers came back with gold leaves and red book spines. Those are retoned by
+`scripts/retone-images.py`; new images must not reintroduce a warm hue. In
+particular there is **no orange, gold, amber or autumn** anywhere in a Zenzu
+image â€” if a scene wants seasonal colour, it gets moss at a different value.
 
 ---
 
@@ -27,8 +34,9 @@ Every generated image appends this suffix verbatim:
 
 ```
 Soft watercolor vector hybrid illustration. No text, no people, no devices, no UI.
-Color palette: moss green #5B7052, white rice paper #FAF9F6, pale raked sand #F2EFE9,
-river stone grey #79747E, ink #1A1C18. Background is near-white rice paper.
+Color palette: moss green #5B7052, paper white #FBFAF7, pale sand #F5F3EC,
+river stone grey #8B8678, ink #1C1B18. Background is near-white paper.
+Absolutely no orange, gold, amber, ochre, autumn or warm-yellow tones anywhere.
 Wabi-sabi Japanese zen aesthetic. Single dominant element, generous white space,
 organic shapes, subtle rice-paper texture. 16:9 landscape blog cover.
 Studio Ghibli warmth meets Headspace minimalism.
@@ -53,7 +61,7 @@ Claude uses this mapping to choose the scene. Pick the closest match; combine on
 | Topic category | Zen element | Why |
 |----------------|-------------|-----|
 | Memory / retention | Moss-covered stone | Slow accumulation, permanence, depth |
-| Vocabulary / words | Autumn leaves drifting, each unique | Many distinct items, natural variety |
+| Vocabulary / words | Green leaves drifting, each unique | Many distinct items, natural variety |
 | Consistency / streak | Stepping stones across still water | Regular steps, a path forward |
 | Motivation / mindset | Single bonsai in dawn mist | Growth, patience, morning freshness |
 | Speaking / pronunciation | Bamboo wind chimes, concentric water rings | Sound made visible, resonance |
