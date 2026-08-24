@@ -4,34 +4,36 @@ import { localePath, type Locale } from '../../i18n'
 interface Props { t: any; locale: Locale }
 const { t, locale } = Astro.props
 const currentYear = new Date().getFullYear()
+// Paper to the end. A dark moss slab under a light page read as a different
+// site, and moss is an accent here, not a field.
 ---
 
-<footer class="bg-moss-dark text-moss-light py-16">
+<footer class="border-t border-hairline text-ink-2 py-16">
   <div class="max-w-6xl mx-auto px-6">
     <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
       <div>
-        <h3 class="font-bold text-white text-lg mb-3">Zenzu</h3>
-        <p class="text-sm leading-relaxed opacity-80">{t.footer.brand}</p>
+        <h3 class="font-serif text-ink text-lg mb-3">Zenzu</h3>
+        <p class="text-sm leading-relaxed">{t.footer.brand}</p>
       </div>
       <div>
-        <h4 class="font-semibold text-white text-sm mb-3">{t.footer.product}</h4>
-        <ul class="space-y-2 text-sm opacity-80">
-          <li><a href="#features" class="hover:text-white transition-colors">{t.nav.features}</a></li>
-          <li><a href="#how-it-works" class="hover:text-white transition-colors">{t.nav.howItWorks}</a></li>
-          <li><a href={localePath('/blog', locale)} class="hover:text-white transition-colors">{t.nav.blog}</a></li>
-          <li><a href="https://app.zenzu.app" class="hover:text-white transition-colors">{t.footer.openApp}</a></li>
+        <h4 class="text-ink text-xs uppercase tracking-[0.18em] font-medium mb-4">{t.footer.product}</h4>
+        <ul class="space-y-2.5 text-sm">
+          <li><a href="#features" class="hover:text-ink transition-colors">{t.nav.features}</a></li>
+          <li><a href="#how-it-works" class="hover:text-ink transition-colors">{t.nav.howItWorks}</a></li>
+          <li><a href={localePath('/blog', locale)} class="hover:text-ink transition-colors">{t.nav.blog}</a></li>
+          <li><a href="https://app.zenzu.app" class="hover:text-ink transition-colors">{t.footer.openApp}</a></li>
         </ul>
       </div>
       <div>
-        <h4 class="font-semibold text-white text-sm mb-3">{t.footer.legal}</h4>
-        <ul class="space-y-2 text-sm opacity-80">
-          <li><a href={localePath('/privacy', locale)} class="hover:text-white transition-colors">{t.footer.privacy}</a></li>
-          <li><a href={localePath('/terms', locale)} class="hover:text-white transition-colors">{t.footer.terms}</a></li>
-          <li><a href={localePath('/contact', locale)} class="hover:text-white transition-colors">{t.footer.contact}</a></li>
+        <h4 class="text-ink text-xs uppercase tracking-[0.18em] font-medium mb-4">{t.footer.legal}</h4>
+        <ul class="space-y-2.5 text-sm">
+          <li><a href={localePath('/privacy', locale)} class="hover:text-ink transition-colors">{t.footer.privacy}</a></li>
+          <li><a href={localePath('/terms', locale)} class="hover:text-ink transition-colors">{t.footer.terms}</a></li>
+          <li><a href={localePath('/contact', locale)} class="hover:text-ink transition-colors">{t.footer.contact}</a></li>
         </ul>
       </div>
     </div>
-    <div class="mt-12 pt-8 border-t border-moss-light/20 text-sm opacity-60 text-center">
+    <div class="mt-12 pt-8 border-t border-hairline text-sm text-ink-3 text-center">
       &copy; {currentYear} Zenzu. {t.footer.rights}
     </div>
   </div>

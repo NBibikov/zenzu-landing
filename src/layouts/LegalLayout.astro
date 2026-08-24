@@ -18,19 +18,19 @@ const strings = t(locale)
   <main class="pt-28 pb-20 px-6">
     <article class="max-w-3xl mx-auto
       prose prose-lg
-      prose-headings:text-moss-dark prose-headings:font-bold
+      prose-headings:text-ink prose-headings:font-serif prose-headings:font-semibold
       prose-h1:text-3xl prose-h1:mb-2
-      prose-h2:text-xl prose-h2:mt-10 prose-h2:mb-4 prose-h2:border-b prose-h2:border-sand-dark prose-h2:pb-2
+      prose-h2:text-xl prose-h2:mt-10 prose-h2:mb-4 prose-h2:border-b prose-h2:border-hairline prose-h2:pb-2
       prose-h3:text-lg prose-h3:mt-6
-      prose-p:text-on-surface-muted prose-p:leading-relaxed
+      prose-p:text-ink-2 prose-p:leading-relaxed
       prose-a:text-moss prose-a:no-underline hover:prose-a:underline
-      prose-li:text-on-surface-muted
-      prose-strong:text-moss-dark
+      prose-li:text-ink-2
+      prose-strong:text-ink
       prose-ul:space-y-1
     ">
       <h1>{title}</h1>
-      <p class="text-sm !text-on-surface-muted/60 !mt-0">Last updated: April 6, 2026</p>
-      <hr class="!mt-4 !mb-8 border-sand-dark" />
+      <p class="text-sm !text-ink-3 !mt-0">Last updated: April 6, 2026</p>
+      <hr class="!mt-4 !mb-8 border-hairline" />
       <slot />
     </article>
   </main>

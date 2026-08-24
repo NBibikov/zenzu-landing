@@ -78,23 +78,22 @@ const socialTitle = ogTitle ?? title
     <link rel="icon" type="image/png" href="/zenzu-icon.png" />
     <link rel="apple-touch-icon" href="/zenzu-icon.png" />
 
-    <!-- Font: Inter (non-render-blocking) -->
+    <!-- Fonts: Lora (content) + Golos Text (UI), matching the app.
+         Both carry full Cyrillic — Inter was the pre-redesign face and the
+         landing was the last place still asking for it. Non-render-blocking. -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..600;1,400..500&family=Golos+Text:wght@400..600&display=swap"
       media="print"
       onload="this.media='all'"
     />
     <noscript>
-      <link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-      />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..600;1,400..500&family=Golos+Text:wght@400..600&display=swap" />
     </noscript>
   </head>
-  <body class="bg-surface text-on-surface font-sans">
+  <body class="bg-paper text-ink font-sans antialiased">
     <slot />
   </body>
 </html>

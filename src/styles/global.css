@@ -2,41 +2,56 @@
 @plugin "@tailwindcss/typography";
 
 /* ============================================================
-   Zenzu Design Tokens
+   Zenzu Design Tokens — Ink & Paper
    Source of truth: Flutter AppTheme (lib/src/core/theme/app_theme.dart)
+
+   One paper, one ink, one accent. The previous palette carried four
+   competing neutrals (#F2EFE9 / #FAFAF5 / #F0EDE5 / #E5E0D8) which read
+   as muddy once placed side by side, and used moss as a large block
+   background. Moss is an accent here: never a field, never a button fill.
    ============================================================ */
 
 @theme {
-  /* Primary — Moss Green family */
+  /* Paper — the ground. paper2 is the only secondary surface. */
+  --color-paper: #FBFAF7;
+  --color-paper-2: #F5F3EC;
+  --color-hairline: #E9E5DC;
+
+  /* Ink — the type hierarchy. No extra hues. */
+  --color-ink: #1C1B18;
+  --color-ink-2: #6C685E;
+  --color-ink-3: #8B8678;
+
+  /* Moss — the single accent. */
   --color-moss: #5B7052;
   --color-moss-dark: #2D3D2A;
-  --color-moss-light: #A2B895;
-  --color-moss-container: #D4E6CC;
+  --color-moss-wash: #EFF2EB;
 
-  /* Secondary — Rice Paper */
-  --color-sand: #F2EFE9;
-  --color-sand-dark: #E5E0D8;
-  --color-warm: #857E78;
-
-  /* Accent */
-  --color-teal: #66A5AD;
-
-  /* Surfaces */
-  --color-surface: #FAFAF5;
-  --color-surface-dim: #F0EDE5;
-  --color-on-surface: #1A1C18;
-  --color-on-surface-muted: #6B6E68;
-
-  /* Font */
-  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  /* Fonts: serif for content, sans for UI — same pairing as the app. */
+  --font-serif: 'Lora', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Golos Text', system-ui, -apple-system, sans-serif;
 }
 
-/* Smooth scrolling */
 html {
   scroll-behavior: smooth;
 }
 
 ::selection {
-  background-color: var(--color-moss-container);
+  background-color: var(--color-moss-wash);
   color: var(--color-moss-dark);
+}
+
+/* Headings speak in the content voice, like every heading in the app. */
+h1, h2, h3 {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
 }

@@ -9,23 +9,20 @@ const steps = [
 ]
 ---
 
-<section id="how-it-works" class="relative py-20 px-6">
-  <img src="/bridge.png" alt="" class="absolute bottom-0 right-0 w-64 opacity-8 pointer-events-none select-none" />
-  <div class="relative max-w-4xl mx-auto">
-    <div class="text-center mb-16">
-      <h2 class="text-3xl md:text-4xl font-bold text-moss-dark mb-4">{t.howItWorks.title}</h2>
-      <p class="text-on-surface-muted text-lg">{t.howItWorks.subtitle}</p>
+<section id="how-it-works" class="py-24 px-6 bg-paper-2">
+  <div class="max-w-3xl mx-auto">
+    <div class="mb-16">
+      <h2 class="font-serif text-3xl md:text-4xl text-ink mb-4">{t.howItWorks.title}</h2>
+      <p class="text-ink-2 text-lg">{t.howItWorks.subtitle}</p>
     </div>
 
-    <div class="space-y-12">
+    <div>
       {steps.map(({ step, title, desc }) => (
-        <div class="flex items-start gap-6">
-          <div class="flex-shrink-0 w-12 h-12 bg-moss-container rounded-full flex items-center justify-center">
-            <span class="text-moss-dark font-bold text-sm">{step}</span>
-          </div>
+        <div class="flex items-baseline gap-8 py-8 border-t border-hairline">
+          <span class="font-serif text-2xl text-ink-3 tabular-nums shrink-0">{step}</span>
           <div>
-            <h3 class="font-bold text-xl text-moss-dark mb-2">{title}</h3>
-            <p class="text-on-surface-muted leading-relaxed">{desc}</p>
+            <h3 class="font-serif text-xl text-ink mb-2">{title}</h3>
+            <p class="text-ink-2 leading-relaxed">{desc}</p>
           </div>
         </div>
       ))}

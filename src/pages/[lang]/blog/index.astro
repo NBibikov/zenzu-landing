@@ -43,12 +43,12 @@ const alternates = blogLocales.map(loc => ({
   <main class="pt-24 pb-20">
     <div class="max-w-6xl mx-auto px-6">
       <div class="mb-12 text-center">
-        <h1 class="text-4xl font-bold text-moss-dark">{strings.blog.title}</h1>
-        <p class="mt-3 text-lg text-on-surface-muted">{strings.blog.subtitle}</p>
+        <h1 class="font-serif text-4xl text-ink">{strings.blog.title}</h1>
+        <p class="mt-3 text-lg text-ink-2">{strings.blog.subtitle}</p>
       </div>
 
       {entries.length === 0 ? (
-        <p class="text-center text-on-surface-muted py-20">{strings.blog.noArticles}</p>
+        <p class="text-center text-ink-2 py-20">{strings.blog.noArticles}</p>
       ) : (
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {entries.map(entry => {

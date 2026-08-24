@@ -10,13 +10,15 @@ const translations: Record<string, typeof en> = { en, uk, de, fr, es, pt }
 export const supportedLocales = ['en', 'uk', 'de', 'fr', 'es', 'pt'] as const
 export type Locale = (typeof supportedLocales)[number]
 
+// Endonyms only. A flag is a country, not a language — the same rule the
+// app follows — and the language's own name already identifies it.
 export const localeNames: Record<Locale, string> = {
-  en: '🇬🇧 English',
-  uk: '🇺🇦 Українська',
-  de: '🇩🇪 Deutsch',
-  fr: '🇫🇷 Français',
-  es: '🇪🇸 Español',
-  pt: '🇵🇹 Português',
+  en: 'English',
+  uk: 'Українська',
+  de: 'Deutsch',
+  fr: 'Français',
+  es: 'Español',
+  pt: 'Português',
 }
 
 export function getLocale(url: URL): Locale {
