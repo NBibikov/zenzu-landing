@@ -1,11 +1,17 @@
 ---
+import Glyph from '../ui/Glyph.astro'
+
 interface Props { t: any }
 const { t } = Astro.props
 
+// The glyph carries the step, the numeral only orders it — so the drawing is
+// the large mark and the number shrinks to a label above it. Drawn the other
+// way round (big numeral, small glyph) the glyph read as an afterthought
+// tucked under the digit.
 const steps = [
-  { step: '01', ...t.howItWorks.step1 },
-  { step: '02', ...t.howItWorks.step2 },
-  { step: '03', ...t.howItWorks.step3 },
+  { step: '01', glyph: 'link', ...t.howItWorks.step1 },
+  { step: '02', glyph: 'select', ...t.howItWorks.step2 },
+  { step: '03', glyph: 'repeat', ...t.howItWorks.step3 },
 ]
 ---
 
@@ -17,9 +23,12 @@ const steps = [
     </div>
 
     <div>
-      {steps.map(({ step, title, desc }) => (
-        <div class="flex items-baseline gap-8 py-8 border-t border-hairline">
-          <span class="font-serif text-2xl text-ink-3 tabular-nums shrink-0">{step}</span>
+      {steps.map(({ step, glyph, title, desc }) => (
+        <div class="flex items-start gap-6 sm:gap-8 py-8 border-t border-hairline">
+          <div class="flex flex-col items-center gap-2 shrink-0 w-12">
+            <span class="text-[11px] uppercase tracking-[0.18em] text-ink-3 tabular-nums leading-none">{step}</span>
+            <Glyph name={glyph} size={38} class="text-moss" />
+          </div>
           <div>
             <h3 class="font-serif text-xl text-ink mb-2">{title}</h3>
             <p class="text-ink-2 leading-relaxed">{desc}</p>

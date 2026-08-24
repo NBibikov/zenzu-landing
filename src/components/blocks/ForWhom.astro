@@ -1,9 +1,13 @@
 ---
+import Glyph from '../ui/Glyph.astro'
+
 interface Props { t: any }
 const { t } = Astro.props
 
 const forItems: string[] = [t.forWhom.for1, t.forWhom.for2, t.forWhom.for3, t.forWhom.for4, t.forWhom.for5]
 const notForItems: string[] = [t.forWhom.notFor1, t.forWhom.notFor2, t.forWhom.notFor3]
+// Marks, not bullets: a moss tick for the 'for you' side and a neutral dash
+// for the other. A cross would style honest scope as failure.
 // Two columns separated by a rule, not two tinted boxes. The 'not for' side
 // used to be washed in warm grey with its own bordered chip — styling an
 // honest list as if it were a warning. Only the label differs.
@@ -23,7 +27,10 @@ const notForItems: string[] = [t.forWhom.notFor1, t.forWhom.notFor2, t.forWhom.n
         </h3>
         <ul>
           {forItems.map((item) => (
-            <li class="text-ink text-[15px] leading-relaxed py-3 border-t border-hairline">{item}</li>
+            <li class="flex items-start gap-3 text-ink text-[15px] leading-relaxed py-3 border-t border-hairline">
+              <Glyph name="tick" size={18} class="text-moss shrink-0 mt-1" />
+              <span>{item}</span>
+            </li>
           ))}
         </ul>
       </div>
@@ -34,7 +41,10 @@ const notForItems: string[] = [t.forWhom.notFor1, t.forWhom.notFor2, t.forWhom.n
         </h3>
         <ul>
           {notForItems.map((item) => (
-            <li class="text-ink-2 text-[15px] leading-relaxed py-3 border-t border-hairline">{item}</li>
+            <li class="flex items-start gap-3 text-ink-2 text-[15px] leading-relaxed py-3 border-t border-hairline">
+              <Glyph name="dash" size={18} class="text-ink-3 shrink-0 mt-1" />
+              <span>{item}</span>
+            </li>
           ))}
         </ul>
       </div>

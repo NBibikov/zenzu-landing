@@ -1,21 +1,25 @@
 ---
+import Glyph from '../ui/Glyph.astro'
+
 interface Props { t: any }
 const { t } = Astro.props
 
+// Glyph per feature — a line drawing in the same ink as the text, so the
+// eye gets a landing point per item without a second colour entering the
+// page. Each feature used to be a shadowed tile led by an emoji; the
+// redesign has no emoji and no cards, but removing the mark entirely left
+// nine headings reading as one undifferentiated block.
 const features = [
-  t.features.lisa,
-  t.features.youtube,
-  t.features.podcasts,
-  t.features.starterDecks,
-  t.features.interface,
-  t.features.courses,
-  t.features.srs,
-  t.features.tts,
-  t.features.import,
+  { glyph: 'coach', ...t.features.lisa },
+  { glyph: 'video', ...t.features.youtube },
+  { glyph: 'podcast', ...t.features.podcasts },
+  { glyph: 'decks', ...t.features.starterDecks },
+  { glyph: 'globe', ...t.features.interface },
+  { glyph: 'book', ...t.features.courses },
+  { glyph: 'clock', ...t.features.srs },
+  { glyph: 'sound', ...t.features.tts },
+  { glyph: 'inbox', ...t.features.import },
 ]
-// A hairline index, not a grid of cards. Each feature used to be a shadowed
-// tile led by an emoji; the redesign has no emoji and no cards, and nine of
-// them competed with the words they were meant to introduce.
 ---
 
 <section id="features" class="py-24 px-6 border-t border-hairline">
@@ -26,8 +30,9 @@ const features = [
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12">
-      {features.map(({ title, desc }) => (
+      {features.map(({ glyph, title, desc }) => (
         <div class="py-6 border-t border-hairline">
+          <Glyph name={glyph} size={32} class="text-moss mb-5" />
           <h3 class="font-serif text-lg text-ink mb-2">{title}</h3>
           <p class="text-ink-2 text-sm leading-relaxed">{desc}</p>
         </div>

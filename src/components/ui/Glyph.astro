@@ -1,0 +1,77 @@
+---
+/**
+ * Ink glyph — a single-weight line drawing, the same mark the hairline
+ * rules are made of. Not an icon set: no fills, no two-tone shapes, no
+ * rounded "app icon" silhouettes, nothing that reads as a badge.
+ *
+ * Why these exist: the redesign removed the emoji that used to lead every
+ * feature and left nothing in their place, so nine features and three steps
+ * read as an undifferentiated wall of text. A line drawing gives the eye a
+ * place to land per item without introducing a second colour — it inherits
+ * `currentColor`, so a glyph is exactly as loud as the text around it.
+ *
+ * Drawn on a 24×24 grid at stroke-width 1.25 so the line matches the 1px
+ * hairline optically at the 22–28px sizes used on the page. Strokes are
+ * NOT scaled with the box (`vector-effect` is deliberately absent): a glyph
+ * rendered larger should get a proportionally heavier line, like ink.
+ */
+interface Props {
+  name: string
+  size?: number
+  class?: string
+}
+const { name, size = 24, class: klass = '' } = Astro.props
+
+// Each entry is raw path data on a 24×24 canvas. Kept as data rather than
+// separate files so the whole vocabulary is legible in one place and drift
+// between glyphs (stroke weight, optical size, margin) is visible at a glance.
+const paths: Record<string, string> = {
+  // Lisa — a leaf, the app's own mark for the coach.
+  coach: 'M20 4c0 8-5 13-12 13H5c0-8 5-13 12-13h3ZM5 20c1.5-4 4-6.5 7.5-8.5',
+  // YouTube — a frame with a play triangle.
+  video: 'M3 6.5h18v11H3zM10.5 10l4 2-4 2z',
+  // Podcast — a microphone on a stand.
+  podcast: 'M12 3.5a2.5 2.5 0 0 1 2.5 2.5v5a2.5 2.5 0 0 1-5 0V6A2.5 2.5 0 0 1 12 3.5ZM6.5 11a5.5 5.5 0 0 0 11 0M12 16.5V20M9 20h6',
+  // Starter decks — stacked cards.
+  decks: 'M6.5 8.5h11v10h-11zM8.5 5.5h11v10',
+  // Interface languages — a globe with a meridian.
+  globe: 'M12 3.5a8.5 8.5 0 1 0 0 17 8.5 8.5 0 0 0 0-17ZM3.5 12h17M12 3.5c2.2 2.3 3.3 5.1 3.3 8.5S14.2 18.2 12 20.5c-2.2-2.3-3.3-5.1-3.3-8.5S9.8 5.8 12 3.5Z',
+  // Courses — an open book.
+  book: 'M12 7.2C10 5.6 7.6 4.8 4.5 4.8v12.6c3.1 0 5.5.8 7.5 2.4 2-1.6 4.4-2.4 7.5-2.4V4.8c-3.1 0-5.5.8-7.5 2.4ZM12 7.2v12.6M7.5 8.6c1 .2 1.9.5 2.7 1M7.5 12.2c1 .2 1.9.5 2.7 1',
+  // FSRS — a clock, the algorithm's whole subject.
+  clock: 'M12 3.5a8.5 8.5 0 1 0 0 17 8.5 8.5 0 0 0 0-17ZM12 7.5V12l3 2',
+  // Pronunciation — a sound wave.
+  sound: 'M3.5 11v2M6.5 8.5v7M9.5 5.5v13M12.5 7.5v9M15.5 4.5v15M18.5 9.5v5M21.5 11.5v1',
+  // Import — an arrow entering a tray.
+  inbox: 'M12 3.5v10M8.5 10 12 13.5 15.5 10M4.5 15v4.5h15V15',
+  // How it works, 01 — a link, the thing you paste.
+  link: 'M10 14a3.5 3.5 0 0 0 5 0l3-3a3.54 3.54 0 0 0-5-5l-1.5 1.5M14 10a3.5 3.5 0 0 0-5 0l-3 3a3.54 3.54 0 0 0 5 5l1.5-1.5',
+  // How it works, 02 — a cursor selecting a word.
+  select: 'M3.5 5.5h17M3.5 10h8M3.5 14.5h5M13 11l7.5 3.4-3.2 1.1 2 3.6-1.9 1.1-2-3.6-2.3 2.4z',
+  // For-whom lists — a check and a plain dash. Deliberately not a cross:
+  // the 'not for you' items are honest scope, not errors.
+  tick: 'M4.5 12.5 9.5 17.5 19.5 6.5',
+  dash: 'M5 12h14',
+  // How it works, 03 — a repeat loop.
+  repeat: 'M5.5 11V9.5A3.5 3.5 0 0 1 9 6h9.5M16 3.5 19 6l-3 2.5M18.5 13v1.5A3.5 3.5 0 0 1 15 18H5.5M8 20.5 5 18l3-2.5',
+}
+
+const d = paths[name]
+if (!d) throw new Error(`Glyph "${name}" is not in the ink vocabulary`)
+---
+
+<svg
+  width={size}
+  height={size}
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1.25"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  class={klass}
+  aria-hidden="true"
+  focusable="false"
+>
+  <path d={d} />
+</svg>
