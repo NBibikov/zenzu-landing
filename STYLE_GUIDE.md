@@ -42,6 +42,29 @@ organic shapes, subtle rice-paper texture. 16:9 landscape blog cover.
 Studio Ghibli warmth meets Headspace minimalism.
 ```
 
+### Always run `scripts/paper-covers.py` on a new cover
+
+The prompt above asks for a #FBFAF7 ground and the generator ignores it —
+every one of the first fifty covers came back on pure #FFFFFF. On the page
+(#FBFAF7) that reads as fifty cold white rectangles pasted onto warm paper,
+which is what made the blog index look "colourful" even though the
+illustrations measured an average saturation of 0.041 — all but greyscale.
+
+So the retone is a required step, not a repair:
+
+```bash
+python3 scripts/paper-covers.py public/blog/<slug>/cover.jpg
+```
+
+It remaps the near-white ground onto the paper white point (proportionally,
+so a light wash inside the drawing is nudged rather than flattened — a hard
+threshold carved a visible edge where wash met ground) and pulls the
+remaining saturation toward moss. It deliberately does NOT tint the frame
+globally: that would also tint the near-black ink lines, which are correct.
+
+Covers whose illustration runs to the edge of the frame (bamboo, foliage)
+have no ground to remap and are left as they are.
+
 ---
 
 ## Scene Composition Rules
