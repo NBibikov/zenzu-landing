@@ -15,8 +15,8 @@
     "headline1": "Learn languages from",
     "headlineHighlight": "real content",
     "headline2": "you love",
-    "subheadline": "Import YouTube videos, podcasts, and articles. Select any word or phrase to save it as a card. Chat with Lisa — your AI language coach — in your own language. Your learning, your data — always yours to take with you.",
-    "cta": "Start learning — it's free",
+    "subheadline": "Import YouTube videos, podcasts, and articles. Select any word or phrase to save it as a card. Chat with Lisa — your AI language coach — in your own language. Your learning, your data — open to your own AI agents through MCP.",
+    "cta": "Start learning",
     "ctaSecondary": "See how it works",
     "appStoreBadge": "Now available on iOS",
     "appStoreCta": "Download on the App Store",
@@ -76,7 +76,7 @@
     "for2": "You're committed to daily review, even on hard days",
     "for3": "You have ambitious goals: reading a novel, working, or living in another language",
     "for4": "You want tools that respect your memory, not just your screen time",
-    "for5": "You want your words, cards, and progress to stay portable and truly yours",
+    "for5": "You want your words, cards and progress to stay yours — and reachable from your own AI agents through MCP",
     "notForLabel": "It's not for you if…",
     "notFor1": "You're looking for a game with streaks and virtual trophies",
     "notFor2": "You expect to speak fluently after a few casual sessions",
@@ -108,15 +108,15 @@
     }
   },
   "mcp": {
-    "kicker": "Coming soon",
+    "kicker": "Available now",
     "title": "Your data, wherever you work.",
-    "body": "Soon you'll connect Zenzu to your own AI agents through MCP — reach your decks, cards, and progress from your computer, from your favorite tools, from anywhere. Bring new material in, take your data out. It stays yours, and it goes where you go.",
-    "badge": "Early access — coming soon"
+    "body": "Connect Zenzu to your own AI agents through MCP — Claude, Cursor or any MCP-compatible assistant can reach your decks, cards and progress from your computer, from your favorite tools, from anywhere. Bring new material in, take your data out. It stays yours, and it goes where you go.",
+    "badge": "In the app: Settings → AI agents → Agent access"
   },
   "cta": {
     "title": "Start learning from content you love",
-    "subtitle": "Free to start. No credit card required. Import your first video or podcast in seconds.",
-    "button": "Get started for free"
+    "subtitle": "Import your first video or podcast in seconds.",
+    "button": "Get started"
   },
   "footer": {
     "brand": "Learn languages from real content you love. YouTube, podcasts, articles — turned into flashcards with AI.",

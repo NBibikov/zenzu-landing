@@ -15,8 +15,8 @@
     "headline1": "Lerne Sprachen mit",
     "headlineHighlight": "echten Inhalten,",
     "headline2": "die du liebst",
-    "subheadline": "Importiere YouTube-Videos, Podcasts und Artikel. Markiere ein Wort oder eine Phrase und speichere sie als Karte. Sprich mit Lisa — deinem KI-Sprachcoach — in deiner eigenen Sprache. Dein Lernen, deine Daten — immer bei dir.",
-    "cta": "Lernen beginnen — es ist kostenlos",
+    "subheadline": "Importiere YouTube-Videos, Podcasts und Artikel. Markiere ein Wort oder eine Phrase und speichere sie als Karte. Sprich mit Lisa — deinem KI-Sprachcoach — in deiner eigenen Sprache. Dein Lernen, deine Daten — offen für deine eigenen KI-Agenten über MCP.",
+    "cta": "Lernen beginnen",
     "ctaSecondary": "Sieh, wie es funktioniert",
     "appStoreBadge": "Jetzt für iOS verfügbar",
     "appStoreCta": "Laden im App Store",
@@ -76,7 +76,7 @@
     "for2": "Du dich zu täglichen Wiederholungen verpflichtest, auch an schwierigen Tagen",
     "for3": "Du ambitionierte Ziele hast: einen Roman lesen, arbeiten oder in einer anderen Sprache leben",
     "for4": "Du Werkzeuge willst, die dein Gedächtnis respektieren, nicht nur deine Bildschirmzeit",
-    "for5": "Du willst, dass deine Wörter, Karten und Fortschritte portabel und wirklich deine bleiben",
+    "for5": "Du willst, dass deine Wörter, Karten und Fortschritte deine bleiben — und über MCP für deine eigenen KI-Agenten erreichbar sind",
     "notForLabel": "Es ist nicht für dich, wenn…",
     "notFor1": "Du ein Spiel mit Serien und virtuellen Trophäen suchst",
     "notFor2": "Du erwartest, nach ein paar lockeren Einheiten fließend zu sprechen",
@@ -108,15 +108,15 @@
     }
   },
   "mcp": {
-    "kicker": "Demnächst",
+    "kicker": "Jetzt verfügbar",
     "title": "Deine Daten, wo immer du arbeitest.",
-    "body": "Bald verbindest du Zenzu über MCP mit deinen eigenen KI-Agenten — erreiche deine Stapel, Karten und Fortschritte von deinem Computer, von deinen Lieblingswerkzeugen, von überall. Bring neues Material hinein, nimm deine Daten mit. Sie bleiben deine und gehen dorthin, wohin du gehst.",
-    "badge": "Früher Zugang — demnächst"
+    "body": "Verbinde Zenzu über MCP mit deinen eigenen KI-Agenten — Claude, Cursor oder jeder MCP-kompatible Assistent erreicht deine Stapel, Karten und Fortschritte von deinem Computer, von deinen Lieblingswerkzeugen, von überall. Bring neues Material hinein, nimm deine Daten mit. Sie bleiben deine und gehen dorthin, wohin du gehst.",
+    "badge": "In der App: Einstellungen → KI-Agenten → Agenten-Zugriff"
   },
   "cta": {
     "title": "Beginne mit Inhalten zu lernen, die du liebst",
-    "subtitle": "Kostenlos starten. Keine Kreditkarte erforderlich. Importiere dein erstes Video oder deinen ersten Podcast in Sekunden.",
-    "button": "Kostenlos loslegen"
+    "subtitle": "Importiere dein erstes Video oder deinen ersten Podcast in Sekunden.",
+    "button": "Loslegen"
   },
   "footer": {
     "brand": "Lerne Sprachen mit echten Inhalten, die du liebst. YouTube, Podcasts, Artikel — von KI in Karteikarten verwandelt.",
