@@ -126,7 +126,8 @@
     "privacy": "Política de Privacidade",
     "terms": "Termos de Serviço",
     "contact": "Contato",
-    "rights": "Todos os direitos reservados."
+    "rights": "Todos os direitos reservados.",
+    "compare": "Comparações"
   },
   "blog": {
     "title": "Blog de aprendizado de idiomas",
@@ -148,10 +149,6 @@
       {
         "q": "O que é o Zenzu?",
         "a": "O Zenzu é um app para aprender idiomas com conteúdo real. Você importa vídeos do YouTube, podcasts, artigos ou fotos de texto, toca em qualquer palavra ou frase para salvá-la como flashcard com a frase original e a pronúncia nativa, e revisa com repetição espaçada FSRS-5. A Lisa, coach de IA integrada, explica palavras e planeja seus estudos no seu idioma."
-      },
-      {
-        "q": "O Zenzu é gratuito?",
-        "a": "Sim. O Zenzu é gratuito na App Store e pode ser usado gratuitamente no navegador em app.zenzu.app."
       },
       {
         "q": "Quais idiomas posso aprender com o Zenzu?",

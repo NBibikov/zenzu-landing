@@ -14,7 +14,6 @@ export const PRODUCT_SUMMARY = `# Zenzu
 ## Key facts
 
 - Platforms: iOS (App Store, iOS 15+) and web (https://app.zenzu.app).
-- Price: free to download and start.
 - Languages you can learn: English, German, French, Spanish. Portuguese is coming soon.
 - Interface and AI coach languages: English, Ukrainian, German, French, Spanish, Portuguese — learners study from their native language, not through English.
 - Spaced repetition: FSRS-5, the same modern scheduler family used by Anki.

@@ -126,7 +126,8 @@
     "privacy": "Datenschutzerklärung",
     "terms": "Nutzungsbedingungen",
     "contact": "Kontakt",
-    "rights": "Alle Rechte vorbehalten."
+    "rights": "Alle Rechte vorbehalten.",
+    "compare": "Vergleiche"
   },
   "blog": {
     "title": "Sprachlern-Blog",
@@ -148,10 +149,6 @@
       {
         "q": "Was ist Zenzu?",
         "a": "Zenzu ist eine Sprachlern-App, mit der du aus echten Inhalten lernst. Du importierst YouTube-Videos, Podcasts, Artikel oder Fotos von Texten, tippst auf ein Wort oder eine Phrase und speicherst sie als Karteikarte mit dem Originalsatz und muttersprachlicher Aussprache. Wiederholungen plant der FSRS-5-Algorithmus. Lisa, der eingebaute KI-Coach, erklärt Wörter und plant dein Lernen in deiner Sprache."
-      },
-      {
-        "q": "Ist Zenzu kostenlos?",
-        "a": "Ja. Zenzu ist im App Store kostenlos und im Browser unter app.zenzu.app kostenlos nutzbar."
       },
       {
         "q": "Welche Sprachen kann ich mit Zenzu lernen?",

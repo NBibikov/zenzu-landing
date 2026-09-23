@@ -1,0 +1,36 @@
+---
+import { getCollection } from 'astro:content'
+import BaseLayout from '../../layouts/BaseLayout.astro'
+import Header from '../../components/layout/Header.astro'
+import Footer from '../../components/layout/Footer.astro'
+import { t } from '../../i18n'
+
+const strings = t('en')
+const entries = (await getCollection('compare')).sort((a, b) =>
+  a.data.competitor.localeCompare(b.data.competitor)
+)
+---
+
+<BaseLayout
+  title="Zenzu compared — Anki, LingQ, Language Reactor, Migaku"
+  description="Honest, sourced comparisons of Zenzu with other tools for learning languages from real content and spaced repetition."
+>
+  <Header t={strings} locale="en" />
+  <main class="pt-24 pb-20">
+    <div class="max-w-3xl mx-auto px-6">
+      <h1 class="font-serif text-3xl md:text-4xl text-ink mb-4 leading-tight">How Zenzu compares</h1>
+      <p class="text-lg text-ink-2 mb-12 leading-relaxed">
+        Side-by-side comparisons with the tools learners most often weigh Zenzu against — including where the other tool is the better choice.
+      </p>
+      <ul>
+        {entries.map(entry => (
+          <li class="py-6 border-t border-hairline">
+            <a href={`/compare/${entry.id}/`} class="font-serif text-xl text-ink hover:text-moss transition-colors">{entry.data.title}</a>
+            <p class="text-ink-2 mt-2 leading-relaxed">{entry.data.description}</p>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </main>
+  <Footer t={strings} locale="en" />
+</BaseLayout>
