@@ -1,0 +1,106 @@
+---
+import { getCollection, render } from 'astro:content'
+import BaseLayout from '../../layouts/BaseLayout.astro'
+import Header from '../../components/layout/Header.astro'
+import Footer from '../../components/layout/Footer.astro'
+import { t } from '../../i18n'
+
+export async function getStaticPaths() {
+  const entries = await getCollection('compare')
+  return entries.map(entry => ({ params: { slug: entry.id }, props: { entry } }))
+}
+
+const { entry } = Astro.props
+const { Content } = await render(entry)
+const strings = t('en')
+
+const site = Astro.site!.toString().replace(/\/$/, '')
+const selfUrl = `${site}/compare/${entry.id}/`
+const { competitor, title, description, updated, verdict, rows, sources } = entry.data
+
+const formattedUpdated = new Intl.DateTimeFormat('en', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+}).format(new Date(updated))
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: title,
+  description,
+  dateModified: updated,
+  inLanguage: 'en',
+  url: selfUrl,
+  mainEntityOfPage: { '@type': 'WebPage', '@id': selfUrl },
+  about: [
+    { '@type': 'SoftwareApplication', name: 'Zenzu', url: `${site}/` },
+    { '@type': 'SoftwareApplication', name: competitor },
+  ],
+  author: { '@type': 'Organization', name: 'Zenzu', url: site },
+  publisher: {
+    '@type': 'Organization',
+    name: 'Zenzu',
+    url: site,
+    logo: { '@type': 'ImageObject', url: `${site}/zenzu-icon.png` },
+  },
+}
+---
+
+<BaseLayout title={`${title} — Zenzu`} ogTitle={title} description={description} ogType="article" jsonLd={jsonLd}>
+  <Header t={strings} locale="en" />
+  <main class="pt-24 pb-20">
+    <div class="max-w-3xl mx-auto px-6">
+      <a href="/compare/" class="inline-flex items-center gap-1 text-sm text-ink-2 hover:text-moss transition-colors mb-8">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg>
+        All comparisons
+      </a>
+
+      <h1 class="font-serif text-3xl md:text-4xl text-ink mb-4 leading-tight">{title}</h1>
+      <p class="text-sm text-ink-2 mb-8">
+        Facts checked against official sources on <time datetime={updated}>{formattedUpdated}</time>.
+        Written by the Zenzu team — we build one of these tools, so our sources are listed below.
+      </p>
+
+      <p class="text-lg text-ink leading-relaxed mb-10">{verdict}</p>
+
+      <div class="overflow-x-auto mb-12 -mx-6 px-6">
+        <table class="w-full text-sm border-collapse min-w-[520px]">
+          <caption class="sr-only">Zenzu and {competitor} compared feature by feature</caption>
+          <thead>
+            <tr class="text-left border-b border-hairline">
+              <th scope="col" class="py-3 pr-4 font-medium text-ink-2 w-1/4"></th>
+              <th scope="col" class="py-3 pr-4 font-serif text-lg text-ink">Zenzu</th>
+              <th scope="col" class="py-3 font-serif text-lg text-ink">{competitor}</th>
+            </tr>
+          </thead>
+          <tbody>
+            {rows.map(row => (
+              <tr class="border-b border-hairline align-top">
+                <th scope="row" class="py-3 pr-4 text-left font-medium text-ink">{row.feature}</th>
+                <td class="py-3 pr-4 text-ink-2 leading-relaxed">{row.zenzu}</td>
+                <td class="py-3 text-ink-2 leading-relaxed">{row.other}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <article class="prose prose-lg prose-headings:text-ink prose-a:text-moss prose-strong:text-ink max-w-none">
+        <Content />
+      </article>
+
+      <section class="mt-12 pt-6 border-t border-hairline">
+        <h2 class="text-xs uppercase tracking-[0.18em] font-medium text-ink mb-3">Sources</h2>
+        <ul class="space-y-1 text-sm">
+          {sources.map(src => (
+            <li><a href={src.url} rel="noopener" class="text-ink-2 hover:text-moss underline underline-offset-2">{src.label}</a></li>
+          ))}
+        </ul>
+      </section>
+    </div>
+  </main>
+  <Footer t={strings} locale="en" />
+</BaseLayout>

@@ -9,6 +9,7 @@ import Features from '../blocks/Features.astro'
 import HowItWorks from '../blocks/HowItWorks.astro'
 import Mcp from '../blocks/Mcp.astro'
 import Quotes from '../blocks/Quotes.astro'
+import Faq from '../blocks/Faq.astro'
 import CTA from '../blocks/CTA.astro'
 import { t, supportedLocales, localePath, type Locale } from '../../i18n'
 
@@ -60,7 +61,6 @@ const jsonLd = {
       downloadUrl: appStoreUrl,
       inLanguage: [...supportedLocales],
       image: `${site}/og-default.png`,
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
       featureList: [
         'Learn from YouTube videos with an interactive transcript',
         'AI-transcribed podcasts',
@@ -72,6 +72,16 @@ const jsonLd = {
         'Interface in English, Ukrainian, German, French, Spanish and Portuguese',
       ],
       publisher: { '@id': `${site}/#organization` },
+    },
+    {
+      '@type': 'FAQPage',
+      '@id': `${homeUrl(locale)}#faq`,
+      inLanguage: locale,
+      mainEntity: strings.faq.items.map(({ q, a }: { q: string; a: string }) => ({
+        '@type': 'Question',
+        name: q,
+        acceptedAnswer: { '@type': 'Answer', text: a },
+      })),
     },
   ],
 }
@@ -93,6 +103,7 @@ const jsonLd = {
     <HowItWorks t={strings} />
     <Mcp t={strings} />
     <Quotes t={strings} />
+    <Faq t={strings} />
     <CTA t={strings} />
   </main>
   <Footer t={strings} locale={locale} />

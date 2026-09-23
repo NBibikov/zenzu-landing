@@ -126,7 +126,8 @@
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
     "contact": "Contact",
-    "rights": "All rights reserved."
+    "rights": "All rights reserved.",
+    "compare": "Compare"
   },
   "blog": {
     "title": "Language Learning Blog",
@@ -141,5 +142,34 @@
     "title": "Today's News",
     "subtitle": "Read real news summaries in the language you're learning — tap any sentence to translate.",
     "empty": "No news yet — check back soon"
+  },
+  "faq": {
+    "title": "Questions, answered",
+    "items": [
+      {
+        "q": "What is Zenzu?",
+        "a": "Zenzu is a language learning app for learning from real content. You import YouTube videos, podcasts, articles or photos of text, tap any word or phrase to save it as a flashcard with its original sentence and native pronunciation, and review it with FSRS-5 spaced repetition. Lisa, the built-in AI coach, explains words and plans your study in your own language."
+      },
+      {
+        "q": "Which languages can I learn with Zenzu?",
+        "a": "English, German, French and Spanish. Portuguese is coming soon. The app interface and the AI coach work in English, Ukrainian, German, French, Spanish and Portuguese."
+      },
+      {
+        "q": "Which devices does Zenzu run on?",
+        "a": "iPhone and iPad with iOS 15 or later, and any modern web browser at app.zenzu.app."
+      },
+      {
+        "q": "How is Zenzu different from Anki?",
+        "a": "Both use FSRS spaced repetition, but in Anki you build cards yourself. Zenzu builds them from the content you are already watching, listening to or reading: every card keeps the sentence it came from and comes with native audio, so vocabulary is always learned in context."
+      },
+      {
+        "q": "Do I need to know English to use Zenzu?",
+        "a": "No. You can use Zenzu entirely in Ukrainian, German, French, Spanish or Portuguese, so explanations, translations and coaching arrive in the language you think in."
+      },
+      {
+        "q": "What spaced repetition algorithm does Zenzu use?",
+        "a": "FSRS-5, a modern open-source scheduler trained on large amounts of real review data. It predicts when you are about to forget each card and schedules the review right before that moment."
+      }
+    ]
   }
 }
