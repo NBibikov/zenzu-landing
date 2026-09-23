@@ -141,5 +141,38 @@
     "title": "Noticias de hoy",
     "subtitle": "Lee resúmenes de noticias reales en el idioma que estás aprendiendo — toca cualquier frase para traducir.",
     "empty": "Aún no hay noticias — vuelve pronto"
+  },
+  "faq": {
+    "title": "Preguntas frecuentes",
+    "items": [
+      {
+        "q": "¿Qué es Zenzu?",
+        "a": "Zenzu es una app para aprender idiomas con contenido real. Importas vídeos de YouTube, pódcasts, artículos o fotos de texto, tocas cualquier palabra o frase para guardarla como tarjeta con su oración original y pronunciación nativa, y la repasas con repetición espaciada FSRS-5. Lisa, la coach de IA integrada, explica palabras y planifica tu estudio en tu idioma."
+      },
+      {
+        "q": "¿Zenzu es gratis?",
+        "a": "Sí. Zenzu se descarga gratis en el App Store y se usa gratis en el navegador en app.zenzu.app."
+      },
+      {
+        "q": "¿Qué idiomas puedo aprender con Zenzu?",
+        "a": "Inglés, alemán, francés y español. El portugués llegará pronto. La interfaz y la coach de IA funcionan en español, inglés, ucraniano, alemán, francés y portugués."
+      },
+      {
+        "q": "¿En qué dispositivos funciona Zenzu?",
+        "a": "En iPhone y iPad con iOS 15 o posterior, y en cualquier navegador moderno en app.zenzu.app."
+      },
+      {
+        "q": "¿En qué se diferencia Zenzu de Anki?",
+        "a": "Ambos usan repetición espaciada FSRS, pero en Anki creas las tarjetas tú. Zenzu las crea a partir del contenido que ya ves, escuchas o lees: cada tarjeta conserva la oración de la que salió y trae audio nativo, así que el vocabulario siempre se aprende en contexto."
+      },
+      {
+        "q": "¿Necesito saber inglés para usar Zenzu?",
+        "a": "No. Puedes usar Zenzu completamente en español: explicaciones, traducciones y consejos de la coach llegan en el idioma en el que piensas."
+      },
+      {
+        "q": "¿Qué algoritmo de repetición espaciada usa Zenzu?",
+        "a": "FSRS-5, un algoritmo moderno de código abierto entrenado con grandes cantidades de repasos reales. Predice cuándo estás a punto de olvidar cada tarjeta y programa el repaso justo antes."
+      }
+    ]
   }
 }

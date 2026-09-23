@@ -23,7 +23,7 @@ export const PRODUCT_SUMMARY = `# Zenzu
 - AI courses: grammar and vocabulary lessons for English, German, French and Spanish, CEFR A1 to C1.
 - Starter decks: 18 curated decks from A1 to C1 (everyday, business, academic, science, idioms and more).
 - Pronunciation: text-to-speech audio for every word and sentence.
-- Data ownership: cards and progress stay portable; MCP access for your own AI agents is coming soon.
+- Coming soon: an MCP connection so your own AI agents can reach your decks, cards and progress.
 - Who it is for: serious, self-directed learners who want immersion in authentic content. It deliberately has no mascots, streak games or trophies.
 
 ## Links

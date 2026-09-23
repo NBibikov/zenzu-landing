@@ -141,5 +141,38 @@
     "title": "Notícias de hoje",
     "subtitle": "Leia resumos de notícias reais no idioma que está a aprender — toque numa frase para traduzir.",
     "empty": "Ainda sem notícias — volte em breve"
+  },
+  "faq": {
+    "title": "Perguntas frequentes",
+    "items": [
+      {
+        "q": "O que é o Zenzu?",
+        "a": "O Zenzu é um app para aprender idiomas com conteúdo real. Você importa vídeos do YouTube, podcasts, artigos ou fotos de texto, toca em qualquer palavra ou frase para salvá-la como flashcard com a frase original e a pronúncia nativa, e revisa com repetição espaçada FSRS-5. A Lisa, coach de IA integrada, explica palavras e planeja seus estudos no seu idioma."
+      },
+      {
+        "q": "O Zenzu é gratuito?",
+        "a": "Sim. O Zenzu é gratuito na App Store e pode ser usado gratuitamente no navegador em app.zenzu.app."
+      },
+      {
+        "q": "Quais idiomas posso aprender com o Zenzu?",
+        "a": "Inglês, alemão, francês e espanhol. O português chega em breve. A interface e a coach de IA funcionam em português, inglês, ucraniano, alemão, francês e espanhol."
+      },
+      {
+        "q": "Em quais dispositivos o Zenzu funciona?",
+        "a": "No iPhone e iPad com iOS 15 ou posterior, e em qualquer navegador moderno em app.zenzu.app."
+      },
+      {
+        "q": "Qual a diferença entre o Zenzu e o Anki?",
+        "a": "Ambos usam repetição espaçada FSRS, mas no Anki você cria os cartões sozinho. O Zenzu os cria a partir do conteúdo que você já assiste, ouve ou lê: cada cartão guarda a frase de origem e vem com áudio nativo, então o vocabulário é sempre aprendido em contexto."
+      },
+      {
+        "q": "Preciso saber inglês para usar o Zenzu?",
+        "a": "Não. Você pode usar o Zenzu inteiramente em português: explicações, traduções e orientações da coach chegam no idioma em que você pensa."
+      },
+      {
+        "q": "Qual algoritmo de repetição espaçada o Zenzu usa?",
+        "a": "FSRS-5, um algoritmo moderno e de código aberto treinado com grandes volumes de revisões reais. Ele prevê quando você está prestes a esquecer cada cartão e agenda a revisão logo antes disso."
+      }
+    ]
   }
 }

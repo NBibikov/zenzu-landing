@@ -141,5 +141,38 @@
     "title": "Nachrichten heute",
     "subtitle": "Lies echte Nachrichtenzusammenfassungen in der Sprache, die du lernst — tippe auf einen Satz zum Übersetzen.",
     "empty": "Noch keine Nachrichten — schau bald wieder vorbei"
+  },
+  "faq": {
+    "title": "Häufige Fragen",
+    "items": [
+      {
+        "q": "Was ist Zenzu?",
+        "a": "Zenzu ist eine Sprachlern-App, mit der du aus echten Inhalten lernst. Du importierst YouTube-Videos, Podcasts, Artikel oder Fotos von Texten, tippst auf ein Wort oder eine Phrase und speicherst sie als Karteikarte mit dem Originalsatz und muttersprachlicher Aussprache. Wiederholungen plant der FSRS-5-Algorithmus. Lisa, der eingebaute KI-Coach, erklärt Wörter und plant dein Lernen in deiner Sprache."
+      },
+      {
+        "q": "Ist Zenzu kostenlos?",
+        "a": "Ja. Zenzu ist im App Store kostenlos und im Browser unter app.zenzu.app kostenlos nutzbar."
+      },
+      {
+        "q": "Welche Sprachen kann ich mit Zenzu lernen?",
+        "a": "Englisch, Deutsch, Französisch und Spanisch. Portugiesisch folgt bald. Die Oberfläche und der KI-Coach sprechen Deutsch, Englisch, Ukrainisch, Französisch, Spanisch und Portugiesisch."
+      },
+      {
+        "q": "Auf welchen Geräten läuft Zenzu?",
+        "a": "Auf iPhone und iPad ab iOS 15 sowie in jedem modernen Browser unter app.zenzu.app."
+      },
+      {
+        "q": "Was unterscheidet Zenzu von Anki?",
+        "a": "Beide nutzen FSRS-Wiederholung, aber in Anki erstellst du Karten selbst. Zenzu erstellt sie aus den Inhalten, die du ohnehin schaust, hörst oder liest: Jede Karte behält ihren Originalsatz und bringt muttersprachliche Audioaufnahmen mit — so lernst du Vokabeln immer im Kontext."
+      },
+      {
+        "q": "Muss ich Englisch können, um Zenzu zu nutzen?",
+        "a": "Nein. Du kannst Zenzu komplett auf Deutsch nutzen — Erklärungen, Übersetzungen und Coaching bekommst du in der Sprache, in der du denkst."
+      },
+      {
+        "q": "Welchen Wiederholungsalgorithmus nutzt Zenzu?",
+        "a": "FSRS-5, einen modernen Open-Source-Algorithmus, der auf großen Mengen echter Wiederholungsdaten trainiert wurde. Er sagt voraus, wann du eine Karte vergessen würdest, und plant die Wiederholung kurz davor."
+      }
+    ]
   }
 }

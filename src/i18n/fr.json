@@ -141,5 +141,38 @@
     "title": "Actualités du jour",
     "subtitle": "Lisez des résumés d'actualités réelles dans la langue que vous apprenez — appuyez sur une phrase pour la traduire.",
     "empty": "Pas encore d'actualités — revenez bientôt"
+  },
+  "faq": {
+    "title": "Questions fréquentes",
+    "items": [
+      {
+        "q": "Qu'est-ce que Zenzu ?",
+        "a": "Zenzu est une application pour apprendre les langues à partir de vrais contenus. Vous importez des vidéos YouTube, des podcasts, des articles ou des photos de texte, touchez un mot ou une expression pour l'enregistrer en flashcard avec sa phrase d'origine et la prononciation native, puis vous révisez avec la répétition espacée FSRS-5. Lisa, le coach IA intégré, explique les mots et organise votre apprentissage dans votre langue."
+      },
+      {
+        "q": "Zenzu est-il gratuit ?",
+        "a": "Oui. Zenzu se télécharge gratuitement sur l'App Store et s'utilise gratuitement dans le navigateur sur app.zenzu.app."
+      },
+      {
+        "q": "Quelles langues puis-je apprendre avec Zenzu ?",
+        "a": "L'anglais, l'allemand, le français et l'espagnol. Le portugais arrive bientôt. L'interface et le coach IA fonctionnent en français, anglais, ukrainien, allemand, espagnol et portugais."
+      },
+      {
+        "q": "Sur quels appareils Zenzu fonctionne-t-il ?",
+        "a": "Sur iPhone et iPad avec iOS 15 ou ultérieur, et dans tout navigateur récent sur app.zenzu.app."
+      },
+      {
+        "q": "En quoi Zenzu est-il différent d'Anki ?",
+        "a": "Les deux utilisent la répétition espacée FSRS, mais dans Anki vous créez vos cartes vous-même. Zenzu les crée à partir des contenus que vous regardez, écoutez ou lisez déjà : chaque carte garde sa phrase d'origine et un audio natif, pour toujours apprendre le vocabulaire en contexte."
+      },
+      {
+        "q": "Faut-il parler anglais pour utiliser Zenzu ?",
+        "a": "Non. Vous pouvez utiliser Zenzu entièrement en français : explications, traductions et conseils du coach arrivent dans la langue dans laquelle vous pensez."
+      },
+      {
+        "q": "Quel algorithme de répétition espacée Zenzu utilise-t-il ?",
+        "a": "FSRS-5, un algorithme moderne et open source entraîné sur de grandes quantités de révisions réelles. Il prédit quand vous êtes sur le point d'oublier une carte et programme la révision juste avant."
+      }
+    ]
   }
 }
