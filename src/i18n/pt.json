@@ -1,4 +1,8 @@
 {
+  "meta": {
+    "title": "Zenzu — Aprenda idiomas com conteúdo real",
+    "description": "Aprenda idiomas com YouTube, podcasts e artigos. Flashcards com IA, repetição espaçada FSRS e um coach de idiomas com IA que fala português."
+  },
   "nav": {
     "features": "Recursos",
     "howItWorks": "Como funciona",

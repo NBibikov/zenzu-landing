@@ -1,4 +1,8 @@
 {
+  "meta": {
+    "title": "Zenzu — Aprende idiomas con contenido real",
+    "description": "Aprende idiomas con YouTube, pódcasts y artículos. Tarjetas con IA, repetición espaciada FSRS y un coach de idiomas con IA que habla español."
+  },
   "nav": {
     "features": "Características",
     "howItWorks": "Cómo funciona",

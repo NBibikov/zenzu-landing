@@ -1,4 +1,8 @@
 {
+  "meta": {
+    "title": "Zenzu — Apprenez les langues avec du vrai contenu",
+    "description": "Apprenez les langues avec YouTube, des podcasts et des articles. Flashcards IA avec répétition espacée FSRS et un coach IA qui parle français."
+  },
   "nav": {
     "features": "Fonctionnalités",
     "howItWorks": "Comment ça marche",

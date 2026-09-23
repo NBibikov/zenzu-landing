@@ -1,4 +1,8 @@
 {
+  "meta": {
+    "title": "Zenzu — Sprachen lernen mit echten Inhalten",
+    "description": "Lerne Sprachen mit YouTube-Videos, Podcasts und Artikeln. KI-Karteikarten mit FSRS-Wiederholungssystem und ein KI-Sprachcoach auf Deutsch."
+  },
   "nav": {
     "features": "Funktionen",
     "howItWorks": "Wie es funktioniert",
