@@ -1,4 +1,8 @@
 {
+  "meta": {
+    "title": "Zenzu — Learn Languages from Real Content",
+    "description": "Learn languages from real content — YouTube, podcasts, articles. AI flashcards with FSRS spaced repetition and an AI language coach."
+  },
   "nav": {
     "features": "Features",
     "howItWorks": "How it works",

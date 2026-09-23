@@ -1,0 +1,99 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro'
+import Header from './Header.astro'
+import Footer from './Footer.astro'
+import Hero from '../blocks/Hero.astro'
+import TheName from '../blocks/TheName.astro'
+import ForWhom from '../blocks/ForWhom.astro'
+import Features from '../blocks/Features.astro'
+import HowItWorks from '../blocks/HowItWorks.astro'
+import Mcp from '../blocks/Mcp.astro'
+import Quotes from '../blocks/Quotes.astro'
+import CTA from '../blocks/CTA.astro'
+import { t, supportedLocales, localePath, type Locale } from '../../i18n'
+
+interface Props {
+  locale: Locale
+}
+
+const { locale } = Astro.props
+const strings = t(locale)
+
+const site = Astro.site!.toString().replace(/\/$/, '')
+const homeUrl = (loc: Locale) => `${site}${localePath('/', loc)}`
+
+const alternates = supportedLocales.map(loc => ({ hreflang: loc, href: homeUrl(loc) }))
+
+const appStoreUrl = 'https://apps.apple.com/app/zenzu-ai-language-mastery/id6761502445'
+
+// One @graph so the organization, the site and the app reference each other by @id.
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Organization',
+      '@id': `${site}/#organization`,
+      name: 'Zenzu',
+      url: `${site}/`,
+      logo: `${site}/zenzu-icon.png`,
+      email: 'hello@zenzu.app',
+      sameAs: [appStoreUrl],
+    },
+    {
+      '@type': 'WebSite',
+      '@id': `${site}/#website`,
+      name: 'Zenzu',
+      url: `${site}/`,
+      inLanguage: [...supportedLocales],
+      publisher: { '@id': `${site}/#organization` },
+    },
+    {
+      '@type': 'SoftwareApplication',
+      '@id': `${site}/#app`,
+      name: 'Zenzu',
+      alternateName: 'Zenzu: AI Language Mastery',
+      description: strings.meta.description,
+      url: homeUrl(locale),
+      applicationCategory: 'EducationalApplication',
+      operatingSystem: 'iOS 15.0 or later, Web',
+      installUrl: appStoreUrl,
+      downloadUrl: appStoreUrl,
+      inLanguage: [...supportedLocales],
+      image: `${site}/og-default.png`,
+      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+      featureList: [
+        'Learn from YouTube videos with an interactive transcript',
+        'AI-transcribed podcasts',
+        'Save any word or phrase as a flashcard with sentence context',
+        'FSRS-5 spaced repetition scheduling',
+        'AI language coach that replies in your native language',
+        'AI grammar and vocabulary courses from A1 to C1',
+        'Native pronunciation for every word and sentence',
+        'Interface in English, Ukrainian, German, French, Spanish and Portuguese',
+      ],
+      publisher: { '@id': `${site}/#organization` },
+    },
+  ],
+}
+---
+
+<BaseLayout
+  title={strings.meta.title}
+  description={strings.meta.description}
+  lang={locale}
+  alternates={alternates}
+  jsonLd={jsonLd}
+>
+  <Header t={strings} locale={locale} />
+  <main>
+    <Hero t={strings} />
+    <TheName t={strings} />
+    <ForWhom t={strings} />
+    <Features t={strings} />
+    <HowItWorks t={strings} />
+    <Mcp t={strings} />
+    <Quotes t={strings} />
+    <CTA t={strings} />
+  </main>
+  <Footer t={strings} locale={locale} />
+</BaseLayout>

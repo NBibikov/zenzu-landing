@@ -85,7 +85,7 @@ const jsonLd = {
     <div class="max-w-3xl mx-auto px-6">
       <!-- Back link -->
       <a
-        href="/blog"
+        href="/blog/"
         class="inline-flex items-center gap-1 text-sm text-ink-2 hover:text-moss transition-colors mb-8"
       >
         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -103,7 +103,7 @@ const jsonLd = {
 
       <!-- Meta -->
       <div class="flex items-center justify-between flex-wrap gap-4 mb-6">
-        <time class="text-sm text-ink-2">{strings.blog.publishedOn} {formattedDate}</time>
+        <time datetime={entry.data.date} class="text-sm text-ink-2">{strings.blog.publishedOn} {formattedDate}</time>
 
         <!-- Language switcher -->
         {translationLocales.length > 0 && (
@@ -111,7 +111,7 @@ const jsonLd = {
             <span class="text-xs text-ink-2">{strings.blog.readIn}:</span>
             {translationLocales.map(loc => (
               <a
-                href={`/${loc}/blog/${articleSlug}`}
+                href={`/${loc}/blog/${articleSlug}/`}
                 class="text-xs px-2 py-1 rounded-full bg-paper-2 hover:bg-hairline text-ink transition-colors font-medium"
               >
                 {localeNames[loc]}
