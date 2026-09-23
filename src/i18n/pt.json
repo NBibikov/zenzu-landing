@@ -15,8 +15,8 @@
     "headline1": "Aprenda idiomas com",
     "headlineHighlight": "conteúdo real",
     "headline2": "que você ama",
-    "subheadline": "Importe vídeos do YouTube, podcasts e artigos. Selecione qualquer palavra ou frase para salvar como cartão. Converse com a Lisa — sua coach de idiomas com IA — no seu próprio idioma. Seu aprendizado, seus dados — sempre com você.",
-    "cta": "Comece a aprender — é grátis",
+    "subheadline": "Importe vídeos do YouTube, podcasts e artigos. Selecione qualquer palavra ou frase para salvar como cartão. Converse com a Lisa — sua coach de idiomas com IA — no seu próprio idioma. Seu aprendizado, seus dados — abertos aos seus próprios agentes de IA via MCP.",
+    "cta": "Comece a aprender",
     "ctaSecondary": "Veja como funciona",
     "appStoreBadge": "Já disponível no iOS",
     "appStoreCta": "Baixar na App Store",
@@ -76,7 +76,7 @@
     "for2": "Você se compromete com revisões diárias, mesmo nos dias difíceis",
     "for3": "Você tem objetivos ambiciosos: ler um romance, trabalhar ou viver em outro idioma",
     "for4": "Você quer ferramentas que respeitem sua memória, não apenas seu tempo de tela",
-    "for5": "Você quer que suas palavras, cartões e progresso permaneçam portáteis e realmente seus",
+    "for5": "Você quer que suas palavras, cartões e progresso continuem seus — e acessíveis aos seus próprios agentes de IA via MCP",
     "notForLabel": "Não é para você se…",
     "notFor1": "Você procura um jogo com sequências e troféus virtuais",
     "notFor2": "Você espera falar fluentemente depois de algumas sessões descontraídas",
@@ -108,15 +108,15 @@
     }
   },
   "mcp": {
-    "kicker": "Em breve",
+    "kicker": "Já disponível",
     "title": "Seus dados, onde quer que você trabalhe.",
-    "body": "Em breve você poderá conectar o Zenzu aos seus próprios agentes de IA via MCP — acesse seus baralhos, cartões e progresso do seu computador, das suas ferramentas favoritas, de qualquer lugar. Traga novo material, leve seus dados. Eles continuam seus e vão aonde você for.",
-    "badge": "Acesso antecipado — em breve"
+    "body": "Conecte o Zenzu aos seus próprios agentes de IA via MCP — Claude, Cursor ou qualquer assistente compatível com MCP acessa seus baralhos, cartões e progresso do seu computador, das suas ferramentas favoritas, de qualquer lugar. Traga novo material, leve seus dados. Eles continuam seus e vão aonde você for.",
+    "badge": "No app: Ajustes → Agentes de IA → Acesso de agentes"
   },
   "cta": {
     "title": "Comece a aprender com o conteúdo que você ama",
-    "subtitle": "Comece de graça. Sem cartão de crédito. Importe seu primeiro vídeo ou podcast em segundos.",
-    "button": "Comece de graça"
+    "subtitle": "Importe seu primeiro vídeo ou podcast em segundos.",
+    "button": "Começar"
   },
   "footer": {
     "brand": "Aprenda idiomas com conteúdo real que você ama. YouTube, podcasts, artigos — transformados em flashcards com IA.",
