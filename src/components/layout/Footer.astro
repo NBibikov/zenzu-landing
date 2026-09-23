@@ -20,16 +20,16 @@ const currentYear = new Date().getFullYear()
         <ul class="space-y-2.5 text-sm">
           <li><a href="#features" class="hover:text-ink transition-colors">{t.nav.features}</a></li>
           <li><a href="#how-it-works" class="hover:text-ink transition-colors">{t.nav.howItWorks}</a></li>
-          <li><a href={localePath('/blog', locale)} class="hover:text-ink transition-colors">{t.nav.blog}</a></li>
+          <li><a href={localePath('/blog/', locale)} class="hover:text-ink transition-colors">{t.nav.blog}</a></li>
           <li><a href="https://app.zenzu.app" class="hover:text-ink transition-colors">{t.footer.openApp}</a></li>
         </ul>
       </div>
       <div>
         <h4 class="text-ink text-xs uppercase tracking-[0.18em] font-medium mb-4">{t.footer.legal}</h4>
         <ul class="space-y-2.5 text-sm">
-          <li><a href={localePath('/privacy', locale)} class="hover:text-ink transition-colors">{t.footer.privacy}</a></li>
-          <li><a href={localePath('/terms', locale)} class="hover:text-ink transition-colors">{t.footer.terms}</a></li>
-          <li><a href={localePath('/contact', locale)} class="hover:text-ink transition-colors">{t.footer.contact}</a></li>
+          <li><a href={localePath('/privacy/', locale)} class="hover:text-ink transition-colors">{t.footer.privacy}</a></li>
+          <li><a href={localePath('/terms/', locale)} class="hover:text-ink transition-colors">{t.footer.terms}</a></li>
+          <li><a href={localePath('/contact/', locale)} class="hover:text-ink transition-colors">{t.footer.contact}</a></li>
         </ul>
       </div>
     </div>
