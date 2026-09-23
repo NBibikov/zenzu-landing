@@ -13,6 +13,8 @@ interface Props {
   alternates?: { hreflang: string; href: string }[]
   /** JSON-LD structured data object (rendered as application/ld+json). */
   jsonLd?: Record<string, unknown>
+  /** Keep the page out of the index (404 etc.): emits robots noindex and drops the canonical. */
+  noindex?: boolean
 }
 
 const {
@@ -24,6 +26,7 @@ const {
   ogTitle,
   alternates,
   jsonLd,
+  noindex = false,
 } = Astro.props
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site)
@@ -41,7 +44,9 @@ const socialTitle = ogTitle ?? title
     <!-- SEO -->
     <title>{title}</title>
     <meta name="description" content={description} />
-    <link rel="canonical" href={canonicalURL} />
+    {noindex
+      ? <meta name="robots" content="noindex" />
+      : <link rel="canonical" href={canonicalURL} />}
 
     <!-- hreflang alternates -->
     {alternates?.map(alt => (
