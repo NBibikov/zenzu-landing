@@ -134,9 +134,11 @@
     "subtitle": "Consejos, guías e ideas para estudiantes de idiomas",
     "readMore": "Leer más",
     "backToBlog": "Volver al blog",
-    "publishedOn": "Publicado el",
     "readIn": "Leer este artículo en",
-    "noArticles": "Aún no hay artículos. ¡Vuelve pronto!"
+    "noArticles": "Aún no hay artículos. ¡Vuelve pronto!",
+    "minRead": "{n} min de lectura",
+    "moreArticles": "Sigue leyendo",
+    "latest": "Nuevo"
   },
   "news": {
     "title": "Noticias de hoy",

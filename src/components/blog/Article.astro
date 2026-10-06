@@ -1,0 +1,128 @@
+---
+import { render, type CollectionEntry } from 'astro:content'
+import BlogCard from './BlogCard.astro'
+import { localeNames, localePath, supportedLocales, type Locale } from '../../i18n'
+
+interface Props {
+  entry: CollectionEntry<'blog'>
+  locale: Locale
+  t: any
+  /** The whole blog collection — the page has already loaded it. */
+  allEntries: CollectionEntry<'blog'>[]
+  /** Every locale this article exists in — the same list the page's hreflang uses. */
+  available: Locale[]
+}
+
+const { entry, locale, t, allEntries, available: availableLocales } = Astro.props
+const [articleSlug] = entry.id.split('/')
+const { Content } = await render(entry)
+
+const blogHref = localePath('/blog/', locale)
+
+const formattedDate = new Intl.DateTimeFormat(locale, {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+}).format(new Date(entry.data.date))
+
+// ~220 words a minute: an adult's pace for an explanatory text read with care.
+const words = (entry.body ?? '').split(/\s+/).filter(Boolean).length
+const minutes = Math.max(1, Math.round(words / 220))
+
+const sameLocale = allEntries.filter(e => e.id.endsWith(`/${locale}`))
+
+// In the site's order. The current locale stays in the list (on the
+// swash), so the reader sees where they are.
+const available = supportedLocales.filter(loc => availableLocales.includes(loc))
+
+// Three more articles in the same language, newest first.
+const related = sameLocale
+  .filter(e => e.id !== entry.id)
+  .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime())
+  .slice(0, 3)
+---
+
+<article>
+  <header class="max-w-[40rem] mx-auto px-6">
+    <a
+      href={blogHref}
+      class="inline-flex items-center gap-1 text-sm text-ink-2 hover:text-ink transition-colors mb-10"
+    >
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 19l-7-7 7-7" />
+      </svg>
+      {t.blog.backToBlog}
+    </a>
+
+    <p class="zz-kicker text-[11px] text-ink-3">
+      <time datetime={entry.data.date}>{formattedDate}</time>
+      <span class="mx-2 text-ink-4" aria-hidden="true">·</span>
+      {t.blog.minRead.replace('{n}', String(minutes))}
+    </p>
+    <h1 class="mt-4 font-serif text-[2rem] md:text-5xl text-ink leading-[1.15]">{entry.data.title}</h1>
+    <p class="mt-5 text-lg md:text-xl text-ink-2 leading-relaxed">{entry.data.excerpt}</p>
+
+    {available.length > 1 && (
+      <nav class="mt-7 flex items-center flex-wrap gap-x-5 gap-y-2 text-sm" aria-label={t.blog.readIn}>
+        <span class="text-ink-3">{t.blog.readIn}:</span>
+        {available.map(loc => (
+          loc === locale ? (
+            <span class="zz-swash text-ink font-semibold" aria-current="true" lang={loc}>{localeNames[loc]}</span>
+          ) : (
+            <a
+              href={localePath(`/blog/${articleSlug}/`, loc)}
+              lang={loc}
+              hreflang={loc}
+              class="zz-swash zz-swash-hover text-ink-2 hover:text-ink transition-colors"
+            >
+              {localeNames[loc]}
+            </a>
+          )
+        ))}
+      </nav>
+    )}
+  </header>
+
+  <div class="max-w-4xl mx-auto px-6 mt-10 mb-12">
+    <img
+      src={entry.data.image}
+      alt=""
+      class="w-full rounded-[16px] aspect-video object-cover bg-paper-2"
+      fetchpriority="high"
+    />
+  </div>
+
+  <div class="zz-prose zz-article prose prose-lg mx-auto px-6">
+    <Content />
+  </div>
+</article>
+
+<!-- The close: one action, the button the app would show. -->
+<aside class="max-w-[40rem] mx-auto px-6 mt-20">
+  <div class="border-t border-rule pt-10">
+    <span class="zz-stroke mb-5" aria-hidden="true"></span>
+    <h2 class="font-serif text-2xl md:text-3xl text-ink leading-snug">{t.cta.title}</h2>
+    <p class="mt-3 text-ink-2 leading-relaxed">{t.cta.subtitle}</p>
+    <a href="https://app.zenzu.app" class="zz-btn mt-7">{t.cta.button}</a>
+  </div>
+</aside>
+
+{related.length > 0 && (
+  <section class="max-w-6xl mx-auto px-6 mt-24">
+    <h2 class="font-serif text-2xl text-ink mb-10">{t.blog.moreArticles}</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-x-10 gap-y-12">
+      {related.map(e => (
+        <BlogCard
+          slug={e.id.split('/')[0]}
+          title={e.data.title}
+          excerpt={e.data.excerpt}
+          date={e.data.date}
+          image={e.data.image}
+          locale={locale}
+          readMore={t.blog.readMore}
+          as="h3"
+        />
+      ))}
+    </div>
+  </section>
+)}

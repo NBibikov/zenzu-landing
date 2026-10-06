@@ -1,5 +1,5 @@
 ---
-import { localePath, type Locale } from '../../i18n'
+import { localeNames, localePath, supportedLocales, type Locale } from '../../i18n'
 
 interface Props { t: any; locale: Locale }
 const { t, locale } = Astro.props
@@ -16,7 +16,7 @@ const currentYear = new Date().getFullYear()
         <p class="text-sm leading-relaxed">{t.footer.brand}</p>
       </div>
       <div>
-        <h4 class="text-ink text-xs uppercase tracking-[0.18em] font-medium mb-4">{t.footer.product}</h4>
+        <h4 class="zz-kicker text-ink mb-4">{t.footer.product}</h4>
         <ul class="space-y-2.5 text-sm">
           <li><a href={localePath('/', locale) + '#features'} class="hover:text-ink transition-colors">{t.nav.features}</a></li>
           <li><a href={localePath('/', locale) + '#how-it-works'} class="hover:text-ink transition-colors">{t.nav.howItWorks}</a></li>
@@ -26,7 +26,7 @@ const currentYear = new Date().getFullYear()
         </ul>
       </div>
       <div>
-        <h4 class="text-ink text-xs uppercase tracking-[0.18em] font-medium mb-4">{t.footer.legal}</h4>
+        <h4 class="zz-kicker text-ink mb-4">{t.footer.legal}</h4>
         <ul class="space-y-2.5 text-sm">
           <li><a href={localePath('/privacy/', locale)} class="hover:text-ink transition-colors">{t.footer.privacy}</a></li>
           <li><a href={localePath('/terms/', locale)} class="hover:text-ink transition-colors">{t.footer.terms}</a></li>
@@ -34,7 +34,25 @@ const currentYear = new Date().getFullYear()
         </ul>
       </div>
     </div>
-    <div class="mt-12 pt-8 border-t border-hairline text-sm text-ink-3 text-center">
+    <!-- Every interface language, the current one on the swash. This is
+         the only language switch on a phone: the header hides its menu. -->
+    <nav class="mt-12 pt-8 border-t border-hairline" aria-label={t.nav.languages}>
+      <ul class="flex flex-wrap justify-center gap-x-6 gap-y-3 text-sm">
+        {supportedLocales.map((loc) => (
+          <li>
+            <a
+              href={localePath('/', loc)}
+              lang={loc}
+              class:list={['zz-swash', loc === locale ? 'text-ink font-semibold' : 'zz-swash-hover hover:text-ink transition-colors']}
+              aria-current={loc === locale ? 'true' : undefined}
+            >
+              {localeNames[loc]}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+    <div class="mt-8 text-sm text-ink-3 text-center">
       &copy; {currentYear} Zenzu. {t.footer.rights}
     </div>
   </div>

@@ -6,11 +6,17 @@ interface Props {
   locale: Locale
 }
 const { t, locale } = Astro.props
+
+// The blog is the only section with its own pages, so it is the only nav
+// item that can be "current". It wears the swash, as a selected nav item
+// does in the app, and stays bold so the state never rests on colour.
+const onBlog = /\/blog\//.test(Astro.url.pathname)
+// On a blog page the language switch keeps the reader in the blog.
+const switchTarget = onBlog ? '/blog/' : '/'
 ---
 
-<header class="fixed top-0 left-0 right-0 z-50 bg-paper/85 backdrop-blur-lg border-b border-hairline">
-  <nav class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-    <!-- Logo -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-paper/90 backdrop-blur-lg border-b border-hairline">
+  <nav class="max-w-6xl mx-auto px-5 sm:px-6 h-16 flex items-center justify-between gap-4">
     <!--
       Wordmark: ensō stroke + lowercase "zen" heavy / "zu" light, same as the
       app chrome. Lowercase and the zen/zu split keep the capital Z from
@@ -24,45 +30,83 @@ const { t, locale } = Astro.props
       <span aria-hidden="true"><span class="font-semibold">zen</span><span class="text-ink-2">zu</span></span>
     </a>
 
-    <!-- Nav links (desktop) -->
-    <div class="hidden md:flex items-center gap-8">
-      <a href={localePath('/', locale) + '#features'} class="text-sm text-ink-2 hover:text-ink transition-colors">
+    <div class="flex items-center gap-5 md:gap-8 ml-auto">
+      <a href={localePath('/', locale) + '#features'} class="hidden md:inline text-sm text-ink-2 hover:text-ink transition-colors">
         {t.nav.features}
       </a>
-      <a href={localePath('/', locale) + '#how-it-works'} class="text-sm text-ink-2 hover:text-ink transition-colors">
+      <a href={localePath('/', locale) + '#how-it-works'} class="hidden md:inline text-sm text-ink-2 hover:text-ink transition-colors">
         {t.nav.howItWorks}
       </a>
-      <a href={localePath('/blog/', locale)} class="text-sm text-ink-2 hover:text-ink transition-colors">
+      <a
+        href={localePath('/blog/', locale)}
+        class:list={[
+          'zz-swash text-sm transition-colors',
+          onBlog ? 'text-ink font-semibold' : 'zz-swash-hover text-ink-2 hover:text-ink',
+        ]}
+        aria-current={onBlog ? 'page' : undefined}
+      >
         {t.nav.blog}
       </a>
 
-      <!-- Language switcher -->
-      <div class="relative group">
-        <button class="text-sm text-ink-2 hover:text-ink transition-colors flex items-center gap-1">
+      <!-- Language switcher: opens on hover, and on a
+           click or tap (data-open), so touch and keyboard work too. -->
+      <div class="relative group hidden sm:block" data-lang-menu>
+        <button
+          type="button"
+          class="text-sm text-ink-2 hover:text-ink transition-colors flex items-center gap-1"
+          aria-expanded="false"
+          aria-label={t.nav.languages}
+        >
           {locale.toUpperCase()}
-          <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
           </svg>
         </button>
-        <div class="absolute top-full right-0 mt-1 bg-paper border border-hairline rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all py-1 min-w-36">
-          {supportedLocales.map((loc) => (
-            <a
-              href={localePath('/', loc)}
-              class={`block px-4 py-2 text-sm hover:bg-paper-2 transition-colors ${loc === locale ? 'text-ink font-medium' : 'text-ink-2'}`}
-            >
-              {localeNames[loc]}
-            </a>
-          ))}
+        <div class="absolute top-full right-0 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible group-data-[open]:opacity-100 group-data-[open]:visible transition-all">
+          <ul class="bg-paper border border-rule rounded-[10px] py-2 min-w-40">
+            {supportedLocales.map((loc) => (
+              <li>
+                <a
+                  href={localePath(switchTarget, loc)}
+                  lang={loc}
+                  class="block px-5 py-2 text-sm text-ink-2 hover:text-ink transition-colors"
+                  aria-current={loc === locale ? 'true' : undefined}
+                >
+                  <span class:list={[loc === locale && 'zz-swash text-ink font-semibold']}>{localeNames[loc]}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
-    </div>
 
-    <!-- CTA -->
-    <a
-      href="https://app.zenzu.app"
-      class="bg-ink text-paper px-5 py-2 rounded-full text-sm font-medium hover:bg-moss-dark transition-colors"
-    >
-      {t.nav.getStarted}
-    </a>
+      <a href="https://app.zenzu.app" class="zz-btn zz-btn-sm">
+        {t.nav.getStarted}
+      </a>
+    </div>
   </nav>
 </header>
+
+<script>
+  const menu = document.querySelector<HTMLElement>('[data-lang-menu]')
+  const button = menu?.querySelector('button')
+  if (menu && button) {
+    const setOpen = (open: boolean) => {
+      menu.toggleAttribute('data-open', open)
+      button.setAttribute('aria-expanded', String(open))
+    }
+    button.addEventListener('click', () => setOpen(!menu.hasAttribute('data-open')))
+    document.addEventListener('click', (e) => {
+      if (!menu.contains(e.target as Node)) setOpen(false)
+    })
+    menu.addEventListener('focusout', (e) => {
+      if (!menu.contains(e.relatedTarget as Node)) setOpen(false)
+    })
+    menu.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        setOpen(false)
+        button.focus()
+      }
+    })
+  }
+</script>

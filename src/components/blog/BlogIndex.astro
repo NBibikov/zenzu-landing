@@ -1,0 +1,57 @@
+---
+import type { CollectionEntry } from 'astro:content'
+import BlogCard from './BlogCard.astro'
+import type { Locale } from '../../i18n'
+
+interface Props {
+  /** This locale's articles, newest first. */
+  entries: CollectionEntry<'blog'>[]
+  locale: Locale
+  t: any
+}
+
+const { entries, locale, t } = Astro.props
+const [latest, ...rest] = entries
+const slugOf = (entry: CollectionEntry<'blog'>) => entry.id.split('/')[0]
+---
+
+<div class="max-w-6xl mx-auto px-6">
+  <header class="max-w-2xl mb-14">
+    <span class="zz-stroke mb-5" aria-hidden="true"></span>
+    <h1 class="font-serif text-4xl md:text-5xl text-ink leading-tight">{t.blog.title}</h1>
+    <p class="mt-4 text-lg text-ink-2 leading-relaxed">{t.blog.subtitle}</p>
+  </header>
+
+  {!latest ? (
+    <p class="text-ink-2 py-20">{t.blog.noArticles}</p>
+  ) : (
+    <>
+      <div class="pb-14 mb-14 border-b border-hairline">
+        <BlogCard
+          slug={slugOf(latest)}
+          title={latest.data.title}
+          excerpt={latest.data.excerpt}
+          date={latest.data.date}
+          image={latest.data.image}
+          locale={locale}
+          readMore={t.blog.readMore}
+          label={t.blog.latest}
+          featured
+        />
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-14">
+        {rest.map(entry => (
+          <BlogCard
+            slug={slugOf(entry)}
+            title={entry.data.title}
+            excerpt={entry.data.excerpt}
+            date={entry.data.date}
+            image={entry.data.image}
+            locale={locale}
+            readMore={t.blog.readMore}
+          />
+        ))}
+      </div>
+    </>
+  )}
+</div>

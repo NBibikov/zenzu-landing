@@ -1,9 +1,10 @@
 ---
-import { getCollection, render } from 'astro:content'
+import { getCollection } from 'astro:content'
 import BaseLayout from '../../layouts/BaseLayout.astro'
 import Header from '../../components/layout/Header.astro'
 import Footer from '../../components/layout/Footer.astro'
-import { t, localeNames, supportedLocales, type Locale } from '../../i18n'
+import Article from '../../components/blog/Article.astro'
+import { t, type Locale } from '../../i18n'
 
 export async function getStaticPaths() {
   const entries = await getCollection('blog')
@@ -20,14 +21,6 @@ const [articleSlug] = entry.id.split('/')
 
 const locale = 'en' as Locale
 const strings = t(locale)
-
-const { Content } = await render(entry)
-
-const formattedDate = new Intl.DateTimeFormat('en', {
-  year: 'numeric',
-  month: 'long',
-  day: 'numeric',
-}).format(new Date(entry.data.date))
 
 // Build list of available translations for this article
 const allEntries = await getCollection('blog')
@@ -81,54 +74,8 @@ const jsonLd = {
   jsonLd={jsonLd}
 >
   <Header t={strings} locale={locale} />
-  <main class="pt-24 pb-20">
-    <div class="max-w-3xl mx-auto px-6">
-      <!-- Back link -->
-      <a
-        href="/blog/"
-        class="inline-flex items-center gap-1 text-sm text-ink-2 hover:text-moss transition-colors mb-8"
-      >
-        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-        </svg>
-        {strings.blog.backToBlog}
-      </a>
-
-      <!-- Cover image -->
-      <img
-        src={entry.data.image}
-        alt={entry.data.title}
-        class="w-full rounded-2xl aspect-video object-cover mb-8"
-      />
-
-      <!-- Meta -->
-      <div class="flex items-center justify-between flex-wrap gap-4 mb-6">
-        <time datetime={entry.data.date} class="text-sm text-ink-2">{strings.blog.publishedOn} {formattedDate}</time>
-
-        <!-- Language switcher -->
-        {translationLocales.length > 0 && (
-          <div class="flex items-center gap-2 flex-wrap">
-            <span class="text-xs text-ink-2">{strings.blog.readIn}:</span>
-            {translationLocales.map(loc => (
-              <a
-                href={`/${loc}/blog/${articleSlug}/`}
-                class="text-xs px-2 py-1 rounded-full bg-paper-2 hover:bg-hairline text-ink transition-colors font-medium"
-              >
-                {localeNames[loc]}
-              </a>
-            ))}
-          </div>
-        )}
-      </div>
-
-      <h1 class="font-serif text-3xl md:text-4xl text-ink mb-4 leading-tight">{entry.data.title}</h1>
-      <p class="text-lg text-ink-2 mb-8 leading-relaxed">{entry.data.excerpt}</p>
-
-      <!-- Article body -->
-      <article class="prose prose-lg prose-headings:text-ink prose-a:text-moss prose-strong:text-ink max-w-none">
-        <Content />
-      </article>
-    </div>
+  <main class="pt-32 pb-24">
+    <Article entry={entry} locale={locale} t={strings} allEntries={allEntries} available={['en', ...translationLocales]} />
   </main>
   <Footer t={strings} locale={locale} />
 </BaseLayout>
