@@ -134,9 +134,11 @@
     "subtitle": "Conseils, guides et astuces pour les apprenants de langues",
     "readMore": "Lire la suite",
     "backToBlog": "Retour au blog",
-    "publishedOn": "Publié le",
     "readIn": "Lire cet article en",
-    "noArticles": "Pas encore d'articles. Revenez bientôt !"
+    "noArticles": "Pas encore d'articles. Revenez bientôt !",
+    "minRead": "{n} min de lecture",
+    "moreArticles": "À lire aussi",
+    "latest": "Nouveau"
   },
   "news": {
     "title": "Actualités du jour",

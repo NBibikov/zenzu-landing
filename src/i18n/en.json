@@ -134,9 +134,11 @@
     "subtitle": "Tips, guides, and insights for language learners",
     "readMore": "Read more",
     "backToBlog": "Back to blog",
-    "publishedOn": "Published on",
     "readIn": "Read this article in",
-    "noArticles": "No articles yet. Check back soon!"
+    "noArticles": "No articles yet. Check back soon!",
+    "minRead": "{n} min read",
+    "moreArticles": "Keep reading",
+    "latest": "Latest"
   },
   "news": {
     "title": "Today's News",

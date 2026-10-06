@@ -1,5 +1,5 @@
 ---
-import type { Locale } from '../../i18n'
+import { localePath, type Locale } from '../../i18n'
 
 interface Props {
   slug: string
@@ -9,11 +9,17 @@ interface Props {
   image: string
   locale: Locale
   readMore: string
+  /** The newest article on the index: cover and text side by side, larger title. */
+  featured?: boolean
+  /** Kicker shown above the date on the featured card ("Latest"). */
+  label?: string
+  /** h2 on the index, h3 under an article's "Keep reading" heading. */
+  as?: 'h2' | 'h3'
 }
 
-const { slug, title, excerpt, date, image, locale, readMore } = Astro.props
+const { slug, title, excerpt, date, image, locale, readMore, featured = false, label, as: Heading = 'h2' } = Astro.props
 
-const href = locale === 'en' ? `/blog/${slug}/` : `/${locale}/blog/${slug}/`
+const href = localePath(`/blog/${slug}/`, locale)
 
 const formattedDate = new Intl.DateTimeFormat(locale, {
   year: 'numeric',
@@ -22,28 +28,44 @@ const formattedDate = new Intl.DateTimeFormat(locale, {
 }).format(new Date(date))
 ---
 
-<article class="group">
-  <a href={href} class="block aspect-video overflow-hidden">
+<!-- No card frame and no shadow: the cover, a date label and the title
+     sit straight on the paper, as a library row does in the app. -->
+<article class:list={['group', featured && 'md:grid md:grid-cols-[3fr_2fr] md:gap-12 md:items-center']}>
+  <a href={href} class="block aspect-video overflow-hidden rounded-[10px] bg-paper-2" tabindex="-1" aria-hidden="true">
     <img
       src={image}
-      alt={title}
+      alt=""
       class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500"
-      loading="lazy"
+      loading={featured ? 'eager' : 'lazy'}
+      decoding="async"
     />
   </a>
-  <div class="pt-5">
-    <time class="text-xs text-ink-3 uppercase tracking-[0.14em]">{formattedDate}</time>
-    <h2 class="mt-3 font-serif text-xl text-ink leading-snug group-hover:text-moss transition-colors">
-      <a href={href}>{title}</a>
-    </h2>
-    <p class="mt-2 text-sm text-ink-2 leading-relaxed line-clamp-3">{excerpt}</p>
+  <div class:list={[featured ? 'pt-6 md:pt-0' : 'pt-5']}>
+    <p class="zz-kicker text-[11px] text-ink-3">
+      {label && <span class="text-moss">{label}<span class="mx-2 text-ink-4" aria-hidden="true">·</span></span>}
+      <time datetime={date}>{formattedDate}</time>
+    </p>
+    <Heading
+      class:list={[
+        'font-serif text-ink leading-snug',
+        featured ? 'mt-4 text-2xl md:text-[2rem] md:leading-tight' : 'mt-3 text-xl',
+      ]}
+    >
+      <a
+        href={href}
+        class="underline decoration-transparent decoration-1 underline-offset-[0.2em] group-hover:decoration-moss transition-colors"
+      >{title}</a>
+    </Heading>
+    <p class:list={['mt-3 text-ink-2 leading-relaxed', featured ? 'text-base line-clamp-4' : 'text-sm line-clamp-3']}>{excerpt}</p>
     <a
       href={href}
-      class="mt-4 inline-flex items-center gap-1 text-sm text-moss hover:text-ink transition-colors"
+      class="mt-4 inline-flex items-center gap-1 text-sm font-medium text-ink hover:text-moss transition-colors"
+      aria-hidden="true"
+      tabindex="-1"
     >
       {readMore}
-      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5l7 7-7 7" />
       </svg>
     </a>
   </div>

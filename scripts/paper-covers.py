@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Sit the blog covers on paper instead of pure white.
 
-The covers were generated on #FFFFFF. The page ground is #FBFAF7 and the
+The covers were generated on #FFFFFF. The page ground is #FDFCFA (it was
+#FBFAF7 until the app moved to a lighter paper in October 2026) and the
 illustrations are near-greyscale already (measured avg saturation 0.041),
 so what read as "colourful" was not the ink at all — it was fifty cold
 white rectangles glowing against warm paper. Every card looked like a
@@ -24,13 +25,32 @@ import glob, os, sys
 from PIL import Image
 import colorsys
 
-PAPER = (0xFB, 0xFA, 0xF7)
+PAPER = (0xFD, 0xFC, 0xFA)
 MOSS_H = colorsys.rgb_to_hsv(0x5B / 255, 0x70 / 255, 0x52 / 255)[0]
 
 WHITE_FLOOR = 0.86   # below this the pixel is drawing, not ground
 SAT_CEIL = 0.10      # ground is unsaturated; a saturated light pixel is paint
 HUE_PULL = 0.55      # how far a colour moves toward moss
 SAT_DAMP = 0.72      # how much of its own saturation it keeps
+RAW_WHITE = 0.005    # share of pure-white pixels that marks an unprocessed cover
+
+
+def is_raw(path: str) -> bool:
+    """True if the cover still has the generator's pure-white ground.
+
+    The conversion is not idempotent: a second pass shifts the ground again
+    and pulls the paint further toward moss. A processed cover has no pixel
+    left at #FFFFFF-ish (its ground sits on PAPER), so the share of those
+    pixels tells a raw cover from a processed one. A cover painted edge to
+    edge has no ground either and is skipped too — it has nothing to remap.
+    """
+    im = Image.open(path).convert("RGB").resize((320, 180))
+    data = im.tobytes()
+    white = sum(
+        1 for i in range(0, len(data), 3)
+        if min(data[i], data[i + 1], data[i + 2]) >= 253
+    )
+    return white / (320 * 180) >= RAW_WHITE
 
 
 def convert(path: str) -> tuple[float, float]:
@@ -72,7 +92,12 @@ def convert(path: str) -> tuple[float, float]:
 
 
 if __name__ == "__main__":
-    files = sys.argv[1:] or sorted(glob.glob("public/blog/*/*"))
+    args = sys.argv[1:]
+    force = "--force" in args
+    files = [a for a in args if a != "--force"] or sorted(glob.glob("public/blog/*/*"))
     for f in files:
+        if not force and not is_raw(f):
+            print(f"{os.path.basename(os.path.dirname(f))[:44]:46} skipped: already on paper (--force to redo)")
+            continue
         pct, kb = convert(f)
         print(f"{os.path.basename(os.path.dirname(f))[:44]:46} touched={pct:5.1f}%  {kb:6.1f}KB")

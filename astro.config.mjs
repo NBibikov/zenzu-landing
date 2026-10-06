@@ -2,6 +2,7 @@
 import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
 import sitemap from '@astrojs/sitemap';
+import rehypeTableScroll from './src/lib/rehype-table-scroll.mjs';
 
 export default defineConfig({
   site: 'https://zenzu.app',
@@ -13,6 +14,9 @@ export default defineConfig({
     routing: {
       prefixDefaultLocale: false, // /en/ not needed, / = English
     },
+  },
+  markdown: {
+    rehypePlugins: [rehypeTableScroll],
   },
   integrations: [
     sitemap({

@@ -49,16 +49,16 @@ const jsonLd = {
 
 <BaseLayout title={`${title} — Zenzu`} ogTitle={title} description={description} ogType="article" jsonLd={jsonLd}>
   <Header t={strings} locale="en" />
-  <main class="pt-24 pb-20">
+  <main class="pt-32 pb-24">
     <div class="max-w-3xl mx-auto px-6">
-      <a href="/compare/" class="inline-flex items-center gap-1 text-sm text-ink-2 hover:text-moss transition-colors mb-8">
+      <a href="/compare/" class="inline-flex items-center gap-1 text-sm text-ink-2 hover:text-ink transition-colors mb-10">
         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
         </svg>
         All comparisons
       </a>
 
-      <h1 class="font-serif text-3xl md:text-4xl text-ink mb-4 leading-tight">{title}</h1>
+      <h1 class="font-serif text-[2rem] md:text-5xl text-ink mb-5 leading-[1.15]">{title}</h1>
       <p class="text-sm text-ink-2 mb-8">
         Facts checked against official sources on <time datetime={updated}>{formattedUpdated}</time>.
         Written by the Zenzu team — we build one of these tools, so our sources are listed below.
@@ -70,7 +70,7 @@ const jsonLd = {
         <table class="w-full text-sm border-collapse min-w-[520px]">
           <caption class="sr-only">Zenzu and {competitor} compared feature by feature</caption>
           <thead>
-            <tr class="text-left border-b border-hairline">
+            <tr class="text-left border-b border-rule">
               <th scope="col" class="py-3 pr-4 font-medium text-ink-2 w-1/4"></th>
               <th scope="col" class="py-3 pr-4 font-serif text-lg text-ink">Zenzu</th>
               <th scope="col" class="py-3 font-serif text-lg text-ink">{competitor}</th>
@@ -88,15 +88,15 @@ const jsonLd = {
         </table>
       </div>
 
-      <article class="prose prose-lg prose-headings:text-ink prose-a:text-moss prose-strong:text-ink max-w-none">
+      <article class="zz-prose prose prose-lg max-w-none">
         <Content />
       </article>
 
-      <section class="mt-12 pt-6 border-t border-hairline">
-        <h2 class="text-xs uppercase tracking-[0.18em] font-medium text-ink mb-3">Sources</h2>
+      <section class="mt-12 pt-6 border-t border-rule">
+        <h2 class="zz-kicker text-ink mb-3">Sources</h2>
         <ul class="space-y-1 text-sm">
           {sources.map(src => (
-            <li><a href={src.url} rel="noopener" class="text-ink-2 hover:text-moss underline underline-offset-2">{src.label}</a></li>
+            <li><a href={src.url} rel="noopener" class="text-ink-2 hover:text-ink underline decoration-moss underline-offset-[0.2em]">{src.label}</a></li>
           ))}
         </ul>
       </section>

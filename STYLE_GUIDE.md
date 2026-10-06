@@ -11,7 +11,7 @@ Every blog image is a quiet moment in a Japanese garden. No clutter, no noise â€
 | Token | Name | Hex |
 |-------|------|-----|
 | Primary | Moss Green | `#5B7052` |
-| Background | Paper | `#FBFAF7` |
+| Background | Paper | `#FDFCFA` |
 | Surface | Paper 2 | `#F5F3EC` |
 | Hairline | Hairline | `#E9E5DC` |
 | Stone | River Stone | `#8B8678` |
@@ -34,7 +34,7 @@ Every generated image appends this suffix verbatim:
 
 ```
 Soft watercolor vector hybrid illustration. No text, no people, no devices, no UI.
-Color palette: moss green #5B7052, paper white #FBFAF7, pale sand #F5F3EC,
+Color palette: moss green #5B7052, paper white #FDFCFA, pale sand #F5F3EC,
 river stone grey #8B8678, ink #1C1B18. Background is near-white paper.
 Absolutely no orange, gold, amber, ochre, autumn or warm-yellow tones anywhere.
 Wabi-sabi Japanese zen aesthetic. Single dominant element, generous white space,
@@ -43,6 +43,12 @@ Studio Ghibli warmth meets Headspace minimalism.
 ```
 
 ### Always run `scripts/paper-covers.py` on a new cover
+
+The page paper is `#FDFCFA` since October 2026 (the app moved to a lighter
+paper). Covers retoned before that sit on `#FBFAF7`; the two are 2/255
+apart and read as the same paper, so they are not re-processed. The
+conversion is not idempotent, so the script skips any cover that no longer
+has a pure-white ground; `--force` overrides that.
 
 The prompt above asks for a #FBFAF7 ground and the generator ignores it â€”
 every one of the first fifty covers came back on pure #FFFFFF. On the page

@@ -3,7 +3,7 @@ import { getCollection } from 'astro:content'
 import BaseLayout from '../../../layouts/BaseLayout.astro'
 import Header from '../../../components/layout/Header.astro'
 import Footer from '../../../components/layout/Footer.astro'
-import BlogCard from '../../../components/blog/BlogCard.astro'
+import BlogIndex from '../../../components/blog/BlogIndex.astro'
 import { t, type Locale } from '../../../i18n'
 
 export async function getStaticPaths() {
@@ -40,34 +40,8 @@ const alternates = blogLocales.map(loc => ({
   alternates={alternates}
 >
   <Header t={strings} locale={locale} />
-  <main class="pt-24 pb-20">
-    <div class="max-w-6xl mx-auto px-6">
-      <div class="mb-12 text-center">
-        <h1 class="font-serif text-4xl text-ink">{strings.blog.title}</h1>
-        <p class="mt-3 text-lg text-ink-2">{strings.blog.subtitle}</p>
-      </div>
-
-      {entries.length === 0 ? (
-        <p class="text-center text-ink-2 py-20">{strings.blog.noArticles}</p>
-      ) : (
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {entries.map(entry => {
-            const [slug] = entry.id.split('/')
-            return (
-              <BlogCard
-                slug={slug}
-                title={entry.data.title}
-                excerpt={entry.data.excerpt}
-                date={entry.data.date}
-                image={entry.data.image}
-                locale={locale}
-                readMore={strings.blog.readMore}
-              />
-            )
-          })}
-        </div>
-      )}
-    </div>
+  <main class="pt-32 pb-24">
+    <BlogIndex entries={entries} locale={locale} t={strings} />
   </main>
   <Footer t={strings} locale={locale} />
 </BaseLayout>

@@ -16,16 +16,17 @@ const entries = (await getCollection('compare')).sort((a, b) =>
   description="Honest, sourced comparisons of Zenzu with other tools for learning languages from real content and spaced repetition."
 >
   <Header t={strings} locale="en" />
-  <main class="pt-24 pb-20">
+  <main class="pt-32 pb-24">
     <div class="max-w-3xl mx-auto px-6">
-      <h1 class="font-serif text-3xl md:text-4xl text-ink mb-4 leading-tight">How Zenzu compares</h1>
+      <span class="zz-stroke mb-5" aria-hidden="true"></span>
+      <h1 class="font-serif text-4xl md:text-5xl text-ink mb-4 leading-tight">How Zenzu compares</h1>
       <p class="text-lg text-ink-2 mb-12 leading-relaxed">
         Side-by-side comparisons with the tools learners most often weigh Zenzu against — including where the other tool is the better choice.
       </p>
       <ul>
         {entries.map(entry => (
           <li class="py-6 border-t border-hairline">
-            <a href={`/compare/${entry.id}/`} class="font-serif text-xl text-ink hover:text-moss transition-colors">{entry.data.title}</a>
+            <a href={`/compare/${entry.id}/`} class="font-serif text-xl text-ink underline decoration-transparent decoration-1 underline-offset-[0.2em] hover:decoration-moss transition-colors">{entry.data.title}</a>
             <p class="text-ink-2 mt-2 leading-relaxed">{entry.data.description}</p>
           </li>
         ))}

@@ -2,30 +2,40 @@
 @plugin "@tailwindcss/typography";
 
 /* ============================================================
-   Zenzu Design Tokens — Ink & Paper
-   Source of truth: Flutter AppTheme (lib/src/core/theme/app_theme.dart)
+   Zenzu Design Tokens — Ink & Paper, brush theme
+   Source of truth: Flutter AppTheme + ZTokens
+   (zenzu repo, lib/src/core/theme/app_theme.dart, z_tokens.dart)
 
-   One paper, one ink, one accent. The previous palette carried four
-   competing neutrals (#F2EFE9 / #FAFAF5 / #F0EDE5 / #E5E0D8) which read
-   as muddy once placed side by side, and used moss as a large block
-   background. Moss is an accent here: never a field, never a button fill.
+   One paper, one ink, one accent. Colour is sparing: moss marks an
+   action or a selection, ink carries everything else. A selected or
+   leading control wears a brush swash, not a border and not a fill.
    ============================================================ */
 
 @theme {
   /* Paper — the ground. paper2 is the only secondary surface. */
-  --color-paper: #FBFAF7;
+  --color-paper: #FDFCFA;
   --color-paper-2: #F5F3EC;
+  /* hairline = texture seam between rows; rule = structure line. */
   --color-hairline: #E9E5DC;
+  --color-rule: #CEC7B9;
 
-  /* Ink — the type hierarchy. No extra hues. */
+  /* Ink — the type hierarchy. ink-3 is the lightest tone that may carry
+     text; ink-4 is for large marks only, never text. */
   --color-ink: #1C1B18;
-  --color-ink-2: #6C685E;
-  --color-ink-3: #8B8678;
+  --color-ink-lead: #45413A;
+  --color-ink-2: #5F5A50;
+  --color-ink-3: #746F63;
+  --color-ink-4: #948D82;
 
   /* Moss — the single accent. */
   --color-moss: #5B7052;
   --color-moss-dark: #2D3D2A;
   --color-moss-wash: #EFF2EB;
+
+  /* Brush swashes. swash = selected chrome and the leading action;
+     swash-cancel = the alternative half of a button pair. */
+  --color-swash: #D6DFCB;
+  --color-swash-cancel: #E6E1D6;
 
   /* Fonts: serif for content, sans for UI — same pairing as the app. */
   --font-serif: 'Lora', Georgia, 'Times New Roman', serif;
@@ -37,15 +47,280 @@ html {
 }
 
 ::selection {
-  background-color: var(--color-moss-wash);
-  color: var(--color-moss-dark);
+  background-color: var(--color-swash);
+  color: var(--color-ink);
 }
 
-/* Headings speak in the content voice, like every heading in the app. */
-h1, h2, h3 {
-  font-family: var(--font-serif);
-  font-weight: 600;
+/* Headings speak in the content voice, like every heading in the app.
+   The app sets every serif role at weight 500. */
+@layer base {
+  h1, h2, h3 {
+    font-family: var(--font-serif);
+    font-weight: 500;
+    letter-spacing: -0.01em;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-ink);
+  outline-offset: 3px;
+}
+
+@layer components {
+  /* ----------------------------------------------------------
+     Ink pill — the paint of every button (app: ZInkPill).
+     A full pill on a pale ground, a brush texture clipped to it,
+     and a 1px edge a shade darker than the texture. Colours are
+     the app's derivations: ground = swash 35% toward paper,
+     texture = swash 6% toward ink, edge = swash 16% toward ink.
+     The label is always ink; the colour never carries the control.
+     ---------------------------------------------------------- */
+  .zz-btn {
+    --pill-ground: #E4E9DB;
+    --pill-texture: #CBD3C0;
+    --pill-edge: #B8C0AE;
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    min-height: 48px;
+    padding: 0.75rem 1.75rem;
+    border: 1px solid var(--pill-edge);
+    border-radius: 9999px;
+    background-color: var(--pill-ground);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+    white-space: nowrap;
+  }
+  .zz-btn::before,
+  .zz-btn::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+  }
+  .zz-btn::before {
+    background-color: var(--pill-texture);
+    -webkit-mask: url('/brush/pill-texture.webp') center / 100% 100% no-repeat;
+    mask: url('/brush/pill-texture.webp') center / 100% 100% no-repeat;
+  }
+  /* Hover and press: an ink overlay, 6% and 10%, as in the app. */
+  .zz-btn::after {
+    background-color: var(--color-ink);
+    opacity: 0;
+    transition: opacity 150ms ease;
+  }
+  .zz-btn:hover::after { opacity: 0.06; }
+  .zz-btn:active::after { opacity: 0.1; }
+
+  /* The alternative half of a pair: grey pill, semibold, mirrored brush. */
+  .zz-btn-cancel {
+    --pill-ground: #EEEAE3;
+    --pill-texture: #DAD5CB;
+    --pill-edge: #C6C1B8;
+    font-weight: 600;
+  }
+  .zz-btn-cancel::before { transform: scaleX(-1); }
+
+  .zz-btn-sm {
+    min-height: 36px;
+    padding: 0.45rem 1.1rem;
+    font-size: 0.875rem;
+  }
+
+  /* ----------------------------------------------------------
+     Swash — a brush stroke under a selected label (app: ZSwash).
+     It bleeds past the label without taking layout space, so a
+     selection never moves the text. Selection is never carried by
+     the swash alone: selected text is also bold.
+     ---------------------------------------------------------- */
+  .zz-swash {
+    position: relative;
+    isolation: isolate;
+  }
+  .zz-swash::before {
+    content: '';
+    position: absolute;
+    inset: -4px -10px;
+    z-index: -1;
+    pointer-events: none;
+    background-color: var(--swash-color, var(--color-swash));
+    -webkit-mask: url('/brush/swash-0.webp') center / 100% 100% no-repeat;
+    mask: url('/brush/swash-0.webp') center / 100% 100% no-repeat;
+  }
+  .zz-swash-1::before {
+    -webkit-mask-image: url('/brush/swash-1.webp');
+    mask-image: url('/brush/swash-1.webp');
+  }
+  .zz-swash-2::before {
+    -webkit-mask-image: url('/brush/swash-2.webp');
+    mask-image: url('/brush/swash-2.webp');
+  }
+  /* Hover preview for a swash link: the swash fades in. */
+  .zz-swash-hover::before {
+    opacity: 0;
+    transition: opacity 150ms ease;
+  }
+  .zz-swash-hover:hover::before,
+  .zz-swash-hover:focus-visible::before { opacity: 1; }
+
+  /* Mark — the swash under words inside running text (app: SwashedText).
+     A background, not a pseudo-element, so it follows the words when they
+     wrap: each line gets its own piece of the brush. The image is the
+     swash-1 mask pre-tinted in the swash colour. */
+  .zz-mark {
+    padding-inline: 0.12em;
+    margin-inline: -0.12em;
+    background: url('/brush/swash-mark.webp') center / 100% 100% no-repeat;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+  }
+
+  /* ----------------------------------------------------------
+     Stroke — one brush line under a heading or a selected tab
+     (app: ZSwashStroke). Drawn in moss, short, left-aligned.
+     ---------------------------------------------------------- */
+  .zz-stroke {
+    display: block;
+    width: 3rem;
+    height: 6px;
+    background-color: var(--stroke-color, var(--color-moss));
+    -webkit-mask: url('/brush/stroke.webp') center / 100% 100% no-repeat;
+    mask: url('/brush/stroke.webp') center / 100% 100% no-repeat;
+  }
+
+  /* Caps label above a section (app: ZSectionLabel). */
+  .zz-kicker {
+    font-family: var(--font-sans);
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+}
+
+
+/* ----------------------------------------------------------
+   Long-form text: blog articles, comparisons, legal pages.
+   Outside @layer on purpose: the typography plugin sets its
+   colour variables and element rules in a layer, and only
+   unlayered rules win over it.
+   ---------------------------------------------------------- */
+.zz-prose {
+  --tw-prose-body: var(--color-ink);
+  --tw-prose-headings: var(--color-ink);
+  --tw-prose-lead: var(--color-ink-2);
+  --tw-prose-links: var(--color-ink);
+  --tw-prose-bold: var(--color-ink);
+  --tw-prose-counters: var(--color-ink-3);
+  --tw-prose-bullets: var(--color-moss);
+  --tw-prose-hr: var(--color-hairline);
+  --tw-prose-quotes: var(--color-ink-lead);
+  --tw-prose-quote-borders: var(--color-swash);
+  --tw-prose-captions: var(--color-ink-3);
+  --tw-prose-code: var(--color-ink);
+  --tw-prose-th-borders: var(--color-rule);
+  --tw-prose-td-borders: var(--color-hairline);
+}
+.zz-prose :where(h1, h2, h3, h4):not(:where(.not-prose *)) {
+  font-weight: 500;
   letter-spacing: -0.01em;
+}
+.zz-prose :where(a):not(:where(.not-prose *)) {
+  font-weight: 500;
+  text-decoration-color: var(--color-moss);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+  transition: text-decoration-color 150ms ease;
+}
+.zz-prose :where(a):not(:where(.not-prose *)):hover {
+  text-decoration-color: var(--color-ink);
+}
+.zz-prose :where(strong):not(:where(.not-prose *)) {
+  font-weight: 600;
+}
+
+/* The article column: the same 40rem measure as its header and close,
+   ~60 characters per line at the article's 18px. */
+.zz-article {
+  max-width: 40rem;
+}
+/* Each section opens with a short moss stroke — the heading mark. */
+.zz-article :where(h2):not(:where(.not-prose *))::before {
+  content: '';
+  display: block;
+  width: 2.25rem;
+  height: 6px;
+  margin-bottom: 0.9rem;
+  background-color: var(--color-moss);
+  -webkit-mask: url('/brush/stroke.webp') center / 100% 100% no-repeat;
+  mask: url('/brush/stroke.webp') center / 100% 100% no-repeat;
+}
+.zz-article :where(h3):not(:where(.not-prose *)) {
+  font-size: 1.2em;
+}
+/* Italics in these articles are mostly the language under study
+   ("de repente", "der Tisch"). The app sets studied language in Lora,
+   so the example stands apart from the explanation around it. */
+.zz-article :where(em):not(:where(.not-prose *)) {
+  font-family: var(--font-serif);
+  font-size: 1.04em;
+}
+/* A thematic break: a short centred brush stroke, not a full rule. */
+.zz-article :where(hr):not(:where(.not-prose *)) {
+  width: 4rem;
+  height: 6px;
+  margin-inline: auto;
+  border: 0;
+  background-color: var(--color-ink-4);
+  -webkit-mask: url('/brush/stroke.webp') center / 100% 100% no-repeat;
+  mask: url('/brush/stroke.webp') center / 100% 100% no-repeat;
+}
+/* Many articles put a break before every section heading. The heading
+   already carries its stroke, so that break is only space. */
+.zz-article :where(hr):has(+ h2) {
+  background: none;
+  margin-block: 1.5em 0;
+}
+/* Tables: the wrapper (rehype-table-scroll, on every markdown table)
+   scrolls on a phone, so a wide table never widens the page. */
+.zz-table {
+  overflow-x: auto;
+  margin-block: 2em;
+}
+.zz-table table {
+  margin: 0;
+}
+/* In an article: smaller type, a floor width, caps-label headers. */
+.zz-article .zz-table table {
+  margin: 0;
+  min-width: 32rem;
+  font-size: 0.85em;
+}
+.zz-article :where(thead th):not(:where(.not-prose *)) {
+  font-size: 0.78em;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-ink-2);
+}
+
+/* Under forced colours the swash and the pill texture vanish, so the
+   pill keeps its border and a selected swash label gains an outline. */
+@media (forced-colors: active) {
+  .zz-btn { border: 2px solid ButtonText; }
+  .zz-swash::before { display: none; }
+  .zz-swash[aria-current],
+  [aria-current] > .zz-swash { outline: 2px solid CanvasText; outline-offset: 2px; }
+  .zz-mark { background: none; text-decoration: underline; }
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -18,6 +18,7 @@ const steps = [
 <section id="how-it-works" class="py-24 px-6 bg-paper-2">
   <div class="max-w-3xl mx-auto">
     <div class="mb-16">
+      <span class="zz-stroke mb-5" aria-hidden="true"></span>
       <h2 class="font-serif text-3xl md:text-4xl text-ink mb-4">{t.howItWorks.title}</h2>
       <p class="text-ink-2 text-lg">{t.howItWorks.subtitle}</p>
     </div>
@@ -26,7 +27,7 @@ const steps = [
       {steps.map(({ step, glyph, title, desc }) => (
         <div class="flex items-start gap-6 sm:gap-8 py-8 border-t border-hairline">
           <div class="flex flex-col items-center gap-2 shrink-0 w-12">
-            <span class="text-[11px] uppercase tracking-[0.18em] text-ink-3 tabular-nums leading-none">{step}</span>
+            <span class="zz-kicker text-[11px] text-ink-3 tabular-nums leading-none">{step}</span>
             <Glyph name={glyph} size={38} class="text-moss" />
           </div>
           <div>

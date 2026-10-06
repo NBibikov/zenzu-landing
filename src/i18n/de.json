@@ -134,9 +134,11 @@
     "subtitle": "Tipps, Anleitungen und Einblicke für Sprachenlernende",
     "readMore": "Weiterlesen",
     "backToBlog": "Zurück zum Blog",
-    "publishedOn": "Veröffentlicht am",
     "readIn": "Diesen Artikel lesen auf",
-    "noArticles": "Noch keine Artikel. Schau bald wieder vorbei!"
+    "noArticles": "Noch keine Artikel. Schau bald wieder vorbei!",
+    "minRead": "{n} Min. Lesezeit",
+    "moreArticles": "Weiterlesen",
+    "latest": "Neu"
   },
   "news": {
     "title": "Nachrichten heute",
