@@ -56,7 +56,7 @@
 # 2026-09 batch — question-shaped, practical, long-tail (what people ask search and AI assistants)
 [done] How to Learn German from YouTube Videos: A Step-by-Step Routine
 [done] How to Learn Spanish with Podcasts at A2 and B1 Level
-How to Learn French from Netflix and YouTube Without Getting Lost
+[done] How to Learn French from Netflix and YouTube Without Getting Lost
 How Many Words Do You Need to Reach B2 in a Language
 What Is FSRS and Why It Beats the Old Anki Algorithm
 How Many New Flashcards per Day Should You Add
