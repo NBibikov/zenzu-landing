@@ -50,10 +50,6 @@ const alternates = supportedLocales.map(loc => ({
       <h2>{c.ideasTitle}</h2>
       <p>{c.ideasBody}</p>
       <p><a href={mailto}>{CONTACT_EMAIL}</a></p>
-
-      <ul>
-        <li>{c.website}: <a href={localePath('/', locale)}>zenzu.app</a></li>
-      </ul>
     </article>
   </main>
   <Footer t={strings} locale={locale} />
