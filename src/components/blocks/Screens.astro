@@ -5,7 +5,9 @@ const { t } = Astro.props
 // Screens from the iPhone app, prepared by scripts/app-screens.py: the
 // status bar is cropped, so the frame shows the app and not one phone.
 // The order follows a day in the app: the home screen, the coach, the
-// four libraries, then the courses and the review.
+// four libraries, then the courses and the review. The figcaption names
+// each screen, so the image itself carries an empty alt. width/height are
+// the size scripts/app-screens.py writes for a 1320x2868 capture.
 const screens = ['home', 'lisa', 'videos', 'podcasts', 'books', 'news', 'courses', 'decks']
   .map((key, i) => ({ key, step: String(i + 1).padStart(2, '0'), ...t.screens.items[key] }))
 ---
@@ -38,12 +40,12 @@ const screens = ['home', 'lisa', 'videos', 'podcasts', 'books', 'news', 'courses
             <img
               src={`/screens/${key}.webp`}
               srcset={`/screens/${key}-sm.webp 440w, /screens/${key}.webp 660w`}
-              sizes="(min-width: 768px) 270px, 220px"
+              sizes="(min-width: 768px) 258px, 208px"
               width="660"
               height="1305"
               loading="lazy"
               decoding="async"
-              alt={`Zenzu — ${title}`}
+              alt=""
             />
           </div>
           <figcaption class="mt-6 pr-2">
@@ -116,8 +118,10 @@ const screens = ['home', 'lisa', 'videos', 'podcasts', 'books', 'news', 'courses
     const step = () => {
       const item = track.querySelector<HTMLElement>('li')
       if (!item) return track.clientWidth
-      const pitch = item.offsetWidth + parseFloat(getComputedStyle(track).columnGap || '0')
-      return Math.max(1, Math.floor(track.clientWidth / pitch) - 1) * pitch
+      const style = getComputedStyle(track)
+      const pitch = item.offsetWidth + parseFloat(style.columnGap || '0')
+      const view = track.clientWidth - parseFloat(style.paddingLeft) - parseFloat(style.paddingRight)
+      return Math.max(1, Math.floor((view + parseFloat(style.columnGap || '0')) / pitch) - 1) * pitch
     }
     const update = () => {
       prev.disabled = track.scrollLeft <= 1

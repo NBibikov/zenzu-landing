@@ -5,14 +5,15 @@ Usage:
     python3 scripts/app-screens.py <name>=<screenshot.png> [...]
 
 Each screenshot is cropped and written to public/screens/<name>.webp
-(660 px wide, 2x of the 330 px frame) and <name>-sm.webp (440 px).
+(660 px wide, over 2x of the 258 px screen in the frame) and <name>-sm.webp (440 px).
 
-The crop removes the iOS status bar (clock, signal, battery) and the
-Dynamic Island band above the app's own header, and the empty home
-indicator band under the tab bar. Without them the frame reads as the
-app, not as one particular phone. The rows are measured on a 1320x2868
-iPhone Pro Max capture: the status bar ends at y=125 and the app header
-starts at y=240, the tab bar ends at y=2740. Other sizes are scaled.
+The crop removes the iOS status bar (clock, signal, battery) with the
+Dynamic Island, and most of the empty home indicator band under the tab
+bar. Without them the frame reads as the app, not as one particular
+phone. The rows are measured on a 1320x2868 iPhone Pro Max capture: the
+status bar ends at y=125, the app header starts at y=240 and the tab bar
+ends at y=2740. The crop keeps a margin of paper on both sides. Use
+captures of that size: other devices have a different status bar.
 """
 import os, sys
 from PIL import Image
@@ -41,5 +42,7 @@ if __name__ == '__main__':
         sys.exit(__doc__)
     os.makedirs(OUT, exist_ok=True)
     for arg in sys.argv[1:]:
+        if '=' not in arg:
+            sys.exit(__doc__)
         name, path = arg.split('=', 1)
         prepare(name, path)
