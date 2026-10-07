@@ -1,5 +1,6 @@
 ---
 import { localeNames, localePath, supportedLocales, type Locale } from '../../i18n'
+import { CONTACT_EMAIL, mailtoHref } from '../../lib/contact'
 
 interface Props { t: any; locale: Locale }
 const { t, locale } = Astro.props
@@ -31,6 +32,10 @@ const currentYear = new Date().getFullYear()
           <li><a href={localePath('/privacy/', locale)} class="hover:text-ink transition-colors">{t.footer.privacy}</a></li>
           <li><a href={localePath('/terms/', locale)} class="hover:text-ink transition-colors">{t.footer.terms}</a></li>
           <li><a href={localePath('/contact/', locale)} class="hover:text-ink transition-colors">{t.footer.contact}</a></li>
+          <li>
+            {t.footer.writeUs}{' '}
+            <a href={mailtoHref(t.contact.subject)} class="text-ink underline decoration-hairline underline-offset-4 hover:decoration-ink transition-colors break-all">{CONTACT_EMAIL}</a>
+          </li>
         </ul>
       </div>
     </div>

@@ -176,7 +176,9 @@
   "cta": {
     "title": "Comece a aprender com o conteúdo que você ama",
     "subtitle": "Importe seu primeiro vídeo ou podcast em segundos.",
-    "button": "Começar"
+    "button": "Começar",
+    "writeLead": "Dúvidas, ideias ou um bug? Escreva para",
+    "writeTail": "— lemos cada mensagem."
   },
   "footer": {
     "brand": "Aprenda idiomas com conteúdo real que você ama. YouTube, podcasts, artigos — transformados em flashcards com IA.",
@@ -187,7 +189,8 @@
     "terms": "Termos de Serviço",
     "contact": "Contato",
     "rights": "Todos os direitos reservados.",
-    "compare": "Comparações"
+    "compare": "Comparações",
+    "writeUs": "Escreva para nós:"
   },
   "blog": {
     "title": "Blog de aprendizado de idiomas",
@@ -237,5 +240,16 @@
         "a": "FSRS-5, um algoritmo moderno e de código aberto treinado com grandes volumes de revisões reais. Ele prevê quando você está prestes a esquecer cada cartão e agenda a revisão logo antes disso."
       }
     ]
+  },
+  "contact": {
+    "title": "Contato",
+    "description": "Escreva para a equipe do Zenzu: dúvidas, feedback, bugs e ideias. Lemos cada mensagem.",
+    "subject": "Feedback sobre o Zenzu",
+    "intro": "Adoramos ouvir você. Seja uma dúvida, um feedback, um bug ou uma proposta de parceria — escreva para nós e responderemos o mais rápido possível.",
+    "generalTitle": "Dúvidas gerais",
+    "bugsTitle": "Relatar um bug",
+    "bugsBody": "Encontrou um bug? Conte o que aconteceu, qual dispositivo ou navegador você usa e envie capturas de tela, se puder.",
+    "ideasTitle": "Sugestões de recursos",
+    "ideasBody": "Tem uma ideia de recurso? Estamos sempre buscando melhorar. Envie suas sugestões."
   }
 }

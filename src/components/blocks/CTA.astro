@@ -1,4 +1,6 @@
 ---
+import { CONTACT_EMAIL, mailtoHref } from '../../lib/contact'
+
 interface Props { t: any }
 const { t } = Astro.props
 // Moss is an accent, never a field: this section used to be a full-bleed moss
@@ -12,5 +14,11 @@ const { t } = Astro.props
     <a href="https://app.zenzu.app" class="zz-btn px-10">
       {t.cta.button}
     </a>
+    <!-- A quiet way to reach us, not another call to action. -->
+    <p class="mt-10 text-sm text-ink-3 leading-relaxed">
+      {t.cta.writeLead}{' '}
+      <a href={mailtoHref(t.contact.subject)} class="text-ink-2 underline decoration-hairline underline-offset-4 hover:text-ink hover:decoration-ink transition-colors">{CONTACT_EMAIL}</a>{' '}
+      {t.cta.writeTail}
+    </p>
   </div>
 </section>

@@ -11,8 +11,10 @@ const { t, locale } = Astro.props
 // item that can be "current". It wears the swash, as a selected nav item
 // does in the app, and stays bold so the state never rests on colour.
 const onBlog = /\/blog\//.test(Astro.url.pathname)
-// On a blog page the language switch keeps the reader in the blog.
-const switchTarget = onBlog ? '/blog/' : '/'
+// On a blog or contact page the language switch keeps the reader there:
+// both exist in every locale.
+const onContact = /\/contact\/$/.test(Astro.url.pathname)
+const switchTarget = onBlog ? '/blog/' : onContact ? '/contact/' : '/'
 ---
 
 <header class="fixed top-0 left-0 right-0 z-50 bg-paper/90 backdrop-blur-lg border-b border-hairline">

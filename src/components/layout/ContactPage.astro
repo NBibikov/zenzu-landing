@@ -1,0 +1,56 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro'
+import Header from './Header.astro'
+import Footer from './Footer.astro'
+import { t, supportedLocales, localePath, type Locale } from '../../i18n'
+import { CONTACT_EMAIL, mailtoHref } from '../../lib/contact'
+
+interface Props {
+  locale: Locale
+}
+
+const { locale } = Astro.props
+const strings = t(locale)
+const c = strings.contact
+const mailto = mailtoHref(c.subject)
+
+const site = Astro.site!.toString().replace(/\/$/, '')
+const alternates = supportedLocales.map(loc => ({
+  hreflang: loc,
+  href: `${site}${localePath('/contact/', loc)}`,
+}))
+---
+
+<BaseLayout
+  title={`${c.title} — Zenzu`}
+  ogTitle={c.title}
+  description={c.description}
+  lang={locale}
+  alternates={alternates}
+>
+  <Header t={strings} locale={locale} />
+  <main class="pt-32 pb-24 px-6">
+    <article class="zz-prose prose prose-lg max-w-3xl mx-auto
+      prose-h1:text-4xl prose-h1:mb-2
+      prose-h2:text-2xl prose-h2:mt-12 prose-h2:mb-4 prose-h2:border-b prose-h2:border-hairline prose-h2:pb-2
+      prose-p:text-ink-2 prose-li:text-ink-2
+    ">
+      <h1>{c.title}</h1>
+      <hr class="!mt-4 !mb-8 border-rule" />
+
+      <p>{c.intro}</p>
+
+      <h2>{c.generalTitle}</h2>
+      <p><a href={mailto}>{CONTACT_EMAIL}</a></p>
+
+      <h2>{c.bugsTitle}</h2>
+      <p>{c.bugsBody}</p>
+      <p><a href={mailto}>{CONTACT_EMAIL}</a></p>
+
+      <h2>{c.ideasTitle}</h2>
+      <p>{c.ideasBody}</p>
+      <p><a href={mailto}>{CONTACT_EMAIL}</a></p>
+    </article>
+  </main>
+  <Footer t={strings} locale={locale} />
+</BaseLayout>
