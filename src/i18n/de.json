@@ -148,6 +148,25 @@
       "desc": "Der FSRS-5-Algorithmus plant Wiederholungen zum optimalen Zeitpunkt — damit jede investierte Minute zählt."
     }
   },
+  "android": {
+    "kicker": "Google Play · Beta",
+    "title": "Zenzu für Android — früher Zugang",
+    "lead": "Die Android-App ist im offenen Test bei Google Play. Jeder kann mitmachen — in drei Schritten.",
+    "group": {
+      "title": "Tritt der Testergruppe bei",
+      "cta": "Gruppe beitreten"
+    },
+    "tester": {
+      "title": "Werde Tester",
+      "cta": "Tester werden"
+    },
+    "install": {
+      "title": "Installiere die App aus Google Play",
+      "cta": "Installieren"
+    },
+    "note": "Nutze in allen drei Schritten dasselbe Google-Konto. Der Installationslink funktioniert erst nach Schritt 2.",
+    "heroLink": "Android (Beta)"
+  },
   "mcp": {
     "kicker": "Jetzt verfügbar",
     "title": "Deine Daten, wo immer du arbeitest.",
@@ -199,7 +218,11 @@
       },
       {
         "q": "Auf welchen Geräten läuft Zenzu?",
-        "a": "Auf iPhone und iPad ab iOS 15 sowie in jedem modernen Browser unter app.zenzu.app."
+        "a": "Auf iPhone und iPad ab iOS 15 sowie in jedem modernen Browser unter app.zenzu.app. Die Android-App ist im offenen Test bei Google Play."
+      },
+      {
+        "q": "Gibt es eine Android-Version?",
+        "a": "Ja — die Android-App ist im offenen Test bei Google Play, und jeder kann mitmachen. Tritt der Testergruppe bei, melde dich als Tester an und installiere Zenzu dann aus Google Play, jeweils mit demselben Google-Konto. Die Links findest du oben auf dieser Seite im Android-Abschnitt."
       },
       {
         "q": "Was unterscheidet Zenzu von Anki?",
