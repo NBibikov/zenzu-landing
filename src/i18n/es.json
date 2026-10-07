@@ -148,6 +148,27 @@
       "desc": "El algoritmo FSRS-5 programa los repasos en el momento óptimo — para que cada minuto que inviertas cuente."
     }
   },
+  "android": {
+    "kicker": "Android · acceso anticipado",
+    "title": "Zenzu para Android — acceso anticipado",
+    "lead": "La app de Android está en prueba abierta en Google Play. Cualquiera puede unirse en tres pasos.",
+    "steps": [
+      {
+        "title": "Únete al grupo de testers",
+        "cta": "Unirme al grupo"
+      },
+      {
+        "title": "Hazte tester",
+        "cta": "Ser tester"
+      },
+      {
+        "title": "Instala la app desde Google Play",
+        "cta": "Instalar"
+      }
+    ],
+    "note": "Usa la misma cuenta de Google en los tres pasos. El enlace de instalación solo funciona después del paso 2.",
+    "heroLink": "Android (beta)"
+  },
   "mcp": {
     "kicker": "Ya disponible",
     "title": "Tus datos, dondequiera que trabajes.",
@@ -200,6 +221,10 @@
       {
         "q": "¿En qué dispositivos funciona Zenzu?",
         "a": "En iPhone y iPad con iOS 15 o posterior, y en cualquier navegador moderno en app.zenzu.app."
+      },
+      {
+        "q": "¿Hay una versión para Android?",
+        "a": "Sí — la app de Android está en prueba abierta en Google Play y cualquiera puede unirse. Únete al grupo de testers, regístrate como tester e instala Zenzu desde Google Play, siempre con la misma cuenta de Google. Los enlaces están más arriba, en la sección «Zenzu para Android»."
       },
       {
         "q": "¿En qué se diferencia Zenzu de Anki?",
