@@ -1,0 +1,15 @@
+---
+import ContactPage from '../../components/layout/ContactPage.astro'
+import { supportedLocales, type Locale } from '../../i18n'
+
+// English lives at /contact/; every other locale gets /<lang>/contact/.
+export function getStaticPaths() {
+  return supportedLocales
+    .filter(lang => lang !== 'en')
+    .map(lang => ({ params: { lang } }))
+}
+
+const locale = Astro.params.lang as Locale
+---
+
+<ContactPage locale={locale} />

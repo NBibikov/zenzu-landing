@@ -176,7 +176,9 @@
   "cta": {
     "title": "Start learning from content you love",
     "subtitle": "Import your first video or podcast in seconds.",
-    "button": "Get started"
+    "button": "Get started",
+    "writeLead": "Questions, ideas or a bug? Write to",
+    "writeTail": "— we read every letter."
   },
   "footer": {
     "brand": "Learn languages from real content you love. YouTube, podcasts, articles — turned into flashcards with AI.",
@@ -187,7 +189,8 @@
     "terms": "Terms of Service",
     "contact": "Contact",
     "rights": "All rights reserved.",
-    "compare": "Compare"
+    "compare": "Compare",
+    "writeUs": "Write to us:"
   },
   "blog": {
     "title": "Language Learning Blog",
@@ -237,5 +240,17 @@
         "a": "FSRS-5, a modern open-source scheduler trained on large amounts of real review data. It predicts when you are about to forget each card and schedules the review right before that moment."
       }
     ]
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Write to the Zenzu team: questions, feedback, bug reports and ideas. We read every letter.",
+    "subject": "Zenzu feedback",
+    "intro": "We'd love to hear from you. Whether you have a question, feedback, a bug report or a partnership inquiry — write to us and we'll get back to you as soon as possible.",
+    "generalTitle": "General inquiries",
+    "bugsTitle": "Bug reports",
+    "bugsBody": "Found a bug? Tell us what happened, which device or browser you use, and add screenshots if you can.",
+    "ideasTitle": "Feature requests",
+    "ideasBody": "Have an idea for a feature? We're always looking to improve. Send us your suggestions.",
+    "website": "Website"
   }
 }
