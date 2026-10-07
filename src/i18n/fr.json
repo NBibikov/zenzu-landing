@@ -149,23 +149,21 @@
     }
   },
   "android": {
-    "kicker": "Android · accès anticipé",
+    "kicker": "Google Play · bêta",
     "title": "Zenzu pour Android — accès anticipé",
     "lead": "L’app Android est en test ouvert sur Google Play. Tout le monde peut participer, en trois étapes.",
-    "steps": [
-      {
-        "title": "Rejoignez le groupe de testeurs",
-        "cta": "Rejoindre le groupe"
-      },
-      {
-        "title": "Inscrivez-vous comme testeur",
-        "cta": "Devenir testeur"
-      },
-      {
-        "title": "Installez l’app depuis Google Play",
-        "cta": "Installer"
-      }
-    ],
+    "group": {
+      "title": "Rejoignez le groupe de testeurs",
+      "cta": "Rejoindre le groupe"
+    },
+    "tester": {
+      "title": "Inscrivez-vous comme testeur",
+      "cta": "Devenir testeur"
+    },
+    "install": {
+      "title": "Installez l’app depuis Google Play",
+      "cta": "Installer"
+    },
     "note": "Utilisez le même compte Google pour les trois étapes. Le lien d’installation ne fonctionne qu’après l’étape 2.",
     "heroLink": "Android (bêta)"
   },
@@ -220,11 +218,11 @@
       },
       {
         "q": "Sur quels appareils Zenzu fonctionne-t-il ?",
-        "a": "Sur iPhone et iPad avec iOS 15 ou ultérieur, et dans tout navigateur récent sur app.zenzu.app."
+        "a": "Sur iPhone et iPad avec iOS 15 ou ultérieur, et dans tout navigateur récent sur app.zenzu.app. L’app Android est en test ouvert sur Google Play."
       },
       {
         "q": "Existe-t-il une version Android ?",
-        "a": "Oui — l’app Android est en test ouvert sur Google Play, et tout le monde peut participer. Rejoignez le groupe de testeurs, inscrivez-vous comme testeur, puis installez Zenzu depuis Google Play, toujours avec le même compte Google. Les liens se trouvent plus haut, dans la section « Zenzu pour Android »."
+        "a": "Oui — l’app Android est en test ouvert sur Google Play, et tout le monde peut participer. Rejoignez le groupe de testeurs, inscrivez-vous comme testeur, puis installez Zenzu depuis Google Play, toujours avec le même compte Google. Les liens se trouvent plus haut sur cette page, dans la section Android."
       },
       {
         "q": "En quoi Zenzu est-il différent d'Anki ?",

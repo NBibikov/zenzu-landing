@@ -2,21 +2,16 @@
 interface Props { t: any }
 const { t } = Astro.props
 
-// Open testing on Google Play takes three steps, in this order: the tester
-// group grants access, the testing page enrols the account, and only then
-// does the store listing let that account install. Each step is its own
-// card with its own link, so a reader who stops halfway sees where to resume.
-const links = [
-  'https://groups.google.com/g/zenzu-testers',
-  'https://play.google.com/apps/testing/com.bblife.zenzu',
-  'https://play.google.com/store/apps/details?id=com.bblife.zenzu',
+// Joining the Play test takes three steps, in this order: join the tester
+// group, enrol the account on the testing page, then install from the store
+// listing (it opens for that account only after enrolment). Each step is its
+// own card with its own link, so a reader who stops halfway sees where to
+// resume. The URLs stay here, keyed by step, so no locale can move them.
+const steps = [
+  { step: '01', href: 'https://groups.google.com/g/zenzu-testers', ...t.android.group },
+  { step: '02', href: 'https://play.google.com/apps/testing/com.bblife.zenzu', ...t.android.tester },
+  { step: '03', href: 'https://play.google.com/store/apps/details?id=com.bblife.zenzu', ...t.android.install },
 ]
-const steps: { step: string; title: string; cta: string; href: string }[] =
-  t.android.steps.map((s: { title: string; cta: string }, i: number) => ({
-    ...s,
-    step: String(i + 1).padStart(2, '0'),
-    href: links[i],
-  }))
 ---
 
 <section id="android" class="py-24 px-6">
@@ -30,7 +25,7 @@ const steps: { step: string; title: string; cta: string; href: string }[] =
     <ol class="grid gap-4 sm:grid-cols-3">
       {steps.map(({ step, title, cta, href }) => (
         <li class="flex flex-col gap-4 p-6 bg-paper-2 border border-hairline rounded-[16px]">
-          <span class="zz-kicker text-[11px] text-ink-3 tabular-nums leading-none">{step}</span>
+          <span class="zz-kicker text-[11px] text-ink-3 tabular-nums leading-none" aria-hidden="true">{step}</span>
           <h3 class="font-serif text-xl text-ink">{title}</h3>
           <a
             href={href}

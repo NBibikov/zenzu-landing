@@ -149,23 +149,21 @@
     }
   },
   "android": {
-    "kicker": "Android · early access",
+    "kicker": "Google Play · beta",
     "title": "Zenzu for Android — early access",
     "lead": "The Android app is in open testing on Google Play. Anyone can join — it takes three steps.",
-    "steps": [
-      {
-        "title": "Join the tester group",
-        "cta": "Join the group"
-      },
-      {
-        "title": "Sign up as a tester",
-        "cta": "Become a tester"
-      },
-      {
-        "title": "Install the app from Google Play",
-        "cta": "Install"
-      }
-    ],
+    "group": {
+      "title": "Join the tester group",
+      "cta": "Join the group"
+    },
+    "tester": {
+      "title": "Sign up as a tester",
+      "cta": "Become a tester"
+    },
+    "install": {
+      "title": "Install the app from Google Play",
+      "cta": "Install"
+    },
     "note": "Use the same Google account in all three steps. The install link works only after step 2.",
     "heroLink": "Android (beta)"
   },
@@ -220,11 +218,11 @@
       },
       {
         "q": "Which devices does Zenzu run on?",
-        "a": "iPhone and iPad with iOS 15 or later, and any modern web browser at app.zenzu.app."
+        "a": "iPhone and iPad with iOS 15 or later, and any modern web browser at app.zenzu.app. The Android app is in open testing on Google Play."
       },
       {
         "q": "Is there an Android version?",
-        "a": "Yes — the Android app is in open testing on Google Play, and anyone can join. Join the tester group, sign up as a tester, then install Zenzu from Google Play, all with the same Google account. The links are in the “Zenzu for Android” section above."
+        "a": "Yes — the Android app is in open testing on Google Play, and anyone can join. Join the tester group, sign up as a tester, then install Zenzu from Google Play, all with the same Google account. The links are in the Android section above on this page."
       },
       {
         "q": "How is Zenzu different from Anki?",
