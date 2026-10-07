@@ -1,0 +1,135 @@
+---
+interface Props { t: any }
+const { t } = Astro.props
+
+// Screens from the iPhone app, prepared by scripts/app-screens.py: the
+// status bar is cropped, so the frame shows the app and not one phone.
+// The order follows a day in the app: the home screen, the coach, the
+// four libraries, then the courses and the review.
+const screens = ['home', 'lisa', 'videos', 'podcasts', 'books', 'news', 'courses', 'decks']
+  .map((key, i) => ({ key, step: String(i + 1).padStart(2, '0'), ...t.screens.items[key] }))
+---
+
+<section class="py-24 bg-paper-2 overflow-hidden" data-screens>
+  <div class="max-w-5xl mx-auto px-6 mb-12 flex items-end justify-between gap-8">
+    <div class="max-w-2xl">
+      <span class="zz-stroke mb-5" aria-hidden="true"></span>
+      <h2 class="font-serif text-3xl md:text-4xl text-ink mb-4">{t.screens.title}</h2>
+      <p class="text-ink-2 text-lg leading-relaxed">{t.screens.subtitle}</p>
+    </div>
+    <!-- On a phone the row is swiped; the arrows are for a mouse. -->
+    <div class="hidden md:flex gap-3 shrink-0">
+      <button type="button" class="zz-btn zz-btn-cancel zz-btn-sm w-11 px-0 disabled:opacity-40 disabled:pointer-events-none" data-screens-prev aria-label={t.screens.prev} disabled>
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+      </button>
+      <button type="button" class="zz-btn zz-btn-cancel zz-btn-sm w-11 px-0 disabled:opacity-40 disabled:pointer-events-none" data-screens-next aria-label={t.screens.next}>
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- The row starts at the content column and runs off the right edge,
+       so the cut-off frame says "there is more" without a dot pager. -->
+  <ul class="zz-screens" data-screens-track tabindex="0" aria-label={t.screens.label}>
+    {screens.map(({ key, step, title, desc }) => (
+      <li class="zz-screen">
+        <figure>
+          <div class="zz-screen-frame">
+            <img
+              src={`/screens/${key}.webp`}
+              srcset={`/screens/${key}-sm.webp 440w, /screens/${key}.webp 660w`}
+              sizes="(min-width: 768px) 270px, 220px"
+              width="660"
+              height="1305"
+              loading="lazy"
+              decoding="async"
+              alt={`Zenzu — ${title}`}
+            />
+          </div>
+          <figcaption class="mt-6 pr-2">
+            <span class="zz-kicker text-[11px] text-ink-3 tabular-nums">{step}</span>
+            <h3 class="font-serif text-lg text-ink mt-1 mb-1.5">{title}</h3>
+            <p class="text-ink-2 text-sm leading-relaxed">{desc}</p>
+          </figcaption>
+        </figure>
+      </li>
+    ))}
+  </ul>
+</section>
+
+<style>
+  .zz-screens {
+    --gutter: max(1.5rem, calc((100% - 64rem) / 2 + 1.5rem));
+    display: flex;
+    gap: 2rem;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scroll-padding-inline: var(--gutter);
+    padding: 0.5rem var(--gutter) 2.5rem;
+    scrollbar-width: none;
+  }
+  .zz-screens::-webkit-scrollbar { display: none; }
+  .zz-screens:focus-visible { outline-offset: -3px; }
+
+  .zz-screen {
+    flex: none;
+    width: 220px;
+    scroll-snap-align: start;
+  }
+  /* Stepping stones: every second frame sits lower, so the row reads as
+     a path through the app and not as a grid of thumbnails. */
+  .zz-screen:nth-child(even) { padding-top: 2.5rem; }
+
+  /* A plain ink bezel with even corners: a device, but no particular one.
+     The shadow is ink at low strength, the only depth on the page. */
+  .zz-screen-frame {
+    padding: 6px;
+    border-radius: 2.25rem;
+    background: var(--color-ink);
+    box-shadow: 0 1px 2px rgb(28 27 24 / 0.08), 0 18px 40px -18px rgb(28 27 24 / 0.35);
+  }
+  .zz-screen-frame img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: calc(2.25rem - 6px);
+    background: var(--color-paper);
+  }
+
+  @media (min-width: 768px) {
+    .zz-screens { gap: 2.5rem; }
+    .zz-screen { width: 270px; }
+    .zz-screen:nth-child(even) { padding-top: 3.5rem; }
+  }
+</style>
+
+<script>
+  for (const root of document.querySelectorAll<HTMLElement>('[data-screens]')) {
+    const track = root.querySelector<HTMLElement>('[data-screens-track]')
+    const prev = root.querySelector<HTMLButtonElement>('[data-screens-prev]')
+    const next = root.querySelector<HTMLButtonElement>('[data-screens-next]')
+    if (!track || !prev || !next) continue
+
+    // One press moves the row by the frames that fit, less one, so the
+    // last frame in view stays in view as a landmark.
+    const step = () => {
+      const item = track.querySelector<HTMLElement>('li')
+      if (!item) return track.clientWidth
+      const pitch = item.offsetWidth + parseFloat(getComputedStyle(track).columnGap || '0')
+      return Math.max(1, Math.floor(track.clientWidth / pitch) - 1) * pitch
+    }
+    const update = () => {
+      prev.disabled = track.scrollLeft <= 1
+      next.disabled = track.scrollLeft + track.clientWidth >= track.scrollWidth - 1
+    }
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)')
+    const move = (dir: number) =>
+      track.scrollBy({ left: dir * step(), behavior: reduced.matches ? 'auto' : 'smooth' })
+    prev.addEventListener('click', () => move(-1))
+    next.addEventListener('click', () => move(1))
+    track.addEventListener('scroll', update, { passive: true })
+    window.addEventListener('resize', update)
+    update()
+  }
+</script>

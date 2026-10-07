@@ -3,6 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro'
 import Header from './Header.astro'
 import Footer from './Footer.astro'
 import Hero from '../blocks/Hero.astro'
+import Screens from '../blocks/Screens.astro'
 import TheName from '../blocks/TheName.astro'
 import ForWhom from '../blocks/ForWhom.astro'
 import Features from '../blocks/Features.astro'
@@ -97,6 +98,7 @@ const jsonLd = {
   <Header t={strings} locale={locale} />
   <main>
     <Hero t={strings} />
+    <Screens t={strings} />
     <TheName t={strings} />
     <ForWhom t={strings} />
     <Features t={strings} />

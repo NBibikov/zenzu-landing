@@ -23,6 +23,47 @@
     "supported": "Inglês · Alemão · Francês · Espanhol",
     "comingSoon": "Português — em breve"
   },
+  "screens": {
+    "title": "Uma olhada por dentro",
+    "subtitle": "Oito telas do app para iPhone — deslize para ver.",
+    "label": "Capturas de tela do app",
+    "prev": "Telas anteriores",
+    "next": "Próximas telas",
+    "items": {
+      "home": {
+        "title": "Seu dia",
+        "desc": "Cartões para revisar, as notícias do dia e sua próxima lição em uma só tela."
+      },
+      "lisa": {
+        "title": "Lisa, sua coach",
+        "desc": "Planeje o dia, treine as palavras difíceis ou pergunte sobre gramática — no seu idioma."
+      },
+      "videos": {
+        "title": "Vídeos do YouTube",
+        "desc": "Aulas, vlogs e histórias no idioma que você aprende, por data."
+      },
+      "podcasts": {
+        "title": "Podcasts",
+        "desc": "Continue de onde parou e descubra novos programas para o seu nível."
+      },
+      "books": {
+        "title": "Livros",
+        "desc": "Clássicos escolhidos para o seu nível, e um passo acima."
+      },
+      "news": {
+        "title": "Notícias do dia",
+        "desc": "Uma edição nova todos os dias, escrita para estudantes."
+      },
+      "courses": {
+        "title": "Cursos com IA",
+        "desc": "Gramática, situações e vocabulário de A1 a C1, lição por lição."
+      },
+      "decks": {
+        "title": "Baralhos",
+        "desc": "Todos os cartões de hoje, de todos os baralhos, em uma só revisão."
+      }
+    }
+  },
   "name": {
     "kicker": "O nome",
     "title": "De uma mente tranquila nasce um novo idioma.",
