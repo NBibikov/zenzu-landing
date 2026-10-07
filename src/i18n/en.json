@@ -23,6 +23,47 @@
     "supported": "English · German · French · Spanish",
     "comingSoon": "Portuguese — coming soon"
   },
+  "screens": {
+    "title": "A look inside",
+    "subtitle": "Eight screens from the iPhone app — swipe through.",
+    "label": "App screenshots",
+    "prev": "Previous screens",
+    "next": "Next screens",
+    "items": {
+      "home": {
+        "title": "Your day",
+        "desc": "Cards due for review, today's news and your next lesson on one screen."
+      },
+      "lisa": {
+        "title": "Lisa, your coach",
+        "desc": "Plan the day, drill weak words or ask about grammar — in your own language."
+      },
+      "videos": {
+        "title": "YouTube videos",
+        "desc": "Lessons, vlogs and stories in the language you learn, sorted by date."
+      },
+      "podcasts": {
+        "title": "Podcasts",
+        "desc": "Continue where you stopped and find new shows for your level."
+      },
+      "books": {
+        "title": "Books",
+        "desc": "Classics picked for your level, and one step above it."
+      },
+      "news": {
+        "title": "Daily news",
+        "desc": "A fresh edition every day, written for learners."
+      },
+      "courses": {
+        "title": "AI courses",
+        "desc": "Grammar, situations and vocabulary, A1 to C1, lesson by lesson."
+      },
+      "decks": {
+        "title": "Decks",
+        "desc": "Every card due today across all decks, in one review."
+      }
+    }
+  },
   "name": {
     "kicker": "The name",
     "title": "From a quiet mind, a new language grows.",

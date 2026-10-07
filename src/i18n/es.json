@@ -23,6 +23,47 @@
     "supported": "Inglés · Alemán · Francés · Español",
     "comingSoon": "Portugués — próximamente"
   },
+  "screens": {
+    "title": "Un vistazo por dentro",
+    "subtitle": "Ocho pantallas de la app para iPhone — desliza para verlas.",
+    "label": "Capturas de la app",
+    "prev": "Pantallas anteriores",
+    "next": "Pantallas siguientes",
+    "items": {
+      "home": {
+        "title": "Tu día",
+        "desc": "Tarjetas pendientes, las noticias del día y tu próxima lección en una sola pantalla."
+      },
+      "lisa": {
+        "title": "Lisa, tu coach",
+        "desc": "Planifica el día, practica las palabras difíciles o pregunta por la gramática — en tu idioma."
+      },
+      "videos": {
+        "title": "Vídeos de YouTube",
+        "desc": "Lecciones, vlogs e historias en el idioma que aprendes, ordenados por fecha."
+      },
+      "podcasts": {
+        "title": "Pódcasts",
+        "desc": "Sigue donde lo dejaste y descubre nuevos programas para tu nivel."
+      },
+      "books": {
+        "title": "Libros",
+        "desc": "Clásicos elegidos para tu nivel, y un paso más arriba."
+      },
+      "news": {
+        "title": "Noticias del día",
+        "desc": "Una edición nueva cada día, escrita para estudiantes."
+      },
+      "courses": {
+        "title": "Cursos con IA",
+        "desc": "Gramática, situaciones y vocabulario de A1 a C1, lección a lección."
+      },
+      "decks": {
+        "title": "Mazos",
+        "desc": "Todas las tarjetas de hoy, de todos tus mazos, en un solo repaso."
+      }
+    }
+  },
   "name": {
     "kicker": "El nombre",
     "title": "De una mente serena nace un nuevo idioma.",

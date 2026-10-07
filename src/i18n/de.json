@@ -23,6 +23,47 @@
     "supported": "Englisch · Deutsch · Französisch · Spanisch",
     "comingSoon": "Portugiesisch — demnächst verfügbar"
   },
+  "screens": {
+    "title": "Ein Blick hinein",
+    "subtitle": "Acht Screens aus der iPhone-App — einfach durchwischen.",
+    "label": "Screenshots der App",
+    "prev": "Vorherige Screens",
+    "next": "Nächste Screens",
+    "items": {
+      "home": {
+        "title": "Dein Tag",
+        "desc": "Fällige Karten, die Nachrichten des Tages und deine nächste Lektion auf einem Screen."
+      },
+      "lisa": {
+        "title": "Lisa, dein Coach",
+        "desc": "Plane den Tag, übe schwierige Wörter oder frag nach Grammatik — in deiner Sprache."
+      },
+      "videos": {
+        "title": "YouTube-Videos",
+        "desc": "Lektionen, Vlogs und Geschichten in deiner Zielsprache, nach Datum sortiert."
+      },
+      "podcasts": {
+        "title": "Podcasts",
+        "desc": "Mach dort weiter, wo du aufgehört hast, und finde neue Shows für dein Niveau."
+      },
+      "books": {
+        "title": "Bücher",
+        "desc": "Klassiker für dein Niveau — und eine Stufe darüber."
+      },
+      "news": {
+        "title": "Tägliche Nachrichten",
+        "desc": "Jeden Tag eine neue Ausgabe, geschrieben für Lernende."
+      },
+      "courses": {
+        "title": "KI-Kurse",
+        "desc": "Grammatik, Situationen und Wortschatz von A1 bis C1, Lektion für Lektion."
+      },
+      "decks": {
+        "title": "Decks",
+        "desc": "Alle heute fälligen Karten aus allen Decks in einer Wiederholung."
+      }
+    }
+  },
   "name": {
     "kicker": "Der Name",
     "title": "Aus einem ruhigen Geist wächst eine neue Sprache.",

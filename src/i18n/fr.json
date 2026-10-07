@@ -23,6 +23,47 @@
     "supported": "Anglais · Allemand · Français · Espagnol",
     "comingSoon": "Portugais — bientôt disponible"
   },
+  "screens": {
+    "title": "Un aperçu",
+    "subtitle": "Huit écrans de l’app iPhone — faites défiler.",
+    "label": "Captures d’écran de l’app",
+    "prev": "Écrans précédents",
+    "next": "Écrans suivants",
+    "items": {
+      "home": {
+        "title": "Votre journée",
+        "desc": "Les cartes à réviser, l’actualité du jour et votre prochaine leçon sur un seul écran."
+      },
+      "lisa": {
+        "title": "Lisa, votre coach",
+        "desc": "Planifiez la journée, travaillez les mots difficiles ou posez une question de grammaire — dans votre langue."
+      },
+      "videos": {
+        "title": "Vidéos YouTube",
+        "desc": "Leçons, vlogs et histoires dans la langue que vous apprenez, triés par date."
+      },
+      "podcasts": {
+        "title": "Podcasts",
+        "desc": "Reprenez là où vous vous êtes arrêté et trouvez de nouvelles émissions à votre niveau."
+      },
+      "books": {
+        "title": "Livres",
+        "desc": "Des classiques choisis pour votre niveau, et un cran au-dessus."
+      },
+      "news": {
+        "title": "Actualité du jour",
+        "desc": "Une nouvelle édition chaque jour, écrite pour les apprenants."
+      },
+      "courses": {
+        "title": "Cours IA",
+        "desc": "Grammaire, situations et vocabulaire de A1 à C1, leçon après leçon."
+      },
+      "decks": {
+        "title": "Paquets",
+        "desc": "Toutes les cartes du jour, de tous vos paquets, en une seule révision."
+      }
+    }
+  },
   "name": {
     "kicker": "Le nom",
     "title": "D'un esprit calme naît une nouvelle langue.",
