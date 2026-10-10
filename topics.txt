@@ -58,7 +58,7 @@
 [done] How to Learn Spanish with Podcasts at A2 and B1 Level
 [done] How to Learn French from Netflix and YouTube Without Getting Lost
 [done] How Many Words Do You Need to Reach B2 in a Language
-What Is FSRS and Why It Beats the Old Anki Algorithm
+[done] What Is FSRS and Why It Beats the Old Anki Algorithm
 How Many New Flashcards per Day Should You Add
 How to Make Good Flashcards from Sentences You Hear
 Sentence Mining Explained: The Fastest Way to Build Vocabulary
