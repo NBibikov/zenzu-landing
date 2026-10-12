@@ -60,7 +60,7 @@
 [done] How Many Words Do You Need to Reach B2 in a Language
 [done] What Is FSRS and Why It Beats the Old Anki Algorithm
 [done] How Many New Flashcards per Day Should You Add
-How to Make Good Flashcards from Sentences You Hear
+[done] How to Make Good Flashcards from Sentences You Hear
 Sentence Mining Explained: The Fastest Way to Build Vocabulary
 Comprehensible Input: What It Is and How to Find It at Your Level
 How to Choose YouTube Channels for Learning German at Every CEFR Level
