@@ -20,6 +20,8 @@
     "ctaSecondary": "See how it works",
     "appStoreBadge": "Now available on iOS",
     "appStoreCta": "Download on the App Store",
+    "appStoreBadgeTop": "Download on the",
+    "appStoreBadgeName": "App Store",
     "supported": "English · German · French · Spanish",
     "comingSoon": "Portuguese: coming soon"
   },
