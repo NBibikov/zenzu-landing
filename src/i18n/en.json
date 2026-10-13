@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Zenzu — Learn Languages from Real Content",
-    "description": "Learn languages from real content — YouTube, podcasts, articles. AI flashcards with FSRS spaced repetition and an AI language coach."
+    "description": "Learn languages from real content: YouTube, podcasts, articles. AI flashcards with FSRS spaced repetition and an AI language coach."
   },
   "nav": {
     "features": "Features",
@@ -15,17 +15,17 @@
     "headline1": "Learn languages from",
     "headlineHighlight": "real content",
     "headline2": "you love",
-    "subheadline": "Import YouTube videos, podcasts, and articles. Select any word or phrase to save it as a card. Chat with Lisa — your AI language coach — in your own language. Your learning, your data — open to your own AI agents through MCP.",
+    "subheadline": "Import YouTube videos, podcasts, and articles. Select any word or phrase to save it as a card. Chat with Lisa, your AI language coach, in your own language. Your learning and your data stay open to your own AI agents through MCP.",
     "cta": "Start learning",
     "ctaSecondary": "See how it works",
     "appStoreBadge": "Now available on iOS",
     "appStoreCta": "Download on the App Store",
     "supported": "English · German · French · Spanish",
-    "comingSoon": "Portuguese — coming soon"
+    "comingSoon": "Portuguese: coming soon"
   },
   "screens": {
     "title": "A look inside",
-    "subtitle": "Eight screens from the iPhone app — swipe through.",
+    "subtitle": "Eight screens from the iPhone app. Swipe through.",
     "label": "App screenshots",
     "prev": "Previous screens",
     "next": "Next screens",
@@ -36,7 +36,7 @@
       },
       "lisa": {
         "title": "Lisa, your coach",
-        "desc": "Plan the day, drill weak words or ask about grammar — in your own language."
+        "desc": "Plan the day, drill weak words or ask about grammar, in your own language."
       },
       "videos": {
         "title": "YouTube videos",
@@ -67,18 +67,18 @@
   "name": {
     "kicker": "The name",
     "title": "From a quiet mind, a new language grows.",
-    "body": "Zenzu grows from Zen — calm, presence, inner quiet. Fluency doesn't come from frantic streaks, but from a steady, unhurried mind. Speaking another language should feel like walking into a forest: you breathe, you slow down, and every word takes root like a tree in your grove."
+    "body": "Zenzu grows from Zen: calm, presence, inner quiet. Fluency doesn't come from frantic streaks, but from a steady, unhurried mind. Speaking another language should feel like walking into a forest: you breathe, you slow down, and every word takes root like a tree in your grove."
   },
   "features": {
     "title": "Everything you need to learn",
     "subtitle": "One app for all your language learning content. Import what you love, learn what matters.",
     "lisa": {
-      "title": "Lisa — Your AI Coach",
-      "desc": "Ask Lisa for study plans, word explanations, or daily reviews. She replies in your language — English, Ukrainian, German, Spanish, French, or Portuguese."
+      "title": "Lisa, Your AI Coach",
+      "desc": "Ask Lisa for study plans, word explanations, or daily reviews. She replies in your language: English, Ukrainian, German, Spanish, French, or Portuguese."
     },
     "youtube": {
       "title": "YouTube Videos",
-      "desc": "Watch with a live transcript. Tap a word or select a phrase — Zenzu saves it as a card with full sentence context and native pronunciation."
+      "desc": "Watch with a live transcript. Tap a word or select a phrase, and Zenzu saves it as a card with full sentence context and native pronunciation."
     },
     "podcasts": {
       "title": "Podcasts",
@@ -86,7 +86,7 @@
     },
     "starterDecks": {
       "title": "Starter Decks",
-      "desc": "18 hand-curated decks from A1 to C1 — everyday essentials, business, academic, science, idioms, and more. Deck names adapt to your interface language."
+      "desc": "18 hand-curated decks from A1 to C1: everyday essentials, business, academic, science, idioms, and more. Deck names adapt to your interface language."
     },
     "interface": {
       "title": "Interface in 6 Languages",
@@ -94,7 +94,7 @@
     },
     "courses": {
       "title": "AI Courses",
-      "desc": "Personalized grammar and vocabulary lessons for English, German, French, and Spanish — A1 to C1. Exercises adapt to your level."
+      "desc": "Personalized grammar and vocabulary lessons for English, German, French, and Spanish, from A1 to C1. Exercises adapt to your level."
     },
     "srs": {
       "title": "FSRS-5 Spaced Repetition",
@@ -106,18 +106,18 @@
     },
     "import": {
       "title": "Import from Anywhere",
-      "desc": "Text, photos, articles — paste or snap anything. AI extracts vocabulary matched to your level."
+      "desc": "Text, photos, articles: paste or snap anything. AI extracts vocabulary matched to your level."
     }
   },
   "forWhom": {
     "title": "For those who take language seriously",
-    "subtitle": "Zenzu is a serious tool, not a toy — no cute mascots, no game to win, no endless animations. It's for people who want to own their progress and their data. Learning a language is one of the most demanding, most rewarding things you can do. Zenzu is built for that.",
+    "subtitle": "Zenzu is a serious tool, not a toy. No cute mascots, no game to win, no endless animations. It's for people who want to own their progress and their data. Learning a language is one of the most demanding, most rewarding things you can do. Zenzu is built for that.",
     "forLabel": "Zenzu is for you if…",
     "for1": "You believe real fluency comes from engaging with authentic content",
     "for2": "You're committed to daily review, even on hard days",
     "for3": "You have ambitious goals: reading a novel, working, or living in another language",
     "for4": "You want tools that respect your memory, not just your screen time",
-    "for5": "You want your words, cards and progress to stay yours — and reachable from your own AI agents through MCP",
+    "for5": "You want your words, cards and progress to stay yours and reachable from your own AI agents through MCP",
     "notForLabel": "It's not for you if…",
     "notFor1": "You're looking for a game with streaks and virtual trophies",
     "notFor2": "You expect to speak fluently after a few casual sessions",
@@ -145,13 +145,13 @@
     },
     "step3": {
       "title": "Review with spaced repetition",
-      "desc": "FSRS-5 algorithm schedules your reviews at the optimal moment — so every minute you invest counts."
+      "desc": "FSRS-5 algorithm schedules your reviews at the optimal moment, so every minute you invest counts."
     }
   },
   "android": {
     "kicker": "Google Play · beta",
-    "title": "Zenzu for Android — early access",
-    "lead": "The Android app is in open testing on Google Play. Anyone can join — it takes three steps.",
+    "title": "Zenzu for Android: early access",
+    "lead": "The Android app is in open testing on Google Play. Anyone can join in three steps.",
     "group": {
       "title": "Join the tester group",
       "cta": "Join the group"
@@ -170,7 +170,7 @@
   "mcp": {
     "kicker": "Available now",
     "title": "Your data, wherever you work.",
-    "body": "Connect Zenzu to your own AI agents through MCP — Claude, Cursor or any MCP-compatible assistant can reach your decks, cards and progress from your computer, from your favorite tools, from anywhere. Bring new material in, take your data out. It stays yours, and it goes where you go.",
+    "body": "Connect Zenzu to your own AI agents through MCP. Claude, Cursor or any MCP-compatible assistant can reach your decks, cards and progress from your computer, from your favorite tools, from anywhere. Bring new material in, take your data out. It stays yours, and it goes where you go.",
     "badge": "In the app: Settings → AI agents → Agent access"
   },
   "cta": {
@@ -181,7 +181,7 @@
     "writeTail": "— we read every letter."
   },
   "footer": {
-    "brand": "Learn languages from real content you love. YouTube, podcasts, articles — turned into flashcards with AI.",
+    "brand": "Learn languages from real content you love. YouTube, podcasts and articles, turned into flashcards with AI.",
     "product": "Product",
     "legal": "Legal",
     "openApp": "Open App",
@@ -205,8 +205,8 @@
   },
   "news": {
     "title": "Today's News",
-    "subtitle": "Read real news summaries in the language you're learning — tap any sentence to translate.",
-    "empty": "No news yet — check back soon"
+    "subtitle": "Read real news summaries in the language you're learning. Tap any sentence to translate.",
+    "empty": "No news yet. Check back soon"
   },
   "faq": {
     "title": "Questions, answered",
@@ -225,7 +225,7 @@
       },
       {
         "q": "Is there an Android version?",
-        "a": "Yes — the Android app is in open testing on Google Play, and anyone can join. Join the tester group, sign up as a tester, then install Zenzu from Google Play, all with the same Google account. The links are in the Android section above on this page."
+        "a": "Yes. The Android app is in open testing on Google Play, and anyone can join. Join the tester group, sign up as a tester, then install Zenzu from Google Play, all with the same Google account. The links are in the Android section above on this page."
       },
       {
         "q": "How is Zenzu different from Anki?",
@@ -245,7 +245,7 @@
     "title": "Contact",
     "description": "Write to the Zenzu team: questions, feedback, bug reports and ideas. We read every letter.",
     "subject": "Zenzu feedback",
-    "intro": "We'd love to hear from you. Whether you have a question, feedback, a bug report or a partnership inquiry — write to us and we'll get back to you as soon as possible.",
+    "intro": "We'd love to hear from you. Whether you have a question, feedback, a bug report or a partnership inquiry, write to us and we'll get back to you as soon as possible.",
     "generalTitle": "General inquiries",
     "bugsTitle": "Bug reports",
     "bugsBody": "Found a bug? Tell us what happened, which device or browser you use, and add screenshots if you can.",
