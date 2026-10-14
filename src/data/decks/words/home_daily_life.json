@@ -1,0 +1,57 @@
+[
+  {
+    "en": "house",
+    "uk": "будинок",
+    "de": "das Haus",
+    "es": "la casa",
+    "fr": "la maison",
+    "pt": "a casa",
+    "ja": "いえ",
+    "ko": "집",
+    "zh": "房子"
+  },
+  {
+    "en": "kitchen",
+    "uk": "кухня",
+    "de": "die Küche",
+    "es": "la cocina",
+    "fr": "la cuisine",
+    "pt": "a cozinha",
+    "ja": "だいどころ",
+    "ko": "부엌",
+    "zh": "厨房"
+  },
+  {
+    "en": "bedroom",
+    "uk": "спальня",
+    "de": "das Schlafzimmer",
+    "es": "el dormitorio",
+    "fr": "la chambre",
+    "pt": "o quarto",
+    "ja": "しんしつ",
+    "ko": "침실",
+    "zh": "卧室"
+  },
+  {
+    "en": "bathroom",
+    "uk": "ванна кімната",
+    "de": "das Badezimmer",
+    "es": "el baño",
+    "fr": "la salle de bain",
+    "pt": "o banheiro",
+    "ja": "おふろば",
+    "ko": "욕실",
+    "zh": "浴室"
+  },
+  {
+    "en": "living room",
+    "uk": "вітальня",
+    "de": "das Wohnzimmer",
+    "es": "la sala de estar",
+    "fr": "le salon",
+    "pt": "a sala de estar",
+    "ja": "リビング",
+    "ko": "거실",
+    "zh": "客厅"
+  }
+]

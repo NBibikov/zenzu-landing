@@ -1,0 +1,88 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro'
+import Header from '../../../components/layout/Header.astro'
+import Footer from '../../../components/layout/Footer.astro'
+import StoreButtons from '../../../components/ui/StoreButtons.astro'
+import { t } from '../../../i18n'
+import {
+  LANGUAGE_NAMES,
+  coverPath,
+  deckDescription,
+  deckName,
+  deckPages,
+  deckWords,
+  findDeck,
+  levelLabel,
+  sizeLabel,
+  webAppUrl,
+  type TargetLanguage,
+} from '../../../lib/decks'
+
+export function getStaticPaths() {
+  return deckPages().map(({ lang, deck }) => ({ params: { lang, slug: deck.id } }))
+}
+
+const { lang, slug } = Astro.params as { lang: string; slug: string }
+const deck = findDeck(lang, slug)!
+const name = deckName(deck)
+const description = deckDescription(deck)
+const words = deckWords(deck, lang)
+const isPhrases = deck.kind === 'phrases'
+const kicker = [LANGUAGE_NAMES[lang as TargetLanguage], levelLabel(deck), sizeLabel(deck)].join(' · ')
+
+const locale = 'uk'
+const strings = t(locale)
+---
+
+<BaseLayout
+  title={`${name} — колода Zenzu`}
+  description={`${description.replace(/[.\s]+$/, '')}. Готова колода для повторення в Zenzu.`}
+  ogImage={coverPath(deck)}
+  lang={locale}
+  noindex
+>
+  <Header t={strings} locale={locale} />
+  <main class="pt-28 pb-24">
+    <article class="max-w-xl mx-auto px-6">
+      <img
+        src={coverPath(deck)}
+        width="800"
+        height="384"
+        alt=""
+        fetchpriority="high"
+        class="w-full h-auto rounded-[16px] border border-hairline"
+      />
+
+      <p class="zz-kicker text-ink-3 mt-8 mb-3">{kicker}</p>
+      <h1 class="font-serif text-3xl md:text-4xl text-ink leading-tight">{name}</h1>
+      <span class="zz-stroke mt-4" aria-hidden="true"></span>
+      <p class="text-lg text-ink-2 leading-relaxed mt-4">{description}</p>
+
+      {words.length > 0 && (
+        <section class="mt-10" aria-labelledby="first-words">
+          <h2 id="first-words" class="zz-kicker text-ink mb-3">{isPhrases ? 'Перші фрази' : 'Перші слова'}</h2>
+          <ul class="border-t border-hairline">
+            {words.map((word) => (
+              <li class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 py-3 border-b border-hairline">
+                <span lang={lang} class="font-serif text-lg text-ink">{word.term}</span>
+                {word.gloss && <span class="text-sm text-ink-2">{word.gloss}</span>}
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      <div class="mt-12">
+        <p class="text-center text-ink-lead mb-5">Додай колоду в Zenzu — картки вже готові до повторення.</p>
+        <StoreButtons
+          deck={{ lang, slug }}
+          extra={{ href: webAppUrl(lang, slug), label: 'Відкрити в браузері' }}
+        />
+        <p class="mt-6 text-center text-sm text-ink-3">
+          На iPhone: Встанови Zenzu й натисни посилання ще раз — колода відкриється в застосунку.
+        </p>
+      </div>
+    </article>
+  </main>
+  <Footer t={strings} locale={locale} />
+</BaseLayout>

@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro'
 import Header from '../components/layout/Header.astro'
 import Footer from '../components/layout/Footer.astro'
+import StoreButtons from '../components/ui/StoreButtons.astro'
 import { t } from '../i18n'
 
 const locale = 'en'
@@ -12,17 +13,38 @@ const strings = t(locale)
   <Header t={strings} locale={locale} />
   <main class="pt-32 pb-24">
     <div class="max-w-xl mx-auto px-6 text-center">
-      <p class="zz-kicker text-ink-3 mb-5">404</p>
-      <h1 class="font-serif text-3xl md:text-4xl text-ink mb-4 leading-tight">This path leads nowhere</h1>
-      <p class="text-lg text-ink-2 mb-10 leading-relaxed">
-        The page you were looking for has moved or never existed.
-      </p>
-      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-        <a href="/" class="zz-btn">Home</a>
-        <a href="/blog/" class="zz-btn zz-btn-cancel">{strings.nav.blog}</a>
+      <!-- A deck link that points nowhere (/d/...) gets this block instead of
+           the generic one below. The 404 page is static, so the swap is done
+           by the script at the end of <main>. -->
+      <div data-404-deck hidden>
+        <p class="zz-kicker text-ink-3 mb-5">404</p>
+        <h1 class="font-serif text-3xl md:text-4xl text-ink mb-4 leading-tight">Такої колоди немає</h1>
+        <p class="text-lg text-ink-2 mb-10 leading-relaxed">
+          Посилання застаріло або колоду ще не додано. У Zenzu є багато інших готових колод.
+        </p>
+        <StoreButtons />
       </div>
-      <a href="https://app.zenzu.app" class="inline-block mt-8 text-sm text-ink-2 underline decoration-moss underline-offset-[0.2em] hover:text-ink">{strings.footer.openApp}</a>
+      <div data-404-generic>
+        <p class="zz-kicker text-ink-3 mb-5">404</p>
+        <h1 class="font-serif text-3xl md:text-4xl text-ink mb-4 leading-tight">This path leads nowhere</h1>
+        <p class="text-lg text-ink-2 mb-10 leading-relaxed">
+          The page you were looking for has moved or never existed.
+        </p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="/" class="zz-btn">Home</a>
+          <a href="/blog/" class="zz-btn zz-btn-cancel">{strings.nav.blog}</a>
+        </div>
+        <a href="https://app.zenzu.app" class="inline-block mt-8 text-sm text-ink-2 underline decoration-moss underline-offset-[0.2em] hover:text-ink">{strings.footer.openApp}</a>
+      </div>
     </div>
+    <script is:inline>
+      if (location.pathname.startsWith('/d/')) {
+        document.querySelector('[data-404-generic]').hidden = true
+        document.querySelector('[data-404-deck]').hidden = false
+        document.documentElement.lang = 'uk'
+        document.title = 'Колоду не знайдено — Zenzu'
+      }
+    </script>
   </main>
   <Footer t={strings} locale={locale} />
 </BaseLayout>

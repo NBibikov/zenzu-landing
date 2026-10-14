@@ -1,0 +1,57 @@
+[
+  {
+    "en": "A table for two, please.",
+    "uk": "Столик на двох, будь ласка.",
+    "de": "Einen Tisch für zwei, bitte.",
+    "es": "Una mesa para dos, por favor.",
+    "fr": "Une table pour deux, s'il vous plaît.",
+    "pt": "Uma mesa para dois, por favor.",
+    "ja": "二人でお願いします。",
+    "ko": "두 명이요.",
+    "zh": "两位，谢谢。"
+  },
+  {
+    "en": "Can I see the menu?",
+    "uk": "Можна меню?",
+    "de": "Kann ich bitte die Karte haben?",
+    "es": "¿Me trae la carta, por favor?",
+    "fr": "Je peux avoir la carte, s'il vous plaît ?",
+    "pt": "Pode trazer-me a ementa, por favor?",
+    "ja": "メニューをお願いします。",
+    "ko": "메뉴판 좀 주세요.",
+    "zh": "可以看一下菜单吗？"
+  },
+  {
+    "en": "We're ready to order.",
+    "uk": "Ми готові замовити.",
+    "de": "Wir möchten bestellen.",
+    "es": "Ya podemos pedir.",
+    "fr": "On est prêts à commander.",
+    "pt": "Já podemos pedir.",
+    "ja": "注文お願いします。",
+    "ko": "주문할게요.",
+    "zh": "我们可以点菜了。"
+  },
+  {
+    "en": "I'll have the chicken, please.",
+    "uk": "Мені курку, будь ласка.",
+    "de": "Ich nehme das Hähnchen, bitte.",
+    "es": "Para mí, el pollo, por favor.",
+    "fr": "Je vais prendre le poulet, s'il vous plaît.",
+    "pt": "Para mim, o frango, por favor.",
+    "ja": "チキンをお願いします。",
+    "ko": "저는 닭고기로 할게요.",
+    "zh": "我要鸡肉，谢谢。"
+  },
+  {
+    "en": "A coffee, please.",
+    "uk": "Каву, будь ласка.",
+    "de": "Einen Kaffee, bitte.",
+    "es": "Un café, por favor.",
+    "fr": "Un café, s'il vous plaît.",
+    "pt": "Um café, por favor.",
+    "ja": "コーヒーをお願いします。",
+    "ko": "커피 한 잔 주세요.",
+    "zh": "要一杯咖啡，谢谢。"
+  }
+]

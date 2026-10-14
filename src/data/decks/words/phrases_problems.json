@@ -1,0 +1,57 @@
+[
+  {
+    "en": "There's a problem with my room.",
+    "uk": "У мене проблема з номером.",
+    "de": "Es gibt ein Problem mit meinem Zimmer.",
+    "es": "Hay un problema con mi habitación.",
+    "fr": "Il y a un problème avec ma chambre.",
+    "pt": "Há um problema com o meu quarto.",
+    "ja": "部屋に問題があるんですが。",
+    "ko": "방에 문제가 있어요.",
+    "zh": "我的房间有点问题。"
+  },
+  {
+    "en": "It doesn't work.",
+    "uk": "Не працює.",
+    "de": "Das funktioniert nicht.",
+    "es": "No funciona.",
+    "fr": "Ça ne marche pas.",
+    "pt": "Não funciona.",
+    "ja": "動きません。",
+    "ko": "작동이 안 돼요.",
+    "zh": "用不了。"
+  },
+  {
+    "en": "It's broken.",
+    "uk": "Зламалося.",
+    "de": "Das ist kaputt.",
+    "es": "Está roto.",
+    "fr": "C'est cassé.",
+    "pt": "Está partido.",
+    "ja": "壊れています。",
+    "ko": "망가졌어요.",
+    "zh": "坏了。"
+  },
+  {
+    "en": "Something's wrong with my phone.",
+    "uk": "Щось не так із моїм телефоном.",
+    "de": "Mit meinem Handy stimmt was nicht.",
+    "es": "A mi móvil le pasa algo.",
+    "fr": "J'ai un problème avec mon téléphone.",
+    "pt": "O meu telemóvel tem algum problema.",
+    "ja": "スマホの調子がおかしいんです。",
+    "ko": "휴대폰이 좀 이상해요.",
+    "zh": "我的手机出了点问题。"
+  },
+  {
+    "en": "The heating isn't working.",
+    "uk": "Опалення не працює.",
+    "de": "Die Heizung funktioniert nicht.",
+    "es": "La calefacción no funciona.",
+    "fr": "Le chauffage ne marche pas.",
+    "pt": "O aquecimento não funciona.",
+    "ja": "暖房がつきません。",
+    "ko": "난방이 안 돼요.",
+    "zh": "暖气不热。"
+  }
+]

@@ -1,0 +1,57 @@
+[
+  {
+    "en": "water",
+    "uk": "вода",
+    "de": "das Wasser",
+    "es": "el agua",
+    "fr": "l'eau",
+    "pt": "a água",
+    "ja": "みず",
+    "ko": "물",
+    "zh": "水"
+  },
+  {
+    "en": "food",
+    "uk": "їжа",
+    "de": "das Essen",
+    "es": "la comida",
+    "fr": "la nourriture",
+    "pt": "a comida",
+    "ja": "たべもの",
+    "ko": "음식",
+    "zh": "食物"
+  },
+  {
+    "en": "bread",
+    "uk": "хліб",
+    "de": "das Brot",
+    "es": "el pan",
+    "fr": "le pain",
+    "pt": "o pão",
+    "ja": "ぱん",
+    "ko": "빵",
+    "zh": "面包"
+  },
+  {
+    "en": "milk",
+    "uk": "молоко",
+    "de": "die Milch",
+    "es": "la leche",
+    "fr": "le lait",
+    "pt": "o leite",
+    "ja": "ぎゅうにゅう",
+    "ko": "우유",
+    "zh": "牛奶"
+  },
+  {
+    "en": "tea",
+    "uk": "чай",
+    "de": "der Tee",
+    "es": "el té",
+    "fr": "le thé",
+    "pt": "o chá",
+    "ja": "おちゃ",
+    "ko": "차",
+    "zh": "茶"
+  }
+]

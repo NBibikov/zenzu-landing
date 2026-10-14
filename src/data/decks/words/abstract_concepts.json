@@ -1,0 +1,57 @@
+[
+  {
+    "en": "freedom",
+    "uk": "свобода",
+    "de": "die Freiheit",
+    "es": "la libertad",
+    "fr": "la liberté",
+    "pt": "a liberdade",
+    "ja": "自由（じゆう）",
+    "ko": "자유",
+    "zh": "自由"
+  },
+  {
+    "en": "justice",
+    "uk": "справедливість",
+    "de": "die Gerechtigkeit",
+    "es": "la justicia",
+    "fr": "la justice",
+    "pt": "a justiça",
+    "ja": "正義（せいぎ）",
+    "ko": "정의",
+    "zh": "正义"
+  },
+  {
+    "en": "equality",
+    "uk": "рівність",
+    "de": "die Gleichheit",
+    "es": "la igualdad",
+    "fr": "l'égalité",
+    "pt": "a igualdade",
+    "ja": "平等（びょうどう）",
+    "ko": "평등",
+    "zh": "平等"
+  },
+  {
+    "en": "responsibility",
+    "uk": "відповідальність",
+    "de": "die Verantwortung",
+    "es": "la responsabilidad",
+    "fr": "la responsabilité",
+    "pt": "a responsabilidade",
+    "ja": "責任（せきにん）",
+    "ko": "책임",
+    "zh": "责任"
+  },
+  {
+    "en": "honesty",
+    "uk": "чесність",
+    "de": "die Ehrlichkeit",
+    "es": "la honestidad",
+    "fr": "l'honnêteté",
+    "pt": "a honestidade",
+    "ja": "誠実（せいじつ）",
+    "ko": "정직",
+    "zh": "诚实"
+  }
+]

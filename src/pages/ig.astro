@@ -1,0 +1,96 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+import Header from '../components/layout/Header.astro'
+import Footer from '../components/layout/Footer.astro'
+import StoreButtons from '../components/ui/StoreButtons.astro'
+import { t } from '../i18n'
+import {
+  LANGUAGE_NAMES,
+  coverPath,
+  deckDescription,
+  deckLanguages,
+  deckName,
+  deckPath,
+  igDecks,
+  levelLabel,
+  sizeLabel,
+} from '../lib/decks'
+
+// Link-in-bio page: the decks from the Instagram posts, newest first.
+const decks = igDecks()
+
+const locale = 'uk'
+const strings = t(locale)
+---
+
+<BaseLayout
+  title="Колоди з Instagram — Zenzu"
+  description="Колоди зі слів із наших постів в Instagram. Обери колоду й відкрий її в Zenzu."
+  lang={locale}
+  noindex
+>
+  <Header t={strings} locale={locale} />
+  <main class="pt-28 pb-24">
+    <div class="max-w-xl mx-auto px-6">
+      <p class="zz-kicker text-ink-3 mb-3">Instagram</p>
+      <h1 class="font-serif text-3xl md:text-4xl text-ink leading-tight">Колоди з наших постів</h1>
+      <span class="zz-stroke mt-4" aria-hidden="true"></span>
+      <p class="text-lg text-ink-2 leading-relaxed mt-4">
+        Кожна колода — слова з посту, вже зібрані в картки. Обери колоду й відкрий її в Zenzu.
+      </p>
+
+      {decks.length > 0 ? (
+        <ul class="mt-10 border-t border-hairline">
+          {decks.map((deck) => {
+            const langs = deckLanguages(deck)
+            const meta = [levelLabel(deck), sizeLabel(deck)].join(' · ')
+            const row = (
+              <>
+                <img
+                  src={coverPath(deck)}
+                  width="800"
+                  height="384"
+                  alt=""
+                  loading="lazy"
+                  class="w-28 sm:w-40 h-auto shrink-0 rounded-[10px] border border-hairline"
+                />
+                <div class="min-w-0">
+                  <h2 class="font-serif text-xl text-ink leading-snug">{deckName(deck)}</h2>
+                  <p class="text-sm text-ink-2 mt-1">{deckDescription(deck)}</p>
+                  <p class="zz-kicker text-ink-3 mt-2">{langs.length === 1 ? `${LANGUAGE_NAMES[langs[0]]} · ${meta}` : meta}</p>
+                </div>
+              </>
+            )
+            return (
+              <li class="py-6 border-b border-hairline">
+                {langs.length === 1 ? (
+                  <a href={deckPath(langs[0], deck.id)} class="flex items-center gap-4 sm:gap-5 hover:opacity-80 transition-opacity">{row}</a>
+                ) : (
+                  <>
+                    <div class="flex items-center gap-4 sm:gap-5">{row}</div>
+                    <p class="mt-4 text-sm text-ink-2">Обери мову:</p>
+                    <div class="mt-2 flex flex-wrap gap-2">
+                      {langs.map((lang) => (
+                        <a href={deckPath(lang, deck.id)} class="zz-btn zz-btn-cancel zz-btn-sm">{LANGUAGE_NAMES[lang]}</a>
+                      ))}
+                    </div>
+                  </>
+                )}
+              </li>
+            )
+          })}
+        </ul>
+      ) : (
+        <p class="mt-10 py-8 border-y border-hairline text-ink-2 leading-relaxed">
+          Тут поки порожньо. Колоди з'являться разом із наступними постами.
+        </p>
+      )}
+
+      <div class="mt-14">
+        <p class="text-center text-ink-lead mb-5">Ще немає Zenzu? Завантаж застосунок.</p>
+        <StoreButtons />
+      </div>
+    </div>
+  </main>
+  <Footer t={strings} locale={locale} />
+</BaseLayout>

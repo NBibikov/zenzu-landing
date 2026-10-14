@@ -1,0 +1,57 @@
+[
+  {
+    "en": "teacher",
+    "uk": "вчитель",
+    "de": "der Lehrer",
+    "es": "el profesor",
+    "fr": "le professeur",
+    "pt": "o professor",
+    "ja": "せんせい",
+    "ko": "선생님",
+    "zh": "老师"
+  },
+  {
+    "en": "engineer",
+    "uk": "інженер",
+    "de": "der Ingenieur",
+    "es": "el ingeniero",
+    "fr": "l'ingénieur",
+    "pt": "o engenheiro",
+    "ja": "エンジニア",
+    "ko": "엔지니어",
+    "zh": "工程师"
+  },
+  {
+    "en": "doctor",
+    "uk": "лікар",
+    "de": "der Arzt",
+    "es": "el médico",
+    "fr": "le médecin",
+    "pt": "o médico",
+    "ja": "いしゃ",
+    "ko": "의사",
+    "zh": "医生"
+  },
+  {
+    "en": "manager",
+    "uk": "менеджер",
+    "de": "der Manager",
+    "es": "el gerente",
+    "fr": "le manager",
+    "pt": "gerente",
+    "ja": "マネージャー",
+    "ko": "매니저",
+    "zh": "经理"
+  },
+  {
+    "en": "designer",
+    "uk": "дизайнер",
+    "de": "der Designer",
+    "es": "el diseñador",
+    "fr": "le designer",
+    "pt": "o designer",
+    "ja": "デザイナー",
+    "ko": "디자이너",
+    "zh": "设计师"
+  }
+]

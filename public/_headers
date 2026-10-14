@@ -1,0 +1,4 @@
+# The file has no extension, so Cloudflare would serve it as octet-stream and
+# iOS would reject it.
+/.well-known/apple-app-site-association
+  Content-Type: application/json

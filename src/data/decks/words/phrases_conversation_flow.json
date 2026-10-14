@@ -1,0 +1,57 @@
+[
+  {
+    "en": "By the way, …",
+    "uk": "До речі, …",
+    "de": "Übrigens, …",
+    "es": "Por cierto, …",
+    "fr": "Au fait, …",
+    "pt": "Já agora, …",
+    "ja": "ところで、…",
+    "ko": "그런데, …",
+    "zh": "对了，……"
+  },
+  {
+    "en": "Anyway, …",
+    "uk": "Хай там як, …",
+    "de": "Jedenfalls …",
+    "es": "En fin, …",
+    "fr": "Bref, …",
+    "pt": "Enfim, …",
+    "ja": "とにかく、…",
+    "ko": "아무튼, …",
+    "zh": "总之，……"
+  },
+  {
+    "en": "Speaking of which, …",
+    "uk": "Якщо вже зайшла мова, …",
+    "de": "Wo wir gerade davon sprechen, …",
+    "es": "Hablando de eso, …",
+    "fr": "En parlant de ça, …",
+    "pt": "Por falar nisso, …",
+    "ja": "そういえば、…",
+    "ko": "말이 나온 김에, …",
+    "zh": "说到这个，……"
+  },
+  {
+    "en": "That reminds me, …",
+    "uk": "Це мені нагадало, …",
+    "de": "Da fällt mir ein, …",
+    "es": "Eso me recuerda que …",
+    "fr": "Ça me fait penser que …",
+    "pt": "Isso faz-me lembrar que …",
+    "ja": "それで思い出したんですが、…",
+    "ko": "그 말을 들으니 생각났는데, …",
+    "zh": "这倒提醒了我，……"
+  },
+  {
+    "en": "Come to think of it, …",
+    "uk": "Якщо подумати, …",
+    "de": "Wenn ich es mir recht überlege, …",
+    "es": "Ahora que lo pienso, …",
+    "fr": "Maintenant que j'y pense, …",
+    "pt": "Agora que penso nisso, …",
+    "ja": "考えてみれば、…",
+    "ko": "생각해 보니, …",
+    "zh": "仔细一想，……"
+  }
+]

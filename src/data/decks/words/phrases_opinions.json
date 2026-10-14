@@ -1,0 +1,57 @@
+[
+  {
+    "en": "What do you think?",
+    "uk": "Як ти думаєш?",
+    "de": "Was meinst du?",
+    "es": "¿Qué te parece?",
+    "fr": "Qu'est-ce que tu en penses ?",
+    "pt": "O que achas?",
+    "ja": "どう思いますか？",
+    "ko": "어떻게 생각해요?",
+    "zh": "你觉得呢？"
+  },
+  {
+    "en": "If you ask me, …",
+    "uk": "Як на мене, …",
+    "de": "Wenn du mich fragst, …",
+    "es": "Para mí, …",
+    "fr": "Si tu veux mon avis, …",
+    "pt": "Cá para mim, …",
+    "ja": "私に言わせれば、…",
+    "ko": "제가 보기에는, …",
+    "zh": "要我说，…"
+  },
+  {
+    "en": "To be honest, …",
+    "uk": "Чесно кажучи, …",
+    "de": "Ehrlich gesagt, …",
+    "es": "La verdad es que …",
+    "fr": "Pour être honnête, …",
+    "pt": "Para ser sincero, …",
+    "ja": "正直に言うと、…",
+    "ko": "솔직히 말하면, …",
+    "zh": "说实话，…"
+  },
+  {
+    "en": "I'd say …",
+    "uk": "Я б сказав, …",
+    "de": "Ich würde sagen, …",
+    "es": "Yo diría que …",
+    "fr": "Je dirais …",
+    "pt": "Eu diria que …",
+    "ja": "まあ、…かな。",
+    "ko": "아마 … 것 같아요.",
+    "zh": "我觉得……吧。"
+  },
+  {
+    "en": "As far as I know, …",
+    "uk": "Наскільки я знаю, …",
+    "de": "Soviel ich weiß, …",
+    "es": "Que yo sepa, …",
+    "fr": "D'après ce que je sais, …",
+    "pt": "Que eu saiba, …",
+    "ja": "私の知る限り、…",
+    "ko": "제가 알기로는, …",
+    "zh": "据我所知，…"
+  }
+]
