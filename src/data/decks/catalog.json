@@ -1588,5 +1588,54 @@
         "description": "40个容易读错的英语单词"
       }
     }
+  },
+  {
+    "id": "employment_contract_de",
+    "name": "Employment Contract",
+    "emoji": "📄",
+    "description": "Contract and payslip terms that decide your pay and rights",
+    "wordCount": 40,
+    "level": "B1-B2",
+    "kind": "words",
+    "ig": true,
+    "languages": [
+      "de"
+    ],
+    "cover": "employment_contract_de_cover.webp",
+    "file": "employment_contract_de_universal.json",
+    "translations": {
+      "de": {
+        "name": "Arbeitsvertrag",
+        "description": "Begriffe aus Vertrag und Lohnabrechnung, die über Geld und Rechte entscheiden"
+      },
+      "es": {
+        "name": "Contrato de trabajo",
+        "description": "Términos del contrato y la nómina que deciden el sueldo y los derechos"
+      },
+      "fr": {
+        "name": "Contrat de travail",
+        "description": "Termes du contrat et de la fiche de paie qui décident de la paie et des droits"
+      },
+      "pt": {
+        "name": "Contrato de trabalho",
+        "description": "Termos do contrato e do recibo de vencimento que decidem o salário e os direitos"
+      },
+      "ja": {
+        "name": "雇用契約",
+        "description": "給与と権利を左右する、雇用契約書と給与明細の用語"
+      },
+      "ko": {
+        "name": "근로계약",
+        "description": "급여와 권리를 좌우하는 근로계약서와 급여명세서 용어"
+      },
+      "uk": {
+        "name": "Трудовий договір",
+        "description": "Слова з договору й розрахункового листка, від яких залежать гроші та права"
+      },
+      "zh": {
+        "name": "劳动合同",
+        "description": "决定薪资与权益的劳动合同和工资单词汇"
+      }
+    }
   }
 ]
