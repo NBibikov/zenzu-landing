@@ -1539,5 +1539,54 @@
         "description": "40个看似熟悉、意思却不同的词"
       }
     }
+  },
+  {
+    "id": "pronunciation_traps_en",
+    "name": "Tricky Pronunciation",
+    "emoji": "🔊",
+    "description": "40 English words that are easy to say wrong",
+    "wordCount": 40,
+    "level": "A2-B2",
+    "kind": "words",
+    "cover": "pronunciation_traps_en_cover.webp",
+    "file": "pronunciation_traps_en_universal.json",
+    "ig": true,
+    "languages": [
+      "en"
+    ],
+    "translations": {
+      "de": {
+        "name": "Knifflige Aussprache",
+        "description": "40 englische Wörter, die man leicht falsch ausspricht"
+      },
+      "es": {
+        "name": "Pronunciación traicionera",
+        "description": "40 palabras en inglés que es fácil pronunciar mal"
+      },
+      "fr": {
+        "name": "Prononciation piégeuse",
+        "description": "40 mots anglais faciles à mal prononcer"
+      },
+      "pt": {
+        "name": "Pronúncia traiçoeira",
+        "description": "40 palavras em inglês fáceis de pronunciar errado"
+      },
+      "ja": {
+        "name": "紛らわしい発音",
+        "description": "発音を間違えやすい英単語40語"
+      },
+      "ko": {
+        "name": "헷갈리는 발음",
+        "description": "발음을 틀리기 쉬운 영어 단어 40개"
+      },
+      "uk": {
+        "name": "Підступна вимова",
+        "description": "40 англійських слів, які легко вимовити неправильно"
+      },
+      "zh": {
+        "name": "易错发音",
+        "description": "40个容易读错的英语单词"
+      }
+    }
   }
 ]
