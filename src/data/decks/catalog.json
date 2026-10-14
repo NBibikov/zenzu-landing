@@ -1441,5 +1441,54 @@
         "description": "留有余地、让步、权衡利弊"
       }
     }
+  },
+  {
+    "id": "work_slang_en",
+    "name": "Work Slang: Stand-up & Slack",
+    "emoji": "🔔",
+    "description": "Stand-up, Slack and job-ad English: blocker, ETA, EOD",
+    "wordCount": 40,
+    "level": "B1-B2",
+    "kind": "words",
+    "ig": true,
+    "languages": [
+      "en"
+    ],
+    "cover": "work_slang_en_cover.webp",
+    "file": "work_slang_en_universal.json",
+    "translations": {
+      "de": {
+        "name": "Slang im Job: Stand-up & Slack",
+        "description": "Englisch aus Stand-ups, Slack und Stellenanzeigen: Blocker, ETA, EOD"
+      },
+      "es": {
+        "name": "Jerga laboral: stand-up y Slack",
+        "description": "Inglés de reuniones diarias, Slack y ofertas de empleo: blocker, ETA, EOD"
+      },
+      "fr": {
+        "name": "Jargon pro : stand-up et Slack",
+        "description": "L'anglais des stand-ups, de Slack et des offres d'emploi : blocker, ETA, EOD"
+      },
+      "pt": {
+        "name": "Gírias do trabalho: stand-up e Slack",
+        "description": "Inglês de dailies, Slack e vagas de emprego: blocker, ETA, EOD"
+      },
+      "ja": {
+        "name": "仕事のスラング：スタンドアップとSlack",
+        "description": "スタンドアップ、Slack、求人票の英語：blocker、ETA、EOD"
+      },
+      "ko": {
+        "name": "업무 슬랭: 스탠드업과 Slack",
+        "description": "스탠드업, Slack, 채용 공고 영어: blocker, ETA, EOD"
+      },
+      "uk": {
+        "name": "Робочий сленг: стендап і Slack",
+        "description": "Англійська зі стендапів, Slack і вакансій: blocker, ETA, EOD"
+      },
+      "zh": {
+        "name": "职场俚语：站会与 Slack",
+        "description": "站会、Slack 和招聘启事里的英语：blocker、ETA、EOD"
+      }
+    }
   }
 ]
