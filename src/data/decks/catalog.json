@@ -1490,5 +1490,54 @@
         "description": "站会、Slack 和招聘启事里的英语：blocker、ETA、EOD"
       }
     }
+  },
+  {
+    "id": "false_friends_en",
+    "name": "False Friends: English",
+    "emoji": "🎭",
+    "description": "40 words that look familiar but mean something else",
+    "wordCount": 40,
+    "level": "B1-B2",
+    "kind": "words",
+    "cover": "false_friends_en_cover.webp",
+    "file": "false_friends_en_universal.json",
+    "ig": true,
+    "languages": [
+      "en"
+    ],
+    "translations": {
+      "de": {
+        "name": "Falsche Freunde: Englisch",
+        "description": "40 Wörter, die vertraut aussehen, aber etwas anderes bedeuten"
+      },
+      "es": {
+        "name": "Falsos amigos: inglés",
+        "description": "40 palabras que parecen conocidas pero significan otra cosa"
+      },
+      "fr": {
+        "name": "Faux amis : anglais",
+        "description": "40 mots qui semblent familiers mais veulent dire autre chose"
+      },
+      "pt": {
+        "name": "Falsos amigos: inglês",
+        "description": "40 palavras que parecem conhecidas, mas significam outra coisa"
+      },
+      "ja": {
+        "name": "空似言葉：英語",
+        "description": "見覚えがあるのに意味が違う40語"
+      },
+      "ko": {
+        "name": "거짓 친구: 영어",
+        "description": "익숙해 보이지만 뜻이 다른 단어 40개"
+      },
+      "uk": {
+        "name": "Хибні друзі: англійська",
+        "description": "40 слів, схожих на українські, які означають інше"
+      },
+      "zh": {
+        "name": "假朋友：英语",
+        "description": "40个看似熟悉、意思却不同的词"
+      }
+    }
   }
 ]
