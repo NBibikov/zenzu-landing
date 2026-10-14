@@ -1,0 +1,57 @@
+[
+  {
+    "en": "happy",
+    "uk": "щасливий",
+    "de": "glücklich",
+    "es": "feliz",
+    "fr": "heureux",
+    "pt": "feliz",
+    "ja": "幸せ",
+    "ko": "행복한",
+    "zh": "开心"
+  },
+  {
+    "en": "sad",
+    "uk": "сумний",
+    "de": "traurig",
+    "es": "triste",
+    "fr": "triste",
+    "pt": "triste",
+    "ja": "悲しい",
+    "ko": "슬픈",
+    "zh": "伤心"
+  },
+  {
+    "en": "angry",
+    "uk": "злий",
+    "de": "wütend",
+    "es": "enojado",
+    "fr": "en colère",
+    "pt": "irritado",
+    "ja": "怒っている",
+    "ko": "화난",
+    "zh": "生气"
+  },
+  {
+    "en": "excited",
+    "uk": "схвильований",
+    "de": "begeistert",
+    "es": "emocionado",
+    "fr": "enthousiaste",
+    "pt": "empolgado",
+    "ja": "わくわくしている",
+    "ko": "신난",
+    "zh": "兴奋"
+  },
+  {
+    "en": "worried",
+    "uk": "стурбований",
+    "de": "besorgt",
+    "es": "preocupado",
+    "fr": "inquiet",
+    "pt": "preocupado",
+    "ja": "心配している",
+    "ko": "걱정스러운",
+    "zh": "担心"
+  }
+]

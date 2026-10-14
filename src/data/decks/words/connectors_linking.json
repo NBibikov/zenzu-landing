@@ -1,0 +1,57 @@
+[
+  {
+    "en": "also / too",
+    "uk": "також / теж",
+    "de": "auch",
+    "es": "también",
+    "fr": "aussi",
+    "pt": "também",
+    "ja": "も / また",
+    "ko": "또한 / 도",
+    "zh": "也 / 还"
+  },
+  {
+    "en": "moreover / furthermore",
+    "uk": "крім того / більше того",
+    "de": "außerdem / darüber hinaus",
+    "es": "además",
+    "fr": "de plus / en outre",
+    "pt": "além disso",
+    "ja": "さらに / そのうえ",
+    "ko": "게다가 / 더욱이",
+    "zh": "而且 / 此外"
+  },
+  {
+    "en": "in addition",
+    "uk": "на додаток / крім того",
+    "de": "zusätzlich / darüber hinaus",
+    "es": "además / adicionalmente",
+    "fr": "en plus / de plus",
+    "pt": "além disso / adicionalmente",
+    "ja": "さらに / くわえて",
+    "ko": "게다가 / 더불어",
+    "zh": "此外 / 另外"
+  },
+  {
+    "en": "as well as",
+    "uk": "а також / так само як і",
+    "de": "sowie / sowohl ... als auch",
+    "es": "así como / al igual que",
+    "fr": "ainsi que / de même que",
+    "pt": "assim como / bem como",
+    "ja": "…だけでなく…も",
+    "ko": "뿐만 아니라",
+    "zh": "以及 / 和…一样"
+  },
+  {
+    "en": "besides",
+    "uk": "до того ж / окрім того",
+    "de": "außerdem / zudem",
+    "es": "además / aparte de eso",
+    "fr": "d'ailleurs / en outre",
+    "pt": "além disso / aliás",
+    "ja": "そのうえ / それに",
+    "ko": "게다가 / 더구나",
+    "zh": "而且 / 再说"
+  }
+]

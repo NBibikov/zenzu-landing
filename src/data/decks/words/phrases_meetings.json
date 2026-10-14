@@ -1,0 +1,57 @@
+[
+  {
+    "en": "Shall we get started?",
+    "uk": "Ну що, почнемо?",
+    "de": "Wollen wir anfangen?",
+    "es": "¿Empezamos?",
+    "fr": "On peut commencer ?",
+    "pt": "Vamos começar?",
+    "ja": "では、始めましょうか。",
+    "ko": "그럼 시작할까요?",
+    "zh": "那我们开始吧？"
+  },
+  {
+    "en": "The purpose of today's meeting is …",
+    "uk": "Мета сьогоднішньої зустрічі — …",
+    "de": "Ziel der heutigen Besprechung ist …",
+    "es": "El objetivo de la reunión de hoy es …",
+    "fr": "L'objectif de cette réunion est de …",
+    "pt": "O objetivo da reunião de hoje é …",
+    "ja": "本日の会議の目的は、…です。",
+    "ko": "오늘 회의의 목적은 …입니다.",
+    "zh": "今天会议的目的是……"
+  },
+  {
+    "en": "Let's move on to the next item.",
+    "uk": "Переходимо до наступного питання.",
+    "de": "Kommen wir zum nächsten Punkt.",
+    "es": "Pasemos al siguiente punto.",
+    "fr": "Passons au point suivant.",
+    "pt": "Passemos ao ponto seguinte.",
+    "ja": "では、次の議題に移りましょう。",
+    "ko": "다음 안건으로 넘어가겠습니다.",
+    "zh": "我们进入下一个议题。"
+  },
+  {
+    "en": "Could I just come in here?",
+    "uk": "Можна я вставлю слово?",
+    "de": "Darf ich da kurz einhaken?",
+    "es": "¿Puedo intervenir un momento?",
+    "fr": "Je peux intervenir une seconde ?",
+    "pt": "Posso interromper só um segundo?",
+    "ja": "ちょっとよろしいですか。",
+    "ko": "잠깐 한 말씀 드려도 될까요?",
+    "zh": "我能插一句吗？"
+  },
+  {
+    "en": "If I could just finish my point, …",
+    "uk": "Дозвольте, я договорю, …",
+    "de": "Wenn ich kurz ausreden dürfte, …",
+    "es": "Si me dejas terminar, …",
+    "fr": "Si vous me permettez de terminer, …",
+    "pt": "Se me deixar terminar, …",
+    "ja": "最後までお話しさせていただければ、…",
+    "ko": "일단 제 말을 마저 하고, …",
+    "zh": "请让我把话说完，……"
+  }
+]

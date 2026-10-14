@@ -1,0 +1,57 @@
+[
+  {
+    "en": "news",
+    "uk": "новини",
+    "de": "die Nachrichten",
+    "es": "la noticias",
+    "fr": "l'actualités",
+    "pt": "a notícias",
+    "ja": "ニュース",
+    "ko": "뉴스",
+    "zh": "新闻"
+  },
+  {
+    "en": "newspaper",
+    "uk": "газета",
+    "de": "die Zeitung",
+    "es": "el periódico",
+    "fr": "le journal",
+    "pt": "o jornal",
+    "ja": "しんぶん",
+    "ko": "신문",
+    "zh": "报纸"
+  },
+  {
+    "en": "article",
+    "uk": "стаття",
+    "de": "der Artikel",
+    "es": "el artículo",
+    "fr": "l'article",
+    "pt": "o artigo",
+    "ja": "きじ",
+    "ko": "기사",
+    "zh": "文章"
+  },
+  {
+    "en": "magazine",
+    "uk": "журнал",
+    "de": "die Zeitschrift",
+    "es": "la revista",
+    "fr": "le magazine",
+    "pt": "a revista",
+    "ja": "ざっし",
+    "ko": "잡지",
+    "zh": "杂志"
+  },
+  {
+    "en": "channel",
+    "uk": "канал",
+    "de": "der Kanal",
+    "es": "el canal",
+    "fr": "la chaîne",
+    "pt": "o canal",
+    "ja": "チャンネル",
+    "ko": "채널",
+    "zh": "频道"
+  }
+]

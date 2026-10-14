@@ -1,0 +1,57 @@
+[
+  {
+    "en": "zero",
+    "uk": "нуль",
+    "de": "null",
+    "es": "cero",
+    "fr": "zéro",
+    "pt": "zero",
+    "ja": "れい",
+    "ko": "영",
+    "zh": "零"
+  },
+  {
+    "en": "one",
+    "uk": "один",
+    "de": "eins",
+    "es": "uno",
+    "fr": "un",
+    "pt": "um",
+    "ja": "いち",
+    "ko": "하나",
+    "zh": "一"
+  },
+  {
+    "en": "two",
+    "uk": "два",
+    "de": "zwei",
+    "es": "dos",
+    "fr": "deux",
+    "pt": "dois",
+    "ja": "に",
+    "ko": "둘",
+    "zh": "二"
+  },
+  {
+    "en": "three",
+    "uk": "три",
+    "de": "drei",
+    "es": "tres",
+    "fr": "trois",
+    "pt": "três",
+    "ja": "さん",
+    "ko": "셋",
+    "zh": "三"
+  },
+  {
+    "en": "five",
+    "uk": "п'ять",
+    "de": "fünf",
+    "es": "cinco",
+    "fr": "cinq",
+    "pt": "cinco",
+    "ja": "ご",
+    "ko": "다섯",
+    "zh": "五"
+  }
+]

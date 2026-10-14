@@ -1,0 +1,1445 @@
+[
+  {
+    "id": "essential_verbs",
+    "name": "Essential Verbs",
+    "emoji": "🏃",
+    "description": "50 most common verbs",
+    "wordCount": 50,
+    "level": "A1-A2",
+    "kind": "words",
+    "cover": "essential_verbs_cover.webp",
+    "file": "essential_verbs_universal.json",
+    "translations": {
+      "de": {
+        "name": "Wichtige Verben",
+        "description": "50 der häufigsten Verben"
+      },
+      "es": {
+        "name": "Verbos Esenciales",
+        "description": "Los 50 verbos más comunes"
+      },
+      "fr": {
+        "name": "Verbes Essentiels",
+        "description": "Les 50 verbes les plus courants"
+      },
+      "pt": {
+        "name": "Verbos Essenciais",
+        "description": "Os 50 verbos mais comuns"
+      },
+      "ja": {
+        "name": "必須動詞",
+        "description": "最もよく使われる50の動詞"
+      },
+      "ko": {
+        "name": "필수 동사",
+        "description": "가장 자주 쓰이는 동사 50개"
+      },
+      "uk": {
+        "name": "Основні дієслова",
+        "description": "50 найпоширеніших дієслів"
+      },
+      "zh": {
+        "name": "核心动词",
+        "description": "50个最常用动词"
+      }
+    }
+  },
+  {
+    "id": "common_phrases",
+    "name": "Common Phrases",
+    "emoji": "💬",
+    "description": "Greetings, requests, small talk",
+    "wordCount": 30,
+    "level": "A1-A2",
+    "kind": "phrases",
+    "cover": "common_phrases_cover.webp",
+    "file": "common_phrases_universal.json",
+    "translations": {
+      "de": {
+        "name": "Häufige Phrasen",
+        "description": "Begrüßungen, Bitten, Smalltalk"
+      },
+      "es": {
+        "name": "Frases Comunes",
+        "description": "Saludos, peticiones, charla informal"
+      },
+      "fr": {
+        "name": "Phrases Courantes",
+        "description": "Salutations, requêtes, petites discussions"
+      },
+      "pt": {
+        "name": "Frases Comuns",
+        "description": "Saudações, pedidos, conversa fiada"
+      },
+      "ja": {
+        "name": "日常フレーズ",
+        "description": "挨拶、お願い、雑談"
+      },
+      "ko": {
+        "name": "일상 표현",
+        "description": "인사, 요청, 스몰토크"
+      },
+      "uk": {
+        "name": "Загальні фрази",
+        "description": "Привітання, прохання, світська бесіда"
+      },
+      "zh": {
+        "name": "常用短语",
+        "description": "问候、请求、闲聊"
+      }
+    }
+  },
+  {
+    "id": "numbers_time",
+    "name": "Numbers & Time",
+    "emoji": "🕐",
+    "description": "Numbers, days, seasons, time expressions",
+    "wordCount": 40,
+    "level": "A1-A2",
+    "kind": "words",
+    "starterRank": 3,
+    "cover": "numbers_time_cover.webp",
+    "file": "numbers_time_universal.json",
+    "translations": {
+      "de": {
+        "name": "Zahlen & Zeit",
+        "description": "Zahlen, Tage, Jahreszeiten, Zeitausdrücke"
+      },
+      "es": {
+        "name": "Números y Tiempo",
+        "description": "Números, días, estaciones, expresiones de tiempo"
+      },
+      "fr": {
+        "name": "Nombres et Temps",
+        "description": "Nombres, jours, saisons, expressions de temps"
+      },
+      "pt": {
+        "name": "Números e Tempo",
+        "description": "Números, dias, estações, expressões de tempo"
+      },
+      "ja": {
+        "name": "数字と時間",
+        "description": "数字、曜日、季節、時間表現"
+      },
+      "ko": {
+        "name": "숫자와 시간",
+        "description": "숫자, 요일, 계절, 시간 표현"
+      },
+      "uk": {
+        "name": "Числа та час",
+        "description": "Цифри, дні, пори року, вирази часу"
+      },
+      "zh": {
+        "name": "数字与时间",
+        "description": "数字、星期、季节、时间表达"
+      }
+    }
+  },
+  {
+    "id": "food_drinks",
+    "name": "Food & Drinks",
+    "emoji": "🍕",
+    "description": "Fruits, vegetables, meals, cooking",
+    "wordCount": 38,
+    "level": "A1-A2",
+    "kind": "words",
+    "starterRank": 1,
+    "cover": "food_drinks_cover.webp",
+    "file": "food_drinks_universal.json",
+    "translations": {
+      "de": {
+        "name": "Essen & Trinken",
+        "description": "Obst, Gemüse, Mahlzeiten, Kochen"
+      },
+      "es": {
+        "name": "Comida y Bebida",
+        "description": "Frutas, verduras, comidas, cocina"
+      },
+      "fr": {
+        "name": "Nourriture et Boissons",
+        "description": "Fruits, légumes, repas, cuisine"
+      },
+      "pt": {
+        "name": "Comida e Bebidas",
+        "description": "Frutas, vegetais, refeições, culinária"
+      },
+      "ja": {
+        "name": "食べ物と飲み物",
+        "description": "果物、野菜、食事、料理"
+      },
+      "ko": {
+        "name": "음식과 음료",
+        "description": "과일, 채소, 식사, 요리"
+      },
+      "uk": {
+        "name": "Їжа та напої",
+        "description": "Фрукти, овочі, страви, приготування"
+      },
+      "zh": {
+        "name": "食物与饮料",
+        "description": "水果、蔬菜、餐饮、烹饪"
+      }
+    }
+  },
+  {
+    "id": "home_daily_life",
+    "name": "Home & Daily Life",
+    "emoji": "🏠",
+    "description": "Rooms, furniture, daily routine",
+    "wordCount": 35,
+    "level": "A1-A2",
+    "kind": "words",
+    "starterRank": 2,
+    "cover": "home_daily_life_cover.webp",
+    "file": "home_daily_life_universal.json",
+    "translations": {
+      "de": {
+        "name": "Zuhause & Alltag",
+        "description": "Zimmer, Möbel, Tagesablauf"
+      },
+      "es": {
+        "name": "Hogar y Vida Diaria",
+        "description": "Habitaciones, muebles, rutina diaria"
+      },
+      "fr": {
+        "name": "Maison et Quotidien",
+        "description": "Pièces, meubles, routine quotidienne"
+      },
+      "pt": {
+        "name": "Casa e Vida Diária",
+        "description": "Cômodos, móveis, rotina diária"
+      },
+      "ja": {
+        "name": "家と日常生活",
+        "description": "部屋、家具、日常生活"
+      },
+      "ko": {
+        "name": "집과 일상생활",
+        "description": "방, 가구, 일과"
+      },
+      "uk": {
+        "name": "Дім та побут",
+        "description": "Кімнати, меблі, розпорядок дня"
+      },
+      "zh": {
+        "name": "家庭与日常生活",
+        "description": "房间、家具、日常作息"
+      }
+    }
+  },
+  {
+    "id": "body_health",
+    "name": "Body & Health",
+    "emoji": "🏥",
+    "description": "Body parts, symptoms, at the doctor",
+    "wordCount": 35,
+    "level": "A1-A2",
+    "kind": "words",
+    "cover": "body_health_cover.webp",
+    "file": "body_health_universal.json",
+    "translations": {
+      "de": {
+        "name": "Körper & Gesundheit",
+        "description": "Körperteile, Symptome, beim Arzt"
+      },
+      "es": {
+        "name": "Cuerpo y Salud",
+        "description": "Partes del cuerpo, síntomas, en el médico"
+      },
+      "fr": {
+        "name": "Corps et Santé",
+        "description": "Partes du corps, symptômes, chez le médecin"
+      },
+      "pt": {
+        "name": "Corpo e Saúde",
+        "description": "Partes do corpo, sintomas, no médico"
+      },
+      "ja": {
+        "name": "体と健康",
+        "description": "体の部位、症状、病院で"
+      },
+      "ko": {
+        "name": "신체와 건강",
+        "description": "신체 부위, 증상, 병원에서"
+      },
+      "uk": {
+        "name": "Тіло та здоров'я",
+        "description": "Частини тіла, симптоми, у лікаря"
+      },
+      "zh": {
+        "name": "身体与健康",
+        "description": "身体部位、症状、就医"
+      }
+    }
+  },
+  {
+    "id": "travel_places",
+    "name": "Travel & Places",
+    "emoji": "✈️",
+    "description": "Transport, hotel, directions, landmarks",
+    "wordCount": 40,
+    "level": "A1-A2",
+    "kind": "words",
+    "cover": "travel_places_cover.webp",
+    "file": "travel_places_universal.json",
+    "translations": {
+      "de": {
+        "name": "Reisen & Orte",
+        "description": "Verkehrsmittel, Hotel, Wegbeschreibungen, Sehenswürdigkeiten"
+      },
+      "es": {
+        "name": "Viajes y Lugares",
+        "description": "Transporte, hotel, direcciones, lugares de interés"
+      },
+      "fr": {
+        "name": "Voyage et Lieux",
+        "description": "Transports, hôtel, itinéraires, points de repère"
+      },
+      "pt": {
+        "name": "Viagens e Lugares",
+        "description": "Transporte, hotel, direções, pontos turísticos"
+      },
+      "ja": {
+        "name": "旅行と場所",
+        "description": "交通機関、ホテル、道案内、名所"
+      },
+      "ko": {
+        "name": "여행과 장소",
+        "description": "교통, 호텔, 길 찾기, 명소"
+      },
+      "uk": {
+        "name": "Подорожі та місця",
+        "description": "Транспорт, готель, напрямки, визначні місця"
+      },
+      "zh": {
+        "name": "旅行与地点",
+        "description": "交通、酒店、指路、地标"
+      }
+    }
+  },
+  {
+    "id": "phrases_cafe_shop",
+    "name": "At the Café & Shop",
+    "emoji": "☕",
+    "description": "Ordering, paying and shopping",
+    "wordCount": 30,
+    "level": "A1",
+    "kind": "phrases",
+    "cover": "phrases_cafe_shop_cover.webp",
+    "file": "phrases_cafe_shop_universal.json",
+    "translations": {
+      "de": {
+        "name": "Im Café & im Laden",
+        "description": "Bestellen, bezahlen und einkaufen"
+      },
+      "es": {
+        "name": "En la cafetería y la tienda",
+        "description": "Pedir, pagar y comprar"
+      },
+      "fr": {
+        "name": "Au café et en boutique",
+        "description": "Commander, payer et faire ses achats"
+      },
+      "pt": {
+        "name": "No café e na loja",
+        "description": "Pedir, pagar e fazer compras"
+      },
+      "ja": {
+        "name": "カフェとお店で",
+        "description": "注文・支払い・買い物"
+      },
+      "ko": {
+        "name": "카페와 가게에서",
+        "description": "주문, 계산, 쇼핑"
+      },
+      "uk": {
+        "name": "У кафе та магазині",
+        "description": "Замовити, заплатити, зробити покупки"
+      },
+      "zh": {
+        "name": "在咖啡馆和商店",
+        "description": "点单、付款和购物"
+      }
+    }
+  },
+  {
+    "id": "phrases_about_me",
+    "name": "All About Me",
+    "emoji": "🙋",
+    "description": "Introducing yourself and first questions",
+    "wordCount": 30,
+    "level": "A1",
+    "kind": "phrases",
+    "cover": "phrases_about_me_cover.webp",
+    "file": "phrases_about_me_universal.json",
+    "translations": {
+      "de": {
+        "name": "Über mich",
+        "description": "Sich vorstellen und erste Fragen"
+      },
+      "es": {
+        "name": "Sobre mí",
+        "description": "Presentarse y primeras preguntas"
+      },
+      "fr": {
+        "name": "Parler de soi",
+        "description": "Se présenter et premières questions"
+      },
+      "pt": {
+        "name": "Sobre mim",
+        "description": "Apresentar-se e primeiras perguntas"
+      },
+      "ja": {
+        "name": "自己紹介",
+        "description": "自己紹介と最初の質問"
+      },
+      "ko": {
+        "name": "나에 대해",
+        "description": "자기소개와 첫 질문"
+      },
+      "uk": {
+        "name": "Про себе",
+        "description": "Знайомство та перші запитання"
+      },
+      "zh": {
+        "name": "关于我",
+        "description": "自我介绍和基本提问"
+      }
+    }
+  },
+  {
+    "id": "feelings_emotions",
+    "name": "Feelings & Emotions",
+    "emoji": "😊",
+    "description": "Express how you feel",
+    "wordCount": 30,
+    "level": "A2-B1",
+    "kind": "words",
+    "cover": "feelings_emotions_cover.webp",
+    "file": "feelings_emotions_universal.json",
+    "translations": {
+      "de": {
+        "name": "Gefühle & Emotionen",
+        "description": "Drücke aus, wie du dich fühlst"
+      },
+      "es": {
+        "name": "Sentimientos y Emociones",
+        "description": "Expresa cómo te sientes"
+      },
+      "fr": {
+        "name": "Sentiments et Émotions",
+        "description": "Exprimer ce que vous ressentez"
+      },
+      "pt": {
+        "name": "Sentimentos e Emoções",
+        "description": "Expresse como você se sente"
+      },
+      "ja": {
+        "name": "感情と気分",
+        "description": "自分の気持ちを表現する"
+      },
+      "ko": {
+        "name": "감정과 기분",
+        "description": "자신의 감정 표현하기"
+      },
+      "uk": {
+        "name": "Почуття та емоції",
+        "description": "Висловлюйте свої відчуття"
+      },
+      "zh": {
+        "name": "感觉与情绪",
+        "description": "表达你的感受"
+      }
+    }
+  },
+  {
+    "id": "phrases_getting_around",
+    "name": "Getting Around",
+    "emoji": "🧭",
+    "description": "Directions, transport and hotels",
+    "wordCount": 30,
+    "level": "A2",
+    "kind": "phrases",
+    "cover": "phrases_getting_around_cover.webp",
+    "file": "phrases_getting_around_universal.json",
+    "translations": {
+      "de": {
+        "name": "Unterwegs",
+        "description": "Wegbeschreibung, Verkehrsmittel und Hotel"
+      },
+      "es": {
+        "name": "Moverse por la ciudad",
+        "description": "Direcciones, transporte y hotel"
+      },
+      "fr": {
+        "name": "Se déplacer",
+        "description": "Itinéraires, transports et hôtel"
+      },
+      "pt": {
+        "name": "Andar pela cidade",
+        "description": "Direções, transportes e hotel"
+      },
+      "ja": {
+        "name": "移動する",
+        "description": "道案内・交通機関・ホテル"
+      },
+      "ko": {
+        "name": "길 찾기와 이동",
+        "description": "길 안내, 교통, 호텔"
+      },
+      "uk": {
+        "name": "У дорозі",
+        "description": "Як пройти, транспорт і готель"
+      },
+      "zh": {
+        "name": "出行",
+        "description": "问路、交通和酒店"
+      }
+    }
+  },
+  {
+    "id": "phrases_plans_invitations",
+    "name": "Plans & Invitations",
+    "emoji": "📅",
+    "description": "Inviting, accepting, saying no, meeting up",
+    "wordCount": 30,
+    "level": "A2",
+    "kind": "phrases",
+    "cover": "phrases_plans_invitations_cover.webp",
+    "file": "phrases_plans_invitations_universal.json",
+    "translations": {
+      "de": {
+        "name": "Pläne & Einladungen",
+        "description": "Einladen, zusagen, absagen, sich verabreden"
+      },
+      "es": {
+        "name": "Planes e invitaciones",
+        "description": "Invitar, aceptar, decir que no, quedar"
+      },
+      "fr": {
+        "name": "Projets et invitations",
+        "description": "Inviter, accepter, refuser, se donner rendez-vous"
+      },
+      "pt": {
+        "name": "Planos e convites",
+        "description": "Convidar, aceitar, recusar, combinar encontros"
+      },
+      "ja": {
+        "name": "予定と誘い",
+        "description": "誘う・受ける・断る・待ち合わせ"
+      },
+      "ko": {
+        "name": "약속과 초대",
+        "description": "초대, 수락, 거절, 만나기"
+      },
+      "uk": {
+        "name": "Плани та запрошення",
+        "description": "Запросити, погодитися, відмовити, домовитися"
+      },
+      "zh": {
+        "name": "计划与邀请",
+        "description": "邀请、接受、拒绝、约见面"
+      }
+    }
+  },
+  {
+    "id": "work_career",
+    "name": "Work & Career",
+    "emoji": "💼",
+    "description": "Professions, office, interviews",
+    "wordCount": 40,
+    "level": "B1",
+    "kind": "words",
+    "cover": "work_career_cover.webp",
+    "file": "work_career_universal.json",
+    "translations": {
+      "de": {
+        "name": "Arbeit & Karriere",
+        "description": "Berufe, Büro, Vorstellungsgespräche"
+      },
+      "es": {
+        "name": "Trabajo y Carrera",
+        "description": "Profesiones, oficina, entrevistas"
+      },
+      "fr": {
+        "name": "Travail et Carrière",
+        "description": "Professions, bureau, entretiens"
+      },
+      "pt": {
+        "name": "Trabalho e Carreira",
+        "description": "Profissões, escritório, entrevistas"
+      },
+      "ja": {
+        "name": "仕事とキャリア",
+        "description": "職業、オフィス、面接"
+      },
+      "ko": {
+        "name": "일과 커리어",
+        "description": "직업, 사무실, 면접"
+      },
+      "uk": {
+        "name": "Робота та кар'єра",
+        "description": "Професії, офіс, співбесіди"
+      },
+      "zh": {
+        "name": "工作与职业",
+        "description": "职业、办公室、面试"
+      }
+    }
+  },
+  {
+    "id": "technology_internet",
+    "name": "Technology & Internet",
+    "emoji": "📱",
+    "description": "Devices, apps, social media, digital life",
+    "wordCount": 35,
+    "level": "B1",
+    "kind": "words",
+    "cover": "technology_internet_cover.webp",
+    "file": "technology_internet_universal.json",
+    "translations": {
+      "de": {
+        "name": "Technik & Internet",
+        "description": "Geräte, Apps, Social Media, digitales Leben"
+      },
+      "es": {
+        "name": "Tecnología e Internet",
+        "description": "Dispositivos, aplicaciones, redes sociales, vida digital"
+      },
+      "fr": {
+        "name": "Technologie et Internet",
+        "description": "Appareils, applications, réseaux sociaux, vie numérique"
+      },
+      "pt": {
+        "name": "Tecnologia e Internet",
+        "description": "Dispositivos, aplicativos, redes sociais, vida digital"
+      },
+      "ja": {
+        "name": "テクノロジーとインターネット",
+        "description": "デバイス、アプリ、SNS、デジタルライフ"
+      },
+      "ko": {
+        "name": "기술과 인터넷",
+        "description": "기기, 앱, 소셜 미디어, 디지털 라이프"
+      },
+      "uk": {
+        "name": "Технології та інтернет",
+        "description": "Пристрої, додатки, соцмережі, цифрове життя"
+      },
+      "zh": {
+        "name": "科技与互联网",
+        "description": "设备、应用、社交媒体、数字生活"
+      }
+    }
+  },
+  {
+    "id": "news_media",
+    "name": "News & Media",
+    "emoji": "📰",
+    "description": "Articles, opinions, current events",
+    "wordCount": 35,
+    "level": "B1",
+    "kind": "words",
+    "cover": "news_media_cover.webp",
+    "file": "news_media_universal.json",
+    "translations": {
+      "de": {
+        "name": "Nachrichten & Medien",
+        "description": "Artikel, Meinungen, aktuelles Geschehen"
+      },
+      "es": {
+        "name": "Noticias y Medios",
+        "description": "Artículos, opiniones, actualidad"
+      },
+      "fr": {
+        "name": "Actualités et Médias",
+        "description": "Articles, opinions, événements actuels"
+      },
+      "pt": {
+        "name": "Notícias e Mídia",
+        "description": "Artigos, opiniões, atualidades"
+      },
+      "ja": {
+        "name": "ニュースとメディア",
+        "description": "記事、意見、時事問題"
+      },
+      "ko": {
+        "name": "뉴스와 미디어",
+        "description": "기사, 의견, 시사"
+      },
+      "uk": {
+        "name": "Новини та медіа",
+        "description": "Статті, думки, поточні події"
+      },
+      "zh": {
+        "name": "新闻与媒体",
+        "description": "文章、观点、时事"
+      }
+    }
+  },
+  {
+    "id": "connectors_linking",
+    "name": "Connectors & Linking",
+    "emoji": "🔗",
+    "description": "However, although, therefore, despite",
+    "wordCount": 30,
+    "level": "B1",
+    "kind": "phrases",
+    "cover": "connectors_linking_cover.webp",
+    "file": "connectors_linking_universal.json",
+    "translations": {
+      "de": {
+        "name": "Bindewörter & Verknüpfungen",
+        "description": "Jedoch, obwohl, deshalb, trotz"
+      },
+      "es": {
+        "name": "Conectores y Enlaces",
+        "description": "Sin embargo, aunque, por lo tanto, a pesar de"
+      },
+      "fr": {
+        "name": "Connecteurs et Liens",
+        "description": "Cependant, bien que, donc, malgré"
+      },
+      "pt": {
+        "name": "Conectores e Ligações",
+        "description": "No entanto, embora, portanto, apesar de"
+      },
+      "ja": {
+        "name": "接続詞とつなぎ言葉",
+        "description": "しかし、〜だけれども、したがって、〜にもかかわらず"
+      },
+      "ko": {
+        "name": "접속사와 연결어",
+        "description": "하지만, 비록 ~일지라도, 그러므로, ~에도 불구하고"
+      },
+      "uk": {
+        "name": "Сполучники та зв'язки",
+        "description": "Однак, хоча, тому, незважаючи на"
+      },
+      "zh": {
+        "name": "连词与衔接",
+        "description": "然而、虽然、因此、尽管"
+      }
+    }
+  },
+  {
+    "id": "phrases_opinions",
+    "name": "Opinions & Discussion",
+    "emoji": "🗣️",
+    "description": "Agreeing, disagreeing, giving your view",
+    "wordCount": 30,
+    "level": "B1",
+    "kind": "phrases",
+    "cover": "phrases_opinions_cover.webp",
+    "file": "phrases_opinions_universal.json",
+    "translations": {
+      "de": {
+        "name": "Meinungen & Diskussion",
+        "description": "Zustimmen, widersprechen, Stellung nehmen"
+      },
+      "es": {
+        "name": "Opiniones y debate",
+        "description": "Estar de acuerdo, discrepar, opinar"
+      },
+      "fr": {
+        "name": "Opinions et débat",
+        "description": "Approuver, contester, donner son avis"
+      },
+      "pt": {
+        "name": "Opiniões e debate",
+        "description": "Concordar, discordar, dar a sua opinião"
+      },
+      "ja": {
+        "name": "意見と議論",
+        "description": "賛成・反対・意見を言う"
+      },
+      "ko": {
+        "name": "의견과 토론",
+        "description": "동의, 반대, 의견 말하기"
+      },
+      "uk": {
+        "name": "Думки та дискусія",
+        "description": "Погодитися, заперечити, висловити думку"
+      },
+      "zh": {
+        "name": "观点与讨论",
+        "description": "赞同、反对、表达看法"
+      }
+    }
+  },
+  {
+    "id": "phrases_problems",
+    "name": "Problems & Complaints",
+    "emoji": "🛠️",
+    "description": "When something goes wrong",
+    "wordCount": 30,
+    "level": "B1",
+    "kind": "phrases",
+    "cover": "phrases_problems_cover.webp",
+    "file": "phrases_problems_universal.json",
+    "translations": {
+      "de": {
+        "name": "Probleme & Beschwerden",
+        "description": "Wenn etwas schiefgeht"
+      },
+      "es": {
+        "name": "Problemas y quejas",
+        "description": "Cuando algo sale mal"
+      },
+      "fr": {
+        "name": "Problèmes et réclamations",
+        "description": "Quand quelque chose ne va pas"
+      },
+      "pt": {
+        "name": "Problemas e reclamações",
+        "description": "Quando algo corre mal"
+      },
+      "ja": {
+        "name": "トラブルと苦情",
+        "description": "何か問題が起きたとき"
+      },
+      "ko": {
+        "name": "문제와 불만",
+        "description": "뭔가 잘못됐을 때"
+      },
+      "uk": {
+        "name": "Проблеми та скарги",
+        "description": "Коли щось пішло не так"
+      },
+      "zh": {
+        "name": "问题与投诉",
+        "description": "出了问题的时候"
+      }
+    }
+  },
+  {
+    "id": "abstract_concepts",
+    "name": "Abstract Concepts",
+    "emoji": "💭",
+    "description": "Freedom, justice, identity, resilience",
+    "wordCount": 40,
+    "level": "B2",
+    "kind": "words",
+    "cover": "abstract_concepts_cover.webp",
+    "file": "abstract_concepts_universal.json",
+    "translations": {
+      "de": {
+        "name": "Abstrakte Konzepte",
+        "description": "Freiheit, Gerechtigkeit, Identität, Widerstandsfähigkeit"
+      },
+      "es": {
+        "name": "Conceptos Abstractos",
+        "description": "Libertad, justicia, identidad, resiliencia"
+      },
+      "fr": {
+        "name": "Concepts Abstraits",
+        "description": "Liberté, justice, identité, résilience"
+      },
+      "pt": {
+        "name": "Conceitos Abstratos",
+        "description": "Liberdade, justiça, identidade, resiliência"
+      },
+      "ja": {
+        "name": "抽象的概念",
+        "description": "自由、正義、アイデンティティ、レジリエンス"
+      },
+      "ko": {
+        "name": "추상적 개념",
+        "description": "자유, 정의, 정체성, 회복탄력성"
+      },
+      "uk": {
+        "name": "Абстрактні поняття",
+        "description": "Свобода, справедливість, ідентичність, стійкість"
+      },
+      "zh": {
+        "name": "抽象概念",
+        "description": "自由、正义、身份、韧性"
+      }
+    }
+  },
+  {
+    "id": "idioms_collocations",
+    "name": "Idioms & Collocations",
+    "emoji": "🎭",
+    "description": "Make a decision, piece of cake, break the ice",
+    "wordCount": 35,
+    "level": "B2",
+    "kind": "phrases",
+    "cover": "idioms_collocations_cover.webp",
+    "file": "idioms_collocations_universal.json",
+    "translations": {
+      "de": {
+        "name": "Redewendungen & Kollokationen",
+        "description": "Eine Entscheidung treffen, kinderleicht, das Eis brechen"
+      },
+      "es": {
+        "name": "Modismos y Colocaciones",
+        "description": "Tomar una decisión, pan comido, romper el hielo"
+      },
+      "fr": {
+        "name": "Expressions et Collocations",
+        "description": "Prendre une décision, un jeu d'enfant, briser la glace"
+      },
+      "pt": {
+        "name": "Expressões e Colocações",
+        "description": "Tomar uma decisão, moleza, quebrar o gelo"
+      },
+      "ja": {
+        "name": "慣用句とコロケーション",
+        "description": "決定を下す、朝飯前、場を和ませる"
+      },
+      "ko": {
+        "name": "관용구와 연어",
+        "description": "결정을 내리다, 식은 죽 먹기, 분위기를 깨다"
+      },
+      "uk": {
+        "name": "Ідіоми та словосполучення",
+        "description": "Прийняти рішення, простіше простого, розтопити лід"
+      },
+      "zh": {
+        "name": "习语与搭配",
+        "description": "做决定、小菜一碟、打破僵局"
+      }
+    }
+  },
+  {
+    "id": "idioms_everyday",
+    "name": "Everyday Idioms",
+    "emoji": "💬",
+    "description": "Hang in there, sleep on it, call it a day",
+    "wordCount": 30,
+    "level": "B1",
+    "kind": "phrases",
+    "cover": "idioms_everyday_cover.webp",
+    "file": "idioms_everyday_universal.json",
+    "translations": {
+      "de": {
+        "name": "Alltagsidiome",
+        "description": "Durchhalten, eine Nacht drüber schlafen, Feierabend machen"
+      },
+      "es": {
+        "name": "Modismos Cotidianos",
+        "description": "Aguanta, consúltalo con la almohada, dar el día por terminado"
+      },
+      "fr": {
+        "name": "Expressions du Quotidien",
+        "description": "Tiens bon, la nuit porte conseil, on arrête là"
+      },
+      "pt": {
+        "name": "Expressões do Dia a Dia",
+        "description": "Aguenta firme, dormir sobre o assunto, encerrar o dia"
+      },
+      "ja": {
+        "name": "日常のイディオム",
+        "description": "がんばって、一晩考える、今日はここまで"
+      },
+      "ko": {
+        "name": "일상 관용구",
+        "description": "힘내, 하룻밤 생각해 보다, 오늘은 여기까지"
+      },
+      "uk": {
+        "name": "Ідіоми на щодень",
+        "description": "Тримайся, переспати з думкою, закінчувати на сьогодні"
+      },
+      "zh": {
+        "name": "日常习语",
+        "description": "坚持住、睡一觉再决定、今天到此为止"
+      }
+    }
+  },
+  {
+    "id": "idioms_work_money",
+    "name": "Work & Money Idioms",
+    "emoji": "💼",
+    "description": "Break even, cut corners, learn the ropes",
+    "wordCount": 30,
+    "level": "B1-B2",
+    "kind": "phrases",
+    "cover": "idioms_work_money_cover.webp",
+    "file": "idioms_work_money_universal.json",
+    "translations": {
+      "de": {
+        "name": "Idiome: Arbeit & Geld",
+        "description": "Kostendeckend arbeiten, Abstriche machen, sich einarbeiten"
+      },
+      "es": {
+        "name": "Modismos: Trabajo y Dinero",
+        "description": "Cubrir gastos, recortar gastos, aprender el oficio"
+      },
+      "fr": {
+        "name": "Expressions : Travail & Argent",
+        "description": "Rentrer dans ses frais, bâcler, apprendre les ficelles"
+      },
+      "pt": {
+        "name": "Expressões: Trabalho e Dinheiro",
+        "description": "Empatar, cortar caminho, aprender o ofício"
+      },
+      "ja": {
+        "name": "仕事とお金のイディオム",
+        "description": "収支とんとん、手を抜く、コツを覚える"
+      },
+      "ko": {
+        "name": "일과 돈 관용구",
+        "description": "본전을 찾다, 대충 하다, 요령을 익히다"
+      },
+      "uk": {
+        "name": "Ідіоми: робота й гроші",
+        "description": "Вийти в нуль, халтурити, освоїтися на роботі"
+      },
+      "zh": {
+        "name": "工作与金钱习语",
+        "description": "收支平衡、偷工减料、摸清门道"
+      }
+    }
+  },
+  {
+    "id": "idioms_feelings",
+    "name": "Feelings & Relationships Idioms",
+    "emoji": "💛",
+    "description": "Over the moon, get cold feet, see eye to eye",
+    "wordCount": 30,
+    "level": "B1-B2",
+    "kind": "phrases",
+    "cover": "idioms_feelings_cover.webp",
+    "file": "idioms_feelings_universal.json",
+    "translations": {
+      "de": {
+        "name": "Idiome: Gefühle & Beziehungen",
+        "description": "Überglücklich sein, kalte Füße bekommen, einer Meinung sein"
+      },
+      "es": {
+        "name": "Modismos: Sentimientos y Relaciones",
+        "description": "Estar en las nubes, echarse atrás, estar de acuerdo"
+      },
+      "fr": {
+        "name": "Expressions : Sentiments & Relations",
+        "description": "Être aux anges, se dégonfler, être sur la même longueur d'onde"
+      },
+      "pt": {
+        "name": "Expressões: Sentimentos e Relações",
+        "description": "Nas nuvens, amarelar, estar de acordo"
+      },
+      "ja": {
+        "name": "感情と人間関係のイディオム",
+        "description": "大喜び、怖気づく、意見が一致する"
+      },
+      "ko": {
+        "name": "감정과 관계 관용구",
+        "description": "뛸 듯이 기쁘다, 겁먹다, 의견이 일치하다"
+      },
+      "uk": {
+        "name": "Ідіоми: почуття й стосунки",
+        "description": "На сьомому небі, злякатися в останню мить, дивитися в один бік"
+      },
+      "zh": {
+        "name": "情感与关系习语",
+        "description": "欣喜若狂、临阵退缩、看法一致"
+      }
+    }
+  },
+  {
+    "id": "idioms_time_luck",
+    "name": "Time, Luck & Effort",
+    "emoji": "🍀",
+    "description": "In the nick of time, against all odds, hit the jackpot",
+    "wordCount": 30,
+    "level": "B2",
+    "kind": "phrases",
+    "cover": "idioms_time_luck_cover.webp",
+    "file": "idioms_time_luck_universal.json",
+    "translations": {
+      "de": {
+        "name": "Zeit, Glück & Mühe",
+        "description": "In letzter Sekunde, allen Widrigkeiten zum Trotz, den Jackpot knacken"
+      },
+      "es": {
+        "name": "Tiempo, Suerte y Esfuerzo",
+        "description": "Justo a tiempo, contra viento y marea, tocar el gordo"
+      },
+      "fr": {
+        "name": "Temps, Chance & Effort",
+        "description": "Juste à temps, contre toute attente, décrocher le gros lot"
+      },
+      "pt": {
+        "name": "Tempo, Sorte e Esforço",
+        "description": "Em cima da hora, contra todas as probabilidades, acertar na loteria"
+      },
+      "ja": {
+        "name": "時間・運・努力",
+        "description": "間一髪、あらゆる困難を乗り越えて、大当たり"
+      },
+      "ko": {
+        "name": "시간, 운, 노력",
+        "description": "아슬아슬하게, 온갖 역경을 딛고, 대박을 터뜨리다"
+      },
+      "uk": {
+        "name": "Час, удача й зусилля",
+        "description": "В останню мить, попри все, зірвати куш"
+      },
+      "zh": {
+        "name": "时间、运气与努力",
+        "description": "千钧一发、克服重重困难、中大奖"
+      }
+    }
+  },
+  {
+    "id": "academic_formal",
+    "name": "Academic & Formal",
+    "emoji": "🎓",
+    "description": "Essays, presentations, formal email",
+    "wordCount": 35,
+    "level": "B2",
+    "kind": "words",
+    "cover": "academic_formal_cover.webp",
+    "file": "academic_formal_universal.json",
+    "translations": {
+      "de": {
+        "name": "Akademisch & Formal",
+        "description": "Aufsätze, Präsentationen, formelle E-Mails"
+      },
+      "es": {
+        "name": "Académico y Formal",
+        "description": "Ensayos, presentaciones, correos formales"
+      },
+      "fr": {
+        "name": "Académique et Formel",
+        "description": "Essais, présentations, e-mails formels"
+      },
+      "pt": {
+        "name": "Acadêmico e Formal",
+        "description": "Ensaios, apresentações, e-mails formais"
+      },
+      "ja": {
+        "name": "アカデミックとフォーマル",
+        "description": "小論文、プレゼン、公式なメール"
+      },
+      "ko": {
+        "name": "학술 및 격식",
+        "description": "에세이, 프레젠테이션, 공식 이메일"
+      },
+      "uk": {
+        "name": "Академічна та офіційна мова",
+        "description": "Есе, презентації, офіційні листи"
+      },
+      "zh": {
+        "name": "学术与正式用语",
+        "description": "论文、演示文稿、正式邮件"
+      }
+    }
+  },
+  {
+    "id": "phrases_conversation_flow",
+    "name": "Keeping the Conversation Going",
+    "emoji": "🔄",
+    "description": "Discourse markers, fillers and turn-taking",
+    "wordCount": 30,
+    "level": "B2",
+    "kind": "phrases",
+    "cover": "phrases_conversation_flow_cover.webp",
+    "file": "phrases_conversation_flow_universal.json",
+    "translations": {
+      "de": {
+        "name": "Das Gespräch am Laufen halten",
+        "description": "Diskursmarker, Füllwörter und Sprecherwechsel"
+      },
+      "es": {
+        "name": "Mantener la conversación",
+        "description": "Marcadores, muletillas y turnos de palabra"
+      },
+      "fr": {
+        "name": "Faire vivre la conversation",
+        "description": "Connecteurs, mots de remplissage et tours de parole"
+      },
+      "pt": {
+        "name": "Manter a conversa",
+        "description": "Marcadores, palavras de apoio e vez de falar"
+      },
+      "ja": {
+        "name": "会話をつなぐ",
+        "description": "つなぎ言葉・言いよどみ・話の順番"
+      },
+      "ko": {
+        "name": "대화 이어가기",
+        "description": "담화 표지, 군말, 말 차례"
+      },
+      "uk": {
+        "name": "Підтримати розмову",
+        "description": "Дискурсивні маркери, слова-заповнювачі, черга в розмові"
+      },
+      "zh": {
+        "name": "让对话继续",
+        "description": "话语标记、填充词和话轮"
+      }
+    }
+  },
+  {
+    "id": "phrases_tact",
+    "name": "Tactful & Polite",
+    "emoji": "🕊️",
+    "description": "Softening, polite requests, refusing nicely",
+    "wordCount": 30,
+    "level": "B2",
+    "kind": "phrases",
+    "cover": "phrases_tact_cover.webp",
+    "file": "phrases_tact_universal.json",
+    "translations": {
+      "de": {
+        "name": "Taktvoll & höflich",
+        "description": "Abschwächen, höflich bitten, freundlich ablehnen"
+      },
+      "es": {
+        "name": "Con tacto y cortesía",
+        "description": "Suavizar, pedir con educación, decir que no amablemente"
+      },
+      "fr": {
+        "name": "Tact et politesse",
+        "description": "Nuancer, demander poliment, refuser avec gentillesse"
+      },
+      "pt": {
+        "name": "Com tato e cortesia",
+        "description": "Suavizar, pedir com educação, recusar com simpatia"
+      },
+      "ja": {
+        "name": "気配りと丁寧さ",
+        "description": "やわらげる・丁寧に頼む・上手に断る"
+      },
+      "ko": {
+        "name": "배려와 공손함",
+        "description": "완곡하게 말하기, 정중한 부탁, 부드러운 거절"
+      },
+      "uk": {
+        "name": "Тактовно й ввічливо",
+        "description": "Пом'якшити, ввічливо попросити, м'яко відмовити"
+      },
+      "zh": {
+        "name": "得体与礼貌",
+        "description": "委婉表达、礼貌请求、婉言拒绝"
+      }
+    }
+  },
+  {
+    "id": "business_finance",
+    "name": "Business & Finance",
+    "emoji": "💰",
+    "description": "Investment, revenue, mergers, ROI",
+    "wordCount": 54,
+    "level": "C1",
+    "kind": "words",
+    "cover": "business_finance_cover.webp",
+    "file": "business_finance_universal.json",
+    "translations": {
+      "de": {
+        "name": "Wirtschaft & Finanzen",
+        "description": "Investitionen, Umsatz, Fusionen, ROI"
+      },
+      "es": {
+        "name": "Negocios y Finanzas",
+        "description": "Inversiones, ingresos, fusiones, ROI"
+      },
+      "fr": {
+        "name": "Affaires et Finances",
+        "description": "Investissements, revenus, fusions, ROI"
+      },
+      "pt": {
+        "name": "Negócios e Finanças",
+        "description": "Investimentos, receitas, fusões, ROI"
+      },
+      "ja": {
+        "name": "ビジネスと金融",
+        "description": "投資、収益、合併、投資利益率"
+      },
+      "ko": {
+        "name": "비즈니스와 금융",
+        "description": "투자, 수익, 합병, 투자 수익률"
+      },
+      "uk": {
+        "name": "Бізнес та фінанси",
+        "description": "Інвестиції, дохід, злиття, рентабельність"
+      },
+      "zh": {
+        "name": "商业与金融",
+        "description": "投资、收入、合并、投资回报率"
+      }
+    }
+  },
+  {
+    "id": "science_research",
+    "name": "Science & Research",
+    "emoji": "🔬",
+    "description": "Hypothesis, peer review, methodology",
+    "wordCount": 49,
+    "level": "C1",
+    "kind": "words",
+    "cover": "science_research_cover.webp",
+    "file": "science_research_universal.json",
+    "translations": {
+      "de": {
+        "name": "Wissenschaft & Forschung",
+        "description": "Hypothese, Peer-Review, Methodik"
+      },
+      "es": {
+        "name": "Ciencia e Investigación",
+        "description": "Hipótesis, revisión por pares, metodología"
+      },
+      "fr": {
+        "name": "Science et Recherche",
+        "description": "Hypothèse, évaluation par les pairs, méthodologie"
+      },
+      "pt": {
+        "name": "Ciência e Pesquisa",
+        "description": "Hipótese, revisão por pares, metodologia"
+      },
+      "ja": {
+        "name": "科学と研究",
+        "description": "仮説、査読、方法論"
+      },
+      "ko": {
+        "name": "과학과 연구",
+        "description": "가설, 동료 평가, 방법론"
+      },
+      "uk": {
+        "name": "Наука та дослідження",
+        "description": "Гіпотеза, експертна оцінка, методологія"
+      },
+      "zh": {
+        "name": "科学与研究",
+        "description": "假说、同行评审、方法论"
+      }
+    }
+  },
+  {
+    "id": "advanced_idioms",
+    "name": "Advanced Idioms & Slang",
+    "emoji": "🗣️",
+    "description": "Elephant in the room, FOMO, go viral",
+    "wordCount": 40,
+    "level": "C1",
+    "kind": "phrases",
+    "cover": "advanced_idioms_cover.webp",
+    "file": "advanced_idioms_universal.json",
+    "translations": {
+      "de": {
+        "name": "Fortgeschrittene Redewendungen & Slang",
+        "description": "Der Elefant im Raum, FOMO, viral gehen"
+      },
+      "es": {
+        "name": "Modismos Avanzados y Jerga",
+        "description": "El elefante en la habitación, FOMO, hacerse viral"
+      },
+      "fr": {
+        "name": "Expressions Avancées et Argot",
+        "description": "L'éléphant dans la pièce, FOMO, faire le buzz"
+      },
+      "pt": {
+        "name": "Expressões Avançadas e Gírias",
+        "description": "O elefante na sala, FOMO, viralizar"
+      },
+      "ja": {
+        "name": "上級慣用句とスラング",
+        "description": "触れてはいけない話題、FOMO、バズる"
+      },
+      "ko": {
+        "name": "고급 관용구와 슬랭",
+        "description": "불편한 진실, 포모(FOMO), 바이럴되다"
+      },
+      "uk": {
+        "name": "Складні ідіоми та сленг",
+        "description": "Слон у кімнаті, FOMO, стати вірусним"
+      },
+      "zh": {
+        "name": "高级习语与俚语",
+        "description": "显而易见却被忽略的问题、错失恐惧症、走红"
+      }
+    }
+  },
+  {
+    "id": "phrases_meetings",
+    "name": "Meetings & Negotiation",
+    "emoji": "🤝",
+    "description": "Running meetings, proposing, bargaining",
+    "wordCount": 30,
+    "level": "C1",
+    "kind": "phrases",
+    "cover": "phrases_meetings_cover.webp",
+    "file": "phrases_meetings_universal.json",
+    "translations": {
+      "de": {
+        "name": "Meetings & Verhandlungen",
+        "description": "Besprechungen leiten, vorschlagen, verhandeln"
+      },
+      "es": {
+        "name": "Reuniones y negociación",
+        "description": "Dirigir reuniones, proponer, negociar"
+      },
+      "fr": {
+        "name": "Réunions et négociation",
+        "description": "Animer une réunion, proposer, négocier"
+      },
+      "pt": {
+        "name": "Reuniões e negociação",
+        "description": "Conduzir reuniões, propor, negociar"
+      },
+      "ja": {
+        "name": "会議と交渉",
+        "description": "会議の進行・提案・交渉"
+      },
+      "ko": {
+        "name": "회의와 협상",
+        "description": "회의 진행, 제안, 협상"
+      },
+      "uk": {
+        "name": "Наради та переговори",
+        "description": "Вести нараду, пропонувати, торгуватися"
+      },
+      "zh": {
+        "name": "会议与谈判",
+        "description": "主持会议、提出建议、讨价还价"
+      }
+    }
+  },
+  {
+    "id": "phrases_argument",
+    "name": "Nuanced Argument",
+    "emoji": "⚖️",
+    "description": "Hedging, conceding, weighing up a case",
+    "wordCount": 30,
+    "level": "C1",
+    "kind": "phrases",
+    "cover": "phrases_argument_cover.webp",
+    "file": "phrases_argument_universal.json",
+    "translations": {
+      "de": {
+        "name": "Differenziert argumentieren",
+        "description": "Einschränken, einräumen, abwägen"
+      },
+      "es": {
+        "name": "Argumentar con matices",
+        "description": "Matizar, conceder, sopesar"
+      },
+      "fr": {
+        "name": "Argumenter avec nuance",
+        "description": "Nuancer, concéder, peser le pour et le contre"
+      },
+      "pt": {
+        "name": "Argumentar com nuance",
+        "description": "Atenuar, conceder, ponderar"
+      },
+      "ja": {
+        "name": "ニュアンスのある議論",
+        "description": "ぼかす・譲歩する・比較検討する"
+      },
+      "ko": {
+        "name": "섬세한 논증",
+        "description": "완곡하게 말하기, 양보, 따져 보기"
+      },
+      "uk": {
+        "name": "Аргументувати з нюансами",
+        "description": "Пом'якшити, визнати, зважити аргументи"
+      },
+      "zh": {
+        "name": "有分寸地论证",
+        "description": "留有余地、让步、权衡利弊"
+      }
+    }
+  }
+]

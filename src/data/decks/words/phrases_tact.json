@@ -1,0 +1,57 @@
+[
+  {
+    "en": "I was wondering if you could …",
+    "uk": "Чи не могли б ви …?",
+    "de": "Könnten Sie vielleicht …?",
+    "es": "Me preguntaba si podría …",
+    "fr": "Je me demandais si vous pourriez …",
+    "pt": "Será que me podia …?",
+    "ja": "…ていただけないでしょうか。",
+    "ko": "혹시 … 해 주실 수 있을까요?",
+    "zh": "不知道您能不能…"
+  },
+  {
+    "en": "Would you mind closing the window?",
+    "uk": "Ви не могли б зачинити вікно?",
+    "de": "Könnten Sie bitte das Fenster zumachen?",
+    "es": "¿Le importaría cerrar la ventana?",
+    "fr": "Ça vous dérangerait de fermer la fenêtre ?",
+    "pt": "Importa-se de fechar a janela?",
+    "ja": "窓を閉めていただけますか。",
+    "ko": "창문 좀 닫아 주시겠어요?",
+    "zh": "麻烦您把窗户关一下，好吗？"
+  },
+  {
+    "en": "Do you mind if I …?",
+    "uk": "Ви не проти, якщо я …?",
+    "de": "Haben Sie etwas dagegen, wenn ich …?",
+    "es": "¿Le importa si …?",
+    "fr": "Ça vous dérange si je … ?",
+    "pt": "Importa-se que eu …?",
+    "ja": "…てもよろしいですか。",
+    "ko": "… 해도 괜찮을까요?",
+    "zh": "您介意我…吗？"
+  },
+  {
+    "en": "Would it be possible to …?",
+    "uk": "Чи можна було б …?",
+    "de": "Wäre es möglich, …?",
+    "es": "¿Sería posible …?",
+    "fr": "Est-ce qu'il serait possible de … ?",
+    "pt": "Seria possível …?",
+    "ja": "…ことは可能でしょうか。",
+    "ko": "… 가능할까요?",
+    "zh": "请问可以…吗？"
+  },
+  {
+    "en": "If it's not too much trouble, …",
+    "uk": "Якщо вам не важко, …",
+    "de": "Wenn es keine Umstände macht, …",
+    "es": "Si no es mucha molestia, …",
+    "fr": "Si ça ne vous dérange pas trop, …",
+    "pt": "Se não for muito incómodo, …",
+    "ja": "ご迷惑でなければ、…",
+    "ko": "번거롭지 않으시면 …",
+    "zh": "如果不太麻烦的话，…"
+  }
+]

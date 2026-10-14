@@ -1,0 +1,19 @@
+---
+import { APP_STORE_URL, playStoreUrl } from '../../lib/decks'
+
+interface Props {
+  /** The deck being shared. Google Play gets it as the install referrer. */
+  deck?: { lang: string; slug: string }
+  /** A third, quieter button beside the stores (e.g. "open in the browser"). */
+  extra?: { href: string; label: string }
+}
+const { deck, extra } = Astro.props
+---
+
+<!-- The two stores are alternatives, so both are leading pills; the web app
+     is the alternative half of the pair, on the grey pill. -->
+<div class="flex flex-col gap-3 w-full max-w-xs mx-auto sm:max-w-none sm:flex-row sm:justify-center">
+  <a href={APP_STORE_URL} class="zz-btn px-8" rel="noopener">App Store</a>
+  <a href={playStoreUrl(deck)} class="zz-btn px-8" rel="noopener">Google Play</a>
+  {extra && <a href={extra.href} class="zz-btn zz-btn-cancel px-8" rel="noopener">{extra.label}</a>}
+</div>

@@ -1,0 +1,57 @@
+[
+  {
+    "en": "head",
+    "uk": "голова",
+    "de": "der Kopf",
+    "es": "la cabeza",
+    "fr": "la tête",
+    "pt": "a cabeça",
+    "ja": "あたま",
+    "ko": "머리",
+    "zh": "头"
+  },
+  {
+    "en": "eye",
+    "uk": "око",
+    "de": "das Auge",
+    "es": "el ojo",
+    "fr": "l'œil",
+    "pt": "o olho",
+    "ja": "め",
+    "ko": "눈",
+    "zh": "眼睛"
+  },
+  {
+    "en": "ear",
+    "uk": "вухо",
+    "de": "das Ohr",
+    "es": "la oreja",
+    "fr": "l'oreille",
+    "pt": "a orelha",
+    "ja": "みみ",
+    "ko": "귀",
+    "zh": "耳朵"
+  },
+  {
+    "en": "nose",
+    "uk": "ніс",
+    "de": "die Nase",
+    "es": "la nariz",
+    "fr": "le nez",
+    "pt": "o nariz",
+    "ja": "はな",
+    "ko": "코",
+    "zh": "鼻子"
+  },
+  {
+    "en": "mouth",
+    "uk": "рот",
+    "de": "der Mund",
+    "es": "la boca",
+    "fr": "la bouche",
+    "pt": "a boca",
+    "ja": "くち",
+    "ko": "입",
+    "zh": "嘴"
+  }
+]

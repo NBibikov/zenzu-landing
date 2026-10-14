@@ -1,0 +1,57 @@
+[
+  {
+    "en": "hypothesis",
+    "uk": "гіпотеза",
+    "de": "die Hypothese",
+    "es": "la hipótesis",
+    "fr": "l'hypothèse",
+    "pt": "a hipótese",
+    "ja": "かせつ",
+    "ko": "가설",
+    "zh": "假说"
+  },
+  {
+    "en": "experiment",
+    "uk": "експеримент",
+    "de": "das Experiment",
+    "es": "el experimento",
+    "fr": "l'expérience",
+    "pt": "o experimento",
+    "ja": "じっけん",
+    "ko": "실험",
+    "zh": "实验"
+  },
+  {
+    "en": "variable",
+    "uk": "змінна",
+    "de": "die Variable",
+    "es": "la variable",
+    "fr": "la variable",
+    "pt": "a variável",
+    "ja": "へんすう",
+    "ko": "변수",
+    "zh": "变量"
+  },
+  {
+    "en": "correlation",
+    "uk": "кореляція",
+    "de": "die Korrelation",
+    "es": "la correlación",
+    "fr": "la corrélation",
+    "pt": "a correlação",
+    "ja": "そうかん",
+    "ko": "상관관계",
+    "zh": "相关性"
+  },
+  {
+    "en": "peer review",
+    "uk": "рецензування",
+    "de": "das Peer-Review",
+    "es": "la revisión por pares",
+    "fr": "l'évaluation par les pairs",
+    "pt": "a revisão por pares",
+    "ja": "ピアレビュー",
+    "ko": "동료 심사",
+    "zh": "同行评审"
+  }
+]

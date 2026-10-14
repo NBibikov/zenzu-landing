@@ -1,0 +1,57 @@
+[
+  {
+    "en": "break even",
+    "uk": "вийти в нуль",
+    "de": "die Gewinnschwelle erreichen",
+    "es": "llegar al punto de equilibrio",
+    "fr": "atteindre le seuil de rentabilité",
+    "pt": "atingir o ponto de equilíbrio",
+    "ja": "収支とんとん",
+    "ko": "손익분기점을 넘다",
+    "zh": "达到收支平衡"
+  },
+  {
+    "en": "cost an arm and a leg",
+    "uk": "коштувати як крило від літака",
+    "de": "ein Vermögen kosten",
+    "es": "costar un ojo de la cara",
+    "fr": "coûter les yeux de la tête",
+    "pt": "custar os olhos da cara",
+    "ja": "目が飛び出るほど高い",
+    "ko": "엄청나게 비싸다",
+    "zh": "贵得离谱"
+  },
+  {
+    "en": "tighten one's belt",
+    "uk": "затягнути пасок",
+    "de": "den Gürtel enger schnallen",
+    "es": "apretarse el cinturón",
+    "fr": "se serrer la ceinture",
+    "pt": "apertar o cinto",
+    "ja": "財布のひもを締める",
+    "ko": "허리띠를 졸라매다",
+    "zh": "勒紧裤腰带"
+  },
+  {
+    "en": "make ends meet",
+    "uk": "зводити кінці з кінцями",
+    "de": "über die Runden kommen",
+    "es": "llegar a fin de mes",
+    "fr": "joindre les deux bouts",
+    "pt": "fechar as contas no fim do mês",
+    "ja": "家計をやりくりする",
+    "ko": "겨우 생계를 꾸리다",
+    "zh": "勉强维持生计"
+  },
+  {
+    "en": "in the red",
+    "uk": "у мінусі",
+    "de": "in den roten Zahlen",
+    "es": "estar en números rojos",
+    "fr": "être dans le rouge",
+    "pt": "estar no vermelho",
+    "ja": "赤字である",
+    "ko": "적자 상태이다",
+    "zh": "处于亏损状态"
+  }
+]

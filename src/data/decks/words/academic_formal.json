@@ -1,0 +1,57 @@
+[
+  {
+    "en": "thesis",
+    "uk": "теза / дисертація",
+    "de": "die These / die Abschlussarbeit",
+    "es": "la tesis",
+    "fr": "la thèse",
+    "pt": "a tese",
+    "ja": "ろんぶん",
+    "ko": "논문",
+    "zh": "论文"
+  },
+  {
+    "en": "argument",
+    "uk": "аргумент",
+    "de": "das Argument",
+    "es": "el argumento",
+    "fr": "l'argument",
+    "pt": "o argumento",
+    "ja": "しゅちょう",
+    "ko": "주장",
+    "zh": "论点"
+  },
+  {
+    "en": "evidence",
+    "uk": "докази",
+    "de": "der Beweis / der Nachweis",
+    "es": "la evidencia",
+    "fr": "la preuve",
+    "pt": "a evidência",
+    "ja": "しょうこ",
+    "ko": "증거",
+    "zh": "证据"
+  },
+  {
+    "en": "conclusion",
+    "uk": "висновок",
+    "de": "die Schlussfolgerung",
+    "es": "la conclusión",
+    "fr": "la conclusion",
+    "pt": "a conclusão",
+    "ja": "けつろん",
+    "ko": "결론",
+    "zh": "结论"
+  },
+  {
+    "en": "hypothesis",
+    "uk": "гіпотеза",
+    "de": "die Hypothese",
+    "es": "la hipótesis",
+    "fr": "l'hypothèse",
+    "pt": "a hipótese",
+    "ja": "かせつ",
+    "ko": "가설",
+    "zh": "假设"
+  }
+]

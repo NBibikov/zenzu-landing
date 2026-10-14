@@ -1,0 +1,57 @@
+[
+  {
+    "en": "Are you free on Saturday?",
+    "uk": "Ти вільний у суботу?",
+    "de": "Hast du am Samstag Zeit?",
+    "es": "¿Estás libre el sábado?",
+    "fr": "Tu es libre samedi ?",
+    "pt": "Estás livre no sábado?",
+    "ja": "土曜日は空いていますか？",
+    "ko": "토요일에 시간 있어요?",
+    "zh": "你星期六有空吗？"
+  },
+  {
+    "en": "What are you doing tonight?",
+    "uk": "Що ти робиш сьогодні ввечері?",
+    "de": "Was machst du heute Abend?",
+    "es": "¿Qué haces esta noche?",
+    "fr": "Tu fais quoi ce soir ?",
+    "pt": "O que vais fazer hoje à noite?",
+    "ja": "今夜は何か予定がありますか？",
+    "ko": "오늘 저녁에 뭐 해요?",
+    "zh": "你今晚干嘛？"
+  },
+  {
+    "en": "Do you want to grab a coffee?",
+    "uk": "Підемо на каву?",
+    "de": "Wollen wir einen Kaffee trinken gehen?",
+    "es": "¿Vamos a tomar un café?",
+    "fr": "On va boire un café ?",
+    "pt": "Vamos tomar um café?",
+    "ja": "コーヒーでも飲みに行きませんか？",
+    "ko": "커피 한잔할래요?",
+    "zh": "要不要一起去喝杯咖啡？"
+  },
+  {
+    "en": "Would you like to come to dinner?",
+    "uk": "Хочеш прийти до нас на вечерю?",
+    "de": "Möchtest du zum Abendessen kommen?",
+    "es": "¿Te apetece venir a cenar?",
+    "fr": "Ça te dirait de venir dîner ?",
+    "pt": "Queres vir jantar cá a casa?",
+    "ja": "うちに晩ご飯を食べに来ませんか？",
+    "ko": "저녁 먹으러 올래요?",
+    "zh": "要不要来我家吃晚饭？"
+  },
+  {
+    "en": "How about a movie?",
+    "uk": "Може, сходимо в кіно?",
+    "de": "Wie wär's mit Kino?",
+    "es": "¿Y si vamos al cine?",
+    "fr": "Et si on allait au cinéma ?",
+    "pt": "Que tal irmos ao cinema?",
+    "ja": "映画でもどうですか？",
+    "ko": "영화 어때요?",
+    "zh": "去看电影怎么样？"
+  }
+]

@@ -1,0 +1,57 @@
+[
+  {
+    "en": "airport",
+    "uk": "аеропорт",
+    "de": "der Flughafen",
+    "es": "el aeropuerto",
+    "fr": "l'aéroport",
+    "pt": "o aeroporto",
+    "ja": "くうこう",
+    "ko": "공항",
+    "zh": "机场"
+  },
+  {
+    "en": "train",
+    "uk": "потяг",
+    "de": "der Zug",
+    "es": "el tren",
+    "fr": "le train",
+    "pt": "o trem",
+    "ja": "でんしゃ",
+    "ko": "기차",
+    "zh": "火车"
+  },
+  {
+    "en": "bus",
+    "uk": "автобус",
+    "de": "der Bus",
+    "es": "el autobús",
+    "fr": "le bus",
+    "pt": "o ônibus",
+    "ja": "バス",
+    "ko": "버스",
+    "zh": "公交车"
+  },
+  {
+    "en": "ticket",
+    "uk": "квиток",
+    "de": "das Ticket",
+    "es": "la entrada",
+    "fr": "le billet",
+    "pt": "o ingresso",
+    "ja": "きっぷ",
+    "ko": "표",
+    "zh": "票"
+  },
+  {
+    "en": "station",
+    "uk": "станція",
+    "de": "der Bahnhof",
+    "es": "la estación",
+    "fr": "la gare",
+    "pt": "a estação",
+    "ja": "えき",
+    "ko": "역",
+    "zh": "车站"
+  }
+]

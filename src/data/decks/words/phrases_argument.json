@@ -1,0 +1,57 @@
+[
+  {
+    "en": "It could be argued that …",
+    "uk": "Можна стверджувати, що …",
+    "de": "Man könnte argumentieren, dass …",
+    "es": "Se podría argumentar que …",
+    "fr": "On pourrait soutenir que …",
+    "pt": "Pode argumentar-se que …",
+    "ja": "…という見方もできます",
+    "ko": "…라고 볼 수도 있습니다",
+    "zh": "有人可能会认为……"
+  },
+  {
+    "en": "There's a case to be made for …",
+    "uk": "Є вагомі аргументи на користь …",
+    "de": "Es spricht einiges für …",
+    "es": "Hay buenos argumentos a favor de …",
+    "fr": "Il y a de bons arguments pour …",
+    "pt": "Há bons argumentos a favor de …",
+    "ja": "…を支持する理由は十分にあります",
+    "ko": "…에 찬성할 만한 근거가 충분히 있어요",
+    "zh": "有充分的理由支持……"
+  },
+  {
+    "en": "It stands to reason that …",
+    "uk": "Цілком логічно, що …",
+    "de": "Es ist nur logisch, dass …",
+    "es": "Es lógico que …",
+    "fr": "Il est logique que …",
+    "pt": "É lógico que …",
+    "ja": "…のは当然です",
+    "ko": "…는 게 당연해요",
+    "zh": "可想而知，……"
+  },
+  {
+    "en": "It's worth bearing in mind that …",
+    "uk": "Варто пам'ятати, що …",
+    "de": "Man sollte bedenken, dass …",
+    "es": "Conviene tener en cuenta que …",
+    "fr": "Il faut garder à l'esprit que …",
+    "pt": "Convém ter em conta que …",
+    "ja": "…ということも念頭に置いておきましょう",
+    "ko": "…라는 점을 염두에 둘 필요가 있어요",
+    "zh": "值得注意的是，……"
+  },
+  {
+    "en": "It remains to be seen whether …",
+    "uk": "Поки що невідомо, чи …",
+    "de": "Es bleibt abzuwarten, ob …",
+    "es": "Está por ver si …",
+    "fr": "Reste à savoir si …",
+    "pt": "Resta saber se …",
+    "ja": "…かどうかは、まだ分かりません",
+    "ko": "…일지는 두고 봐야 해요",
+    "zh": "是否……还有待观察"
+  }
+]

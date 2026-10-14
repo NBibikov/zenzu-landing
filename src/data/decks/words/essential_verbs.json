@@ -1,0 +1,57 @@
+[
+  {
+    "en": "be",
+    "uk": "бути",
+    "de": "sein",
+    "es": "ser",
+    "fr": "être",
+    "pt": "ser",
+    "ja": "である",
+    "ko": "이다",
+    "zh": "是"
+  },
+  {
+    "en": "have",
+    "uk": "мати",
+    "de": "haben",
+    "es": "tener",
+    "fr": "avoir",
+    "pt": "ter",
+    "ja": "もっている",
+    "ko": "가지다",
+    "zh": "有"
+  },
+  {
+    "en": "do",
+    "uk": "робити",
+    "de": "tun",
+    "es": "hacer",
+    "fr": "faire",
+    "pt": "fazer",
+    "ja": "する",
+    "ko": "하다",
+    "zh": "做"
+  },
+  {
+    "en": "say",
+    "uk": "казати",
+    "de": "sagen",
+    "es": "decir",
+    "fr": "dire",
+    "pt": "dizer",
+    "ja": "いう",
+    "ko": "말하다",
+    "zh": "说"
+  },
+  {
+    "en": "go",
+    "uk": "йти",
+    "de": "gehen",
+    "es": "ir",
+    "fr": "aller",
+    "pt": "ir",
+    "ja": "いく",
+    "ko": "가다",
+    "zh": "去"
+  }
+]

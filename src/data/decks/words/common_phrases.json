@@ -1,0 +1,57 @@
+[
+  {
+    "en": "Hello!",
+    "uk": "Привіт!",
+    "de": "Hallo!",
+    "es": "¡Hola!",
+    "fr": "Bonjour !",
+    "pt": "Olá!",
+    "ja": "こんにちは！",
+    "ko": "안녕하세요!",
+    "zh": "你好！"
+  },
+  {
+    "en": "How are you?",
+    "uk": "Як справи?",
+    "de": "Wie geht es dir?",
+    "es": "¿Cómo estás?",
+    "fr": "Comment vas-tu ?",
+    "pt": "Como você está?",
+    "ja": "おげんきですか？",
+    "ko": "어떻게 지내세요?",
+    "zh": "你好吗？"
+  },
+  {
+    "en": "I'm fine, thank you.",
+    "uk": "У мене все добре, дякую.",
+    "de": "Mir geht es gut, danke.",
+    "es": "Estoy bien, gracias.",
+    "fr": "Je vais bien, merci.",
+    "pt": "Estou bem, obrigado.",
+    "ja": "げんきです、ありがとう。",
+    "ko": "잘 지내요, 감사합니다.",
+    "zh": "我很好，谢谢。"
+  },
+  {
+    "en": "Nice to meet you.",
+    "uk": "Приємно познайомитись.",
+    "de": "Schön, Sie kennenzulernen.",
+    "es": "Mucho gusto.",
+    "fr": "Enchanté.",
+    "pt": "Prazer em conhecê-la.",
+    "ja": "はじめまして。",
+    "ko": "만나서 반가워요.",
+    "zh": "很高兴认识你。"
+  },
+  {
+    "en": "Goodbye!",
+    "uk": "До побачення!",
+    "de": "Auf Wiedersehen!",
+    "es": "¡Adiós!",
+    "fr": "Au revoir !",
+    "pt": "Adeus!",
+    "ja": "さようなら！",
+    "ko": "안녕히 가세요!",
+    "zh": "再见！"
+  }
+]

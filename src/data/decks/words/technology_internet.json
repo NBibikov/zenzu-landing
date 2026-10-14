@@ -1,0 +1,57 @@
+[
+  {
+    "en": "computer",
+    "uk": "комп'ютер",
+    "de": "der Computer",
+    "es": "el ordenador",
+    "fr": "l'ordinateur",
+    "pt": "o computador",
+    "ja": "パソコン",
+    "ko": "컴퓨터",
+    "zh": "电脑"
+  },
+  {
+    "en": "smartphone",
+    "uk": "смартфон",
+    "de": "das Smartphone",
+    "es": "el teléfono inteligente",
+    "fr": "le smartphone",
+    "pt": "o smartphone",
+    "ja": "スマートフォン",
+    "ko": "스마트폰",
+    "zh": "智能手机"
+  },
+  {
+    "en": "tablet",
+    "uk": "планшет",
+    "de": "das Tablet",
+    "es": "la tableta",
+    "fr": "la tablette",
+    "pt": "o tablet",
+    "ja": "タブレット",
+    "ko": "태블릿",
+    "zh": "平板电脑"
+  },
+  {
+    "en": "headphones",
+    "uk": "навушники",
+    "de": "der Kopfhörer",
+    "es": "auriculares",
+    "fr": "l'écouteurs",
+    "pt": "o fones de ouvido",
+    "ja": "ヘッドフォン",
+    "ko": "헤드폰",
+    "zh": "耳机"
+  },
+  {
+    "en": "camera",
+    "uk": "камера",
+    "de": "die Kamera",
+    "es": "la cámara",
+    "fr": "la caméra",
+    "pt": "a câmera",
+    "ja": "カメラ",
+    "ko": "카메라",
+    "zh": "相机"
+  }
+]

@@ -20,6 +20,8 @@ export default defineConfig({
   },
   integrations: [
     sitemap({
+      // Deck pages and the link-in-bio page are link targets, not search pages.
+      filter: (page) => !/^\/(d|ig)\//.test(new URL(page).pathname),
       i18n: {
         defaultLocale: 'en',
         locales: { en: 'en', uk: 'uk', de: 'de', fr: 'fr', es: 'es', pt: 'pt' },

@@ -1,0 +1,57 @@
+[
+  {
+    "en": "Excuse me, how do I get to the station?",
+    "uk": "Перепрошую, як дістатися до вокзалу?",
+    "de": "Entschuldigung, wie komme ich zum Bahnhof?",
+    "es": "Perdone, ¿cómo llego a la estación?",
+    "fr": "Excusez-moi, pour aller à la gare, s'il vous plaît ?",
+    "pt": "Desculpe, como é que se vai para a estação?",
+    "ja": "すみません、駅へはどう行けばいいですか。",
+    "ko": "실례지만, 역까지 어떻게 가요?",
+    "zh": "请问，去火车站怎么走？"
+  },
+  {
+    "en": "Is it far from here?",
+    "uk": "Це далеко звідси?",
+    "de": "Ist es weit von hier?",
+    "es": "¿Está lejos de aquí?",
+    "fr": "C'est loin d'ici ?",
+    "pt": "Fica longe daqui?",
+    "ja": "ここから遠いですか。",
+    "ko": "여기서 멀어요?",
+    "zh": "离这儿远吗？"
+  },
+  {
+    "en": "It's about ten minutes on foot.",
+    "uk": "Це приблизно десять хвилин пішки.",
+    "de": "Es sind etwa zehn Minuten zu Fuß.",
+    "es": "Está a unos diez minutos andando.",
+    "fr": "C'est à environ dix minutes à pied.",
+    "pt": "Fica a uns dez minutos a pé.",
+    "ja": "歩いて10分くらいです。",
+    "ko": "걸어서 10분 정도 걸려요.",
+    "zh": "走路大概十分钟。"
+  },
+  {
+    "en": "It's just around the corner.",
+    "uk": "Це одразу за рогом.",
+    "de": "Das ist gleich um die Ecke.",
+    "es": "Está justo a la vuelta de la esquina.",
+    "fr": "C'est juste au coin de la rue.",
+    "pt": "É já ali ao virar da esquina.",
+    "ja": "すぐそこの角を曲がったところです。",
+    "ko": "바로 모퉁이만 돌면 있어요.",
+    "zh": "就在拐角那儿。"
+  },
+  {
+    "en": "Take the second street on the right.",
+    "uk": "Поверніть у другу вулицю праворуч.",
+    "de": "Nehmen Sie die zweite Straße rechts.",
+    "es": "Coja la segunda calle a la derecha.",
+    "fr": "Prenez la deuxième rue à droite.",
+    "pt": "Vire na segunda rua à direita.",
+    "ja": "二つ目の角を右に曲がってください。",
+    "ko": "두 번째 길에서 오른쪽으로 도세요.",
+    "zh": "在第二个路口右转。"
+  }
+]

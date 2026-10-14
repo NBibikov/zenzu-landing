@@ -1,0 +1,57 @@
+[
+  {
+    "en": "investment",
+    "uk": "інвестиція",
+    "de": "die Investition",
+    "es": "la inversión",
+    "fr": "l'investissement",
+    "pt": "o investimento",
+    "ja": "とうし",
+    "ko": "투자",
+    "zh": "投资"
+  },
+  {
+    "en": "revenue",
+    "uk": "дохід",
+    "de": "der Umsatz",
+    "es": "el ingresos",
+    "fr": "le chiffre d'affaires",
+    "pt": "a receita",
+    "ja": "しゅうえき",
+    "ko": "수익",
+    "zh": "收入"
+  },
+  {
+    "en": "profit margin",
+    "uk": "маржа прибутку",
+    "de": "die Gewinnmarge",
+    "es": "el margen de beneficio",
+    "fr": "la marge bénéficiaire",
+    "pt": "a margem de lucro",
+    "ja": "りえきりつ",
+    "ko": "이익률",
+    "zh": "利润率"
+  },
+  {
+    "en": "budget",
+    "uk": "бюджет",
+    "de": "das Budget",
+    "es": "el presupuesto",
+    "fr": "le budget",
+    "pt": "o orçamento",
+    "ja": "よさん",
+    "ko": "예산",
+    "zh": "预算"
+  },
+  {
+    "en": "inflation",
+    "uk": "інфляція",
+    "de": "die Inflation",
+    "es": "la inflación",
+    "fr": "l'inflation",
+    "pt": "a inflação",
+    "ja": "インフレーション",
+    "ko": "인플레이션",
+    "zh": "通货膨胀"
+  }
+]

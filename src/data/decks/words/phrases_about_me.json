@@ -1,0 +1,57 @@
+[
+  {
+    "en": "My name is Anna.",
+    "uk": "Мене звати Анна.",
+    "de": "Ich heiße Anna.",
+    "es": "Me llamo Ana.",
+    "fr": "Je m'appelle Anna.",
+    "pt": "Chamo-me Ana.",
+    "ja": "アンナです。",
+    "ko": "저는 안나예요.",
+    "zh": "我叫安娜。"
+  },
+  {
+    "en": "What's your name?",
+    "uk": "Як тебе звати?",
+    "de": "Wie heißt du?",
+    "es": "¿Cómo te llamas?",
+    "fr": "Comment tu t'appelles ?",
+    "pt": "Como te chamas?",
+    "ja": "お名前は？",
+    "ko": "이름이 뭐예요?",
+    "zh": "你叫什么名字？"
+  },
+  {
+    "en": "I'm from Ukraine.",
+    "uk": "Я з України.",
+    "de": "Ich komme aus der Ukraine.",
+    "es": "Soy de Ucrania.",
+    "fr": "Je viens d'Ukraine.",
+    "pt": "Sou da Ucrânia.",
+    "ja": "ウクライナから来ました。",
+    "ko": "저는 우크라이나에서 왔어요.",
+    "zh": "我来自乌克兰。"
+  },
+  {
+    "en": "I live in Berlin.",
+    "uk": "Я живу в Берліні.",
+    "de": "Ich wohne in Berlin.",
+    "es": "Vivo en Berlín.",
+    "fr": "J'habite à Berlin.",
+    "pt": "Moro em Berlim.",
+    "ja": "ベルリンに住んでいます。",
+    "ko": "베를린에 살아요.",
+    "zh": "我住在柏林。"
+  },
+  {
+    "en": "Where do you live?",
+    "uk": "Де ти живеш?",
+    "de": "Wo wohnst du?",
+    "es": "¿Dónde vives?",
+    "fr": "Tu habites où ?",
+    "pt": "Onde moras?",
+    "ja": "どこに住んでいますか？",
+    "ko": "어디 살아요?",
+    "zh": "你住在哪儿？"
+  }
+]
