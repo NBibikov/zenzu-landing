@@ -68,12 +68,12 @@ const strings = t(locale)
                 ) : (
                   <>
                     <div class="flex items-center gap-4 sm:gap-5">{row}</div>
-                    <p class="mt-4 text-sm text-ink-2 flex flex-wrap items-baseline gap-x-5 gap-y-2">
-                      <span>Обери мову:</span>
+                    <p class="mt-4 text-sm text-ink-2">Обери мову:</p>
+                    <div class="mt-2 flex flex-wrap gap-2">
                       {langs.map((lang) => (
-                        <a href={deckPath(lang, deck.id)} class="text-ink font-semibold underline decoration-moss underline-offset-[0.2em] hover:decoration-ink">{LANGUAGE_NAMES[lang]}</a>
+                        <a href={deckPath(lang, deck.id)} class="zz-btn zz-btn-cancel zz-btn-sm">{LANGUAGE_NAMES[lang]}</a>
                       ))}
-                    </p>
+                    </div>
                   </>
                 )}
               </li>

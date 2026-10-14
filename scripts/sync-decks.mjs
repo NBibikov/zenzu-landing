@@ -7,12 +7,13 @@
 //   src/data/decks/catalog.json        verbatim copy of assets/seed_decks/catalog.json
 //   src/data/decks/words/<id>.json     the first WORDS_PER_DECK words of the deck's
 //                                      word file, reduced to the term per language
-//   public/d/covers/<id>.webp          the deck cover
+//   public/deck-covers/<id>.webp      the deck cover (not under /d/: the
+//                                      apple-app-site-association claims /d/*)
 //
 // The output is committed: the build must not depend on the app repo.
 // Run it again whenever the app's catalog changes, then commit the result.
 
-import { copyFileSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
+import { copyFileSync, existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
 import { homedir } from 'node:os'
 import { dirname, join, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
@@ -25,20 +26,14 @@ const seedDir = join(appRepo, 'assets', 'seed_decks')
 
 const outData = join(root, 'src', 'data', 'decks')
 const outWords = join(outData, 'words')
-const outCovers = join(root, 'public', 'd', 'covers')
+const outCovers = join(root, 'public', 'deck-covers')
 
 const catalogText = readFileSync(join(seedDir, 'catalog.json'), 'utf8')
 const catalog = JSON.parse(catalogText)
 
-// Start clean so a deck removed from the catalog does not linger.
-rmSync(outWords, { recursive: true, force: true })
-rmSync(outCovers, { recursive: true, force: true })
-mkdirSync(outWords, { recursive: true })
-mkdirSync(outCovers, { recursive: true })
-
-writeFileSync(join(outData, 'catalog.json'), catalogText)
-
-for (const deck of catalog) {
+// Read and check everything before touching the output, so a bad source
+// leaves the committed copy as it was.
+const decks = catalog.map((deck) => {
   const wordFile = JSON.parse(readFileSync(join(seedDir, deck.file), 'utf8'))
   const words = wordFile.concepts.slice(0, WORDS_PER_DECK).map((concept) => {
     const terms = {}
@@ -47,8 +42,21 @@ for (const deck of catalog) {
     }
     return terms
   })
-  writeFileSync(join(outWords, `${deck.id}.json`), JSON.stringify(words, null, 2) + '\n')
-  copyFileSync(join(seedDir, deck.cover), join(outCovers, `${deck.id}.webp`))
+  const cover = join(seedDir, deck.cover)
+  if (!existsSync(cover)) throw new Error(`Missing cover for ${deck.id}: ${cover}`)
+  return { id: deck.id, words, cover }
+})
+
+// Start clean so a deck removed from the catalog does not linger.
+rmSync(outWords, { recursive: true, force: true })
+rmSync(outCovers, { recursive: true, force: true })
+mkdirSync(outWords, { recursive: true })
+mkdirSync(outCovers, { recursive: true })
+
+writeFileSync(join(outData, 'catalog.json'), catalogText)
+for (const { id, words, cover } of decks) {
+  writeFileSync(join(outWords, `${id}.json`), JSON.stringify(words, null, 2) + '\n')
+  copyFileSync(cover, join(outCovers, `${id}.webp`))
 }
 
-console.log(`Synced ${catalog.length} decks from ${seedDir}`)
+console.log(`Synced ${decks.length} decks from ${seedDir}`)

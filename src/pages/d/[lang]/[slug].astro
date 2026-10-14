@@ -36,7 +36,7 @@ const strings = t(locale)
 
 <BaseLayout
   title={`${name} — колода Zenzu`}
-  description={`${description}. Готова колода для повторення в Zenzu.`}
+  description={`${description.replace(/[.\s]+$/, '')}. Готова колода для повторення в Zenzu.`}
   ogImage={coverPath(deck)}
   lang={locale}
   noindex
@@ -49,6 +49,7 @@ const strings = t(locale)
         width="800"
         height="384"
         alt=""
+        fetchpriority="high"
         class="w-full h-auto rounded-[16px] border border-hairline"
       />
 
@@ -64,7 +65,7 @@ const strings = t(locale)
             {words.map((word) => (
               <li class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 py-3 border-b border-hairline">
                 <span lang={lang} class="font-serif text-lg text-ink">{word.term}</span>
-                <span class="text-sm text-ink-2">{word.gloss}</span>
+                {word.gloss && <span class="text-sm text-ink-2">{word.gloss}</span>}
               </li>
             ))}
           </ul>

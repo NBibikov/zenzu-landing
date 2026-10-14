@@ -56,7 +56,7 @@ export function webAppUrl(lang: string, slug: string): string {
 }
 
 export function coverPath(deck: Deck): string {
-  return `/d/covers/${deck.id}.webp`
+  return `/deck-covers/${deck.id}.webp`
 }
 
 export function deckLanguages(deck: Deck): TargetLanguage[] {
