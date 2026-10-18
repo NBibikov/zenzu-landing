@@ -65,7 +65,7 @@
 [done] Comprehensible Input: What It Is and How to Find It at Your Level
 [done] How to Choose YouTube Channels for Learning German at Every CEFR Level
 [done] How to Choose YouTube Channels for Learning Spanish at Every CEFR Level
-How to Choose YouTube Channels for Learning French at Every CEFR Level
+[done] How to Choose YouTube Channels for Learning French at Every CEFR Level
 How to Use an AI Tutor for Language Learning Without Becoming Dependent
 Cloze Deletion Cards: When They Work and When They Do Not
 How Long Does It Take to Learn German, French or Spanish to B2
