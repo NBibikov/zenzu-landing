@@ -269,7 +269,6 @@ main{padding:3rem 0 6rem}
 article{max-width:36rem;margin:0 auto;padding:0 1.5rem}
 h1,h2{font-family:var(--serif);font-weight:500;letter-spacing:-.01em}
 h1{font-size:clamp(1.875rem,5vw,2.25rem);line-height:1.2;margin:0}
-.avatar{display:block;margin:0 auto 1.5rem;border-radius:9999px;border:1px solid var(--hairline);object-fit:cover}
 .cover{display:block;width:100%;height:auto;border-radius:16px;border:1px solid var(--hairline);margin-bottom:2rem}
 .kicker{font-family:var(--sans);font-size:.75rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3);margin:0 0 .75rem}
 .label{color:var(--ink);margin-top:2.5rem}

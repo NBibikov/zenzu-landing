@@ -26,7 +26,10 @@ export interface InvitePreview {
   is_owner: boolean
 }
 
-/** Google Play link. The app reads `invite=<token>` from the install referrer on first launch. */
+/**
+ * Google Play link. The app maps `invite=<token>` from the install referrer
+ * to /i/<token> on first launch (install_referrer.dart, Friend invites 2/3).
+ */
 export function invitePlayStoreUrl(token: string): string {
   return `${PLAY_STORE_URL}&referrer=${encodeURIComponent(`invite=${token}`)}`
 }
@@ -54,20 +57,13 @@ export function inviteDescription(preview: InvitePreview): string {
   return `Learn ${languages} together`
 }
 
-// Only an absolute https image goes into <img>.
-function avatarUrl(preview: InvitePreview): string | null {
-  const url = preview.avatar_url?.trim()
-  return url && url.startsWith('https://') ? url : null
-}
-
 /** The page for a live invite link. `token` must already match TOKEN_PATTERN. */
 export function renderInvitePage(preview: InvitePreview, token: string): string {
   const title = inviteTitle(preview)
   const description = inviteDescription(preview)
-  const avatar = avatarUrl(preview)
-
+  // No avatar: avatar_url is any URL the inviter writes, and an <img> of it
+  // would tell its host who opened the invite.
   const body = `<article class="center">
-${avatar ? `<img src="${escapeHtml(avatar)}" alt="" class="avatar" width="96" height="96">` : ''}
 <p class="kicker">Friend invite</p>
 <h1>${escapeHtml(title)}</h1>
 <span class="stroke" aria-hidden="true"></span>

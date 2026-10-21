@@ -52,10 +52,8 @@ test('name is HTML-escaped', () => {
   assert.ok(html.includes('&lt;script&gt;alert(1)&lt;/script&gt; invites you to Zenzu'))
 })
 
-test('avatar is shown only for an https URL', () => {
-  assert.ok(renderInvitePage(preview(), TOKEN).includes('src="https://cdn.example.com/anna.webp"'))
-  assert.ok(!renderInvitePage(preview({ avatar_url: 'javascript:alert(1)' }), TOKEN).includes('class="avatar"'))
-  assert.ok(!renderInvitePage(preview({ avatar_url: null }), TOKEN).includes('class="avatar"'))
+test('the inviter avatar URL is never loaded', () => {
+  assert.ok(!renderInvitePage(preview(), TOKEN).includes('cdn.example.com'))
 })
 
 test('Google Play link carries the invite referrer', () => {
