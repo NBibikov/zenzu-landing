@@ -3,11 +3,11 @@
     "details": [
       {
         "appIDs": ["7E7M24D56N.com.bblife.zenzu"],
-        "components": [{ "/": "/d/*" }, { "/": "/s/*" }]
+        "components": [{ "/": "/d/*" }, { "/": "/s/*" }, { "/": "/i/*" }]
       },
       {
         "appID": "7E7M24D56N.com.bblife.zenzu",
-        "paths": ["/d/*", "/s/*"]
+        "paths": ["/d/*", "/s/*", "/i/*"]
       }
     ]
   }

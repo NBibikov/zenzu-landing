@@ -27,8 +27,8 @@ export interface SharePreview {
 /** A share token: 22 characters from [A-Za-z0-9]. Same rule as the app. */
 export const TOKEN_PATTERN = /^[A-Za-z0-9]{22}$/
 
-const SITE = 'https://zenzu.app'
-const DEFAULT_OG_IMAGE = `${SITE}/og-default.png`
+export const SITE = 'https://zenzu.app'
+export const DEFAULT_OG_IMAGE = `${SITE}/og-default.png`
 const CONTACT_EMAIL = 'hello@zenzu.app'
 const AUTHOR_FALLBACK = 'a Zenzu learner'
 
@@ -86,7 +86,7 @@ function imageUrl(preview: SharePreview): string | null {
   return url && url.startsWith('https://') ? url : null
 }
 
-interface PageOptions {
+export interface PageOptions {
   title: string
   description: string
   ogTitle: string
@@ -95,7 +95,8 @@ interface PageOptions {
   body: string
 }
 
-function page(o: PageOptions): string {
+/** The page shell: head with OG tags, brand header, styles. `body` is raw HTML. */
+export function page(o: PageOptions): string {
   const title = escapeHtml(o.title)
   const ogTitle = escapeHtml(o.ogTitle)
   const description = escapeHtml(o.description)
@@ -134,11 +135,12 @@ function page(o: PageOptions): string {
 `
 }
 
-function storeButtons(token: string): string {
+/** App Store, Google Play (with an install referrer) and web-app buttons. */
+export function storeButtons(playUrl: string, webUrl: string): string {
   return `<div class="buttons">
 <a href="${APP_STORE_URL}" class="btn" rel="noopener">App Store</a>
-<a href="${escapeHtml(playStoreUrl(token))}" class="btn" rel="noopener">Google Play</a>
-<a href="${webAppUrl(token)}" class="btn btn-cancel" rel="noopener">Open on the web</a>
+<a href="${escapeHtml(playUrl)}" class="btn" rel="noopener">Google Play</a>
+<a href="${escapeHtml(webUrl)}" class="btn btn-cancel" rel="noopener">Open on the web</a>
 </div>`
 }
 
@@ -168,7 +170,7 @@ ${samples.map((s) => `<li><span${lang} class="term">${escapeHtml(s.front ?? '')}
 </section>` : ''}
 <div class="cta">
 <p class="center ink-lead">Add this deck to Zenzu — the cards are ready to review.</p>
-${storeButtons(token)}
+${storeButtons(playStoreUrl(token), webAppUrl(token))}
 <p class="center hint">On iPhone: after you install the app, tap the link again.</p>
 <p class="center small"><a href="zenzu://s/${token}">Already have Zenzu? Open in the app</a></p>
 <p class="center small"><a href="${escapeHtml(report)}">Report this deck</a></p>
@@ -185,18 +187,35 @@ ${storeButtons(token)}
   })
 }
 
-/** An unknown, revoked or malformed share link. */
-export function renderNotFound(): string {
+/** The texts of a not-found page. */
+export interface NotFoundCopy {
+  title: string
+  ogTitle: string
+  description: string
+  heading: string
+  lead: string
+}
+
+const DECK_NOT_FOUND: NotFoundCopy = {
+  title: 'Deck not found — Zenzu',
+  ogTitle: 'Deck not found',
+  description: 'This link is no longer active. Zenzu has many other ready-made decks.',
+  heading: 'This deck is not available',
+  lead: 'The link was revoked or never existed. Zenzu has many other ready-made decks.',
+}
+
+/** An unknown, revoked or malformed link. The texts default to a shared deck. */
+export function renderNotFound(copy: NotFoundCopy = DECK_NOT_FOUND): string {
   return page({
-    title: 'Deck not found — Zenzu',
-    ogTitle: 'Deck not found',
-    description: 'This link is no longer active. Zenzu has many other ready-made decks.',
+    title: copy.title,
+    ogTitle: copy.ogTitle,
+    description: copy.description,
     ogImage: DEFAULT_OG_IMAGE,
     url: `${SITE}/`,
     body: `<article class="center">
 <p class="kicker">404</p>
-<h1>This deck is not available</h1>
-<p class="lead">The link was revoked or never existed. Zenzu has many other ready-made decks.</p>
+<h1>${escapeHtml(copy.heading)}</h1>
+<p class="lead">${escapeHtml(copy.lead)}</p>
 <div class="buttons">
 <a href="${APP_STORE_URL}" class="btn" rel="noopener">App Store</a>
 <a href="${PLAY_STORE_URL}" class="btn" rel="noopener">Google Play</a>
@@ -206,16 +225,29 @@ export function renderNotFound(): string {
   })
 }
 
-/** The preview could not be loaded (Supabase down or not configured). */
-export function renderUnavailable(): string {
+/** The texts of a page that could not load. */
+export interface UnavailableCopy {
+  ogTitle: string
+  description: string
+  heading: string
+}
+
+const DECK_UNAVAILABLE: UnavailableCopy = {
+  ogTitle: 'A shared Zenzu deck',
+  description: 'A deck shared in Zenzu.',
+  heading: 'The deck did not load',
+}
+
+/** The preview could not be loaded (Supabase down or not configured). The texts default to a shared deck. */
+export function renderUnavailable(copy: UnavailableCopy = DECK_UNAVAILABLE): string {
   return page({
     title: 'Zenzu',
-    ogTitle: 'A shared Zenzu deck',
-    description: 'A deck shared in Zenzu.',
+    ogTitle: copy.ogTitle,
+    description: copy.description,
     ogImage: DEFAULT_OG_IMAGE,
     url: `${SITE}/`,
     body: `<article class="center">
-<h1>The deck did not load</h1>
+<h1>${escapeHtml(copy.heading)}</h1>
 <p class="lead">Something went wrong on our side. Reload the page in a minute.</p>
 <div class="buttons"><a href="${WEB_APP_URL}" class="btn btn-cancel" rel="noopener">Open Zenzu</a></div>
 </article>`,
@@ -237,6 +269,7 @@ main{padding:3rem 0 6rem}
 article{max-width:36rem;margin:0 auto;padding:0 1.5rem}
 h1,h2{font-family:var(--serif);font-weight:500;letter-spacing:-.01em}
 h1{font-size:clamp(1.875rem,5vw,2.25rem);line-height:1.2;margin:0}
+.avatar{display:block;margin:0 auto 1.5rem;border-radius:9999px;border:1px solid var(--hairline);object-fit:cover}
 .cover{display:block;width:100%;height:auto;border-radius:16px;border:1px solid var(--hairline);margin-bottom:2rem}
 .kicker{font-family:var(--sans);font-size:.75rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3);margin:0 0 .75rem}
 .label{color:var(--ink);margin-top:2.5rem}
