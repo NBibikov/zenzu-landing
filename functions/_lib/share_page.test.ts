@@ -90,6 +90,8 @@ test('web link opens the same token in the web app', () => {
 test('app link and App Store link are present', () => {
   const html = renderSharePage(preview(), TOKEN)
   assert.ok(html.includes(`href="zenzu://s/${TOKEN}"`))
+  // The custom scheme does nothing without the app: it is not a main button.
+  assert.ok(!html.includes(`href="zenzu://s/${TOKEN}" class="btn"`))
   assert.ok(html.includes('https://apps.apple.com/app/'))
 })
 

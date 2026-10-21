@@ -75,7 +75,7 @@ test('bad token: 404 without a Supabase call', async () => {
 })
 
 test('token with punctuation glued on by a messenger: redirect to the clean link', async () => {
-  for (const token of [`${TOKEN}).`, `${TOKEN},`, `${TOKEN}/`]) {
+  for (const token of [`${TOKEN}).`, `${TOKEN},`, `${TOKEN}…`, `${TOKEN}%E2%80%A6`, `${TOKEN}%29.`]) {
     const { calls, fetcher } = fakeFetch(() => json(PREVIEW))
     const res = await shareResponse(token, ENV, fetcher)
     assert.equal(res.status, 301, token)

@@ -5,11 +5,17 @@
 import { shareResponse, type ShareEnv } from '../_lib/share_request.ts'
 
 interface Context {
-  params: { token?: string | string[] }
+  params: { token?: string }
   env: ShareEnv
 }
 
 export async function onRequestGet({ params, env }: Context): Promise<Response> {
-  const token = Array.isArray(params.token) ? params.token.join('/') : (params.token ?? '')
-  return shareResponse(token, env, fetch)
+  return shareResponse(params.token ?? '', env, fetch)
+}
+
+// Link-preview crawlers can send HEAD first. Without this handler Pages
+// serves the static 404 for it.
+export async function onRequestHead(context: Context): Promise<Response> {
+  const res = await onRequestGet(context)
+  return new Response(null, { status: res.status, headers: res.headers })
 }

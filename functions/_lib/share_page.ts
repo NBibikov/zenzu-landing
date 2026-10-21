@@ -7,6 +7,8 @@
 // Pure functions only: functions/_lib/share_page.test.ts runs them with
 // `node --test`.
 
+import { APP_STORE_URL, PLAY_STORE_URL, WEB_APP_URL } from '../../src/lib/links.ts'
+
 /** What deck_share_preview returns (supabase/migrations, zenzu repo). */
 export interface SharePreview {
   deck_id: number
@@ -27,9 +29,6 @@ export const TOKEN_PATTERN = /^[A-Za-z0-9]{22}$/
 
 const SITE = 'https://zenzu.app'
 const DEFAULT_OG_IMAGE = `${SITE}/og-default.png`
-const WEB_APP = 'https://app.zenzu.app'
-const APP_STORE_URL = 'https://apps.apple.com/app/zenzu-ai-language-mastery/id6761502445'
-const PLAY_STORE_URL = 'https://play.google.com/store/apps/details?id=com.bblife.zenzu'
 const CONTACT_EMAIL = 'hello@zenzu.app'
 const AUTHOR_FALLBACK = 'a Zenzu learner'
 
@@ -49,14 +48,16 @@ export function playStoreUrl(token: string): string {
 
 /** The same link in the web app. */
 export function webAppUrl(token: string): string {
-  return `${WEB_APP}/s/${token}`
+  return `${WEB_APP_URL}/s/${token}`
 }
+
+const LANGUAGE_NAMES = new Intl.DisplayNames(['en'], { type: 'language' })
 
 /** "English" for "en". Falls back to the code when the runtime has no name for it. */
 export function languageName(code: string | null): string | null {
   if (!code) return null
   try {
-    const name = new Intl.DisplayNames(['en'], { type: 'language' }).of(code)
+    const name = LANGUAGE_NAMES.of(code)
     if (name && name !== code) return name
   } catch {
     // An invalid language tag: show the code.
@@ -64,12 +65,19 @@ export function languageName(code: string | null): string | null {
   return code.toUpperCase()
 }
 
+/** "24 words" or "1 word". */
+function wordCount(preview: SharePreview): string {
+  return `${preview.card_count} ${preview.card_count === 1 ? 'word' : 'words'}`
+}
+
+function authorName(preview: SharePreview): string {
+  return preview.author_display_name?.trim() || AUTHOR_FALLBACK
+}
+
 /** "24 words · English · by @name". */
 export function shareDescription(preview: SharePreview): string {
-  const words = `${preview.card_count} ${preview.card_count === 1 ? 'word' : 'words'}`
-  const author = preview.author_display_name?.trim() || AUTHOR_FALLBACK
   const language = languageName(preview.language_target)
-  return [words, language, `by ${author}`].filter(Boolean).join(' · ')
+  return [wordCount(preview), language, `by ${authorName(preview)}`].filter(Boolean).join(' · ')
 }
 
 // Only an absolute https image goes into og:image and <img>.
@@ -128,7 +136,6 @@ function page(o: PageOptions): string {
 
 function storeButtons(token: string): string {
   return `<div class="buttons">
-<a href="zenzu://s/${token}" class="btn">Open in Zenzu</a>
 <a href="${APP_STORE_URL}" class="btn" rel="noopener">App Store</a>
 <a href="${escapeHtml(playStoreUrl(token))}" class="btn" rel="noopener">Google Play</a>
 <a href="${webAppUrl(token)}" class="btn btn-cancel" rel="noopener">Open on the web</a>
@@ -140,10 +147,8 @@ export function renderSharePage(preview: SharePreview, token: string): string {
   const name = preview.name?.trim() || 'Shared deck'
   const description = shareDescription(preview)
   const image = imageUrl(preview)
-  const kicker = [languageName(preview.language_target), preview.cefr_level, `${preview.card_count} ${preview.card_count === 1 ? 'word' : 'words'}`]
-    .filter(Boolean)
-    .join(' · ')
-  const author = preview.author_display_name?.trim() || AUTHOR_FALLBACK
+  const kicker = [languageName(preview.language_target), preview.cefr_level, wordCount(preview)].filter(Boolean).join(' · ')
+  const author = authorName(preview)
   const samples = (preview.samples ?? []).slice(0, 5)
   const lang = preview.language_target ? ` lang="${escapeHtml(preview.language_target)}"` : ''
   const report = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(`Report shared deck ${token}`)}`
@@ -165,6 +170,7 @@ ${samples.map((s) => `<li><span${lang} class="term">${escapeHtml(s.front ?? '')}
 <p class="center ink-lead">Add this deck to Zenzu — the cards are ready to review.</p>
 ${storeButtons(token)}
 <p class="center hint">On iPhone: after you install the app, tap the link again.</p>
+<p class="center small"><a href="zenzu://s/${token}">Already have Zenzu? Open in the app</a></p>
 <p class="center small"><a href="${escapeHtml(report)}">Report this deck</a></p>
 </div>
 </article>`
@@ -194,7 +200,7 @@ export function renderNotFound(): string {
 <div class="buttons">
 <a href="${APP_STORE_URL}" class="btn" rel="noopener">App Store</a>
 <a href="${PLAY_STORE_URL}" class="btn" rel="noopener">Google Play</a>
-<a href="${WEB_APP}" class="btn btn-cancel" rel="noopener">Open Zenzu</a>
+<a href="${WEB_APP_URL}" class="btn btn-cancel" rel="noopener">Open Zenzu</a>
 </div>
 </article>`,
   })
@@ -211,7 +217,7 @@ export function renderUnavailable(): string {
     body: `<article class="center">
 <h1>The deck did not load</h1>
 <p class="lead">Something went wrong on our side. Reload the page in a minute.</p>
-<div class="buttons"><a href="${WEB_APP}" class="btn btn-cancel" rel="noopener">Open Zenzu</a></div>
+<div class="buttons"><a href="${WEB_APP_URL}" class="btn btn-cancel" rel="noopener">Open Zenzu</a></div>
 </article>`,
   })
 }

@@ -33,7 +33,17 @@ function html(body: string, status: number, cache: string): Response {
   })
 }
 
-export async function shareResponse(rawToken: string, env: ShareEnv, fetcher: Fetch): Promise<Response> {
+// The route parameter can still be percent-encoded ("<token>%E2%80%A6").
+function decode(value: string): string {
+  try {
+    return decodeURIComponent(value)
+  } catch {
+    return value
+  }
+}
+
+export async function shareResponse(param: string, env: ShareEnv, fetcher: Fetch): Promise<Response> {
+  const rawToken = decode(param)
   const mangled = MANGLED_TOKEN.exec(rawToken)
   if (mangled) {
     return new Response(null, {

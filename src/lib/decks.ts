@@ -3,6 +3,9 @@
 // `node scripts/sync-decks.mjs` (see that script).
 
 import catalogJson from '../data/decks/catalog.json'
+import { APP_STORE_URL, PLAY_STORE_URL, WEB_APP_URL } from './links'
+
+export { APP_STORE_URL }
 
 export interface Deck {
   /** Catalog id — the slug in /d/<lang>/<slug>. */
@@ -36,9 +39,6 @@ export const LANGUAGE_NAMES: Record<TargetLanguage, string> = {
   es: 'Іспанська',
 }
 
-export const APP_STORE_URL = 'https://apps.apple.com/app/zenzu-ai-language-mastery/id6761502445'
-const PLAY_STORE_URL = 'https://play.google.com/store/apps/details?id=com.bblife.zenzu'
-
 /** Google Play link. With a deck, it carries the install referrer the app reads on first launch. */
 export function playStoreUrl(deck?: { lang: string; slug: string }): string {
   if (!deck) return PLAY_STORE_URL
@@ -52,7 +52,7 @@ export function deckPath(lang: string, slug: string): string {
 
 /** The same deck in the web app. No trailing slash: it is the app's own route. */
 export function webAppUrl(lang: string, slug: string): string {
-  return `https://app.zenzu.app/d/${lang}/${slug}`
+  return `${WEB_APP_URL}/d/${lang}/${slug}`
 }
 
 export function coverPath(deck: Deck): string {
