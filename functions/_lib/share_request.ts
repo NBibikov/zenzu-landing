@@ -1,5 +1,6 @@
 // Request handling for /s/<token>, apart from the Pages Function wrapper so
 // that functions/_lib/share_request.test.ts can run it with a fake fetch.
+// linkPreviewResponse is shared with /i/<token> (invite_request.ts).
 
 import {
   TOKEN_PATTERN,
@@ -14,7 +15,7 @@ export interface ShareEnv {
   SUPABASE_ANON_KEY?: string
 }
 
-type Fetch = (input: string, init: RequestInit) => Promise<Response>
+export type Fetch = (input: string, init: RequestInit) => Promise<Response>
 
 // A messenger can glue punctuation to the end of a link: "…/s/<token>)." or
 // "…/s/<token>,". The 22 characters before it are still the token.
@@ -42,24 +43,42 @@ function decode(value: string): string {
   }
 }
 
-export async function shareResponse(param: string, env: ShareEnv, fetcher: Fetch): Promise<Response> {
+/** One token-link page: which RPC to call and how to render each outcome. */
+export interface LinkPage<T> {
+  /** URL prefix of the page, for the redirect of a mangled token: "/s". */
+  path: string
+  /** The preview RPC, called as POST /rest/v1/rpc/<rpc> with { p_token }. */
+  rpc: string
+  /** Cache-Control of a live page. */
+  cacheOk: string
+  render: (preview: T, token: string) => string
+  notFound: () => string
+  unavailable: () => string
+}
+
+export async function linkPreviewResponse<T>(
+  pageSpec: LinkPage<T>,
+  param: string,
+  env: ShareEnv,
+  fetcher: Fetch,
+): Promise<Response> {
   const rawToken = decode(param)
   const mangled = MANGLED_TOKEN.exec(rawToken)
   if (mangled) {
     return new Response(null, {
       status: 301,
-      headers: { Location: `/s/${mangled[1]}`, 'Cache-Control': CACHE_OK },
+      headers: { Location: `${pageSpec.path}/${mangled[1]}`, 'Cache-Control': pageSpec.cacheOk },
     })
   }
-  if (!TOKEN_PATTERN.test(rawToken)) return html(renderNotFound(), 404, CACHE_MISS)
+  if (!TOKEN_PATTERN.test(rawToken)) return html(pageSpec.notFound(), 404, CACHE_MISS)
 
   const base = env.SUPABASE_URL?.replace(/\/+$/, '')
   const key = env.SUPABASE_ANON_KEY
-  if (!base || !key) return html(renderUnavailable(), 503, CACHE_ERROR)
+  if (!base || !key) return html(pageSpec.unavailable(), 503, CACHE_ERROR)
 
-  let preview: SharePreview | null
+  let preview: T | null
   try {
-    const res = await fetcher(`${base}/rest/v1/rpc/deck_share_preview`, {
+    const res = await fetcher(`${base}/rest/v1/rpc/${pageSpec.rpc}`, {
       method: 'POST',
       headers: {
         apikey: key,
@@ -68,12 +87,25 @@ export async function shareResponse(param: string, env: ShareEnv, fetcher: Fetch
       },
       body: JSON.stringify({ p_token: rawToken }),
     })
-    if (!res.ok) return html(renderUnavailable(), 503, CACHE_ERROR)
-    preview = (await res.json()) as SharePreview | null
+    if (!res.ok) return html(pageSpec.unavailable(), 503, CACHE_ERROR)
+    preview = (await res.json()) as T | null
   } catch {
-    return html(renderUnavailable(), 503, CACHE_ERROR)
+    return html(pageSpec.unavailable(), 503, CACHE_ERROR)
   }
 
-  if (!preview || typeof preview !== 'object') return html(renderNotFound(), 404, CACHE_MISS)
-  return html(renderSharePage(preview, rawToken), 200, CACHE_OK)
+  if (!preview || typeof preview !== 'object') return html(pageSpec.notFound(), 404, CACHE_MISS)
+  return html(pageSpec.render(preview, rawToken), 200, pageSpec.cacheOk)
+}
+
+const SHARE_PAGE: LinkPage<SharePreview> = {
+  path: '/s',
+  rpc: 'deck_share_preview',
+  cacheOk: CACHE_OK,
+  render: renderSharePage,
+  notFound: () => renderNotFound(),
+  unavailable: () => renderUnavailable(),
+}
+
+export async function shareResponse(param: string, env: ShareEnv, fetcher: Fetch): Promise<Response> {
+  return linkPreviewResponse(SHARE_PAGE, param, env, fetcher)
 }
