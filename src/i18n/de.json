@@ -44,7 +44,7 @@
       },
       "videos": {
         "title": "YouTube-Videos",
-        "desc": "Schau mit Live-Transkript. Wiederhole einen Satz oder spiel ihn langsamer ab."
+        "desc": "Schau mit Live-Transkript. Hör einen Satz noch einmal oder spiel ihn langsamer ab."
       },
       "books": {
         "title": "Bücher",
@@ -60,7 +60,7 @@
       },
       "decks": {
         "title": "Decks",
-        "desc": "Deine eigenen Decks, ein fertiger Katalog und Decks zu Filmen und Serien."
+        "desc": "Alle heute fälligen Karten in einer Wiederholung, dazu ein fertiger Katalog und Decks zu Filmen und Serien."
       }
     }
   },

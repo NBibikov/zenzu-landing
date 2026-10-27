@@ -44,7 +44,7 @@
       },
       "videos": {
         "title": "Vídeos do YouTube",
-        "desc": "Assista com a transcrição ao vivo. Repita uma frase ou ouça mais devagar."
+        "desc": "Assista com a transcrição ao vivo. Ouça uma frase de novo ou mais devagar."
       },
       "books": {
         "title": "Livros",
@@ -60,7 +60,7 @@
       },
       "decks": {
         "title": "Baralhos",
-        "desc": "Seus próprios baralhos, um catálogo pronto e baralhos de filmes e séries."
+        "desc": "Todos os cartões de hoje em uma só revisão, além de um catálogo pronto e baralhos de filmes e séries."
       }
     }
   },

@@ -44,7 +44,7 @@
       },
       "videos": {
         "title": "Vídeos de YouTube",
-        "desc": "Mira con la transcripción en directo. Repite una frase o reprodúcela más despacio."
+        "desc": "Mira con la transcripción en directo. Vuelve a escuchar una frase o reprodúcela más despacio."
       },
       "books": {
         "title": "Libros",
@@ -60,7 +60,7 @@
       },
       "decks": {
         "title": "Mazos",
-        "desc": "Tus propios mazos, un catálogo listo para usar y mazos de películas y series."
+        "desc": "Todas las tarjetas de hoy en un solo repaso, además de un catálogo listo y mazos de películas y series."
       }
     }
   },
