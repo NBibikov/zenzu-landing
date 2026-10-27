@@ -34,21 +34,21 @@
         "title": "Your day",
         "desc": "Cards due for review, today's news and your next lesson on one screen."
       },
+      "review": {
+        "title": "Review",
+        "desc": "One card at a time, with an example sentence. Rate how well you knew it, and FSRS sets the next review."
+      },
       "lisa": {
         "title": "Lisa, your coach",
         "desc": "Plan the day, drill weak words or ask about grammar, in your own language."
       },
       "videos": {
         "title": "YouTube videos",
-        "desc": "Lessons, vlogs and stories in the language you learn, sorted by date."
-      },
-      "podcasts": {
-        "title": "Podcasts",
-        "desc": "Continue where you stopped and find new shows for your level."
+        "desc": "Watch with a live transcript. Replay a sentence or slow it down."
       },
       "books": {
         "title": "Books",
-        "desc": "Classics picked for your level, and one step above it."
+        "desc": "Graded stories for your level, by genre, and classics when you are ready."
       },
       "news": {
         "title": "Daily news",
@@ -56,11 +56,11 @@
       },
       "courses": {
         "title": "AI courses",
-        "desc": "Grammar, situations and vocabulary, A1 to C1, lesson by lesson."
+        "desc": "A1 to C1, lesson by lesson. A bookmark keeps your place."
       },
       "decks": {
         "title": "Decks",
-        "desc": "Every card due today across all decks, in one review."
+        "desc": "Every card due today in one review, plus a ready-made catalog and decks for films and series."
       }
     }
   },

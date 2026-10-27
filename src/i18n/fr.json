@@ -34,21 +34,21 @@
         "title": "Votre journée",
         "desc": "Les cartes à réviser, l’actualité du jour et votre prochaine leçon sur un seul écran."
       },
+      "review": {
+        "title": "Révision",
+        "desc": "Une carte à la fois, avec une phrase d’exemple. Indiquez si vous la connaissiez bien, et FSRS fixe la prochaine révision."
+      },
       "lisa": {
         "title": "Lisa, votre coach",
         "desc": "Planifiez la journée, travaillez les mots difficiles ou posez une question de grammaire — dans votre langue."
       },
       "videos": {
         "title": "Vidéos YouTube",
-        "desc": "Leçons, vlogs et histoires dans la langue que vous apprenez, triés par date."
-      },
-      "podcasts": {
-        "title": "Podcasts",
-        "desc": "Reprenez là où vous vous êtes arrêté et trouvez de nouvelles émissions à votre niveau."
+        "desc": "Regardez avec la transcription en direct. Réécoutez une phrase ou ralentissez-la."
       },
       "books": {
         "title": "Livres",
-        "desc": "Des classiques choisis pour votre niveau, et un cran au-dessus."
+        "desc": "Des histoires adaptées à votre niveau, par genre, et des classiques quand vous êtes prêt."
       },
       "news": {
         "title": "Actualité du jour",
@@ -56,11 +56,11 @@
       },
       "courses": {
         "title": "Cours IA",
-        "desc": "Grammaire, situations et vocabulaire de A1 à C1, leçon après leçon."
+        "desc": "De A1 à C1, leçon après leçon. Un marque-page garde votre place."
       },
       "decks": {
         "title": "Paquets",
-        "desc": "Toutes les cartes du jour, de tous vos paquets, en une seule révision."
+        "desc": "Toutes les cartes du jour en une seule révision, plus un catalogue prêt à l’emploi et des paquets pour films et séries."
       }
     }
   },

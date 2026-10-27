@@ -4,11 +4,11 @@ const { t } = Astro.props
 
 // Screens from the iPhone app, prepared by scripts/app-screens.py: the
 // status bar is cropped, so the frame shows the app and not one phone.
-// The order follows a day in the app: the home screen, the coach, the
-// four libraries, then the courses and the review. The figcaption names
-// each screen, so the image itself carries an empty alt. width/height are
-// the size scripts/app-screens.py writes for a 1320x2868 capture.
-const screens = ['home', 'lisa', 'videos', 'podcasts', 'books', 'news', 'courses', 'decks']
+// The order follows a day in the app: the home screen, the review, the
+// coach, three libraries, then the courses and the decks. The figcaption
+// names each screen, so the image itself carries an empty alt. width/height
+// are the size scripts/app-screens.py writes for a 1320x2868 capture.
+const screens = ['home', 'review', 'lisa', 'videos', 'books', 'news', 'courses', 'decks']
   .map((key, i) => ({ key, step: String(i + 1).padStart(2, '0'), ...t.screens.items[key] }))
 ---
 

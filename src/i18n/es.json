@@ -34,21 +34,21 @@
         "title": "Tu día",
         "desc": "Tarjetas pendientes, las noticias del día y tu próxima lección en una sola pantalla."
       },
+      "review": {
+        "title": "Repaso",
+        "desc": "Una tarjeta cada vez, con una frase de ejemplo. Valora cuánto la recordabas y FSRS fija el próximo repaso."
+      },
       "lisa": {
         "title": "Lisa, tu coach",
         "desc": "Planifica el día, practica las palabras difíciles o pregunta por la gramática — en tu idioma."
       },
       "videos": {
         "title": "Vídeos de YouTube",
-        "desc": "Lecciones, vlogs e historias en el idioma que aprendes, ordenados por fecha."
-      },
-      "podcasts": {
-        "title": "Pódcasts",
-        "desc": "Sigue donde lo dejaste y descubre nuevos programas para tu nivel."
+        "desc": "Mira con la transcripción en directo. Vuelve a escuchar una frase o reprodúcela más despacio."
       },
       "books": {
         "title": "Libros",
-        "desc": "Clásicos elegidos para tu nivel, y un paso más arriba."
+        "desc": "Historias graduadas para tu nivel, por género, y clásicos cuando estés listo."
       },
       "news": {
         "title": "Noticias del día",
@@ -56,11 +56,11 @@
       },
       "courses": {
         "title": "Cursos con IA",
-        "desc": "Gramática, situaciones y vocabulario de A1 a C1, lección a lección."
+        "desc": "De A1 a C1, lección a lección. Un marcador guarda dónde te quedaste."
       },
       "decks": {
         "title": "Mazos",
-        "desc": "Todas las tarjetas de hoy, de todos tus mazos, en un solo repaso."
+        "desc": "Todas las tarjetas de hoy en un solo repaso, además de un catálogo listo y mazos de películas y series."
       }
     }
   },
