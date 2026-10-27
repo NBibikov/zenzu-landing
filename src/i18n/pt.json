@@ -34,21 +34,21 @@
         "title": "Seu dia",
         "desc": "Cartões para revisar, as notícias do dia e sua próxima lição em uma só tela."
       },
+      "review": {
+        "title": "Revisão",
+        "desc": "Um cartão por vez, com uma frase de exemplo. Diga o quanto você lembrava, e o FSRS marca a próxima revisão."
+      },
       "lisa": {
         "title": "Lisa, sua coach",
         "desc": "Planeje o dia, treine as palavras difíceis ou pergunte sobre gramática — no seu idioma."
       },
       "videos": {
         "title": "Vídeos do YouTube",
-        "desc": "Aulas, vlogs e histórias no idioma que você aprende, por data."
-      },
-      "podcasts": {
-        "title": "Podcasts",
-        "desc": "Continue de onde parou e descubra novos programas para o seu nível."
+        "desc": "Assista com a transcrição ao vivo. Repita uma frase ou ouça mais devagar."
       },
       "books": {
         "title": "Livros",
-        "desc": "Clássicos escolhidos para o seu nível, e um passo acima."
+        "desc": "Histórias graduadas para o seu nível, por gênero, e clássicos quando você estiver pronto."
       },
       "news": {
         "title": "Notícias do dia",
@@ -56,11 +56,11 @@
       },
       "courses": {
         "title": "Cursos com IA",
-        "desc": "Gramática, situações e vocabulário de A1 a C1, lição por lição."
+        "desc": "De A1 a C1, lição por lição. Um marcador guarda onde você parou."
       },
       "decks": {
         "title": "Baralhos",
-        "desc": "Todos os cartões de hoje, de todos os baralhos, em uma só revisão."
+        "desc": "Seus próprios baralhos, um catálogo pronto e baralhos de filmes e séries."
       }
     }
   },

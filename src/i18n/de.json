@@ -34,21 +34,21 @@
         "title": "Dein Tag",
         "desc": "Fällige Karten, die Nachrichten des Tages und deine nächste Lektion auf einem Screen."
       },
+      "review": {
+        "title": "Wiederholung",
+        "desc": "Eine Karte nach der anderen, mit Beispielsatz. Bewerte, wie gut du sie kanntest, und FSRS plant die nächste Wiederholung."
+      },
       "lisa": {
         "title": "Lisa, dein Coach",
         "desc": "Plane den Tag, übe schwierige Wörter oder frag nach Grammatik — in deiner Sprache."
       },
       "videos": {
         "title": "YouTube-Videos",
-        "desc": "Lektionen, Vlogs und Geschichten in deiner Zielsprache, nach Datum sortiert."
-      },
-      "podcasts": {
-        "title": "Podcasts",
-        "desc": "Mach dort weiter, wo du aufgehört hast, und finde neue Shows für dein Niveau."
+        "desc": "Schau mit Live-Transkript. Wiederhole einen Satz oder spiel ihn langsamer ab."
       },
       "books": {
         "title": "Bücher",
-        "desc": "Klassiker für dein Niveau — und eine Stufe darüber."
+        "desc": "Geschichten für dein Niveau, nach Genre sortiert — und Klassiker, wenn du so weit bist."
       },
       "news": {
         "title": "Tägliche Nachrichten",
@@ -56,11 +56,11 @@
       },
       "courses": {
         "title": "KI-Kurse",
-        "desc": "Grammatik, Situationen und Wortschatz von A1 bis C1, Lektion für Lektion."
+        "desc": "Von A1 bis C1, Lektion für Lektion. Ein Lesezeichen merkt sich, wo du warst."
       },
       "decks": {
         "title": "Decks",
-        "desc": "Alle heute fälligen Karten aus allen Decks in einer Wiederholung."
+        "desc": "Deine eigenen Decks, ein fertiger Katalog und Decks zu Filmen und Serien."
       }
     }
   },
