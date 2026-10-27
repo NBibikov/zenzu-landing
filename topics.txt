@@ -73,7 +73,7 @@
 [done] Learning a Language in Your Native Language Instead of Through English
 [done] How to Review Flashcards in 15 Minutes a Day and Still Progress
 [done] What to Do When Your Flashcard Reviews Pile Up
-Active Recall vs Rereading: What the Research Says
+[done] Active Recall vs Rereading: What the Research Says
 How to Learn Phrasal Verbs in Context Instead of from Lists
 German Separable Verbs: How to Learn Them from Real Speech
 Spanish Subjunctive: Learning It from Real Sentences Instead of Rules
