@@ -81,4 +81,4 @@ Lorsque le test d'adéquation en 48 heures donne régulièrement un score de com
 
 ## Étudiez plus intelligemment avec Zenzu
 
-Zenzu transforme n'importe quelle vidéo YouTube en support d'étude : importez l'extrait, touchez les mots inconnus dans la transcription interactive, et chacun devient une carte mémoire avec sa phrase d'origine et sa prononciation native. Lisa, la coach IA, explique les tournures difficiles dans votre propre langue et vous aide à planifier vos révisions — programmées automatiquement avec FSRS-5 — pour que vos choix de chaînes adaptées à votre niveau portent vraiment leurs fruits.
+Zenzu transforme n'importe quelle vidéo YouTube en support d'étude : importez l'extrait, touchez les mots inconnus dans la transcription interactive, et chacun devient une carte mémoire avec sa phrase d'origine et sa prononciation native. Lisa, la coach IA, explique les tournures difficiles dans votre propre langue et vous aide à planifier vos révisions — programmées automatiquement avec FSRS-6 — pour que vos choix de chaînes adaptées à votre niveau portent vraiment leurs fruits.

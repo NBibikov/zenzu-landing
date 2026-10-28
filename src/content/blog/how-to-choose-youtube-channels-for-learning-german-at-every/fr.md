@@ -74,4 +74,4 @@ Si vous comprenez plus de 90 % sans mettre pause, vous avez dépassé le niveau 
 
 ## Faire tout cela avec Zenzu
 
-Importez n'importe quelle vidéo YouTube dans Zenzu en collant simplement le lien — la transcription interactive vous permet de toucher les mots inconnus pour les transformer en fiches de révision, avec la phrase d'origine et la prononciation native associées. Lisa, la coach IA, peut passer en revue une transcription avec vous dans votre propre langue et vous dire si une chaîne correspond à votre niveau actuel. Les révisions sont ensuite programmées automatiquement grâce à FSRS-5.
+Importez n'importe quelle vidéo YouTube dans Zenzu en collant simplement le lien — la transcription interactive vous permet de toucher les mots inconnus pour les transformer en fiches de révision, avec la phrase d'origine et la prononciation native associées. Lisa, la coach IA, peut passer en revue une transcription avec vous dans votre propre langue et vous dire si une chaîne correspond à votre niveau actuel. Les révisions sont ensuite programmées automatiquement grâce à FSRS-6.

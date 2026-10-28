@@ -46,4 +46,4 @@ No benchmark oficial do FSRS, publicado pelo projeto Open Spaced Repetition, o F
 
 ## O FSRS no Zenzu
 
-O Zenzu agenda cada flashcard — criado a partir de vídeos do YouTube, podcasts, artigos ou fotos — usando o FSRS-5, de modo que as revisões se adaptam à sua memória pessoal em vez de seguirem uma fórmula fixa. A Lisa, sua coach de IA, explica palavras complicadas e planeja o que estudar a seguir no seu próprio idioma, mantendo as revisões diárias realistas em inglês, alemão, francês e espanhol.
+O Zenzu agenda cada flashcard — criado a partir de vídeos do YouTube, podcasts, artigos ou fotos — usando o FSRS-6, de modo que as revisões se adaptam à sua memória pessoal em vez de seguirem uma fórmula fixa. A Lisa, sua coach de IA, explica palavras complicadas e planeja o que estudar a seguir no seu próprio idioma, mantendo as revisões diárias realistas em inglês, alemão, francês e espanhol.

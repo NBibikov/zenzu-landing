@@ -15,7 +15,7 @@ Os sistemas de repetição espaçada programam revisões com base em quando se p
 
 ## Passo 1: Um Cartão Atrasado Não é um Cartão Perdido
 
-Aqui está a matemática reconfortante. Se um cartão tinha um intervalo de 30 dias e você o revisa com 5 dias de atraso, você adicionou apenas cerca de 17% de tempo extra de decaimento — sua força de memória não entrou em colapso. Algoritmos de agendamento modernos como o FSRS-5 (Free Spaced Repetition Scheduler, construído com base em dados de revisão em larga escala publicados em 2023-2024) modelam essa curva de decaimento diretamente, de modo que um cartão levemente atrasado ainda é agendado de forma sensata depois que você o revisa. Você não está começando do zero; está apenas continuando uma curva um pouco mais estendida.
+Aqui está a matemática reconfortante. Se um cartão tinha um intervalo de 30 dias e você o revisa com 5 dias de atraso, você adicionou apenas cerca de 17% de tempo extra de decaimento — sua força de memória não entrou em colapso. Algoritmos de agendamento modernos como o FSRS-6 (Free Spaced Repetition Scheduler, construído com base em dados de revisão em larga escala publicados em 2023-2024) modelam essa curva de decaimento diretamente, de modo que um cartão levemente atrasado ainda é agendado de forma sensata depois que você o revisa. Você não está começando do zero; está apenas continuando uma curva um pouco mais estendida.
 
 ## Passo 2: Congele Cartões Novos Imediatamente
 
@@ -63,4 +63,4 @@ Se o seu acúmulo exceder aproximadamente 10 vezes a sua contagem normal de revi
 
 ## Limpando um Acúmulo no Zenzu
 
-No Zenzu, as revisões são agendadas com o FSRS-5, então um cartão atrasado é simplesmente recalculado — nada se perde. Peça à Lisa, sua treinadora de IA, para explicar as palavras atrasadas e montar um plano curto de recuperação diária no seu próprio idioma, para que você limpe o acúmulo sem precisar adivinhar quantos cartões enfrentar por dia.
+No Zenzu, as revisões são agendadas com o FSRS-6, então um cartão atrasado é simplesmente recalculado — nada se perde. Peça à Lisa, sua treinadora de IA, para explicar as palavras atrasadas e montar um plano curto de recuperação diária no seu próprio idioma, para que você limpe o acúmulo sem precisar adivinhar quantos cartões enfrentar por dia.

@@ -53,4 +53,4 @@ Practically: review your extracted sentences daily for the first week, then let 
 
 ## Doing this in Zenzu
 
-Import a Spanish podcast episode — Zenzu transcribes it automatically. Tap any word or phrase in the transcript to turn it into a flashcard that keeps the original sentence and native pronunciation. Ask Lisa, your AI coach, to explain tricky grammar in your own language, and let FSRS-5 schedule your reviews so extracted vocabulary actually sticks.
+Import a Spanish podcast episode — Zenzu transcribes it automatically. Tap any word or phrase in the transcript to turn it into a flashcard that keeps the original sentence and native pronunciation. Ask Lisa, your AI coach, to explain tricky grammar in your own language, and let FSRS-6 schedule your reviews so extracted vocabulary actually sticks.

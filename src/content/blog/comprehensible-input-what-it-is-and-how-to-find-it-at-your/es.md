@@ -55,4 +55,4 @@ Sí, siempre que leas subtítulos en el idioma meta y no traducidos; eso mantien
 
 ## Encuentra tu nivel en Zenzu
 
-Zenzu te permite importar videos de YouTube, podcasts, artículos, texto pegado o fotos de texto, y luego tocar cualquier palabra o frase para convertirla en una tarjeta de estudio con su oración original y pronunciación nativa. Lisa, la entrenadora de IA, puede evaluar tu nivel y sugerirte contenido en esa zona del 90-98%, mientras que el sistema de repaso FSRS-5 programa el repaso de las palabras nuevas que has recopilado antes de que las olvides.
+Zenzu te permite importar videos de YouTube, podcasts, artículos, texto pegado o fotos de texto, y luego tocar cualquier palabra o frase para convertirla en una tarjeta de estudio con su oración original y pronunciación nativa. Lisa, la entrenadora de IA, puede evaluar tu nivel y sugerirte contenido en esa zona del 90-98%, mientras que el sistema de repaso FSRS-6 programa el repaso de las palabras nuevas que has recopilado antes de que las olvides.

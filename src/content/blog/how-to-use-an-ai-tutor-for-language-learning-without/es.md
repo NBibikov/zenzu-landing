@@ -57,4 +57,4 @@ Usados correctamente, ayudan con ambas cosas: con la gramática mediante la corr
 
 ## Cómo hacer esto en Zenzu
 
-En Zenzu, importa un video de YouTube o un artículo, intenta entender y usar las palabras nuevas por tu cuenta primero, y luego convierte en tarjetas únicamente las que fallaste, junto con su oración original y pronunciación nativa. Pídele a Lisa, la entrenadora de IA, una pista en lugar de la respuesta completa, y deja que FSRS-5 programe automáticamente tus repasos de recuperación libres de IA.
+En Zenzu, importa un video de YouTube o un artículo, intenta entender y usar las palabras nuevas por tu cuenta primero, y luego convierte en tarjetas únicamente las que fallaste, junto con su oración original y pronunciación nativa. Pídele a Lisa, la entrenadora de IA, una pista en lugar de la respuesta completa, y deja que FSRS-6 programe automáticamente tus repasos de recuperación libres de IA.

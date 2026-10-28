@@ -74,4 +74,4 @@ Se você entende mais de 90% sem pausar, já superou o canal — passe para podc
 
 ## Fazendo Isso no Zenzu
 
-Importe qualquer vídeo do YouTube para o Zenzu colando o link — a transcrição interativa permite tocar em palavras desconhecidas para transformá-las em flashcards com a frase original e a pronúncia nativa anexada. Lisa, a assistente de IA, pode revisar uma transcrição com você no seu próprio idioma e dizer se um canal combina com o seu nível atual. As revisões são então agendadas automaticamente com o FSRS-5.
+Importe qualquer vídeo do YouTube para o Zenzu colando o link — a transcrição interativa permite tocar em palavras desconhecidas para transformá-las em flashcards com a frase original e a pronúncia nativa anexada. Lisa, a assistente de IA, pode revisar uma transcrição com você no seu próprio idioma e dizer se um canal combina com o seu nível atual. As revisões são então agendadas automaticamente com o FSRS-6.

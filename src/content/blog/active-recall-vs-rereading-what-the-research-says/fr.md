@@ -59,4 +59,4 @@ Il n'existe pas de nombre fixe, mais les éléments nécessitent généralement 
 
 ## Mettre cela en pratique avec Zenzu
 
-Zenzu transforme du contenu réel — vidéos YouTube, podcasts, articles, ou une simple photo d'une page de manuel — en cartes mémoire construites à partir de la phrase exacte que vous avez rencontrée, avec la prononciation native associée. Les révisions sont programmées automatiquement grâce à FSRS-5, de sorte qu'au lieu de relire, vous récupérez chaque expression juste avant de l'oublier. Lisa, la coach IA, peut expliquer un mot dans votre propre langue si une tentative de rappel échoue.
+Zenzu transforme du contenu réel — vidéos YouTube, podcasts, articles, ou une simple photo d'une page de manuel — en cartes mémoire construites à partir de la phrase exacte que vous avez rencontrée, avec la prononciation native associée. Les révisions sont programmées automatiquement grâce à FSRS-6, de sorte qu'au lieu de relire, vous récupérez chaque expression juste avant de l'oublier. Lisa, la coach IA, peut expliquer un mot dans votre propre langue si une tentative de rappel échoue.

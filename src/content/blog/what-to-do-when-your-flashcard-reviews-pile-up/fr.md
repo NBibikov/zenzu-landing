@@ -15,7 +15,7 @@ Les systèmes de répétition espacée planifient les révisions en fonction du 
 
 ## Étape 1 : une carte en retard n'est pas une carte perdue
 
-Voici un calcul rassurant. Si une carte avait un intervalle de 30 jours et que vous la révisez avec 5 jours de retard, vous n'avez ajouté qu'environ 17 % de temps de décroissance supplémentaire — votre mémoire ne s'est pas effondrée. Les algorithmes de planification modernes comme FSRS-5 (Free Spaced Repetition Scheduler, construit à partir de données de révision à grande échelle publiées en 2023-2024) modélisent directement cette courbe de décroissance, si bien qu'une carte légèrement en retard est tout de même programmée de manière sensée une fois révisée. Vous ne repartez pas de zéro ; vous poursuivez simplement une courbe un peu étirée.
+Voici un calcul rassurant. Si une carte avait un intervalle de 30 jours et que vous la révisez avec 5 jours de retard, vous n'avez ajouté qu'environ 17 % de temps de décroissance supplémentaire — votre mémoire ne s'est pas effondrée. Les algorithmes de planification modernes comme FSRS-6 (Free Spaced Repetition Scheduler, construit à partir de données de révision à grande échelle publiées en 2023-2024) modélisent directement cette courbe de décroissance, si bien qu'une carte légèrement en retard est tout de même programmée de manière sensée une fois révisée. Vous ne repartez pas de zéro ; vous poursuivez simplement une courbe un peu étirée.
 
 ## Étape 2 : gelez immédiatement les nouvelles cartes
 
@@ -63,4 +63,4 @@ Si votre arriéré dépasse environ 10 fois votre volume de révision quotidien 
 
 ## Résorber un arriéré sur Zenzu
 
-Sur Zenzu, les révisions sont programmées avec FSRS-5, de sorte qu'une carte en retard est simplement recalculée — rien n'est perdu. Demandez à Lisa, votre coach IA, de vous expliquer les mots en retard et de construire un court plan de rattrapage quotidien dans votre propre langue, afin de résorber l'arriéré sans deviner combien de cartes traiter chaque jour.
+Sur Zenzu, les révisions sont programmées avec FSRS-6, de sorte qu'une carte en retard est simplement recalculée — rien n'est perdu. Demandez à Lisa, votre coach IA, de vous expliquer les mots en retard et de construire un court plan de rattrapage quotidien dans votre propre langue, afin de résorber l'arriéré sans deviner combien de cartes traiter chaque jour.

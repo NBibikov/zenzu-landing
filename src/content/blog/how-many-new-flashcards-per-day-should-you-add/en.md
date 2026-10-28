@@ -59,4 +59,4 @@ Only up to the point your review queue stays sustainable. Beyond that, forgotten
 
 ## Study Smarter With Zenzu
 
-In Zenzu, every flashcard you create — from a YouTube transcript, podcast, article, or photo of text — is scheduled automatically with FSRS-5, so your review load stays balanced as you add new words. If you're unsure how many new cards to add, ask Lisa, Zenzu's AI coach: she explains each word in your own language and helps plan a daily pace that fits your schedule.
+In Zenzu, every flashcard you create — from a YouTube transcript, podcast, article, or photo of text — is scheduled automatically with FSRS-6, so your review load stays balanced as you add new words. If you're unsure how many new cards to add, ask Lisa, Zenzu's AI coach: she explains each word in your own language and helps plan a daily pace that fits your schedule.

@@ -56,4 +56,4 @@ Mehr als 20-25 markierte Begriffe pro 20-minütiger Episode bedeuten meist, dass
 
 ## So setzt du das in Zenzu um
 
-Zenzu macht aus dieser Routine einen einzigen Ablauf: Importiere ein YouTube-Video oder einen Podcast, tippe im interaktiven Transkript auf ein beliebiges Wort oder einen Ausdruck, um daraus eine Vokabelkarte mit dem Originalsatz und muttersprachlicher Aussprache zu machen. Die Wiederholungen laufen auf FSRS-5, sodass nichts von dem, was du extrahierst, vergessen wird, bevor es wieder auftaucht. Lisa, der KI-Coach, erklärt knifflige Ausdrücke und plant deine Woche in deiner eigenen Sprache.
+Zenzu macht aus dieser Routine einen einzigen Ablauf: Importiere ein YouTube-Video oder einen Podcast, tippe im interaktiven Transkript auf ein beliebiges Wort oder einen Ausdruck, um daraus eine Vokabelkarte mit dem Originalsatz und muttersprachlicher Aussprache zu machen. Die Wiederholungen laufen auf FSRS-6, sodass nichts von dem, was du extrahierst, vergessen wird, bevor es wieder auftaucht. Lisa, der KI-Coach, erklärt knifflige Ausdrücke und plant deine Woche in deiner eigenen Sprache.

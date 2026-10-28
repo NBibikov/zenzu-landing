@@ -15,7 +15,7 @@ Spaced-Repetition-Systeme planen Wiederholungen danach, wann Ihr Gedächtnis vor
 
 ## Schritt 1: Eine verspätete Karte ist keine verlorene Karte
 
-Hier die beruhigende Rechnung: Hatte eine Karte ein Intervall von 30 Tagen und Sie wiederholen sie 5 Tage zu spät, haben Sie nur etwa 17 % zusätzliche Vergessenszeit hinzugefügt – Ihre Gedächtnisstärke ist nicht eingebrochen. Moderne Planungsalgorithmen wie FSRS-5 (Free Spaced Repetition Scheduler, entwickelt auf Basis umfangreicher Wiederholungsdaten, veröffentlicht 2023-2024) modellieren diese Vergessenskurve direkt. Eine leicht überfällige Karte wird also beim nächsten Durchgang trotzdem sinnvoll eingeplant. Sie fangen nicht neu an – Sie setzen lediglich eine etwas gestreckte Kurve fort.
+Hier die beruhigende Rechnung: Hatte eine Karte ein Intervall von 30 Tagen und Sie wiederholen sie 5 Tage zu spät, haben Sie nur etwa 17 % zusätzliche Vergessenszeit hinzugefügt – Ihre Gedächtnisstärke ist nicht eingebrochen. Moderne Planungsalgorithmen wie FSRS-6 (Free Spaced Repetition Scheduler, entwickelt auf Basis umfangreicher Wiederholungsdaten, veröffentlicht 2023-2024) modellieren diese Vergessenskurve direkt. Eine leicht überfällige Karte wird also beim nächsten Durchgang trotzdem sinnvoll eingeplant. Sie fangen nicht neu an – Sie setzen lediglich eine etwas gestreckte Kurve fort.
 
 ## Schritt 2: Neue Karten sofort einfrieren
 
@@ -63,4 +63,4 @@ Wenn Ihr Rückstau etwa das Zehnfache Ihres normalen täglichen Wiederholungsvol
 
 ## Einen Rückstau in Zenzu abbauen
 
-In Zenzu werden Wiederholungen mit FSRS-5 geplant, sodass eine verspätete Karte einfach neu berechnet wird – nichts geht verloren. Bitten Sie Lisa, Ihre KI-Trainerin, überfällige Wörter zu erklären und einen kurzen täglichen Aufholplan in Ihrer eigenen Sprache zu erstellen, damit Sie den Stapel abbauen, ohne raten zu müssen, wie viele Karten Sie täglich schaffen sollten.
+In Zenzu werden Wiederholungen mit FSRS-6 geplant, sodass eine verspätete Karte einfach neu berechnet wird – nichts geht verloren. Bitten Sie Lisa, Ihre KI-Trainerin, überfällige Wörter zu erklären und einen kurzen täglichen Aufholplan in Ihrer eigenen Sprache zu erstellen, damit Sie den Stapel abbauen, ohne raten zu müssen, wie viele Karten Sie täglich schaffen sollten.

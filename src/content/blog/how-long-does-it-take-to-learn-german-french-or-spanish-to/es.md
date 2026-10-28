@@ -38,7 +38,7 @@ El español y el francés comparten raíces latinas, cognados y una fonética re
 ## Las tres palancas que realmente acortan tu cronograma
 
 1. **Volumen de input comprensible.** Las horas dedicadas a leer y escuchar material que se entiende en su mayor parte (más del 90 %) se acumulan más rápido que los simples ejercicios de gramática.
-2. **Repetición espaciada.** Hermann Ebbinghaus trazó la curva del olvido en 1885: sin repaso, se pierde la mayor parte del vocabulario nuevo en cuestión de días. El espaciado algorítmico (los sistemas modernos usan FSRS-5) reduce el tiempo de repaso al revisar cada palabra justo antes de que la olvides, en lugar de seguir un calendario diario fijo.
+2. **Repetición espaciada.** Hermann Ebbinghaus trazó la curva del olvido en 1885: sin repaso, se pierde la mayor parte del vocabulario nuevo en cuestión de días. El espaciado algorítmico (los sistemas modernos usan FSRS-6) reduce el tiempo de repaso al revisar cada palabra justo antes de que la olvides, en lugar de seguir un calendario diario fijo.
 3. **Producción bajo presión ligera.** Escribir resúmenes breves o hablar en voz alta a diario, aunque sean solo 5 minutos, obliga a la recuperación activa, el predictor más sólido de la retención según la investigación sobre adquisición de vocabulario.
 
 ## Un plan realista de 12 meses hacia el B2
@@ -59,4 +59,4 @@ Total: aproximadamente 450–550 horas para francés/español (cerca del B2), o 
 
 ## Estudia las horas del tramo B2 de forma eficiente en Zenzu
 
-Zenzu convierte las horas mencionadas arriba en práctica diaria: importa un vídeo de YouTube, un pódcast o un artículo, toca cualquier palabra para crear una tarjeta de memoria con su frase original y su pronunciación nativa, y deja que FSRS-5 programe los repasos automáticamente. Pídele a Lisa, la entrenadora de IA, que te explique gramática o planifique tu semana en tu propio idioma, disponible en inglés, alemán, francés o español, con cursos estructurados de A1 a C1 para cada uno.
+Zenzu convierte las horas mencionadas arriba en práctica diaria: importa un vídeo de YouTube, un pódcast o un artículo, toca cualquier palabra para crear una tarjeta de memoria con su frase original y su pronunciación nativa, y deja que FSRS-6 programe los repasos automáticamente. Pídele a Lisa, la entrenadora de IA, que te explique gramática o planifique tu semana en tu propio idioma, disponible en inglés, alemán, francés o español, con cursos estructurados de A1 a C1 para cada uno.

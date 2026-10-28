@@ -56,4 +56,4 @@ Más de 20-25 elementos marcados en un episodio de 20 minutos suele indicar que 
 
 ## Cómo hacer esto en Zenzu
 
-Zenzu convierte esta rutina en un solo flujo: importa un vídeo de YouTube o un pódcast, y toca cualquier palabra o frase en la transcripción interactiva para convertirla en una tarjeta de memoria con su frase original y pronunciación nativa adjuntas. Los repasos funcionan con FSRS-5, así que nada de lo que extraes se olvida antes de que vuelva a aparecer. Lisa, la entrenadora con IA, te explica las frases difíciles y planifica tu semana en tu propio idioma.
+Zenzu convierte esta rutina en un solo flujo: importa un vídeo de YouTube o un pódcast, y toca cualquier palabra o frase en la transcripción interactiva para convertirla en una tarjeta de memoria con su frase original y pronunciación nativa adjuntas. Los repasos funcionan con FSRS-6, así que nada de lo que extraes se olvida antes de que vuelva a aparecer. Lisa, la entrenadora con IA, te explica las frases difíciles y planifica tu semana en tu propio idioma.

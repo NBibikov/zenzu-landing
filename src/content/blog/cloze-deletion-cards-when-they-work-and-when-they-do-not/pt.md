@@ -62,4 +62,4 @@ Sim — muitas vezes ampliar a frase ou adicionar mais uma cláusula contextual 
 
 ## Fazendo Isso no Zenzu
 
-O Zenzu cria cartões de lacuna automaticamente a partir de contexto real: importe um vídeo do YouTube, um podcast, um artigo ou uma foto de um texto e selecione qualquer palavra ou frase — ela se transforma em um flashcard com a frase original de origem e a pronúncia nativa. A Lisa, a treinadora de IA, explica no seu próprio idioma por que uma palavra se encaixa naquele contexto específico, e o FSRS-5 agenda as revisões para que os cartões de lacuna bem restritos e ancorados reapareçam no intervalo certo.
+O Zenzu cria cartões de lacuna automaticamente a partir de contexto real: importe um vídeo do YouTube, um podcast, um artigo ou uma foto de um texto e selecione qualquer palavra ou frase — ela se transforma em um flashcard com a frase original de origem e a pronúncia nativa. A Lisa, a treinadora de IA, explica no seu próprio idioma por que uma palavra se encaixa naquele contexto específico, e o FSRS-6 agenda as revisões para que os cartões de lacuna bem restritos e ancorados reapareçam no intervalo certo.

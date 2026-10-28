@@ -57,4 +57,4 @@ Used correctly, they help both: grammar through correction, fluency through low-
 
 ## Doing This in Zenzu
 
-In Zenzu, import a YouTube video or article, attempt to understand and use new words yourself first, then turn only the ones you got wrong into flashcards with their original sentence and native pronunciation. Ask Lisa, the AI coach, for a hint rather than a full answer, and let FSRS-5 schedule your AI-free recall reviews automatically.
+In Zenzu, import a YouTube video or article, attempt to understand and use new words yourself first, then turn only the ones you got wrong into flashcards with their original sentence and native pronunciation. Ask Lisa, the AI coach, for a hint rather than a full answer, and let FSRS-6 schedule your AI-free recall reviews automatically.

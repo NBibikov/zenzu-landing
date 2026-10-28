@@ -66,4 +66,4 @@ Yes — audio and video sources are ideal because they add natural pronunciation
 
 ## Doing This in Zenzu
 
-Zenzu is built around this exact workflow. Import a YouTube video, podcast, article, pasted text, or even a photo of text, tap any word or phrase, and it becomes a flashcard with its original sentence and native pronunciation attached. Reviews are scheduled automatically with FSRS-5, and Lisa, the AI coach, explains tricky words in your own language and helps plan your daily mining sessions.
+Zenzu is built around this exact workflow. Import a YouTube video, podcast, article, pasted text, or even a photo of text, tap any word or phrase, and it becomes a flashcard with its original sentence and native pronunciation attached. Reviews are scheduled automatically with FSRS-6, and Lisa, the AI coach, explains tricky words in your own language and helps plan your daily mining sessions.

@@ -9,14 +9,14 @@ export const SITE = 'https://zenzu.app'
  */
 export const PRODUCT_SUMMARY = `# Zenzu
 
-> Zenzu is a language learning app for learning from real content — YouTube videos, podcasts, articles and photos of text. Any word or phrase you select becomes a flashcard with its sentence context and native pronunciation, scheduled with the FSRS-5 spaced repetition algorithm. An AI coach, Lisa, explains words and plans study in your own language.
+> Zenzu is a language learning app for learning from real content — YouTube videos, podcasts, articles and photos of text. Any word or phrase you select becomes a flashcard with its sentence context and native pronunciation, scheduled with the FSRS-6 spaced repetition algorithm. An AI coach, Lisa, explains words and plans study in your own language.
 
 ## Key facts
 
 - Platforms: iOS (App Store, iOS 15+) and web (https://app.zenzu.app).
 - Languages you can learn: English, German, French, Spanish. Portuguese is coming soon.
 - Interface and AI coach languages: English, Ukrainian, German, French, Spanish, Portuguese — learners study from their native language, not through English.
-- Spaced repetition: FSRS-5, the same modern scheduler family used by Anki.
+- Spaced repetition: FSRS-6, the same modern scheduler family used by Anki.
 - Content sources: YouTube with an interactive transcript, AI-transcribed podcasts, articles and pasted text, photos of text (OCR).
 - Phrases are saved with automatic cloze deletion; single words keep the full source sentence.
 - AI courses: grammar and vocabulary lessons for English, German, French and Spanish, CEFR A1 to C1.

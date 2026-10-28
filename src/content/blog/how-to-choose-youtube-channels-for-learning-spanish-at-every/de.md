@@ -81,4 +81,4 @@ Wenn der 48-Stunden-Passgenauigkeitstest konstant ein Verständnis von 8–9/10 
 
 ## Effizienter lernen mit Zenzu
 
-Zenzu verwandelt jedes YouTube-Video in Lernmaterial: Importiere den Clip, tippe im interaktiven Transkript auf unbekannte Wörter, und jedes davon wird zu einer Lernkarte mit dem Originalsatz und muttersprachlicher Aussprache. Lisa, der KI-Coach, erklärt knifflige Ausdrücke in deiner eigenen Sprache und hilft bei der Planung von Wiederholungen – automatisch terminiert mit FSRS-5 –, damit deine niveaugerecht gewählten Kanäle wirklich im Gedächtnis bleiben.
+Zenzu verwandelt jedes YouTube-Video in Lernmaterial: Importiere den Clip, tippe im interaktiven Transkript auf unbekannte Wörter, und jedes davon wird zu einer Lernkarte mit dem Originalsatz und muttersprachlicher Aussprache. Lisa, der KI-Coach, erklärt knifflige Ausdrücke in deiner eigenen Sprache und hilft bei der Planung von Wiederholungen – automatisch terminiert mit FSRS-6 –, damit deine niveaugerecht gewählten Kanäle wirklich im Gedächtnis bleiben.

@@ -59,4 +59,4 @@ No hay un número fijo, pero normalmente los elementos necesitan entre 3 y 5 rec
 
 ## Practicar esto en Zenzu
 
-Zenzu convierte contenido real —videos de YouTube, podcasts, artículos o una foto de la página de un libro de texto— en tarjetas de memoria construidas a partir de la oración exacta con la que te encontraste, con pronunciación nativa incluida. Los repasos se programan automáticamente mediante FSRS-5, de modo que, en lugar de releer, recuperas cada frase justo cuando estás a punto de olvidarla. Lisa, la entrenadora de IA, puede explicarte una palabra en tu propio idioma si un intento de recuperación falla.
+Zenzu convierte contenido real —videos de YouTube, podcasts, artículos o una foto de la página de un libro de texto— en tarjetas de memoria construidas a partir de la oración exacta con la que te encontraste, con pronunciación nativa incluida. Los repasos se programan automáticamente mediante FSRS-6, de modo que, en lugar de releer, recuperas cada frase justo cuando estás a punto de olvidarla. Lisa, la entrenadora de IA, puede explicarte una palabra en tu propio idioma si un intento de recuperación falla.

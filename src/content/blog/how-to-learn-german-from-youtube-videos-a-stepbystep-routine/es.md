@@ -43,7 +43,7 @@ Cada tarjeta debe tener tres elementos: la palabra o frase objetivo, la oración
 
 ## Paso 5: Repasa con Repetición Espaciada, No Releyendo
 
-Este es el paso que más estudiantes autodidactas se saltan, y es precisamente el que produce retención real. La repetición espaciada programa los repasos justo antes de que olvides una tarjeta: repasar demasiado pronto desperdicia tiempo, y hacerlo demasiado tarde significa volver a aprender desde cero. Los algoritmos de programación modernos, como FSRS-5, modelan tu curva de olvido individual para cada tarjeta en lugar de usar una escalera de intervalos fija, lo que significa menos repasos desperdiciados en tarjetas que ya dominas.
+Este es el paso que más estudiantes autodidactas se saltan, y es precisamente el que produce retención real. La repetición espaciada programa los repasos justo antes de que olvides una tarjeta: repasar demasiado pronto desperdicia tiempo, y hacerlo demasiado tarde significa volver a aprender desde cero. Los algoritmos de programación modernos, como FSRS-6, modelan tu curva de olvido individual para cada tarjeta en lugar de usar una escalera de intervalos fija, lo que significa menos repasos desperdiciados en tarjetas que ya dominas.
 
 Haz tus repasos a diario, incluso los días que no veas vídeos nuevos. 10 minutos de repaso sostienen mucho más vocabulario que 60 minutos de visionado pasivo repetido.
 
@@ -69,4 +69,4 @@ A este ritmo, la mayoría de los estudiantes reportan una comprensión auditiva 
 
 ## Haciendo Esto en Zenzu
 
-Importa un vídeo de YouTube a Zenzu y su transcripción interactiva te permite tocar cualquier palabra o frase para convertirla en una tarjeta de memoria, completa con la oración de origen y la pronunciación nativa, tal como se describe en el Paso 4. Los repasos se programan luego automáticamente con FSRS-5, y Lisa, la entrenadora de IA, puede explicarte modismos complicados en tu propio idioma y ayudarte a planificar qué vídeos abordar a continuación.
+Importa un vídeo de YouTube a Zenzu y su transcripción interactiva te permite tocar cualquier palabra o frase para convertirla en una tarjeta de memoria, completa con la oración de origen y la pronunciación nativa, tal como se describe en el Paso 4. Los repasos se programan luego automáticamente con FSRS-6, y Lisa, la entrenadora de IA, puede explicarte modismos complicados en tu propio idioma y ayudarte a planificar qué vídeos abordar a continuación.

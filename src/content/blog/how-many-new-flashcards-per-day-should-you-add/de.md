@@ -59,4 +59,4 @@ Nur bis zu dem Punkt, an dem deine Wiederholungswarteschlange nachhaltig bleibt.
 
 ## Klüger lernen mit Zenzu
 
-In Zenzu wird jede Karteikarte, die du erstellst – aus einem YouTube-Transkript, einem Podcast, einem Artikel oder einem Foto von Text – automatisch mit FSRS-5 eingeplant, sodass deine Wiederholungslast ausgeglichen bleibt, während du neue Wörter hinzufügst. Bist du unsicher, wie viele neue Karten du hinzufügen sollst, frag Lisa, den KI-Coach von Zenzu: Sie erklärt dir jedes Wort in deiner eigenen Sprache und hilft dir, ein tägliches Tempo zu planen, das zu deinem Zeitplan passt.
+In Zenzu wird jede Karteikarte, die du erstellst – aus einem YouTube-Transkript, einem Podcast, einem Artikel oder einem Foto von Text – automatisch mit FSRS-6 eingeplant, sodass deine Wiederholungslast ausgeglichen bleibt, während du neue Wörter hinzufügst. Bist du unsicher, wie viele neue Karten du hinzufügen sollst, frag Lisa, den KI-Coach von Zenzu: Sie erklärt dir jedes Wort in deiner eigenen Sprache und hilft dir, ein tägliches Tempo zu planen, das zu deinem Zeitplan passt.

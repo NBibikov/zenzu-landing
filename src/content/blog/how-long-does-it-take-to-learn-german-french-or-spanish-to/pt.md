@@ -38,7 +38,7 @@ Espanhol e francês compartilham raízes latinas, cognatos e uma fonética relat
 ## As três alavancas que realmente encurtam seu cronograma
 
 1. **Volume de input compreensível.** Horas dedicadas a ler e ouvir material que você entende em sua maior parte (90%+ou mais) geram resultados mais rápidos do que apenas exercícios de gramática.
-2. **Repetição espaçada.** Hermann Ebbinghaus mapeou a curva do esquecimento em 1885: sem revisão, você perde a maior parte do vocabulário novo em poucos dias. O espaçamento algorítmico (sistemas modernos usam o FSRS-5) reduz o tempo de revisão ao revisar as palavras pouco antes de você esquecê-las, em vez de seguir um cronograma fixo diário.
+2. **Repetição espaçada.** Hermann Ebbinghaus mapeou a curva do esquecimento em 1885: sem revisão, você perde a maior parte do vocabulário novo em poucos dias. O espaçamento algorítmico (sistemas modernos usam o FSRS-6) reduz o tempo de revisão ao revisar as palavras pouco antes de você esquecê-las, em vez de seguir um cronograma fixo diário.
 3. **Produção sob leve pressão.** Escrever resumos curtos ou falar em voz alta todos os dias, mesmo que por apenas 5 minutos, força a recuperação ativa da memória — o fator isolado mais fortemente associado à retenção nas pesquisas sobre aquisição de vocabulário.
 
 ## Um plano realista de 12 meses rumo ao B2
@@ -59,4 +59,4 @@ Total: aproximadamente 450–550 horas para francês/espanhol (próximo do B2), 
 
 ## Estude as horas do nível B2 com eficiência no Zenzu
 
-O Zenzu transforma as horas mencionadas acima em prática diária: importe um vídeo do YouTube, um podcast ou um artigo, toque em qualquer palavra para criar um flashcard com a frase original e a pronúncia nativa, e deixe o FSRS-5 agendar as revisões automaticamente. Peça à Lisa, a coach de IA, para explicar gramática ou planejar sua semana no seu próprio idioma — em inglês, alemão, francês ou espanhol, com cursos estruturados de A1 a C1 para cada um deles.
+O Zenzu transforma as horas mencionadas acima em prática diária: importe um vídeo do YouTube, um podcast ou um artigo, toque em qualquer palavra para criar um flashcard com a frase original e a pronúncia nativa, e deixe o FSRS-6 agendar as revisões automaticamente. Peça à Lisa, a coach de IA, para explicar gramática ou planejar sua semana no seu próprio idioma — em inglês, alemão, francês ou espanhol, com cursos estruturados de A1 a C1 para cada um deles.

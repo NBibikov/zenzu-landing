@@ -56,4 +56,4 @@ Plus de 20 à 25 éléments relevés par épisode de 20 minutes signifie génér
 
 ## Faire tout cela avec Zenzu
 
-Zenzu transforme cette routine en un seul flux : importez une vidéo YouTube ou un podcast, touchez n'importe quel mot ou expression dans la transcription interactive pour le convertir en carte mémoire, avec sa phrase d'origine et sa prononciation native. Les révisions tournent sur FSRS-5, pour qu'aucun élément extrait ne soit oublié avant de resurgir. Lisa, la coach IA, explique les expressions difficiles et planifie votre semaine dans votre propre langue.
+Zenzu transforme cette routine en un seul flux : importez une vidéo YouTube ou un podcast, touchez n'importe quel mot ou expression dans la transcription interactive pour le convertir en carte mémoire, avec sa phrase d'origine et sa prononciation native. Les révisions tournent sur FSRS-6, pour qu'aucun élément extrait ne soit oublié avant de resurgir. Lisa, la coach IA, explique les expressions difficiles et planifie votre semaine dans votre propre langue.

@@ -13,7 +13,7 @@ Hermann Ebbinghaus describió la "curva del olvido" ya en 1885: sin repaso, perd
 
 Esta es la base de la repetición espaciada. Un metaanálisis de 2006 realizado por Cepeda, Pashler, Vul, Wixted y Rohrer (que revisó más de 300 estudios) encontró que espaciar los repasos a lo largo de varios días produce una retención a largo plazo notablemente mejor que repasar la misma cantidad de material en una sola sesión. No necesitas más repeticiones; necesitas que estén distribuidas correctamente en el tiempo.
 
-Los programadores modernos como FSRS-5 (Free Spaced Repetition Scheduler) llevan esto más allá de los antiguos sistemas de intervalos fijos. En lugar de un rígido "repasa cada 3 días", FSRS modela la dificultad individual de cada tarjeta y tu curva de olvido personal, programando los repasos justo en el momento en que estás a punto de olvidar. Esa precisión es lo que hace que 15 minutos sean productivos en vez de un desperdicio.
+Los programadores modernos como FSRS-6 (Free Spaced Repetition Scheduler) llevan esto más allá de los antiguos sistemas de intervalos fijos. En lugar de un rígido "repasa cada 3 días", FSRS modela la dificultad individual de cada tarjeta y tu curva de olvido personal, programando los repasos justo en el momento en que estás a punto de olvidar. Esa precisión es lo que hace que 15 minutos sean productivos en vez de un desperdicio.
 
 ## La rutina de 15 minutos, minuto a minuto
 
@@ -57,4 +57,4 @@ Sí: la constancia supera a la intensidad. Las sesiones diarias de 15 minutos su
 
 ## Cómo hacer esto en Zenzu
 
-En Zenzu, cada tarjeta de memoria incluye su frase de origen original y la pronunciación nativa, de modo que el recuerdo ocurre en contexto y no de forma aislada. Los repasos se programan automáticamente con FSRS-5, lo que significa que la app decide exactamente qué tarjetas necesitas hoy. Lisa, la entrenadora con IA, puede explicarte una palabra complicada en tu propio idioma y ayudarte a planificar una sesión diaria sostenible, todo a partir de videos de YouTube, podcasts, artículos o fotos de texto que importes.
+En Zenzu, cada tarjeta de memoria incluye su frase de origen original y la pronunciación nativa, de modo que el recuerdo ocurre en contexto y no de forma aislada. Los repasos se programan automáticamente con FSRS-6, lo que significa que la app decide exactamente qué tarjetas necesitas hoy. Lisa, la entrenadora con IA, puede explicarte una palabra complicada en tu propio idioma y ayudarte a planificar una sesión diaria sostenible, todo a partir de videos de YouTube, podcasts, artículos o fotos de texto que importes.

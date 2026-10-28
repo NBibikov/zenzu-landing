@@ -68,4 +68,4 @@ Vuelve a reproducir el clip dos o tres veces antes de rendirte y recurrir a una 
 
 ## Cómo hacer esto en Zenzu
 
-En Zenzu, importa el podcast o el clip de YouTube que estabas escuchando: su transcripción interactiva te permite tocar la frase exacta que oíste. Esa selección se convierte automáticamente en una tarjeta con la frase de origen y el audio nativo adjuntos, programada con FSRS-5. Pídele a Lisa, la entrenadora de IA, que te explique el fragmento o que lo convierta en un hueco en tu propio idioma.
+En Zenzu, importa el podcast o el clip de YouTube que estabas escuchando: su transcripción interactiva te permite tocar la frase exacta que oíste. Esa selección se convierte automáticamente en una tarjeta con la frase de origen y el audio nativo adjuntos, programada con FSRS-6. Pídele a Lisa, la entrenadora de IA, que te explique el fragmento o que lo convierta en un hueco en tu propio idioma.

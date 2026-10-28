@@ -81,4 +81,4 @@ Quando o teste de encaixe de 48 horas apontar consistentemente uma compreensão 
 
 ## Estude de Forma Mais Inteligente Com o Zenzu
 
-O Zenzu transforma qualquer vídeo do YouTube em material de estudo: importe o clipe, toque nas palavras desconhecidas na transcrição interativa, e cada uma delas vira um flashcard com a frase original e a pronúncia nativa. Lisa, a coach de IA, explica frases complicadas no seu próprio idioma e ajuda a planejar as revisões — agendadas automaticamente com o FSRS-5 — para que a escolha de canais no nível certo realmente faça efeito.
+O Zenzu transforma qualquer vídeo do YouTube em material de estudo: importe o clipe, toque nas palavras desconhecidas na transcrição interativa, e cada uma delas vira um flashcard com a frase original e a pronúncia nativa. Lisa, a coach de IA, explica frases complicadas no seu próprio idioma e ajuda a planejar as revisões — agendadas automaticamente com o FSRS-6 — para que a escolha de canais no nível certo realmente faça efeito.

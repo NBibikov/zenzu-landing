@@ -59,4 +59,4 @@ Solo hasta el punto en que tu cola de repaso siga siendo sostenible. Más allá 
 
 ## Estudia de forma más inteligente con Zenzu
 
-En Zenzu, cada tarjeta que creas —a partir de una transcripción de YouTube, un podcast, un artículo o una foto de texto— se programa automáticamente con FSRS-5, de modo que tu carga de repaso se mantiene equilibrada mientras agregas palabras nuevas. Si no estás seguro de cuántas tarjetas nuevas agregar, pregúntale a Lisa, la entrenadora de IA de Zenzu: ella te explica cada palabra en tu propio idioma y te ayuda a planificar un ritmo diario que se ajuste a tu horario.
+En Zenzu, cada tarjeta que creas —a partir de una transcripción de YouTube, un podcast, un artículo o una foto de texto— se programa automáticamente con FSRS-6, de modo que tu carga de repaso se mantiene equilibrada mientras agregas palabras nuevas. Si no estás seguro de cuántas tarjetas nuevas agregar, pregúntale a Lisa, la entrenadora de IA de Zenzu: ella te explica cada palabra en tu propio idioma y te ayuda a planificar un ritmo diario que se ajuste a tu horario.

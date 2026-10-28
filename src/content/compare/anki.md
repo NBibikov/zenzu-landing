@@ -12,7 +12,7 @@ rows:
     zenzu: "Created from content you import — YouTube, podcasts, articles, photos of text"
     other: "You write them, or download shared community decks"
   - feature: "Scheduling"
-    zenzu: "FSRS-5, on by default"
+    zenzu: "FSRS-6, on by default"
     other: "FSRS (since 23.10, enabled in deck options) or the legacy SM-2 scheduler"
   - feature: "Context and audio"
     zenzu: "Every card keeps its source sentence; native text-to-speech on every word and sentence"

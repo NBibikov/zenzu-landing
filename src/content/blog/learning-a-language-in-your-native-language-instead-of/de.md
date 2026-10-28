@@ -53,4 +53,4 @@ Größtenteils schon — außer wenn Englisch näher mit deiner Zielsprache verw
 
 ## So lernst du auf diese Weise mit Zenzu
 
-Die Oberfläche von Zenzu läuft auf Englisch, Ukrainisch, Deutsch, Französisch, Spanisch und Portugiesisch, sodass du Deutsch, Französisch, Spanisch oder Englisch mit Erklärungen in deiner eigenen Sprache lernen kannst. Importiere ein YouTube-Video, einen Podcast, einen Artikel oder ein Foto eines Textes, tippe auf ein beliebiges Wort, und Lisa — der KI-Coach — erklärt es dir und plant deine Wiederholungen in deiner Muttersprache, getaktet mit FSRS-5.
+Die Oberfläche von Zenzu läuft auf Englisch, Ukrainisch, Deutsch, Französisch, Spanisch und Portugiesisch, sodass du Deutsch, Französisch, Spanisch oder Englisch mit Erklärungen in deiner eigenen Sprache lernen kannst. Importiere ein YouTube-Video, einen Podcast, einen Artikel oder ein Foto eines Textes, tippe auf ein beliebiges Wort, und Lisa — der KI-Coach — erklärt es dir und plant deine Wiederholungen in deiner Muttersprache, getaktet mit FSRS-6.

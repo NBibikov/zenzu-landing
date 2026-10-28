@@ -53,4 +53,4 @@ En pratique : révisez vos phrases extraites tous les jours pendant la première
 
 ## Le faire avec Zenzu
 
-Importez un épisode de podcast espagnol — Zenzu le transcrit automatiquement. Touchez n'importe quel mot ou expression dans la transcription pour le transformer en carte mémoire, qui conserve la phrase d'origine et la prononciation native. Demandez à Lisa, votre coach IA, d'expliquer les points de grammaire difficiles dans votre propre langue, et laissez FSRS-5 planifier vos révisions pour que le vocabulaire extrait s'ancre réellement.
+Importez un épisode de podcast espagnol — Zenzu le transcrit automatiquement. Touchez n'importe quel mot ou expression dans la transcription pour le transformer en carte mémoire, qui conserve la phrase d'origine et la prononciation native. Demandez à Lisa, votre coach IA, d'expliquer les points de grammaire difficiles dans votre propre langue, et laissez FSRS-6 planifier vos révisions pour que le vocabulaire extrait s'ancre réellement.

@@ -66,4 +66,4 @@ Sí: las fuentes de audio y video son ideales porque añaden pronunciación e en
 
 ## Cómo hacerlo en Zenzu
 
-Zenzu está diseñado precisamente en torno a este flujo de trabajo. Importa un video de YouTube, un pódcast, un artículo, texto pegado o incluso una foto de un texto, toca cualquier palabra o frase, y esta se convierte en una tarjeta con su oración original y su pronunciación nativa adjuntas. Los repasos se programan automáticamente con FSRS-5, y Lisa, la entrenadora de IA, explica las palabras complicadas en tu propio idioma y te ayuda a planificar tus sesiones diarias de minería.
+Zenzu está diseñado precisamente en torno a este flujo de trabajo. Importa un video de YouTube, un pódcast, un artículo, texto pegado o incluso una foto de un texto, toca cualquier palabra o frase, y esta se convierte en una tarjeta con su oración original y su pronunciación nativa adjuntas. Los repasos se programan automáticamente con FSRS-6, y Lisa, la entrenadora de IA, explica las palabras complicadas en tu propio idioma y te ayuda a planificar tus sesiones diarias de minería.

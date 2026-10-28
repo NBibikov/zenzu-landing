@@ -68,4 +68,4 @@ Sí: muchos creadores (Français Authentique, InnerFrench) tienen un catálogo i
 
 ## Practica esto en Zenzu
 
-Importa cualquier vídeo de YouTube en Zenzu y obtén una transcripción interactiva que puedes tocar frase por frase. Selecciona las palabras que no conozcas para convertirlas en tarjetas de memoria con la frase original y la pronunciación nativa incluida, y deja que FSRS-5 programe tus repasos automáticamente. Pídele a Lisa, la entrenadora de IA, que compruebe si un vídeo se ajusta a tu nivel del MCER antes de ponerte a verlo.
+Importa cualquier vídeo de YouTube en Zenzu y obtén una transcripción interactiva que puedes tocar frase por frase. Selecciona las palabras que no conozcas para convertirlas en tarjetas de memoria con la frase original y la pronunciación nativa incluida, y deja que FSRS-6 programe tus repasos automáticamente. Pídele a Lisa, la entrenadora de IA, que compruebe si un vídeo se ajusta a tu nivel del MCER antes de ponerte a verlo.

@@ -74,4 +74,4 @@ Si entiendes más del 90% sin pausar, ya has superado el canal: pasa a podcasts 
 
 ## Cómo hacerlo en Zenzu
 
-Importa cualquier vídeo de YouTube a Zenzu simplemente pegando el enlace: la transcripción interactiva te permite tocar las palabras que no conozcas para convertirlas en tarjetas de memoria con la frase original y la pronunciación nativa incluidas. Lisa, la entrenadora de IA, puede repasar una transcripción contigo en tu propio idioma y decirte si un canal se ajusta a tu nivel actual. Las repeticiones de repaso se programan automáticamente con FSRS-5.
+Importa cualquier vídeo de YouTube a Zenzu simplemente pegando el enlace: la transcripción interactiva te permite tocar las palabras que no conozcas para convertirlas en tarjetas de memoria con la frase original y la pronunciación nativa incluidas. Lisa, la entrenadora de IA, puede repasar una transcripción contigo en tu propio idioma y decirte si un canal se ajusta a tu nivel actual. Las repeticiones de repaso se programan automáticamente con FSRS-6.

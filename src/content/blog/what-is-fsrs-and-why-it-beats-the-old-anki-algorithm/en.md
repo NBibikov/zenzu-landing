@@ -46,4 +46,4 @@ In the official FSRS benchmark published by the Open Spaced Repetition project, 
 
 ## FSRS in Zenzu
 
-Zenzu schedules every flashcard—made from YouTube clips, podcasts, articles, or photos—using FSRS-5, so reviews adapt to your personal memory instead of a fixed formula. Lisa, your AI coach, explains tricky words and plans what to study next in your own language, keeping daily reviews realistic across English, German, French, and Spanish.
+Zenzu schedules every flashcard—made from YouTube clips, podcasts, articles, or photos—using FSRS-6, so reviews adapt to your personal memory instead of a fixed formula. Lisa, your AI coach, explains tricky words and plans what to study next in your own language, keeping daily reviews realistic across English, German, French, and Spanish.

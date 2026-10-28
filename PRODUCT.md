@@ -22,7 +22,7 @@ This repository is the marketing site and blog for Zenzu (zenzu.app). The produc
 
 ## Product Purpose
 
-Zenzu turns content the learner already enjoys into flashcards. The learner imports a video, podcast, article or photo of text, taps a word or selects a phrase, and Zenzu saves a card with its original sentence and native pronunciation. FSRS-5 schedules the reviews. Lisa, an AI coach, plans the day, explains words and grammar and replies in the learner's own language.
+Zenzu turns content the learner already enjoys into flashcards. The learner imports a video, podcast, article or photo of text, taps a word or selects a phrase, and Zenzu saves a card with its original sentence and native pronunciation. FSRS-6 schedules the reviews. Lisa, an AI coach, plans the day, explains words and grammar and replies in the learner's own language.
 
 The site exists to explain this, send visitors to the App Store, Google Play testing or app.zenzu.app, and bring search traffic through the blog and comparison pages.
 

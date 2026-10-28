@@ -59,4 +59,4 @@ Somente até o ponto em que sua fila de revisões continua sustentável. Além d
 
 ## Estude de Forma Mais Inteligente com o Zenzu
 
-No Zenzu, todo flashcard que você cria — a partir de uma transcrição do YouTube, um podcast, um artigo ou a foto de um texto — é agendado automaticamente com o FSRS-5, para que sua carga de revisões permaneça equilibrada à medida que você adiciona palavras novas. Se não tiver certeza de quantos cartões novos adicionar, pergunte à Lisa, a treinadora de IA do Zenzu: ela explica cada palavra no seu próprio idioma e ajuda a planejar um ritmo diário que se encaixa na sua rotina.
+No Zenzu, todo flashcard que você cria — a partir de uma transcrição do YouTube, um podcast, um artigo ou a foto de um texto — é agendado automaticamente com o FSRS-6, para que sua carga de revisões permaneça equilibrada à medida que você adiciona palavras novas. Se não tiver certeza de quantos cartões novos adicionar, pergunte à Lisa, a treinadora de IA do Zenzu: ela explica cada palavra no seu próprio idioma e ajuda a planejar um ritmo diário que se encaixa na sua rotina.

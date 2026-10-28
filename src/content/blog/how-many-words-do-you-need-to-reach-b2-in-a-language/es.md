@@ -46,4 +46,4 @@ Porque miden cosas distintas: familias de palabras frente a formas de palabras, 
 
 ## Cómo aplicar esto en Zenzu
 
-Zenzu convierte contenido real (videos de YouTube, pódcasts, artículos o fotos de texto) en tarjetas de repaso de forma automática: seleccionas cualquier palabra o frase y se guarda junto con su frase de origen y su pronunciación nativa. El sistema FSRS-5 programa los repasos en el intervalo de espaciado que tu memoria necesita, y Lisa, tu entrenadora de IA, te explica las palabras y planifica el estudio hacia tu próximo nivel del MCER en tu propio idioma.
+Zenzu convierte contenido real (videos de YouTube, pódcasts, artículos o fotos de texto) en tarjetas de repaso de forma automática: seleccionas cualquier palabra o frase y se guarda junto con su frase de origen y su pronunciación nativa. El sistema FSRS-6 programa los repasos en el intervalo de espaciado que tu memoria necesita, y Lisa, tu entrenadora de IA, te explica las palabras y planifica el estudio hacia tu próximo nivel del MCER en tu propio idioma.

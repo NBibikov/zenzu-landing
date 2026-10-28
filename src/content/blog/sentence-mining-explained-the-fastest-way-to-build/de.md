@@ -66,4 +66,4 @@ Ja – Audio- und Videoquellen sind sogar ideal, weil sie jeder Karte eine natü
 
 ## So funktioniert das in Zenzu
 
-Zenzu ist genau um diesen Arbeitsablauf herum aufgebaut. Importiere ein YouTube-Video, einen Podcast, einen Artikel, eingefügten Text oder sogar ein Foto von Text, tippe auf ein beliebiges Wort oder eine Phrase, und es wird zu einer Lernkarte mit dem Originalsatz und der nativen Aussprache. Wiederholungen werden automatisch mit FSRS-5 geplant, und Lisa, der KI-Coach, erklärt knifflige Wörter in deiner eigenen Sprache und hilft dir, deine täglichen Mining-Sessions zu planen.
+Zenzu ist genau um diesen Arbeitsablauf herum aufgebaut. Importiere ein YouTube-Video, einen Podcast, einen Artikel, eingefügten Text oder sogar ein Foto von Text, tippe auf ein beliebiges Wort oder eine Phrase, und es wird zu einer Lernkarte mit dem Originalsatz und der nativen Aussprache. Wiederholungen werden automatisch mit FSRS-6 geplant, und Lisa, der KI-Coach, erklärt knifflige Wörter in deiner eigenen Sprache und hilft dir, deine täglichen Mining-Sessions zu planen.

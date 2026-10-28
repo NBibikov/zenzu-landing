@@ -55,4 +55,4 @@ Yes, as long as you're reading target-language subtitles, not translated ones â€
 
 ## Finding Your Level in Zenzu
 
-Zenzu lets you import YouTube videos, podcasts, articles, pasted text, or photos of text, then tap any word or phrase to turn it into a flashcard with its original sentence and native pronunciation. Lisa, the AI coach, can gauge your level and suggest content in that 90-98% zone, while FSRS-5 scheduling reviews the new words you've collected before you forget them.
+Zenzu lets you import YouTube videos, podcasts, articles, pasted text, or photos of text, then tap any word or phrase to turn it into a flashcard with its original sentence and native pronunciation. Lisa, the AI coach, can gauge your level and suggest content in that 90-98% zone, while FSRS-6 scheduling reviews the new words you've collected before you forget them.

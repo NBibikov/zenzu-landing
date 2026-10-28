@@ -56,4 +56,4 @@ Mais de 20-25 itens marcados por episódio de 20 minutos geralmente indica que o
 
 ## Fazendo isso no Zenzu
 
-O Zenzu transforma essa rotina em um único fluxo: importe um vídeo do YouTube ou um podcast, toque em qualquer palavra ou expressão na transcrição interativa para transformá-la em um flashcard com a frase original e a pronúncia nativa anexadas. As revisões rodam no FSRS-5, então nada do que você extrai é esquecido antes de reaparecer. A Lisa, a treinadora de IA, explica expressões complicadas e planeja sua semana no seu próprio idioma.
+O Zenzu transforma essa rotina em um único fluxo: importe um vídeo do YouTube ou um podcast, toque em qualquer palavra ou expressão na transcrição interativa para transformá-la em um flashcard com a frase original e a pronúncia nativa anexadas. As revisões rodam no FSRS-6, então nada do que você extrai é esquecido antes de reaparecer. A Lisa, a treinadora de IA, explica expressões complicadas e planeja sua semana no seu próprio idioma.

@@ -68,4 +68,4 @@ Oui — de nombreux créateurs (Français Authentique, InnerFrench) ont un catal
 
 ## Pratiquez tout cela avec Zenzu
 
-Importez n'importe quelle vidéo YouTube dans Zenzu pour obtenir une transcription interactive que vous pouvez parcourir phrase par phrase. Sélectionnez les mots inconnus pour les transformer en flashcards, accompagnées de la phrase d'origine et de la prononciation native, puis laissez FSRS-5 programmer vos révisions automatiquement. Demandez à Lisa, le coach IA, de vérifier si une vidéo correspond à votre niveau CECRL avant de vous lancer dans le visionnage.
+Importez n'importe quelle vidéo YouTube dans Zenzu pour obtenir une transcription interactive que vous pouvez parcourir phrase par phrase. Sélectionnez les mots inconnus pour les transformer en flashcards, accompagnées de la phrase d'origine et de la prononciation native, puis laissez FSRS-6 programmer vos révisions automatiquement. Demandez à Lisa, le coach IA, de vérifier si une vidéo correspond à votre niveau CECRL avant de vous lancer dans le visionnage.

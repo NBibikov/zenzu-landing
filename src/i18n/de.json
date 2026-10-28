@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Zenzu — Sprachen lernen mit echten Inhalten",
+    "title": "Zenzu — Sprachen lernen mit YouTube, Podcasts und Büchern",
     "description": "Lerne Sprachen mit YouTube-Videos, Podcasts und Artikeln. KI-Karteikarten mit FSRS-Wiederholungssystem und ein KI-Sprachcoach auf Deutsch."
   },
   "nav": {
@@ -11,11 +11,11 @@
     "getStarted": "Loslegen"
   },
   "hero": {
-    "badge": "KI-gestütztes Sprachenlernen",
-    "headline1": "Lerne Sprachen mit",
-    "headlineHighlight": "echten Inhalten,",
-    "headline2": "die du liebst",
-    "subheadline": "Importiere YouTube-Videos, Podcasts und Artikel. Markiere ein Wort oder eine Phrase und speichere sie als Karte. Sprich mit Lisa — deinem KI-Sprachcoach — in deiner eigenen Sprache. Dein Lernen, deine Daten — offen für deine eigenen KI-Agenten über MCP.",
+    "badge": "YouTube-Link einfügen — deine Karten sind fertig",
+    "headline1": "Lerne jeden Tag ",
+    "headlineHighlight": "in Ruhe",
+    "headline2": " eine Sprache",
+    "subheadline": "Karten aus Videos, Podcasts und Büchern, die du magst.",
     "cta": "Lernen beginnen",
     "ctaSecondary": "Sieh, wie es funktioniert",
     "appStoreBadge": "Jetzt für iOS verfügbar",
@@ -97,7 +97,7 @@
       "desc": "Personalisierte Grammatik- und Vokabelkurse für Englisch, Deutsch, Französisch und Spanisch — A1 bis C1. Übungen passen sich deinem Niveau an."
     },
     "srs": {
-      "title": "FSRS-5 Verteilte Wiederholung",
+      "title": "FSRS-6 Verteilte Wiederholung",
       "desc": "Ein wissenschaftlich fundierter Algorithmus plant Wiederholungen zum optimalen Zeitpunkt. Erinnere dich für immer an Wörter."
     },
     "tts": {
@@ -145,7 +145,7 @@
     },
     "step3": {
       "title": "Wiederholung mit System",
-      "desc": "Der FSRS-5-Algorithmus plant Wiederholungen zum optimalen Zeitpunkt — damit jede investierte Minute zählt."
+      "desc": "Der FSRS-6-Algorithmus plant Wiederholungen zum optimalen Zeitpunkt — damit jede investierte Minute zählt."
     }
   },
   "android": {
@@ -213,7 +213,7 @@
     "items": [
       {
         "q": "Was ist Zenzu?",
-        "a": "Zenzu ist eine Sprachlern-App, mit der du aus echten Inhalten lernst. Du importierst YouTube-Videos, Podcasts, Artikel oder Fotos von Texten, tippst auf ein Wort oder eine Phrase und speicherst sie als Karteikarte mit dem Originalsatz und muttersprachlicher Aussprache. Wiederholungen plant der FSRS-5-Algorithmus. Lisa, der eingebaute KI-Coach, erklärt Wörter und plant dein Lernen in deiner Sprache."
+        "a": "Zenzu ist eine Sprachlern-App, mit der du aus echten Inhalten lernst. Du importierst YouTube-Videos, Podcasts, Artikel oder Fotos von Texten, tippst auf ein Wort oder eine Phrase und speicherst sie als Karteikarte mit dem Originalsatz und muttersprachlicher Aussprache. Wiederholungen plant der FSRS-6-Algorithmus. Lisa, der eingebaute KI-Coach, erklärt Wörter und plant dein Lernen in deiner Sprache."
       },
       {
         "q": "Welche Sprachen kann ich mit Zenzu lernen?",
@@ -237,7 +237,7 @@
       },
       {
         "q": "Welchen Wiederholungsalgorithmus nutzt Zenzu?",
-        "a": "FSRS-5, einen modernen Open-Source-Algorithmus, der auf großen Mengen echter Wiederholungsdaten trainiert wurde. Er sagt voraus, wann du eine Karte vergessen würdest, und plant die Wiederholung kurz davor."
+        "a": "FSRS-6, einen modernen Open-Source-Algorithmus, der auf großen Mengen echter Wiederholungsdaten trainiert wurde. Er sagt voraus, wann du eine Karte vergessen würdest, und plant die Wiederholung kurz davor."
       }
     ]
   },

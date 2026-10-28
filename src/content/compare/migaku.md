@@ -3,7 +3,7 @@ competitor: Migaku
 title: "Zenzu vs Migaku: Immersion Learning Apps Compared"
 description: "Migaku makes streaming sites and web pages clickable and creates flashcards in one click. Zenzu does the same for YouTube, podcasts and articles."
 updated: "2026-09-23"
-verdict: "Choose Migaku if you learn Japanese, Mandarin or Korean, want its structured beginner courses for those languages, or need browser support for several streaming sites. Choose Zenzu if you learn English, German, French or Spanish and want click-to-card learning from YouTube, podcasts and articles, FSRS-5 scheduling and an AI coach that explains things in your own language."
+verdict: "Choose Migaku if you learn Japanese, Mandarin or Korean, want its structured beginner courses for those languages, or need browser support for several streaming sites. Choose Zenzu if you learn English, German, French or Spanish and want click-to-card learning from YouTube, podcasts and articles, FSRS-6 scheduling and an AI coach that explains things in your own language."
 rows:
   - feature: "Core approach"
     zenzu: "Import content, tap words or select phrases, review with spaced repetition"
@@ -12,7 +12,7 @@ rows:
     zenzu: "YouTube, podcasts, articles, pasted text, photos of text"
     other: "YouTube and pasted text in the app; streaming sites and web pages via the browser extension; camera capture"
   - feature: "Spaced repetition"
-    zenzu: "FSRS-5"
+    zenzu: "FSRS-6"
     other: "Its own spaced repetition algorithm; can import Anki decks"
   - feature: "AI"
     zenzu: "Lisa, an AI coach replying in your language; AI courses A1–C1"

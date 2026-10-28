@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Zenzu — Apprenez les langues avec du vrai contenu",
-    "description": "Apprenez les langues avec YouTube, des podcasts et des articles. Flashcards IA avec répétition espacée FSRS et un coach IA qui parle français."
+    "title": "Zenzu — Apprends les langues avec YouTube, des podcasts et des livres",
+    "description": "Apprends les langues avec YouTube, des podcasts et des articles. Flashcards IA avec répétition espacée FSRS et un coach IA qui parle français."
   },
   "nav": {
     "features": "Fonctionnalités",
@@ -11,11 +11,11 @@
     "getStarted": "Commencer"
   },
   "hero": {
-    "badge": "Apprentissage des langues par IA",
-    "headline1": "Apprenez des langues avec",
-    "headlineHighlight": "du vrai contenu",
-    "headline2": "que vous aimez",
-    "subheadline": "Importez des vidéos YouTube, des podcasts et des articles. Sélectionnez un mot ou une phrase pour l'enregistrer comme carte. Discutez avec Lisa — votre coach linguistique IA — dans votre propre langue. Votre apprentissage, vos données — ouverts à vos propres agents IA via MCP.",
+    "badge": "Colle un lien YouTube — tes cartes sont prêtes",
+    "headline1": "Apprends une langue ",
+    "headlineHighlight": "sereinement",
+    "headline2": ", chaque jour",
+    "subheadline": "Des cartes tirées des vidéos, podcasts et livres que tu aimes.",
     "cta": "Commencer à apprendre",
     "ctaSecondary": "Voir comment ça marche",
     "appStoreBadge": "Maintenant disponible sur iOS",
@@ -25,30 +25,30 @@
   },
   "screens": {
     "title": "Un aperçu",
-    "subtitle": "Huit écrans de l’app iPhone — faites défiler.",
+    "subtitle": "Huit écrans de l’app iPhone — fais défiler.",
     "label": "Captures d’écran de l’app",
     "prev": "Écrans précédents",
     "next": "Écrans suivants",
     "items": {
       "home": {
-        "title": "Votre journée",
-        "desc": "Les cartes à réviser, l’actualité du jour et votre prochaine leçon sur un seul écran."
+        "title": "Ta journée",
+        "desc": "Les cartes à réviser, l’actualité du jour et ta prochaine leçon sur un seul écran."
       },
       "review": {
         "title": "Révision",
-        "desc": "Une carte à la fois, avec une phrase d’exemple. Indiquez si vous la connaissiez bien, et FSRS fixe la prochaine révision."
+        "desc": "Une carte à la fois, avec une phrase d’exemple. Indique si tu la connaissais bien, et FSRS fixe la prochaine révision."
       },
       "lisa": {
-        "title": "Lisa, votre coach",
-        "desc": "Planifiez la journée, travaillez les mots difficiles ou posez une question de grammaire — dans votre langue."
+        "title": "Lisa, ton coach",
+        "desc": "Planifie ta journée, travaille les mots difficiles ou pose une question de grammaire — dans ta langue."
       },
       "videos": {
         "title": "Vidéos YouTube",
-        "desc": "Regardez avec la transcription en direct. Réécoutez une phrase ou ralentissez-la."
+        "desc": "Regarde avec la transcription en direct. Réécoute une phrase ou ralentis-la."
       },
       "books": {
         "title": "Livres",
-        "desc": "Des histoires adaptées à votre niveau, par genre, et des classiques quand vous êtes prêt."
+        "desc": "Des histoires adaptées à ton niveau, par genre, et des classiques quand tu es prêt."
       },
       "news": {
         "title": "Actualité du jour",
@@ -56,7 +56,7 @@
       },
       "courses": {
         "title": "Cours IA",
-        "desc": "De A1 à C1, leçon après leçon. Un marque-page garde votre place."
+        "desc": "De A1 à C1, leçon après leçon. Un marque-page garde ta place."
       },
       "decks": {
         "title": "Paquets",
@@ -67,61 +67,61 @@
   "name": {
     "kicker": "Le nom",
     "title": "D'un esprit calme naît une nouvelle langue.",
-    "body": "Zenzu naît du zen — le calme, la présence, le silence intérieur. La maîtrise d'une langue ne vient pas de séries frénétiques, mais d'un esprit posé et sans hâte. Parler une autre langue devrait ressembler à entrer dans une forêt : vous respirez, vous ralentissez, et chaque mot prend racine comme un arbre dans votre bosquet."
+    "body": "Zenzu naît du zen — le calme, la présence, le silence intérieur. La maîtrise d'une langue ne vient pas de séries frénétiques, mais d'un esprit posé et sans hâte. Parler une autre langue devrait ressembler à entrer dans une forêt : tu respires, tu ralentis, et chaque mot prend racine comme un arbre dans ton bosquet."
   },
   "features": {
-    "title": "Tout ce dont vous avez besoin pour apprendre",
-    "subtitle": "Une seule application pour tous vos contenus d'apprentissage. Importez ce que vous aimez, apprenez ce qui compte.",
+    "title": "Tout ce dont tu as besoin pour apprendre",
+    "subtitle": "Une seule application pour tous tes contenus d'apprentissage. Importe ce que tu aimes, apprends ce qui compte.",
     "lisa": {
-      "title": "Lisa — votre coach IA",
-      "desc": "Demandez à Lisa un plan d'étude, des explications de mots ou des révisions quotidiennes. Elle répond dans votre langue — anglais, ukrainien, allemand, espagnol, français ou portugais."
+      "title": "Lisa — ton coach IA",
+      "desc": "Demande à Lisa un plan d'étude, des explications de mots ou des révisions quotidiennes. Elle répond dans ta langue — anglais, ukrainien, allemand, espagnol, français ou portugais."
     },
     "youtube": {
       "title": "Vidéos YouTube",
-      "desc": "Regardez avec une transcription en direct. Touchez un mot ou sélectionnez une phrase — Zenzu l'enregistre comme carte avec le contexte complet de la phrase et la prononciation native."
+      "desc": "Regarde avec une transcription en direct. Touche un mot ou sélectionne une phrase — Zenzu l'enregistre comme carte avec le contexte complet de la phrase et la prononciation native."
     },
     "podcasts": {
       "title": "Podcasts",
-      "desc": "Épisodes transcrits par IA que vous pouvez lire en écoutant. Sélectionnez n'importe quelle phrase pour l'enregistrer comme carte avec la prononciation de chaque mot."
+      "desc": "Épisodes transcrits par IA que tu peux lire en écoutant. Sélectionne n'importe quelle phrase pour l'enregistrer comme carte avec la prononciation de chaque mot."
     },
     "starterDecks": {
       "title": "Paquets de démarrage",
-      "desc": "18 paquets sélectionnés à la main, de A1 à C1 — essentiels du quotidien, business, académique, sciences, expressions idiomatiques et plus encore. Les noms des paquets s'adaptent à votre langue d'interface."
+      "desc": "18 paquets sélectionnés à la main, de A1 à C1 — essentiels du quotidien, business, académique, sciences, expressions idiomatiques et plus encore. Les noms des paquets s'adaptent à ta langue d'interface."
     },
     "interface": {
       "title": "Interface en 6 langues",
-      "desc": "Utilisez l'app en anglais, ukrainien, allemand, espagnol, français ou portugais. Apprenez depuis votre langue maternelle, pas à travers l'anglais."
+      "desc": "Utilise l'app en anglais, ukrainien, allemand, espagnol, français ou portugais. Apprends depuis ta langue maternelle, pas à travers l'anglais."
     },
     "courses": {
       "title": "Cours par IA",
-      "desc": "Des cours personnalisés de grammaire et de vocabulaire pour l'anglais, l'allemand, le français et l'espagnol — A1 à C1. Les exercices s'adaptent à votre niveau."
+      "desc": "Des cours personnalisés de grammaire et de vocabulaire pour l'anglais, l'allemand, le français et l'espagnol — A1 à C1. Les exercices s'adaptent à ton niveau."
     },
     "srs": {
-      "title": "Répétition Espacée FSRS-5",
-      "desc": "Un algorithme scientifique planifie les révisions au moment optimal. Mémorisez les mots pour toujours."
+      "title": "Répétition Espacée FSRS-6",
+      "desc": "Un algorithme scientifique planifie les révisions au moment optimal. Mémorise les mots pour toujours."
     },
     "tts": {
       "title": "Prononciation Native",
-      "desc": "Synthèse vocale cloud pour chaque mot et phrase. Écoutez la bonne prononciation dès le premier jour."
+      "desc": "Synthèse vocale cloud pour chaque mot et phrase. Écoute la bonne prononciation dès le premier jour."
     },
     "import": {
-      "title": "Importez de N'importe Où",
-      "desc": "Textes, photos, articles — collez ou photographiez n'importe quoi. L'IA extrait le vocabulaire adapté à votre niveau."
+      "title": "Importe de N'importe Où",
+      "desc": "Textes, photos, articles — colle ou photographie n'importe quoi. L'IA extrait le vocabulaire adapté à ton niveau."
     }
   },
   "forWhom": {
     "title": "Pour ceux qui prennent les langues au sérieux",
     "subtitle": "Zenzu est un outil sérieux, pas un jouet — pas de mascottes mignonnes, pas de jeu à gagner, pas d'animations sans fin. Il est fait pour ceux qui veulent posséder leur progression et leurs données. Apprendre une langue est l'une des choses les plus exigeantes et les plus gratifiantes qui soient. Zenzu est conçu exactement pour cela.",
-    "forLabel": "Zenzu est pour vous si…",
-    "for1": "Vous croyez que la vraie maîtrise vient du contact avec du contenu authentique",
-    "for2": "Vous vous engagez à des révisions quotidiennes, même les jours difficiles",
-    "for3": "Vous avez des objectifs ambitieux : lire un roman, travailler ou vivre dans une autre langue",
-    "for4": "Vous voulez des outils qui respectent votre mémoire, pas seulement votre temps d'écran",
-    "for5": "Vous voulez que vos mots, vos cartes et votre progression restent les vôtres — et accessibles à vos propres agents IA via MCP",
-    "notForLabel": "Ce n'est pas pour vous si…",
-    "notFor1": "Vous cherchez un jeu avec des séries et des trophées virtuels",
-    "notFor2": "Vous attendez de parler couramment après quelques sessions décontractées",
-    "notFor3": "Vous avez besoin de gamification pour rester motivé"
+    "forLabel": "Zenzu est pour toi si…",
+    "for1": "Tu crois que la vraie maîtrise vient du contact avec du contenu authentique",
+    "for2": "Tu t'engages à des révisions quotidiennes, même les jours difficiles",
+    "for3": "Tu as des objectifs ambitieux : lire un roman, travailler ou vivre dans une autre langue",
+    "for4": "Tu veux des outils qui respectent ta mémoire, pas seulement ton temps d'écran",
+    "for5": "Tu veux que tes mots, tes cartes et ta progression restent les tiens — et accessibles à tes propres agents IA via MCP",
+    "notForLabel": "Ce n'est pas pour toi si…",
+    "notFor1": "Tu cherches un jeu avec des séries et des trophées virtuels",
+    "notFor2": "Tu t'attends à parler couramment après quelques sessions décontractées",
+    "notFor3": "Tu as besoin de gamification pour rester motivé"
   },
   "quotes": {
     "title": "Les mots de ceux qui savaient",
@@ -129,23 +129,23 @@
     "quote1Author": "Charlemagne",
     "quote2Text": "Les limites de mon langage signifient les limites de mon monde.",
     "quote2Author": "Ludwig Wittgenstein",
-    "quote3Text": "Une langue vous place dans un couloir pour la vie. Deux langues ouvrent toutes les portes sur le chemin.",
+    "quote3Text": "Une langue te place dans un couloir pour la vie. Deux langues ouvrent toutes les portes sur le chemin.",
     "quote3Author": "Frank Smith"
   },
   "howItWorks": {
     "title": "Trois étapes vers la fluidité",
     "subtitle": "Contenu réel. Répétition scientifique. Un vocabulaire qui reste vraiment.",
     "step1": {
-      "title": "Importez le contenu que vous aimez",
-      "desc": "Collez un lien YouTube, cherchez un podcast ou prenez un texte en photo. Zenzu s'occupe du reste."
+      "title": "Importe le contenu que tu aimes",
+      "desc": "Colle un lien YouTube, cherche un podcast ou prends un texte en photo. Zenzu s'occupe du reste."
     },
     "step2": {
-      "title": "Touchez des mots ou sélectionnez des phrases",
+      "title": "Touche des mots ou sélectionne des phrases",
       "desc": "Traductions instantanées. Lisa montre le contexte, les exemples et la prononciation. Les phrases sont enregistrées avec lacune cloze automatique."
     },
     "step3": {
-      "title": "Révisez avec la répétition espacée",
-      "desc": "L'algorithme FSRS-5 planifie les révisions au moment optimal — chaque minute investie compte."
+      "title": "Révise avec la répétition espacée",
+      "desc": "L'algorithme FSRS-6 planifie les révisions au moment optimal — chaque minute investie compte."
     }
   },
   "android": {
@@ -153,35 +153,35 @@
     "title": "Zenzu pour Android — accès anticipé",
     "lead": "L’app Android est en test ouvert sur Google Play. Tout le monde peut participer, en trois étapes.",
     "group": {
-      "title": "Rejoignez le groupe de testeurs",
+      "title": "Rejoins le groupe de testeurs",
       "cta": "Rejoindre le groupe"
     },
     "tester": {
-      "title": "Inscrivez-vous comme testeur",
+      "title": "Inscris-toi comme testeur",
       "cta": "Devenir testeur"
     },
     "install": {
-      "title": "Installez l’app depuis Google Play",
+      "title": "Installe l’app depuis Google Play",
       "cta": "Installer"
     },
-    "note": "Utilisez le même compte Google pour les trois étapes. Le lien d’installation ne fonctionne qu’après l’étape 2.",
+    "note": "Utilise le même compte Google pour les trois étapes. Le lien d’installation ne fonctionne qu’après l’étape 2.",
     "heroLink": "Android (bêta)"
   },
   "mcp": {
     "kicker": "Disponible",
-    "title": "Vos données, où que vous travailliez.",
-    "body": "Connectez Zenzu à vos propres agents IA via MCP — Claude, Cursor ou tout assistant compatible MCP accède à vos paquets, cartes et progression depuis votre ordinateur, vos outils préférés, partout. Faites entrer de nouveaux contenus, emportez vos données. Elles restent vôtres et vous suivent partout.",
+    "title": "Tes données, où que tu travailles.",
+    "body": "Connecte Zenzu à tes propres agents IA via MCP — Claude, Cursor ou tout assistant compatible MCP accède à tes paquets, cartes et progression depuis ton ordinateur, tes outils préférés, partout. Fais entrer de nouveaux contenus, emporte tes données. Elles restent les tiennes et te suivent partout.",
     "badge": "Dans l'app : Réglages → Agents IA → Accès des agents"
   },
   "cta": {
-    "title": "Commencez à apprendre avec du contenu que vous aimez",
-    "subtitle": "Importez votre première vidéo ou podcast en quelques secondes.",
+    "title": "Commence à apprendre avec du contenu que tu aimes",
+    "subtitle": "Importe ta première vidéo ou ton premier podcast en quelques secondes.",
     "button": "Commencer",
-    "writeLead": "Une question, une idée ou un bug ? Écrivez à",
+    "writeLead": "Une question, une idée ou un bug ? Écris à",
     "writeTail": "— nous lisons chaque message."
   },
   "footer": {
-    "brand": "Apprenez des langues à partir de contenus réels que vous aimez. YouTube, podcasts, articles — transformés en flashcards grâce à l'IA.",
+    "brand": "Apprends des langues à partir de contenus réels que tu aimes. YouTube, podcasts, articles — transformés en flashcards grâce à l'IA.",
     "product": "Produit",
     "legal": "Légal",
     "openApp": "Ouvrir l'application",
@@ -190,7 +190,7 @@
     "contact": "Contact",
     "rights": "Tous droits réservés.",
     "compare": "Comparatifs",
-    "writeUs": "Écrivez-nous :"
+    "writeUs": "Écris-nous :"
   },
   "blog": {
     "title": "Blog d'apprentissage des langues",
@@ -198,22 +198,22 @@
     "readMore": "Lire la suite",
     "backToBlog": "Retour au blog",
     "readIn": "Lire cet article en",
-    "noArticles": "Pas encore d'articles. Revenez bientôt !",
+    "noArticles": "Pas encore d'articles. Reviens bientôt !",
     "minRead": "{n} min de lecture",
     "moreArticles": "À lire aussi",
     "latest": "Nouveau"
   },
   "news": {
     "title": "Actualités du jour",
-    "subtitle": "Lisez des résumés d'actualités réelles dans la langue que vous apprenez — appuyez sur une phrase pour la traduire.",
-    "empty": "Pas encore d'actualités — revenez bientôt"
+    "subtitle": "Lis des résumés d'actualités réelles dans la langue que tu apprends — touche une phrase pour la traduire.",
+    "empty": "Pas encore d'actualités — reviens bientôt"
   },
   "faq": {
     "title": "Questions fréquentes",
     "items": [
       {
         "q": "Qu'est-ce que Zenzu ?",
-        "a": "Zenzu est une application pour apprendre les langues à partir de vrais contenus. Vous importez des vidéos YouTube, des podcasts, des articles ou des photos de texte, touchez un mot ou une expression pour l'enregistrer en flashcard avec sa phrase d'origine et la prononciation native, puis vous révisez avec la répétition espacée FSRS-5. Lisa, le coach IA intégré, explique les mots et organise votre apprentissage dans votre langue."
+        "a": "Zenzu est une application pour apprendre les langues à partir de vrais contenus. Tu importes des vidéos YouTube, des podcasts, des articles ou des photos de texte, tu touches un mot ou une expression pour l'enregistrer en flashcard avec sa phrase d'origine et la prononciation native, puis tu révises avec la répétition espacée FSRS-6. Lisa, le coach IA intégré, explique les mots et organise ton apprentissage dans ta langue."
       },
       {
         "q": "Quelles langues puis-je apprendre avec Zenzu ?",
@@ -225,31 +225,31 @@
       },
       {
         "q": "Existe-t-il une version Android ?",
-        "a": "Oui — l’app Android est en test ouvert sur Google Play, et tout le monde peut participer. Rejoignez le groupe de testeurs, inscrivez-vous comme testeur, puis installez Zenzu depuis Google Play, toujours avec le même compte Google. Les liens se trouvent plus haut sur cette page, dans la section Android."
+        "a": "Oui — l’app Android est en test ouvert sur Google Play, et tout le monde peut participer. Rejoins le groupe de testeurs, inscris-toi comme testeur, puis installe Zenzu depuis Google Play, toujours avec le même compte Google. Les liens se trouvent plus haut sur cette page, dans la section Android."
       },
       {
         "q": "En quoi Zenzu est-il différent d'Anki ?",
-        "a": "Les deux utilisent la répétition espacée FSRS, mais dans Anki vous créez vos cartes vous-même. Zenzu les crée à partir des contenus que vous regardez, écoutez ou lisez déjà : chaque carte garde sa phrase d'origine et un audio natif, pour toujours apprendre le vocabulaire en contexte."
+        "a": "Les deux utilisent la répétition espacée FSRS, mais dans Anki tu crées tes cartes toi-même. Zenzu les crée à partir des contenus que tu regardes, écoutes ou lis déjà : chaque carte garde sa phrase d'origine et un audio natif, pour toujours apprendre le vocabulaire en contexte."
       },
       {
         "q": "Faut-il parler anglais pour utiliser Zenzu ?",
-        "a": "Non. Vous pouvez utiliser Zenzu entièrement en français : explications, traductions et conseils du coach arrivent dans la langue dans laquelle vous pensez."
+        "a": "Non. Tu peux utiliser Zenzu entièrement en français : explications, traductions et conseils du coach arrivent dans la langue dans laquelle tu penses."
       },
       {
         "q": "Quel algorithme de répétition espacée Zenzu utilise-t-il ?",
-        "a": "FSRS-5, un algorithme moderne et open source entraîné sur de grandes quantités de révisions réelles. Il prédit quand vous êtes sur le point d'oublier une carte et programme la révision juste avant."
+        "a": "FSRS-6, un algorithme moderne et open source entraîné sur de grandes quantités de révisions réelles. Il prédit quand tu es sur le point d'oublier une carte et programme la révision juste avant."
       }
     ]
   },
   "contact": {
     "title": "Contact",
-    "description": "Écrivez à l'équipe Zenzu : questions, avis, bugs et idées. Nous lisons chaque message.",
+    "description": "Écris à l'équipe Zenzu : questions, avis, bugs et idées. Nous lisons chaque message.",
     "subject": "Avis sur Zenzu",
-    "intro": "Nous serons ravis de vous lire. Une question, un avis, un bug ou une proposition de partenariat — écrivez-nous et nous vous répondrons au plus vite.",
+    "intro": "Nous serons ravis de te lire. Une question, un avis, un bug ou une proposition de partenariat — écris-nous et nous te répondrons au plus vite.",
     "generalTitle": "Questions générales",
     "bugsTitle": "Signaler un bug",
-    "bugsBody": "Vous avez trouvé un bug ? Décrivez ce qui s'est passé, votre appareil ou navigateur, et joignez des captures d'écran si possible.",
+    "bugsBody": "Tu as trouvé un bug ? Décris ce qui s'est passé, ton appareil ou navigateur, et joins des captures d'écran si possible.",
     "ideasTitle": "Suggestions de fonctionnalités",
-    "ideasBody": "Une idée de fonctionnalité ? Nous cherchons toujours à nous améliorer. Envoyez-nous vos suggestions."
+    "ideasBody": "Une idée de fonctionnalité ? Nous cherchons toujours à nous améliorer. Envoie-nous tes suggestions."
   }
 }

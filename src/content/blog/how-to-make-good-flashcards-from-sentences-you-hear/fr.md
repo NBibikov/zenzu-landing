@@ -68,4 +68,4 @@ Réécoutez l'extrait deux ou trois fois avant d'abandonner et de chercher une t
 
 ## Comment faire cela dans Zenzu
 
-Dans Zenzu, importez le podcast ou l'extrait YouTube que vous écoutiez — sa transcription interactive vous permet de toucher directement la phrase exacte que vous avez entendue. Cette sélection devient automatiquement une flashcard avec la phrase source et l'audio natif attachés, programmée avec FSRS-5. Demandez à Lisa, la coach IA, d'expliquer le fragment ou de le transformer en texte à trous dans votre propre langue.
+Dans Zenzu, importez le podcast ou l'extrait YouTube que vous écoutiez — sa transcription interactive vous permet de toucher directement la phrase exacte que vous avez entendue. Cette sélection devient automatiquement une flashcard avec la phrase source et l'audio natif attachés, programmée avec FSRS-6. Demandez à Lisa, la coach IA, d'expliquer le fragment ou de le transformer en texte à trous dans votre propre langue.

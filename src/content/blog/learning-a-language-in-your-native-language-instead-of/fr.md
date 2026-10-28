@@ -53,4 +53,4 @@ La plupart du temps, sauf lorsque l'anglais est plus étroitement lié à votre 
 
 ## Étudier de cette manière avec Zenzu
 
-L'interface de Zenzu fonctionne en anglais, ukrainien, allemand, français, espagnol et portugais, ce qui vous permet d'apprendre l'allemand, le français, l'espagnol ou l'anglais avec des explications dans votre propre langue. Importez une vidéo YouTube, un podcast, un article ou une photo de texte, appuyez sur n'importe quel mot, et Lisa — le coach IA — vous l'explique et planifie vos révisions dans votre langue maternelle, programmées avec FSRS-5.
+L'interface de Zenzu fonctionne en anglais, ukrainien, allemand, français, espagnol et portugais, ce qui vous permet d'apprendre l'allemand, le français, l'espagnol ou l'anglais avec des explications dans votre propre langue. Importez une vidéo YouTube, un podcast, un article ou une photo de texte, appuyez sur n'importe quel mot, et Lisa — le coach IA — vous l'explique et planifie vos révisions dans votre langue maternelle, programmées avec FSRS-6.

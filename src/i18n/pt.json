@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Zenzu — Aprenda idiomas com conteúdo real",
+    "title": "Zenzu — Aprenda idiomas com YouTube, podcasts e livros",
     "description": "Aprenda idiomas com YouTube, podcasts e artigos. Flashcards com IA, repetição espaçada FSRS e um coach de idiomas com IA que fala português."
   },
   "nav": {
@@ -11,11 +11,11 @@
     "getStarted": "Começar"
   },
   "hero": {
-    "badge": "Aprendizado de idiomas com IA",
-    "headline1": "Aprenda idiomas com",
-    "headlineHighlight": "conteúdo real",
-    "headline2": "que você ama",
-    "subheadline": "Importe vídeos do YouTube, podcasts e artigos. Selecione qualquer palavra ou frase para salvar como cartão. Converse com a Lisa — sua coach de idiomas com IA — no seu próprio idioma. Seu aprendizado, seus dados — abertos aos seus próprios agentes de IA via MCP.",
+    "badge": "Cole um link do YouTube — seus cartões estão prontos",
+    "headline1": "Aprenda um idioma ",
+    "headlineHighlight": "com calma",
+    "headline2": ", todos os dias",
+    "subheadline": "Cartões dos vídeos, podcasts e livros de que você gosta.",
     "cta": "Comece a aprender",
     "ctaSecondary": "Veja como funciona",
     "appStoreBadge": "Já disponível no iOS",
@@ -97,7 +97,7 @@
       "desc": "Lições personalizadas de gramática e vocabulário para inglês, alemão, francês e espanhol — A1 a C1. Os exercícios adaptam-se ao seu nível."
     },
     "srs": {
-      "title": "Repetição Espaçada FSRS-5",
+      "title": "Repetição Espaçada FSRS-6",
       "desc": "Algoritmo baseado em ciência agenda as revisões no momento ideal. Lembre-se das palavras para sempre."
     },
     "tts": {
@@ -145,7 +145,7 @@
     },
     "step3": {
       "title": "Revise com repetição espaçada",
-      "desc": "O algoritmo FSRS-5 programa as revisões no momento ideal — para que cada minuto investido conte."
+      "desc": "O algoritmo FSRS-6 programa as revisões no momento ideal — para que cada minuto investido conte."
     }
   },
   "android": {
@@ -213,7 +213,7 @@
     "items": [
       {
         "q": "O que é o Zenzu?",
-        "a": "O Zenzu é um app para aprender idiomas com conteúdo real. Você importa vídeos do YouTube, podcasts, artigos ou fotos de texto, toca em qualquer palavra ou frase para salvá-la como flashcard com a frase original e a pronúncia nativa, e revisa com repetição espaçada FSRS-5. A Lisa, coach de IA integrada, explica palavras e planeja seus estudos no seu idioma."
+        "a": "O Zenzu é um app para aprender idiomas com conteúdo real. Você importa vídeos do YouTube, podcasts, artigos ou fotos de texto, toca em qualquer palavra ou frase para salvá-la como flashcard com a frase original e a pronúncia nativa, e revisa com repetição espaçada FSRS-6. A Lisa, coach de IA integrada, explica palavras e planeja seus estudos no seu idioma."
       },
       {
         "q": "Quais idiomas posso aprender com o Zenzu?",
@@ -237,7 +237,7 @@
       },
       {
         "q": "Qual algoritmo de repetição espaçada o Zenzu usa?",
-        "a": "FSRS-5, um algoritmo moderno e de código aberto treinado com grandes volumes de revisões reais. Ele prevê quando você está prestes a esquecer cada cartão e agenda a revisão logo antes disso."
+        "a": "FSRS-6, um algoritmo moderno e de código aberto treinado com grandes volumes de revisões reais. Ele prevê quando você está prestes a esquecer cada cartão e agenda a revisão logo antes disso."
       }
     ]
   },

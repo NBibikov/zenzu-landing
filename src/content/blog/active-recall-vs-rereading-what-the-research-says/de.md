@@ -59,4 +59,4 @@ Es gibt keine feste Zahl, aber in der Regel braucht es 3–5 erfolgreiche, zeitl
 
 ## Dies in Zenzu üben
 
-Zenzu verwandelt echten Content – YouTube-Videos, Podcasts, Artikel oder ein Foto einer Buchseite – in Karteikarten, die aus genau dem Satz erstellt werden, dem du begegnet bist, inklusive muttersprachlicher Aussprache. Wiederholungen werden automatisch mit FSRS-5 geplant, sodass du statt erneut zu lesen jeden Satz genau dann abrufst, wenn du ihn gerade zu vergessen drohst. Lisa, der KI-Coach, kann dir ein Wort in deiner eigenen Sprache erklären, falls ein Abrufversuch fehlschlägt.
+Zenzu verwandelt echten Content – YouTube-Videos, Podcasts, Artikel oder ein Foto einer Buchseite – in Karteikarten, die aus genau dem Satz erstellt werden, dem du begegnet bist, inklusive muttersprachlicher Aussprache. Wiederholungen werden automatisch mit FSRS-6 geplant, sodass du statt erneut zu lesen jeden Satz genau dann abrufst, wenn du ihn gerade zu vergessen drohst. Lisa, der KI-Coach, kann dir ein Wort in deiner eigenen Sprache erklären, falls ein Abrufversuch fehlschlägt.

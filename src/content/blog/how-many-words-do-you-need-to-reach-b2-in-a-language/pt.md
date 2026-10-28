@@ -46,4 +46,4 @@ Elas medem coisas diferentes: famílias de palavras versus formas de palavras, l
 
 ## Aplicando isso no Zenzu
 
-O Zenzu transforma conteúdo real — vídeos do YouTube, podcasts, artigos ou fotos de texto — em cartões de memória automaticamente: selecione qualquer palavra ou frase e ela é salva com a frase de origem e a pronúncia nativa. O FSRS-5 agenda as revisões no intervalo de espaçamento que sua memória precisa, e a Lisa, sua treinadora de IA, explica palavras e planeja os estudos rumo ao seu próximo nível do CEFR no seu próprio idioma.
+O Zenzu transforma conteúdo real — vídeos do YouTube, podcasts, artigos ou fotos de texto — em cartões de memória automaticamente: selecione qualquer palavra ou frase e ela é salva com a frase de origem e a pronúncia nativa. O FSRS-6 agenda as revisões no intervalo de espaçamento que sua memória precisa, e a Lisa, sua treinadora de IA, explica palavras e planeja os estudos rumo ao seu próximo nível do CEFR no seu próprio idioma.

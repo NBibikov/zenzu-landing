@@ -38,7 +38,7 @@ Spanisch und Französisch teilen mit dem bestehenden Wortschatz englischsprachig
 ## Die drei Hebel, die deinen Zeitplan tatsächlich verkürzen
 
 1. **Menge an verständlichem Input.** Stunden, die mit Lese- und Hörmaterial verbracht werden, das man größtenteils (90 %+) versteht, bringen schneller Fortschritt als reine Grammatikübungen.
-2. **Spaced Repetition.** Hermann Ebbinghaus kartierte 1885 die Vergessenskurve: Ohne Wiederholung verliert man den Großteil neuer Vokabeln innerhalb weniger Tage. Algorithmisches Spacing (moderne Systeme nutzen FSRS-5) verkürzt die Lernzeit, indem Wörter kurz vor dem Vergessen wiederholt werden – nicht nach einem starren Tagesplan.
+2. **Spaced Repetition.** Hermann Ebbinghaus kartierte 1885 die Vergessenskurve: Ohne Wiederholung verliert man den Großteil neuer Vokabeln innerhalb weniger Tage. Algorithmisches Spacing (moderne Systeme nutzen FSRS-6) verkürzt die Lernzeit, indem Wörter kurz vor dem Vergessen wiederholt werden – nicht nach einem starren Tagesplan.
 3. **Produktion unter leichtem Druck.** Tägliches Schreiben kurzer Zusammenfassungen oder lautes Sprechen, selbst nur 5 Minuten lang, erzwingt aktives Abrufen – laut Forschung zum Vokabelerwerb der stärkste Einzelfaktor für dauerhaftes Behalten.
 
 ## Ein realistischer 12-Monats-Plan Richtung B2
@@ -59,4 +59,4 @@ Gesamt: etwa 450–550 Stunden für Französisch/Spanisch (nahe an B2), beziehun
 
 ## Lerne B2-Stunden effizient mit Zenzu
 
-Zenzu verwandelt die oben genannten Stunden in tägliche Praxis: Importiere ein YouTube-Video, einen Podcast oder einen Artikel, tippe auf ein beliebiges Wort, um eine Karteikarte mit dem Originalsatz und muttersprachlicher Aussprache zu erstellen, und lass FSRS-5 die Wiederholungen automatisch planen. Bitte Lisa, deine KI-Coachin, dir Grammatik zu erklären oder deine Woche in deiner eigenen Sprache zu planen – für Englisch, Deutsch, Französisch oder Spanisch, jeweils mit strukturierten Kursen von A1 bis C1.
+Zenzu verwandelt die oben genannten Stunden in tägliche Praxis: Importiere ein YouTube-Video, einen Podcast oder einen Artikel, tippe auf ein beliebiges Wort, um eine Karteikarte mit dem Originalsatz und muttersprachlicher Aussprache zu erstellen, und lass FSRS-6 die Wiederholungen automatisch planen. Bitte Lisa, deine KI-Coachin, dir Grammatik zu erklären oder deine Woche in deiner eigenen Sprache zu planen – für Englisch, Deutsch, Französisch oder Spanisch, jeweils mit strukturierten Kursen von A1 bis C1.

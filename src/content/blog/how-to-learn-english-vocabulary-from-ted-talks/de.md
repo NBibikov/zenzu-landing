@@ -52,7 +52,7 @@ Ein praktischer Zeitplan für aus TED-Talks gesammelte Wörter:
 - **Tag 5-7:** dritte Wiederholung
 - **Tag 14-16:** vierte Wiederholung
 
-Nach der vierten Wiederholung wechseln die meisten Wörter von „erkennen“ zu „auf Abruf erinnern“. Algorithmusbasierte Systeme wie FSRS-5 passen diese Intervalle automatisch daran an, wie leicht Sie sich an jedes einzelne Wort erinnern – effizienter als ein fester Zeitplan.
+Nach der vierten Wiederholung wechseln die meisten Wörter von „erkennen“ zu „auf Abruf erinnern“. Algorithmusbasierte Systeme wie FSRS-6 passen diese Intervalle automatisch daran an, wie leicht Sie sich an jedes einzelne Wort erinnern – effizienter als ein fester Zeitplan.
 
 ## Häufige Fehler, die Sie vermeiden sollten
 
@@ -68,4 +68,4 @@ Nach der vierten Wiederholung wechseln die meisten Wörter von „erkennen“ zu
 
 ## TED-Vokabular mit Zenzu lernen
 
-Importieren Sie in Zenzu jeden TED-Talk über seinen YouTube-Link und erhalten Sie ein interaktives Transkript. Tippen Sie während Durchgang 2 auf ein Wort oder eine Phrase, um daraus eine Karteikarte zu erstellen, die den Originalsatz und die native Aussprache behält. Wiederholungen werden automatisch mit FSRS-5 geplant, und Lisa, der KI-Coach, erklärt knifflige Wörter in Ihrer eigenen Sprache.
+Importieren Sie in Zenzu jeden TED-Talk über seinen YouTube-Link und erhalten Sie ein interaktives Transkript. Tippen Sie während Durchgang 2 auf ein Wort oder eine Phrase, um daraus eine Karteikarte zu erstellen, die den Originalsatz und die native Aussprache behält. Wiederholungen werden automatisch mit FSRS-6 geplant, und Lisa, der KI-Coach, erklärt knifflige Wörter in Ihrer eigenen Sprache.

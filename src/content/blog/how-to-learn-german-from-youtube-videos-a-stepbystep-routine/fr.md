@@ -43,7 +43,7 @@ Chaque carte doit contenir trois éléments : le mot ou l'expression cible, la p
 
 ## Étape 5 : réviser avec la répétition espacée, pas en relisant
 
-C'est l'étape que la plupart des apprenants autodidactes sautent, et c'est pourtant celle qui produit réellement la mémorisation durable. La répétition espacée programme les révisions juste avant que vous ne soyez sur le point d'oublier une carte — trop tôt, c'est une perte de temps ; trop tard, il faut tout réapprendre depuis le début. Les algorithmes de planification modernes comme FSRS-5 modélisent votre propre courbe d'oubli pour chaque carte individuellement, plutôt que d'appliquer une échelle d'intervalles fixes, ce qui réduit le nombre de révisions inutiles sur des cartes déjà bien maîtrisées.
+C'est l'étape que la plupart des apprenants autodidactes sautent, et c'est pourtant celle qui produit réellement la mémorisation durable. La répétition espacée programme les révisions juste avant que vous ne soyez sur le point d'oublier une carte — trop tôt, c'est une perte de temps ; trop tard, il faut tout réapprendre depuis le début. Les algorithmes de planification modernes comme FSRS-6 modélisent votre propre courbe d'oubli pour chaque carte individuellement, plutôt que d'appliquer une échelle d'intervalles fixes, ce qui réduit le nombre de révisions inutiles sur des cartes déjà bien maîtrisées.
 
 Faites vos révisions chaque jour, même les jours où vous ne regardez pas de nouvelle vidéo. 10 minutes de révision permettent de retenir bien plus de vocabulaire que 60 minutes de visionnage passif.
 
@@ -69,4 +69,4 @@ Toutes les 2 à 3 semaines, revisionnez une vidéo de votre première semaine. V
 
 ## Faire tout cela dans Zenzu
 
-Importez une vidéo YouTube dans Zenzu : sa transcription interactive vous permet de toucher n'importe quel mot ou expression pour le transformer en carte mémoire — avec la phrase source et la prononciation native incluses, exactement comme décrit à l'étape 4. Les révisions sont ensuite planifiées automatiquement grâce à FSRS-5, et Lisa, la coach IA, peut vous expliquer les expressions idiomatiques difficiles dans votre propre langue et vous aider à choisir les prochaines vidéos à aborder.
+Importez une vidéo YouTube dans Zenzu : sa transcription interactive vous permet de toucher n'importe quel mot ou expression pour le transformer en carte mémoire — avec la phrase source et la prononciation native incluses, exactement comme décrit à l'étape 4. Les révisions sont ensuite planifiées automatiquement grâce à FSRS-6, et Lisa, la coach IA, peut vous expliquer les expressions idiomatiques difficiles dans votre propre langue et vous aider à choisir les prochaines vidéos à aborder.

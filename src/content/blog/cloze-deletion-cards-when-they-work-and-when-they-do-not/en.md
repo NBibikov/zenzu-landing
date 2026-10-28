@@ -62,4 +62,4 @@ Yes — often widening the sentence or adding one more contextual clause turns a
 
 ## Doing This in Zenzu
 
-Zenzu builds cloze cards from real context automatically: import a YouTube video, podcast, article, or photo of text, then select any word or phrase — it becomes a flashcard with its original source sentence and native pronunciation. Lisa, the AI coach, explains in your own language why a word fits that specific context, and FSRS-5 schedules reviews so constrained, well-anchored cloze cards resurface at the right interval.
+Zenzu builds cloze cards from real context automatically: import a YouTube video, podcast, article, or photo of text, then select any word or phrase — it becomes a flashcard with its original source sentence and native pronunciation. Lisa, the AI coach, explains in your own language why a word fits that specific context, and FSRS-6 schedules reviews so constrained, well-anchored cloze cards resurface at the right interval.

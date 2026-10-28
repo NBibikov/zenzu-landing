@@ -38,7 +38,7 @@ L'espagnol et le français partagent des racines latines, des mots apparentés e
 ## Les trois leviers qui raccourcissent réellement votre calendrier
 
 1. **Le volume d'input compréhensible.** Les heures passées à lire et écouter du contenu que vous comprenez en grande partie (90 % ou plus) s'accumulent plus efficacement que les seuls exercices de grammaire.
-2. **La répétition espacée.** Hermann Ebbinghaus a cartographié la courbe de l'oubli en 1885 : sans révision, on perd la majorité du nouveau vocabulaire en quelques jours. L'espacement algorithmique (les systèmes modernes utilisent FSRS-5) réduit le temps de révision en révisant les mots juste avant qu'on ne les oublie, plutôt que selon un calendrier quotidien fixe.
+2. **La répétition espacée.** Hermann Ebbinghaus a cartographié la courbe de l'oubli en 1885 : sans révision, on perd la majorité du nouveau vocabulaire en quelques jours. L'espacement algorithmique (les systèmes modernes utilisent FSRS-6) réduit le temps de révision en révisant les mots juste avant qu'on ne les oublie, plutôt que selon un calendrier quotidien fixe.
 3. **La production sous légère pression.** Écrire de courts résumés ou parler à voix haute chaque jour, même pendant 5 minutes, force la récupération active — le facteur le plus fortement associé à la rétention dans la recherche sur l'acquisition du vocabulaire.
 
 ## Un plan réaliste sur 12 mois vers le B2
@@ -59,4 +59,4 @@ Total : environ 450 à 550 heures pour le français/espagnol (proche du B2), ou 
 
 ## Étudiez efficacement les heures nécessaires pour le B2 avec Zenzu
 
-Zenzu transforme les heures évoquées ci-dessus en pratique quotidienne : importez une vidéo YouTube, un podcast ou un article, touchez n'importe quel mot pour créer une carte mémoire avec sa phrase d'origine et sa prononciation native, et laissez FSRS-5 planifier automatiquement les révisions. Demandez à Lisa, le coach IA, de vous expliquer la grammaire ou de planifier votre semaine dans votre propre langue — en anglais, allemand, français ou espagnol, avec des cours structurés du A1 au C1 pour chacune.
+Zenzu transforme les heures évoquées ci-dessus en pratique quotidienne : importez une vidéo YouTube, un podcast ou un article, touchez n'importe quel mot pour créer une carte mémoire avec sa phrase d'origine et sa prononciation native, et laissez FSRS-6 planifier automatiquement les révisions. Demandez à Lisa, le coach IA, de vous expliquer la grammaire ou de planifier votre semaine dans votre propre langue — en anglais, allemand, français ou espagnol, avec des cours structurés du A1 au C1 pour chacune.

@@ -68,4 +68,4 @@ Ja – viele Creator (Français Authentique, InnerFrench) haben einen frühen, l
 
 ## Übe das in Zenzu
 
-Importiere ein beliebiges YouTube-Video in Zenzu und erhalte ein interaktives Transkript, das du Satz für Satz antippen kannst. Markiere unbekannte Wörter, um sie in Karteikarten mit dem Originalsatz und muttersprachlicher Aussprache umzuwandeln, und lass FSRS-5 deine Wiederholungen automatisch planen. Frag Lisa, die KI-Trainerin, ob ein Video zu deinem GER-Niveau passt, bevor du dich zum Anschauen entscheidest.
+Importiere ein beliebiges YouTube-Video in Zenzu und erhalte ein interaktives Transkript, das du Satz für Satz antippen kannst. Markiere unbekannte Wörter, um sie in Karteikarten mit dem Originalsatz und muttersprachlicher Aussprache umzuwandeln, und lass FSRS-6 deine Wiederholungen automatisch planen. Frag Lisa, die KI-Trainerin, ob ein Video zu deinem GER-Niveau passt, bevor du dich zum Anschauen entscheidest.
