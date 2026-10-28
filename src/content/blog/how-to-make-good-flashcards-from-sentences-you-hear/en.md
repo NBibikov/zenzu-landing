@@ -68,4 +68,4 @@ Replay the clip two or three times before giving up and reaching for a transcrip
 
 ## Doing This in Zenzu
 
-In Zenzu, import the podcast or YouTube clip you were listening to — its interactive transcript lets you tap the exact phrase you heard. That selection becomes a flashcard with the source sentence and native audio attached automatically, scheduled with FSRS-5. Ask Lisa, the AI coach, to explain the chunk or turn it into a cloze in your own language.
+In Zenzu, import the podcast or YouTube clip you were listening to — its interactive transcript lets you tap the exact phrase you heard. That selection becomes a flashcard with the source sentence and native audio attached automatically, scheduled with FSRS-6. Ask Lisa, the AI coach, to explain the chunk or turn it into a cloze in your own language.

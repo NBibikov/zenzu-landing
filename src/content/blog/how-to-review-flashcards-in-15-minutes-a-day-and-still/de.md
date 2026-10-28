@@ -13,7 +13,7 @@ Hermann Ebbinghaus beschrieb die „Vergessenskurve" bereits 1885: Ohne Wiederho
 
 Das ist die Grundlage von Spaced Repetition. Eine Meta-Analyse von Cepeda, Pashler, Vul, Wixted und Rohrer aus dem Jahr 2006 (die über 300 Studien auswertete) kam zu dem Ergebnis, dass über mehrere Tage verteilte Wiederholungen ein deutlich besseres Langzeitgedächtnis erzeugen als dieselbe Menge Stoff in einer einzigen Sitzung durchzuarbeiten. Du brauchst nicht mehr Wiederholungen – du musst sie nur richtig verteilen.
 
-Moderne Scheduler wie FSRS-5 (Free Spaced Repetition Scheduler) gehen noch weiter als ältere Systeme mit festen Intervallen. Statt eines starren „alle 3 Tage wiederholen" modelliert FSRS die individuelle Schwierigkeit jeder Karte und deine persönliche Vergessenskurve und plant Wiederholungen genau zu dem Zeitpunkt, an dem du kurz davor stehst, etwas zu vergessen. Diese Präzision macht aus 15 Minuten eine produktive Investition statt verlorene Zeit.
+Moderne Scheduler wie FSRS-6 (Free Spaced Repetition Scheduler) gehen noch weiter als ältere Systeme mit festen Intervallen. Statt eines starren „alle 3 Tage wiederholen" modelliert FSRS die individuelle Schwierigkeit jeder Karte und deine persönliche Vergessenskurve und plant Wiederholungen genau zu dem Zeitpunkt, an dem du kurz davor stehst, etwas zu vergessen. Diese Präzision macht aus 15 Minuten eine produktive Investition statt verlorene Zeit.
 
 ## Die 15-Minuten-Routine, Minute für Minute
 
@@ -57,4 +57,4 @@ Ja – Beständigkeit schlägt Intensität. Tägliche 15-Minuten-Sitzungen über
 
 ## So geht's in Zenzu
 
-In Zenzu trägt jede Karteikarte den ursprünglichen Ausgangssatz und die muttersprachliche Aussprache, sodass das Abrufen im Kontext stattfindet, nicht isoliert. Wiederholungen werden automatisch mit FSRS-5 geplant – die App entscheidet also genau, welche Karten du heute brauchst. Lisa, der KI-Coach, kann ein schwieriges Wort in deiner eigenen Sprache erklären und dir helfen, eine nachhaltige tägliche Sitzung zu planen – und das alles aus importierten YouTube-Videos, Podcasts, Artikeln oder Fotos von Texten.
+In Zenzu trägt jede Karteikarte den ursprünglichen Ausgangssatz und die muttersprachliche Aussprache, sodass das Abrufen im Kontext stattfindet, nicht isoliert. Wiederholungen werden automatisch mit FSRS-6 geplant – die App entscheidet also genau, welche Karten du heute brauchst. Lisa, der KI-Coach, kann ein schwieriges Wort in deiner eigenen Sprache erklären und dir helfen, eine nachhaltige tägliche Sitzung zu planen – und das alles aus importierten YouTube-Videos, Podcasts, Artikeln oder Fotos von Texten.

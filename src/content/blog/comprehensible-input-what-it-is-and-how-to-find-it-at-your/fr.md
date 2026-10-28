@@ -55,4 +55,4 @@ Oui, à condition de lire des sous-titres dans la langue cible, et non traduits 
 
 ## Trouver votre niveau avec Zenzu
 
-Zenzu vous permet d'importer des vidéos YouTube, des podcasts, des articles, du texte collé ou des photos de texte, puis de toucher n'importe quel mot ou expression pour le transformer en carte mémoire avec sa phrase d'origine et sa prononciation native. Lisa, le coach IA, évalue votre niveau et vous propose du contenu dans cette zone des 90-98 %, tandis que la planification FSRS-5 révise les nouveaux mots que vous avez collectés avant que vous ne les oubliiez.
+Zenzu vous permet d'importer des vidéos YouTube, des podcasts, des articles, du texte collé ou des photos de texte, puis de toucher n'importe quel mot ou expression pour le transformer en carte mémoire avec sa phrase d'origine et sa prononciation native. Lisa, le coach IA, évalue votre niveau et vous propose du contenu dans cette zone des 90-98 %, tandis que la planification FSRS-6 révise les nouveaux mots que vous avez collectés avant que vous ne les oubliiez.

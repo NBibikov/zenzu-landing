@@ -57,4 +57,4 @@ Usados corretamente, ajudam nas duas coisas: na gramática, por meio da correç�
 
 ## Fazendo Isso no Zenzu
 
-No Zenzu, importe um vídeo do YouTube ou um artigo, tente entender e usar as palavras novas sozinho primeiro, e só então transforme em flashcards apenas as que você errou, junto com a frase original e a pronúncia nativa. Peça à Lisa, a treinadora de IA, uma dica em vez de uma resposta completa, e deixe o FSRS-5 agendar automaticamente suas revisões de recuperação sem IA.
+No Zenzu, importe um vídeo do YouTube ou um artigo, tente entender e usar as palavras novas sozinho primeiro, e só então transforme em flashcards apenas as que você errou, junto com a frase original e a pronúncia nativa. Peça à Lisa, a treinadora de IA, uma dica em vez de uma resposta completa, e deixe o FSRS-6 agendar automaticamente suas revisões de recuperação sem IA.

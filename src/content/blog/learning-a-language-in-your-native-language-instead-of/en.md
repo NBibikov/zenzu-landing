@@ -53,4 +53,4 @@ Mostly, except when English is more closely related to your target language than
 
 ## Studying This Way in Zenzu
 
-Zenzu's interface runs in English, Ukrainian, German, French, Spanish, and Portuguese, so you can study German, French, Spanish, or English with explanations in your own language. Import a YouTube video, podcast, article, or photo of text, tap any word, and Lisa — the AI coach — explains it and plans your reviews in your native language, scheduled with FSRS-5.
+Zenzu's interface runs in English, Ukrainian, German, French, Spanish, and Portuguese, so you can study German, French, Spanish, or English with explanations in your own language. Import a YouTube video, podcast, article, or photo of text, tap any word, and Lisa — the AI coach — explains it and plans your reviews in your native language, scheduled with FSRS-6.

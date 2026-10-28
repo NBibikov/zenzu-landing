@@ -55,4 +55,4 @@ Ja, solange du Untertitel in der Zielsprache liest und keine übersetzten – so
 
 ## Finde dein Niveau mit Zenzu
 
-Mit Zenzu kannst du YouTube-Videos, Podcasts, Artikel, eingefügten Text oder Fotos von Text importieren und dann auf jedes Wort oder jede Phrase tippen, um daraus eine Lernkarte mit dem Originalsatz und muttersprachlicher Aussprache zu erstellen. Lisa, der KI-Coach, kann dein Niveau einschätzen und dir Inhalte in genau dieser 90–98-%-Zone vorschlagen, während der FSRS-5-Algorithmus die neuen Wörter, die du gesammelt hast, rechtzeitig wiederholt, bevor du sie vergisst.
+Mit Zenzu kannst du YouTube-Videos, Podcasts, Artikel, eingefügten Text oder Fotos von Text importieren und dann auf jedes Wort oder jede Phrase tippen, um daraus eine Lernkarte mit dem Originalsatz und muttersprachlicher Aussprache zu erstellen. Lisa, der KI-Coach, kann dein Niveau einschätzen und dir Inhalte in genau dieser 90–98-%-Zone vorschlagen, während der FSRS-6-Algorithmus die neuen Wörter, die du gesammelt hast, rechtzeitig wiederholt, bevor du sie vergisst.

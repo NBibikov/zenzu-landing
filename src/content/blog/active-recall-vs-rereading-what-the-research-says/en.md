@@ -59,4 +59,4 @@ There's no fixed number, but items typically need 3–5 successful spaced retrie
 
 ## Practicing This in Zenzu
 
-Zenzu turns real content — YouTube videos, podcasts, articles, or a photo of a textbook page — into flashcards built from the exact sentence you encountered, with native pronunciation attached. Reviews are scheduled automatically using FSRS-5, so instead of rereading, you're retrieving each phrase right when you're about to forget it. Lisa, the AI coach, can explain a word in your own language if a recall attempt fails.
+Zenzu turns real content — YouTube videos, podcasts, articles, or a photo of a textbook page — into flashcards built from the exact sentence you encountered, with native pronunciation attached. Reviews are scheduled automatically using FSRS-6, so instead of rereading, you're retrieving each phrase right when you're about to forget it. Lisa, the AI coach, can explain a word in your own language if a recall attempt fails.

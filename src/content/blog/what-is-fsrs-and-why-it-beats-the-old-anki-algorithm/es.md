@@ -46,4 +46,4 @@ En el benchmark oficial de FSRS publicado por el proyecto Open Spaced Repetition
 
 ## FSRS en Zenzu
 
-Zenzu programa cada tarjeta de estudio (creada a partir de videos de YouTube, podcasts, artículos o fotos) usando FSRS-5, de modo que los repasos se adaptan a tu memoria personal en lugar de a una fórmula fija. Lisa, tu entrenadora con IA, te explica las palabras difíciles y planifica qué estudiar a continuación en tu propio idioma, manteniendo los repasos diarios realistas en inglés, alemán, francés y español.
+Zenzu programa cada tarjeta de estudio (creada a partir de videos de YouTube, podcasts, artículos o fotos) usando FSRS-6, de modo que los repasos se adaptan a tu memoria personal en lugar de a una fórmula fija. Lisa, tu entrenadora con IA, te explica las palabras difíciles y planifica qué estudiar a continuación en tu propio idioma, manteniendo los repasos diarios realistas en inglés, alemán, francés y español.

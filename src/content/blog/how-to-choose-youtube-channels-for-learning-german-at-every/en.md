@@ -74,4 +74,4 @@ If you understand 90%+ without pausing, you've outgrown the channel — move to 
 
 ## Doing This in Zenzu
 
-Import any YouTube video into Zenzu by pasting the link — the interactive transcript lets you tap unfamiliar words to turn them into flashcards with the original sentence and native pronunciation attached. Lisa, the AI coach, can review a transcript with you in your own language and tell you whether a channel matches your current level. Reviews are then scheduled automatically with FSRS-5.
+Import any YouTube video into Zenzu by pasting the link — the interactive transcript lets you tap unfamiliar words to turn them into flashcards with the original sentence and native pronunciation attached. Lisa, the AI coach, can review a transcript with you in your own language and tell you whether a channel matches your current level. Reviews are then scheduled automatically with FSRS-6.

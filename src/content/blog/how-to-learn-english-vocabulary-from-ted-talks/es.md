@@ -52,7 +52,7 @@ Un cronograma práctico para las palabras recolectadas de TED:
 - **Día 5-7:** tercer repaso
 - **Día 14-16:** cuarto repaso
 
-Para el cuarto repaso, la mayoría de las palabras pasan de "reconocer" a "recordar a demanda". Los sistemas basados en algoritmos como FSRS-5 ajustan estos intervalos automáticamente según lo fácil o difícil que te resulte recordar cada palabra en particular, lo cual es más eficiente que un cronograma fijo.
+Para el cuarto repaso, la mayoría de las palabras pasan de "reconocer" a "recordar a demanda". Los sistemas basados en algoritmos como FSRS-6 ajustan estos intervalos automáticamente según lo fácil o difícil que te resulte recordar cada palabra en particular, lo cual es más eficiente que un cronograma fijo.
 
 ## Errores comunes que debes evitar
 
@@ -68,4 +68,4 @@ Para el cuarto repaso, la mayoría de las palabras pasan de "reconocer" a "recor
 
 ## Aprender vocabulario de TED con Zenzu
 
-En Zenzu, importa cualquier charla TED a partir de su enlace de YouTube y obtén una transcripción interactiva. Toca una palabra o frase durante la Pasada 2 para convertirla en una tarjeta de memoria que conserva su frase original y su pronunciación nativa. Los repasos se programan automáticamente con FSRS-5, y Lisa, la entrenadora de IA, explica las palabras difíciles en tu propio idioma.
+En Zenzu, importa cualquier charla TED a partir de su enlace de YouTube y obtén una transcripción interactiva. Toca una palabra o frase durante la Pasada 2 para convertirla en una tarjeta de memoria que conserva su frase original y su pronunciación nativa. Los repasos se programan automáticamente con FSRS-6, y Lisa, la entrenadora de IA, explica las palabras difíciles en tu propio idioma.

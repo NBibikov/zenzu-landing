@@ -13,7 +13,7 @@ Hermann Ebbinghaus mapped the "forgetting curve" back in 1885: without review, w
 
 This is the basis of spaced repetition. A 2006 meta-analysis by Cepeda, Pashler, Vul, Wixted, and Rohrer (reviewing over 300 studies) found that spacing reviews across days produces dramatically better long-term retention than reviewing the same amount of material in one sitting. You don't need more repetitions — you need them spread out correctly.
 
-Modern schedulers like FSRS-5 (Free Spaced Repetition Scheduler) take this further than older fixed-interval systems. Instead of a rigid "review every 3 days," FSRS models each card's individual difficulty and your personal forgetting curve, scheduling reviews at the exact point you're about to forget. That precision is what makes 15 minutes productive instead of wasted.
+Modern schedulers like FSRS-6 (Free Spaced Repetition Scheduler) take this further than older fixed-interval systems. Instead of a rigid "review every 3 days," FSRS models each card's individual difficulty and your personal forgetting curve, scheduling reviews at the exact point you're about to forget. That precision is what makes 15 minutes productive instead of wasted.
 
 ## The 15-Minute Routine, Minute by Minute
 
@@ -57,4 +57,4 @@ Yes — consistency beats intensity. Daily 15-minute sessions outperform a singl
 
 ## Doing This in Zenzu
 
-In Zenzu, every flashcard carries its original source sentence and native pronunciation, so recall happens in context, not isolation. Reviews are scheduled automatically with FSRS-5, meaning the app decides exactly which cards need you today. Lisa, the AI coach, can explain a tricky word in your own language and help plan a sustainable daily session — all from imported YouTube videos, podcasts, articles, or photos of text.
+In Zenzu, every flashcard carries its original source sentence and native pronunciation, so recall happens in context, not isolation. Reviews are scheduled automatically with FSRS-6, meaning the app decides exactly which cards need you today. Lisa, the AI coach, can explain a tricky word in your own language and help plan a sustainable daily session — all from imported YouTube videos, podcasts, articles, or photos of text.

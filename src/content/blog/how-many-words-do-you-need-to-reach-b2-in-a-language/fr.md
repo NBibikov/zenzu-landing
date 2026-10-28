@@ -46,4 +46,4 @@ Elles mesurent des choses différentes : familles de mots ou formes de mots, lec
 
 ## Appliquer cela avec Zenzu
 
-Zenzu transforme du contenu réel — vidéos YouTube, podcasts, articles ou photos de texte — en cartes mémoire automatiquement : sélectionnez un mot ou une expression, et il est enregistré avec sa phrase source et sa prononciation native. FSRS-5 planifie les révisions selon l'intervalle d'espacement dont votre mémoire a besoin, et Lisa, votre coach IA, explique les mots et planifie votre progression vers le prochain niveau du CECR dans votre propre langue.
+Zenzu transforme du contenu réel — vidéos YouTube, podcasts, articles ou photos de texte — en cartes mémoire automatiquement : sélectionnez un mot ou une expression, et il est enregistré avec sa phrase source et sa prononciation native. FSRS-6 planifie les révisions selon l'intervalle d'espacement dont votre mémoire a besoin, et Lisa, votre coach IA, explique les mots et planifie votre progression vers le prochain niveau du CECR dans votre propre langue.

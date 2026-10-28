@@ -66,4 +66,4 @@ Oui — les sources audio et vidéo sont idéales car elles ajoutent une prononc
 
 ## Faire cela avec Zenzu
 
-Zenzu est conçu exactement autour de ce processus. Importez une vidéo YouTube, un podcast, un article, du texte collé ou même une photo de texte, appuyez sur n'importe quel mot ou expression, et il devient une flashcard accompagnée de sa phrase d'origine et de sa prononciation native. Les révisions sont planifiées automatiquement avec FSRS-5, et Lisa, la coach IA, explique les mots difficiles dans votre propre langue et vous aide à planifier vos sessions d'extraction quotidiennes.
+Zenzu est conçu exactement autour de ce processus. Importez une vidéo YouTube, un podcast, un article, du texte collé ou même une photo de texte, appuyez sur n'importe quel mot ou expression, et il devient une flashcard accompagnée de sa phrase d'origine et de sa prononciation native. Les révisions sont planifiées automatiquement avec FSRS-6, et Lisa, la coach IA, explique les mots difficiles dans votre propre langue et vous aide à planifier vos sessions d'extraction quotidiennes.

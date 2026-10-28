@@ -52,7 +52,7 @@ A practical schedule for TED-harvested words:
 - **Day 5-7:** third review
 - **Day 14-16:** fourth review
 
-By the fourth review, most words move from "recognize" to "recall on demand." Algorithm-based systems like FSRS-5 adjust these intervals automatically based on how easily you recall each specific word, which is more efficient than a fixed schedule.
+By the fourth review, most words move from "recognize" to "recall on demand." Algorithm-based systems like FSRS-6 adjust these intervals automatically based on how easily you recall each specific word, which is more efficient than a fixed schedule.
 
 ## Common Mistakes to Avoid
 
@@ -68,4 +68,4 @@ By the fourth review, most words move from "recognize" to "recall on demand." Al
 
 ## Learning TED Vocabulary with Zenzu
 
-In Zenzu, import any TED Talk by its YouTube link and get an interactive transcript. Tap a word or phrase during Pass 2 to turn it into a flashcard that keeps its original sentence and native pronunciation. Reviews are scheduled automatically with FSRS-5, and Lisa, the AI coach, explains tricky words in your own language.
+In Zenzu, import any TED Talk by its YouTube link and get an interactive transcript. Tap a word or phrase during Pass 2 to turn it into a flashcard that keeps its original sentence and native pronunciation. Reviews are scheduled automatically with FSRS-6, and Lisa, the AI coach, explains tricky words in your own language.

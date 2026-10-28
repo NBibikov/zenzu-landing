@@ -46,4 +46,4 @@ Sie messen unterschiedliche Dinge: Wortfamilien vs. Wortformen, Lesen vs. Hören
 
 ## Anwendung in Zenzu
 
-Zenzu verwandelt echte Inhalte – YouTube-Videos, Podcasts, Artikel oder Fotos von Text – automatisch in Lernkarten: Ein Wort oder eine Phrase auswählen, und sie wird mit dem Ursprungssatz und der muttersprachlichen Aussprache gespeichert. FSRS-5 plant Wiederholungen genau im Abstand, den das Gedächtnis braucht, und Lisa, der KI-Coach, erklärt Wörter und plant das Lernen auf dem Weg zum nächsten CEFR-Niveau in der eigenen Sprache.
+Zenzu verwandelt echte Inhalte – YouTube-Videos, Podcasts, Artikel oder Fotos von Text – automatisch in Lernkarten: Ein Wort oder eine Phrase auswählen, und sie wird mit dem Ursprungssatz und der muttersprachlichen Aussprache gespeichert. FSRS-6 plant Wiederholungen genau im Abstand, den das Gedächtnis braucht, und Lisa, der KI-Coach, erklärt Wörter und plant das Lernen auf dem Weg zum nächsten CEFR-Niveau in der eigenen Sprache.

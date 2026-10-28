@@ -15,7 +15,7 @@ Spaced repetition systems schedule reviews based on when your memory is predicte
 
 ## Step 1: A Late Card Isn't a Lost Card
 
-Here's the reassuring math. If a card had a 30-day interval and you're reviewing it 5 days late, you've only added about 17% extra decay time — your memory strength hasn't collapsed. Modern scheduling algorithms like FSRS-5 (Free Spaced Repetition Scheduler, built on large-scale review data published in 2023-2024) model this decay curve directly, so a slightly overdue card still gets scheduled sensibly once you review it. You're not starting over; you're just continuing a slightly stretched curve.
+Here's the reassuring math. If a card had a 30-day interval and you're reviewing it 5 days late, you've only added about 17% extra decay time — your memory strength hasn't collapsed. Modern scheduling algorithms like FSRS-6 (Free Spaced Repetition Scheduler, built on large-scale review data published in 2023-2024) model this decay curve directly, so a slightly overdue card still gets scheduled sensibly once you review it. You're not starting over; you're just continuing a slightly stretched curve.
 
 ## Step 2: Freeze New Cards Immediately
 
@@ -63,4 +63,4 @@ If your backlog exceeds roughly 10x your normal daily review count, freeze new c
 
 ## Clearing a Backlog in Zenzu
 
-In Zenzu, reviews are scheduled with FSRS-5, so a late card is simply recalculated — nothing is lost. Ask Lisa, your AI coach, to explain overdue words and build a short daily catch-up plan in your own language, so you clear the pile without guessing how many cards to tackle each day.
+In Zenzu, reviews are scheduled with FSRS-6, so a late card is simply recalculated — nothing is lost. Ask Lisa, your AI coach, to explain overdue words and build a short daily catch-up plan in your own language, so you clear the pile without guessing how many cards to tackle each day.

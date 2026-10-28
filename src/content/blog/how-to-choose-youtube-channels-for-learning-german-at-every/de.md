@@ -74,4 +74,4 @@ Wenn du mehr als 90 % verstehst, ohne zu pausieren, bist du über den Kanal hina
 
 ## So geht das in Zenzu
 
-Importiere jedes YouTube-Video in Zenzu, indem du einfach den Link einfügst – das interaktive Transkript erlaubt es dir, unbekannte Wörter anzutippen und sie in Karteikarten mit dem Originalsatz und nativer Aussprache umzuwandeln. Lisa, die KI-Coachin, kann mit dir in deiner eigenen Sprache ein Transkript durchgehen und dir sagen, ob ein Kanal zu deinem aktuellen Niveau passt. Die Wiederholungen werden anschließend automatisch mit FSRS-5 geplant.
+Importiere jedes YouTube-Video in Zenzu, indem du einfach den Link einfügst – das interaktive Transkript erlaubt es dir, unbekannte Wörter anzutippen und sie in Karteikarten mit dem Originalsatz und nativer Aussprache umzuwandeln. Lisa, die KI-Coachin, kann mit dir in deiner eigenen Sprache ein Transkript durchgehen und dir sagen, ob ein Kanal zu deinem aktuellen Niveau passt. Die Wiederholungen werden anschließend automatisch mit FSRS-6 geplant.

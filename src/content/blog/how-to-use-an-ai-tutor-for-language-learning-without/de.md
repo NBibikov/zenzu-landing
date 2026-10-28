@@ -57,4 +57,4 @@ Richtig eingesetzt, helfen sie bei beidem: Grammatik durch Korrektur, Sprachgewa
 
 ## So setzt du das in Zenzu um
 
-Importiere in Zenzu ein YouTube-Video oder einen Artikel, versuche zunächst selbst, neue Wörter zu verstehen und anzuwenden, und verwandle anschließend nur die Wörter, bei denen du falsch lagst, in Karteikarten mit dem Originalsatz und muttersprachlicher Aussprache. Bitte Lisa, die KI-Coachin, um einen Hinweis statt einer vollständigen Antwort, und lass FSRS-5 deine KI-freien Wiederholungseinheiten automatisch planen.
+Importiere in Zenzu ein YouTube-Video oder einen Artikel, versuche zunächst selbst, neue Wörter zu verstehen und anzuwenden, und verwandle anschließend nur die Wörter, bei denen du falsch lagst, in Karteikarten mit dem Originalsatz und muttersprachlicher Aussprache. Bitte Lisa, die KI-Coachin, um einen Hinweis statt einer vollständigen Antwort, und lass FSRS-6 deine KI-freien Wiederholungseinheiten automatisch planen.

@@ -68,4 +68,4 @@ Sim — muitos criadores (Français Authentique, InnerFrench) têm um catálogo 
 
 ## Pratique Isso no Zenzu
 
-Importe qualquer vídeo do YouTube para o Zenzu e obtenha uma transcrição interativa que você pode tocar frase por frase. Selecione palavras desconhecidas para transformá-las em flashcards com a frase original e a pronúncia nativa anexadas, e deixe o FSRS-5 agendar suas revisões automaticamente. Pergunte à Lisa, a treinadora de IA, se um vídeo está no seu nível do QECR antes de decidir assisti-lo.
+Importe qualquer vídeo do YouTube para o Zenzu e obtenha uma transcrição interativa que você pode tocar frase por frase. Selecione palavras desconhecidas para transformá-las em flashcards com a frase original e a pronúncia nativa anexadas, e deixe o FSRS-6 agendar suas revisões automaticamente. Pergunte à Lisa, a treinadora de IA, se um vídeo está no seu nível do QECR antes de decidir assisti-lo.

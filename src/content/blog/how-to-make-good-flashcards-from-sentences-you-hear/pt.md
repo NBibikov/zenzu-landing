@@ -68,4 +68,4 @@ Reproduza o trecho duas ou três vezes antes de desistir e recorrer a uma transc
 
 ## Fazendo Isso no Zenzu
 
-No Zenzu, importe o podcast ou o vídeo do YouTube que você estava ouvindo — a transcrição interativa permite que você toque exatamente na frase que ouviu. Essa seleção se transforma automaticamente em um flashcard com a frase de origem e o áudio nativo anexados, agendado com o FSRS-5. Pergunte à Lisa, a treinadora de IA, para explicar o trecho ou transformá-lo em uma lacuna no seu próprio idioma.
+No Zenzu, importe o podcast ou o vídeo do YouTube que você estava ouvindo — a transcrição interativa permite que você toque exatamente na frase que ouviu. Essa seleção se transforma automaticamente em um flashcard com a frase de origem e o áudio nativo anexados, agendado com o FSRS-6. Pergunte à Lisa, a treinadora de IA, para explicar o trecho ou transformá-lo em uma lacuna no seu próprio idioma.

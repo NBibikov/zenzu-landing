@@ -46,4 +46,4 @@ They measure different things: word families vs. word forms, reading vs. listeni
 
 ## Applying this in Zenzu
 
-Zenzu turns real content — YouTube videos, podcasts, articles, or photos of text — into flashcards automatically: select any word or phrase and it's saved with its source sentence and native pronunciation. FSRS-5 schedules reviews at the spacing interval your memory needs, and Lisa, your AI coach, explains words and plans study toward your next CEFR level in your own language.
+Zenzu turns real content — YouTube videos, podcasts, articles, or photos of text — into flashcards automatically: select any word or phrase and it's saved with its source sentence and native pronunciation. FSRS-6 schedules reviews at the spacing interval your memory needs, and Lisa, your AI coach, explains words and plans study toward your next CEFR level in your own language.

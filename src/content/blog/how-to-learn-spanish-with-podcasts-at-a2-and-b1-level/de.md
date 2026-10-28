@@ -53,4 +53,4 @@ Praktisch heißt das: Wiederhole deine extrahierten Sätze in der ersten Woche t
 
 ## So setzt du das in Zenzu um
 
-Importiere eine Episode eines spanischen Podcasts — Zenzu transkribiert sie automatisch. Tippe im Transkript auf ein beliebiges Wort oder eine Wendung, um daraus eine Lernkarte zu erstellen, die den Originalsatz und die native Aussprache behält. Bitte Lisa, deine KI-Coachin, knifflige Grammatik in deiner eigenen Sprache zu erklären, und lass FSRS-5 deine Wiederholungen planen, damit der extrahierte Wortschatz wirklich sitzt.
+Importiere eine Episode eines spanischen Podcasts — Zenzu transkribiert sie automatisch. Tippe im Transkript auf ein beliebiges Wort oder eine Wendung, um daraus eine Lernkarte zu erstellen, die den Originalsatz und die native Aussprache behält. Bitte Lisa, deine KI-Coachin, knifflige Grammatik in deiner eigenen Sprache zu erklären, und lass FSRS-6 deine Wiederholungen planen, damit der extrahierte Wortschatz wirklich sitzt.

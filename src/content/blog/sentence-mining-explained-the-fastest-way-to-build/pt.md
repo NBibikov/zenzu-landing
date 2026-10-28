@@ -66,4 +66,4 @@ Sim — fontes em áudio e vídeo são ideais, porque acrescentam pronúncia e e
 
 ## Fazendo Isso no Zenzu
 
-O Zenzu foi criado exatamente para esse fluxo de trabalho. Importe um vídeo do YouTube, um podcast, um artigo, um texto colado ou até uma foto de texto, toque em qualquer palavra ou expressão, e ela se transforma em um flashcard com sua frase original e pronúncia nativa anexadas. As revisões são agendadas automaticamente com o FSRS-5, e a Lisa, a assistente de IA, explica palavras difíceis no seu próprio idioma e ajuda a planejar suas sessões diárias de mineração.
+O Zenzu foi criado exatamente para esse fluxo de trabalho. Importe um vídeo do YouTube, um podcast, um artigo, um texto colado ou até uma foto de texto, toque em qualquer palavra ou expressão, e ela se transforma em um flashcard com sua frase original e pronúncia nativa anexadas. As revisões são agendadas automaticamente com o FSRS-6, e a Lisa, a assistente de IA, explica palavras difíceis no seu próprio idioma e ajuda a planejar suas sessões diárias de mineração.

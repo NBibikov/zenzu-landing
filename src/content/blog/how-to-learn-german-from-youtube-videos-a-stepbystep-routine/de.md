@@ -43,7 +43,7 @@ Jede Karte sollte drei Dinge enthalten: das Zielwort bzw. den Zielausdruck, den 
 
 ## Schritt 5: Wiederholen mit Spaced Repetition, nicht mit erneutem Lesen
 
-Das ist der Schritt, den die meisten Selbstlerner überspringen — und genau der, der tatsächlich für dauerhaftes Behalten sorgt. Spaced Repetition plant Wiederholungen so, dass sie kurz vor dem Moment liegen, in dem du eine Karte vergessen würdest — zu früh verschwendet Zeit, zu spät bedeutet, von Neuem zu lernen. Moderne Algorithmen wie FSRS-5 modellieren deine individuelle Vergessenskurve für jede Karte einzeln, statt mit einer festen Intervall-Leiter zu arbeiten — das bedeutet weniger verschwendete Wiederholungen bei Karten, die du längst sicher kannst.
+Das ist der Schritt, den die meisten Selbstlerner überspringen — und genau der, der tatsächlich für dauerhaftes Behalten sorgt. Spaced Repetition plant Wiederholungen so, dass sie kurz vor dem Moment liegen, in dem du eine Karte vergessen würdest — zu früh verschwendet Zeit, zu spät bedeutet, von Neuem zu lernen. Moderne Algorithmen wie FSRS-6 modellieren deine individuelle Vergessenskurve für jede Karte einzeln, statt mit einer festen Intervall-Leiter zu arbeiten — das bedeutet weniger verschwendete Wiederholungen bei Karten, die du längst sicher kannst.
 
 Wiederhole täglich, auch an Tagen, an denen du kein neues Video ansiehst. 10 Minuten Wiederholung festigen weit mehr Vokabular als 60 Minuten passives erneutes Anschauen.
 
@@ -69,4 +69,4 @@ In diesem Tempo berichten die meisten Lernenden innerhalb von 2-3 Monaten von ei
 
 ## So geht das in Zenzu
 
-Importiere ein YouTube-Video in Zenzu, und das interaktive Transkript lässt dich jedes Wort oder jeden Ausdruck antippen, um daraus eine Karteikarte zu machen — komplett mit Quellsatz und muttersprachlicher Aussprache, genau wie in Schritt 4 beschrieben. Die Wiederholungen werden anschließend automatisch mit FSRS-5 geplant, und Lisa, der KI-Coach, kann knifflige Redewendungen in deiner eigenen Sprache erklären und dir helfen zu planen, welche Videos du dir als Nächstes vornehmen solltest.
+Importiere ein YouTube-Video in Zenzu, und das interaktive Transkript lässt dich jedes Wort oder jeden Ausdruck antippen, um daraus eine Karteikarte zu machen — komplett mit Quellsatz und muttersprachlicher Aussprache, genau wie in Schritt 4 beschrieben. Die Wiederholungen werden anschließend automatisch mit FSRS-6 geplant, und Lisa, der KI-Coach, kann knifflige Redewendungen in deiner eigenen Sprache erklären und dir helfen zu planen, welche Videos du dir als Nächstes vornehmen solltest.

@@ -13,7 +13,7 @@ Hermann Ebbinghaus a dessiné la « courbe de l'oubli » dès 1885 : sans révis
 
 C'est le principe même de la répétition espacée. Une méta-analyse de 2006 menée par Cepeda, Pashler, Vul, Wixted et Rohrer (passant en revue plus de 300 études) a montré qu'espacer les révisions sur plusieurs jours produit une mémorisation à long terme nettement meilleure que réviser la même quantité de contenu en une seule fois. Il ne s'agit pas de faire plus de répétitions, mais de bien les répartir dans le temps.
 
-Les algorithmes modernes comme FSRS-5 (Free Spaced Repetition Scheduler) vont plus loin que les anciens systèmes à intervalles fixes. Plutôt qu'une règle rigide du type « réviser tous les 3 jours », FSRS modélise la difficulté propre à chaque carte ainsi que votre propre courbe d'oubli, et programme les révisions au moment précis où vous êtes sur le point d'oublier. C'est cette précision qui rend 15 minutes vraiment productives, et non gaspillées.
+Les algorithmes modernes comme FSRS-6 (Free Spaced Repetition Scheduler) vont plus loin que les anciens systèmes à intervalles fixes. Plutôt qu'une règle rigide du type « réviser tous les 3 jours », FSRS modélise la difficulté propre à chaque carte ainsi que votre propre courbe d'oubli, et programme les révisions au moment précis où vous êtes sur le point d'oublier. C'est cette précision qui rend 15 minutes vraiment productives, et non gaspillées.
 
 ## La routine de 15 minutes, minute par minute
 
@@ -57,4 +57,4 @@ Oui — la régularité l'emporte sur l'intensité. Des sessions quotidiennes de
 
 ## Faire cela avec Zenzu
 
-Dans Zenzu, chaque flashcard conserve sa phrase d'origine et sa prononciation native, afin que le rappel se fasse en contexte, et non de façon isolée. Les révisions sont planifiées automatiquement grâce à FSRS-5, ce qui signifie que l'application décide exactement quelles cartes vous devez voir aujourd'hui. Lisa, la coach IA, peut expliquer un mot difficile dans votre propre langue et vous aider à planifier une session quotidienne durable — tout cela à partir de vidéos YouTube, de podcasts, d'articles ou de photos de texte importés.
+Dans Zenzu, chaque flashcard conserve sa phrase d'origine et sa prononciation native, afin que le rappel se fasse en contexte, et non de façon isolée. Les révisions sont planifiées automatiquement grâce à FSRS-6, ce qui signifie que l'application décide exactement quelles cartes vous devez voir aujourd'hui. Lisa, la coach IA, peut expliquer un mot difficile dans votre propre langue et vous aider à planifier une session quotidienne durable — tout cela à partir de vidéos YouTube, de podcasts, d'articles ou de photos de texte importés.

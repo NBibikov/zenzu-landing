@@ -55,4 +55,4 @@ Sim, desde que você esteja lendo legendas no idioma-alvo, não traduzidas — i
 
 ## Encontrando Seu Nível no Zenzu
 
-O Zenzu permite importar vídeos do YouTube, podcasts, artigos, textos colados ou fotos de texto, e depois tocar em qualquer palavra ou frase para transformá-la em um flashcard com sua frase original e pronúncia nativa. A Lisa, a treinadora de IA, consegue avaliar seu nível e sugerir conteúdo nessa zona de 90-98%, enquanto o agendamento FSRS-5 revisa as novas palavras que você coletou antes que você as esqueça.
+O Zenzu permite importar vídeos do YouTube, podcasts, artigos, textos colados ou fotos de texto, e depois tocar em qualquer palavra ou frase para transformá-la em um flashcard com sua frase original e pronúncia nativa. A Lisa, a treinadora de IA, consegue avaliar seu nível e sugerir conteúdo nessa zona de 90-98%, enquanto o agendamento FSRS-6 revisa as novas palavras que você coletou antes que você as esqueça.

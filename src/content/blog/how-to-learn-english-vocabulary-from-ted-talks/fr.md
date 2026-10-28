@@ -52,7 +52,7 @@ Un calendrier pratique pour les mots récoltés via TED :
 - **Jours 5-7 :** troisième révision
 - **Jours 14-16 :** quatrième révision
 
-Dès la quatrième révision, la plupart des mots passent du stade « je le reconnais » à « je le rappelle à la demande ». Les systèmes basés sur des algorithmes comme FSRS-5 ajustent automatiquement ces intervalles selon la facilité avec laquelle vous vous rappelez chaque mot spécifique, ce qui est plus efficace qu'un calendrier fixe.
+Dès la quatrième révision, la plupart des mots passent du stade « je le reconnais » à « je le rappelle à la demande ». Les systèmes basés sur des algorithmes comme FSRS-6 ajustent automatiquement ces intervalles selon la facilité avec laquelle vous vous rappelez chaque mot spécifique, ce qui est plus efficace qu'un calendrier fixe.
 
 ## Erreurs courantes à éviter
 
@@ -68,4 +68,4 @@ Dès la quatrième révision, la plupart des mots passent du stade « je le reco
 
 ## Apprendre le vocabulaire TED avec Zenzu
 
-Dans Zenzu, importez n'importe quelle conférence TED via son lien YouTube et obtenez une transcription interactive. Appuyez sur un mot ou une expression pendant le Passage 2 pour le transformer en flashcard conservant sa phrase d'origine et sa prononciation native. Les révisions sont planifiées automatiquement avec FSRS-5, et Lisa, la coach IA, explique les mots difficiles dans votre propre langue.
+Dans Zenzu, importez n'importe quelle conférence TED via son lien YouTube et obtenez une transcription interactive. Appuyez sur un mot ou une expression pendant le Passage 2 pour le transformer en flashcard conservant sa phrase d'origine et sa prononciation native. Les révisions sont planifiées automatiquement avec FSRS-6, et Lisa, la coach IA, explique les mots difficiles dans votre propre langue.

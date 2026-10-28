@@ -38,7 +38,7 @@ Spanish and French share Latin roots, cognates, and relatively regular phonics w
 ## The three levers that actually shorten your timeline
 
 1. **Comprehensible input volume.** Hours spent reading and listening to material you mostly understand (90%+) compound faster than grammar drills alone.
-2. **Spaced repetition.** Hermann Ebbinghaus mapped the forgetting curve in 1885: without review, you lose most new vocabulary within days. Algorithmic spacing (modern systems use FSRS-5) cuts review time by reviewing words right before you'd forget them, not on a fixed daily schedule.
+2. **Spaced repetition.** Hermann Ebbinghaus mapped the forgetting curve in 1885: without review, you lose most new vocabulary within days. Algorithmic spacing (modern systems use FSRS-6) cuts review time by reviewing words right before you'd forget them, not on a fixed daily schedule.
 3. **Output under light pressure.** Writing short summaries or speaking aloud daily, even for 5 minutes, forces retrieval — the single strongest predictor of retention in vocabulary-acquisition research.
 
 ## A realistic 12-month plan toward B2
@@ -59,4 +59,4 @@ Total: roughly 450–550 hours for French/Spanish (close to B2), or extend to 15
 
 ## Study B2-track hours efficiently in Zenzu
 
-Zenzu turns the hours above into daily practice: import a YouTube video, podcast, or article, tap any word to create a flashcard with its original sentence and native pronunciation, and let FSRS-5 schedule reviews automatically. Ask Lisa, the AI coach, to explain grammar or plan your week in your own language — across English, German, French, or Spanish, with structured A1–C1 courses for each.
+Zenzu turns the hours above into daily practice: import a YouTube video, podcast, or article, tap any word to create a flashcard with its original sentence and native pronunciation, and let FSRS-6 schedule reviews automatically. Ask Lisa, the AI coach, to explain grammar or plan your week in your own language — across English, German, French, or Spanish, with structured A1–C1 courses for each.

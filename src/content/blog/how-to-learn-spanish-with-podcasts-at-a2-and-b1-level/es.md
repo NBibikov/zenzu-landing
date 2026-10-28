@@ -53,4 +53,4 @@ En la práctica: repasa tus oraciones extraídas todos los días durante la prim
 
 ## Cómo hacer esto en Zenzu
 
-Importa un episodio de podcast en español: Zenzu lo transcribe automáticamente. Toca cualquier palabra o frase de la transcripción para convertirla en una tarjeta de estudio que conserva la oración original y la pronunciación nativa. Pídele a Lisa, tu entrenadora de inteligencia artificial, que te explique la gramática difícil en tu propio idioma, y deja que FSRS-5 programe tus repasos para que el vocabulario extraído realmente se quede grabado.
+Importa un episodio de podcast en español: Zenzu lo transcribe automáticamente. Toca cualquier palabra o frase de la transcripción para convertirla en una tarjeta de estudio que conserva la oración original y la pronunciación nativa. Pídele a Lisa, tu entrenadora de inteligencia artificial, que te explique la gramática difícil en tu propio idioma, y deja que FSRS-6 programe tus repasos para que el vocabulario extraído realmente se quede grabado.

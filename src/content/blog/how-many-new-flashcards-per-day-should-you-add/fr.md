@@ -59,4 +59,4 @@ Seulement jusqu'au point où votre file de révisions reste gérable. Au-delà, 
 
 ## Étudiez plus intelligemment avec Zenzu
 
-Dans Zenzu, chaque carte mémoire que vous créez — à partir d'une transcription YouTube, d'un podcast, d'un article ou d'une photo de texte — est automatiquement planifiée grâce à FSRS-5, afin que votre charge de révision reste équilibrée à mesure que vous ajoutez de nouveaux mots. Si vous ne savez pas combien de nouvelles cartes ajouter, demandez à Lisa, la coach IA de Zenzu : elle explique chaque mot dans votre propre langue et vous aide à planifier un rythme quotidien adapté à votre emploi du temps.
+Dans Zenzu, chaque carte mémoire que vous créez — à partir d'une transcription YouTube, d'un podcast, d'un article ou d'une photo de texte — est automatiquement planifiée grâce à FSRS-6, afin que votre charge de révision reste équilibrée à mesure que vous ajoutez de nouveaux mots. Si vous ne savez pas combien de nouvelles cartes ajouter, demandez à Lisa, la coach IA de Zenzu : elle explique chaque mot dans votre propre langue et vous aide à planifier un rythme quotidien adapté à votre emploi du temps.

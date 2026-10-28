@@ -43,7 +43,7 @@ Each card should have three things: the target word/phrase, the full source sent
 
 ## Step 5: Review with Spaced Repetition, Not Rereading
 
-This is the step most self-learners skip, and it's the one that actually produces retention. Spaced repetition schedules reviews just before you'd forget a card — too soon wastes time, too late means relearning from scratch. Modern scheduling algorithms like FSRS-5 model your individual forgetting curve per card rather than using a fixed interval ladder, which means fewer wasted reviews on cards you already know cold.
+This is the step most self-learners skip, and it's the one that actually produces retention. Spaced repetition schedules reviews just before you'd forget a card — too soon wastes time, too late means relearning from scratch. Modern scheduling algorithms like FSRS-6 model your individual forgetting curve per card rather than using a fixed interval ladder, which means fewer wasted reviews on cards you already know cold.
 
 Do your reviews daily, even on days you don't watch new video. 10 minutes of review sustains far more vocabulary than 60 minutes of passive rewatching.
 
@@ -69,4 +69,4 @@ At this pace, most learners report noticeably easier listening comprehension wit
 
 ## Doing This in Zenzu
 
-Import a YouTube video into Zenzu and its interactive transcript lets you tap any word or phrase to turn it into a flashcard — complete with the source sentence and native pronunciation, exactly as described in Step 4. Reviews are then scheduled automatically with FSRS-5, and Lisa, the AI coach, can explain tricky idioms in your own language and help plan which videos to tackle next.
+Import a YouTube video into Zenzu and its interactive transcript lets you tap any word or phrase to turn it into a flashcard — complete with the source sentence and native pronunciation, exactly as described in Step 4. Reviews are then scheduled automatically with FSRS-6, and Lisa, the AI coach, can explain tricky idioms in your own language and help plan which videos to tackle next.

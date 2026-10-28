@@ -46,4 +46,4 @@ Dans le benchmark officiel de FSRS publié par le projet Open Spaced Repetition,
 
 ## FSRS dans Zenzu
 
-Zenzu planifie chaque carte mémoire — créée à partir d'extraits YouTube, de podcasts, d'articles ou de photos — grâce à FSRS-5, afin que les révisions s'adaptent à votre mémoire personnelle plutôt qu'à une formule fixe. Lisa, votre coach IA, explique les mots difficiles et planifie ce qu'il faut étudier ensuite dans votre propre langue, pour que les révisions quotidiennes restent réalistes en anglais, allemand, français et espagnol.
+Zenzu planifie chaque carte mémoire — créée à partir d'extraits YouTube, de podcasts, d'articles ou de photos — grâce à FSRS-6, afin que les révisions s'adaptent à votre mémoire personnelle plutôt qu'à une formule fixe. Lisa, votre coach IA, explique les mots difficiles et planifie ce qu'il faut étudier ensuite dans votre propre langue, pour que les révisions quotidiennes restent réalistes en anglais, allemand, français et espagnol.

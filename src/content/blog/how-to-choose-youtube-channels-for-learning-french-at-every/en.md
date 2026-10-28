@@ -68,4 +68,4 @@ Yes—many creators (Français Authentique, InnerFrench) have an early slow cata
 
 ## Practice This in Zenzu
 
-Import any YouTube video into Zenzu and get an interactive transcript you can tap sentence by sentence. Select unfamiliar words to turn them into flashcards with the original sentence and native pronunciation attached, then let FSRS-5 schedule your reviews automatically. Ask Lisa, the AI coach, to check if a video matches your CEFR level before you commit to watching it.
+Import any YouTube video into Zenzu and get an interactive transcript you can tap sentence by sentence. Select unfamiliar words to turn them into flashcards with the original sentence and native pronunciation attached, then let FSRS-6 schedule your reviews automatically. Ask Lisa, the AI coach, to check if a video matches your CEFR level before you commit to watching it.

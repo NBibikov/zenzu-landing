@@ -59,4 +59,4 @@ Não há um número fixo, mas os itens geralmente precisam de 3 a 5 recuperaçõ
 
 ## Praticando Isso no Zenzu
 
-O Zenzu transforma conteúdo real — vídeos do YouTube, podcasts, artigos ou até uma foto de uma página de livro — em flashcards criados a partir da frase exata que você encontrou, com pronúncia nativa incluída. As revisões são agendadas automaticamente usando o FSRS-5, então, em vez de reler, você recupera cada frase exatamente no momento em que está prestes a esquecê-la. A Lisa, a coach de IA, pode explicar uma palavra no seu próprio idioma caso uma tentativa de recordação falhe.
+O Zenzu transforma conteúdo real — vídeos do YouTube, podcasts, artigos ou até uma foto de uma página de livro — em flashcards criados a partir da frase exata que você encontrou, com pronúncia nativa incluída. As revisões são agendadas automaticamente usando o FSRS-6, então, em vez de reler, você recupera cada frase exatamente no momento em que está prestes a esquecê-la. A Lisa, a coach de IA, pode explicar uma palavra no seu próprio idioma caso uma tentativa de recordação falhe.

@@ -43,7 +43,7 @@ Cada cartão deve ter três elementos: a palavra ou expressão-alvo, a frase com
 
 ## Passo 5: Revise com Repetição Espaçada, Não Relendo
 
-Esta é a etapa que a maioria dos autodidatas pula, e é exatamente a que produz retenção de fato. A repetição espaçada agenda as revisões pouco antes de você esquecer um cartão — revisar cedo demais desperdiça tempo, revisar tarde demais significa aprender tudo de novo do zero. Algoritmos de agendamento modernos, como o FSRS-5, modelam a curva de esquecimento individual de cada cartão, em vez de usar uma escala fixa de intervalos, o que significa menos revisões desperdiçadas em cartões que você já domina.
+Esta é a etapa que a maioria dos autodidatas pula, e é exatamente a que produz retenção de fato. A repetição espaçada agenda as revisões pouco antes de você esquecer um cartão — revisar cedo demais desperdiça tempo, revisar tarde demais significa aprender tudo de novo do zero. Algoritmos de agendamento modernos, como o FSRS-6, modelam a curva de esquecimento individual de cada cartão, em vez de usar uma escala fixa de intervalos, o que significa menos revisões desperdiçadas em cartões que você já domina.
 
 Faça suas revisões todos os dias, mesmo nos dias em que não assistir a vídeos novos. 10 minutos de revisão sustentam muito mais vocabulário do que 60 minutos de reassistir passivamente.
 
@@ -69,4 +69,4 @@ Nesse ritmo, a maioria dos aprendizes relata uma compreensão auditiva visivelme
 
 ## Fazendo Isso no Zenzu
 
-Importe um vídeo do YouTube para o Zenzu e a transcrição interativa permite que você toque em qualquer palavra ou expressão para transformá-la em um flashcard — completo com a frase de origem e a pronúncia nativa, exatamente como descrito no Passo 4. As revisões são então agendadas automaticamente com o FSRS-5, e a Lisa, a assistente de IA, pode explicar expressões idiomáticas complicadas no seu próprio idioma e ajudar a planejar quais vídeos encarar a seguir.
+Importe um vídeo do YouTube para o Zenzu e a transcrição interativa permite que você toque em qualquer palavra ou expressão para transformá-la em um flashcard — completo com a frase de origem e a pronúncia nativa, exatamente como descrito no Passo 4. As revisões são então agendadas automaticamente com o FSRS-6, e a Lisa, a assistente de IA, pode explicar expressões idiomáticas complicadas no seu próprio idioma e ajudar a planejar quais vídeos encarar a seguir.

@@ -52,7 +52,7 @@ Um cronograma prático para palavras coletadas de TED Talks:
 - **Dia 5-7:** terceira revisão
 - **Dia 14-16:** quarta revisão
 
-Na quarta revisão, a maioria das palavras deixa de ser apenas "reconhecida" e passa a ser "lembrada sob demanda". Sistemas baseados em algoritmos, como o FSRS-5, ajustam esses intervalos automaticamente com base na facilidade com que você recorda cada palavra específica — o que é mais eficiente do que um cronograma fixo.
+Na quarta revisão, a maioria das palavras deixa de ser apenas "reconhecida" e passa a ser "lembrada sob demanda". Sistemas baseados em algoritmos, como o FSRS-6, ajustam esses intervalos automaticamente com base na facilidade com que você recorda cada palavra específica — o que é mais eficiente do que um cronograma fixo.
 
 ## Erros Comuns a Evitar
 
@@ -68,4 +68,4 @@ Na quarta revisão, a maioria das palavras deixa de ser apenas "reconhecida" e p
 
 ## Aprendendo Vocabulário das TED Talks com o Zenzu
 
-No Zenzu, importe qualquer TED Talk pelo link do YouTube e tenha acesso a uma transcrição interativa. Toque em uma palavra ou expressão durante a Passagem 2 para transformá-la em um flashcard que mantém a frase original e a pronúncia nativa. As revisões são agendadas automaticamente com o FSRS-5, e a Lisa, a coach de IA, explica palavras difíceis no seu próprio idioma.
+No Zenzu, importe qualquer TED Talk pelo link do YouTube e tenha acesso a uma transcrição interativa. Toque em uma palavra ou expressão durante a Passagem 2 para transformá-la em um flashcard que mantém a frase original e a pronúncia nativa. As revisões são agendadas automaticamente com o FSRS-6, e a Lisa, a coach de IA, explica palavras difíceis no seu próprio idioma.

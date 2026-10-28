@@ -57,4 +57,4 @@ Bien utilisés, ils aident sur les deux plans : la grammaire grâce à la correc
 
 ## Mettre cela en pratique avec Zenzu
 
-Dans Zenzu, importez une vidéo YouTube ou un article, essayez d'abord de comprendre et d'utiliser les nouveaux mots par vous-même, puis ne transformez en cartes mémoire que les mots que vous avez mal utilisés, avec leur phrase d'origine et leur prononciation native. Demandez à Lisa, la coach IA, un indice plutôt qu'une réponse complète, et laissez FSRS-5 programmer automatiquement vos séances de rappel sans IA.
+Dans Zenzu, importez une vidéo YouTube ou un article, essayez d'abord de comprendre et d'utiliser les nouveaux mots par vous-même, puis ne transformez en cartes mémoire que les mots que vous avez mal utilisés, avec leur phrase d'origine et leur prononciation native. Demandez à Lisa, la coach IA, un indice plutôt qu'une réponse complète, et laissez FSRS-6 programmer automatiquement vos séances de rappel sans IA.

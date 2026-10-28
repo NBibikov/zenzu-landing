@@ -46,4 +46,4 @@ Im offiziellen FSRS-Benchmark des Open-Spaced-Repetition-Projekts reduzierte FSR
 
 ## FSRS in Zenzu
 
-Zenzu plant jede Karteikarte – ob aus YouTube-Clips, Podcasts, Artikeln oder Fotos erstellt – mithilfe von FSRS-5, sodass sich die Wiederholungen an dein persönliches Gedächtnis anpassen statt an eine starre Formel. Lisa, dein KI-Coach, erklärt schwierige Wörter und plant in deiner eigenen Sprache, was du als Nächstes lernen solltest – damit dein tägliches Lernpensum in Englisch, Deutsch, Französisch und Spanisch realistisch bleibt.
+Zenzu plant jede Karteikarte – ob aus YouTube-Clips, Podcasts, Artikeln oder Fotos erstellt – mithilfe von FSRS-6, sodass sich die Wiederholungen an dein persönliches Gedächtnis anpassen statt an eine starre Formel. Lisa, dein KI-Coach, erklärt schwierige Wörter und plant in deiner eigenen Sprache, was du als Nächstes lernen solltest – damit dein tägliches Lernpensum in Englisch, Deutsch, Französisch und Spanisch realistisch bleibt.

@@ -62,4 +62,4 @@ Sí: a menudo, ampliar la oración o añadir una cláusula contextual más convi
 
 ## Cómo hacer esto en Zenzu
 
-Zenzu crea tarjetas cloze a partir de contexto real de forma automática: importa un video de YouTube, un podcast, un artículo o una foto de texto, y luego selecciona cualquier palabra o frase; esta se convierte en una tarjeta con su oración de origen original y su pronunciación nativa. Lisa, la entrenadora de IA, te explica en tu propio idioma por qué una palabra encaja en ese contexto específico, y FSRS-5 programa los repasos para que las tarjetas cloze bien delimitadas y ancladas reaparezcan en el intervalo adecuado.
+Zenzu crea tarjetas cloze a partir de contexto real de forma automática: importa un video de YouTube, un podcast, un artículo o una foto de texto, y luego selecciona cualquier palabra o frase; esta se convierte en una tarjeta con su oración de origen original y su pronunciación nativa. Lisa, la entrenadora de IA, te explica en tu propio idioma por qué una palabra encaja en ese contexto específico, y FSRS-6 programa los repasos para que las tarjetas cloze bien delimitadas y ancladas reaparezcan en el intervalo adecuado.

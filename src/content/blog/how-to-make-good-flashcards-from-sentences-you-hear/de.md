@@ -68,4 +68,4 @@ Spiel den Clip zwei- oder dreimal ab, bevor du aufgibst und zum Transkript greif
 
 ## So geht's in Zenzu
 
-In Zenzu importierst du den Podcast oder YouTube-Clip, den du gerade gehört hast – das interaktive Transkript lässt dich genau die Phrase antippen, die du gehört hast. Diese Auswahl wird automatisch zu einer Lernkarte mit dem Quellsatz und nativer Audiospur, geplant mit FSRS-5. Bitte Lisa, die KI-Coach, dir den Ausdruck zu erklären oder ihn in deiner eigenen Sprache in eine Lückenkarte zu verwandeln.
+In Zenzu importierst du den Podcast oder YouTube-Clip, den du gerade gehört hast – das interaktive Transkript lässt dich genau die Phrase antippen, die du gehört hast. Diese Auswahl wird automatisch zu einer Lernkarte mit dem Quellsatz und nativer Audiospur, geplant mit FSRS-6. Bitte Lisa, die KI-Coach, dir den Ausdruck zu erklären oder ihn in deiner eigenen Sprache in eine Lückenkarte zu verwandeln.

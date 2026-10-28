@@ -81,4 +81,4 @@ When the 48-hour fit test consistently scores 8-9/10 comprehension, it's time to
 
 ## Study Smarter With Zenzu
 
-Zenzu turns any YouTube video into study material: import the clip, tap unfamiliar words in the interactive transcript, and each becomes a flashcard with its original sentence and native pronunciation. Lisa, the AI coach, explains tricky phrases in your own language and helps plan reviews — scheduled automatically with FSRS-5 — so your level-matched channel choices actually stick.
+Zenzu turns any YouTube video into study material: import the clip, tap unfamiliar words in the interactive transcript, and each becomes a flashcard with its original sentence and native pronunciation. Lisa, the AI coach, explains tricky phrases in your own language and helps plan reviews — scheduled automatically with FSRS-6 — so your level-matched channel choices actually stick.

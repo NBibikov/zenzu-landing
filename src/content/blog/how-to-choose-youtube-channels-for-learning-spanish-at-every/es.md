@@ -81,4 +81,4 @@ Cuando la prueba de ajuste de 48 horas te dé consistentemente una comprensión 
 
 ## Estudia de forma más inteligente con Zenzu
 
-Zenzu convierte cualquier video de YouTube en material de estudio: importa el clip, toca las palabras que no conozcas en la transcripción interactiva, y cada una se transforma en una tarjeta de memoria con su oración original y pronunciación nativa. Lisa, la entrenadora con IA, te explica las frases complicadas en tu propio idioma y te ayuda a planificar los repasos —programados automáticamente con FSRS-5— para que las elecciones de canales ajustadas a tu nivel realmente se queden contigo.
+Zenzu convierte cualquier video de YouTube en material de estudio: importa el clip, toca las palabras que no conozcas en la transcripción interactiva, y cada una se transforma en una tarjeta de memoria con su oración original y pronunciación nativa. Lisa, la entrenadora con IA, te explica las frases complicadas en tu propio idioma y te ayuda a planificar los repasos —programados automáticamente con FSRS-6— para que las elecciones de canales ajustadas a tu nivel realmente se queden contigo.

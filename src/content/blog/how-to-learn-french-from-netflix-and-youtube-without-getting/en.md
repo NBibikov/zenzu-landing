@@ -56,4 +56,4 @@ More than 20-25 flagged items per 20-minute episode usually means the content is
 
 ## Doing this in Zenzu
 
-Zenzu turns this routine into one flow: import a YouTube video or podcast, tap any word or phrase in the interactive transcript to turn it into a flashcard with its original sentence and native pronunciation attached. Reviews run on FSRS-5, so nothing you extract gets forgotten before it resurfaces. Lisa, the AI coach, explains tricky phrases and plans your week in your own language.
+Zenzu turns this routine into one flow: import a YouTube video or podcast, tap any word or phrase in the interactive transcript to turn it into a flashcard with its original sentence and native pronunciation attached. Reviews run on FSRS-6, so nothing you extract gets forgotten before it resurfaces. Lisa, the AI coach, explains tricky phrases and plans your week in your own language.

@@ -13,7 +13,7 @@ Hermann Ebbinghaus mapeou a "curva do esquecimento" em 1885: sem revisão, perde
 
 Essa é a base da repetição espaçada. Uma meta-análise de 2006 feita por Cepeda, Pashler, Vul, Wixted e Rohrer (que revisou mais de 300 estudos) constatou que espaçar as revisões ao longo de vários dias produz uma retenção de longo prazo muito melhor do que revisar a mesma quantidade de conteúdo de uma só vez. Você não precisa de mais repetições — precisa distribuí-las corretamente.
 
-Sistemas modernos de agendamento, como o FSRS-5 (Free Spaced Repetition Scheduler), vão além dos antigos sistemas de intervalo fixo. Em vez de um rígido "revisar a cada 3 dias", o FSRS modela a dificuldade individual de cada cartão e sua curva de esquecimento pessoal, agendando as revisões bem no momento em que você está prestes a esquecer. Essa precisão é o que torna 15 minutos produtivos em vez de desperdiçados.
+Sistemas modernos de agendamento, como o FSRS-6 (Free Spaced Repetition Scheduler), vão além dos antigos sistemas de intervalo fixo. Em vez de um rígido "revisar a cada 3 dias", o FSRS modela a dificuldade individual de cada cartão e sua curva de esquecimento pessoal, agendando as revisões bem no momento em que você está prestes a esquecer. Essa precisão é o que torna 15 minutos produtivos em vez de desperdiçados.
 
 ## A Rotina de 15 Minutos, Minuto a Minuto
 
@@ -57,4 +57,4 @@ Sim — consistência vence intensidade. Sessões diárias de 15 minutos superam
 
 ## Fazendo Isso no Zenzu
 
-No Zenzu, cada flashcard carrega sua frase original de origem e a pronúncia nativa, de modo que a recuperação acontece em contexto, não isoladamente. As revisões são agendadas automaticamente pelo FSRS-5, ou seja, o app decide exatamente quais cartões você precisa ver hoje. A Lisa, a treinadora de IA, pode explicar uma palavra complicada no seu próprio idioma e ajudar a planejar uma sessão diária sustentável — tudo a partir de vídeos do YouTube, podcasts, artigos ou fotos de texto importados.
+No Zenzu, cada flashcard carrega sua frase original de origem e a pronúncia nativa, de modo que a recuperação acontece em contexto, não isoladamente. As revisões são agendadas automaticamente pelo FSRS-6, ou seja, o app decide exatamente quais cartões você precisa ver hoje. A Lisa, a treinadora de IA, pode explicar uma palavra complicada no seu próprio idioma e ajudar a planejar uma sessão diária sustentável — tudo a partir de vídeos do YouTube, podcasts, artigos ou fotos de texto importados.

@@ -15,7 +15,7 @@ Los sistemas de repetición espaciada programan los repasos según el momento en
 
 ## Paso 1: una tarjeta atrasada no es una tarjeta perdida
 
-Aquí van las matemáticas que deberían tranquilizarte. Si una tarjeta tenía un intervalo de 30 días y la repasas con 5 días de retraso, solo has añadido alrededor de un 17% de tiempo extra de deterioro: tu fuerza de memoria no se ha derrumbado. Los algoritmos de programación modernos, como FSRS-5 (Free Spaced Repetition Scheduler, construido a partir de datos de repaso a gran escala publicados en 2023-2024), modelan directamente esta curva de deterioro, así que una tarjeta algo atrasada sigue programándose de forma sensata una vez que la repasas. No estás empezando de cero; simplemente estás continuando una curva un poco más estirada.
+Aquí van las matemáticas que deberían tranquilizarte. Si una tarjeta tenía un intervalo de 30 días y la repasas con 5 días de retraso, solo has añadido alrededor de un 17% de tiempo extra de deterioro: tu fuerza de memoria no se ha derrumbado. Los algoritmos de programación modernos, como FSRS-6 (Free Spaced Repetition Scheduler, construido a partir de datos de repaso a gran escala publicados en 2023-2024), modelan directamente esta curva de deterioro, así que una tarjeta algo atrasada sigue programándose de forma sensata una vez que la repasas. No estás empezando de cero; simplemente estás continuando una curva un poco más estirada.
 
 ## Paso 2: congela las tarjetas nuevas de inmediato
 
@@ -63,4 +63,4 @@ Si tu atraso supera aproximadamente 10 veces tu volumen de repaso diario habitua
 
 ## Cómo eliminar un atraso en Zenzu
 
-En Zenzu, los repasos se programan con FSRS-5, así que una tarjeta tardía simplemente se recalcula: no se pierde nada. Pídele a Lisa, tu entrenadora de IA, que te explique las palabras atrasadas y que te prepare un plan diario breve de recuperación en tu propio idioma, para que elimines el atraso sin tener que adivinar cuántas tarjetas abordar cada día.
+En Zenzu, los repasos se programan con FSRS-6, así que una tarjeta tardía simplemente se recalcula: no se pierde nada. Pídele a Lisa, tu entrenadora de IA, que te explique las palabras atrasadas y que te prepare un plan diario breve de recuperación en tu propio idioma, para que elimines el atraso sin tener que adivinar cuántas tarjetas abordar cada día.
