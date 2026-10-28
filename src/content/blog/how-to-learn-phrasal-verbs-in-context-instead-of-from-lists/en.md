@@ -47,4 +47,4 @@ That's fine and expected — the sentence is a scaffold, not the destination. On
 
 ## Try This in Zenzu
 
-Import a YouTube video or podcast into Zenzu, tap any phrasal verb in the interactive transcript, and it becomes a flashcard with its original sentence and native pronunciation attached. Lisa, the AI coach, explains the particle pattern in your own language, and FSRS-5 schedules reviews at the intervals research shows multiword phrases actually need.
+Import a YouTube video or podcast into Zenzu, tap any phrasal verb in the interactive transcript, and it becomes a flashcard with its original sentence and native pronunciation attached. Lisa, the AI coach, explains the particle pattern in your own language, and FSRS-6 schedules reviews at the intervals research shows multiword phrases actually need.

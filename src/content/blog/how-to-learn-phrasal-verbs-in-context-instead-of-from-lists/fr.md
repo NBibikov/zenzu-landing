@@ -47,4 +47,4 @@ C'est normal et attendu — la phrase est un échafaudage, pas une destination. 
 
 ## Essayez cette méthode avec Zenzu
 
-Importez une vidéo YouTube ou un podcast dans Zenzu, touchez n'importe quel verbe à particule dans la transcription interactive, et il devient une carte de révision avec sa phrase d'origine et sa prononciation native intégrées. Lisa, la coach IA, explique le schéma de la particule dans votre propre langue, et FSRS-5 planifie les révisions aux intervalles que la recherche montre comme véritablement nécessaires pour les expressions à plusieurs mots.
+Importez une vidéo YouTube ou un podcast dans Zenzu, touchez n'importe quel verbe à particule dans la transcription interactive, et il devient une carte de révision avec sa phrase d'origine et sa prononciation native intégrées. Lisa, la coach IA, explique le schéma de la particule dans votre propre langue, et FSRS-6 planifie les révisions aux intervalles que la recherche montre comme véritablement nécessaires pour les expressions à plusieurs mots.

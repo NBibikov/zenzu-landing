@@ -47,4 +47,4 @@ Isso é normal e esperado — a frase é um apoio, não o destino final. Uma vez
 
 ## Experimente Isso no Zenzu
 
-Importe um vídeo do YouTube ou um podcast para o Zenzu, toque em qualquer phrasal verb na transcrição interativa, e ele se transforma em um flashcard com sua frase original e pronúncia nativa anexadas. Lisa, a assistente de IA, explica o padrão da partícula no seu próprio idioma, e o FSRS-5 agenda as revisões nos intervalos que a pesquisa mostra que expressões de múltiplas palavras realmente precisam.
+Importe um vídeo do YouTube ou um podcast para o Zenzu, toque em qualquer phrasal verb na transcrição interativa, e ele se transforma em um flashcard com sua frase original e pronúncia nativa anexadas. Lisa, a assistente de IA, explica o padrão da partícula no seu próprio idioma, e o FSRS-6 agenda as revisões nos intervalos que a pesquisa mostra que expressões de múltiplas palavras realmente precisam.

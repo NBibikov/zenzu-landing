@@ -47,4 +47,4 @@ Das ist völlig in Ordnung und zu erwarten – der Satz ist ein Gerüst, nicht d
 
 ## Probier das in Zenzu aus
 
-Importiere ein YouTube-Video oder einen Podcast in Zenzu, tippe im interaktiven Transkript auf ein beliebiges Phrasal Verb, und es wird zu einer Karteikarte mit dem Originalsatz und der nativen Aussprache. Lisa, der KI-Coach, erklärt dir das Partikelmuster in deiner eigenen Sprache, und FSRS-5 plant die Wiederholungen genau in den Abständen, die die Forschung für mehrteilige Ausdrücke tatsächlich als notwendig zeigt.
+Importiere ein YouTube-Video oder einen Podcast in Zenzu, tippe im interaktiven Transkript auf ein beliebiges Phrasal Verb, und es wird zu einer Karteikarte mit dem Originalsatz und der nativen Aussprache. Lisa, der KI-Coach, erklärt dir das Partikelmuster in deiner eigenen Sprache, und FSRS-6 plant die Wiederholungen genau in den Abständen, die die Forschung für mehrteilige Ausdrücke tatsächlich als notwendig zeigt.

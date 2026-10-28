@@ -47,4 +47,4 @@ Eso está bien y es esperable: la oración es un andamiaje, no el destino final.
 
 ## Pruébalo en Zenzu
 
-Importa un video de YouTube o un podcast a Zenzu, toca cualquier verbo frasal en la transcripción interactiva y se convertirá en una tarjeta de repaso con su oración original y pronunciación nativa incluidas. Lisa, la entrenadora de IA, te explica el patrón de la partícula en tu propio idioma, y FSRS-5 programa los repasos en los intervalos que la investigación demuestra que realmente necesitan las expresiones de varias palabras.
+Importa un video de YouTube o un podcast a Zenzu, toca cualquier verbo frasal en la transcripción interactiva y se convertirá en una tarjeta de repaso con su oración original y pronunciación nativa incluidas. Lisa, la entrenadora de IA, te explica el patrón de la partícula en tu propio idioma, y FSRS-6 programa los repasos en los intervalos que la investigación demuestra que realmente necesitan las expresiones de varias palabras.
