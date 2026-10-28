@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Zenzu — Learn Languages from Real Content",
+    "title": "Zenzu — Learn languages from YouTube, podcasts and books",
     "description": "Learn languages from real content: YouTube, podcasts, articles. AI flashcards with FSRS spaced repetition and an AI language coach."
   },
   "nav": {
@@ -11,11 +11,11 @@
     "getStarted": "Get started"
   },
   "hero": {
-    "badge": "AI-powered language learning",
-    "headline1": "Learn languages from",
-    "headlineHighlight": "real content",
-    "headline2": "you love",
-    "subheadline": "Import YouTube videos, podcasts, and articles. Select any word or phrase to save it as a card. Chat with Lisa, your AI language coach, in your own language. Your learning and your data stay open to your own AI agents through MCP.",
+    "badge": "Paste a YouTube link — your cards are ready",
+    "headline1": "Learn a language ",
+    "headlineHighlight": "calmly",
+    "headline2": ", every day",
+    "subheadline": "Cards from the videos, podcasts and books you enjoy.",
     "cta": "Start learning",
     "ctaSecondary": "See how it works",
     "appStoreBadge": "Now available on iOS",
@@ -97,7 +97,7 @@
       "desc": "Personalized grammar and vocabulary lessons for English, German, French, and Spanish, from A1 to C1. Exercises adapt to your level."
     },
     "srs": {
-      "title": "FSRS-5 Spaced Repetition",
+      "title": "FSRS-6 Spaced Repetition",
       "desc": "Science-backed algorithm schedules reviews at the optimal time. Remember words forever."
     },
     "tts": {
@@ -145,7 +145,7 @@
     },
     "step3": {
       "title": "Review with spaced repetition",
-      "desc": "FSRS-5 algorithm schedules your reviews at the optimal moment, so every minute you invest counts."
+      "desc": "FSRS-6 algorithm schedules your reviews at the optimal moment, so every minute you invest counts."
     }
   },
   "android": {
@@ -213,7 +213,7 @@
     "items": [
       {
         "q": "What is Zenzu?",
-        "a": "Zenzu is a language learning app for learning from real content. You import YouTube videos, podcasts, articles or photos of text, tap any word or phrase to save it as a flashcard with its original sentence and native pronunciation, and review it with FSRS-5 spaced repetition. Lisa, the built-in AI coach, explains words and plans your study in your own language."
+        "a": "Zenzu is a language learning app for learning from real content. You import YouTube videos, podcasts, articles or photos of text, tap any word or phrase to save it as a flashcard with its original sentence and native pronunciation, and review it with FSRS-6 spaced repetition. Lisa, the built-in AI coach, explains words and plans your study in your own language."
       },
       {
         "q": "Which languages can I learn with Zenzu?",
@@ -237,7 +237,7 @@
       },
       {
         "q": "What spaced repetition algorithm does Zenzu use?",
-        "a": "FSRS-5, a modern open-source scheduler trained on large amounts of real review data. It predicts when you are about to forget each card and schedules the review right before that moment."
+        "a": "FSRS-6, a modern open-source scheduler trained on large amounts of real review data. It predicts when you are about to forget each card and schedules the review right before that moment."
       }
     ]
   },
