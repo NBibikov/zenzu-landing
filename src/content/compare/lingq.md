@@ -21,7 +21,7 @@ rows:
     zenzu: "English, German, French, Spanish"
     other: "50+"
   - feature: "Platforms"
-    zenzu: "iPhone and iPad (iOS 15+), web"
+    zenzu: "iPhone and iPad (iOS 15+), Android, web"
     other: "iOS, Android, web"
 sources:
   - label: "LingQ on the App Store"
@@ -35,7 +35,6 @@ sources:
 - **Language coverage.** With more than 50 languages, LingQ covers far more than Zenzu's four.
 - **A ready library.** You can start reading and listening immediately without finding your own material.
 - **Reading-first immersion.** If your main goal is extensive reading and listening, LingQ's lesson view and word-status tracking are designed for exactly that.
-- **Android.** LingQ has a native Android app; Zenzu on Android is not publicly available yet.
 
 ## Where Zenzu is the better choice
 

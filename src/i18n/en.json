@@ -18,7 +18,7 @@
     "subheadline": "Cards from the videos, podcasts and books you enjoy.",
     "cta": "Start learning",
     "ctaSecondary": "See how it works",
-    "appStoreBadge": "Now available on iOS",
+    "appStoreBadge": "Now available on iOS and Android",
     "appStoreCta": "Download on the App Store",
     "supported": "English · German · French · Spanish",
     "comingSoon": "Portuguese: coming soon"
@@ -148,25 +148,6 @@
       "desc": "FSRS-6 algorithm schedules your reviews at the optimal moment, so every minute you invest counts."
     }
   },
-  "android": {
-    "kicker": "Google Play · beta",
-    "title": "Zenzu for Android: early access",
-    "lead": "The Android app is in open testing on Google Play. Anyone can join in three steps.",
-    "group": {
-      "title": "Join the tester group",
-      "cta": "Join the group"
-    },
-    "tester": {
-      "title": "Sign up as a tester",
-      "cta": "Become a tester"
-    },
-    "install": {
-      "title": "Install the app from Google Play",
-      "cta": "Install"
-    },
-    "note": "Use the same Google account in all three steps. The install link works only after step 2.",
-    "heroLink": "Android (beta)"
-  },
   "mcp": {
     "kicker": "Available now",
     "title": "Your data, wherever you work.",
@@ -221,11 +202,11 @@
       },
       {
         "q": "Which devices does Zenzu run on?",
-        "a": "iPhone and iPad with iOS 15 or later, and any modern web browser at app.zenzu.app. The Android app is in open testing on Google Play."
+        "a": "iPhone and iPad with iOS 15 or later, Android phones and tablets through Google Play, and any modern web browser at app.zenzu.app."
       },
       {
         "q": "Is there an Android version?",
-        "a": "Yes. The Android app is in open testing on Google Play, and anyone can join. Join the tester group, sign up as a tester, then install Zenzu from Google Play, all with the same Google account. The links are in the Android section above on this page."
+        "a": "Yes. Zenzu for Android is available on Google Play."
       },
       {
         "q": "How is Zenzu different from Anki?",
