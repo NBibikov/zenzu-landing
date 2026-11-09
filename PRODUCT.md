@@ -10,7 +10,7 @@
 
 web
 
-This repository is the marketing site and blog for Zenzu (zenzu.app). The product itself is a Flutter app (iOS, Android in open testing, web at app.zenzu.app) in a separate repository. The site mirrors the app's design language; it does not define it.
+This repository is the marketing site and blog for Zenzu (zenzu.app). The product itself is a Flutter app (iOS, Android, web at app.zenzu.app) in a separate repository. The site mirrors the app's design language; it does not define it.
 
 ## Users
 
@@ -24,7 +24,7 @@ This repository is the marketing site and blog for Zenzu (zenzu.app). The produc
 
 Zenzu turns content the learner already enjoys into flashcards. The learner imports a video, podcast, article or photo of text, taps a word or selects a phrase, and Zenzu saves a card with its original sentence and native pronunciation. FSRS-6 schedules the reviews. Lisa, an AI coach, plans the day, explains words and grammar and replies in the learner's own language.
 
-The site exists to explain this, send visitors to the App Store, Google Play testing or app.zenzu.app, and bring search traffic through the blog and comparison pages.
+The site exists to explain this, send visitors to the App Store, Google Play or app.zenzu.app, and bring search traffic through the blog and comparison pages.
 
 ## Positioning
 
@@ -36,7 +36,7 @@ The site exists to explain this, send visitors to the App Store, Google Play tes
 ## Operating Context
 
 - Target languages: English, German, French, Spanish. Portuguese is coming soon.
-- Devices: iPhone and iPad (iOS 15+), any modern browser at app.zenzu.app. Android is in open testing on Google Play (three join steps on the home page). JSON-LD lists only iOS and Web until the Play listing is public.
+- Devices: iPhone and iPad (iOS 15+), any modern browser at app.zenzu.app. Android phones and tablets through Google Play (public listing, checked 2026-11-09). The hero shows both store badges; JSON-LD lists iOS, Android and Web.
 - The site is published in six locales: en, uk, de, es, fr, pt.
 - The blog is written by an automated daily job (`~/Scripts/zenzu/jobs/daily-blog.sh`) with covers generated to STYLE_GUIDE.md. (inferred) New posts follow the job's prompt, not this file: a change to blog tone or style must also go into that prompt.
 
@@ -46,7 +46,7 @@ The site exists to explain this, send visitors to the App Store, Google Play tes
 - Contact address on every page: hello@zenzu.app.
 - Pricing is not shown anywhere on the site (decision of 2026-09-23). Do not add prices.
 - MCP is presented as available now.
-- Undecided: when Android leaves testing; when Portuguese as a target language ships.
+- Undecided: when Portuguese as a target language ships.
 
 ## Brand Commitments
 

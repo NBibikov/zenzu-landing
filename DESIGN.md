@@ -160,7 +160,7 @@ Flat. There are no shadows. Depth comes from the paper / paper-2 alternation and
 
 ## Shapes
 
-Pills (fully rounded) for buttons; 16px corners for the App Store badge, the Android step cards and blog covers; 10px for the language menu. Brush masks give buttons, swashes and strokes an organic edge; geometry elsewhere is plain.
+Pills (fully rounded) for buttons; 16px corners for the store badges and blog covers; 10px for the language menu. Brush masks give buttons, swashes and strokes an organic edge; geometry elsewhere is plain.
 
 ## Components
 

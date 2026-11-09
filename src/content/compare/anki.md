@@ -24,7 +24,7 @@ rows:
     zenzu: "Learn English, German, French or Spanish; interface in 6 languages"
     other: "Any language or subject"
   - feature: "Platforms"
-    zenzu: "iPhone and iPad (iOS 15+), web"
+    zenzu: "iPhone and iPad (iOS 15+), Android, web"
     other: "Windows, macOS, Linux, Android (AnkiDroid), iOS (AnkiMobile), AnkiWeb"
 sources:
   - label: "Anki manual — FSRS deck options"
@@ -39,7 +39,7 @@ Anki has been the reference spaced repetition tool for almost two decades, and f
 
 - **It works for anything.** Medicine, law, kanji, music theory — Anki doesn't care what is on the card.
 - **It is endlessly customizable.** Card templates, fields, filtered decks and a large add-on ecosystem let you shape every detail.
-- **It runs everywhere, including Android and desktop,** and its deck format is open and portable.
+- **It runs everywhere, including desktop,** and its deck format is open and portable.
 - **Huge shared deck library.** For popular languages you can often start from a community deck instead of an empty one.
 
 If you enjoy building your own system, or you are learning a language Zenzu doesn't teach yet, Anki is hard to beat.

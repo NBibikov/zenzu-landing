@@ -8,12 +8,12 @@ import TheName from '../blocks/TheName.astro'
 import ForWhom from '../blocks/ForWhom.astro'
 import Features from '../blocks/Features.astro'
 import HowItWorks from '../blocks/HowItWorks.astro'
-import Android from '../blocks/Android.astro'
 import Mcp from '../blocks/Mcp.astro'
 import Quotes from '../blocks/Quotes.astro'
 import Faq from '../blocks/Faq.astro'
 import CTA from '../blocks/CTA.astro'
 import { t, supportedLocales, localePath, type Locale } from '../../i18n'
+import { APP_STORE_URL, PLAY_STORE_URL } from '../../lib/links'
 
 interface Props {
   locale: Locale
@@ -27,8 +27,6 @@ const homeUrl = (loc: Locale) => `${site}${localePath('/', loc)}`
 
 const alternates = supportedLocales.map(loc => ({ hreflang: loc, href: homeUrl(loc) }))
 
-const appStoreUrl = 'https://apps.apple.com/app/zenzu-ai-language-mastery/id6761502445'
-
 // One @graph so the organization, the site and the app reference each other by @id.
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -40,7 +38,7 @@ const jsonLd = {
       url: `${site}/`,
       logo: `${site}/zenzu-icon.png`,
       email: 'hello@zenzu.app',
-      sameAs: [appStoreUrl],
+      sameAs: [APP_STORE_URL, PLAY_STORE_URL],
     },
     {
       '@type': 'WebSite',
@@ -58,9 +56,9 @@ const jsonLd = {
       description: strings.meta.description,
       url: homeUrl(locale),
       applicationCategory: 'EducationalApplication',
-      operatingSystem: 'iOS 15.0 or later, Web',
-      installUrl: appStoreUrl,
-      downloadUrl: appStoreUrl,
+      operatingSystem: 'iOS 15.0 or later, Android, Web',
+      installUrl: [APP_STORE_URL, PLAY_STORE_URL],
+      downloadUrl: [APP_STORE_URL, PLAY_STORE_URL],
       inLanguage: [...supportedLocales],
       image: `${site}/og-default.png`,
       featureList: [
@@ -104,7 +102,6 @@ const jsonLd = {
     <ForWhom t={strings} />
     <Features t={strings} />
     <HowItWorks t={strings} />
-    <Android t={strings} />
     <Mcp t={strings} />
     <Quotes t={strings} />
     <Faq t={strings} />

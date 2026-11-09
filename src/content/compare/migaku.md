@@ -21,7 +21,7 @@ rows:
     zenzu: "English, German, French, Spanish"
     other: "11, with structured courses for Japanese, Mandarin and Korean"
   - feature: "Platforms"
-    zenzu: "iPhone and iPad (iOS 15+), web"
+    zenzu: "iPhone and iPad (iOS 15+), Android, web"
     other: "iOS, Apple silicon Mac, Chrome extension"
 sources:
   - label: "Migaku on the App Store"

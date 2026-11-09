@@ -13,7 +13,7 @@ export const PRODUCT_SUMMARY = `# Zenzu
 
 ## Key facts
 
-- Platforms: iOS (App Store, iOS 15+) and web (https://app.zenzu.app).
+- Platforms: iOS (App Store, iOS 15+), Android (Google Play) and web (https://app.zenzu.app).
 - Languages you can learn: English, German, French, Spanish. Portuguese is coming soon.
 - Interface and AI coach languages: English, Ukrainian, German, French, Spanish, Portuguese — learners study from their native language, not through English.
 - Spaced repetition: FSRS-6, the same modern scheduler family used by Anki.
@@ -30,6 +30,7 @@ export const PRODUCT_SUMMARY = `# Zenzu
 - [Home](${SITE}/): product overview
 - [Web app](https://app.zenzu.app): use Zenzu in the browser
 - [App Store](https://apps.apple.com/app/zenzu-ai-language-mastery/id6761502445): iOS app
+- [Google Play](https://play.google.com/store/apps/details?id=com.bblife.zenzu): Android app
 - [Blog](${SITE}/blog/): language learning guides, also available in Ukrainian, German, French, Spanish and Portuguese
 - [Privacy policy](${SITE}/privacy/)
 - [Terms of service](${SITE}/terms/)
