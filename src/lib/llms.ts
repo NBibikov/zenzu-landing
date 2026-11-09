@@ -1,4 +1,5 @@
 import { getCollection, type CollectionEntry } from 'astro:content'
+import { APP_STORE_URL, PLAY_STORE_URL } from './links'
 
 export const SITE = 'https://zenzu.app'
 
@@ -29,8 +30,8 @@ export const PRODUCT_SUMMARY = `# Zenzu
 
 - [Home](${SITE}/): product overview
 - [Web app](https://app.zenzu.app): use Zenzu in the browser
-- [App Store](https://apps.apple.com/app/zenzu-ai-language-mastery/id6761502445): iOS app
-- [Google Play](https://play.google.com/store/apps/details?id=com.bblife.zenzu): Android app
+- [App Store](${APP_STORE_URL}): iOS app
+- [Google Play](${PLAY_STORE_URL}): Android app
 - [Blog](${SITE}/blog/): language learning guides, also available in Ukrainian, German, French, Spanish and Portuguese
 - [Privacy policy](${SITE}/privacy/)
 - [Terms of service](${SITE}/terms/)
