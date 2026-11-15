@@ -80,6 +80,7 @@
     "title": "Tout ce dont tu as besoin pour apprendre",
     "subtitle": "Une seule application pour tous tes contenus d'apprentissage. Importe ce que tu aimes, apprends ce qui compte.",
     "moreLabel": "Détails",
+    "lessLabel": "Réduire",
     "labels": {
       "what": "Ce que tu obtiens",
       "how": "Comment ça marche",
@@ -121,15 +122,6 @@
         "note": "Certains paquets ne concernent que des langues précises, comme les tableaux de verbes irréguliers ou les paquets de faux amis pour l'anglais et l'allemand ; leurs cartes existent en moins de langues. Les noms des paquets s'affichent dans la langue de ton interface."
       }
     },
-    "interface": {
-      "title": "Interface en 6 langues",
-      "desc": "Utilise l'app en anglais, ukrainien, allemand, espagnol, français ou portugais. Apprends depuis ta langue maternelle, pas à travers l'anglais.",
-      "more": {
-        "what": "Les menus, les indications et les réponses de Lisa s'affichent dans ta langue : anglais, ukrainien, allemand, espagnol, français ou portugais. Les traductions des cartes sont dans ta langue maternelle, sans passer par l'anglais.",
-        "how": "Par défaut, l'app suit la langue maternelle de ton profil. Tu peux aussi suivre la langue de ton appareil ou choisir une langue dans les Réglages.",
-        "note": "Tu peux apprendre l'anglais, l'allemand, le français ou l'espagnol. Si l'interface n'existe pas dans ta langue maternelle, par exemple l'italien ou le polonais, les traductions sont quand même dans cette langue, et l'app s'affiche dans une autre langue."
-      }
-    },
     "courses": {
       "title": "Cours par IA",
       "desc": "Des leçons de grammaire et de vocabulaire pour l'anglais, l'allemand, le français et l'espagnol — préparées à l'avance et classées par niveau CECR.",
@@ -148,15 +140,6 @@
         "note": "Le calendrier vise à montrer une carte quand ta probabilité de t'en souvenir tombe à environ 90 %. Zenzu utilise les paramètres par défaut de l'algorithme open source FSRS-6."
       }
     },
-    "tts": {
-      "title": "Prononciation pour Chaque Mot",
-      "desc": "Synthèse vocale cloud pour chaque mot et phrase. Écoute la bonne prononciation dès le premier jour.",
-      "more": {
-        "what": "Écoute n'importe quel mot ou phrase dans la langue que tu apprends, grâce à la synthèse vocale cloud. Dans les dialogues des leçons, chaque mot est mis en évidence au moment où il est prononcé.",
-        "how": "Zenzu génère l'audio sur le serveur et le met en cache ; le son d'une carte se charge dès qu'elle s'affiche. Tu règles la vitesse d'écoute, et le même extrait est lu à cette vitesse.",
-        "note": "Les voix sont synthétiques, pas des enregistrements de locuteurs natifs. Si l'audio cloud est désactivé ou indisponible, l'app utilise la voix de ton appareil."
-      }
-    },
     "import": {
       "title": "Importe de N'importe Où",
       "desc": "Textes, photos, articles — colle ou photographie n'importe quoi. L'IA extrait le vocabulaire au niveau de ton paquet.",
@@ -165,7 +148,8 @@
         "how": "Chaque mot arrive avec la phrase où il figurait, copiée depuis la source, et la traduction de cette phrase dans ta langue maternelle ; si la source n'a pas de phrase complète, comme un menu ou un panneau, Zenzu écrit un court exemple à la place. Chaque mot indique son niveau ; au départ, la liste n'affiche que le niveau du paquet et les niveaux supérieurs, et tu peux ajouter les niveaux inférieurs. Si le paquet n'a pas de niveau unique, Zenzu choisit des mots de niveau intermédiaire et avancé et affiche tous les niveaux.",
         "note": "Si tu apprends plusieurs langues, c'est le texte lui-même qui détermine à quelle langue appartiennent les mots. Sur iOS, tu peux partager des textes et des liens depuis d'autres apps vers la boîte de réception de Zenzu, puis les importer plus tard."
       }
-    }
+    },
+    "also": "Aussi : interface en 6 langues · synthèse vocale cloud pour chaque mot et phrase"
   },
   "forWhom": {
     "title": "Pour ceux qui prennent les langues au sérieux",

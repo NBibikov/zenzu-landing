@@ -95,7 +95,7 @@ function planFreeSections(locale: string): [string, Json][] {
   const more = Object.entries(root.features)
     .filter(([, value]) => value !== null && typeof value === 'object' && !Array.isArray(value) && 'more' in value)
     .map(([key, value]): [string, Json] => [`features.${key}.more`, (value as { more: Json }).more])
-  assert.ok(more.length >= 9, `${locale}: found ${more.length} feature details`)
+  assert.ok(more.length >= 7, `${locale}: found ${more.length} feature details`)
   return [['mcp', root.mcp], ['mcpPage', root.mcpPage], ...more]
 }
 
