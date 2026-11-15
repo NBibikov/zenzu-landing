@@ -180,13 +180,21 @@ const SLOT_PLANS: readonly SlotPlan[] = [
   { scale: 0.55, row: 0, side: 1, edge: 0.76, stripX: 0.84 },
 ]
 
-export function layoutTrees(width: number): TreeSlot[] {
-  if (layoutFor(width) === 'strip') {
+// The page decides flank or strip with a CSS breakpoint, and the text column
+// width depends on the root font size. So the canvas passes both in. The
+// defaults (layoutFor(width), a 768 px column) fit a 16 px root font and no
+// scrollbar.
+export function layoutTrees(
+  width: number,
+  layout: GroveLayout = layoutFor(width),
+  columnHalf: number = TEXT_HALF_WIDTH,
+): TreeSlot[] {
+  if (layout === 'strip') {
     return SLOT_PLANS.map(({ scale, row, stripX }) => ({ x: stripX, scale, row }))
   }
-  const sideWidth = width / 2 - TEXT_HALF_WIDTH
+  const sideWidth = width / 2 - columnHalf
   return SLOT_PLANS.map(({ scale, row, side, edge }) => ({
-    x: 0.5 + (side * (TEXT_HALF_WIDTH + edge * sideWidth)) / width,
+    x: 0.5 + (side * (columnHalf + edge * sideWidth)) / width,
     scale,
     row,
   }))

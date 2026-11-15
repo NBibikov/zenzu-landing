@@ -127,6 +127,23 @@ test('layoutTrees keeps trees clear of the text column at every flank width', ()
   }
 })
 
+test('layoutTrees takes the layout and the column width from the caller', () => {
+  // A 1280 px viewport with a 15 px scrollbar: CSS shows flank, the canvas is 1265 px.
+  const scrollbar = layoutTrees(1265, 'flank', 384)
+  assert.equal(scrollbar.filter((slot) => slot.x < 0.5).length, 2)
+  // A 20 px root font: the column is 960 px, the canvas 1585 px.
+  for (const [width, columnHalf] of [[1265, 384], [1585, 480], [1920, 480]]) {
+    for (const slot of layoutTrees(width, 'flank', columnHalf)) {
+      assert.ok(
+        Math.abs(slot.x - 0.5) * width >= columnHalf + 40,
+        `width ${width}, column ${columnHalf * 2}: x=${slot.x} is too close to the column`,
+      )
+    }
+  }
+  // The layout argument wins over the width.
+  assert.deepEqual(layoutTrees(1440, 'strip'), layoutTrees(390))
+})
+
 test('layoutTrees(390) lines the trees up in a strip', () => {
   const slots = layoutTrees(390)
   assert.equal(slots.length, 5)

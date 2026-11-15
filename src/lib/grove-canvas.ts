@@ -7,7 +7,6 @@ import {
   buildTree,
   GROVE_TREES,
   INK,
-  layoutFor,
   layoutTrees,
   LEAF_PALETTES,
   seasonFor,
@@ -25,6 +24,9 @@ const FRAME_MS = 1000 / 30 // 30 fps limit
 const MAX_DELTA_MS = 50 // a longer gap (pause, slow frame) counts as 50 ms
 const MAX_DPR = 2
 const VISIBLE_RATIO = 0.25 // growth starts when this part of the canvas is visible
+// Flank or strip: the same breakpoint as Tailwind `xl` in Hero.astro, which
+// moves the canvas behind the text. One source, so CSS and JS always agree.
+const FLANK_QUERY = '(min-width: 80rem)'
 
 // Ambient falling leaves, petals or snowflakes per season.
 export const AMBIENT_FALLERS: Record<Season, number> = {
@@ -160,13 +162,15 @@ export function treeExtent(tree: Tree): Extent {
 
 // Tree size in px (size of a tree with scale 1). Every tree, leaves included,
 // must fit under the top of the canvas and inside its width. In the flank
-// layout no canopy may come nearer to the text column than COLUMN_GAP.
+// layout no canopy may come nearer to the text column (half width
+// `columnHalf`) than COLUMN_GAP.
 export function fitSize(
   layout: GroveLayout,
   width: number,
   groundY: number,
   slots: readonly TreeSlot[],
   extents: readonly Extent[],
+  columnHalf: number = TEXT_HALF_WIDTH,
 ): number {
   // A leaf adds at most padFixed + padPerPx * treeSize px to the extent,
   // because leafScale(treeSize) <= (LEAF_MIN_SIZE + treeSize) / 170.
@@ -176,8 +180,8 @@ export function fitSize(
   const fit = (room: number, reach: number) => (room - padFixed) / (reach + padPerPx)
 
   let size = MAX_SIZE
-  const columnLeft = width / 2 - TEXT_HALF_WIDTH - COLUMN_GAP
-  const columnRight = width / 2 + TEXT_HALF_WIDTH + COLUMN_GAP
+  const columnLeft = width / 2 - columnHalf - COLUMN_GAP
+  const columnRight = width / 2 + columnHalf + COLUMN_GAP
   slots.forEach((slot, i) => {
     const e = extents[i]
     const cx = slot.x * width
@@ -220,12 +224,14 @@ export function mountGrove(canvas: HTMLCanvasElement, opts: { date?: Date } = {}
   const trees = GROVE_TREES.map((spec) => buildTree(spec.seed, spec.maturity))
   const extents = trees.map(treeExtent)
   const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches
+  const flankQuery = matchMedia(FLANK_QUERY)
 
   let width = 0
   let height = 0
   let groundY = 0
   let dpr = 1
   let layout: GroveLayout = 'strip'
+  let columnHalf = TEXT_HALF_WIDTH
   let slots: TreeSlot[] = []
   let size = 0
 
@@ -323,7 +329,7 @@ export function mountGrove(canvas: HTMLCanvasElement, opts: { date?: Date } = {}
   function fallerIsDone(f: Faller): boolean {
     if (f.y >= groundY || f.x < -10 || f.x > width + 10) return true
     // In the flank layout nothing falls in front of the text column.
-    return layout === 'flank' && Math.abs(f.x - width / 2) < TEXT_HALF_WIDTH
+    return layout === 'flank' && Math.abs(f.x - width / 2) < columnHalf
   }
 
   function stepFallers(dt: number) {
@@ -387,9 +393,12 @@ export function mountGrove(canvas: HTMLCanvasElement, opts: { date?: Date } = {}
     canvas.width = Math.round(width * dpr)
     canvas.height = Math.round(height * dpr)
     groundY = height - 1
-    layout = layoutFor(width)
-    slots = layoutTrees(width)
-    size = fitSize(layout, width, groundY, slots, extents)
+    // The breakpoint change also resizes the canvas, so this re-read runs.
+    layout = flankQuery.matches ? 'flank' : 'strip'
+    // The canvas sits inside the text column; its parent is the column.
+    columnHalf = (canvas.parentElement?.clientWidth ?? 2 * TEXT_HALF_WIDTH) / 2
+    slots = layoutTrees(width, layout, columnHalf)
+    size = fitSize(layout, width, groundY, slots, extents, columnHalf)
     fallers = [] // they spawn again at the new tree positions
     render() // a resized canvas is blank until the next draw
   }

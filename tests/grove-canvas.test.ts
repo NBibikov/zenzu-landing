@@ -20,6 +20,7 @@ import {
   layoutTrees,
   TEXT_HALF_WIDTH,
   type Branch,
+  type GroveLayout,
   type Leaf,
 } from '../src/lib/grove-model.ts'
 
@@ -100,9 +101,14 @@ test('treeExtent contains the tree shape at any time', () => {
 
 // The canopy (extent plus a leaf) keeps clear of the text column and of the
 // canvas edges.
-function canopies(width: number, height: number) {
-  const slots = layoutTrees(width)
-  const size = fitSize(layoutFor(width), width, height - 1, slots, extents)
+function canopies(
+  width: number,
+  height: number,
+  layout: GroveLayout = layoutFor(width),
+  columnHalf = TEXT_HALF_WIDTH,
+) {
+  const slots = layoutTrees(width, layout, columnHalf)
+  const size = fitSize(layout, width, height - 1, slots, extents, columnHalf)
   return {
     size,
     boxes: slots.map((slot, i) => {
@@ -119,17 +125,31 @@ function canopies(width: number, height: number) {
   }
 }
 
+// [canvas width, column half width]. 1265: a 1280 px viewport with a 15 px
+// scrollbar (CSS already shows flank). 1585 and 1920 with 480: a 20 px root
+// font, so the column (48rem) is 960 px and the breakpoint (80rem) is 1600 px.
+const FLANK_CASES: readonly [number, number][] = [
+  [1265, 384],
+  [1280, 384],
+  [1366, 384],
+  [1440, 384],
+  [1920, 384],
+  [1585, 480],
+  [1920, 480],
+]
+
 test('fitSize keeps every canopy clear of the text column in the flank layout', () => {
-  for (const width of [1280, 1366, 1440, 1920]) {
-    const { size, boxes } = canopies(width, 320)
-    assert.ok(size >= 75, `width ${width}: size ${size} is too small`)
-    const left = width / 2 - TEXT_HALF_WIDTH
-    const right = width / 2 + TEXT_HALF_WIDTH
+  for (const [width, columnHalf] of FLANK_CASES) {
+    const label = `width ${width}, column ${columnHalf * 2}`
+    const { size, boxes } = canopies(width, 320, 'flank', columnHalf)
+    assert.ok(size >= 75, `${label}: size ${size} is too small`)
+    const left = width / 2 - columnHalf
+    const right = width / 2 + columnHalf
+    assert.equal(boxes.filter((box) => box.x1 <= left).length, 2, `${label}: 2 trees left`)
     for (const box of boxes) {
-      assert.ok(box.x1 <= left || box.x0 >= right, `width ${width}: canopy over the column`)
-      assert.ok(box.x1 <= left - 16 + 1e-9 || box.x0 >= right + 16 - 1e-9, `width ${width}: gap`)
-      assert.ok(box.x0 >= 0 && box.x1 <= width, `width ${width}: canopy off the canvas`)
-      assert.ok(box.top >= 0, `width ${width}: canopy above the canvas`)
+      assert.ok(box.x1 <= left - 16 + 1e-9 || box.x0 >= right + 16 - 1e-9, `${label}: gap`)
+      assert.ok(box.x0 >= 0 && box.x1 <= width, `${label}: canopy off the canvas`)
+      assert.ok(box.top >= 0, `${label}: canopy above the canvas`)
     }
   }
 })
