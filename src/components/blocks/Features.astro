@@ -32,8 +32,8 @@ const features = [
 
     <!-- One full-width row per feature. The detail opens below its own row
          across the whole container, so an open item leaves no empty paper
-         beside it. All rows share name="feature": opening one closes the
-         other (exclusive accordion, no script). The body opens without motion. -->
+         beside it. All rows share name="feature": where the browser supports
+         it, opening one closes the others (exclusive accordion, no script). The body opens without motion. -->
     <div class="border-b border-hairline">
       {features.map(({ glyph, title, desc, more }) => (
         <div class="relative py-8 border-t border-hairline">
