@@ -372,7 +372,7 @@
     "items": [
       {
         "q": "Qu'est-ce que Zenzu ?",
-        "a": "Zenzu est une application pour apprendre les langues à partir de vrais contenus. Tu importes des vidéos YouTube, des podcasts, des articles ou des photos de texte, tu touches un mot ou une expression pour l'enregistrer en flashcard avec sa phrase d'origine et la prononciation native, puis tu révises avec la répétition espacée FSRS-6. Lisa, le coach IA intégré, explique les mots et organise ton apprentissage dans ta langue."
+        "a": "Zenzu est une application pour apprendre les langues à partir de vrais contenus. Tu importes des vidéos YouTube, des podcasts, des articles ou des photos de texte, tu touches un mot ou une expression pour l'enregistrer en flashcard avec sa phrase d'origine et l'audio de prononciation, puis tu révises avec la répétition espacée FSRS-6. Lisa, le coach IA intégré, explique les mots et organise ton apprentissage dans ta langue."
       },
       {
         "q": "Quelles langues puis-je apprendre avec Zenzu ?",
@@ -388,7 +388,7 @@
       },
       {
         "q": "En quoi Zenzu est-il différent d'Anki ?",
-        "a": "Les deux utilisent la répétition espacée FSRS, mais dans Anki tu crées tes cartes toi-même. Zenzu les crée à partir des contenus que tu regardes, écoutes ou lis déjà : chaque carte garde sa phrase d'origine et un audio natif, pour toujours apprendre le vocabulaire en contexte."
+        "a": "Les deux utilisent la répétition espacée FSRS, mais dans Anki tu crées tes cartes toi-même. Zenzu les crée à partir des contenus que tu regardes, écoutes ou lis déjà : chaque carte garde sa phrase d'origine et un audio pour chaque mot et chaque phrase, pour toujours apprendre le vocabulaire en contexte."
       },
       {
         "q": "Faut-il parler anglais pour utiliser Zenzu ?",

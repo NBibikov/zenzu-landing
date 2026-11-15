@@ -39,7 +39,7 @@ sources:
 ## Where Zenzu is the better choice
 
 - **Podcasts.** Episodes are transcribed so you can read along and save any phrase with pronunciation.
-- **Structured learning for European languages.** AI courses cover grammar and vocabulary from A1 to C1 in English, German, French and Spanish, next to 18 curated starter decks.
+- **Structured learning for European languages.** AI courses cover grammar and vocabulary, sorted by CEFR level, in English, German, French and Spanish, next to curated starter decks.
 - **Explanations in your language.** Lisa and the interface work in English, Ukrainian, German, French, Spanish and Portuguese.
 
 ## Bottom line

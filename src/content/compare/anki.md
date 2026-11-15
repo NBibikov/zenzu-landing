@@ -15,7 +15,7 @@ rows:
     zenzu: "FSRS-6, on by default"
     other: "FSRS (since 23.10, enabled in deck options) or the legacy SM-2 scheduler"
   - feature: "Context and audio"
-    zenzu: "Every card keeps its source sentence; native text-to-speech on every word and sentence"
+    zenzu: "Every card keeps its source sentence; text-to-speech on every word and sentence"
     other: "Whatever you add yourself — media and templates are fully customizable"
   - feature: "AI help"
     zenzu: "Lisa, an AI coach that explains words and plans study in your language"
@@ -50,7 +50,7 @@ Most learners who drop Anki don't drop it because of the algorithm — they drop
 
 - **Cards come from content you chose.** Paste a YouTube link, open a podcast episode or snap a photo of a page, then tap a word or select a phrase.
 - **Context is kept automatically.** Each card carries the sentence it came from, and phrases get cloze deletion without manual formatting.
-- **Pronunciation is built in.** Native text-to-speech plays for every word and sentence.
+- **Pronunciation is built in.** Text-to-speech plays for every word and sentence.
 - **You learn from your own language.** Explanations and the AI coach work in English, Ukrainian, German, French, Spanish and Portuguese — not only through English.
 
 ## Can you use both?

@@ -372,7 +372,7 @@
     "items": [
       {
         "q": "Was ist Zenzu?",
-        "a": "Zenzu ist eine Sprachlern-App, mit der du aus echten Inhalten lernst. Du importierst YouTube-Videos, Podcasts, Artikel oder Fotos von Texten, tippst auf ein Wort oder eine Phrase und speicherst sie als Karteikarte mit dem Originalsatz und muttersprachlicher Aussprache. Wiederholungen plant der FSRS-6-Algorithmus. Lisa, der eingebaute KI-Coach, erklärt Wörter und plant dein Lernen in deiner Sprache."
+        "a": "Zenzu ist eine Sprachlern-App, mit der du aus echten Inhalten lernst. Du importierst YouTube-Videos, Podcasts, Artikel oder Fotos von Texten, tippst auf ein Wort oder eine Phrase und speicherst sie als Karteikarte mit dem Originalsatz und Audio zur Aussprache. Wiederholungen plant der FSRS-6-Algorithmus. Lisa, der eingebaute KI-Coach, erklärt Wörter und plant dein Lernen in deiner Sprache."
       },
       {
         "q": "Welche Sprachen kann ich mit Zenzu lernen?",
@@ -388,7 +388,7 @@
       },
       {
         "q": "Was unterscheidet Zenzu von Anki?",
-        "a": "Beide nutzen FSRS-Wiederholung, aber in Anki erstellst du Karten selbst. Zenzu erstellt sie aus den Inhalten, die du ohnehin schaust, hörst oder liest: Jede Karte behält ihren Originalsatz und bringt muttersprachliche Audioaufnahmen mit — so lernst du Vokabeln immer im Kontext."
+        "a": "Beide nutzen FSRS-Wiederholung, aber in Anki erstellst du Karten selbst. Zenzu erstellt sie aus den Inhalten, die du ohnehin schaust, hörst oder liest: Jede Karte behält ihren Originalsatz und bringt Audio für jedes Wort und jeden Satz mit — so lernst du Vokabeln immer im Kontext."
       },
       {
         "q": "Muss ich Englisch können, um Zenzu zu nutzen?",
