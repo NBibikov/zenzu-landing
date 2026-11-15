@@ -65,9 +65,10 @@
     }
   },
   "name": {
-    "kicker": "Le nom",
-    "title": "D'un esprit calme naît une nouvelle langue.",
-    "body": "Zenzu naît du zen — le calme, la présence, le silence intérieur. La maîtrise d'une langue ne vient pas de séries frénétiques, mais d'un esprit posé et sans hâte. Parler une autre langue devrait ressembler à entrer dans une forêt : tu respires, tu ralentis, et chaque mot prend racine comme un arbre dans ton bosquet."
+    "kicker": "Pourquoi Zenzu",
+    "title": "Zen et zu : vers le calme.",
+    "pronunciation": "Se prononce ZEN-zou · /ˈzɛn.zu/",
+    "body": "Le zen, c'est l'attention calme et sans hâte du bouddhisme zen. Zu, en allemand, veut dire « vers ». Ensemble, le nom signifie vers le calme. La maîtrise d'une langue ne vient pas de séries frénétiques, mais d'un esprit posé et d'un peu de pratique chaque jour. Chaque mot appris prend racine comme un arbre dans ton bosquet."
   },
   "features": {
     "title": "Tout ce dont tu as besoin pour apprendre",

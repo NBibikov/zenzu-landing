@@ -3,14 +3,17 @@ interface Props { t: any }
 const { t } = Astro.props
 ---
 
-<section class="py-24 px-6 border-t border-hairline">
+<section class="py-16 md:py-20 px-6 border-t border-hairline">
   <div class="max-w-2xl mx-auto text-center" data-reveal>
     <p class="zz-kicker text-moss mb-6">
       {t.name.kicker}
     </p>
-    <h2 class="font-serif text-3xl md:text-4xl text-ink leading-[1.2] mb-6">
+    <h2 class="font-serif text-3xl md:text-4xl text-ink leading-[1.2] mb-3">
       {t.name.title}
     </h2>
+    <p class="text-ink-2 text-sm tracking-wide mb-6">
+      {t.name.pronunciation}
+    </p>
     <p class="text-ink-2 text-lg leading-relaxed">
       {t.name.body}
     </p>
