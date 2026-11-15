@@ -16,24 +16,26 @@ const scenarios = MCP_SCENARIOS.slice(0, HOME_SCENARIOS).map(({ id, write }) => 
 ---
 
 <section class="py-24 px-6 bg-paper-2">
-  <div class="max-w-3xl mx-auto" data-reveal>
-    <p class="zz-kicker text-moss mb-6">{t.mcp.kicker}</p>
-    <h2 class="font-serif text-3xl md:text-4xl text-ink leading-[1.2] mb-4">{t.mcp.title}</h2>
-    <p class="text-ink-2 text-lg leading-relaxed">{t.mcp.intro}</p>
+  <div class="max-w-5xl mx-auto" data-reveal>
+    <div class="max-w-3xl">
+      <p class="zz-kicker text-moss mb-6">{t.mcp.kicker}</p>
+      <h2 class="font-serif text-3xl md:text-4xl text-ink leading-[1.2] mb-4">{t.mcp.title}</h2>
+      <p class="text-ink-2 text-lg leading-relaxed">{t.mcp.intro}</p>
 
-    <ul class="mt-6">
-      {scenarios.map(({ text, write }) => (
-        <li class="py-3 border-t border-hairline">
-          {/* The mark quotes the app's option label: it keeps the app's casing and has no kicker tracking. */}
-          {write && <span class="block text-xs font-medium text-ink-3 mb-1">{t.mcp.writeMark}</span>}
-          <p class="text-ink-2 leading-relaxed">{text}</p>
-        </li>
-      ))}
-    </ul>
+      <ul class="mt-6">
+        {scenarios.map(({ text, write }) => (
+          <li class="py-3 border-t border-hairline">
+            {/* The mark quotes the app's option label: it keeps the app's casing and has no kicker tracking. */}
+            {write && <span class="block text-xs font-medium text-ink-3 mb-1">{t.mcp.writeMark}</span>}
+            <p class="text-ink-2 leading-relaxed">{text}</p>
+          </li>
+        ))}
+      </ul>
 
-    {/* A quiet text link with an arrow, as under the hero button. min-h-11: 44px tap target. */}
-    <a href={localePath('/mcp/', locale)} class="mt-1 inline-flex items-center gap-1.5 min-h-11 text-ink-2 hover:text-ink transition-colors">
-      {t.mcp.detailsLink}<span aria-hidden="true">&rarr;</span>
-    </a>
+      {/* A quiet text link with an arrow, as under the hero button. min-h-11: 44px tap target. */}
+      <a href={localePath('/mcp/', locale)} class="mt-1 inline-flex items-center gap-1.5 min-h-11 text-ink-2 hover:text-ink transition-colors">
+        {t.mcp.detailsLink}<span aria-hidden="true">&rarr;</span>
+      </a>
+    </div>
   </div>
 </section>

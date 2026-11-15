@@ -24,7 +24,7 @@ const switchTarget = languageSwitchPath(Astro.url.pathname)
       app chrome. Lowercase and the zen/zu split keep the capital Z from
       reading as anything but the word "zen". Not localized on purpose.
     -->
-    <a href={localePath('/', locale)} class="flex items-center gap-2 font-sans text-lg text-ink" aria-label="zenzu">
+    <a href={localePath('/', locale)} class="flex items-center gap-2 min-h-11 font-sans text-lg text-ink" aria-label="zenzu">
       <svg class="w-6 h-6 shrink-0" viewBox="0 0 24 24" aria-hidden="true">
         <path d="M18.4 5.9 A8.6 8.6 0 1 0 20.3 14.6" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
         <path d="M18.4 5.9 A8.6 8.6 0 1 0 20.3 14.6" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="0 14 40" opacity="0.55"/>
@@ -33,21 +33,22 @@ const switchTarget = languageSwitchPath(Astro.url.pathname)
     </a>
 
     <div class="flex items-center gap-3 sm:gap-5 md:gap-8 ml-auto">
-      <a href={localePath('/', locale) + '#features'} class="hidden md:inline text-sm text-ink-2 hover:text-ink transition-colors">
+      <a href={localePath('/', locale) + '#features'} class="hidden md:inline-flex items-center min-h-11 text-sm text-ink-2 hover:text-ink transition-colors">
         {t.nav.features}
       </a>
-      <a href={localePath('/', locale) + '#how-it-works'} class="hidden md:inline text-sm text-ink-2 hover:text-ink transition-colors">
+      <a href={localePath('/', locale) + '#how-it-works'} class="hidden md:inline-flex items-center min-h-11 text-sm text-ink-2 hover:text-ink transition-colors">
         {t.nav.howItWorks}
       </a>
       <a
         href={localePath('/blog/', locale)}
         class:list={[
-          'zz-swash text-sm transition-colors',
-          onBlog ? 'text-ink font-semibold' : 'zz-swash-hover text-ink-2 hover:text-ink',
+          'inline-flex items-center min-h-11 text-sm transition-colors',
+          onBlog ? 'text-ink font-semibold' : 'text-ink-2 hover:text-ink',
         ]}
         aria-current={onBlog ? 'page' : undefined}
       >
-        {t.nav.blog}
+        <!-- The swash sits on the word, not on the 44px tap area. -->
+        <span class:list={['zz-swash', !onBlog && 'zz-swash-hover']}>{t.nav.blog}</span>
       </a>
 
       <!-- Language switcher: opens on hover, and on a
@@ -72,7 +73,7 @@ const switchTarget = languageSwitchPath(Astro.url.pathname)
                 <a
                   href={localePath(switchTarget, loc)}
                   lang={loc}
-                  class="block px-5 py-2 text-sm text-ink-2 hover:text-ink transition-colors"
+                  class="block px-5 py-3 text-sm text-ink-2 hover:text-ink transition-colors"
                   aria-current={loc === locale ? 'true' : undefined}
                 >
                   <span class:list={[loc === locale && 'zz-swash text-ink font-semibold']}>{localeNames[loc]}</span>

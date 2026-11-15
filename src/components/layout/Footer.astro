@@ -22,26 +22,28 @@ const switchTarget = languageSwitchPath(Astro.url.pathname)
         <p class="text-sm leading-relaxed">{t.footer.brand}</p>
       </div>
       <div>
-        <h4 class="zz-kicker text-ink mb-4">{t.footer.product}</h4>
-        <ul class="space-y-2.5 text-sm">
-          <li><a href={localePath('/', locale) + '#features'} class="hover:text-ink transition-colors">{t.nav.features}</a></li>
-          <li><a href={localePath('/', locale) + '#how-it-works'} class="hover:text-ink transition-colors">{t.nav.howItWorks}</a></li>
-          <li><a href={localePath('/blog/', locale)} class="hover:text-ink transition-colors">{t.nav.blog}</a></li>
-          <li><a href="/compare/" class="hover:text-ink transition-colors">{t.footer.compare}</a></li>
-          <li><a href={localePath('/mcp/', locale)} class="hover:text-ink transition-colors">{t.footer.mcp}</a></li>
-          <li><a href={WEB_APP_URL} class="hover:text-ink transition-colors">{t.app.open}</a></li>
+        <h4 class="zz-kicker text-ink mb-1">{t.footer.product}</h4>
+        <ul class="text-sm">
+          <li><a href={localePath('/', locale) + '#features'} class="inline-flex items-center min-h-11 hover:text-ink transition-colors">{t.nav.features}</a></li>
+          <li><a href={localePath('/', locale) + '#how-it-works'} class="inline-flex items-center min-h-11 hover:text-ink transition-colors">{t.nav.howItWorks}</a></li>
+          <li><a href={localePath('/blog/', locale)} class="inline-flex items-center min-h-11 hover:text-ink transition-colors">{t.nav.blog}</a></li>
+          <li><a href="/compare/" class="inline-flex items-center min-h-11 hover:text-ink transition-colors">{t.footer.compare}</a></li>
+          <li><a href={localePath('/mcp/', locale)} class="inline-flex items-center min-h-11 hover:text-ink transition-colors">{t.footer.mcp}</a></li>
+          <li><a href={WEB_APP_URL} class="inline-flex items-center min-h-11 hover:text-ink transition-colors">{t.app.open}</a></li>
         </ul>
       </div>
       <div>
-        <h4 class="zz-kicker text-ink mb-4">{t.footer.legal}</h4>
-        <ul class="space-y-2.5 text-sm">
-          <li><a href={localePath('/privacy/', locale)} class="hover:text-ink transition-colors">{t.footer.privacy}</a></li>
-          <li><a href={localePath('/terms/', locale)} class="hover:text-ink transition-colors">{t.footer.terms}</a></li>
-          <li><a href={localePath('/contact/', locale)} class="hover:text-ink transition-colors">{t.footer.contact}</a></li>
-          <!-- A quiet way to reach us, next to the contact page. -->
-          <li class="leading-relaxed">
+        <h4 class="zz-kicker text-ink mb-1">{t.footer.legal}</h4>
+        <ul class="text-sm">
+          <li><a href={localePath('/privacy/', locale)} class="inline-flex items-center min-h-11 hover:text-ink transition-colors">{t.footer.privacy}</a></li>
+          <li><a href={localePath('/terms/', locale)} class="inline-flex items-center min-h-11 hover:text-ink transition-colors">{t.footer.terms}</a></li>
+          <li><a href={localePath('/contact/', locale)} class="inline-flex items-center min-h-11 hover:text-ink transition-colors">{t.footer.contact}</a></li>
+          <!-- A quiet way to reach us, next to the contact page. The link stays
+               inline in the sentence; its vertical padding makes a 44px tap
+               area without moving the lines. -->
+          <li class="mt-3 leading-relaxed">
             {t.footer.writeLead}{' '}
-            <a href={mailtoHref(t.contact.subject)} class="text-ink underline decoration-hairline underline-offset-4 hover:decoration-ink transition-colors whitespace-nowrap">{CONTACT_EMAIL}</a>{' '}
+            <a href={mailtoHref(t.contact.subject)} class="py-3.5 text-ink underline decoration-hairline underline-offset-4 hover:decoration-ink transition-colors whitespace-nowrap">{CONTACT_EMAIL}</a>{' '}
             {t.footer.writeTail}
           </li>
         </ul>
@@ -49,16 +51,16 @@ const switchTarget = languageSwitchPath(Astro.url.pathname)
     </div>
     <!-- Every interface language, the current one on the swash. -->
     <nav class="mt-12 pt-8 border-t border-hairline" aria-label={t.nav.languages}>
-      <ul class="flex flex-wrap justify-center gap-x-6 gap-y-3 text-sm">
+      <ul class="flex flex-wrap justify-center gap-x-6 text-sm">
         {supportedLocales.map((loc) => (
           <li>
             <a
               href={localePath(switchTarget, loc)}
               lang={loc}
-              class:list={['zz-swash', loc === locale ? 'text-ink font-semibold' : 'zz-swash-hover hover:text-ink transition-colors']}
+              class:list={['inline-flex items-center min-h-11', loc === locale ? 'text-ink font-semibold' : 'hover:text-ink transition-colors']}
               aria-current={loc === locale ? 'true' : undefined}
             >
-              {localeNames[loc]}
+              <span class:list={['zz-swash', loc !== locale && 'zz-swash-hover']}>{localeNames[loc]}</span>
             </a>
           </li>
         ))}

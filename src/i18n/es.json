@@ -7,7 +7,8 @@
     "features": "Características",
     "howItWorks": "Cómo funciona",
     "languages": "Idiomas",
-    "blog": "Blog"
+    "blog": "Blog",
+    "skip": "Saltar al contenido"
   },
   "hero": {
     "headline1": "Aprende un idioma ",
@@ -32,7 +33,7 @@
       },
       "review": {
         "title": "Repaso",
-        "desc": "Una tarjeta cada vez, con una frase de ejemplo. Valora cuánto la recordabas y FSRS fija el próximo repaso."
+        "desc": "Una tarjeta cada vez, con una frase de ejemplo. Valora cuánto la recordabas y el planificador elige el día del próximo repaso."
       },
       "lisa": {
         "title": "Lisa, tu coach",
@@ -58,7 +59,8 @@
         "title": "Mazos",
         "desc": "Todas las tarjetas de hoy en un solo repaso, además de un catálogo listo y mazos de películas y series."
       }
-    }
+    },
+    "position": "Pantalla {n} de {total}"
   },
   "name": {
     "kicker": "Por qué Zenzu",
@@ -120,7 +122,7 @@
     },
     "courses": {
       "title": "Cursos con IA",
-      "desc": "Lecciones de gramática y vocabulario para inglés, alemán, francés y español — preparadas con antelación y ordenadas por nivel MCER.",
+      "desc": "Lecciones de gramática y vocabulario para inglés, alemán, francés y español — preparadas con antelación y ordenadas por nivel MCER, de A1 (inicial) a C1 (avanzado).",
       "more": {
         "what": "Avanza por lecciones de gramática y vocabulario de inglés, alemán, francés o español, nivel a nivel desde A1 y hasta C1 donde las lecciones están listas. Una lección aparece solo cuando hay una versión lista para tu idioma; los cursos de alemán, francés y español también usan la versión en inglés. Así que, por ahora, algunos pares de idiomas tienen solo parte de las lecciones o todavía ninguna. Las palabras de una lección pueden pasar a tus mazos para repasarlas.",
         "how": "Una lección tiene etapas como palabras nuevas, gramática, un diálogo y un resumen, cada una con ejercicios: opción múltiple, completar huecos, emparejar, construir oraciones y dictado. Las lecciones posteriores retoman palabras anteriores con su traducción. Una prueba de nivel corta fija tu nivel; todos los niveles hasta ese quedan abiertos, y sin la prueba empiezas en A1.",
@@ -149,7 +151,7 @@
   },
   "forWhom": {
     "title": "Para quienes toman los idiomas en serio",
-    "subtitle": "Zenzu es una herramienta seria, no un juguete: sin mascotas adorables, sin un juego que ganar. Es para quienes quieren ser dueños de su progreso y de sus datos. Aprender un idioma es una de las cosas más exigentes y más gratificantes que puedes hacer. Zenzu está creado justo para eso.",
+    "subtitle": "Zenzu es una herramienta seria, no un juguete: sin mascotas adorables, sin un juego que ganar. Es para quienes quieren ser dueños de su progreso y de sus datos.",
     "forLabel": "Zenzu es para ti si…",
     "for1": "Crees que la verdadera fluidez viene de interactuar con contenido auténtico",
     "for2": "Te comprometes a repasar diariamente, incluso en los días difíciles",
@@ -170,11 +172,11 @@
     },
     "step2": {
       "title": "Toca palabras o selecciona frases",
-      "desc": "Traducciones instantáneas. Lisa muestra contexto, ejemplos y pronunciación. Las frases se guardan con hueco cloze automático."
+      "desc": "Traducciones instantáneas. Lisa muestra contexto, ejemplos y pronunciación. Las expresiones se guardan como tarjetas cloze: la oración con un hueco donde estaba la expresión."
     },
     "step3": {
       "title": "Repasa con repetición espaciada",
-      "desc": "El algoritmo FSRS-6 programa los repasos en el momento óptimo — para que cada minuto que inviertas cuente."
+      "desc": "FSRS-6 es un planificador que elige el día de repaso de cada tarjeta. La trae de vuelta justo antes de que la olvides, para que cada minuto que inviertas cuente."
     }
   },
   "mcp": {

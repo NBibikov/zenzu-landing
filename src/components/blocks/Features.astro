@@ -49,7 +49,7 @@ const features = [
                  phones it follows the description. min-h-11: 44px tap target. -->
             <summary class="inline-flex items-center gap-2 min-h-11 mt-2 ml-[52px] md:ml-0 md:mt-0 md:absolute md:top-7 md:right-0 cursor-pointer list-none [&::-webkit-details-marker]:hidden zz-kicker text-ink-3 hover:text-ink">
               <span><span class="group-open:hidden">{t.features.moreLabel}</span><span class="hidden group-open:inline">{t.features.lessLabel}</span><span class="sr-only">: {title}</span></span>
-              <span class="text-moss text-base leading-none transition-transform group-open:rotate-45" aria-hidden="true">+</span>
+              <span class="zz-plus" aria-hidden="true">+</span>
             </summary>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10 mt-6 md:mt-8">
               {(['what', 'how', 'note'] as const).map((part) => (

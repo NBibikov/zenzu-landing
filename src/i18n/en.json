@@ -7,7 +7,8 @@
     "features": "Features",
     "howItWorks": "How it works",
     "languages": "Languages",
-    "blog": "Blog"
+    "blog": "Blog",
+    "skip": "Skip to content"
   },
   "hero": {
     "headline1": "Learn a language ",
@@ -32,7 +33,7 @@
       },
       "review": {
         "title": "Review",
-        "desc": "One card at a time, with an example sentence. Rate how well you knew it, and FSRS sets the next review."
+        "desc": "One card at a time, with an example sentence. Rate how well you knew it, and the scheduler picks the day of the next review."
       },
       "lisa": {
         "title": "Lisa, your coach",
@@ -58,7 +59,8 @@
         "title": "Decks",
         "desc": "Every card due today in one review, plus a ready-made catalog and decks for films and series."
       }
-    }
+    },
+    "position": "Screen {n} of {total}"
   },
   "name": {
     "kicker": "Why Zenzu",
@@ -120,7 +122,7 @@
     },
     "courses": {
       "title": "AI Courses",
-      "desc": "Grammar and vocabulary lessons for English, German, French, and Spanish, prepared in advance and sorted by CEFR level.",
+      "desc": "Grammar and vocabulary lessons for English, German, French, and Spanish, prepared in advance and sorted by CEFR level, from A1 (beginner) to C1 (advanced).",
       "more": {
         "what": "Work through grammar and vocabulary lessons for English, German, French or Spanish, level by level from A1, up to C1 where the lessons are ready. A lesson appears only when a version for your language is ready; the German, French and Spanish courses also use the English version. So for now some language pairs have only part of the lessons, or none yet. Words from a lesson can go into your decks for review.",
         "how": "A lesson has stages such as new words, grammar, a dialogue and a recap, each with exercises: multiple choice, gap fill, matching, sentence building and dictation. Later lessons bring back earlier words with their translation. A short placement test sets your level; all levels up to it are open, and without the test you start at A1.",
@@ -149,7 +151,7 @@
   },
   "forWhom": {
     "title": "For those who take language seriously",
-    "subtitle": "Zenzu is a serious tool, not a toy. No cute mascots, no game to win. It's for people who want to own their progress and their data. Learning a language is one of the most demanding, most rewarding things you can do. Zenzu is built for that.",
+    "subtitle": "Zenzu is a serious tool, not a toy: no cute mascots, no game to win. It is for people who want to own their progress and their data.",
     "forLabel": "Zenzu is for you if…",
     "for1": "You believe real fluency comes from engaging with authentic content",
     "for2": "You're committed to daily review, even on hard days",
@@ -170,11 +172,11 @@
     },
     "step2": {
       "title": "Tap words or select phrases",
-      "desc": "See instant translations. Lisa shows context, examples, and pronunciation. Phrases save with automatic cloze deletion."
+      "desc": "See instant translations. Lisa shows context, examples, and pronunciation. Phrases save as cloze cards: the sentence with a gap where the phrase was."
     },
     "step3": {
       "title": "Review with spaced repetition",
-      "desc": "FSRS-6 algorithm schedules your reviews at the optimal moment, so every minute you invest counts."
+      "desc": "FSRS-6 is a scheduler that picks the day to review each card. It brings a card back just before you would forget it, so every minute you invest counts."
     }
   },
   "mcp": {

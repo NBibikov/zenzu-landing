@@ -130,8 +130,20 @@ html {
   }
   .zz-btn-cancel::before { transform: scaleX(-1); }
 
+  /* Disclosure mark of every <details> list (Features, FAQ): a moss plus
+     that turns into a cross when its .group parent is open. */
+  .zz-plus {
+    flex: none;
+    color: var(--color-moss);
+    font-size: 1.5rem;
+    line-height: 1;
+    transition: transform 150ms ease;
+  }
+  .group[open] .zz-plus { transform: rotate(45deg); }
+
+  /* 44px high: the smallest tap target on the site. */
   .zz-btn-sm {
-    min-height: 36px;
+    min-height: 44px;
     padding: 0.45rem 1.1rem;
     font-size: 0.875rem;
   }
@@ -170,7 +182,8 @@ html {
     transition: opacity 150ms ease;
   }
   .zz-swash-hover:hover::before,
-  .zz-swash-hover:focus-visible::before { opacity: 1; }
+  .zz-swash-hover:focus-visible::before,
+  :is(a, button):is(:hover, :focus-visible) > .zz-swash-hover::before { opacity: 1; }
 
   /* Mark — the swash under words inside running text (app: SwashedText).
      A background, not a pseudo-element, so it follows the words when they

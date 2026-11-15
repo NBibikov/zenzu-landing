@@ -14,21 +14,21 @@ const notForItems: string[] = [t.forWhom.notFor1, t.forWhom.notFor2, t.forWhom.n
 ---
 
 <section class="py-24 px-6 border-t border-hairline">
-  <div class="max-w-4xl mx-auto" data-reveal>
+  <div class="max-w-5xl mx-auto" data-reveal>
     <div class="max-w-2xl mb-16">
       <span class="zz-stroke mb-5" aria-hidden="true"></span>
       <h2 class="font-serif text-3xl md:text-4xl text-ink mb-4">{t.forWhom.title}</h2>
       <p class="text-ink-2 text-lg leading-relaxed">{t.forWhom.subtitle}</p>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
+    <div class="max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
       <div>
         <h3 class="zz-kicker text-moss mb-6">
           {t.forWhom.forLabel}
         </h3>
         <ul>
           {forItems.map((item) => (
-            <li class="flex items-start gap-3 text-ink text-[15px] leading-relaxed py-3 border-t border-hairline">
+            <li class="flex items-start gap-3 text-ink text-base leading-relaxed py-3 border-t border-hairline">
               <Glyph name="tick" size={18} class="text-moss shrink-0 mt-1" />
               <span>{item}</span>
             </li>
@@ -42,7 +42,7 @@ const notForItems: string[] = [t.forWhom.notFor1, t.forWhom.notFor2, t.forWhom.n
         </h3>
         <ul>
           {notForItems.map((item) => (
-            <li class="flex items-start gap-3 text-ink-2 text-[15px] leading-relaxed py-3 border-t border-hairline">
+            <li class="flex items-start gap-3 text-ink-2 text-base leading-relaxed py-3 border-t border-hairline">
               <Glyph name="dash" size={18} class="text-ink-3 shrink-0 mt-1" />
               <span>{item}</span>
             </li>
