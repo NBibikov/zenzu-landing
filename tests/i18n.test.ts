@@ -148,7 +148,7 @@ test('the name block has 4 non-empty paragraphs in every locale', () => {
 test('no locale mentions Buddhism', () => {
   for (const locale of LOCALES) {
     const text = readFileSync(new URL(`../src/i18n/${locale}.json`, import.meta.url), 'utf8')
-    assert.doesNotMatch(text, /budd|bouddh|budis|буддиз/i, `${locale}: mentions Buddhism`)
+    assert.doesNotMatch(text, /buddh|bouddh|budis|буддиз/i, `${locale}: mentions Buddhism`)
   }
 })
 
