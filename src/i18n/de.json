@@ -72,41 +72,92 @@
   "features": {
     "title": "Alles, was du zum Lernen brauchst",
     "subtitle": "Eine App für alle deine Inhalte zum Sprachenlernen. Importiere, was du liebst, lerne, was wichtig ist.",
+    "moreLabel": "Mehr dazu",
+    "labels": {
+      "what": "Was du bekommst",
+      "how": "So funktioniert es",
+      "note": "Gut zu wissen"
+    },
     "lisa": {
       "title": "Lisa — dein KI-Coach",
-      "desc": "Frag Lisa nach einem Lernplan, Worterklärungen oder täglichen Wiederholungen. Sie antwortet in deiner Sprache — Englisch, Ukrainisch, Deutsch, Spanisch, Französisch oder Portugiesisch."
+      "desc": "Frag Lisa nach einem Lernplan, Worterklärungen oder täglichen Wiederholungen. Sie antwortet in deiner Sprache — Englisch, Ukrainisch, Deutsch, Spanisch, Französisch oder Portugiesisch.",
+      "more": {
+        "what": "Frag Lisa, was ein Wort bedeutet, warum ein Satz so gebaut ist oder was du heute lernen sollst. Du kannst dich auch über ein Thema deiner Wahl mit ihr unterhalten. Danach siehst du deine Fehler mit den richtigen Formen.",
+        "how": "Bevor sie antwortet, sieht Lisa dein Niveau, deinen Fortschritt, deine fälligen Karten und deine Stapel. Bittest du sie, Wörter zu speichern oder einen Stapel anzulegen, zeigt sie einen Vorschlag — geändert wird erst, wenn du bestätigst. Zwischen den Sitzungen behält sie kurze Notizen über dich; du kannst sie in den Einstellungen ansehen und löschen.",
+        "note": "Lisa antwortet in deiner Oberflächensprache: Englisch, Ukrainisch, Deutsch, Spanisch, Französisch oder Portugiesisch. Auf Wunsch wechselt sie in eine andere Sprache."
+      }
     },
     "youtube": {
       "title": "YouTube-Videos",
-      "desc": "Mit Live-Transkript ansehen. Tippe auf ein Wort oder markiere eine Phrase — Zenzu speichert sie als Karte mit vollständigem Satzkontext und muttersprachlicher Aussprache."
+      "desc": "Mit Live-Transkript ansehen. Tippe auf ein Wort oder markiere eine Phrase — Zenzu speichert sie als Karte mit vollständigem Satzkontext und muttersprachlicher Aussprache.",
+      "more": {
+        "what": "Sieh dir ein YouTube-Video mit Transkript unter dem Player an. Die aktuelle Zeile läuft mit dem Video mit. Tippe auf ein Wort für die Übersetzung und speichere das Wort, eine Phrase oder den ganzen Satz als Karte.",
+        "how": "Zenzu lädt die Untertitel, die das Video in deiner Lernsprache bereits hat. Jede Karte behält den Satz, aus dem sie stammt, samt Übersetzung, und „An der Quelle öffnen“ bringt dich an genau diese Stelle im Video zurück. Du kannst einen Satz in einer Schleife wiederholen und die Wiedergabegeschwindigkeit ändern.",
+        "note": "Das Video braucht Untertitel in deiner Lernsprache. Videos, deren Urheber die Wiedergabe auf anderen Websites abgeschaltet hat, lassen sich in Zenzu nicht abspielen."
+      }
     },
     "podcasts": {
       "title": "Podcasts",
-      "desc": "KI-transkribierte Episoden, die du beim Hören mitlesen kannst. Markiere eine Phrase, um sie als Karte mit Aussprache für jedes Wort zu speichern."
+      "desc": "KI-transkribierte Episoden, die du beim Hören mitlesen kannst. Markiere eine Phrase, um sie als Karte mit Aussprache für jedes Wort zu speichern.",
+      "more": {
+        "what": "Lies das Transkript einer Episode, während du zuhörst. Tippe auf ein Wort, eine Phrase oder einen Satz, um die Übersetzung zu sehen und als Karte zu speichern.",
+        "how": "Such eine Sendung im Apple-Podcasts-Verzeichnis und abonniere sie; neue Episoden kommen aus dem Feed der Sendung. Zenzu transkribiert eine Episode per Spracherkennung: Jedes Wort bekommt eine Zeitmarke, und die gesprochene Sprache wird automatisch erkannt.",
+        "note": "Episoden, die länger als drei Stunden sind, werden nicht transkribiert."
+      }
     },
     "starterDecks": {
       "title": "Starter-Stapel",
-      "desc": "18 handverlesene Stapel von A1 bis C1 — Alltagsvokabular, Business, Wissenschaft, Redewendungen und mehr. Stapelnamen passen sich deiner Spracheinstellung an."
+      "desc": "18 handverlesene Stapel von A1 bis C1 — Alltagsvokabular, Business, Wissenschaft, Redewendungen und mehr. Stapelnamen passen sich deiner Spracheinstellung an.",
+      "more": {
+        "what": "Starte mit fertigen Stapeln aus Wörtern und Phrasen für den Alltag, von A1 bis C1: Essen, Reisen, Arbeit, Gefühle, Redewendungen, Business und Wissenschaft. Jede Karte hat einen Beispielsatz, so siehst du das Wort ab der ersten Wiederholung im Kontext.",
+        "how": "Jede Karte gibt es in neun Sprachen: Englisch, Deutsch, Spanisch, Französisch, Portugiesisch, Ukrainisch, Japanisch, Koreanisch und Chinesisch. Die Vorderseite steht in deiner Lernsprache, die Rückseite in deiner Muttersprache; fehlt deine Muttersprache in dieser Liste, wird die Rückseite beim Hinzufügen des Stapels übersetzt. Den Katalog kannst du nach Sprache und Niveau filtern.",
+        "note": "Manche Stapel gibt es nur für eine Sprache, etwa die Tabellen unregelmäßiger Verben oder die Stapel zu falschen Freunden für Englisch und Deutsch. Stapelnamen erscheinen in deiner Oberflächensprache."
+      }
     },
     "interface": {
       "title": "Oberfläche in 6 Sprachen",
-      "desc": "Nutze die App auf Englisch, Ukrainisch, Deutsch, Spanisch, Französisch oder Portugiesisch. Lerne aus deiner Muttersprache heraus, nicht über Englisch."
+      "desc": "Nutze die App auf Englisch, Ukrainisch, Deutsch, Spanisch, Französisch oder Portugiesisch. Lerne aus deiner Muttersprache heraus, nicht über Englisch.",
+      "more": {
+        "what": "Menüs, Hinweise und Lisas Antworten erscheinen in deiner Sprache: Englisch, Ukrainisch, Deutsch, Spanisch, Französisch oder Portugiesisch. Übersetzungen auf den Karten stehen in deiner Muttersprache, so lernst du ohne Umweg über Englisch.",
+        "how": "Standardmäßig folgt die App der Muttersprache in deinem Profil. Du kannst auch der Sprache deines Geräts folgen oder eine Sprache in den Einstellungen wählen.",
+        "note": "Lernen kannst du Englisch, Deutsch, Französisch oder Spanisch. Gibt es die Oberfläche nicht in deiner Muttersprache, etwa Italienisch oder Polnisch, kommen die Übersetzungen trotzdem in dieser Sprache, und die App zeigt eine andere Oberflächensprache."
+      }
     },
     "courses": {
       "title": "KI-Kurse",
-      "desc": "Personalisierte Grammatik- und Vokabelkurse für Englisch, Deutsch, Französisch und Spanisch — A1 bis C1. Übungen passen sich deinem Niveau an."
+      "desc": "Personalisierte Grammatik- und Vokabelkurse für Englisch, Deutsch, Französisch und Spanisch — A1 bis C1. Übungen passen sich deinem Niveau an.",
+      "more": {
+        "what": "Lerne Grammatik und Wortschatz in Lektionen für Englisch, Deutsch, Französisch oder Spanisch, Niveau für Niveau von A1 bis C1. Wörter aus einer Lektion kannst du zum Wiederholen in deine Stapel übernehmen.",
+        "how": "Eine Lektion hat Abschnitte wie neue Wörter, Grammatik, einen Dialog und eine Zusammenfassung, jeweils mit Übungen: Multiple Choice, Lückentext, Zuordnen, Sätze bauen und Diktat. Spätere Lektionen greifen frühere Wörter mit ihrer Übersetzung wieder auf. Ein kurzer Einstufungstest legt dein Niveau fest; alle Stufen bis dahin sind offen, ohne Test beginnst du bei A1.",
+        "note": "Die Lektionen sind vorab erstellt und für alle Lernenden eines Niveaus gleich."
+      }
     },
     "srs": {
       "title": "FSRS-6 Verteilte Wiederholung",
-      "desc": "Ein wissenschaftlich fundierter Algorithmus plant Wiederholungen zum optimalen Zeitpunkt. Erinnere dich für immer an Wörter."
+      "desc": "Ein wissenschaftlich fundierter Algorithmus plant Wiederholungen zum optimalen Zeitpunkt. Erinnere dich für immer an Wörter.",
+      "more": {
+        "what": "Jeden Tag siehst du die fälligen Karten, nicht den ganzen Stapel. Karten, die du gut kennst, kommen seltener wieder, vergessene früher.",
+        "how": "Nach jeder Karte bewertest du, wie gut du dich erinnert hast: Nochmal, Schwer, Gut oder Einfach. FSRS-6 führt für jede Karte einen Wert für Stabilität und einen für Schwierigkeit und legt daraus den nächsten Termin fest; jede Taste zeigt das Intervall, das sie vergibt. Erkennen (Wort → Bedeutung) und Abrufen (Bedeutung → Wort) haben getrennte Zeitpläne.",
+        "note": "Der Zeitplan soll eine Karte dann zeigen, wenn die Chance, sie abzurufen, auf etwa 90 % sinkt. Zenzu nutzt die Standardparameter des Open-Source-Algorithmus FSRS-6."
+      }
     },
     "tts": {
       "title": "Muttersprachliche Aussprache",
-      "desc": "Cloud-TTS für jedes Wort und jeden Satz. Höre vom ersten Tag an, wie es klingt."
+      "desc": "Cloud-TTS für jedes Wort und jeden Satz. Höre vom ersten Tag an, wie es klingt.",
+      "more": {
+        "what": "Spiel jedes Wort und jeden Satz in deiner Lernsprache mit einer Cloud-Stimme ab. In den Dialogen der Lektionen wird jedes Wort hervorgehoben, während es gesprochen wird.",
+        "how": "Zenzu erzeugt das Audio auf dem Server und speichert es zwischen; der Ton einer Karte lädt, sobald die Karte erscheint. Die Hörgeschwindigkeit stellst du selbst ein, und derselbe Clip läuft in diesem Tempo.",
+        "note": "Die Stimmen sind synthetisch, keine Aufnahmen von Muttersprachlern. Ist Cloud-Audio aus oder nicht verfügbar, nutzt die App die Stimme deines Geräts."
+      }
     },
     "import": {
       "title": "Von überall importieren",
-      "desc": "Texte, Fotos, Artikel — kopiere oder fotografiere alles. Die KI extrahiert Vokabeln, die deinem Niveau entsprechen."
+      "desc": "Texte, Fotos, Artikel — kopiere oder fotografiere alles. Die KI extrahiert Vokabeln, die deinem Niveau entsprechen.",
+      "more": {
+        "what": "Füge einen Text oder einen Link zu einem Artikel ein, oder mach bis zu vier Fotos einer Seite: Buch, Speisekarte, Schild oder handschriftliche Notizen. Zenzu findet die Wörter, die zu deinem Niveau passen, und zeigt sie als Liste. Du wählst, welche davon Karten werden.",
+        "how": "Jedes Wort kommt mit dem Satz, in dem es stand, unverändert aus der Quelle übernommen, und mit einer Übersetzung dieses Satzes in deine Muttersprache. Jedes Wort ist mit seinem Niveau markiert; die Liste zeigt zuerst dein Niveau und die höheren. Lernst du mehrere Sprachen, entscheidet der Text selbst, zu welcher Sprache die Wörter gehören.",
+        "note": "Unter iOS kannst du Texte und Links aus anderen Apps in den Zenzu-Eingang teilen und später importieren."
+      }
     }
   },
   "forWhom": {

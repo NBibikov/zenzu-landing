@@ -72,41 +72,92 @@
   "features": {
     "title": "Tout ce dont tu as besoin pour apprendre",
     "subtitle": "Une seule application pour tous tes contenus d'apprentissage. Importe ce que tu aimes, apprends ce qui compte.",
+    "moreLabel": "Détails",
+    "labels": {
+      "what": "Ce que tu obtiens",
+      "how": "Comment ça marche",
+      "note": "Bon à savoir"
+    },
     "lisa": {
       "title": "Lisa — ton coach IA",
-      "desc": "Demande à Lisa un plan d'étude, des explications de mots ou des révisions quotidiennes. Elle répond dans ta langue — anglais, ukrainien, allemand, espagnol, français ou portugais."
+      "desc": "Demande à Lisa un plan d'étude, des explications de mots ou des révisions quotidiennes. Elle répond dans ta langue — anglais, ukrainien, allemand, espagnol, français ou portugais.",
+      "more": {
+        "what": "Demande à Lisa ce que veut dire un mot, pourquoi une phrase est construite ainsi ou quoi étudier aujourd'hui. Tu peux aussi discuter avec elle d'un sujet de ton choix. Après la conversation, tu vois tes erreurs avec les formes correctes.",
+        "how": "Avant de répondre, Lisa consulte ton niveau, ta progression, tes cartes à réviser et tes paquets. Quand tu lui demandes d'enregistrer des mots ou de créer un paquet, elle affiche une proposition, et rien ne change tant que tu ne l'as pas confirmée. D'une séance à l'autre, elle garde de courtes notes sur toi ; tu peux les consulter et les supprimer dans les Réglages.",
+        "note": "Lisa répond dans la langue de ton interface : anglais, ukrainien, allemand, espagnol, français ou portugais. Si tu le lui demandes, elle passe à une autre langue."
+      }
     },
     "youtube": {
       "title": "Vidéos YouTube",
-      "desc": "Regarde avec une transcription en direct. Touche un mot ou sélectionne une phrase — Zenzu l'enregistre comme carte avec le contexte complet de la phrase et la prononciation native."
+      "desc": "Regarde avec une transcription en direct. Touche un mot ou sélectionne une phrase — Zenzu l'enregistre comme carte avec le contexte complet de la phrase et la prononciation native.",
+      "more": {
+        "what": "Regarde une vidéo YouTube avec sa transcription sous le lecteur. La ligne en cours suit la vidéo. Touche un mot pour voir sa traduction, puis enregistre le mot, une expression ou la phrase entière comme carte.",
+        "how": "Zenzu charge les sous-titres que la vidéo propose déjà dans la langue que tu apprends. Chaque carte garde la phrase d'où elle vient et sa traduction, et « Ouvrir à la source » te ramène à ce moment de la vidéo. Tu peux répéter une phrase en boucle et changer la vitesse de lecture.",
+        "note": "La vidéo doit avoir des sous-titres dans la langue que tu apprends. Les vidéos dont l'auteur a désactivé la lecture sur d'autres sites ne peuvent pas être lues dans Zenzu."
+      }
     },
     "podcasts": {
       "title": "Podcasts",
-      "desc": "Épisodes transcrits par IA que tu peux lire en écoutant. Sélectionne n'importe quelle phrase pour l'enregistrer comme carte avec la prononciation de chaque mot."
+      "desc": "Épisodes transcrits par IA que tu peux lire en écoutant. Sélectionne n'importe quelle phrase pour l'enregistrer comme carte avec la prononciation de chaque mot.",
+      "more": {
+        "what": "Lis la transcription d'un épisode pendant que tu l'écoutes. Touche un mot, une expression ou une phrase pour voir la traduction et l'enregistrer comme carte.",
+        "how": "Trouve une émission dans l'annuaire Apple Podcasts et abonne-toi ; les nouveaux épisodes arrivent par le flux de l'émission. Zenzu transcrit un épisode par reconnaissance vocale : chaque mot reçoit un repère de temps, et la langue parlée est détectée automatiquement.",
+        "note": "Les épisodes de plus de trois heures ne sont pas transcrits."
+      }
     },
     "starterDecks": {
       "title": "Paquets de démarrage",
-      "desc": "18 paquets sélectionnés à la main, de A1 à C1 — essentiels du quotidien, business, académique, sciences, expressions idiomatiques et plus encore. Les noms des paquets s'adaptent à ta langue d'interface."
+      "desc": "18 paquets sélectionnés à la main, de A1 à C1 — essentiels du quotidien, business, académique, sciences, expressions idiomatiques et plus encore. Les noms des paquets s'adaptent à ta langue d'interface.",
+      "more": {
+        "what": "Commence avec des paquets prêts à l'emploi de mots et d'expressions du quotidien, de A1 à C1 : nourriture, voyages, travail, émotions, expressions idiomatiques, affaires et sciences. Chaque carte a une phrase d'exemple, pour voir le mot en contexte dès la première révision.",
+        "how": "Chaque carte existe en neuf langues : anglais, allemand, espagnol, français, portugais, ukrainien, japonais, coréen et chinois. Le recto est dans la langue que tu apprends et le verso dans ta langue maternelle ; si ta langue maternelle n'est pas dans cette liste, le verso est traduit quand tu ajoutes le paquet. Tu peux filtrer le catalogue par langue et par niveau.",
+        "note": "Certains paquets n'existent que pour une langue, comme les tableaux de verbes irréguliers ou les paquets de faux amis pour l'anglais et l'allemand. Les noms des paquets s'affichent dans la langue de ton interface."
+      }
     },
     "interface": {
       "title": "Interface en 6 langues",
-      "desc": "Utilise l'app en anglais, ukrainien, allemand, espagnol, français ou portugais. Apprends depuis ta langue maternelle, pas à travers l'anglais."
+      "desc": "Utilise l'app en anglais, ukrainien, allemand, espagnol, français ou portugais. Apprends depuis ta langue maternelle, pas à travers l'anglais.",
+      "more": {
+        "what": "Les menus, les indications et les réponses de Lisa s'affichent dans ta langue : anglais, ukrainien, allemand, espagnol, français ou portugais. Les traductions des cartes sont dans ta langue maternelle, sans passer par l'anglais.",
+        "how": "Par défaut, l'app suit la langue maternelle de ton profil. Tu peux aussi suivre la langue de ton appareil ou choisir une langue dans les Réglages.",
+        "note": "Tu peux apprendre l'anglais, l'allemand, le français ou l'espagnol. Si l'interface n'existe pas dans ta langue maternelle, par exemple l'italien ou le polonais, les traductions sont quand même dans cette langue, et l'app s'affiche dans une autre langue."
+      }
     },
     "courses": {
       "title": "Cours par IA",
-      "desc": "Des cours personnalisés de grammaire et de vocabulaire pour l'anglais, l'allemand, le français et l'espagnol — A1 à C1. Les exercices s'adaptent à ton niveau."
+      "desc": "Des cours personnalisés de grammaire et de vocabulaire pour l'anglais, l'allemand, le français et l'espagnol — A1 à C1. Les exercices s'adaptent à ton niveau.",
+      "more": {
+        "what": "Suis des leçons de grammaire et de vocabulaire pour l'anglais, l'allemand, le français ou l'espagnol, niveau par niveau de A1 à C1. Les mots d'une leçon peuvent rejoindre tes paquets pour être révisés.",
+        "how": "Une leçon comporte des étapes comme les nouveaux mots, la grammaire, un dialogue et un récapitulatif, chacune avec des exercices : QCM, texte à trous, association, construction de phrases et dictée. Les leçons suivantes reprennent des mots déjà vus, avec leur traduction. Un court test de positionnement fixe ton niveau ; tous les niveaux jusqu'à celui-ci sont ouverts, et sans test tu commences en A1.",
+        "note": "Les leçons sont préparées à l'avance et sont les mêmes pour tous les apprenants d'un même niveau."
+      }
     },
     "srs": {
       "title": "Répétition Espacée FSRS-6",
-      "desc": "Un algorithme scientifique planifie les révisions au moment optimal. Mémorise les mots pour toujours."
+      "desc": "Un algorithme scientifique planifie les révisions au moment optimal. Mémorise les mots pour toujours.",
+      "more": {
+        "what": "Chaque jour, tu vois les cartes à réviser, pas tout le paquet. Les cartes que tu connais bien reviennent moins souvent, celles que tu oublies reviennent plus tôt.",
+        "how": "Après chaque carte, tu indiques à quel point tu t'en es souvenu : Revoir, Dur, Bien ou Facile. FSRS-6 garde pour chaque carte une valeur de stabilité et une valeur de difficulté, et en déduit la date de la prochaine révision ; chaque bouton affiche l'intervalle qu'il donnera. La reconnaissance (du mot au sens) et la production (du sens au mot) ont des calendriers séparés.",
+        "note": "Le calendrier vise à montrer une carte quand ta probabilité de t'en souvenir tombe à environ 90 %. Zenzu utilise les paramètres par défaut de l'algorithme open source FSRS-6."
+      }
     },
     "tts": {
       "title": "Prononciation Native",
-      "desc": "Synthèse vocale cloud pour chaque mot et phrase. Écoute la bonne prononciation dès le premier jour."
+      "desc": "Synthèse vocale cloud pour chaque mot et phrase. Écoute la bonne prononciation dès le premier jour.",
+      "more": {
+        "what": "Écoute n'importe quel mot ou phrase dans la langue que tu apprends, grâce à la synthèse vocale cloud. Dans les dialogues des leçons, chaque mot est mis en évidence au moment où il est prononcé.",
+        "how": "Zenzu génère l'audio sur le serveur et le met en cache ; le son d'une carte se charge dès qu'elle s'affiche. Tu règles la vitesse d'écoute, et le même extrait est lu à cette vitesse.",
+        "note": "Les voix sont synthétiques, pas des enregistrements de locuteurs natifs. Si l'audio cloud est désactivé ou indisponible, l'app utilise la voix de ton appareil."
+      }
     },
     "import": {
       "title": "Importe de N'importe Où",
-      "desc": "Textes, photos, articles — colle ou photographie n'importe quoi. L'IA extrait le vocabulaire adapté à ton niveau."
+      "desc": "Textes, photos, articles — colle ou photographie n'importe quoi. L'IA extrait le vocabulaire adapté à ton niveau.",
+      "more": {
+        "what": "Colle un texte ou le lien d'un article, ou prends jusqu'à quatre photos d'une même page : livre, menu, panneau ou notes manuscrites. Zenzu trouve les mots adaptés à ton niveau et les affiche en liste. Tu choisis ceux qui deviennent des cartes.",
+        "how": "Chaque mot arrive avec la phrase où il figurait, copiée telle quelle depuis la source, et la traduction de cette phrase dans ta langue maternelle. Chaque mot indique son niveau ; la liste montre d'abord ton niveau et les niveaux supérieurs. Si tu apprends plusieurs langues, c'est le texte lui-même qui détermine à quelle langue appartiennent les mots.",
+        "note": "Sur iOS, tu peux partager des textes et des liens depuis d'autres apps vers la boîte de réception de Zenzu, puis les importer plus tard."
+      }
     }
   },
   "forWhom": {

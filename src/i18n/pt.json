@@ -72,41 +72,92 @@
   "features": {
     "title": "Tudo o que você precisa para aprender",
     "subtitle": "Um único app para todo o seu conteúdo de aprendizado. Importe o que você ama, aprenda o que importa.",
+    "moreLabel": "Mais detalhes",
+    "labels": {
+      "what": "O que você ganha",
+      "how": "Como funciona",
+      "note": "Bom saber"
+    },
     "lisa": {
       "title": "Lisa — sua coach com IA",
-      "desc": "Peça à Lisa planos de estudo, explicações de palavras ou revisões diárias. Ela responde no seu idioma — inglês, ucraniano, alemão, espanhol, francês ou português."
+      "desc": "Peça à Lisa planos de estudo, explicações de palavras ou revisões diárias. Ela responde no seu idioma — inglês, ucraniano, alemão, espanhol, francês ou português.",
+      "more": {
+        "what": "Pergunte à Lisa o que uma palavra significa, por que uma frase é construída assim ou o que estudar hoje. Você também pode conversar com ela sobre um tema que escolher. Depois da conversa, você vê seus erros com as formas corretas.",
+        "how": "Antes de responder, a Lisa consulta seu nível, seu progresso, seus cartões pendentes e seus baralhos. Quando você pede para salvar palavras ou criar um baralho, ela mostra uma proposta, e nada muda até você confirmar. Entre as sessões, ela guarda notas curtas sobre você; você pode vê-las e apagá-las em Ajustes.",
+        "note": "A Lisa responde no idioma da sua interface: inglês, ucraniano, alemão, espanhol, francês ou português. Se você pedir, ela muda para outro idioma."
+      }
     },
     "youtube": {
       "title": "Vídeos do YouTube",
-      "desc": "Assista com transcrição ao vivo. Toque numa palavra ou selecione uma frase — o Zenzu salva como cartão com o contexto completo da frase e pronúncia nativa."
+      "desc": "Assista com transcrição ao vivo. Toque numa palavra ou selecione uma frase — o Zenzu salva como cartão com o contexto completo da frase e pronúncia nativa.",
+      "more": {
+        "what": "Assista a um vídeo do YouTube com a transcrição embaixo do player. A linha atual acompanha o vídeo. Toque numa palavra para ver a tradução e salve a palavra, uma expressão ou a frase inteira como cartão.",
+        "how": "O Zenzu carrega as legendas que o vídeo já tem no idioma que você aprende. Cada cartão guarda a frase de onde veio e a tradução dela, e “Abrir na origem” leva você de volta a esse momento do vídeo. Você pode repetir uma frase em loop e mudar a velocidade de reprodução.",
+        "note": "O vídeo precisa ter legendas no idioma que você aprende. Vídeos cujo autor desativou a reprodução em outros sites não tocam no Zenzu."
+      }
     },
     "podcasts": {
       "title": "Podcasts",
-      "desc": "Episódios transcritos por IA para ler enquanto ouve. Selecione qualquer frase para salvá-la como cartão com pronúncia em cada palavra."
+      "desc": "Episódios transcritos por IA para ler enquanto ouve. Selecione qualquer frase para salvá-la como cartão com pronúncia em cada palavra.",
+      "more": {
+        "what": "Leia a transcrição de um episódio enquanto ouve. Toque numa palavra, expressão ou frase para ver a tradução e salvá-la como cartão.",
+        "how": "Encontre um programa no diretório do Apple Podcasts e assine; os episódios novos chegam pelo feed do programa. O Zenzu transcreve o episódio com reconhecimento de fala: cada palavra recebe uma marcação de tempo, e o idioma falado é detectado automaticamente.",
+        "note": "Episódios com mais de três horas não são transcritos."
+      }
     },
     "starterDecks": {
       "title": "Baralhos iniciais",
-      "desc": "18 baralhos cuidadosamente seleccionados, de A1 a C1 — essenciais do quotidiano, negócios, académico, ciências, expressões idiomáticas e muito mais. Os nomes adaptam-se ao idioma da sua interface."
+      "desc": "18 baralhos cuidadosamente seleccionados, de A1 a C1 — essenciais do quotidiano, negócios, académico, ciências, expressões idiomáticas e muito mais. Os nomes adaptam-se ao idioma da sua interface.",
+      "more": {
+        "what": "Comece com baralhos prontos de palavras e expressões do dia a dia, de A1 a C1: comida, viagens, trabalho, sentimentos, expressões idiomáticas, negócios e ciência. Cada cartão tem uma frase de exemplo, então você vê a palavra em contexto desde a primeira revisão.",
+        "how": "Cada cartão existe em nove idiomas: inglês, alemão, espanhol, francês, português, ucraniano, japonês, coreano e chinês. A frente fica no idioma que você aprende e o verso na sua língua nativa; se a sua língua nativa não estiver nessa lista, o verso é traduzido quando você adiciona o baralho. Você pode filtrar o catálogo por idioma e nível.",
+        "note": "Alguns baralhos existem só para um idioma, como as tabelas de verbos irregulares ou os baralhos de falsos cognatos para inglês e alemão. Os nomes dos baralhos aparecem no idioma da sua interface."
+      }
     },
     "interface": {
       "title": "Interface em 6 idiomas",
-      "desc": "Use o app em inglês, ucraniano, alemão, espanhol, francês ou português. Aprenda a partir da sua língua nativa, não através do inglês."
+      "desc": "Use o app em inglês, ucraniano, alemão, espanhol, francês ou português. Aprenda a partir da sua língua nativa, não através do inglês.",
+      "more": {
+        "what": "Menus, dicas e as respostas da Lisa aparecem no seu idioma: inglês, ucraniano, alemão, espanhol, francês ou português. As traduções dos cartões vão para a sua língua nativa, sem passar pelo inglês.",
+        "how": "Por padrão, o app segue a língua nativa do seu perfil. Você também pode seguir o idioma do seu aparelho ou escolher um em Ajustes.",
+        "note": "Você pode aprender inglês, alemão, francês ou espanhol. Se a interface não existir na sua língua nativa, como italiano ou polonês, as traduções continuam indo para ela, e o app aparece em outro idioma."
+      }
     },
     "courses": {
       "title": "Cursos com IA",
-      "desc": "Lições personalizadas de gramática e vocabulário para inglês, alemão, francês e espanhol — A1 a C1. Os exercícios adaptam-se ao seu nível."
+      "desc": "Lições personalizadas de gramática e vocabulário para inglês, alemão, francês e espanhol — A1 a C1. Os exercícios adaptam-se ao seu nível.",
+      "more": {
+        "what": "Avance por lições de gramática e vocabulário de inglês, alemão, francês ou espanhol, nível a nível de A1 a C1. As palavras de uma lição podem ir para os seus baralhos para revisão.",
+        "how": "Uma lição tem etapas como palavras novas, gramática, um diálogo e uma recapitulação, cada uma com exercícios: múltipla escolha, lacunas, associação, montagem de frases e ditado. As lições seguintes retomam palavras anteriores com a tradução. Um teste de nivelamento curto define seu nível; todos os níveis até ele ficam abertos, e sem o teste você começa no A1.",
+        "note": "As lições são preparadas com antecedência e são as mesmas para todos os alunos de um nível."
+      }
     },
     "srs": {
       "title": "Repetição Espaçada FSRS-6",
-      "desc": "Algoritmo baseado em ciência agenda as revisões no momento ideal. Lembre-se das palavras para sempre."
+      "desc": "Algoritmo baseado em ciência agenda as revisões no momento ideal. Lembre-se das palavras para sempre.",
+      "more": {
+        "what": "Todo dia você vê os cartões pendentes, não o baralho inteiro. Os cartões que você sabe bem voltam com menos frequência, e os que você esquece voltam antes.",
+        "how": "Depois de cada cartão, você indica o quanto lembrou: De novo, Difícil, Bom ou Fácil. O FSRS-6 guarda para cada cartão um valor de estabilidade e um de dificuldade e, a partir deles, define a data da próxima revisão; cada botão mostra o intervalo que vai dar. O reconhecimento (da palavra ao significado) e a produção (do significado à palavra) têm agendas separadas.",
+        "note": "A agenda procura mostrar um cartão quando a sua chance de lembrá-lo cai para cerca de 90%. O Zenzu usa os parâmetros padrão do algoritmo de código aberto FSRS-6."
+      }
     },
     "tts": {
       "title": "Pronúncia Nativa",
-      "desc": "TTS em nuvem para cada palavra e frase. Ouça como soa desde o primeiro dia."
+      "desc": "TTS em nuvem para cada palavra e frase. Ouça como soa desde o primeiro dia.",
+      "more": {
+        "what": "Ouça qualquer palavra ou frase no idioma que você aprende, com uma voz na nuvem. Nos diálogos das lições, cada palavra é destacada enquanto é falada.",
+        "how": "O Zenzu gera o áudio no servidor e o guarda em cache; o áudio de um cartão carrega assim que ele aparece. Você escolhe a velocidade de escuta, e o mesmo clipe toca nessa velocidade.",
+        "note": "As vozes são sintéticas, não gravações de falantes nativos. Se o áudio na nuvem estiver desligado ou indisponível, o app usa a voz do seu aparelho."
+      }
     },
     "import": {
       "title": "Importe de Qualquer Lugar",
-      "desc": "Texto, fotos, artigos — cole ou fotografe qualquer coisa. A IA extrai o vocabulário adequado ao seu nível."
+      "desc": "Texto, fotos, artigos — cole ou fotografe qualquer coisa. A IA extrai o vocabulário adequado ao seu nível.",
+      "more": {
+        "what": "Cole um texto ou o link de um artigo, ou tire até quatro fotos de uma mesma página: livro, cardápio, placa ou anotações à mão. O Zenzu encontra as palavras que combinam com o seu nível e as mostra numa lista. Você escolhe quais viram cartões.",
+        "how": "Cada palavra vem com a frase em que aparecia, copiada da fonte sem mudanças, e a tradução dessa frase para a sua língua nativa. Cada palavra traz o seu nível; a lista mostra primeiro o seu nível e os acima dele. Se você aprende vários idiomas, o próprio texto decide a qual deles as palavras pertencem.",
+        "note": "No iOS, você pode compartilhar textos e links de outros apps para a Entrada do Zenzu e importá-los depois."
+      }
     }
   },
   "forWhom": {

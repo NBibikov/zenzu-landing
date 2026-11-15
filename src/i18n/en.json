@@ -72,41 +72,92 @@
   "features": {
     "title": "Everything you need to learn",
     "subtitle": "One app for all your language learning content. Import what you love, learn what matters.",
+    "moreLabel": "More",
+    "labels": {
+      "what": "What you get",
+      "how": "How it works",
+      "note": "Good to know"
+    },
     "lisa": {
       "title": "Lisa, Your AI Coach",
-      "desc": "Ask Lisa for study plans, word explanations, or daily reviews. She replies in your language: English, Ukrainian, German, Spanish, French, or Portuguese."
+      "desc": "Ask Lisa for study plans, word explanations, or daily reviews. She replies in your language: English, Ukrainian, German, Spanish, French, or Portuguese.",
+      "more": {
+        "what": "Ask Lisa what a word means, why a sentence is built the way it is, or what to study today. You can also talk with her about a topic you choose. After the talk, you see your mistakes with the correct forms.",
+        "how": "Before she answers, Lisa looks at your level, your progress, your due cards and your decks. When you ask her to save words or create a deck, she shows a proposal, and nothing changes until you confirm it. Between sessions she keeps short notes about you; you can read and delete them in Settings.",
+        "note": "Lisa replies in your interface language: English, Ukrainian, German, Spanish, French or Portuguese. If you ask, she changes to another language."
+      }
     },
     "youtube": {
       "title": "YouTube Videos",
-      "desc": "Watch with a live transcript. Tap a word or select a phrase, and Zenzu saves it as a card with full sentence context and native pronunciation."
+      "desc": "Watch with a live transcript. Tap a word or select a phrase, and Zenzu saves it as a card with full sentence context and native pronunciation.",
+      "more": {
+        "what": "Watch a YouTube video with its transcript under the player. The current line follows the video. Tap a word to see its translation, then save the word, a phrase or the whole sentence as a card.",
+        "how": "Zenzu loads the captions that the video already has in the language you learn. Each card keeps the sentence it came from and its translation, and “Open at source” takes you back to that moment in the video. You can repeat one sentence in a loop and change the playback speed.",
+        "note": "The video needs captions in the language you learn. Videos whose owner has turned off playback on other sites cannot play in Zenzu."
+      }
     },
     "podcasts": {
       "title": "Podcasts",
-      "desc": "AI-transcribed episodes you can read while you listen. Select any phrase to capture it as a card with pronunciation on every word."
+      "desc": "AI-transcribed episodes you can read while you listen. Select any phrase to capture it as a card with pronunciation on every word.",
+      "more": {
+        "what": "Read the transcript of an episode while you listen. Tap a word, a phrase or a sentence to see the translation and save it as a card.",
+        "how": "Find a show in the Apple Podcasts directory and subscribe; new episodes come from the show's feed. Zenzu transcribes an episode with speech recognition: each word gets a time stamp, and the spoken language is detected automatically.",
+        "note": "Episodes longer than three hours are not transcribed."
+      }
     },
     "starterDecks": {
       "title": "Starter Decks",
-      "desc": "18 hand-curated decks from A1 to C1: everyday essentials, business, academic, science, idioms, and more. Deck names adapt to your interface language."
+      "desc": "18 hand-curated decks from A1 to C1: everyday essentials, business, academic, science, idioms, and more. Deck names adapt to your interface language.",
+      "more": {
+        "what": "Start with ready decks of everyday words and phrases, from A1 to C1: food, travel, work, feelings, idioms, business and science. Every card has an example sentence, so you see the word in context from the first review.",
+        "how": "Each card exists in nine languages: English, German, Spanish, French, Portuguese, Ukrainian, Japanese, Korean and Chinese. The front is in the language you learn and the back is in your native language; if your native language is not on this list, the backs are translated when you add the deck. You can filter the catalog by language and level.",
+        "note": "Some decks are for one language only, such as the irregular-verb tables or the false-friend decks for English and German. Deck names show in your interface language."
+      }
     },
     "interface": {
       "title": "Interface in 6 Languages",
-      "desc": "Use the app in English, Ukrainian, German, Spanish, French, or Portuguese. Learn from your native tongue, not through English."
+      "desc": "Use the app in English, Ukrainian, German, Spanish, French, or Portuguese. Learn from your native tongue, not through English.",
+      "more": {
+        "what": "Menus, hints and Lisa's replies appear in your language: English, Ukrainian, German, Spanish, French or Portuguese. Card translations go into your native language, so you learn without English in between.",
+        "how": "By default, the app follows the native language in your profile. You can also follow the language of your device or choose one in Settings.",
+        "note": "You can learn English, German, French or Spanish. If the interface does not exist in your native language, for example Italian or Polish, translations still go into it, and the app shows another interface language."
+      }
     },
     "courses": {
       "title": "AI Courses",
-      "desc": "Personalized grammar and vocabulary lessons for English, German, French, and Spanish, from A1 to C1. Exercises adapt to your level."
+      "desc": "Personalized grammar and vocabulary lessons for English, German, French, and Spanish, from A1 to C1. Exercises adapt to your level.",
+      "more": {
+        "what": "Work through grammar and vocabulary lessons for English, German, French or Spanish, level by level from A1 to C1. Words from a lesson can go into your decks for review.",
+        "how": "A lesson has stages such as new words, grammar, a dialogue and a recap, each with exercises: multiple choice, gap fill, matching, sentence building and dictation. Later lessons bring back earlier words with their translation. A short placement test sets your level; all levels up to it are open, and without the test you start at A1.",
+        "note": "Lessons are prepared in advance and are the same for every learner at a level."
+      }
     },
     "srs": {
       "title": "FSRS-6 Spaced Repetition",
-      "desc": "Science-backed algorithm schedules reviews at the optimal time. Remember words forever."
+      "desc": "Science-backed algorithm schedules reviews at the optimal time. Remember words forever.",
+      "more": {
+        "what": "Each day you see the cards that are due, not the whole deck. Cards you know well come back less often, and cards you forget come back sooner.",
+        "how": "After each card you rate how well you recalled it: Again, Hard, Good or Easy. FSRS-6 keeps a stability value and a difficulty value for each card and sets the next review date from them; each button shows the interval it will give. Recognition (word to meaning) and production (meaning to word) have separate schedules.",
+        "note": "The schedule aims to show a card when your chance of recalling it drops to about 90%. Zenzu uses the default parameters of the open-source FSRS-6 algorithm."
+      }
     },
     "tts": {
       "title": "Native Pronunciation",
-      "desc": "Cloud TTS for every word and sentence. Hear how it sounds from day one."
+      "desc": "Cloud TTS for every word and sentence. Hear how it sounds from day one.",
+      "more": {
+        "what": "Play any word or sentence in the language you learn with a cloud voice. In lesson dialogues, each word is highlighted as it is spoken.",
+        "how": "Zenzu creates the audio on the server and caches it; the audio of a card loads when the card appears. You set the listening speed, and the same clip plays at that speed.",
+        "note": "The voices are synthetic, not recordings of native speakers. When cloud audio is off or not available, the app uses the voice of your device."
+      }
     },
     "import": {
       "title": "Import from Anywhere",
-      "desc": "Text, photos, articles: paste or snap anything. AI extracts vocabulary matched to your level."
+      "desc": "Text, photos, articles: paste or snap anything. AI extracts vocabulary matched to your level.",
+      "more": {
+        "what": "Paste a text or a link to an article, or take up to four photos of one page: a book, a menu, a sign or handwritten notes. Zenzu finds the words that suit your level and shows them as a list. You choose which ones become cards.",
+        "how": "Each word comes with the sentence it stood in, copied from the source without changes, and a translation of that sentence into your native language. Each word is marked with its level; the list shows your level and higher first. If you learn several languages, the text itself decides which language the words belong to.",
+        "note": "On iOS, you can share text and links from other apps to the Zenzu inbox and import them later."
+      }
     }
   },
   "forWhom": {
