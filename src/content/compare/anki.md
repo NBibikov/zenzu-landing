@@ -3,7 +3,7 @@ competitor: Anki
 title: "Zenzu vs Anki: Which Is Better for Learning Vocabulary?"
 description: "Anki is a blank, endlessly customizable flashcard engine. Zenzu builds cards for you from YouTube, podcasts and articles. Here is how they differ."
 updated: "2026-09-23"
-verdict: "Choose Anki if you want a fully customizable flashcard engine for any subject and don't mind building cards and templates yourself. Choose Zenzu if you are learning English, German, French or Spanish and want cards made from the videos, podcasts and articles you actually consume — with the source sentence and native audio attached automatically. Both schedule reviews with the FSRS algorithm, so the memory science is comparable; the difference is where the cards come from."
+verdict: "Choose Anki if you want a fully customizable flashcard engine for any subject and don't mind building cards and templates yourself. Choose Zenzu if you are learning English, German, French or Spanish and want cards made from the videos, podcasts and articles you actually consume — with the source sentence and pronunciation audio attached automatically. Both schedule reviews with the FSRS algorithm, so the memory science is comparable; the difference is where the cards come from."
 rows:
   - feature: "What it is"
     zenzu: "Language learning app: import real content, save words and phrases as cards"
