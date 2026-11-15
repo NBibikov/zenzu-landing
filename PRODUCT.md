@@ -50,7 +50,7 @@ The site exists to explain this, send visitors to the App Store, Google Play or 
 
 ## Brand Commitments
 
-- Name: Zenzu, from Zen: calm, presence, inner quiet. The garden and forest metaphor (words take root like trees) is the brand story.
+- Name: Zenzu = Zen (calm) + German "zu" (towards) → "towards calm"; said ZEN-zu; never mention Buddhism. The garden and forest metaphor (words take root like trees) is the brand story.
 - Lisa is the coach's name.
 - The visual system is the app's "Ink & Paper, brush theme"; the source of truth is the Flutter AppTheme and ZTokens in the app repository. See DESIGN.md.
 - Blog imagery: STYLE_GUIDE.md is binding (six colours, moss is the only accent, no warm hues).
@@ -60,7 +60,6 @@ The site exists to explain this, send visitors to the App Store, Google Play or 
 - Eight real iPhone app screenshots in `public/screens/`, used by the home carousel.
 - About 60 blog articles per locale in `src/content/`, with covers in `public/blog/`.
 - Sourced comparison pages: Anki, LingQ, Language Reactor, Migaku.
-- Three public-domain quotes (Charlemagne, Wittgenstein, Frank Smith).
 - There are no user testimonials, user counts, ratings, press mentions or case studies. Do not invent them.
 
 ## Product Principles

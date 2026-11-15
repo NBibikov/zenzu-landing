@@ -165,17 +165,8 @@
     "notFor2": "Você espera falar fluentemente depois de algumas sessões descontraídas",
     "notFor3": "Você precisa de gamificação para se manter motivado"
   },
-  "quotes": {
-    "title": "Palavras de quem sabia",
-    "quote1Text": "Ter outro idioma é possuir uma segunda alma.",
-    "quote1Author": "Carlos Magno",
-    "quote2Text": "Os limites da minha linguagem significam os limites do meu mundo.",
-    "quote2Author": "Ludwig Wittgenstein",
-    "quote3Text": "Um idioma te coloca num corredor para a vida. Dois idiomas abrem cada porta no caminho.",
-    "quote3Author": "Frank Smith"
-  },
   "howItWorks": {
-    "title": "Três passos para a fluência",
+    "title": "Três passos: de um vídeo a uma palavra de que você se lembra",
     "subtitle": "Conteúdo real. Repetição científica. Vocabulário que realmente fica.",
     "step1": {
       "title": "Importe conteúdo que você gosta",

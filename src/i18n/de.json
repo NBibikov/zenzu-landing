@@ -165,17 +165,8 @@
     "notFor2": "Du erwartest, nach ein paar lockeren Einheiten fließend zu sprechen",
     "notFor3": "Du externe Gamifizierung brauchst, um motiviert zu bleiben"
   },
-  "quotes": {
-    "title": "Worte derer, die es wussten",
-    "quote1Text": "Eine andere Sprache zu haben bedeutet, eine zweite Seele zu besitzen.",
-    "quote1Author": "Karl der Große",
-    "quote2Text": "Die Grenzen meiner Sprache bedeuten die Grenzen meiner Welt.",
-    "quote2Author": "Ludwig Wittgenstein",
-    "quote3Text": "Eine Sprache stellt dich für dein Leben in einen Korridor. Zwei Sprachen öffnen jede Tür auf dem Weg.",
-    "quote3Author": "Frank Smith"
-  },
   "howItWorks": {
-    "title": "Drei Schritte zur Sprachkompetenz",
+    "title": "Drei Schritte: vom Video zu einem Wort, das du dir merkst",
     "subtitle": "Echter Inhalt. Wissenschaftlich fundierte Wiederholungen. Vokabeln, die wirklich haften.",
     "step1": {
       "title": "Importiere Inhalte, die dir gefallen",
