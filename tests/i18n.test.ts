@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict'
-import { readFileSync } from 'node:fs'
+import { readdirSync, readFileSync } from 'node:fs'
 import { test } from 'node:test'
 import { MCP_PROMPTS, MCP_TOOL_GROUPS } from '../src/data/mcp.ts'
 
@@ -165,4 +165,41 @@ test('no locale mentions Buddhism', () => {
 test('the French MCP copy uses the straight apostrophe', () => {
   const root = load('fr') as { mcp: Json; mcpPage: Json }
   assert.doesNotMatch(JSON.stringify([root.mcp, root.mcpPage]), /’/)
+})
+
+// One label for one action: every link to the web app shows app.open, and
+// the old variants ("Get started", "Start learning", "Open App") are gone.
+const WEB_APP_LINK = /<a\b[^>]*href=(?:"https:\/\/app\.zenzu\.app"|\{WEB_APP_URL\})[^>]*>([\s\S]*?)<\/a>/g
+
+function astroFiles(dir: URL): URL[] {
+  return readdirSync(dir, { withFileTypes: true }).flatMap((entry) => {
+    const url = new URL(entry.name + (entry.isDirectory() ? '/' : ''), dir)
+    if (entry.isDirectory()) return astroFiles(url)
+    return entry.name.endsWith('.astro') ? [url] : []
+  })
+}
+
+test('every link to the web app uses the app.open label', () => {
+  const files = [...astroFiles(new URL('../src/components/', import.meta.url)), ...astroFiles(new URL('../src/pages/', import.meta.url))]
+  const labels = files.flatMap((file) =>
+    [...readFileSync(file, 'utf8').matchAll(WEB_APP_LINK)].map((match) => [file.pathname.split('/src/')[1], match[1].trim()]),
+  )
+  assert.ok(labels.length >= 6, `found ${labels.length} web app links`)
+  for (const [file, label] of labels) assert.match(label, /^\{(t|strings)\.app\.open\}$/, file)
+  for (const locale of LOCALES) {
+    const root = load(locale) as Record<string, Record<string, Json>>
+    assert.equal(typeof root.app.open, 'string', locale)
+    for (const [section, key] of [['hero', 'cta'], ['hero', 'badge'], ['hero', 'appStoreCta'], ['cta', 'button'], ['nav', 'getStarted'], ['footer', 'openApp']]) {
+      assert.equal(root[section][key], undefined, `${locale}: ${section}.${key} is still there`)
+    }
+  }
+})
+
+// The store badges keep the brand names in English; only the captions are localised.
+test('the store badge captions are localised in every non-English locale', () => {
+  const en = load('en') as { stores: Record<string, string> }
+  for (const locale of OTHER_LOCALES) {
+    const { stores } = load(locale) as { stores: Record<string, string> }
+    for (const key of ['appStoreCaption', 'googlePlayCaption']) assert.notEqual(stores[key], en.stores[key], `${locale}: stores.${key}`)
+  }
 })

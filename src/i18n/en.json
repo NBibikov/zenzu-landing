@@ -7,19 +7,15 @@
     "features": "Features",
     "howItWorks": "How it works",
     "languages": "Languages",
-    "blog": "Blog",
-    "getStarted": "Get started"
+    "blog": "Blog"
   },
   "hero": {
-    "badge": "Paste a YouTube link — your cards are ready",
     "headline1": "Learn a language ",
     "headlineHighlight": "calmly",
     "headline2": ", every day",
-    "subheadline": "Cards from the videos, podcasts and books you enjoy.",
-    "cta": "Start learning",
+    "subheadline": "Paste a YouTube link — your cards are ready. The same with podcasts, articles and books.",
     "ctaSecondary": "See how it works",
     "appStoreBadge": "Now available on iOS and Android",
-    "appStoreCta": "Download on the App Store",
     "supported": "English · German · French · Spanish",
     "comingSoon": "Portuguese: coming soon"
   },
@@ -315,23 +311,20 @@
   },
   "cta": {
     "title": "Start learning from content you love",
-    "subtitle": "Import your first video or podcast in seconds.",
-    "button": "Get started",
-    "writeLead": "Questions, ideas or a bug? Write to",
-    "writeTail": "— we read every letter."
+    "subtitle": "Import your first video or podcast in seconds."
   },
   "footer": {
     "brand": "Learn languages from real content you love. YouTube, podcasts and articles, turned into flashcards with AI.",
     "product": "Product",
     "legal": "Legal",
-    "openApp": "Open App",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
     "contact": "Contact",
     "rights": "All rights reserved.",
     "compare": "Compare",
     "mcp": "MCP server",
-    "writeUs": "Write to us:"
+    "writeLead": "Questions, ideas or a bug? Write to",
+    "writeTail": "— we read every letter."
   },
   "blog": {
     "title": "Language Learning Blog",
@@ -392,5 +385,12 @@
     "bugsBody": "Found a bug? Tell us what happened, which device or browser you use, and add screenshots if you can.",
     "ideasTitle": "Feature requests",
     "ideasBody": "Have an idea for a feature? We're always looking to improve. Send us your suggestions."
+  },
+  "app": {
+    "open": "Open Zenzu"
+  },
+  "stores": {
+    "appStoreCaption": "Download on the",
+    "googlePlayCaption": "Get it on"
   }
 }

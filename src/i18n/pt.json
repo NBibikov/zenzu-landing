@@ -7,19 +7,15 @@
     "features": "Recursos",
     "howItWorks": "Como funciona",
     "languages": "Idiomas",
-    "blog": "Blog",
-    "getStarted": "Começar"
+    "blog": "Blog"
   },
   "hero": {
-    "badge": "Cole um link do YouTube — seus cartões estão prontos",
     "headline1": "Aprenda um idioma ",
     "headlineHighlight": "com calma",
     "headline2": ", todos os dias",
-    "subheadline": "Cartões dos vídeos, podcasts e livros de que você gosta.",
-    "cta": "Comece a aprender",
+    "subheadline": "Cole um link do YouTube — seus cartões estão prontos. O mesmo com podcasts, artigos e livros.",
     "ctaSecondary": "Veja como funciona",
     "appStoreBadge": "Já disponível no iOS e Android",
-    "appStoreCta": "Baixar na App Store",
     "supported": "Inglês · Alemão · Francês · Espanhol",
     "comingSoon": "Português — em breve"
   },
@@ -315,23 +311,20 @@
   },
   "cta": {
     "title": "Comece a aprender com o conteúdo que você ama",
-    "subtitle": "Importe seu primeiro vídeo ou podcast em segundos.",
-    "button": "Começar",
-    "writeLead": "Dúvidas, ideias ou um bug? Escreva para",
-    "writeTail": "— lemos cada mensagem."
+    "subtitle": "Importe seu primeiro vídeo ou podcast em segundos."
   },
   "footer": {
     "brand": "Aprenda idiomas com conteúdo real que você ama. YouTube, podcasts, artigos — transformados em flashcards com IA.",
     "product": "Produto",
     "legal": "Legal",
-    "openApp": "Abrir App",
     "privacy": "Política de Privacidade",
     "terms": "Termos de Serviço",
     "contact": "Contato",
     "rights": "Todos os direitos reservados.",
     "compare": "Comparações",
     "mcp": "Servidor MCP",
-    "writeUs": "Escreva para nós:"
+    "writeLead": "Dúvidas, ideias ou um bug? Escreva para",
+    "writeTail": "— lemos cada mensagem."
   },
   "blog": {
     "title": "Blog de aprendizado de idiomas",
@@ -392,5 +385,12 @@
     "bugsBody": "Encontrou um bug? Conte o que aconteceu, qual dispositivo ou navegador você usa e envie capturas de tela, se puder.",
     "ideasTitle": "Sugestões de recursos",
     "ideasBody": "Tem uma ideia de recurso? Estamos sempre buscando melhorar. Envie suas sugestões."
+  },
+  "app": {
+    "open": "Abrir o Zenzu"
+  },
+  "stores": {
+    "appStoreCaption": "Baixe na",
+    "googlePlayCaption": "Disponível no"
   }
 }

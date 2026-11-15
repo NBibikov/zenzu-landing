@@ -2,6 +2,7 @@
 import { localeNames, localePath, supportedLocales, type Locale } from '../../i18n'
 import { CONTACT_EMAIL, mailtoHref } from '../../lib/contact'
 import { languageSwitchPath } from '../../lib/language-switch'
+import { WEB_APP_URL } from '../../lib/links'
 
 interface Props { t: any; locale: Locale }
 const { t, locale } = Astro.props
@@ -28,7 +29,7 @@ const switchTarget = languageSwitchPath(Astro.url.pathname)
           <li><a href={localePath('/blog/', locale)} class="hover:text-ink transition-colors">{t.nav.blog}</a></li>
           <li><a href="/compare/" class="hover:text-ink transition-colors">{t.footer.compare}</a></li>
           <li><a href={localePath('/mcp/', locale)} class="hover:text-ink transition-colors">{t.footer.mcp}</a></li>
-          <li><a href="https://app.zenzu.app" class="hover:text-ink transition-colors">{t.footer.openApp}</a></li>
+          <li><a href={WEB_APP_URL} class="hover:text-ink transition-colors">{t.app.open}</a></li>
         </ul>
       </div>
       <div>
@@ -37,15 +38,16 @@ const switchTarget = languageSwitchPath(Astro.url.pathname)
           <li><a href={localePath('/privacy/', locale)} class="hover:text-ink transition-colors">{t.footer.privacy}</a></li>
           <li><a href={localePath('/terms/', locale)} class="hover:text-ink transition-colors">{t.footer.terms}</a></li>
           <li><a href={localePath('/contact/', locale)} class="hover:text-ink transition-colors">{t.footer.contact}</a></li>
-          <li>
-            {t.footer.writeUs}{' '}
-            <a href={mailtoHref(t.contact.subject)} class="text-ink underline decoration-hairline underline-offset-4 hover:decoration-ink transition-colors break-all">{CONTACT_EMAIL}</a>
+          <!-- A quiet way to reach us, next to the contact page. -->
+          <li class="leading-relaxed">
+            {t.footer.writeLead}{' '}
+            <a href={mailtoHref(t.contact.subject)} class="text-ink underline decoration-hairline underline-offset-4 hover:decoration-ink transition-colors whitespace-nowrap">{CONTACT_EMAIL}</a>{' '}
+            {t.footer.writeTail}
           </li>
         </ul>
       </div>
     </div>
-    <!-- Every interface language, the current one on the swash. This is
-         the only language switch on a phone: the header hides its menu. -->
+    <!-- Every interface language, the current one on the swash. -->
     <nav class="mt-12 pt-8 border-t border-hairline" aria-label={t.nav.languages}>
       <ul class="flex flex-wrap justify-center gap-x-6 gap-y-3 text-sm">
         {supportedLocales.map((loc) => (

@@ -7,19 +7,15 @@
     "features": "Fonctionnalités",
     "howItWorks": "Comment ça marche",
     "languages": "Langues",
-    "blog": "Blog",
-    "getStarted": "Commencer"
+    "blog": "Blog"
   },
   "hero": {
-    "badge": "Colle un lien YouTube — tes cartes sont prêtes",
     "headline1": "Apprends une langue ",
     "headlineHighlight": "sereinement",
     "headline2": ", chaque jour",
-    "subheadline": "Des cartes tirées des vidéos, podcasts et livres que tu aimes.",
-    "cta": "Commencer à apprendre",
+    "subheadline": "Colle un lien YouTube — tes cartes sont prêtes. Pareil avec les podcasts, les articles et les livres.",
     "ctaSecondary": "Voir comment ça marche",
     "appStoreBadge": "Maintenant disponible sur iOS et Android",
-    "appStoreCta": "Télécharger dans l'App Store",
     "supported": "Anglais · Allemand · Français · Espagnol",
     "comingSoon": "Portugais — bientôt disponible"
   },
@@ -315,23 +311,20 @@
   },
   "cta": {
     "title": "Commence à apprendre avec du contenu que tu aimes",
-    "subtitle": "Importe ta première vidéo ou ton premier podcast en quelques secondes.",
-    "button": "Commencer",
-    "writeLead": "Une question, une idée ou un bug ? Écris à",
-    "writeTail": "— nous lisons chaque message."
+    "subtitle": "Importe ta première vidéo ou ton premier podcast en quelques secondes."
   },
   "footer": {
     "brand": "Apprends des langues à partir de contenus réels que tu aimes. YouTube, podcasts, articles — transformés en flashcards grâce à l'IA.",
     "product": "Produit",
     "legal": "Légal",
-    "openApp": "Ouvrir l'application",
     "privacy": "Politique de confidentialité",
     "terms": "Conditions d'utilisation",
     "contact": "Contact",
     "rights": "Tous droits réservés.",
     "compare": "Comparatifs",
     "mcp": "Serveur MCP",
-    "writeUs": "Écris-nous :"
+    "writeLead": "Une question, une idée ou un bug ? Écris à",
+    "writeTail": "— nous lisons chaque message."
   },
   "blog": {
     "title": "Blog d'apprentissage des langues",
@@ -392,5 +385,12 @@
     "bugsBody": "Tu as trouvé un bug ? Décris ce qui s'est passé, ton appareil ou navigateur, et joins des captures d'écran si possible.",
     "ideasTitle": "Suggestions de fonctionnalités",
     "ideasBody": "Une idée de fonctionnalité ? Nous cherchons toujours à nous améliorer. Envoie-nous tes suggestions."
+  },
+  "app": {
+    "open": "Ouvrir Zenzu"
+  },
+  "stores": {
+    "appStoreCaption": "Télécharge sur",
+    "googlePlayCaption": "Disponible sur"
   }
 }
