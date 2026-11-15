@@ -202,7 +202,7 @@
   "mcp": {
     "kicker": "Ya disponible",
     "title": "Tus datos, dondequiera que trabajes.",
-    "intro": "MCP (Model Context Protocol) es un estándar abierto que permite a un asistente de IA usar herramientas de otras apps. Zenzu tiene su propio servidor MCP. Conecta Claude, Cursor u otro asistente compatible con MCP y podrá leer tus mazos, tarjetas y progreso. Si lo permites, también podrá añadir y editar tarjetas y registrar tus repasos.",
+    "intro": "MCP (Model Context Protocol) es un estándar abierto que permite a un asistente de IA usar herramientas de otras apps. Zenzu tiene su propio servidor MCP. Conecta Claude, Cursor u otro asistente compatible con MCP y podrá leer tus mazos, tarjetas y progreso. Si lo permites, también podrá añadir, editar y eliminar tarjetas y registrar tus repasos.",
     "scenariosTitle": "Qué puedes pedir",
     "scenarios": {
       "deck": "Pega un texto o un artículo. El asistente elige las palabras más útiles para tu nivel y las guarda como tarjetas en un mazo.",
