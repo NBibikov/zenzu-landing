@@ -134,10 +134,22 @@ test('the name block has a pronunciation line with the IPA in every locale', () 
   }
 })
 
-// "дзен" alone reads as the dzen.ru platform: the uk copy always names Zen Buddhism.
-test('the uk name copy ties "дзен" to Zen Buddhism', () => {
-  const { name } = load('uk') as { name: { body: string } }
-  assert.match(name.body, /дзен-буддизм/)
+// The name block renders one <p> per entry: intro, a lived scene, the relief, the way there.
+test('the name block has 4 non-empty paragraphs in every locale', () => {
+  for (const locale of LOCALES) {
+    const { name } = load(locale) as { name: { paragraphs?: string[]; body?: string } }
+    assert.equal(name.paragraphs?.length, 4, `${locale}: expected 4 paragraphs`)
+    assert.ok(name.paragraphs?.every((text) => text.trim() !== ''), `${locale}: empty paragraph`)
+    assert.equal(name.body, undefined, `${locale}: the old name.body is still there`)
+  }
+})
+
+// Zen means "calm" in the name copy; no locale mentions Buddhism.
+test('no locale mentions Buddhism', () => {
+  for (const locale of LOCALES) {
+    const text = readFileSync(new URL(`../src/i18n/${locale}.json`, import.meta.url), 'utf8')
+    assert.doesNotMatch(text, /buddh|bouddh|budis|буддиз/i, `${locale}: mentions Buddhism`)
+  }
 })
 
 // fr.json writes the apostrophe straight ('), as most of the file does.
