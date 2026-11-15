@@ -29,7 +29,7 @@ The site exists to explain this, send visitors to the App Store, Google Play or 
 ## Positioning
 
 - Cards come from the learner's own content, with the source sentence and audio kept. In Anki, the learner builds cards by hand.
-- A calm, serious tool, not a game: no mascots, no streak pressure, no endless animations.
+- A calm, serious tool, not a game: no mascots, no streak pressure.
 - The learner's data stays theirs and is open to their own AI agents through MCP (in the app: Settings → AI agents → Agent access).
 - Learn from the native language: the interface and the coach work in six languages.
 

@@ -40,6 +40,9 @@ const socialTitle = ogTitle ?? title
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="generator" content={Astro.generator} />
+    <!-- Marks that scripts run. The hidden start of the section reveal
+         applies only under html.js, so no script means visible content. -->
+    <script is:inline>document.documentElement.classList.add('js')</script>
 
     <!-- SEO -->
     <title>{title}</title>
@@ -100,5 +103,33 @@ const socialTitle = ogTitle ?? title
   </head>
   <body class="bg-paper text-ink font-sans antialiased">
     <slot />
+
+    <!-- Section reveal: each [data-reveal] block fades in once, the first
+         time its top edge is 10% inside the viewport, then stays. The rule
+         does not depend on block height: a ratio threshold never fires for
+         a block taller than the viewport divided by the ratio. A block
+         above the viewport (deep link, restored scroll) shows at once. If
+         the script fails, removing html.js shows every block. -->
+    <script is:inline>
+      (() => {
+        try {
+          const blocks = document.querySelectorAll('[data-reveal]')
+          if (!('IntersectionObserver' in window)) {
+            blocks.forEach((block) => block.classList.add('is-in'))
+            return
+          }
+          const observer = new IntersectionObserver((entries) => {
+            for (const entry of entries) {
+              if (!(entry.isIntersecting || entry.boundingClientRect.top < 0)) continue
+              entry.target.classList.add('is-in')
+              observer.unobserve(entry.target)
+            }
+          }, { threshold: 0, rootMargin: '0px 0px -10% 0px' })
+          blocks.forEach((block) => observer.observe(block))
+        } catch {
+          document.documentElement.classList.remove('js')
+        }
+      })()
+    </script>
   </body>
 </html>

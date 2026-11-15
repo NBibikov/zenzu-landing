@@ -72,46 +72,97 @@
   "features": {
     "title": "Alles, was du zum Lernen brauchst",
     "subtitle": "Eine App für alle deine Inhalte zum Sprachenlernen. Importiere, was du liebst, lerne, was wichtig ist.",
+    "moreLabel": "Mehr dazu",
+    "labels": {
+      "what": "Was du bekommst",
+      "how": "So funktioniert es",
+      "note": "Gut zu wissen"
+    },
     "lisa": {
       "title": "Lisa — dein KI-Coach",
-      "desc": "Frag Lisa nach einem Lernplan, Worterklärungen oder täglichen Wiederholungen. Sie antwortet in deiner Sprache — Englisch, Ukrainisch, Deutsch, Spanisch, Französisch oder Portugiesisch."
+      "desc": "Frag Lisa nach einem Lernplan, Worterklärungen oder täglichen Wiederholungen. Sie antwortet in deiner Sprache — Englisch, Ukrainisch, Deutsch, Spanisch, Französisch oder Portugiesisch.",
+      "more": {
+        "what": "Frag Lisa, was ein Wort bedeutet, warum ein Satz so gebaut ist oder was du heute lernen sollst. Du kannst dich auch über ein Thema deiner Wahl mit ihr unterhalten. Danach siehst du deine Fehler mit den richtigen Formen.",
+        "how": "Bevor sie antwortet, sieht Lisa dein Niveau, deinen Fortschritt, deine fälligen Karten und deine Stapel. Bittest du sie, Wörter zu speichern oder einen Stapel anzulegen, zeigt sie einen Vorschlag — geändert wird erst, wenn du bestätigst. Zwischen den Sitzungen behält sie kurze Notizen über dich; du kannst sie in den Einstellungen ansehen und löschen.",
+        "note": "Lisa antwortet in deiner Oberflächensprache: Englisch, Ukrainisch, Deutsch, Spanisch, Französisch oder Portugiesisch. Auf Wunsch wechselt sie in eine andere Sprache."
+      }
     },
     "youtube": {
       "title": "YouTube-Videos",
-      "desc": "Mit Live-Transkript ansehen. Tippe auf ein Wort oder markiere eine Phrase — Zenzu speichert sie als Karte mit vollständigem Satzkontext und muttersprachlicher Aussprache."
+      "desc": "Mit Live-Transkript ansehen. Tippe auf ein Wort oder markiere eine Phrase — Zenzu speichert sie als Karte mit vollständigem Satzkontext und Audio zur Aussprache.",
+      "more": {
+        "what": "Sieh dir ein YouTube-Video mit Transkript unter dem Player an. Die gerade gesprochene Zeile wird hervorgehoben, und das Transkript scrollt mit, damit sie sichtbar bleibt. Tippe auf ein Wort für die Übersetzung und speichere das Wort, eine Phrase oder den ganzen Satz als Karte.",
+        "how": "Zenzu lädt ein Transkript des Videos in deiner Lernsprache, meist die Untertitel, die das Video bereits hat. Jede Karte behält den Satz, aus dem sie stammt, samt Übersetzung, und „An der Quelle öffnen“ bringt dich an genau diese Stelle im Video zurück. Du kannst einen Satz in einer Schleife wiederholen und die Wiedergabegeschwindigkeit ändern.",
+        "note": "Zum Antippen und Speichern brauchst du ein Transkript in deiner Lernsprache; kann Zenzu keines laden, erscheint statt des Transkripts nur der Hinweis, dass keine Untertitel gefunden wurden. Videos, deren Urheber die Wiedergabe auf anderen Websites abgeschaltet hat, lassen sich in Zenzu nicht abspielen."
+      }
     },
     "podcasts": {
       "title": "Podcasts",
-      "desc": "KI-transkribierte Episoden, die du beim Hören mitlesen kannst. Markiere eine Phrase, um sie als Karte mit Aussprache für jedes Wort zu speichern."
+      "desc": "KI-transkribierte Episoden, die du beim Hören mitlesen kannst. Markiere eine Phrase, um sie als Karte mit Aussprache für jedes Wort zu speichern.",
+      "more": {
+        "what": "Lies das Transkript einer Episode, während du zuhörst. Tippe auf ein Wort, eine Phrase oder einen Satz, um die Übersetzung zu sehen und als Karte zu speichern.",
+        "how": "Such eine Sendung im Apple-Podcasts-Verzeichnis und abonniere sie; neue Episoden kommen aus dem Feed der Sendung. Zenzu transkribiert eine Episode per Spracherkennung: Jedes Wort bekommt eine Zeitmarke, und die gesprochene Sprache wird automatisch erkannt.",
+        "note": "Episoden, die länger als drei Stunden sind, werden nicht transkribiert."
+      }
     },
     "starterDecks": {
       "title": "Starter-Stapel",
-      "desc": "18 handverlesene Stapel von A1 bis C1 — Alltagsvokabular, Business, Wissenschaft, Redewendungen und mehr. Stapelnamen passen sich deiner Spracheinstellung an."
+      "desc": "Handverlesene Stapel von A1 bis C1 — Alltagsvokabular, Business, Wissenschaft, Redewendungen und mehr. Stapelnamen passen sich deiner Spracheinstellung an.",
+      "more": {
+        "what": "Starte mit fertigen Stapeln aus Wörtern und Phrasen für den Alltag, von A1 bis C1: Essen, Reisen, Arbeit, Gefühle, Redewendungen, Business und Wissenschaft. Jede Karte hat einen Beispielsatz, so siehst du das Wort ab der ersten Wiederholung im Kontext.",
+        "how": "In den meisten Stapeln gibt es jede Karte in neun Sprachen: Englisch, Deutsch, Spanisch, Französisch, Portugiesisch, Ukrainisch, Japanisch, Koreanisch und Chinesisch. Die Vorderseite steht in deiner Lernsprache, die Rückseite in deiner Muttersprache; fehlt deine Muttersprache in dieser Liste, wird die Rückseite beim Hinzufügen des Stapels übersetzt. Den Katalog kannst du nach Sprache und Niveau filtern.",
+        "note": "Manche Stapel gibt es nur für bestimmte Sprachen, etwa die Tabellen unregelmäßiger Verben oder die Stapel zu falschen Freunden für Englisch und Deutsch; ihre Karten gibt es in weniger Sprachen. Stapelnamen erscheinen in deiner Oberflächensprache."
+      }
     },
     "interface": {
       "title": "Oberfläche in 6 Sprachen",
-      "desc": "Nutze die App auf Englisch, Ukrainisch, Deutsch, Spanisch, Französisch oder Portugiesisch. Lerne aus deiner Muttersprache heraus, nicht über Englisch."
+      "desc": "Nutze die App auf Englisch, Ukrainisch, Deutsch, Spanisch, Französisch oder Portugiesisch. Lerne aus deiner Muttersprache heraus, nicht über Englisch.",
+      "more": {
+        "what": "Menüs, Hinweise und Lisas Antworten erscheinen in deiner Sprache: Englisch, Ukrainisch, Deutsch, Spanisch, Französisch oder Portugiesisch. Übersetzungen auf den Karten stehen in deiner Muttersprache, so lernst du ohne Umweg über Englisch.",
+        "how": "Standardmäßig folgt die App der Muttersprache in deinem Profil. Du kannst auch der Sprache deines Geräts folgen oder eine Sprache in den Einstellungen wählen.",
+        "note": "Lernen kannst du Englisch, Deutsch, Französisch oder Spanisch. Gibt es die Oberfläche nicht in deiner Muttersprache, etwa Italienisch oder Polnisch, kommen die Übersetzungen trotzdem in dieser Sprache, und die App zeigt eine andere Oberflächensprache."
+      }
     },
     "courses": {
       "title": "KI-Kurse",
-      "desc": "Personalisierte Grammatik- und Vokabelkurse für Englisch, Deutsch, Französisch und Spanisch — A1 bis C1. Übungen passen sich deinem Niveau an."
+      "desc": "Grammatik- und Vokabellektionen für Englisch, Deutsch, Französisch und Spanisch — im Voraus vorbereitet und nach GER-Niveau sortiert.",
+      "more": {
+        "what": "Lerne Grammatik und Wortschatz in Lektionen für Englisch, Deutsch, Französisch oder Spanisch, Niveau für Niveau ab A1 und bis C1, wo die Lektionen fertig sind. Eine Lektion erscheint nur, wenn eine Fassung für deine Sprache fertig ist; die Kurse für Deutsch, Französisch und Spanisch nutzen auch die englische Fassung. Daher gibt es für manche Sprachpaare vorerst nur einen Teil der Lektionen oder noch gar keine. Wörter aus einer Lektion kannst du zum Wiederholen in deine Stapel übernehmen.",
+        "how": "Eine Lektion hat Abschnitte wie neue Wörter, Grammatik, einen Dialog und eine Zusammenfassung, jeweils mit Übungen: Multiple Choice, Lückentext, Zuordnen, Sätze bauen und Diktat. Spätere Lektionen greifen frühere Wörter mit ihrer Übersetzung wieder auf. Ein kurzer Einstufungstest legt dein Niveau fest; alle Stufen bis dahin sind offen, ohne Test beginnst du bei A1.",
+        "note": "In den Kursen für Deutsch, Französisch und Spanisch kommen die Erklärungen auf Englisch, wenn es keine Fassung in deiner Sprache gibt. Die Lektionen sind vorab erstellt und werden nicht für jede Person einzeln erzeugt."
+      }
     },
     "srs": {
       "title": "FSRS-6 Verteilte Wiederholung",
-      "desc": "Ein wissenschaftlich fundierter Algorithmus plant Wiederholungen zum optimalen Zeitpunkt. Erinnere dich für immer an Wörter."
+      "desc": "Ein wissenschaftlich fundierter Algorithmus plant Wiederholungen zum optimalen Zeitpunkt. Erinnere dich für immer an Wörter.",
+      "more": {
+        "what": "Jeden Tag siehst du die fälligen Karten, nicht den ganzen Stapel. Karten, die du gut kennst, kommen seltener wieder, vergessene früher.",
+        "how": "Nach jeder Karte bewertest du, wie gut du dich erinnert hast: Nochmal, Schwer, Gut oder Einfach. FSRS-6 führt für jede Karte einen Wert für Stabilität und einen für Schwierigkeit und legt daraus den nächsten Termin fest; jede Taste zeigt das Intervall, das sie vergibt. Erkennen (Wort → Bedeutung) und Abrufen (Bedeutung → Wort) haben getrennte Zeitpläne.",
+        "note": "Der Zeitplan soll eine Karte dann zeigen, wenn die Chance, sie abzurufen, auf etwa 90 % sinkt. Zenzu nutzt die Standardparameter des Open-Source-Algorithmus FSRS-6."
+      }
     },
     "tts": {
-      "title": "Muttersprachliche Aussprache",
-      "desc": "Cloud-TTS für jedes Wort und jeden Satz. Höre vom ersten Tag an, wie es klingt."
+      "title": "Aussprache für jedes Wort",
+      "desc": "Cloud-TTS für jedes Wort und jeden Satz. Höre vom ersten Tag an, wie es klingt.",
+      "more": {
+        "what": "Spiel jedes Wort und jeden Satz in deiner Lernsprache mit einer Cloud-Stimme ab. In den Dialogen der Lektionen wird jedes Wort hervorgehoben, während es gesprochen wird.",
+        "how": "Zenzu erzeugt das Audio auf dem Server und speichert es zwischen; der Ton einer Karte lädt, sobald die Karte erscheint. Die Hörgeschwindigkeit stellst du selbst ein, und derselbe Clip läuft in diesem Tempo.",
+        "note": "Die Stimmen sind synthetisch, keine Aufnahmen von Muttersprachlern. Ist Cloud-Audio aus oder nicht verfügbar, nutzt die App die Stimme deines Geräts."
+      }
     },
     "import": {
       "title": "Von überall importieren",
-      "desc": "Texte, Fotos, Artikel — kopiere oder fotografiere alles. Die KI extrahiert Vokabeln, die deinem Niveau entsprechen."
+      "desc": "Texte, Fotos, Artikel — kopiere oder fotografiere alles. Die KI extrahiert Vokabeln auf dem Niveau deines Stapels.",
+      "more": {
+        "what": "Füge einen Text oder einen Link zu einem Artikel ein, oder mach bis zu vier Fotos einer Seite: Buch, Speisekarte, Schild oder handschriftliche Notizen. Zenzu findet Wörter, die zum Niveau des Stapels passen, in den du importierst, und zeigt sie als Liste. Du wählst, welche davon Karten werden.",
+        "how": "Jedes Wort kommt mit dem Satz, in dem es stand, aus der Quelle übernommen, und mit einer Übersetzung dieses Satzes in deine Muttersprache; hat die Quelle keinen ganzen Satz, etwa bei einer Speisekarte oder einem Schild, schreibt Zenzu einen kurzen Beispielsatz. Jedes Wort ist mit seinem Niveau markiert; zuerst zeigt die Liste nur das Niveau des Stapels und die höheren, die niedrigeren kannst du dazunehmen. Hat der Stapel kein einheitliches Niveau, wählt Zenzu Wörter der mittleren und höheren Stufen und zeigt alle Niveaus.",
+        "note": "Lernst du mehrere Sprachen, entscheidet der Text selbst, zu welcher Sprache die Wörter gehören. Unter iOS kannst du Texte und Links aus anderen Apps in den Zenzu-Eingang teilen und später importieren."
+      }
     }
   },
   "forWhom": {
     "title": "Für alle, die Sprachen ernstnehmen",
-    "subtitle": "Zenzu ist ein ernsthaftes Werkzeug, kein Spielzeug — keine niedlichen Maskottchen, kein Spiel zu gewinnen, keine endlosen Animationen. Es ist für Menschen, die ihren Fortschritt und ihre Daten besitzen wollen. Eine Sprache zu lernen ist eine der anspruchsvollsten und lohnendsten Aufgaben überhaupt. Genau dafür wurde Zenzu gebaut.",
+    "subtitle": "Zenzu ist ein ernsthaftes Werkzeug, kein Spielzeug — keine niedlichen Maskottchen, kein Spiel zu gewinnen. Es ist für Menschen, die ihren Fortschritt und ihre Daten besitzen wollen. Eine Sprache zu lernen ist eine der anspruchsvollsten und lohnendsten Aufgaben überhaupt. Genau dafür wurde Zenzu gebaut.",
     "forLabel": "Zenzu ist für dich, wenn…",
     "for1": "Du glaubst, dass echte Sprachkompetenz durch authentische Inhalte entsteht",
     "for2": "Du dich zu täglichen Wiederholungen verpflichtest, auch an schwierigen Tagen",
@@ -151,8 +202,134 @@
   "mcp": {
     "kicker": "Jetzt verfügbar",
     "title": "Deine Daten, wo immer du arbeitest.",
-    "body": "Verbinde Zenzu über MCP mit deinen eigenen KI-Agenten — Claude, Cursor oder jeder MCP-kompatible Assistent erreicht deine Stapel, Karten und Fortschritte von deinem Computer, von deinen Lieblingswerkzeugen, von überall. Bring neues Material hinein, nimm deine Daten mit. Sie bleiben deine und gehen dorthin, wohin du gehst.",
-    "badge": "In der App: Einstellungen → KI-Agenten → Agenten-Zugriff"
+    "intro": "MCP (Model Context Protocol) ist ein offener Standard, über den ein KI-Assistent Werkzeuge anderer Apps nutzt. Zenzu hat einen eigenen MCP-Server. Verbinde Claude, Cursor oder einen anderen Assistenten mit MCP-Unterstützung, dann kann er deine Stapel, Karten und Fortschritte lesen. Wenn du es erlaubst, kann er auch Karten hinzufügen, bearbeiten und löschen und deine Wiederholungen erfassen.",
+    "scenariosTitle": "Was du fragen kannst",
+    "scenarios": {
+      "deck": "Füge einen Text oder Artikel ein. Der Assistent wählt die nützlichsten Wörter für dein Niveau und speichert sie als Karten in einem Stapel.",
+      "review": "Wiederhole fällige Karten im Chat. Der Assistent fragt eine Karte nach der anderen ab und erfasst jede Antwort mit demselben FSRS-6-Planer wie die App.",
+      "confused": "Finde die Wörter, die du durcheinanderbringst. Der Assistent sieht, welche Karten du miteinander verwechselst und welche du immer wieder vergisst.",
+      "report": "Hol dir einen Wochenbericht: Wiederholungen, aktive Tage, Problemwörter, deine Stelle im Kurs und ein Schwerpunkt für die nächste Woche.",
+      "media": "Finde einen fertigen Wortstapel zu einem Film oder einer Serie und sieh dir seine Karten an.",
+      "level": "Frag, wo du stehst: dein Niveau, deine Stelle im Kurs und die nächste Lektion."
+    },
+    "writeMark": "Braucht „Schreiben erlauben“",
+    "stepsTitle": "So verbindest du",
+    "steps": [
+      "Öffne in der App Einstellungen → KI-Agenten und wähle „Erzeugen“. Gib dem Token einen Namen und kopiere es sofort: Die App zeigt es nur einmal.",
+      "Füge Zenzu in deinem Assistenten als MCP-Server hinzu, mit der Server-URL vom selben Bildschirm und deinem Token.",
+      "Frag in normalen Worten. Der Assistent wählt selbst die Zenzu-Werkzeuge, die er braucht."
+    ],
+    "safetyTitle": "Du behältst die Kontrolle",
+    "safety": [
+      "Gib jedem Assistenten ein eigenes persönliches Token mit einem Namen deiner Wahl.",
+      "Ein Token kann nur lesen, außer du aktivierst beim Erstellen „Schreiben erlauben“. Mit Schreibrechten kann der Assistent Stapel und Karten erstellen, bearbeiten und löschen, Karten verschieben, Wiederholungen erfassen und Notizbücher schreiben.",
+      "Widerrufe ein Token jederzeit auf demselben Bildschirm. Es funktioniert dann sofort nicht mehr.",
+      "Du kannst bis zu 10 aktive Tokens haben.",
+      "Ein Assistent sieht nur dein Konto. An die Daten anderer kommt er nicht heran."
+    ],
+    "badge": "In der App: Einstellungen → KI-Agenten",
+    "detailsLink": "Alle Werkzeuge, Einrichtung und Regeln"
+  },
+  "mcpPage": {
+    "meta": {
+      "title": "Zenzu MCP-Server: Einrichtung, Werkzeuge und Regeln",
+      "description": "Verbinde Zenzu-Stapel und Fortschritt mit Claude, Cursor oder einem Assistenten, der Remote-MCP mit Bearer-Token unterstützt. Einrichtung, Werkzeuge, Regeln."
+    },
+    "title": "Zenzu MCP-Server",
+    "lead": "Zenzu betreibt einen gehosteten MCP-Server, du musst also nichts installieren. Dein Assistent verbindet sich über Streamable HTTP mit einer URL und meldet sich mit einem persönlichen Token aus der App an. Hier findest du die Einrichtung, alle Werkzeuge, die fertigen Prompts und die Regeln, die der Server einhält.",
+    "setupTitle": "Einrichtung",
+    "setup": {
+      "genericTitle": "Jeder MCP-Client",
+      "generic": "Erstelle ein Token in der App: Einstellungen → KI-Agenten → „Erzeugen“. Kopiere es sofort: Die App zeigt es nur einmal. Füge in deinem Client einen entfernten MCP-Server mit dieser URL hinzu und sende das Token im Authorization-Header. Ersetze zmcp_… durch dein Token.",
+      "urlLabel": "Server-URL",
+      "headerLabel": "Header",
+      "claudeCode": "Führe diesen Befehl im Terminal aus, mit deinem Token statt zmcp_…. Standardmäßig fügt Claude Code den Server nur zum aktuellen Projekt hinzu. Mit --scope user steht er in all deinen Projekten bereit."
+    },
+    "toolsTitle": "Werkzeuge",
+    "toolsIntro": "Du fragst in normalen Worten, und dein Assistent wählt die nötigen Werkzeuge selbst. Werkzeuge, die deine Daten ändern, funktionieren nur mit einem Token mit „Schreiben erlauben“.",
+    "groups": {
+      "decks": "Stapel und Karten",
+      "review": "Wiederholen",
+      "progress": "Fortschritt",
+      "courses": "Kurse und Lesen",
+      "workspace": "Notizbücher",
+      "media": "Filme und Serien"
+    },
+    "tools": {
+      "list_decks": "Deine Stapel mit der Zahl der Karten und der jetzt fälligen Karten.",
+      "get_deck_cards": "Die Karten eines Stapels, die am frühesten fälligen zuerst. Bis zu 50 pro Aufruf.",
+      "search_my_cards": "Durchsucht alle deine Karten nach Vorderseite, Rückseite und Kontextsatz. Bis zu 30 Treffer pro Aufruf.",
+      "create_deck": "Erstellt einen Stapel.",
+      "update_deck": "Benennt einen Stapel um oder ändert Beschreibung, Sprache oder Labelfarbe.",
+      "delete_deck": "Löscht einen Stapel mit allen Karten. Das kann nicht rückgängig gemacht werden.",
+      "add_card": "Fügt einem Stapel eine neue Karte hinzu.",
+      "add_cards": "Fügt einem Stapel bis zu 50 Karten in einem Aufruf hinzu.",
+      "update_card": "Bearbeitet den Text einer Karte. Ihr Wiederholungsplan bleibt gleich.",
+      "delete_card": "Verschiebt eine Karte in den Papierkorb. Nach 30 Tagen wird sie endgültig gelöscht.",
+      "move_card": "Verschiebt eine Karte in einen anderen Stapel. Ihr Wiederholungsplan bleibt gleich.",
+      "list_inbox_items": "Texte, Links und YouTube-Videos in deinem Eingang, die du noch nicht importiert hast.",
+      "get_due_cards": "Die jetzt fälligen Karten, in derselben Reihenfolge wie eine Wiederholung in der App. Neue Karten sind nicht dabei.",
+      "review_card": "Speichert deine Antwort zu einer Karte (again, hard, good oder easy) mit demselben FSRS-6-Planer wie die App.",
+      "get_review_history": "Deine letzten Wiederholungen: welche Karte, welche Bewertung und wann. Bis zu 100 Zeilen.",
+      "get_interference_pairs": "Kartenpaare, die du miteinander verwechselst, die häufigsten zuerst.",
+      "get_progress": "Ein Überblick über dein Lernen: Summen, letzte Wiederholungen, fällige Karten und was du gerade lernst.",
+      "get_study_stats": "Lernstatistik: Wiederholungen pro Tag, aktive Tage und Lernminuten.",
+      "get_cefr_level": "Dein aktuelles GER-Niveau und die Sprache, die du gerade lernst.",
+      "get_assessment_results": "Deine Einstufungstests pro Sprache und Niveau.",
+      "get_course_progress": "Dein Stand im Kurs: Fortschritt pro GER-Niveau, die nächste Lektion und letzte Lektionen mit Ergebnis.",
+      "get_lesson_content": "Der Lehrstoff einer Kurslektion: Grammatik, Dialog, Wortschatz und Zusammenfassung.",
+      "get_reading_progress": "Die Bücher, die du in der App-Bibliothek liest, mit aktuellem Kapitel und Absatz.",
+      "list_workspace_entries": "Deine Notizbuch-Einträge, die neuesten zuerst. Bis zu 30.",
+      "get_workspace_entry": "Ein Notizbuch-Eintrag vollständig.",
+      "get_workspace_attempts": "Deine beantworteten Übungen: deine Antwort, die erwartete Antwort und ob sie richtig war. Bis zu 50.",
+      "create_workspace_entry": "Erstellt einen Notizbuch-Eintrag.",
+      "update_workspace_entry": "Ändert Titel, Text oder Notizen eines Eintrags.",
+      "delete_workspace_entry": "Löscht einen Eintrag auf all deinen Geräten. Das kann nicht rückgängig gemacht werden.",
+      "search_media_decks": "Durchsucht die Zenzu-Bibliothek fertiger Wortstapel zu Filmen und Serien.",
+      "get_media_deck": "Die Karten eines Films oder einer Folge. Bis zu 60."
+    },
+    "promptsTitle": "Prompts",
+    "promptsIntro": "Prompts sind fertige Aufgaben, die die Werkzeuge oben nutzen. Dein Client kann sie als Befehle anbieten.",
+    "prompts": {
+      "vocab_from_text": "Wählt die nützlichsten Wörter aus einem Text, den du gibst, und speichert sie in einem Schritt als Karten. Argumente: text (Pflicht), deck (optional). Zum Speichern braucht es „Schreiben erlauben“.",
+      "review_session": "Fragt dich deine fälligen Karten einzeln ab und speichert jede Antwort. Argument: language (optional). Zum Speichern braucht es „Schreiben erlauben“.",
+      "weekly_report": "Erstellt einen Wochenbericht: Aktivität, schwierige Wörter, dein Stand im Kurs und ein Schwerpunkt für die nächste Woche."
+    },
+    "rulesTitle": "Regeln",
+    "rules": [
+      "Jede Anfrage braucht ein persönliches Token im Header Authorization: Bearer zmcp_…. Du erstellst das Token in der App unter Einstellungen → KI-Agenten.",
+      "Ein Token kann nur lesen, außer du aktivierst beim Erstellen „Schreiben erlauben“. Mit Schreibrechten kann der Assistent Stapel und Karten erstellen, bearbeiten und löschen, Karten verschieben, Wiederholungen erfassen und Notizbücher schreiben. Wird ein Stapel gelöscht, sind auch seine Karten weg, und das kann nicht rückgängig gemacht werden.",
+      "Beim Erstellen wählst du, wann das Token abläuft: in 30 Tagen, in 90 Tagen, in einem Jahr oder nie. Standard sind 90 Tage. Ein abgelaufenes Token funktioniert nicht mehr.",
+      "Du kannst bis zu 10 aktive Tokens haben und bis zu 20 Tokens pro Tag erstellen.",
+      "Widerrufe ein Token jederzeit in der App. Es funktioniert dann sofort nicht mehr.",
+      "Rate-Limits: 60 Anfragen pro Minute und 1.000 pro Stunde je Token, dazu 120 pro Minute und 2.000 pro Stunde für dein Konto über alle Tokens. Über einem Limit antwortet der Server mit HTTP 429 und einem Retry-After-Header.",
+      "Tageslimits für dein Konto, pro UTC-Tag: 3.000 erfasste Wiederholungen und 2.000 Schreibeinheiten. Eine neue Karte oder ein neuer Stapel kostet eine Einheit. Notizbuchtext kostet eine Einheit je angefangene 10 KB, die gespeichert werden.",
+      "Jede Anfrage trägt eine JSON-RPC-Nachricht mit bis zu 256 KB. Batches werden abgelehnt.",
+      "Ein Assistent sieht nur dein Konto. An die Daten anderer kommt er nicht heran."
+    ],
+    "faqTitle": "Fragen",
+    "faq": [
+      {
+        "q": "Muss ich etwas installieren?",
+        "a": "Nein. Zenzu hostet den Server. Dein Assistent verbindet sich über HTTP mit seiner URL."
+      },
+      {
+        "q": "Welche Assistenten können sich verbinden?",
+        "a": "Claude, Cursor oder ein anderer Assistent, wenn er sich über HTTP mit einem entfernten MCP-Server verbinden und deinen Token im Authorization-Header senden kann."
+      },
+      {
+        "q": "Kann der Assistent meine Daten ändern oder löschen?",
+        "a": "Nur mit einem Token mit „Schreiben erlauben“. Für ein Token, das nur lesen darf, lehnt der Server jedes Schreibwerkzeug ab. Mit Schreibrechten kann der Assistent bearbeiten und löschen. Die Löschwerkzeuge sagen dem Assistenten, dass er dich vorher fragen soll, aber der Server prüft deine Zustimmung nicht."
+      },
+      {
+        "q": "Zählt eine Wiederholung im Chat wie eine in der App?",
+        "a": "Ja. review_card nutzt denselben FSRS-6-Planer wie die App und aktualisiert den Plan der Karte und dein Wiederholungsprotokoll."
+      },
+      {
+        "q": "Welche MCP-Versionen unterstützt der Server?",
+        "a": "Die Protokollversionen 2025-11-25, 2025-06-18, 2025-03-26 und 2024-11-05. Der Server beantwortet nur Anfragen: Er öffnet keinen Stream, um von sich aus Nachrichten zu senden."
+      }
+    ]
   },
   "cta": {
     "title": "Beginne mit Inhalten zu lernen, die du liebst",
@@ -171,6 +348,7 @@
     "contact": "Kontakt",
     "rights": "Alle Rechte vorbehalten.",
     "compare": "Vergleiche",
+    "mcp": "MCP-Server",
     "writeUs": "Schreib uns:"
   },
   "blog": {

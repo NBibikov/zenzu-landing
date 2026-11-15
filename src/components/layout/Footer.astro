@@ -1,10 +1,14 @@
 ---
 import { localeNames, localePath, supportedLocales, type Locale } from '../../i18n'
 import { CONTACT_EMAIL, mailtoHref } from '../../lib/contact'
+import { languageSwitchPath } from '../../lib/language-switch'
 
 interface Props { t: any; locale: Locale }
 const { t, locale } = Astro.props
 const currentYear = new Date().getFullYear()
+// Same target as the header switch: on a blog, contact or MCP page the
+// reader stays on that page; elsewhere the link goes to the home page.
+const switchTarget = languageSwitchPath(Astro.url.pathname)
 // Paper to the end. A dark moss slab under a light page read as a different
 // site, and moss is an accent here, not a field.
 ---
@@ -23,6 +27,7 @@ const currentYear = new Date().getFullYear()
           <li><a href={localePath('/', locale) + '#how-it-works'} class="hover:text-ink transition-colors">{t.nav.howItWorks}</a></li>
           <li><a href={localePath('/blog/', locale)} class="hover:text-ink transition-colors">{t.nav.blog}</a></li>
           <li><a href="/compare/" class="hover:text-ink transition-colors">{t.footer.compare}</a></li>
+          <li><a href={localePath('/mcp/', locale)} class="hover:text-ink transition-colors">{t.footer.mcp}</a></li>
           <li><a href="https://app.zenzu.app" class="hover:text-ink transition-colors">{t.footer.openApp}</a></li>
         </ul>
       </div>
@@ -46,7 +51,7 @@ const currentYear = new Date().getFullYear()
         {supportedLocales.map((loc) => (
           <li>
             <a
-              href={localePath('/', loc)}
+              href={localePath(switchTarget, loc)}
               lang={loc}
               class:list={['zz-swash', loc === locale ? 'text-ink font-semibold' : 'zz-swash-hover hover:text-ink transition-colors']}
               aria-current={loc === locale ? 'true' : undefined}

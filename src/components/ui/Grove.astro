@@ -1,0 +1,25 @@
+---
+// The living grove: a decorative canvas. The parent sets its height and
+// position through `class`. Without JavaScript the canvas stays empty, but
+// it keeps its height, so the layout does not shift.
+interface Props { class?: string }
+const { class: className } = Astro.props
+---
+
+<canvas class:list={['zz-grove', className]} aria-hidden="true"></canvas>
+
+<style>
+  .zz-grove {
+    display: block;
+    width: 100%;
+    pointer-events: none;
+  }
+</style>
+
+<script>
+  import { mountGrove } from '../../lib/grove-canvas'
+
+  for (const canvas of document.querySelectorAll<HTMLCanvasElement>('.zz-grove')) {
+    mountGrove(canvas)
+  }
+</script>

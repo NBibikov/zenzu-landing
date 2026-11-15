@@ -313,6 +313,41 @@ html {
   color: var(--color-ink-2);
 }
 
+/* ----------------------------------------------------------
+   Section reveal: a block with data-reveal fades in and rises 12px
+   the first time it scrolls into view, and its heading stroke draws
+   from the left. BaseLayout sets html.js and adds .is-in once; the
+   reduced-motion block below shortens these transitions to 0.01ms.
+   The hidden start applies only under html.js, so without scripts
+   all content stays visible.
+   ---------------------------------------------------------- */
+html.js [data-reveal] {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 400ms ease-out, transform 400ms ease-out;
+}
+html.js [data-reveal].is-in {
+  opacity: 1;
+  transform: none;
+}
+html.js [data-reveal] .zz-stroke {
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 600ms ease-out 150ms;
+}
+html.js [data-reveal].is-in .zz-stroke {
+  transform: scaleX(1);
+}
+/* A printed page does not scroll, so blocks below the fold never get
+   .is-in. Print shows every block and stroke, drawn. */
+@media print {
+  html.js [data-reveal],
+  html.js [data-reveal] .zz-stroke {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 /* Under forced colours the swash and the pill texture vanish, so the
    pill keeps its border and a selected swash label gains an outline. */
 @media (forced-colors: active) {

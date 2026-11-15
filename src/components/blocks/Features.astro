@@ -23,19 +23,35 @@ const features = [
 ---
 
 <section id="features" class="py-24 px-6 border-t border-hairline">
-  <div class="max-w-5xl mx-auto">
+  <div class="max-w-5xl mx-auto" data-reveal>
     <div class="max-w-2xl mb-16">
       <span class="zz-stroke mb-5" aria-hidden="true"></span>
       <h2 class="font-serif text-3xl md:text-4xl text-ink mb-4">{t.features.title}</h2>
       <p class="text-ink-2 text-lg leading-relaxed">{t.features.subtitle}</p>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12">
-      {features.map(({ glyph, title, desc }) => (
+    <!-- items-start: an opened detail grows its own cell only; the other
+         cards in the row keep their height. The body opens without motion. -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 items-start">
+      {features.map(({ glyph, title, desc, more }) => (
         <div class="py-6 border-t border-hairline">
           <Glyph name={glyph} size={32} class="text-moss mb-5" />
           <h3 class="font-serif text-lg text-ink mb-2">{title}</h3>
           <p class="text-ink-2 text-sm leading-relaxed">{desc}</p>
+          <details class="group mt-3">
+            <summary class="inline-flex items-center gap-2 py-3.5 -my-3.5 cursor-pointer list-none [&::-webkit-details-marker]:hidden zz-kicker text-ink-3 hover:text-ink">
+              <span>{t.features.moreLabel}<span class="sr-only">: {title}</span></span>
+              <span class="text-moss text-base leading-none transition-transform group-open:rotate-45" aria-hidden="true">+</span>
+            </summary>
+            <div class="mt-4 space-y-4">
+              {(['what', 'how', 'note'] as const).map((part) => (
+                <p class="text-ink-2 text-sm leading-relaxed">
+                  <span class="block zz-kicker text-ink-3 mb-1">{t.features.labels[part]}</span>
+                  {more[part]}
+                </p>
+              ))}
+            </div>
+          </details>
         </div>
       ))}
     </div>

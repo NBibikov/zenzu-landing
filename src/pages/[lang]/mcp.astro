@@ -1,0 +1,15 @@
+---
+import McpPage from '../../components/layout/McpPage.astro'
+import { supportedLocales, type Locale } from '../../i18n'
+
+// English lives at /mcp/; every other locale gets /<lang>/mcp/.
+export function getStaticPaths() {
+  return supportedLocales
+    .filter(lang => lang !== 'en')
+    .map(lang => ({ params: { lang } }))
+}
+
+const locale = Astro.params.lang as Locale
+---
+
+<McpPage locale={locale} />

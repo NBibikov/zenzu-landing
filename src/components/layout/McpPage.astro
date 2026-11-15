@@ -1,0 +1,108 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro'
+import Header from './Header.astro'
+import Footer from './Footer.astro'
+import FaqList from '../ui/FaqList.astro'
+import { t, supportedLocales, localePath, type Locale } from '../../i18n'
+import { MCP_PROMPTS, MCP_TOOL_GROUPS, MCP_URL, MCP_WRITE_TOOLS } from '../../data/mcp'
+
+interface Props {
+  locale: Locale
+}
+
+const { locale } = Astro.props
+const strings = t(locale)
+const p = strings.mcpPage
+const tools: Record<string, string> = p.tools
+const groups: Record<string, string> = p.groups
+const prompts: Record<string, string> = p.prompts
+const writeTools = new Set(MCP_WRITE_TOOLS)
+
+// Placeholders only: the page never carries a real token.
+const authHeader = 'Authorization: Bearer zmcp_…'
+// Syntax from the Claude Code docs, "Add a remote HTTP server" (code.claude.com/docs/en/mcp).
+const claudeCodeCommand = `claude mcp add --transport http zenzu ${MCP_URL} \\\n  --header "${authHeader}"`
+
+const site = Astro.site!.toString().replace(/\/$/, '')
+const alternates = supportedLocales.map(loc => ({
+  hreflang: loc,
+  href: `${site}${localePath('/mcp/', loc)}`,
+}))
+
+// <pre> scrolls inside itself, so a long URL never widens the page. It
+// takes focus (tabindex) so a keyboard user can scroll it, and its label
+// names it for a screen reader.
+const preClass = 'overflow-x-auto bg-paper-2 border border-hairline rounded-md px-4 py-3 text-sm leading-relaxed text-ink font-mono'
+const h2Class = 'font-serif text-2xl md:text-3xl text-ink mt-20 mb-6'
+---
+
+<BaseLayout
+  title={p.meta.title}
+  ogTitle={p.meta.title}
+  description={p.meta.description}
+  lang={locale}
+  alternates={alternates}
+>
+  <Header t={strings} locale={locale} />
+  <main class="pt-32 pb-24 px-6">
+    <div class="max-w-3xl mx-auto">
+      <span class="zz-stroke mb-5" aria-hidden="true"></span>
+      <h1 class="font-serif text-4xl md:text-5xl text-ink leading-[1.15] mb-6">{p.title}</h1>
+      <p class="text-ink-2 text-lg leading-relaxed">{p.lead}</p>
+
+      <h2 class={h2Class}>{p.setupTitle}</h2>
+
+      <h3 class="font-serif text-xl text-ink mb-4">{p.setup.genericTitle}</h3>
+      <p class="text-ink-2 leading-relaxed mb-6">{p.setup.generic}</p>
+      <p class="zz-kicker text-ink-3 mb-2">{p.setup.urlLabel}</p>
+      <pre class={preClass} tabindex="0" aria-label={p.setup.urlLabel}><code>{MCP_URL}</code></pre>
+      <p class="zz-kicker text-ink-3 mt-6 mb-2">{p.setup.headerLabel}</p>
+      <pre class={preClass} tabindex="0" aria-label={p.setup.headerLabel}><code>{authHeader}</code></pre>
+
+      <h3 class="font-serif text-xl text-ink mt-12 mb-4">Claude Code</h3>
+      <p class="text-ink-2 leading-relaxed mb-6">{p.setup.claudeCode}</p>
+      <pre class={preClass} tabindex="0" aria-label="Claude Code"><code>{claudeCodeCommand}</code></pre>
+
+      <h2 class={h2Class}>{p.toolsTitle}</h2>
+      <p class="text-ink-2 leading-relaxed">{p.toolsIntro}</p>
+
+      {MCP_TOOL_GROUPS.map((group) => (
+        <section aria-labelledby={`tools-${group.id}`}>
+          <h3 id={`tools-${group.id}`} class="font-serif text-xl text-ink mt-12 mb-4">{groups[group.id]}</h3>
+          <ul>
+            {group.tools.map((name) => (
+              <li class="py-4 border-t border-hairline">
+                <code class="font-mono text-sm text-ink break-all">{name}</code>
+                {/* normal-case: the mark quotes the app's option label, so it keeps the app's casing. */}
+                {writeTools.has(name) && <span class="block zz-kicker normal-case text-ink-3 mt-1">{strings.mcp.writeMark}</span>}
+                <p class="text-ink-2 leading-relaxed mt-1">{tools[name]}</p>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))}
+
+      <h2 class={h2Class}>{p.promptsTitle}</h2>
+      <p class="text-ink-2 leading-relaxed mb-6">{p.promptsIntro}</p>
+      <ul>
+        {MCP_PROMPTS.map((name) => (
+          <li class="py-4 border-t border-hairline">
+            <code class="font-mono text-sm text-ink break-all">{name}</code>
+            <p class="text-ink-2 leading-relaxed mt-1">{prompts[name]}</p>
+          </li>
+        ))}
+      </ul>
+
+      <h2 class={h2Class}>{p.rulesTitle}</h2>
+      <ul>
+        {p.rules.map((rule) => (
+          <li class="py-4 border-t border-hairline text-ink-2 leading-relaxed">{rule}</li>
+        ))}
+      </ul>
+
+      <h2 class={h2Class}>{p.faqTitle}</h2>
+      <FaqList items={p.faq} />
+    </div>
+  </main>
+  <Footer t={strings} locale={locale} />
+</BaseLayout>

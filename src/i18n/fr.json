@@ -72,46 +72,97 @@
   "features": {
     "title": "Tout ce dont tu as besoin pour apprendre",
     "subtitle": "Une seule application pour tous tes contenus d'apprentissage. Importe ce que tu aimes, apprends ce qui compte.",
+    "moreLabel": "Détails",
+    "labels": {
+      "what": "Ce que tu obtiens",
+      "how": "Comment ça marche",
+      "note": "Bon à savoir"
+    },
     "lisa": {
       "title": "Lisa — ton coach IA",
-      "desc": "Demande à Lisa un plan d'étude, des explications de mots ou des révisions quotidiennes. Elle répond dans ta langue — anglais, ukrainien, allemand, espagnol, français ou portugais."
+      "desc": "Demande à Lisa un plan d'étude, des explications de mots ou des révisions quotidiennes. Elle répond dans ta langue — anglais, ukrainien, allemand, espagnol, français ou portugais.",
+      "more": {
+        "what": "Demande à Lisa ce que veut dire un mot, pourquoi une phrase est construite ainsi ou ce que tu peux étudier aujourd'hui. Tu peux aussi discuter avec elle d'un sujet de ton choix. Après la conversation, tu vois tes erreurs avec les formes correctes.",
+        "how": "Avant de répondre, Lisa consulte ton niveau, ta progression, tes cartes à réviser et tes paquets. Quand tu lui demandes d'enregistrer des mots ou de créer un paquet, elle affiche une proposition, et rien ne change tant que tu ne l'as pas confirmée. D'une séance à l'autre, elle garde de courtes notes sur toi ; tu peux les consulter et les supprimer dans les Réglages.",
+        "note": "Lisa répond dans la langue de ton interface : anglais, ukrainien, allemand, espagnol, français ou portugais. Si tu le lui demandes, elle passe à une autre langue."
+      }
     },
     "youtube": {
       "title": "Vidéos YouTube",
-      "desc": "Regarde avec une transcription en direct. Touche un mot ou sélectionne une phrase — Zenzu l'enregistre comme carte avec le contexte complet de la phrase et la prononciation native."
+      "desc": "Regarde avec une transcription en direct. Touche un mot ou sélectionne une phrase — Zenzu l'enregistre comme carte avec le contexte complet de la phrase et l'audio de prononciation.",
+      "more": {
+        "what": "Regarde une vidéo YouTube avec sa transcription sous le lecteur. La ligne prononcée est mise en évidence, et la transcription défile pour la garder visible. Touche un mot pour voir sa traduction, puis enregistre le mot, une expression ou la phrase entière comme carte.",
+        "how": "Zenzu charge une transcription de la vidéo dans la langue que tu apprends, en général les sous-titres que la vidéo propose déjà. Chaque carte garde la phrase d'où elle vient et sa traduction, et « Ouvrir à la source » te ramène à ce moment de la vidéo. Tu peux répéter une phrase en boucle et changer la vitesse de lecture.",
+        "note": "Pour toucher et enregistrer des mots, il faut une transcription dans la langue que tu apprends ; si Zenzu ne peut pas en charger, aucune transcription ne s'affiche, seulement un message indiquant qu'aucun sous-titre n'a été trouvé. Les vidéos dont l'auteur a désactivé la lecture sur d'autres sites ne peuvent pas être lues dans Zenzu."
+      }
     },
     "podcasts": {
       "title": "Podcasts",
-      "desc": "Épisodes transcrits par IA que tu peux lire en écoutant. Sélectionne n'importe quelle phrase pour l'enregistrer comme carte avec la prononciation de chaque mot."
+      "desc": "Épisodes transcrits par IA que tu peux lire en écoutant. Sélectionne n'importe quelle phrase pour l'enregistrer comme carte avec la prononciation de chaque mot.",
+      "more": {
+        "what": "Lis la transcription d'un épisode pendant que tu l'écoutes. Touche un mot, une expression ou une phrase pour voir la traduction et l'enregistrer comme carte.",
+        "how": "Trouve une émission dans l'annuaire Apple Podcasts et abonne-toi ; les nouveaux épisodes arrivent par le flux de l'émission. Zenzu transcrit un épisode par reconnaissance vocale : chaque mot reçoit un repère de temps, et la langue parlée est détectée automatiquement.",
+        "note": "Les épisodes de plus de trois heures ne sont pas transcrits."
+      }
     },
     "starterDecks": {
       "title": "Paquets de démarrage",
-      "desc": "18 paquets sélectionnés à la main, de A1 à C1 — essentiels du quotidien, business, académique, sciences, expressions idiomatiques et plus encore. Les noms des paquets s'adaptent à ta langue d'interface."
+      "desc": "Paquets sélectionnés à la main, de A1 à C1 — essentiels du quotidien, business, académique, sciences, expressions idiomatiques et plus encore. Les noms des paquets s'adaptent à ta langue d'interface.",
+      "more": {
+        "what": "Commence avec des paquets prêts à l'emploi de mots et d'expressions du quotidien, de A1 à C1 : nourriture, voyages, travail, émotions, expressions idiomatiques, affaires et sciences. Chaque carte a une phrase d'exemple, pour voir le mot en contexte dès la première révision.",
+        "how": "Dans la plupart des paquets, chaque carte existe en neuf langues : anglais, allemand, espagnol, français, portugais, ukrainien, japonais, coréen et chinois. Le recto est dans la langue que tu apprends et le verso dans ta langue maternelle ; si ta langue maternelle n'est pas dans cette liste, le verso est traduit quand tu ajoutes le paquet. Tu peux filtrer le catalogue par langue et par niveau.",
+        "note": "Certains paquets ne concernent que des langues précises, comme les tableaux de verbes irréguliers ou les paquets de faux amis pour l'anglais et l'allemand ; leurs cartes existent en moins de langues. Les noms des paquets s'affichent dans la langue de ton interface."
+      }
     },
     "interface": {
       "title": "Interface en 6 langues",
-      "desc": "Utilise l'app en anglais, ukrainien, allemand, espagnol, français ou portugais. Apprends depuis ta langue maternelle, pas à travers l'anglais."
+      "desc": "Utilise l'app en anglais, ukrainien, allemand, espagnol, français ou portugais. Apprends depuis ta langue maternelle, pas à travers l'anglais.",
+      "more": {
+        "what": "Les menus, les indications et les réponses de Lisa s'affichent dans ta langue : anglais, ukrainien, allemand, espagnol, français ou portugais. Les traductions des cartes sont dans ta langue maternelle, sans passer par l'anglais.",
+        "how": "Par défaut, l'app suit la langue maternelle de ton profil. Tu peux aussi suivre la langue de ton appareil ou choisir une langue dans les Réglages.",
+        "note": "Tu peux apprendre l'anglais, l'allemand, le français ou l'espagnol. Si l'interface n'existe pas dans ta langue maternelle, par exemple l'italien ou le polonais, les traductions sont quand même dans cette langue, et l'app s'affiche dans une autre langue."
+      }
     },
     "courses": {
       "title": "Cours par IA",
-      "desc": "Des cours personnalisés de grammaire et de vocabulaire pour l'anglais, l'allemand, le français et l'espagnol — A1 à C1. Les exercices s'adaptent à ton niveau."
+      "desc": "Des leçons de grammaire et de vocabulaire pour l'anglais, l'allemand, le français et l'espagnol — préparées à l'avance et classées par niveau CECR.",
+      "more": {
+        "what": "Suis des leçons de grammaire et de vocabulaire pour l'anglais, l'allemand, le français ou l'espagnol, niveau par niveau à partir de A1, jusqu'à C1 là où les leçons sont prêtes. Une leçon n'apparaît que si une version pour ta langue est prête ; les cours d'allemand, de français et d'espagnol utilisent aussi la version anglaise. Pour l'instant, certaines paires de langues n'ont donc qu'une partie des leçons, voire aucune. Les mots d'une leçon peuvent rejoindre tes paquets pour être révisés.",
+        "how": "Une leçon comporte des étapes comme les nouveaux mots, la grammaire, un dialogue et un récapitulatif, chacune avec des exercices : QCM, texte à trous, association, construction de phrases et dictée. Les leçons suivantes reprennent des mots déjà vus, avec leur traduction. Un court test de positionnement fixe ton niveau ; tous les niveaux jusqu'à celui-ci sont ouverts, et sans test tu commences en A1.",
+        "note": "Dans les cours d'allemand, de français et d'espagnol, les explications sont en anglais quand ta langue n'a pas de version. Les leçons sont préparées à l'avance ; elles ne sont pas générées pour chaque apprenant."
+      }
     },
     "srs": {
       "title": "Répétition Espacée FSRS-6",
-      "desc": "Un algorithme scientifique planifie les révisions au moment optimal. Mémorise les mots pour toujours."
+      "desc": "Un algorithme scientifique planifie les révisions au moment optimal. Mémorise les mots pour toujours.",
+      "more": {
+        "what": "Chaque jour, tu vois les cartes à réviser, pas tout le paquet. Les cartes que tu connais bien reviennent moins souvent, celles que tu oublies reviennent plus tôt.",
+        "how": "Après chaque carte, tu indiques à quel point tu t'en es souvenu : Revoir, Dur, Bien ou Facile. FSRS-6 garde pour chaque carte une valeur de stabilité et une valeur de difficulté, et en déduit la date de la prochaine révision ; chaque bouton affiche l'intervalle qu'il donnera. La reconnaissance (du mot au sens) et la production (du sens au mot) ont des calendriers séparés.",
+        "note": "Le calendrier vise à montrer une carte quand ta probabilité de t'en souvenir tombe à environ 90 %. Zenzu utilise les paramètres par défaut de l'algorithme open source FSRS-6."
+      }
     },
     "tts": {
-      "title": "Prononciation Native",
-      "desc": "Synthèse vocale cloud pour chaque mot et phrase. Écoute la bonne prononciation dès le premier jour."
+      "title": "Prononciation pour Chaque Mot",
+      "desc": "Synthèse vocale cloud pour chaque mot et phrase. Écoute la bonne prononciation dès le premier jour.",
+      "more": {
+        "what": "Écoute n'importe quel mot ou phrase dans la langue que tu apprends, grâce à la synthèse vocale cloud. Dans les dialogues des leçons, chaque mot est mis en évidence au moment où il est prononcé.",
+        "how": "Zenzu génère l'audio sur le serveur et le met en cache ; le son d'une carte se charge dès qu'elle s'affiche. Tu règles la vitesse d'écoute, et le même extrait est lu à cette vitesse.",
+        "note": "Les voix sont synthétiques, pas des enregistrements de locuteurs natifs. Si l'audio cloud est désactivé ou indisponible, l'app utilise la voix de ton appareil."
+      }
     },
     "import": {
       "title": "Importe de N'importe Où",
-      "desc": "Textes, photos, articles — colle ou photographie n'importe quoi. L'IA extrait le vocabulaire adapté à ton niveau."
+      "desc": "Textes, photos, articles — colle ou photographie n'importe quoi. L'IA extrait le vocabulaire au niveau de ton paquet.",
+      "more": {
+        "what": "Colle un texte ou le lien d'un article, ou prends jusqu'à quatre photos d'une même page : livre, menu, panneau ou notes manuscrites. Zenzu trouve les mots adaptés au niveau du paquet dans lequel tu importes et les affiche en liste. Tu choisis ceux qui deviennent des cartes.",
+        "how": "Chaque mot arrive avec la phrase où il figurait, copiée depuis la source, et la traduction de cette phrase dans ta langue maternelle ; si la source n'a pas de phrase complète, comme un menu ou un panneau, Zenzu écrit un court exemple à la place. Chaque mot indique son niveau ; au départ, la liste n'affiche que le niveau du paquet et les niveaux supérieurs, et tu peux ajouter les niveaux inférieurs. Si le paquet n'a pas de niveau unique, Zenzu choisit des mots de niveau intermédiaire et avancé et affiche tous les niveaux.",
+        "note": "Si tu apprends plusieurs langues, c'est le texte lui-même qui détermine à quelle langue appartiennent les mots. Sur iOS, tu peux partager des textes et des liens depuis d'autres apps vers la boîte de réception de Zenzu, puis les importer plus tard."
+      }
     }
   },
   "forWhom": {
     "title": "Pour ceux qui prennent les langues au sérieux",
-    "subtitle": "Zenzu est un outil sérieux, pas un jouet — pas de mascottes mignonnes, pas de jeu à gagner, pas d'animations sans fin. Il est fait pour ceux qui veulent posséder leur progression et leurs données. Apprendre une langue est l'une des choses les plus exigeantes et les plus gratifiantes qui soient. Zenzu est conçu exactement pour cela.",
+    "subtitle": "Zenzu est un outil sérieux, pas un jouet — pas de mascottes mignonnes, pas de jeu à gagner. Il est fait pour ceux qui veulent posséder leur progression et leurs données. Apprendre une langue est l'une des choses les plus exigeantes et les plus gratifiantes qui soient. Zenzu est conçu exactement pour cela.",
     "forLabel": "Zenzu est pour toi si…",
     "for1": "Tu crois que la vraie maîtrise vient du contact avec du contenu authentique",
     "for2": "Tu t'engages à des révisions quotidiennes, même les jours difficiles",
@@ -151,8 +202,134 @@
   "mcp": {
     "kicker": "Disponible",
     "title": "Tes données, où que tu travailles.",
-    "body": "Connecte Zenzu à tes propres agents IA via MCP — Claude, Cursor ou tout assistant compatible MCP accède à tes paquets, cartes et progression depuis ton ordinateur, tes outils préférés, partout. Fais entrer de nouveaux contenus, emporte tes données. Elles restent les tiennes et te suivent partout.",
-    "badge": "Dans l'app : Réglages → Agents IA → Accès des agents"
+    "intro": "MCP (Model Context Protocol) est un standard ouvert qui permet à un assistant IA d'utiliser les outils d'autres apps. Zenzu a son propre serveur MCP. Connecte Claude, Cursor ou un autre assistant compatible MCP : il pourra lire tes paquets, tes cartes et ta progression. Si tu l'autorises, il pourra aussi ajouter, modifier et supprimer des cartes et enregistrer tes révisions.",
+    "scenariosTitle": "Ce que tu peux demander",
+    "scenarios": {
+      "deck": "Colle un texte ou un article. L'assistant choisit les mots les plus utiles pour ton niveau et les enregistre comme cartes dans un paquet.",
+      "review": "Révise tes cartes dues dans le chat. L'assistant te pose une carte à la fois et enregistre chaque réponse avec le même planificateur FSRS-6 que l'app.",
+      "confused": "Repère les mots que tu mélanges. L'assistant voit quelles cartes tu confonds entre elles et lesquelles tu oublies sans cesse.",
+      "report": "Reçois un bilan de la semaine : révisions, jours actifs, mots difficiles, ta place dans le cours et un point sur lequel te concentrer la semaine prochaine.",
+      "media": "Trouve un paquet de mots tout prêt pour un film ou une série et parcours ses cartes.",
+      "level": "Demande où tu en es : ton niveau, ta place dans le cours et la prochaine leçon."
+    },
+    "writeMark": "Nécessite « Autoriser l'écriture »",
+    "stepsTitle": "Comment le connecter",
+    "steps": [
+      "Dans l'app, ouvre Paramètres → Agents IA et choisis « Générer ». Donne un nom au jeton, puis copie-le : l'app ne l'affiche qu'une fois.",
+      "Dans ton assistant, ajoute Zenzu comme serveur MCP avec l'URL du serveur affichée sur le même écran et ton jeton.",
+      "Demande avec tes propres mots. L'assistant choisit lui-même les outils Zenzu dont il a besoin."
+    ],
+    "safetyTitle": "Tu gardes le contrôle",
+    "safety": [
+      "Donne à chaque assistant son propre jeton personnel, avec le nom de ton choix.",
+      "Un jeton peut seulement lire, sauf si tu coches « Autoriser l'écriture » en le créant. Avec l'écriture, l'assistant peut créer, modifier et supprimer des paquets et des cartes, déplacer des cartes, enregistrer des révisions et écrire des carnets.",
+      "Révoque un jeton à tout moment sur le même écran. Il cesse aussitôt de fonctionner.",
+      "Tu peux avoir jusqu'à 10 jetons actifs.",
+      "Un assistant ne voit que ton compte. Il n'a pas accès aux données des autres."
+    ],
+    "badge": "Dans l'app : Paramètres → Agents IA",
+    "detailsLink": "Tous les outils, la connexion et les règles"
+  },
+  "mcpPage": {
+    "meta": {
+      "title": "Serveur MCP Zenzu : configuration, outils et règles",
+      "description": "Connecte tes paquets et ta progression Zenzu à Claude, Cursor ou un autre assistant qui gère le MCP distant avec jeton Bearer. Configuration, outils, règles."
+    },
+    "title": "Serveur MCP Zenzu",
+    "lead": "Zenzu héberge son serveur MCP : tu n'as rien à installer. Ton assistant se connecte à une seule URL en Streamable HTTP et s'authentifie avec un jeton personnel créé dans l'app. Cette page présente la configuration, tous les outils, les prompts prêts à l'emploi et les règles que le serveur applique.",
+    "setupTitle": "Configuration",
+    "setup": {
+      "genericTitle": "Tout client MCP",
+      "generic": "Crée un jeton dans l'app : Paramètres → Agents IA → « Générer ». Copie-le tout de suite : l'app ne l'affiche qu'une fois. Dans ton client, ajoute un serveur MCP distant avec cette URL et envoie le jeton dans l'en-tête Authorization. Remplace zmcp_… par ton jeton.",
+      "urlLabel": "URL du serveur",
+      "headerLabel": "En-tête",
+      "claudeCode": "Lance cette commande dans un terminal, avec ton jeton à la place de zmcp_…. Par défaut, Claude Code ajoute le serveur au projet en cours seulement. Ajoute --scope user pour l'utiliser dans tous tes projets."
+    },
+    "toolsTitle": "Outils",
+    "toolsIntro": "Tu demandes avec tes propres mots, et ton assistant choisit lui-même les outils nécessaires. Les outils qui modifient tes données ne fonctionnent qu'avec un jeton qui a « Autoriser l'écriture ».",
+    "groups": {
+      "decks": "Paquets et cartes",
+      "review": "Révision",
+      "progress": "Progression",
+      "courses": "Cours et lecture",
+      "workspace": "Carnets",
+      "media": "Films et séries"
+    },
+    "tools": {
+      "list_decks": "Tes paquets, avec le nombre de cartes et le nombre de cartes à réviser maintenant.",
+      "get_deck_cards": "Les cartes d'un paquet, les plus proches de l'échéance d'abord. Jusqu'à 50 par appel.",
+      "search_my_cards": "Cherche dans toutes tes cartes par recto, verso et phrase de contexte. Jusqu'à 30 résultats par appel.",
+      "create_deck": "Crée un paquet.",
+      "update_deck": "Renomme un paquet ou change sa description, sa langue ou la couleur de son étiquette.",
+      "delete_deck": "Supprime un paquet et toutes ses cartes. C'est irréversible.",
+      "add_card": "Ajoute une nouvelle carte à un paquet.",
+      "add_cards": "Ajoute jusqu'à 50 cartes à un paquet en un seul appel.",
+      "update_card": "Modifie le texte d'une carte. Son calendrier de révision ne change pas.",
+      "delete_card": "Met une carte à la corbeille. Elle est supprimée définitivement après 30 jours.",
+      "move_card": "Déplace une carte vers un autre paquet. Son calendrier de révision ne change pas.",
+      "list_inbox_items": "Les textes, liens et vidéos YouTube de ta boîte de réception que tu n'as pas encore importés.",
+      "get_due_cards": "Les cartes à réviser maintenant, dans le même ordre qu'une session de révision dans l'app. Les nouvelles cartes n'en font pas partie.",
+      "review_card": "Enregistre ta réponse sur une carte (again, hard, good ou easy) avec le même planificateur FSRS-6 que l'app.",
+      "get_review_history": "Tes dernières révisions : quelle carte, quelle note et quand. Jusqu'à 100 lignes.",
+      "get_interference_pairs": "Les paires de cartes que tu confonds entre elles, les plus fréquentes d'abord.",
+      "get_progress": "Un aperçu de ton apprentissage : totaux, révisions récentes, cartes à réviser et ce que tu étudies en ce moment.",
+      "get_study_stats": "Statistiques d'étude : révisions par jour, jours actifs et minutes d'étude.",
+      "get_cefr_level": "Ton niveau CECR actuel et la langue que tu étudies en ce moment.",
+      "get_assessment_results": "Les résultats de tes tests de niveau par langue et par niveau.",
+      "get_course_progress": "Où tu en es dans le cours : progression par niveau CECR, la prochaine leçon et les dernières leçons avec leur score.",
+      "get_lesson_content": "Le contenu d'une leçon du cours : grammaire, dialogue, vocabulaire et récapitulatif.",
+      "get_reading_progress": "Les livres que tu lis dans la bibliothèque de l'app, avec le chapitre et le paragraphe en cours.",
+      "list_workspace_entries": "Les entrées de tes carnets, les plus récentes d'abord. Jusqu'à 30.",
+      "get_workspace_entry": "Une entrée de carnet en entier.",
+      "get_workspace_attempts": "Tes exercices faits : ta réponse, la réponse attendue et si elle était juste. Jusqu'à 50.",
+      "create_workspace_entry": "Crée une entrée de carnet.",
+      "update_workspace_entry": "Change le titre, le texte ou les notes d'une entrée.",
+      "delete_workspace_entry": "Supprime une entrée sur tous tes appareils. C'est irréversible.",
+      "search_media_decks": "Cherche dans la bibliothèque Zenzu des paquets de mots prêts à l'emploi pour des films et des séries.",
+      "get_media_deck": "Les cartes d'un film ou d'un épisode. Jusqu'à 60."
+    },
+    "promptsTitle": "Prompts",
+    "promptsIntro": "Les prompts sont des tâches prêtes à l'emploi qui utilisent les outils ci-dessus. Ton client peut les proposer comme commandes.",
+    "prompts": {
+      "vocab_from_text": "Choisit les mots les plus utiles d'un texte que tu donnes et les enregistre en cartes en une seule fois. Arguments : text (obligatoire), deck (facultatif). L'enregistrement nécessite « Autoriser l'écriture ».",
+      "review_session": "T'interroge sur tes cartes à réviser une par une et enregistre chaque réponse. Argument : language (facultatif). L'enregistrement nécessite « Autoriser l'écriture ».",
+      "weekly_report": "Prépare un bilan de la semaine : activité, mots difficiles, ta place dans le cours et un objectif pour la semaine suivante."
+    },
+    "rulesTitle": "Règles",
+    "rules": [
+      "Chaque requête doit porter un jeton personnel dans l'en-tête Authorization: Bearer zmcp_…. Tu crées le jeton dans l'app, sous Paramètres → Agents IA.",
+      "Un jeton peut seulement lire, sauf si tu coches « Autoriser l'écriture » en le créant. Avec l'écriture, l'assistant peut créer, modifier et supprimer des paquets et des cartes, déplacer des cartes, enregistrer des révisions et écrire des carnets. Supprimer un paquet supprime aussi ses cartes, et c'est irréversible.",
+      "En créant un jeton, tu choisis quand il expire : dans 30 jours, dans 90 jours, dans un an ou jamais. Par défaut, c'est 90 jours. Un jeton expiré cesse de fonctionner.",
+      "Tu peux avoir jusqu'à 10 jetons actifs et en créer jusqu'à 20 par jour.",
+      "Révoque un jeton à tout moment dans l'app. Il cesse aussitôt de fonctionner.",
+      "Limites de débit : 60 requêtes par minute et 1 000 par heure pour chaque jeton, et 120 par minute et 2 000 par heure pour ton compte, tous jetons confondus. Au-delà, le serveur répond par HTTP 429 avec un en-tête Retry-After.",
+      "Limites quotidiennes de ton compte, par jour UTC : 3 000 révisions enregistrées et 2 000 unités d'écriture. Une nouvelle carte ou un nouveau paquet coûte une unité. Le texte d'un carnet coûte une unité par tranche de 10 Ko entamée qui est enregistrée.",
+      "Chaque requête porte un seul message JSON-RPC de 256 Ko au plus. Les lots sont refusés.",
+      "Un assistant ne voit que ton compte. Il n'a pas accès aux données des autres."
+    ],
+    "faqTitle": "Questions",
+    "faq": [
+      {
+        "q": "Faut-il installer quelque chose ?",
+        "a": "Non. Zenzu héberge le serveur. Ton assistant se connecte à son URL en HTTP."
+      },
+      {
+        "q": "Quels assistants peuvent se connecter ?",
+        "a": "Claude, Cursor ou un autre assistant, s'il peut se connecter en HTTP à un serveur MCP distant et envoyer ton jeton dans l'en-tête Authorization."
+      },
+      {
+        "q": "L'assistant peut-il modifier ou supprimer mes données ?",
+        "a": "Seulement avec un jeton qui a « Autoriser l'écriture ». Pour un jeton en lecture seule, le serveur refuse tous les outils d'écriture. Avec l'écriture, l'assistant peut modifier et supprimer. Les outils de suppression demandent à l'assistant de te demander d'abord ton accord, mais le serveur ne vérifie pas que tu l'as donné."
+      },
+      {
+        "q": "Une révision dans le chat compte-t-elle comme dans l'app ?",
+        "a": "Oui. review_card utilise le même planificateur FSRS-6 que l'app et met à jour le calendrier de la carte et ton historique de révisions."
+      },
+      {
+        "q": "Quelles versions de MCP le serveur prend-il en charge ?",
+        "a": "Les versions du protocole 2025-11-25, 2025-06-18, 2025-03-26 et 2024-11-05. Le serveur ne fait que répondre aux requêtes : il n'ouvre pas de flux pour envoyer des messages de lui-même."
+      }
+    ]
   },
   "cta": {
     "title": "Commence à apprendre avec du contenu que tu aimes",
@@ -171,6 +348,7 @@
     "contact": "Contact",
     "rights": "Tous droits réservés.",
     "compare": "Comparatifs",
+    "mcp": "Serveur MCP",
     "writeUs": "Écris-nous :"
   },
   "blog": {
