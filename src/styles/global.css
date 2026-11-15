@@ -338,6 +338,15 @@ html.js [data-reveal] .zz-stroke {
 html.js [data-reveal].is-in .zz-stroke {
   transform: scaleX(1);
 }
+/* A printed page does not scroll, so blocks below the fold never get
+   .is-in. Print shows every block and stroke, drawn. */
+@media print {
+  html.js [data-reveal],
+  html.js [data-reveal] .zz-stroke {
+    opacity: 1;
+    transform: none;
+  }
+}
 
 /* Under forced colours the swash and the pill texture vanish, so the
    pill keeps its border and a selected swash label gains an outline. */

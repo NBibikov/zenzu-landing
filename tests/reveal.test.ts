@@ -33,10 +33,23 @@ test('the hidden start applies only under html.js', () => {
   const css = read('styles/global.css')
   const selectors = [...css.matchAll(/([^{}]*\[data-reveal\][^{}]*)\{/g)].map((match) => match[1])
   assert.ok(selectors.length >= 4, `found ${selectors.length} reveal selectors`)
-  for (const selector of selectors) {
-    const withoutComments = selector.replace(/\/\*[\s\S]*?\*\//g, '').trim()
-    assert.match(withoutComments, /^html\.js /, `"${withoutComments}" is not gated by html.js`)
+  for (const group of selectors) {
+    const withoutComments = group.replace(/\/\*[\s\S]*?\*\//g, '')
+    for (const selector of withoutComments.split(',').map((part) => part.trim())) {
+      assert.match(selector, /^html\.js /, `"${selector}" is not gated by html.js`)
+    }
   }
+})
+
+test('print shows every block and stroke, scrolled into view or not', () => {
+  const css = read('styles/global.css')
+  const print = css.match(/@media print\s*\{([\s\S]*?)\n\}/)
+  assert.ok(print, 'global.css has no @media print rule')
+  const rule = print[1]
+  assert.match(rule, /html\.js \[data-reveal\]\s*,/)
+  assert.match(rule, /html\.js \[data-reveal\] \.zz-stroke\s*\{/)
+  assert.match(rule, /opacity: 1;/)
+  assert.match(rule, /transform: none;/)
 })
 
 test('the layout sets html.js before any other script and reveals once', () => {
