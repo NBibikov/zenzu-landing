@@ -93,8 +93,16 @@ const jsonLd = {
   alternates={alternates}
   jsonLd={jsonLd}
 >
+  <!-- Skip link: the first focusable element, shown only on focus. The
+       header is fixed, so it sits above it; <main> takes the focus. -->
+  <a
+    href="#main"
+    class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[60] focus:inline-flex focus:items-center focus:min-h-11 focus:px-5 focus:bg-paper focus:text-ink focus:text-sm focus:border focus:border-rule focus:rounded-[10px]"
+  >
+    {strings.nav.skip}
+  </a>
   <Header t={strings} locale={locale} />
-  <main>
+  <main id="main" tabindex="-1" class="focus:outline-none">
     <Hero t={strings} />
     <Screens t={strings} />
     <HowItWorks t={strings} />

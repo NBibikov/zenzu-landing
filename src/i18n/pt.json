@@ -7,7 +7,8 @@
     "features": "Recursos",
     "howItWorks": "Como funciona",
     "languages": "Idiomas",
-    "blog": "Blog"
+    "blog": "Blog",
+    "skip": "Pular para o conteúdo"
   },
   "hero": {
     "headline1": "Aprenda um idioma ",
@@ -32,7 +33,7 @@
       },
       "review": {
         "title": "Revisão",
-        "desc": "Um cartão por vez, com uma frase de exemplo. Diga o quanto você lembrava, e o FSRS marca a próxima revisão."
+        "desc": "Um cartão por vez, com uma frase de exemplo. Diga o quanto você lembrava, e o agendador escolhe o dia da próxima revisão."
       },
       "lisa": {
         "title": "Lisa, sua coach",
@@ -58,7 +59,8 @@
         "title": "Baralhos",
         "desc": "Todos os cartões de hoje em uma só revisão, além de um catálogo pronto e baralhos de filmes e séries."
       }
-    }
+    },
+    "position": "Tela {n} de {total}"
   },
   "name": {
     "kicker": "Por que Zenzu",
@@ -120,7 +122,7 @@
     },
     "courses": {
       "title": "Cursos com IA",
-      "desc": "Lições de gramática e vocabulário para inglês, alemão, francês e espanhol — preparadas com antecedência e organizadas por nível QECR.",
+      "desc": "Lições de gramática e vocabulário para inglês, alemão, francês e espanhol — preparadas com antecedência e organizadas por nível QECR, de A1 (iniciante) a C1 (avançado).",
       "more": {
         "what": "Avance por lições de gramática e vocabulário de inglês, alemão, francês ou espanhol, nível a nível a partir do A1 e até o C1 onde as lições estão prontas. Uma lição só aparece quando há uma versão pronta para o seu idioma; os cursos de alemão, francês e espanhol também usam a versão em inglês. Por isso, por enquanto, alguns pares de idiomas têm só parte das lições ou ainda nenhuma. As palavras de uma lição podem ir para os seus baralhos para revisão.",
         "how": "Uma lição tem etapas como palavras novas, gramática, um diálogo e uma recapitulação, cada uma com exercícios: múltipla escolha, lacunas, associação, montagem de frases e ditado. As lições seguintes retomam palavras anteriores com a tradução. Um teste de nivelamento curto define seu nível; todos os níveis até ele ficam abertos, e sem o teste você começa no A1.",
@@ -149,7 +151,7 @@
   },
   "forWhom": {
     "title": "Para quem leva o aprendizado de idiomas a sério",
-    "subtitle": "O Zenzu é uma ferramenta séria, não um brinquedo — sem mascotes fofos, sem jogo para vencer. É para quem quer ser dono do próprio progresso e dos próprios dados. Aprender um idioma é uma das coisas mais exigentes e mais gratificantes que você pode fazer. O Zenzu foi criado exatamente para isso.",
+    "subtitle": "O Zenzu é uma ferramenta séria, não um brinquedo — sem mascotes fofos, sem jogo para vencer. É para quem quer ser dono do próprio progresso e dos próprios dados.",
     "forLabel": "O Zenzu é para você se…",
     "for1": "Você acredita que a verdadeira fluência vem de se envolver com conteúdo autêntico",
     "for2": "Você se compromete com revisões diárias, mesmo nos dias difíceis",
@@ -170,11 +172,11 @@
     },
     "step2": {
       "title": "Toque em palavras ou selecione frases",
-      "desc": "Traduções instantâneas. A Lisa mostra contexto, exemplos e pronúncia. As frases são salvas com lacuna cloze automática."
+      "desc": "Traduções instantâneas. A Lisa mostra contexto, exemplos e pronúncia. As expressões são salvas como cartões cloze: a frase com uma lacuna no lugar da expressão."
     },
     "step3": {
       "title": "Revise com repetição espaçada",
-      "desc": "O algoritmo FSRS-6 programa as revisões no momento ideal — para que cada minuto investido conte."
+      "desc": "O FSRS-6 é um agendador que escolhe o dia de revisar cada cartão. Ele traz o cartão de volta pouco antes de você esquecê-lo, para que cada minuto investido conte."
     }
   },
   "mcp": {

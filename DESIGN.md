@@ -87,7 +87,7 @@ components:
     textColor: "{colors.ink}"
     rounded: "{rounded.pill}"
     padding: "7px 18px"
-    height: "36px"
+    height: "44px"
   menu:
     backgroundColor: "{colors.paper}"
     textColor: "{colors.ink-2}"
@@ -163,20 +163,26 @@ The grove canvas in the hero is decorative illustration, not chrome. It has one 
 
 ## Layout
 
-Single column, centred containers: 3xl (48rem) for text sections, 5xl to 6xl (64rem to 72rem) for grids and the carousel. Sections are 96px tall in padding (py-24) with a 24px side gutter. Rows inside a section are separated by a hairline and 24px to 32px of padding. The home page alternates paper and paper-2 sections. The screen carousel swipes on phones and has arrow buttons on desktop.
+Single column, centred containers. Sections are 96px tall in padding (py-24) with a 24px side gutter. Rows inside a section are separated by a hairline and 24px to 32px of padding. The home page alternates paper and paper-2 sections.
+
+- **One left axis.** On the home page every left-aligned section (Screens, How it works, Features, For whom, MCP, FAQ) uses a 5xl (64rem) container inside the 24px gutter, so the left edge does not move between sections. Text inside it stays in a column of at most 3xl (48rem). The centred sections (Hero, The name, CTA) keep their own narrow centred containers.
+- **Carousel.** The screen carousel swipes on phones and has arrow buttons on desktop. A quiet position count ("3 / 8", ink-3, small text) shows the first frame in view; a polite live region says it in words after the reader moves the row.
 
 ## Elevation & Depth
 
 Flat. There are no shadows. Depth comes from the paper / paper-2 alternation and from hairlines and rules.
 
+### Known exceptions
+- **Device frame (Screens.astro).** Each app screenshot sits in a plain ink bezel with a 36px (2.25rem) corner radius and a 6px border; the image inside has a 30px radius. The bezel has a low ink shadow (`0 1px 2px` at 8% and `0 18px 40px -18px` at 35%). This is the only shadow and the only large radius on the site. They make the frame read as a device without naming one. Do not copy them to any other element.
+
 ## Shapes
 
-Pills (fully rounded) for buttons; 16px corners for the store badges and blog covers; 10px for the language menu. Brush masks give buttons, swashes and strokes an organic edge; geometry elsewhere is plain.
+Pills (fully rounded) for buttons; 16px corners for the store badges and blog covers; 10px for the language menu and the skip link; 36px for the device frame (see Known exceptions). Brush masks give buttons, swashes and strokes an organic edge; geometry elsewhere is plain.
 
 ## Components
 
 ### Buttons
-- **Shape:** full pill (rounded.pill), minimum height 48px, 36px for the small variant.
+- **Shape:** full pill (rounded.pill), minimum height 48px, 44px for the small variant.
 - **Primary (ink pill):** pale moss ground, brush texture clipped inside, 1px edge a shade darker, ink label at weight 700.
 - **Secondary (cancel pill):** grey ground, mirrored brush, label at weight 600.
 - **Hover / Active:** an ink overlay at 6% and 10% opacity, 150ms. Focus: 2px ink outline with 3px offset.
@@ -190,6 +196,13 @@ Pills (fully rounded) for buttons; 16px corners for the store badges and blog co
 - Header: sans 14px, ink-2, hover to ink. The current item wears the swash and is bold.
 - Language menu: opens on hover and click, reports aria-expanded; 10px corners, rule border, paper ground; items 20px by 8px padding.
 - The header language menu shows on phones too, as a compact control with a 44px tap target. The footer also lists every language.
+- **Tap targets:** every link and control is at least 44px high: header links and logo, buttons, carousel arrows (44 by 44), footer links (one link per 44px row), FAQ rows. A link inside running text (the footer mail link) gets vertical padding, so its tap area grows and the lines do not move.
+- **Skip link:** the first focusable element on the home page. It is hidden until it has focus, then shows at the top left over the fixed header, and moves focus to `<main id="main">`.
+- A swash on a 44px link sits on an inner span, so the brush covers the word and not the whole tap area.
+
+### Disclosure
+- Every `<details>` list (Features, FAQ) uses one mark: `.zz-plus`, a 24px moss plus that turns 45° into a cross when the item opens. The whole `<summary>` row is the tap target.
+- Features rows are exclusive (`name="feature"`). FAQ answers may stay open together: closing an answer above the one just opened makes the page jump, and readers compare answers.
 
 ### Section Label and Heading Stroke (signature)
 - A section opens with either a short moss brush stroke (48px by 6px) or a caps label (label style, ink-3) above its heading. These come from the app (ZSwashStroke, ZSectionLabel) and are part of the brand, not decoration to remove.

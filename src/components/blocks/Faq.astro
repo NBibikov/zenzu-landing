@@ -8,10 +8,12 @@ const items: { q: string; a: string }[] = t.faq.items
 ---
 
 <section id="faq" class="py-24 px-6">
-  <div class="max-w-3xl mx-auto" data-reveal>
-    <span class="zz-stroke mb-5" aria-hidden="true"></span>
-    <h2 class="font-serif text-3xl md:text-4xl text-ink mb-12">{t.faq.title}</h2>
+  <div class="max-w-5xl mx-auto" data-reveal>
+    <div class="max-w-3xl">
+      <span class="zz-stroke mb-5" aria-hidden="true"></span>
+      <h2 class="font-serif text-3xl md:text-4xl text-ink mb-12">{t.faq.title}</h2>
 
-    <FaqList items={items} />
+      <FaqList items={items} />
+    </div>
   </div>
 </section>

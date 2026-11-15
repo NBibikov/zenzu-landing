@@ -16,26 +16,30 @@ const steps = [
 ---
 
 <section id="how-it-works" class="py-24 px-6">
-  <div class="max-w-3xl mx-auto" data-reveal>
-    <div class="mb-16">
-      <span class="zz-stroke mb-5" aria-hidden="true"></span>
-      <h2 class="font-serif text-3xl md:text-4xl text-ink mb-4">{t.howItWorks.title}</h2>
-      <p class="text-ink-2 text-lg">{t.howItWorks.subtitle}</p>
-    </div>
+  <!-- max-w-5xl: the one left axis of the home page; the text column inside
+       stays at 3xl. -->
+  <div class="max-w-5xl mx-auto" data-reveal>
+    <div class="max-w-3xl">
+      <div class="mb-16">
+        <span class="zz-stroke mb-5" aria-hidden="true"></span>
+        <h2 class="font-serif text-3xl md:text-4xl text-ink mb-4">{t.howItWorks.title}</h2>
+        <p class="text-ink-2 text-lg">{t.howItWorks.subtitle}</p>
+      </div>
 
-    <div>
-      {steps.map(({ step, glyph, title, desc }) => (
-        <div class="flex items-start gap-6 sm:gap-8 py-8 border-t border-hairline">
-          <div class="flex flex-col items-center gap-2 shrink-0 w-12">
-            <span class="zz-kicker text-[11px] text-ink-3 tabular-nums leading-none">{step}</span>
-            <Glyph name={glyph} size={38} class="text-moss" />
+      <div>
+        {steps.map(({ step, glyph, title, desc }) => (
+          <div class="flex items-start gap-6 sm:gap-8 py-8 border-t border-hairline">
+            <div class="flex flex-col items-center gap-2 shrink-0 w-12">
+              <span class="zz-kicker text-[11px] text-ink-3 tabular-nums leading-none">{step}</span>
+              <Glyph name={glyph} size={38} class="text-moss" />
+            </div>
+            <div>
+              <h3 class="font-serif text-xl text-ink mb-2">{title}</h3>
+              <p class="text-ink-2 leading-relaxed">{desc}</p>
+            </div>
           </div>
-          <div>
-            <h3 class="font-serif text-xl text-ink mb-2">{title}</h3>
-            <p class="text-ink-2 leading-relaxed">{desc}</p>
-          </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   </div>
 </section>

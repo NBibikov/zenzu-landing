@@ -12,21 +12,29 @@ const screens = ['home', 'review', 'lisa', 'videos', 'books', 'news', 'courses',
   .map((key, i) => ({ key, step: String(i + 1).padStart(2, '0'), ...t.screens.items[key] }))
 ---
 
+<!-- px-6 outside max-w-5xl, as in the other left-aligned sections, so the
+     heading and the first frame share the page's one left axis. -->
 <section class="py-24 bg-paper-2 overflow-hidden" data-screens>
-  <div class="max-w-5xl mx-auto px-6 mb-12 flex items-end justify-between gap-8" data-reveal>
-    <div class="max-w-2xl">
-      <span class="zz-stroke mb-5" aria-hidden="true"></span>
-      <h2 class="font-serif text-3xl md:text-4xl text-ink mb-4">{t.screens.title}</h2>
-      <p class="text-ink-2 text-lg leading-relaxed">{t.screens.subtitle}</p>
-    </div>
-    <!-- On a phone the row is swiped; the arrows are for a mouse. -->
-    <div class="hidden md:flex gap-3 shrink-0">
-      <button type="button" class="zz-btn zz-btn-cancel zz-btn-sm w-11 px-0 disabled:opacity-40 disabled:pointer-events-none" data-screens-prev aria-label={t.screens.prev} disabled>
-        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
-      </button>
-      <button type="button" class="zz-btn zz-btn-cancel zz-btn-sm w-11 px-0 disabled:opacity-40 disabled:pointer-events-none" data-screens-next aria-label={t.screens.next}>
-        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
-      </button>
+  <div class="px-6 mb-12">
+    <div class="max-w-5xl mx-auto flex items-end justify-between gap-8" data-reveal>
+      <div class="max-w-2xl">
+        <span class="zz-stroke mb-5" aria-hidden="true"></span>
+        <h2 class="font-serif text-3xl md:text-4xl text-ink mb-4">{t.screens.title}</h2>
+        <p class="text-ink-2 text-lg leading-relaxed">{t.screens.subtitle}</p>
+      </div>
+      <div class="flex items-center gap-3 shrink-0">
+        <!-- Position: the first frame in view of all frames. The digits are
+             for the eye; the live region says it in words, politely. -->
+        <p class="text-sm text-ink-3 tabular-nums md:mr-2" aria-hidden="true" data-screens-count>1 / {screens.length}</p>
+        <p class="sr-only" aria-live="polite" aria-atomic="true" data-screens-status data-template={t.screens.position}></p>
+        <!-- On a phone the row is swiped; the arrows are for a mouse. -->
+        <button type="button" class="hidden md:inline-flex zz-btn zz-btn-cancel zz-btn-sm w-11 px-0 disabled:opacity-40 disabled:pointer-events-none" data-screens-prev aria-label={t.screens.prev} disabled>
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <button type="button" class="hidden md:inline-flex zz-btn zz-btn-cancel zz-btn-sm w-11 px-0 disabled:opacity-40 disabled:pointer-events-none" data-screens-next aria-label={t.screens.next}>
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+      </div>
     </div>
   </div>
 
@@ -61,7 +69,7 @@ const screens = ['home', 'review', 'lisa', 'videos', 'books', 'news', 'courses',
 
 <style>
   .zz-screens {
-    --gutter: max(1.5rem, calc((100% - 64rem) / 2 + 1.5rem));
+    --gutter: max(1.5rem, calc((100% - 64rem) / 2));
     display: flex;
     gap: 2rem;
     overflow-x: auto;
@@ -111,7 +119,10 @@ const screens = ['home', 'review', 'lisa', 'videos', 'books', 'news', 'courses',
     const track = root.querySelector<HTMLElement>('[data-screens-track]')
     const prev = root.querySelector<HTMLButtonElement>('[data-screens-prev]')
     const next = root.querySelector<HTMLButtonElement>('[data-screens-next]')
+    const count = root.querySelector<HTMLElement>('[data-screens-count]')
+    const status = root.querySelector<HTMLElement>('[data-screens-status]')
     if (!track || !prev || !next) continue
+    const items = Array.from(track.querySelectorAll<HTMLElement>('li'))
 
     // One press moves the row by the frames that fit, less one, so the
     // last frame in view stays in view as a landmark.
@@ -123,16 +134,39 @@ const screens = ['home', 'review', 'lisa', 'videos', 'books', 'news', 'courses',
       const view = track.clientWidth - parseFloat(style.paddingLeft) - parseFloat(style.paddingRight)
       return Math.max(1, Math.floor((view + parseFloat(style.columnGap || '0')) / pitch) - 1) * pitch
     }
+    // The position is the first frame whose left edge is in view; at the end
+    // of the row it is the last frame, so the count reaches "8 / 8".
+    let shown = 0
+    const position = (atEnd: boolean) => {
+      if (atEnd) return items.length
+      const left = track.getBoundingClientRect().left + parseFloat(getComputedStyle(track).paddingLeft)
+      const first = items.findIndex((item) => item.getBoundingClientRect().left >= left - 2)
+      return first < 0 ? items.length : first + 1
+    }
     const update = () => {
+      const atEnd = track.scrollLeft + track.clientWidth >= track.scrollWidth - 1
       prev.disabled = track.scrollLeft <= 1
-      next.disabled = track.scrollLeft + track.clientWidth >= track.scrollWidth - 1
+      next.disabled = atEnd
+      const n = position(atEnd)
+      if (n === shown || !items.length) return
+      shown = n
+      if (count) count.textContent = `${n} / ${items.length}`
+      // Only after the first move: the page load itself announces nothing.
+      if (status && track.dataset.moved) {
+        status.textContent = (status.dataset.template ?? '{n} / {total}')
+          .replace('{n}', String(n))
+          .replace('{total}', String(items.length))
+      }
     }
     const reduced = window.matchMedia('(prefers-reduced-motion: reduce)')
     const move = (dir: number) =>
       track.scrollBy({ left: dir * step(), behavior: reduced.matches ? 'auto' : 'smooth' })
     prev.addEventListener('click', () => move(-1))
     next.addEventListener('click', () => move(1))
-    track.addEventListener('scroll', update, { passive: true })
+    track.addEventListener('scroll', () => {
+      track.dataset.moved = '1'
+      update()
+    }, { passive: true })
     window.addEventListener('resize', update)
     update()
   }

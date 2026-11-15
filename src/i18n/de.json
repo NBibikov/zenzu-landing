@@ -7,7 +7,8 @@
     "features": "Funktionen",
     "howItWorks": "Wie es funktioniert",
     "languages": "Sprachen",
-    "blog": "Blog"
+    "blog": "Blog",
+    "skip": "Zum Inhalt springen"
   },
   "hero": {
     "headline1": "Lerne jeden Tag ",
@@ -32,7 +33,7 @@
       },
       "review": {
         "title": "Wiederholung",
-        "desc": "Eine Karte nach der anderen, mit Beispielsatz. Bewerte, wie gut du sie kanntest, und FSRS plant die nächste Wiederholung."
+        "desc": "Eine Karte nach der anderen, mit Beispielsatz. Bewerte, wie gut du sie kanntest, und der Planer wählt den Tag der nächsten Wiederholung."
       },
       "lisa": {
         "title": "Lisa, dein Coach",
@@ -58,7 +59,8 @@
         "title": "Decks",
         "desc": "Alle heute fälligen Karten in einer Wiederholung, dazu ein fertiger Katalog und Decks zu Filmen und Serien."
       }
-    }
+    },
+    "position": "Bildschirm {n} von {total}"
   },
   "name": {
     "kicker": "Warum Zenzu",
@@ -120,7 +122,7 @@
     },
     "courses": {
       "title": "KI-Kurse",
-      "desc": "Grammatik- und Vokabellektionen für Englisch, Deutsch, Französisch und Spanisch — im Voraus vorbereitet und nach GER-Niveau sortiert.",
+      "desc": "Grammatik- und Vokabellektionen für Englisch, Deutsch, Französisch und Spanisch — im Voraus vorbereitet und nach GER-Niveau sortiert, von A1 (Anfänger) bis C1 (fortgeschritten).",
       "more": {
         "what": "Lerne Grammatik und Wortschatz in Lektionen für Englisch, Deutsch, Französisch oder Spanisch, Niveau für Niveau ab A1 und bis C1, wo die Lektionen fertig sind. Eine Lektion erscheint nur, wenn eine Fassung für deine Sprache fertig ist; die Kurse für Deutsch, Französisch und Spanisch nutzen auch die englische Fassung. Daher gibt es für manche Sprachpaare vorerst nur einen Teil der Lektionen oder noch gar keine. Wörter aus einer Lektion kannst du zum Wiederholen in deine Stapel übernehmen.",
         "how": "Eine Lektion hat Abschnitte wie neue Wörter, Grammatik, einen Dialog und eine Zusammenfassung, jeweils mit Übungen: Multiple Choice, Lückentext, Zuordnen, Sätze bauen und Diktat. Spätere Lektionen greifen frühere Wörter mit ihrer Übersetzung wieder auf. Ein kurzer Einstufungstest legt dein Niveau fest; alle Stufen bis dahin sind offen, ohne Test beginnst du bei A1.",
@@ -149,7 +151,7 @@
   },
   "forWhom": {
     "title": "Für alle, die Sprachen ernstnehmen",
-    "subtitle": "Zenzu ist ein ernsthaftes Werkzeug, kein Spielzeug — keine niedlichen Maskottchen, kein Spiel zu gewinnen. Es ist für Menschen, die ihren Fortschritt und ihre Daten besitzen wollen. Eine Sprache zu lernen ist eine der anspruchsvollsten und lohnendsten Aufgaben überhaupt. Genau dafür wurde Zenzu gebaut.",
+    "subtitle": "Zenzu ist ein ernsthaftes Werkzeug, kein Spielzeug — keine niedlichen Maskottchen, kein Spiel zu gewinnen. Es ist für Menschen, die ihren Fortschritt und ihre Daten besitzen wollen.",
     "forLabel": "Zenzu ist für dich, wenn…",
     "for1": "Du glaubst, dass echte Sprachkompetenz durch authentische Inhalte entsteht",
     "for2": "Du dich zu täglichen Wiederholungen verpflichtest, auch an schwierigen Tagen",
@@ -170,11 +172,11 @@
     },
     "step2": {
       "title": "Tippe auf Wörter oder markiere Phrasen",
-      "desc": "Sofortige Übersetzungen. Lisa zeigt Kontext, Beispiele und Aussprache. Phrasen werden mit automatischer Lückenfüllung gespeichert."
+      "desc": "Sofortige Übersetzungen. Lisa zeigt Kontext, Beispiele und Aussprache. Phrasen werden als Cloze-Karten gespeichert: der Satz mit einer Lücke, wo die Phrase stand."
     },
     "step3": {
       "title": "Wiederholung mit System",
-      "desc": "Der FSRS-6-Algorithmus plant Wiederholungen zum optimalen Zeitpunkt — damit jede investierte Minute zählt."
+      "desc": "FSRS-6 ist ein Planer, der für jede Karte den Tag der Wiederholung wählt. Er bringt eine Karte zurück, kurz bevor du sie vergessen würdest — damit jede investierte Minute zählt."
     }
   },
   "mcp": {
