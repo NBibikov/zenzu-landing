@@ -144,6 +144,15 @@ test('the name block has 4 non-empty paragraphs in every locale', () => {
   }
 })
 
+// The closing line sits under the last paragraph; a missing key would render an empty <p>.
+test('the name block has a non-empty closing line in every locale', () => {
+  for (const locale of LOCALES) {
+    const { name } = load(locale) as { name: { closing?: string } }
+    assert.equal(typeof name.closing, 'string', `${locale}: name.closing is missing`)
+    assert.notEqual(name.closing?.trim(), '', `${locale}: name.closing is empty`)
+  }
+})
+
 // Zen means "calm" in the name copy; no locale mentions Buddhism.
 test('no locale mentions Buddhism', () => {
   for (const locale of LOCALES) {
