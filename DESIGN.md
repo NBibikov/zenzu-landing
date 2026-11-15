@@ -122,7 +122,7 @@ A warm, near-monochrome palette: paper and ink tones with one muted green.
 ### Neutral
 - **Paper** (paper): the page ground.
 - **Paper 2** (paper-2): the only secondary surface; alternating sections sit on it.
-- **Hairline** (hairline): the seam between rows (border-top on list rows, FAQ items, quotes).
+- **Hairline** (hairline): the seam between rows (border-top on list rows, FAQ items).
 - **Rule** (rule): structure lines, menu and badge borders.
 - **Ink** (ink): headings and primary text. **Ink Lead** (ink-lead): lead text and quotes. **Ink 2** (ink-2): secondary text. **Ink 3** (ink-3): the lightest tone that may carry text. **Ink 4** (ink-4): large marks only, never text.
 - **Swash** and **Swash Cancel** (swash, swash-cancel): brush colours under a selected label and the alternative half of a button pair; also text selection.

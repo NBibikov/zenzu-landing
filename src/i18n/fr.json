@@ -165,17 +165,8 @@
     "notFor2": "Tu t'attends à parler couramment après quelques sessions décontractées",
     "notFor3": "Tu as besoin de gamification pour rester motivé"
   },
-  "quotes": {
-    "title": "Les mots de ceux qui savaient",
-    "quote1Text": "Avoir une autre langue, c'est posséder une deuxième âme.",
-    "quote1Author": "Charlemagne",
-    "quote2Text": "Les limites de mon langage signifient les limites de mon monde.",
-    "quote2Author": "Ludwig Wittgenstein",
-    "quote3Text": "Une langue te place dans un couloir pour la vie. Deux langues ouvrent toutes les portes sur le chemin.",
-    "quote3Author": "Frank Smith"
-  },
   "howItWorks": {
-    "title": "Trois étapes vers la fluidité",
+    "title": "Trois étapes : d’une vidéo à un mot dont tu te souviens",
     "subtitle": "Contenu réel. Répétition scientifique. Un vocabulaire qui reste vraiment.",
     "step1": {
       "title": "Importe le contenu que tu aimes",

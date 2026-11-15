@@ -165,17 +165,8 @@
     "notFor2": "Esperas hablar con fluidez después de unas pocas sesiones relajadas",
     "notFor3": "Necesitas gamificación para mantenerte motivado"
   },
-  "quotes": {
-    "title": "Palabras de quienes lo sabían",
-    "quote1Text": "Tener otra lengua es poseer una segunda alma.",
-    "quote1Author": "Carlomagno",
-    "quote2Text": "Los límites de mi lenguaje significan los límites de mi mundo.",
-    "quote2Author": "Ludwig Wittgenstein",
-    "quote3Text": "Un idioma te sitúa en un corredor para toda la vida. Dos idiomas abren cada puerta en el camino.",
-    "quote3Author": "Frank Smith"
-  },
   "howItWorks": {
-    "title": "Tres pasos para la fluidez",
+    "title": "Tres pasos: de un vídeo a una palabra que recuerdas",
     "subtitle": "Contenido real. Repetición científica. Vocabulario que de verdad se queda.",
     "step1": {
       "title": "Importa contenido que disfrutes",

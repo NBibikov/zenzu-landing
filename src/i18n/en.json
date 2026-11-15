@@ -165,17 +165,8 @@
     "notFor2": "You expect to speak fluently after a few casual sessions",
     "notFor3": "You need gamification to stay motivated"
   },
-  "quotes": {
-    "title": "Words from those who knew",
-    "quote1Text": "To have another language is to possess a second soul.",
-    "quote1Author": "Charlemagne",
-    "quote2Text": "The limits of my language mean the limits of my world.",
-    "quote2Author": "Ludwig Wittgenstein",
-    "quote3Text": "One language sets you in a corridor for life. Two languages open every door along the way.",
-    "quote3Author": "Frank Smith"
-  },
   "howItWorks": {
-    "title": "Three steps to fluency",
+    "title": "Three steps: from a video to a word you remember",
     "subtitle": "Real content. Science-backed repetition. Vocabulary that actually sticks.",
     "step1": {
       "title": "Import content you enjoy",
