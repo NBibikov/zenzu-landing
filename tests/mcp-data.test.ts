@@ -9,6 +9,7 @@ import {
   MCP_SCENARIOS,
   MCP_TOOL_GROUPS,
   MCP_URL,
+  MCP_WRITE_TOOLS,
 } from '../src/data/mcp.ts'
 
 // The site lists the tools of the hosted MCP server. These tests read the
@@ -104,4 +105,13 @@ test('a scenario is marked write exactly when it uses a write tool', { skip }, (
 
 test('the app shows the same server URL', { skip }, () => {
   assert.ok(readFileSync(SCREEN_FILE, 'utf8').includes(`'${MCP_URL}'`), `${MCP_URL} not in mcp_access_screen.dart`)
+})
+
+test('every write tool is a listed tool', () => {
+  for (const name of MCP_WRITE_TOOLS) assert.ok(siteTools.includes(name), `${name} is not listed`)
+})
+
+test('the site write tools equal the listed server write tools', { skip }, () => {
+  const listedWrites = [...serverWriteTools()].filter((name) => siteTools.includes(name)).sort()
+  assert.deepEqual([...MCP_WRITE_TOOLS].sort(), listedWrites)
 })

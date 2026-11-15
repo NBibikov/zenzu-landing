@@ -53,6 +53,23 @@ export const MCP_TOOL_GROUPS: readonly { id: McpGroupId; tools: readonly string[
   },
 ]
 
+// Listed tools that need a token with the write scope ("Allow writes" in the
+// app). The server refuses them for a read-only token.
+export const MCP_WRITE_TOOLS: readonly string[] = [
+  'create_deck',
+  'update_deck',
+  'delete_deck',
+  'add_card',
+  'add_cards',
+  'update_card',
+  'delete_card',
+  'move_card',
+  'review_card',
+  'create_workspace_entry',
+  'update_workspace_entry',
+  'delete_workspace_entry',
+]
+
 export const MCP_PROMPTS = ['vocab_from_text', 'review_session', 'weekly_report'] as const
 
 // Server tools the site does not list. get_plus_status reports the plan and

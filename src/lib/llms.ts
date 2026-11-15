@@ -32,6 +32,7 @@ export const PRODUCT_SUMMARY = `# Zenzu
 - [Web app](https://app.zenzu.app): use Zenzu in the browser
 - [App Store](${APP_STORE_URL}): iOS app
 - [Google Play](${PLAY_STORE_URL}): Android app
+- [MCP server](${SITE}/mcp/): setup, tool reference, prompts and rules of the hosted Zenzu MCP server
 - [Blog](${SITE}/blog/): language learning guides, also available in Ukrainian, German, French, Spanish and Portuguese
 - [Privacy policy](${SITE}/privacy/)
 - [Terms of service](${SITE}/terms/)

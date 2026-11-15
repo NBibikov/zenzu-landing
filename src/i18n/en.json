@@ -230,6 +230,107 @@
     "badge": "In the app: Settings → AI agents",
     "detailsLink": "All tools, setup and rules"
   },
+  "mcpPage": {
+    "meta": {
+      "title": "Zenzu MCP server: setup, tools and rules",
+      "description": "Connect Claude, Cursor or another MCP assistant to your Zenzu decks, cards and progress. Setup, every tool, the prompts, the limits and the token rules."
+    },
+    "title": "Zenzu MCP server",
+    "lead": "Zenzu runs a hosted MCP server, so there is nothing to install. Your assistant connects to one URL over Streamable HTTP and signs in with a personal token from the app. This page shows the setup, every tool, the ready-made prompts and the rules the server keeps.",
+    "setupTitle": "Setup",
+    "setup": {
+      "genericTitle": "Any MCP client",
+      "generic": "Create a token in the app: Settings → AI agents → Generate. Copy it at once: the app shows it only once. In your client, add a remote MCP server with this URL and send the token in the Authorization header. Replace zmcp_… with your token.",
+      "urlLabel": "Server URL",
+      "headerLabel": "Header",
+      "claudeCode": "Run this command in a terminal, with your token in place of zmcp_…. By default Claude Code adds the server to the current project only. Add --scope user to use it in all your projects."
+    },
+    "toolsTitle": "Tools",
+    "toolsIntro": "You ask in plain words, and your assistant picks the tools it needs. Tools that change your data work only with a token that has “Allow writes”.",
+    "groups": {
+      "decks": "Decks and cards",
+      "review": "Review",
+      "progress": "Progress",
+      "courses": "Courses and reading",
+      "workspace": "Notebooks",
+      "media": "Films and series"
+    },
+    "tools": {
+      "list_decks": "Your decks, with card counts and the number of cards due now.",
+      "get_deck_cards": "The cards of one deck, soonest due first. Up to 50 per call.",
+      "search_my_cards": "Searches all your cards by front, back and context sentence. Up to 30 results per call.",
+      "create_deck": "Creates a deck.",
+      "update_deck": "Renames a deck or changes its description, language or label colour.",
+      "delete_deck": "Deletes a deck and all its cards. This cannot be undone.",
+      "add_card": "Adds one card to a deck as a new card.",
+      "add_cards": "Adds up to 50 cards to a deck in one call.",
+      "update_card": "Edits the text of a card. Its review schedule does not change.",
+      "delete_card": "Moves a card to the trash. It is deleted for good after 30 days.",
+      "move_card": "Moves a card to another deck. Its review schedule does not change.",
+      "list_inbox_items": "Texts, links and YouTube videos in your inbox that you have not imported yet.",
+      "get_due_cards": "The cards due now, in the same order as a review session in the app. New cards are not included.",
+      "review_card": "Records your answer to a card (again, hard, good or easy) with the same FSRS-6 scheduler as the app.",
+      "get_review_history": "Your recent reviews: which card, which rating and when. Up to 100 rows.",
+      "get_interference_pairs": "Pairs of cards you confuse with each other, the most frequent first.",
+      "get_progress": "A snapshot of your learning: totals, recent reviews, due counts and what you study now.",
+      "get_study_stats": "Study statistics: reviews per day, active days and study minutes.",
+      "get_cefr_level": "Your current CEFR level and the language you study now.",
+      "get_assessment_results": "Your placement test results per language and level.",
+      "get_course_progress": "Your place in the course: progress per CEFR level, the next lesson and recent lessons with scores.",
+      "get_lesson_content": "The teaching content of a course lesson: grammar, dialogue, vocabulary and recap.",
+      "get_reading_progress": "The books you read in the app library, with the chapter and paragraph you reached.",
+      "list_workspace_entries": "Your notebook entries, newest first. Up to 30.",
+      "get_workspace_entry": "One notebook entry in full.",
+      "get_workspace_attempts": "Your answered exercises: your answer, the expected answer and whether it was correct. Up to 50.",
+      "create_workspace_entry": "Creates a notebook entry.",
+      "update_workspace_entry": "Changes the title, text or notes of a notebook entry.",
+      "delete_workspace_entry": "Deletes a notebook entry on all your devices. This cannot be undone.",
+      "search_media_decks": "Searches the Zenzu library of ready-made word decks for films and TV series.",
+      "get_media_deck": "The cards of one film or one episode. Up to 60."
+    },
+    "promptsTitle": "Prompts",
+    "promptsIntro": "Prompts are ready-made tasks that use the tools above. Your client can offer them as commands.",
+    "prompts": {
+      "vocab_from_text": "Picks the most useful words from a text you give and saves them as cards in one batch. Arguments: text (required), deck (optional). Saving needs “Allow writes”.",
+      "review_session": "Quizzes you on your due cards one at a time and records each answer. Argument: language (optional). Recording needs “Allow writes”.",
+      "weekly_report": "Builds a weekly report: activity, trouble words, your place in the course and one focus for next week."
+    },
+    "rulesTitle": "Rules",
+    "rules": [
+      "Every request needs a personal token in the header Authorization: Bearer zmcp_…. You create the token in the app under Settings → AI agents.",
+      "A token can only read, unless you tick “Allow writes” when you create it. Writing lets the assistant create, edit and delete decks and cards, move cards, record reviews and write notebooks. Deleting a deck also deletes its cards and cannot be undone.",
+      "When you create a token, you choose when it expires: in 30 days, in 90 days, in a year or never. The default is 90 days. An expired token stops working.",
+      "You can have up to 10 active tokens and create up to 20 tokens a day.",
+      "Revoke a token at any time in the app. It stops working at once.",
+      "Rate limits: 60 requests a minute and 1,000 an hour for each token, and 120 a minute and 2,000 an hour for your account over all its tokens. Above a limit, the server answers with HTTP 429 and a Retry-After header.",
+      "Daily limits for your account, per UTC day: 3,000 recorded reviews and 2,000 write units. A new card or deck costs one unit. Notebook text costs one unit for each started 10 KB that is saved.",
+      "Each request carries one JSON-RPC message of up to 256 KB. Batches are refused.",
+      "An assistant sees only your account. It cannot reach other people’s data."
+    ],
+    "faqTitle": "Questions",
+    "faq": [
+      {
+        "q": "Do I need to install anything?",
+        "a": "No. Zenzu hosts the server. Your assistant connects to its URL over HTTP."
+      },
+      {
+        "q": "Which assistants can connect?",
+        "a": "Claude, Cursor or another assistant that supports MCP. It must connect to a remote server over HTTP and let you set the Authorization header."
+      },
+      {
+        "q": "Can the assistant change or delete my data?",
+        "a": "Only with a token that has “Allow writes”. The server refuses every write tool for a read-only token. With writes, the assistant can edit and delete. The delete tools tell the assistant to confirm with you first, but the server does not check that you agreed."
+      },
+      {
+        "q": "Does a review in the chat count like a review in the app?",
+        "a": "Yes. review_card runs the same FSRS-6 scheduler as the app and updates the card’s schedule and your review log."
+      },
+      {
+        "q": "Which MCP versions does the server support?",
+        "a": "Protocol versions 2025-11-25, 2025-06-18, 2025-03-26 and 2024-11-05. The server only answers requests: it does not open a stream to send messages on its own."
+      }
+    ]
+  },
   "cta": {
     "title": "Start learning from content you love",
     "subtitle": "Import your first video or podcast in seconds.",
@@ -247,6 +348,7 @@
     "contact": "Contact",
     "rights": "All rights reserved.",
     "compare": "Compare",
+    "mcp": "MCP server",
     "writeUs": "Write to us:"
   },
   "blog": {

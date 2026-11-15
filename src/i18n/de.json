@@ -230,6 +230,107 @@
     "badge": "In der App: Einstellungen → KI-Agenten",
     "detailsLink": "Alle Werkzeuge, Einrichtung und Regeln"
   },
+  "mcpPage": {
+    "meta": {
+      "title": "Zenzu MCP-Server: Einrichtung, Werkzeuge und Regeln",
+      "description": "Verbinde Claude, Cursor oder einen anderen MCP-Assistenten mit deinen Zenzu-Stapeln, Karten und Fortschritten. Einrichtung, alle Werkzeuge, Prompts, Limits und Token-Regeln."
+    },
+    "title": "Zenzu MCP-Server",
+    "lead": "Zenzu betreibt einen gehosteten MCP-Server, du musst also nichts installieren. Dein Assistent verbindet sich über Streamable HTTP mit einer URL und meldet sich mit einem persönlichen Token aus der App an. Hier findest du die Einrichtung, alle Werkzeuge, die fertigen Prompts und die Regeln, die der Server einhält.",
+    "setupTitle": "Einrichtung",
+    "setup": {
+      "genericTitle": "Jeder MCP-Client",
+      "generic": "Erstelle ein Token in der App: Einstellungen → KI-Agenten → „Erzeugen“. Kopiere es sofort: Die App zeigt es nur einmal. Füge in deinem Client einen entfernten MCP-Server mit dieser URL hinzu und sende das Token im Authorization-Header. Ersetze zmcp_… durch dein Token.",
+      "urlLabel": "Server-URL",
+      "headerLabel": "Header",
+      "claudeCode": "Führe diesen Befehl im Terminal aus, mit deinem Token statt zmcp_…. Standardmäßig fügt Claude Code den Server nur zum aktuellen Projekt hinzu. Mit --scope user steht er in all deinen Projekten bereit."
+    },
+    "toolsTitle": "Werkzeuge",
+    "toolsIntro": "Du fragst in normalen Worten, und dein Assistent wählt die nötigen Werkzeuge selbst. Werkzeuge, die deine Daten ändern, funktionieren nur mit einem Token mit „Schreiben erlauben“.",
+    "groups": {
+      "decks": "Stapel und Karten",
+      "review": "Wiederholen",
+      "progress": "Fortschritt",
+      "courses": "Kurse und Lesen",
+      "workspace": "Notizbücher",
+      "media": "Filme und Serien"
+    },
+    "tools": {
+      "list_decks": "Deine Stapel mit der Zahl der Karten und der jetzt fälligen Karten.",
+      "get_deck_cards": "Die Karten eines Stapels, die am frühesten fälligen zuerst. Bis zu 50 pro Aufruf.",
+      "search_my_cards": "Durchsucht alle deine Karten nach Vorderseite, Rückseite und Kontextsatz. Bis zu 30 Treffer pro Aufruf.",
+      "create_deck": "Erstellt einen Stapel.",
+      "update_deck": "Benennt einen Stapel um oder ändert Beschreibung, Sprache oder Labelfarbe.",
+      "delete_deck": "Löscht einen Stapel mit allen Karten. Das kann nicht rückgängig gemacht werden.",
+      "add_card": "Fügt einem Stapel eine neue Karte hinzu.",
+      "add_cards": "Fügt einem Stapel bis zu 50 Karten in einem Aufruf hinzu.",
+      "update_card": "Bearbeitet den Text einer Karte. Ihr Wiederholungsplan bleibt gleich.",
+      "delete_card": "Verschiebt eine Karte in den Papierkorb. Nach 30 Tagen wird sie endgültig gelöscht.",
+      "move_card": "Verschiebt eine Karte in einen anderen Stapel. Ihr Wiederholungsplan bleibt gleich.",
+      "list_inbox_items": "Texte, Links und YouTube-Videos in deinem Eingang, die du noch nicht importiert hast.",
+      "get_due_cards": "Die jetzt fälligen Karten, in derselben Reihenfolge wie eine Wiederholung in der App. Neue Karten sind nicht dabei.",
+      "review_card": "Speichert deine Antwort zu einer Karte (again, hard, good oder easy) mit demselben FSRS-6-Planer wie die App.",
+      "get_review_history": "Deine letzten Wiederholungen: welche Karte, welche Bewertung und wann. Bis zu 100 Zeilen.",
+      "get_interference_pairs": "Kartenpaare, die du miteinander verwechselst, die häufigsten zuerst.",
+      "get_progress": "Ein Überblick über dein Lernen: Summen, letzte Wiederholungen, fällige Karten und was du gerade lernst.",
+      "get_study_stats": "Lernstatistik: Wiederholungen pro Tag, aktive Tage und Lernminuten.",
+      "get_cefr_level": "Dein aktuelles GER-Niveau und die Sprache, die du gerade lernst.",
+      "get_assessment_results": "Deine Einstufungstests pro Sprache und Niveau.",
+      "get_course_progress": "Dein Stand im Kurs: Fortschritt pro GER-Niveau, die nächste Lektion und letzte Lektionen mit Ergebnis.",
+      "get_lesson_content": "Der Lehrstoff einer Kurslektion: Grammatik, Dialog, Wortschatz und Zusammenfassung.",
+      "get_reading_progress": "Die Bücher, die du in der App-Bibliothek liest, mit aktuellem Kapitel und Absatz.",
+      "list_workspace_entries": "Deine Notizbuch-Einträge, die neuesten zuerst. Bis zu 30.",
+      "get_workspace_entry": "Ein Notizbuch-Eintrag vollständig.",
+      "get_workspace_attempts": "Deine beantworteten Übungen: deine Antwort, die erwartete Antwort und ob sie richtig war. Bis zu 50.",
+      "create_workspace_entry": "Erstellt einen Notizbuch-Eintrag.",
+      "update_workspace_entry": "Ändert Titel, Text oder Notizen eines Eintrags.",
+      "delete_workspace_entry": "Löscht einen Eintrag auf all deinen Geräten. Das kann nicht rückgängig gemacht werden.",
+      "search_media_decks": "Durchsucht die Zenzu-Bibliothek fertiger Wortstapel zu Filmen und Serien.",
+      "get_media_deck": "Die Karten eines Films oder einer Folge. Bis zu 60."
+    },
+    "promptsTitle": "Prompts",
+    "promptsIntro": "Prompts sind fertige Aufgaben, die die Werkzeuge oben nutzen. Dein Client kann sie als Befehle anbieten.",
+    "prompts": {
+      "vocab_from_text": "Wählt die nützlichsten Wörter aus einem Text, den du gibst, und speichert sie in einem Schritt als Karten. Argumente: text (Pflicht), deck (optional). Zum Speichern braucht es „Schreiben erlauben“.",
+      "review_session": "Fragt dich deine fälligen Karten einzeln ab und speichert jede Antwort. Argument: language (optional). Zum Speichern braucht es „Schreiben erlauben“.",
+      "weekly_report": "Erstellt einen Wochenbericht: Aktivität, schwierige Wörter, dein Stand im Kurs und ein Schwerpunkt für die nächste Woche."
+    },
+    "rulesTitle": "Regeln",
+    "rules": [
+      "Jede Anfrage braucht ein persönliches Token im Header Authorization: Bearer zmcp_…. Du erstellst das Token in der App unter Einstellungen → KI-Agenten.",
+      "Ein Token kann nur lesen, außer du aktivierst beim Erstellen „Schreiben erlauben“. Mit Schreibrechten kann der Assistent Stapel und Karten erstellen, bearbeiten und löschen, Karten verschieben, Wiederholungen erfassen und Notizbücher schreiben. Wird ein Stapel gelöscht, sind auch seine Karten weg, und das kann nicht rückgängig gemacht werden.",
+      "Beim Erstellen wählst du, wann das Token abläuft: in 30 Tagen, in 90 Tagen, in einem Jahr oder nie. Standard sind 90 Tage. Ein abgelaufenes Token funktioniert nicht mehr.",
+      "Du kannst bis zu 10 aktive Tokens haben und bis zu 20 Tokens pro Tag erstellen.",
+      "Widerrufe ein Token jederzeit in der App. Es funktioniert dann sofort nicht mehr.",
+      "Rate-Limits: 60 Anfragen pro Minute und 1.000 pro Stunde je Token, dazu 120 pro Minute und 2.000 pro Stunde für dein Konto über alle Tokens. Über einem Limit antwortet der Server mit HTTP 429 und einem Retry-After-Header.",
+      "Tageslimits für dein Konto, pro UTC-Tag: 3.000 erfasste Wiederholungen und 2.000 Schreibeinheiten. Eine neue Karte oder ein neuer Stapel kostet eine Einheit. Notizbuchtext kostet eine Einheit je angefangene 10 KB, die gespeichert werden.",
+      "Jede Anfrage trägt eine JSON-RPC-Nachricht mit bis zu 256 KB. Batches werden abgelehnt.",
+      "Ein Assistent sieht nur dein Konto. An die Daten anderer kommt er nicht heran."
+    ],
+    "faqTitle": "Fragen",
+    "faq": [
+      {
+        "q": "Muss ich etwas installieren?",
+        "a": "Nein. Zenzu hostet den Server. Dein Assistent verbindet sich über HTTP mit seiner URL."
+      },
+      {
+        "q": "Welche Assistenten können sich verbinden?",
+        "a": "Claude, Cursor oder ein anderer Assistent mit MCP-Unterstützung. Er muss sich über HTTP mit einem entfernten Server verbinden und dich den Authorization-Header setzen lassen."
+      },
+      {
+        "q": "Kann der Assistent meine Daten ändern oder löschen?",
+        "a": "Nur mit einem Token mit „Schreiben erlauben“. Für ein Token, das nur lesen darf, lehnt der Server jedes Schreibwerkzeug ab. Mit Schreibrechten kann der Assistent bearbeiten und löschen. Die Löschwerkzeuge sagen dem Assistenten, dass er dich vorher fragen soll, aber der Server prüft deine Zustimmung nicht."
+      },
+      {
+        "q": "Zählt eine Wiederholung im Chat wie eine in der App?",
+        "a": "Ja. review_card nutzt denselben FSRS-6-Planer wie die App und aktualisiert den Plan der Karte und dein Wiederholungsprotokoll."
+      },
+      {
+        "q": "Welche MCP-Versionen unterstützt der Server?",
+        "a": "Die Protokollversionen 2025-11-25, 2025-06-18, 2025-03-26 und 2024-11-05. Der Server beantwortet nur Anfragen: Er öffnet keinen Stream, um von sich aus Nachrichten zu senden."
+      }
+    ]
+  },
   "cta": {
     "title": "Beginne mit Inhalten zu lernen, die du liebst",
     "subtitle": "Importiere dein erstes Video oder deinen ersten Podcast in Sekunden.",
@@ -247,6 +348,7 @@
     "contact": "Kontakt",
     "rights": "Alle Rechte vorbehalten.",
     "compare": "Vergleiche",
+    "mcp": "MCP-Server",
     "writeUs": "Schreib uns:"
   },
   "blog": {

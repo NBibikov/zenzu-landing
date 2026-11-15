@@ -230,6 +230,107 @@
     "badge": "No app: Configurações → Agentes de IA",
     "detailsLink": "Todas as ferramentas, a conexão e as regras"
   },
+  "mcpPage": {
+    "meta": {
+      "title": "Servidor MCP do Zenzu: configuração, ferramentas e regras",
+      "description": "Conecte o Claude, o Cursor ou outro assistente MCP aos seus baralhos, cartões e progresso no Zenzu. Configuração, todas as ferramentas, os prompts, os limites e as regras dos tokens."
+    },
+    "title": "Servidor MCP do Zenzu",
+    "lead": "O Zenzu hospeda o próprio servidor MCP, então não há nada para instalar. Seu assistente se conecta a uma única URL por Streamable HTTP e se identifica com um token pessoal do app. Aqui estão a configuração, todas as ferramentas, os prompts prontos e as regras que o servidor segue.",
+    "setupTitle": "Configuração",
+    "setup": {
+      "genericTitle": "Qualquer cliente MCP",
+      "generic": "Crie um token no app: Configurações → Agentes de IA → “Gerar”. Copie na hora: o app mostra o token só uma vez. No seu cliente, adicione um servidor MCP remoto com esta URL e envie o token no cabeçalho Authorization. Troque zmcp_… pelo seu token.",
+      "urlLabel": "URL do servidor",
+      "headerLabel": "Cabeçalho",
+      "claudeCode": "Rode este comando em um terminal, com o seu token no lugar de zmcp_…. Por padrão, o Claude Code adiciona o servidor só ao projeto atual. Adicione --scope user para usá-lo em todos os seus projetos."
+    },
+    "toolsTitle": "Ferramentas",
+    "toolsIntro": "Você pede com suas próprias palavras, e o assistente escolhe sozinho as ferramentas de que precisa. As ferramentas que alteram seus dados só funcionam com um token que tenha “Permitir gravação”.",
+    "groups": {
+      "decks": "Baralhos e cartões",
+      "review": "Revisão",
+      "progress": "Progresso",
+      "courses": "Cursos e leitura",
+      "workspace": "Cadernos",
+      "media": "Filmes e séries"
+    },
+    "tools": {
+      "list_decks": "Seus baralhos, com o número de cartões e quantos estão para revisar agora.",
+      "get_deck_cards": "Os cartões de um baralho, primeiro os que vencem antes. Até 50 por chamada.",
+      "search_my_cards": "Busca em todos os seus cartões pela frente, pelo verso e pela frase de contexto. Até 30 resultados por chamada.",
+      "create_deck": "Cria um baralho.",
+      "update_deck": "Renomeia um baralho ou muda a descrição, o idioma ou a cor da etiqueta.",
+      "delete_deck": "Exclui um baralho com todos os cartões. Não dá para desfazer.",
+      "add_card": "Adiciona um cartão novo a um baralho.",
+      "add_cards": "Adiciona até 50 cartões a um baralho em uma só chamada.",
+      "update_card": "Edita o texto de um cartão. O calendário de revisão dele não muda.",
+      "delete_card": "Move um cartão para a lixeira. Ele é excluído de vez depois de 30 dias.",
+      "move_card": "Move um cartão para outro baralho. O calendário de revisão dele não muda.",
+      "list_inbox_items": "Textos, links e vídeos do YouTube na sua caixa de entrada que você ainda não importou.",
+      "get_due_cards": "Os cartões para revisar agora, na mesma ordem de uma sessão de revisão no app. Cartões novos não entram.",
+      "review_card": "Registra sua resposta a um cartão (again, hard, good ou easy) com o mesmo agendador FSRS-6 do app.",
+      "get_review_history": "Suas revisões recentes: qual cartão, qual nota e quando. Até 100 linhas.",
+      "get_interference_pairs": "Pares de cartões que você confunde entre si, os mais frequentes primeiro.",
+      "get_progress": "Um retrato do seu aprendizado: totais, revisões recentes, cartões pendentes e o que você estuda agora.",
+      "get_study_stats": "Estatísticas de estudo: revisões por dia, dias ativos e minutos de estudo.",
+      "get_cefr_level": "Seu nível QECR atual e o idioma que você estuda agora.",
+      "get_assessment_results": "Os resultados dos seus testes de nível por idioma e nível.",
+      "get_course_progress": "Onde você está no curso: progresso por nível QECR, a próxima lição e as últimas lições com nota.",
+      "get_lesson_content": "O conteúdo de uma lição do curso: gramática, diálogo, vocabulário e resumo.",
+      "get_reading_progress": "Os livros que você lê na biblioteca do app, com o capítulo e o parágrafo atuais.",
+      "list_workspace_entries": "As entradas dos seus cadernos, as mais recentes primeiro. Até 30.",
+      "get_workspace_entry": "Uma entrada de caderno completa.",
+      "get_workspace_attempts": "Seus exercícios feitos: sua resposta, a resposta esperada e se estava certa. Até 50.",
+      "create_workspace_entry": "Cria uma entrada de caderno.",
+      "update_workspace_entry": "Muda o título, o texto ou as notas de uma entrada.",
+      "delete_workspace_entry": "Exclui uma entrada em todos os seus dispositivos. Não dá para desfazer.",
+      "search_media_decks": "Busca na biblioteca do Zenzu baralhos de palavras prontos para filmes e séries.",
+      "get_media_deck": "Os cartões de um filme ou de um episódio. Até 60."
+    },
+    "promptsTitle": "Prompts",
+    "promptsIntro": "Prompts são tarefas prontas que usam as ferramentas acima. Seu cliente pode oferecê-los como comandos.",
+    "prompts": {
+      "vocab_from_text": "Escolhe as palavras mais úteis de um texto que você passa e as salva como cartões de uma só vez. Argumentos: text (obrigatório), deck (opcional). Para salvar, é preciso “Permitir gravação”.",
+      "review_session": "Pergunta seus cartões pendentes um por um e registra cada resposta. Argumento: language (opcional). Para registrar, é preciso “Permitir gravação”.",
+      "weekly_report": "Monta um relatório semanal: atividade, palavras difíceis, seu ponto no curso e um foco para a próxima semana."
+    },
+    "rulesTitle": "Regras",
+    "rules": [
+      "Toda requisição precisa de um token pessoal no cabeçalho Authorization: Bearer zmcp_…. Você cria o token no app, em Configurações → Agentes de IA.",
+      "Um token só pode ler, a menos que você marque “Permitir gravação” ao criá-lo. Com gravação, o assistente pode criar, editar e excluir baralhos e cartões, mover cartões, registrar revisões e escrever cadernos. Excluir um baralho também exclui os cartões dele, e não dá para desfazer.",
+      "Ao criar um token, você escolhe quando ele expira: em 30 dias, em 90 dias, em um ano ou nunca. O padrão é 90 dias. Um token expirado para de funcionar.",
+      "Você pode ter até 10 tokens ativos e criar até 20 tokens por dia.",
+      "Revogue um token a qualquer momento no app. Ele para de funcionar na hora.",
+      "Limites de taxa: 60 requisições por minuto e 1.000 por hora para cada token, e 120 por minuto e 2.000 por hora para a sua conta, somando todos os tokens. Acima de um limite, o servidor responde com HTTP 429 e um cabeçalho Retry-After.",
+      "Limites diários da sua conta, por dia UTC: 3.000 revisões registradas e 2.000 unidades de gravação. Um cartão ou baralho novo custa uma unidade. O texto de um caderno custa uma unidade a cada 10 KB iniciados que são salvos.",
+      "Cada requisição leva uma única mensagem JSON-RPC de até 256 KB. Lotes são recusados.",
+      "Um assistente só vê a sua conta. Ele não acessa os dados de outras pessoas."
+    ],
+    "faqTitle": "Perguntas",
+    "faq": [
+      {
+        "q": "Preciso instalar alguma coisa?",
+        "a": "Não. O Zenzu hospeda o servidor. Seu assistente se conecta à URL dele por HTTP."
+      },
+      {
+        "q": "Quais assistentes podem se conectar?",
+        "a": "O Claude, o Cursor ou outro assistente compatível com MCP. Ele precisa se conectar a um servidor remoto por HTTP e deixar você definir o cabeçalho Authorization."
+      },
+      {
+        "q": "O assistente pode alterar ou excluir meus dados?",
+        "a": "Só com um token que tenha “Permitir gravação”. Com um token só de leitura, o servidor recusa todas as ferramentas de gravação. Com gravação, o assistente pode editar e excluir. As ferramentas de exclusão pedem que o assistente confirme com você antes, mas o servidor não verifica se você concordou."
+      },
+      {
+        "q": "Uma revisão no chat conta como uma revisão no app?",
+        "a": "Sim. review_card usa o mesmo agendador FSRS-6 do app e atualiza o calendário do cartão e o seu histórico de revisões."
+      },
+      {
+        "q": "Quais versões do MCP o servidor aceita?",
+        "a": "As versões do protocolo 2025-11-25, 2025-06-18, 2025-03-26 e 2024-11-05. O servidor só responde a requisições: ele não abre um fluxo para enviar mensagens por conta própria."
+      }
+    ]
+  },
   "cta": {
     "title": "Comece a aprender com o conteúdo que você ama",
     "subtitle": "Importe seu primeiro vídeo ou podcast em segundos.",
@@ -247,6 +348,7 @@
     "contact": "Contato",
     "rights": "Todos os direitos reservados.",
     "compare": "Comparações",
+    "mcp": "Servidor MCP",
     "writeUs": "Escreva para nós:"
   },
   "blog": {
