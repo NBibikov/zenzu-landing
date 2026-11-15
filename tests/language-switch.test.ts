@@ -29,3 +29,17 @@ test('the header builds the locale links with languageSwitchPath', () => {
   assert.match(header, /languageSwitchPath\(Astro\.url\.pathname\)/)
   assert.match(header, /localePath\(switchTarget, loc\)/)
 })
+
+test('the footer builds the locale links with languageSwitchPath, like the header', () => {
+  const footer = readFileSync(new URL('../src/components/layout/Footer.astro', import.meta.url), 'utf8')
+  assert.match(footer, /import \{ languageSwitchPath \} from '\.\.\/\.\.\/lib\/language-switch'/)
+  assert.match(footer, /languageSwitchPath\(Astro\.url\.pathname\)/)
+  assert.match(footer, /localePath\(switchTarget, loc\)/)
+  assert.doesNotMatch(footer, /localePath\('\/', loc\)/)
+  // The target logic lives in one place: neither layout repeats the regex.
+  for (const file of ['Header.astro', 'Footer.astro']) {
+    const src = readFileSync(new URL(`../src/components/layout/${file}`, import.meta.url), 'utf8')
+    assert.doesNotMatch(src, /mcp\\\//, `${file} repeats the MCP path regex`)
+    assert.doesNotMatch(src, /contact\\\/\$/, `${file} repeats the contact path regex`)
+  }
+})
