@@ -93,7 +93,7 @@
       "more": {
         "what": "Mira un video de YouTube con su transcripción debajo del reproductor. La línea que se está diciendo se resalta, y la transcripción se desplaza para mantenerla a la vista. Toca una palabra para ver su traducción y guarda la palabra, una frase o la oración completa como tarjeta.",
         "how": "Zenzu carga una transcripción del video en el idioma que aprendes, normalmente los subtítulos que el video ya tiene. Cada tarjeta conserva la oración de la que salió y su traducción, y «Abrir en el original» te lleva de vuelta a ese momento del video. Puedes repetir una oración en bucle y cambiar la velocidad de reproducción.",
-        "note": "Para tocar y guardar palabras hace falta una transcripción en el idioma que aprendes; si Zenzu no puede cargarla, la transcripción queda vacía. Los videos cuyo autor desactivó la reproducción en otros sitios no se pueden ver en Zenzu."
+        "note": "Para tocar y guardar palabras hace falta una transcripción en el idioma que aprendes; si Zenzu no puede cargarla, no se muestra ninguna transcripción, solo un aviso de que no se encontraron subtítulos. Los videos cuyo autor desactivó la reproducción en otros sitios no se pueden ver en Zenzu."
       }
     },
     "podcasts": {
@@ -127,9 +127,9 @@
       "title": "Cursos con IA",
       "desc": "Lecciones personalizadas de gramática y vocabulario para inglés, alemán, francés y español — A1 a C1. Los ejercicios se adaptan a tu nivel.",
       "more": {
-        "what": "Avanza por lecciones de gramática y vocabulario de inglés, alemán, francés o español, nivel a nivel de A1 a C1. Las explicaciones están en tu lengua materna cuando existe esa versión y, si no, en inglés. Las palabras de una lección pueden pasar a tus mazos para repasarlas.",
+        "what": "Avanza por lecciones de gramática y vocabulario de inglés, alemán, francés o español, nivel a nivel desde A1 y hasta C1 donde las lecciones están listas. Una lección aparece solo cuando hay una versión lista para tu idioma, así que algunos pares de idiomas tienen menos lecciones por ahora. Las palabras de una lección pueden pasar a tus mazos para repasarlas.",
         "how": "Una lección tiene etapas como palabras nuevas, gramática, un diálogo y un resumen, cada una con ejercicios: opción múltiple, completar huecos, emparejar, construir oraciones y dictado. Las lecciones posteriores retoman palabras anteriores con su traducción. Una prueba de nivel corta fija tu nivel; todos los niveles hasta ese quedan abiertos, y sin la prueba empiezas en A1.",
-        "note": "Las lecciones están preparadas de antemano; no se generan para cada estudiante."
+        "note": "En los cursos de alemán, francés y español, las explicaciones están en inglés cuando tu idioma no tiene versión. Las lecciones están preparadas de antemano; no se generan para cada estudiante."
       }
     },
     "srs": {
@@ -155,7 +155,7 @@
       "desc": "Texto, fotos, artículos — pega o fotografía lo que sea. La IA extrae el vocabulario adaptado a tu nivel.",
       "more": {
         "what": "Pega un texto o el enlace de un artículo, o toma hasta cuatro fotos de una misma página: un libro, un menú, un cartel o notas a mano. Zenzu encuentra las palabras que encajan con el nivel del mazo al que importas y te las muestra en una lista. Tú eliges cuáles se convierten en tarjetas.",
-        "how": "Cada palabra llega con la oración en la que aparecía, copiada de la fuente, y la traducción de esa oración a tu lengua materna; si la fuente no tiene una oración completa, como un menú o un cartel, Zenzu escribe un ejemplo breve. Cada palabra lleva su nivel, y la lista muestra primero el nivel del mazo y los superiores. Si el mazo no tiene un nivel único, Zenzu elige palabras de nivel intermedio y avanzado y muestra todos los niveles.",
+        "how": "Cada palabra llega con la oración en la que aparecía, copiada de la fuente, y la traducción de esa oración a tu lengua materna; si la fuente no tiene una oración completa, como un menú o un cartel, Zenzu escribe un ejemplo breve. Cada palabra lleva su nivel; al principio la lista muestra solo el nivel del mazo y los superiores, y puedes añadir los inferiores. Si el mazo no tiene un nivel único, Zenzu elige palabras de nivel intermedio y avanzado y muestra todos los niveles.",
         "note": "Si aprendes varios idiomas, el propio texto decide a cuál pertenecen las palabras. En iOS puedes compartir textos y enlaces desde otras apps a la bandeja de Zenzu e importarlos más tarde."
       }
     }

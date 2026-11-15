@@ -93,7 +93,7 @@
       "more": {
         "what": "Sieh dir ein YouTube-Video mit Transkript unter dem Player an. Die gerade gesprochene Zeile wird hervorgehoben, und das Transkript scrollt mit, damit sie sichtbar bleibt. Tippe auf ein Wort für die Übersetzung und speichere das Wort, eine Phrase oder den ganzen Satz als Karte.",
         "how": "Zenzu lädt ein Transkript des Videos in deiner Lernsprache, meist die Untertitel, die das Video bereits hat. Jede Karte behält den Satz, aus dem sie stammt, samt Übersetzung, und „An der Quelle öffnen“ bringt dich an genau diese Stelle im Video zurück. Du kannst einen Satz in einer Schleife wiederholen und die Wiedergabegeschwindigkeit ändern.",
-        "note": "Zum Antippen und Speichern brauchst du ein Transkript in deiner Lernsprache; kann Zenzu keines laden, bleibt das Transkript leer. Videos, deren Urheber die Wiedergabe auf anderen Websites abgeschaltet hat, lassen sich in Zenzu nicht abspielen."
+        "note": "Zum Antippen und Speichern brauchst du ein Transkript in deiner Lernsprache; kann Zenzu keines laden, erscheint statt des Transkripts nur der Hinweis, dass keine Untertitel gefunden wurden. Videos, deren Urheber die Wiedergabe auf anderen Websites abgeschaltet hat, lassen sich in Zenzu nicht abspielen."
       }
     },
     "podcasts": {
@@ -127,9 +127,9 @@
       "title": "KI-Kurse",
       "desc": "Personalisierte Grammatik- und Vokabelkurse für Englisch, Deutsch, Französisch und Spanisch — A1 bis C1. Übungen passen sich deinem Niveau an.",
       "more": {
-        "what": "Lerne Grammatik und Wortschatz in Lektionen für Englisch, Deutsch, Französisch oder Spanisch, Niveau für Niveau von A1 bis C1. Erklärungen kommen in deiner Muttersprache, wenn es diese Fassung gibt, sonst auf Englisch. Wörter aus einer Lektion kannst du zum Wiederholen in deine Stapel übernehmen.",
+        "what": "Lerne Grammatik und Wortschatz in Lektionen für Englisch, Deutsch, Französisch oder Spanisch, Niveau für Niveau ab A1 und bis C1, wo die Lektionen fertig sind. Eine Lektion erscheint nur, wenn eine Fassung für deine Sprache fertig ist, daher haben manche Sprachpaare vorerst weniger Lektionen. Wörter aus einer Lektion kannst du zum Wiederholen in deine Stapel übernehmen.",
         "how": "Eine Lektion hat Abschnitte wie neue Wörter, Grammatik, einen Dialog und eine Zusammenfassung, jeweils mit Übungen: Multiple Choice, Lückentext, Zuordnen, Sätze bauen und Diktat. Spätere Lektionen greifen frühere Wörter mit ihrer Übersetzung wieder auf. Ein kurzer Einstufungstest legt dein Niveau fest; alle Stufen bis dahin sind offen, ohne Test beginnst du bei A1.",
-        "note": "Die Lektionen sind vorab erstellt und werden nicht für jede Person einzeln erzeugt."
+        "note": "In den Kursen für Deutsch, Französisch und Spanisch kommen die Erklärungen auf Englisch, wenn es keine Fassung in deiner Sprache gibt. Die Lektionen sind vorab erstellt und werden nicht für jede Person einzeln erzeugt."
       }
     },
     "srs": {
@@ -155,7 +155,7 @@
       "desc": "Texte, Fotos, Artikel — kopiere oder fotografiere alles. Die KI extrahiert Vokabeln, die deinem Niveau entsprechen.",
       "more": {
         "what": "Füge einen Text oder einen Link zu einem Artikel ein, oder mach bis zu vier Fotos einer Seite: Buch, Speisekarte, Schild oder handschriftliche Notizen. Zenzu findet Wörter, die zum Niveau des Stapels passen, in den du importierst, und zeigt sie als Liste. Du wählst, welche davon Karten werden.",
-        "how": "Jedes Wort kommt mit dem Satz, in dem es stand, aus der Quelle übernommen, und mit einer Übersetzung dieses Satzes in deine Muttersprache; hat die Quelle keinen ganzen Satz, etwa bei einer Speisekarte oder einem Schild, schreibt Zenzu einen kurzen Beispielsatz. Jedes Wort ist mit seinem Niveau markiert, und die Liste zeigt zuerst das Niveau des Stapels und die höheren. Hat der Stapel kein einheitliches Niveau, wählt Zenzu Wörter der mittleren und höheren Stufen und zeigt alle Niveaus.",
+        "how": "Jedes Wort kommt mit dem Satz, in dem es stand, aus der Quelle übernommen, und mit einer Übersetzung dieses Satzes in deine Muttersprache; hat die Quelle keinen ganzen Satz, etwa bei einer Speisekarte oder einem Schild, schreibt Zenzu einen kurzen Beispielsatz. Jedes Wort ist mit seinem Niveau markiert; zuerst zeigt die Liste nur das Niveau des Stapels und die höheren, die niedrigeren kannst du dazunehmen. Hat der Stapel kein einheitliches Niveau, wählt Zenzu Wörter der mittleren und höheren Stufen und zeigt alle Niveaus.",
         "note": "Lernst du mehrere Sprachen, entscheidet der Text selbst, zu welcher Sprache die Wörter gehören. Unter iOS kannst du Texte und Links aus anderen Apps in den Zenzu-Eingang teilen und später importieren."
       }
     }

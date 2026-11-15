@@ -93,7 +93,7 @@
       "more": {
         "what": "Watch a YouTube video with its transcript under the player. The line being spoken is highlighted, and the transcript scrolls to keep it in view. Tap a word to see its translation, then save the word, a phrase or the whole sentence as a card.",
         "how": "Zenzu loads a transcript of the video in the language you learn, usually the captions the video already has. Each card keeps the sentence it came from and its translation, and “Open at source” takes you back to that moment in the video. You can repeat one sentence in a loop and change the playback speed.",
-        "note": "To tap and save words, you need a transcript in the language you learn; when Zenzu cannot load one, the transcript stays empty. Videos whose owner has turned off playback on other sites cannot play in Zenzu."
+        "note": "To tap and save words, you need a transcript in the language you learn; when Zenzu cannot load one, no transcript is shown, only a message that no subtitles were found. Videos whose owner has turned off playback on other sites cannot play in Zenzu."
       }
     },
     "podcasts": {
@@ -127,9 +127,9 @@
       "title": "AI Courses",
       "desc": "Personalized grammar and vocabulary lessons for English, German, French, and Spanish, from A1 to C1. Exercises adapt to your level.",
       "more": {
-        "what": "Work through grammar and vocabulary lessons for English, German, French or Spanish, level by level from A1 to C1. Explanations are in your native language where that version exists, and in English otherwise. Words from a lesson can go into your decks for review.",
+        "what": "Work through grammar and vocabulary lessons for English, German, French or Spanish, level by level from A1, up to C1 where the lessons are ready. A lesson appears only when a version for your language is ready, so some language pairs have fewer lessons for now. Words from a lesson can go into your decks for review.",
         "how": "A lesson has stages such as new words, grammar, a dialogue and a recap, each with exercises: multiple choice, gap fill, matching, sentence building and dictation. Later lessons bring back earlier words with their translation. A short placement test sets your level; all levels up to it are open, and without the test you start at A1.",
-        "note": "Lessons are prepared in advance; they are not generated for each learner."
+        "note": "In the German, French and Spanish courses, explanations come in English when your language has no version. Lessons are prepared in advance; they are not generated for each learner."
       }
     },
     "srs": {
@@ -155,7 +155,7 @@
       "desc": "Text, photos, articles: paste or snap anything. AI extracts vocabulary matched to your level.",
       "more": {
         "what": "Paste a text or a link to an article, or take up to four photos of one page: a book, a menu, a sign or handwritten notes. Zenzu finds words that match the level of the deck you import into and shows them as a list. You choose which ones become cards.",
-        "how": "Each word comes with the sentence it stood in, copied from the source, and a translation of that sentence into your native language; when the source has no full sentence, such as a menu or a sign, Zenzu writes a short example instead. Each word is marked with its level, and the list shows the deck's level and higher first. If the deck has no single level, Zenzu picks intermediate and advanced words and shows every level.",
+        "how": "Each word comes with the sentence it stood in, copied from the source, and a translation of that sentence into your native language; when the source has no full sentence, such as a menu or a sign, Zenzu writes a short example instead. Each word is marked with its level; at first the list shows only the deck's level and higher, and you can add the lower levels. If the deck has no single level, Zenzu picks intermediate and advanced words and shows every level.",
         "note": "If you learn several languages, the text itself decides which language the words belong to. On iOS, you can share text and links from other apps to the Zenzu inbox and import them later."
       }
     }

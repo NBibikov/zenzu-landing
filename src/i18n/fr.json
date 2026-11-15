@@ -93,7 +93,7 @@
       "more": {
         "what": "Regarde une vidéo YouTube avec sa transcription sous le lecteur. La ligne prononcée est mise en évidence, et la transcription défile pour la garder visible. Touche un mot pour voir sa traduction, puis enregistre le mot, une expression ou la phrase entière comme carte.",
         "how": "Zenzu charge une transcription de la vidéo dans la langue que tu apprends, en général les sous-titres que la vidéo propose déjà. Chaque carte garde la phrase d'où elle vient et sa traduction, et « Ouvrir à la source » te ramène à ce moment de la vidéo. Tu peux répéter une phrase en boucle et changer la vitesse de lecture.",
-        "note": "Pour toucher et enregistrer des mots, il faut une transcription dans la langue que tu apprends ; si Zenzu ne peut pas en charger, la transcription reste vide. Les vidéos dont l'auteur a désactivé la lecture sur d'autres sites ne peuvent pas être lues dans Zenzu."
+        "note": "Pour toucher et enregistrer des mots, il faut une transcription dans la langue que tu apprends ; si Zenzu ne peut pas en charger, aucune transcription ne s'affiche, seulement un message indiquant qu'aucun sous-titre n'a été trouvé. Les vidéos dont l'auteur a désactivé la lecture sur d'autres sites ne peuvent pas être lues dans Zenzu."
       }
     },
     "podcasts": {
@@ -127,9 +127,9 @@
       "title": "Cours par IA",
       "desc": "Des cours personnalisés de grammaire et de vocabulaire pour l'anglais, l'allemand, le français et l'espagnol — A1 à C1. Les exercices s'adaptent à ton niveau.",
       "more": {
-        "what": "Suis des leçons de grammaire et de vocabulaire pour l'anglais, l'allemand, le français ou l'espagnol, niveau par niveau de A1 à C1. Les explications sont dans ta langue maternelle quand cette version existe, sinon en anglais. Les mots d'une leçon peuvent rejoindre tes paquets pour être révisés.",
+        "what": "Suis des leçons de grammaire et de vocabulaire pour l'anglais, l'allemand, le français ou l'espagnol, niveau par niveau à partir de A1, jusqu'à C1 là où les leçons sont prêtes. Une leçon n'apparaît que si une version pour ta langue est prête ; certaines paires de langues ont donc moins de leçons pour l'instant. Les mots d'une leçon peuvent rejoindre tes paquets pour être révisés.",
         "how": "Une leçon comporte des étapes comme les nouveaux mots, la grammaire, un dialogue et un récapitulatif, chacune avec des exercices : QCM, texte à trous, association, construction de phrases et dictée. Les leçons suivantes reprennent des mots déjà vus, avec leur traduction. Un court test de positionnement fixe ton niveau ; tous les niveaux jusqu'à celui-ci sont ouverts, et sans test tu commences en A1.",
-        "note": "Les leçons sont préparées à l'avance ; elles ne sont pas générées pour chaque apprenant."
+        "note": "Dans les cours d'allemand, de français et d'espagnol, les explications sont en anglais quand ta langue n'a pas de version. Les leçons sont préparées à l'avance ; elles ne sont pas générées pour chaque apprenant."
       }
     },
     "srs": {
@@ -155,7 +155,7 @@
       "desc": "Textes, photos, articles — colle ou photographie n'importe quoi. L'IA extrait le vocabulaire adapté à ton niveau.",
       "more": {
         "what": "Colle un texte ou le lien d'un article, ou prends jusqu'à quatre photos d'une même page : livre, menu, panneau ou notes manuscrites. Zenzu trouve les mots adaptés au niveau du paquet dans lequel tu importes et les affiche en liste. Tu choisis ceux qui deviennent des cartes.",
-        "how": "Chaque mot arrive avec la phrase où il figurait, copiée depuis la source, et la traduction de cette phrase dans ta langue maternelle ; si la source n'a pas de phrase complète, comme un menu ou un panneau, Zenzu écrit un court exemple à la place. Chaque mot indique son niveau, et la liste montre d'abord le niveau du paquet et les niveaux supérieurs. Si le paquet n'a pas de niveau unique, Zenzu choisit des mots de niveau intermédiaire et avancé et affiche tous les niveaux.",
+        "how": "Chaque mot arrive avec la phrase où il figurait, copiée depuis la source, et la traduction de cette phrase dans ta langue maternelle ; si la source n'a pas de phrase complète, comme un menu ou un panneau, Zenzu écrit un court exemple à la place. Chaque mot indique son niveau ; au départ, la liste n'affiche que le niveau du paquet et les niveaux supérieurs, et tu peux ajouter les niveaux inférieurs. Si le paquet n'a pas de niveau unique, Zenzu choisit des mots de niveau intermédiaire et avancé et affiche tous les niveaux.",
         "note": "Si tu apprends plusieurs langues, c'est le texte lui-même qui détermine à quelle langue appartiennent les mots. Sur iOS, tu peux partager des textes et des liens depuis d'autres apps vers la boîte de réception de Zenzu, puis les importer plus tard."
       }
     }
