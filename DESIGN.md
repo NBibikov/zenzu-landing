@@ -123,7 +123,7 @@ A warm, near-monochrome palette: paper and ink tones with one muted green.
 - **Paper** (paper): the page ground.
 - **Paper 2** (paper-2): the only secondary surface; alternating sections sit on it.
 - **Hairline** (hairline): the seam between rows (border-top on list rows, FAQ items).
-- **Rule** (rule): structure lines, menu and badge borders.
+- **Rule** (rule): structure lines and menu borders. The store badge border is ink-3: rule on paper is 1.64:1, and a control edge needs 3:1.
 - **Ink** (ink): headings and primary text. **Ink Lead** (ink-lead): lead text and quotes. **Ink 2** (ink-2): secondary text. **Ink 3** (ink-3): the lightest tone that may carry text. **Ink 4** (ink-4): large marks only, never text.
 - **Swash** and **Swash Cancel** (swash, swash-cancel): brush colours under a selected label and the alternative half of a button pair; also text selection.
 
@@ -181,10 +181,15 @@ Pills (fully rounded) for buttons; 16px corners for the store badges and blog co
 - **Secondary (cancel pill):** grey ground, mirrored brush, label at weight 600.
 - **Hover / Active:** an ink overlay at 6% and 10% opacity, 150ms. Focus: 2px ink outline with 3px offset.
 
+### Calls to action
+- Every link to app.zenzu.app has the same label, `app.open` ("Open Zenzu"), in the header, hero, CTA, footer, blog close and 404.
+- The hero has one pill. "How it works" under it is a quiet text link with an arrow.
+- The store badges are one component (`StoreBadges.astro`), in the hero and under the CTA button. The store names stay in English; the captions are localised.
+
 ### Navigation
 - Header: sans 14px, ink-2, hover to ink. The current item wears the swash and is bold.
 - Language menu: opens on hover and click, reports aria-expanded; 10px corners, rule border, paper ground; items 20px by 8px padding.
-- On phones the footer language list is the only language switch.
+- The header language menu shows on phones too, as a compact control with a 44px tap target. The footer also lists every language.
 
 ### Section Label and Heading Stroke (signature)
 - A section opens with either a short moss brush stroke (48px by 6px) or a caps label (label style, ink-3) above its heading. These come from the app (ZSwashStroke, ZSectionLabel) and are part of the brand, not decoration to remove.

@@ -1,5 +1,6 @@
 ---
-import { CONTACT_EMAIL, mailtoHref } from '../../lib/contact'
+import { WEB_APP_URL } from '../../lib/links'
+import StoreBadges from '../ui/StoreBadges.astro'
 
 interface Props { t: any }
 const { t } = Astro.props
@@ -11,14 +12,13 @@ const { t } = Astro.props
   <div class="max-w-2xl mx-auto text-center" data-reveal>
     <h2 class="font-serif text-3xl md:text-4xl text-ink leading-[1.2] mb-6">{t.cta.title}</h2>
     <p class="text-ink-2 text-lg mb-12 leading-relaxed">{t.cta.subtitle}</p>
-    <a href="https://app.zenzu.app" class="zz-btn px-10">
-      {t.cta.button}
+    <a href={WEB_APP_URL} class="zz-btn px-10">
+      {t.app.open}
     </a>
-    <!-- A quiet way to reach us, not another call to action. -->
-    <p class="mt-10 text-sm text-ink-3 leading-relaxed">
-      {t.cta.writeLead}{' '}
-      <a href={mailtoHref(t.contact.subject)} class="text-ink-2 underline decoration-hairline underline-offset-4 hover:text-ink hover:decoration-ink transition-colors">{CONTACT_EMAIL}</a>{' '}
-      {t.cta.writeTail}
-    </p>
+    <!-- The contact line lives in the footer, so the page ends on the
+         action, not on the word "bug". -->
+    <div class="mt-10">
+      <StoreBadges t={t} />
+    </div>
   </div>
 </section>

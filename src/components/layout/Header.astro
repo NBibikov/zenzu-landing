@@ -1,6 +1,7 @@
 ---
 import { localeNames, supportedLocales, localePath, type Locale } from '../../i18n'
 import { languageSwitchPath } from '../../lib/language-switch'
+import { WEB_APP_URL } from '../../lib/links'
 
 interface Props {
   t: any
@@ -31,7 +32,7 @@ const switchTarget = languageSwitchPath(Astro.url.pathname)
       <span aria-hidden="true"><span class="font-semibold">zen</span><span class="text-ink-2">zu</span></span>
     </a>
 
-    <div class="flex items-center gap-5 md:gap-8 ml-auto">
+    <div class="flex items-center gap-3 sm:gap-5 md:gap-8 ml-auto">
       <a href={localePath('/', locale) + '#features'} class="hidden md:inline text-sm text-ink-2 hover:text-ink transition-colors">
         {t.nav.features}
       </a>
@@ -50,11 +51,12 @@ const switchTarget = languageSwitchPath(Astro.url.pathname)
       </a>
 
       <!-- Language switcher: opens on hover, and on a
-           click or tap (data-open), so touch and keyboard work too. -->
-      <div class="relative group hidden sm:block" data-lang-menu>
+           click or tap (data-open), so touch and keyboard work too.
+           Shown on phones too, with a 44px tap target. -->
+      <div class="relative group" data-lang-menu>
         <button
           type="button"
-          class="text-sm text-ink-2 hover:text-ink transition-colors flex items-center gap-1"
+          class="min-h-11 min-w-11 justify-center text-sm text-ink-2 hover:text-ink transition-colors flex items-center gap-1"
           aria-expanded="false"
           aria-label={t.nav.languages}
         >
@@ -81,8 +83,8 @@ const switchTarget = languageSwitchPath(Astro.url.pathname)
         </div>
       </div>
 
-      <a href="https://app.zenzu.app" class="zz-btn zz-btn-sm">
-        {t.nav.getStarted}
+      <a href={WEB_APP_URL} class="zz-btn zz-btn-sm">
+        {t.app.open}
       </a>
     </div>
   </nav>

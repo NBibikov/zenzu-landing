@@ -7,19 +7,15 @@
     "features": "Funktionen",
     "howItWorks": "Wie es funktioniert",
     "languages": "Sprachen",
-    "blog": "Blog",
-    "getStarted": "Loslegen"
+    "blog": "Blog"
   },
   "hero": {
-    "badge": "YouTube-Link einfügen — deine Karten sind fertig",
     "headline1": "Lerne jeden Tag ",
     "headlineHighlight": "in Ruhe",
     "headline2": " eine Sprache",
-    "subheadline": "Karten aus Videos, Podcasts und Büchern, die du magst.",
-    "cta": "Lernen beginnen",
+    "subheadline": "Füge einen YouTube-Link ein — deine Karten sind fertig. Genauso mit Podcasts, Artikeln und Büchern.",
     "ctaSecondary": "Sieh, wie es funktioniert",
     "appStoreBadge": "Jetzt für iOS und Android verfügbar",
-    "appStoreCta": "Laden im App Store",
     "supported": "Englisch · Deutsch · Französisch · Spanisch",
     "comingSoon": "Portugiesisch — demnächst verfügbar"
   },
@@ -315,23 +311,20 @@
   },
   "cta": {
     "title": "Beginne mit Inhalten zu lernen, die du liebst",
-    "subtitle": "Importiere dein erstes Video oder deinen ersten Podcast in Sekunden.",
-    "button": "Loslegen",
-    "writeLead": "Fragen, Ideen oder ein Bug? Schreib an",
-    "writeTail": "— wir lesen jede Nachricht."
+    "subtitle": "Importiere dein erstes Video oder deinen ersten Podcast in Sekunden."
   },
   "footer": {
     "brand": "Lerne Sprachen mit echten Inhalten, die du liebst. YouTube, Podcasts, Artikel — von KI in Karteikarten verwandelt.",
     "product": "Produkt",
     "legal": "Rechtliches",
-    "openApp": "App öffnen",
     "privacy": "Datenschutzerklärung",
     "terms": "Nutzungsbedingungen",
     "contact": "Kontakt",
     "rights": "Alle Rechte vorbehalten.",
     "compare": "Vergleiche",
     "mcp": "MCP-Server",
-    "writeUs": "Schreib uns:"
+    "writeLead": "Fragen, Ideen oder ein Bug? Schreib an",
+    "writeTail": "— wir lesen jede Nachricht."
   },
   "blog": {
     "title": "Sprachlern-Blog",
@@ -392,5 +385,12 @@
     "bugsBody": "Einen Fehler gefunden? Beschreib, was passiert ist, welches Gerät oder welchen Browser du nutzt, und füge wenn möglich Screenshots hinzu.",
     "ideasTitle": "Funktionswünsche",
     "ideasBody": "Du hast eine Idee für eine Funktion? Wir wollen Zenzu ständig verbessern. Schick uns deine Vorschläge."
+  },
+  "app": {
+    "open": "Zenzu öffnen"
+  },
+  "stores": {
+    "appStoreCaption": "Laden im",
+    "googlePlayCaption": "Jetzt bei"
   }
 }
