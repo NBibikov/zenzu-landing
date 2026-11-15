@@ -1,13 +1,16 @@
 ---
-interface Props { t: any }
-const { t } = Astro.props
+interface Props { t: any; locale?: string }
+const { t, locale } = Astro.props
 
-// Screens from the iPhone app, prepared by scripts/app-screens.py: the
-// status bar is cropped, so the frame shows the app and not one phone.
+// Screens from the app, prepared by scripts/app-screens.py: the status bar
+// is cropped, so the frame shows the app and not one device. The Ukrainian
+// page shows the Ukrainian app (public/screens/uk); the other locales show
+// the English app (public/screens).
 // The order follows a day in the app: the home screen, the review, the
 // coach, three libraries, then the courses and the decks. The figcaption
 // names each screen, so the image itself carries an empty alt. width/height
 // are the size scripts/app-screens.py writes for a 1320x2868 capture.
+const dir = locale === 'uk' ? '/screens/uk' : '/screens'
 const screens = ['home', 'review', 'lisa', 'videos', 'books', 'news', 'courses', 'decks']
   .map((key, i) => ({ key, step: String(i + 1).padStart(2, '0'), ...t.screens.items[key] }))
 ---
@@ -46,8 +49,8 @@ const screens = ['home', 'review', 'lisa', 'videos', 'books', 'news', 'courses',
         <figure>
           <div class="zz-screen-frame">
             <img
-              src={`/screens/${key}.webp`}
-              srcset={`/screens/${key}-sm.webp 440w, /screens/${key}.webp 660w`}
+              src={`${dir}/${key}.webp`}
+              srcset={`${dir}/${key}-sm.webp 440w, ${dir}/${key}.webp 660w`}
               sizes="(min-width: 768px) 258px, 208px"
               width="660"
               height="1305"
