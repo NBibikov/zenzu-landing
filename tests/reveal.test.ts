@@ -54,7 +54,7 @@ test('print shows every block and stroke, scrolled into view or not', () => {
 
 test('under reduced motion no block is hidden and nothing transitions', () => {
   const css = read('styles/global.css')
-  const motion = css.match(/@media \(prefers-reduced-motion: reduce\)\s*\{([\s\S]*?)\n\}/)
+  const motion = css.match(/@media \(prefers-reduced-motion:\s*reduce\)\s*\{([\s\S]*?)\n\}/)
   assert.ok(motion, 'global.css has no prefers-reduced-motion rule')
   const rule = motion[1].match(
     /html\.js \[data-reveal\]\s*,\s*html\.js \[data-reveal\] \.zz-stroke\s*\{([^}]*)\}/,
