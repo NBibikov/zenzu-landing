@@ -66,3 +66,17 @@ test('the layout sets html.js before any other script and reveals once', () => {
   assert.match(layout, /classList\.add\('is-in'\)/)
   assert.match(layout, /observer\.unobserve\(entry\.target\)/)
 })
+
+test('a failed reveal script shows every block', () => {
+  const layout = read('layouts/BaseLayout.astro')
+  const reveal = layout.slice(layout.indexOf('[data-reveal]'))
+  assert.match(reveal, /try \{/)
+  assert.match(reveal, /catch \{\s*document\.documentElement\.classList\.remove\('js'\)/)
+})
+
+test('a block above the viewport is revealed too', () => {
+  // After a deep link or a restored scroll position, blocks above the
+  // viewport never intersect it. They must not stay hidden.
+  const layout = read('layouts/BaseLayout.astro')
+  assert.match(layout, /entry\.isIntersecting \|\| entry\.boundingClientRect\.top < 0/)
+})
