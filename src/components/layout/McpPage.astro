@@ -2,6 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro'
 import Header from './Header.astro'
 import Footer from './Footer.astro'
+import FaqList from '../ui/FaqList.astro'
 import { t, supportedLocales, localePath, type Locale } from '../../i18n'
 import { MCP_PROMPTS, MCP_TOOL_GROUPS, MCP_URL, MCP_WRITE_TOOLS } from '../../data/mcp'
 
@@ -28,7 +29,9 @@ const alternates = supportedLocales.map(loc => ({
   href: `${site}${localePath('/mcp/', loc)}`,
 }))
 
-// <pre> scrolls inside itself, so a long URL never widens the page.
+// <pre> scrolls inside itself, so a long URL never widens the page. It
+// takes focus (tabindex) so a keyboard user can scroll it, and its label
+// names it for a screen reader.
 const preClass = 'overflow-x-auto bg-paper-2 border border-hairline rounded-md px-4 py-3 text-sm leading-relaxed text-ink font-mono'
 const h2Class = 'font-serif text-2xl md:text-3xl text-ink mt-20 mb-6'
 ---
@@ -52,13 +55,13 @@ const h2Class = 'font-serif text-2xl md:text-3xl text-ink mt-20 mb-6'
       <h3 class="font-serif text-xl text-ink mb-4">{p.setup.genericTitle}</h3>
       <p class="text-ink-2 leading-relaxed mb-6">{p.setup.generic}</p>
       <p class="zz-kicker text-ink-3 mb-2">{p.setup.urlLabel}</p>
-      <pre class={preClass}><code>{MCP_URL}</code></pre>
+      <pre class={preClass} tabindex="0" aria-label={p.setup.urlLabel}><code>{MCP_URL}</code></pre>
       <p class="zz-kicker text-ink-3 mt-6 mb-2">{p.setup.headerLabel}</p>
-      <pre class={preClass}><code>{authHeader}</code></pre>
+      <pre class={preClass} tabindex="0" aria-label={p.setup.headerLabel}><code>{authHeader}</code></pre>
 
       <h3 class="font-serif text-xl text-ink mt-12 mb-4">Claude Code</h3>
       <p class="text-ink-2 leading-relaxed mb-6">{p.setup.claudeCode}</p>
-      <pre class={preClass}><code>{claudeCodeCommand}</code></pre>
+      <pre class={preClass} tabindex="0" aria-label="Claude Code"><code>{claudeCodeCommand}</code></pre>
 
       <h2 class={h2Class}>{p.toolsTitle}</h2>
       <p class="text-ink-2 leading-relaxed">{p.toolsIntro}</p>
@@ -98,17 +101,7 @@ const h2Class = 'font-serif text-2xl md:text-3xl text-ink mt-20 mb-6'
       </ul>
 
       <h2 class={h2Class}>{p.faqTitle}</h2>
-      <div>
-        {p.faq.map(({ q, a }) => (
-          <details class="group py-6 border-t border-hairline">
-            <summary class="flex items-start justify-between gap-6 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
-              <h3 class="font-serif text-xl text-ink">{q}</h3>
-              <span class="text-moss text-2xl leading-none transition-transform group-open:rotate-45" aria-hidden="true">+</span>
-            </summary>
-            <p class="text-ink-2 leading-relaxed mt-4">{a}</p>
-          </details>
-        ))}
-      </div>
+      <FaqList items={p.faq} />
     </div>
   </main>
   <Footer t={strings} locale={locale} />
