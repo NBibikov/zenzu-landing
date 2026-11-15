@@ -91,9 +91,9 @@
       "title": "Videos de YouTube",
       "desc": "Mira con transcripción en vivo. Toca una palabra o selecciona una frase — Zenzu la guarda como tarjeta con el contexto completo de la oración y pronunciación nativa.",
       "more": {
-        "what": "Mira un video de YouTube con su transcripción debajo del reproductor. La línea actual sigue al video. Toca una palabra para ver su traducción y guarda la palabra, una frase o la oración completa como tarjeta.",
-        "how": "Zenzu carga los subtítulos que el video ya tiene en el idioma que aprendes. Cada tarjeta conserva la oración de la que salió y su traducción, y «Abrir en el original» te lleva de vuelta a ese momento del video. Puedes repetir una oración en bucle y cambiar la velocidad de reproducción.",
-        "note": "El video necesita subtítulos en el idioma que aprendes. Los videos cuyo autor desactivó la reproducción en otros sitios no se pueden ver en Zenzu."
+        "what": "Mira un video de YouTube con su transcripción debajo del reproductor. La línea que se está diciendo se resalta, y la transcripción se desplaza para mantenerla a la vista. Toca una palabra para ver su traducción y guarda la palabra, una frase o la oración completa como tarjeta.",
+        "how": "Zenzu carga una transcripción del video en el idioma que aprendes, normalmente los subtítulos que el video ya tiene. Cada tarjeta conserva la oración de la que salió y su traducción, y «Abrir en el original» te lleva de vuelta a ese momento del video. Puedes repetir una oración en bucle y cambiar la velocidad de reproducción.",
+        "note": "Para tocar y guardar palabras hace falta una transcripción en el idioma que aprendes; si Zenzu no puede cargarla, la transcripción queda vacía. Los videos cuyo autor desactivó la reproducción en otros sitios no se pueden ver en Zenzu."
       }
     },
     "podcasts": {
@@ -110,8 +110,8 @@
       "desc": "18 mazos elaborados a mano de A1 a C1 — vocabulario cotidiano, negocios, académico, ciencia, expresiones idiomáticas y más. Los nombres se adaptan al idioma de tu interfaz.",
       "more": {
         "what": "Empieza con mazos listos de palabras y frases cotidianas, de A1 a C1: comida, viajes, trabajo, emociones, expresiones idiomáticas, negocios y ciencia. Cada tarjeta tiene una oración de ejemplo, así ves la palabra en contexto desde el primer repaso.",
-        "how": "Cada tarjeta está en nueve idiomas: inglés, alemán, español, francés, portugués, ucraniano, japonés, coreano y chino. El anverso está en el idioma que aprendes y el reverso en tu lengua materna; si tu lengua materna no está en esta lista, el reverso se traduce al añadir el mazo. Puedes filtrar el catálogo por idioma y nivel.",
-        "note": "Algunos mazos existen solo para un idioma, como las tablas de verbos irregulares o los mazos de falsos amigos para inglés y alemán. Los nombres de los mazos aparecen en el idioma de tu interfaz."
+        "how": "En la mayoría de los mazos, cada tarjeta está en nueve idiomas: inglés, alemán, español, francés, portugués, ucraniano, japonés, coreano y chino. El anverso está en el idioma que aprendes y el reverso en tu lengua materna; si tu lengua materna no está en esta lista, el reverso se traduce al añadir el mazo. Puedes filtrar el catálogo por idioma y nivel.",
+        "note": "Algunos mazos existen solo para un idioma, como las tablas de verbos irregulares o los mazos de falsos amigos para inglés y alemán; sus tarjetas tienen menos idiomas. Los nombres de los mazos aparecen en el idioma de tu interfaz."
       }
     },
     "interface": {
@@ -120,16 +120,16 @@
       "more": {
         "what": "Los menús, las indicaciones y las respuestas de Lisa aparecen en tu idioma: inglés, ucraniano, alemán, español, francés o portugués. Las traducciones de las tarjetas van a tu lengua materna, sin pasar por el inglés.",
         "how": "Por defecto, la app sigue la lengua materna de tu perfil. También puedes seguir el idioma de tu dispositivo o elegir uno en Ajustes.",
-        "note": "Puedes aprender inglés, alemán, francés o español. Si la interfaz no existe en tu lengua materna, por ejemplo italiano o polaco, las traducciones siguen yendo a ella y la app se muestra en otro idioma."
+        "note": "Puedes aprender inglés, alemán, francés o español. Si la interfaz no existe en tu lengua materna, por ejemplo italiano o polaco, las traducciones se hacen igualmente a ese idioma y la app se muestra en otro idioma."
       }
     },
     "courses": {
       "title": "Cursos con IA",
       "desc": "Lecciones personalizadas de gramática y vocabulario para inglés, alemán, francés y español — A1 a C1. Los ejercicios se adaptan a tu nivel.",
       "more": {
-        "what": "Avanza por lecciones de gramática y vocabulario de inglés, alemán, francés o español, nivel a nivel de A1 a C1. Las palabras de una lección pueden pasar a tus mazos para repasarlas.",
+        "what": "Avanza por lecciones de gramática y vocabulario de inglés, alemán, francés o español, nivel a nivel de A1 a C1. Las explicaciones están en tu lengua materna cuando existe esa versión y, si no, en inglés. Las palabras de una lección pueden pasar a tus mazos para repasarlas.",
         "how": "Una lección tiene etapas como palabras nuevas, gramática, un diálogo y un resumen, cada una con ejercicios: opción múltiple, completar huecos, emparejar, construir oraciones y dictado. Las lecciones posteriores retoman palabras anteriores con su traducción. Una prueba de nivel corta fija tu nivel; todos los niveles hasta ese quedan abiertos, y sin la prueba empiezas en A1.",
-        "note": "Las lecciones están preparadas de antemano y son las mismas para todos los estudiantes de un nivel."
+        "note": "Las lecciones están preparadas de antemano; no se generan para cada estudiante."
       }
     },
     "srs": {
@@ -154,9 +154,9 @@
       "title": "Importa desde Cualquier Lugar",
       "desc": "Texto, fotos, artículos — pega o fotografía lo que sea. La IA extrae el vocabulario adaptado a tu nivel.",
       "more": {
-        "what": "Pega un texto o el enlace de un artículo, o toma hasta cuatro fotos de una misma página: un libro, un menú, un cartel o notas a mano. Zenzu encuentra las palabras que encajan con tu nivel y te las muestra en una lista. Tú eliges cuáles se convierten en tarjetas.",
-        "how": "Cada palabra llega con la oración en la que aparecía, copiada tal cual de la fuente, y la traducción de esa oración a tu lengua materna. Cada palabra lleva su nivel; la lista muestra primero tu nivel y los superiores. Si aprendes varios idiomas, el propio texto decide a cuál pertenecen las palabras.",
-        "note": "En iOS puedes compartir textos y enlaces desde otras apps a la bandeja de Zenzu e importarlos más tarde."
+        "what": "Pega un texto o el enlace de un artículo, o toma hasta cuatro fotos de una misma página: un libro, un menú, un cartel o notas a mano. Zenzu encuentra las palabras que encajan con el nivel del mazo al que importas y te las muestra en una lista. Tú eliges cuáles se convierten en tarjetas.",
+        "how": "Cada palabra llega con la oración en la que aparecía, copiada de la fuente, y la traducción de esa oración a tu lengua materna; si la fuente no tiene una oración completa, como un menú o un cartel, Zenzu escribe un ejemplo breve. Cada palabra lleva su nivel, y la lista muestra primero el nivel del mazo y los superiores. Si el mazo no tiene un nivel único, Zenzu elige palabras de nivel intermedio y avanzado y muestra todos los niveles.",
+        "note": "Si aprendes varios idiomas, el propio texto decide a cuál pertenecen las palabras. En iOS puedes compartir textos y enlaces desde otras apps a la bandeja de Zenzu e importarlos más tarde."
       }
     }
   },

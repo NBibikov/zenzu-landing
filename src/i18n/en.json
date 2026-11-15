@@ -91,9 +91,9 @@
       "title": "YouTube Videos",
       "desc": "Watch with a live transcript. Tap a word or select a phrase, and Zenzu saves it as a card with full sentence context and native pronunciation.",
       "more": {
-        "what": "Watch a YouTube video with its transcript under the player. The current line follows the video. Tap a word to see its translation, then save the word, a phrase or the whole sentence as a card.",
-        "how": "Zenzu loads the captions that the video already has in the language you learn. Each card keeps the sentence it came from and its translation, and “Open at source” takes you back to that moment in the video. You can repeat one sentence in a loop and change the playback speed.",
-        "note": "The video needs captions in the language you learn. Videos whose owner has turned off playback on other sites cannot play in Zenzu."
+        "what": "Watch a YouTube video with its transcript under the player. The line being spoken is highlighted, and the transcript scrolls to keep it in view. Tap a word to see its translation, then save the word, a phrase or the whole sentence as a card.",
+        "how": "Zenzu loads a transcript of the video in the language you learn, usually the captions the video already has. Each card keeps the sentence it came from and its translation, and “Open at source” takes you back to that moment in the video. You can repeat one sentence in a loop and change the playback speed.",
+        "note": "To tap and save words, you need a transcript in the language you learn; when Zenzu cannot load one, the transcript stays empty. Videos whose owner has turned off playback on other sites cannot play in Zenzu."
       }
     },
     "podcasts": {
@@ -110,8 +110,8 @@
       "desc": "18 hand-curated decks from A1 to C1: everyday essentials, business, academic, science, idioms, and more. Deck names adapt to your interface language.",
       "more": {
         "what": "Start with ready decks of everyday words and phrases, from A1 to C1: food, travel, work, feelings, idioms, business and science. Every card has an example sentence, so you see the word in context from the first review.",
-        "how": "Each card exists in nine languages: English, German, Spanish, French, Portuguese, Ukrainian, Japanese, Korean and Chinese. The front is in the language you learn and the back is in your native language; if your native language is not on this list, the backs are translated when you add the deck. You can filter the catalog by language and level.",
-        "note": "Some decks are for one language only, such as the irregular-verb tables or the false-friend decks for English and German. Deck names show in your interface language."
+        "how": "In most decks, each card exists in nine languages: English, German, Spanish, French, Portuguese, Ukrainian, Japanese, Korean and Chinese. The front is in the language you learn and the back is in your native language; if your native language is not on this list, the backs are translated when you add the deck. You can filter the catalog by language and level.",
+        "note": "Some decks are for one language only, such as the irregular-verb tables or the false-friend decks for English and German; their cards come in fewer languages. Deck names show in your interface language."
       }
     },
     "interface": {
@@ -127,9 +127,9 @@
       "title": "AI Courses",
       "desc": "Personalized grammar and vocabulary lessons for English, German, French, and Spanish, from A1 to C1. Exercises adapt to your level.",
       "more": {
-        "what": "Work through grammar and vocabulary lessons for English, German, French or Spanish, level by level from A1 to C1. Words from a lesson can go into your decks for review.",
+        "what": "Work through grammar and vocabulary lessons for English, German, French or Spanish, level by level from A1 to C1. Explanations are in your native language where that version exists, and in English otherwise. Words from a lesson can go into your decks for review.",
         "how": "A lesson has stages such as new words, grammar, a dialogue and a recap, each with exercises: multiple choice, gap fill, matching, sentence building and dictation. Later lessons bring back earlier words with their translation. A short placement test sets your level; all levels up to it are open, and without the test you start at A1.",
-        "note": "Lessons are prepared in advance and are the same for every learner at a level."
+        "note": "Lessons are prepared in advance; they are not generated for each learner."
       }
     },
     "srs": {
@@ -154,9 +154,9 @@
       "title": "Import from Anywhere",
       "desc": "Text, photos, articles: paste or snap anything. AI extracts vocabulary matched to your level.",
       "more": {
-        "what": "Paste a text or a link to an article, or take up to four photos of one page: a book, a menu, a sign or handwritten notes. Zenzu finds the words that suit your level and shows them as a list. You choose which ones become cards.",
-        "how": "Each word comes with the sentence it stood in, copied from the source without changes, and a translation of that sentence into your native language. Each word is marked with its level; the list shows your level and higher first. If you learn several languages, the text itself decides which language the words belong to.",
-        "note": "On iOS, you can share text and links from other apps to the Zenzu inbox and import them later."
+        "what": "Paste a text or a link to an article, or take up to four photos of one page: a book, a menu, a sign or handwritten notes. Zenzu finds words that match the level of the deck you import into and shows them as a list. You choose which ones become cards.",
+        "how": "Each word comes with the sentence it stood in, copied from the source, and a translation of that sentence into your native language; when the source has no full sentence, such as a menu or a sign, Zenzu writes a short example instead. Each word is marked with its level, and the list shows the deck's level and higher first. If the deck has no single level, Zenzu picks intermediate and advanced words and shows every level.",
+        "note": "If you learn several languages, the text itself decides which language the words belong to. On iOS, you can share text and links from other apps to the Zenzu inbox and import them later."
       }
     }
   },

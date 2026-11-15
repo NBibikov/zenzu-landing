@@ -91,9 +91,9 @@
       "title": "Vídeos do YouTube",
       "desc": "Assista com transcrição ao vivo. Toque numa palavra ou selecione uma frase — o Zenzu salva como cartão com o contexto completo da frase e pronúncia nativa.",
       "more": {
-        "what": "Assista a um vídeo do YouTube com a transcrição embaixo do player. A linha atual acompanha o vídeo. Toque numa palavra para ver a tradução e salve a palavra, uma expressão ou a frase inteira como cartão.",
-        "how": "O Zenzu carrega as legendas que o vídeo já tem no idioma que você aprende. Cada cartão guarda a frase de onde veio e a tradução dela, e “Abrir na origem” leva você de volta a esse momento do vídeo. Você pode repetir uma frase em loop e mudar a velocidade de reprodução.",
-        "note": "O vídeo precisa ter legendas no idioma que você aprende. Vídeos cujo autor desativou a reprodução em outros sites não tocam no Zenzu."
+        "what": "Assista a um vídeo do YouTube com a transcrição embaixo do player. A linha que está sendo falada fica destacada, e a transcrição rola para mantê-la visível. Toque numa palavra para ver a tradução e salve a palavra, uma expressão ou a frase inteira como cartão.",
+        "how": "O Zenzu carrega uma transcrição do vídeo no idioma que você aprende, normalmente as legendas que o vídeo já tem. Cada cartão guarda a frase de onde veio e a tradução dela, e “Abrir na origem” leva você de volta a esse momento do vídeo. Você pode repetir uma frase em loop e mudar a velocidade de reprodução.",
+        "note": "Para tocar nas palavras e salvá-las, é preciso uma transcrição no idioma que você aprende; se o Zenzu não conseguir carregá-la, a transcrição fica vazia. Vídeos cujo autor desativou a reprodução em outros sites não podem ser reproduzidos no Zenzu."
       }
     },
     "podcasts": {
@@ -110,8 +110,8 @@
       "desc": "18 baralhos cuidadosamente seleccionados, de A1 a C1 — essenciais do quotidiano, negócios, académico, ciências, expressões idiomáticas e muito mais. Os nomes adaptam-se ao idioma da sua interface.",
       "more": {
         "what": "Comece com baralhos prontos de palavras e expressões do dia a dia, de A1 a C1: comida, viagens, trabalho, sentimentos, expressões idiomáticas, negócios e ciência. Cada cartão tem uma frase de exemplo, então você vê a palavra em contexto desde a primeira revisão.",
-        "how": "Cada cartão existe em nove idiomas: inglês, alemão, espanhol, francês, português, ucraniano, japonês, coreano e chinês. A frente fica no idioma que você aprende e o verso na sua língua nativa; se a sua língua nativa não estiver nessa lista, o verso é traduzido quando você adiciona o baralho. Você pode filtrar o catálogo por idioma e nível.",
-        "note": "Alguns baralhos existem só para um idioma, como as tabelas de verbos irregulares ou os baralhos de falsos cognatos para inglês e alemão. Os nomes dos baralhos aparecem no idioma da sua interface."
+        "how": "Na maioria dos baralhos, cada cartão existe em nove idiomas: inglês, alemão, espanhol, francês, português, ucraniano, japonês, coreano e chinês. A frente fica no idioma que você aprende e o verso na sua língua nativa; se a sua língua nativa não estiver nessa lista, o verso é traduzido quando você adiciona o baralho. Você pode filtrar o catálogo por idioma e nível.",
+        "note": "Alguns baralhos existem só para um idioma, como as tabelas de verbos irregulares ou os baralhos de falsos cognatos para inglês e alemão; os cartões deles têm menos idiomas. Os nomes dos baralhos aparecem no idioma da sua interface."
       }
     },
     "interface": {
@@ -127,9 +127,9 @@
       "title": "Cursos com IA",
       "desc": "Lições personalizadas de gramática e vocabulário para inglês, alemão, francês e espanhol — A1 a C1. Os exercícios adaptam-se ao seu nível.",
       "more": {
-        "what": "Avance por lições de gramática e vocabulário de inglês, alemão, francês ou espanhol, nível a nível de A1 a C1. As palavras de uma lição podem ir para os seus baralhos para revisão.",
+        "what": "Avance por lições de gramática e vocabulário de inglês, alemão, francês ou espanhol, nível a nível de A1 a C1. As explicações vêm na sua língua nativa quando essa versão existe e, se não, em inglês. As palavras de uma lição podem ir para os seus baralhos para revisão.",
         "how": "Uma lição tem etapas como palavras novas, gramática, um diálogo e uma recapitulação, cada uma com exercícios: múltipla escolha, lacunas, associação, montagem de frases e ditado. As lições seguintes retomam palavras anteriores com a tradução. Um teste de nivelamento curto define seu nível; todos os níveis até ele ficam abertos, e sem o teste você começa no A1.",
-        "note": "As lições são preparadas com antecedência e são as mesmas para todos os alunos de um nível."
+        "note": "As lições são preparadas com antecedência; não são geradas para cada aluno."
       }
     },
     "srs": {
@@ -154,9 +154,9 @@
       "title": "Importe de Qualquer Lugar",
       "desc": "Texto, fotos, artigos — cole ou fotografe qualquer coisa. A IA extrai o vocabulário adequado ao seu nível.",
       "more": {
-        "what": "Cole um texto ou o link de um artigo, ou tire até quatro fotos de uma mesma página: livro, cardápio, placa ou anotações à mão. O Zenzu encontra as palavras que combinam com o seu nível e as mostra numa lista. Você escolhe quais viram cartões.",
-        "how": "Cada palavra vem com a frase em que aparecia, copiada da fonte sem mudanças, e a tradução dessa frase para a sua língua nativa. Cada palavra traz o seu nível; a lista mostra primeiro o seu nível e os acima dele. Se você aprende vários idiomas, o próprio texto decide a qual deles as palavras pertencem.",
-        "note": "No iOS, você pode compartilhar textos e links de outros apps para a Entrada do Zenzu e importá-los depois."
+        "what": "Cole um texto ou o link de um artigo, ou tire até quatro fotos de uma mesma página: livro, cardápio, placa ou anotações à mão. O Zenzu encontra as palavras que combinam com o nível do baralho para o qual você importa e as mostra numa lista. Você escolhe quais viram cartões.",
+        "how": "Cada palavra vem com a frase em que aparecia, copiada da fonte, e a tradução dessa frase para a sua língua nativa; se a fonte não tiver uma frase completa, como um cardápio ou uma placa, o Zenzu escreve um exemplo curto. Cada palavra traz o seu nível, e a lista mostra primeiro o nível do baralho e os acima dele. Se o baralho não tiver um nível único, o Zenzu escolhe palavras de nível intermediário e avançado e mostra todos os níveis.",
+        "note": "Se você aprende vários idiomas, o próprio texto decide a qual deles as palavras pertencem. No iOS, você pode compartilhar textos e links de outros apps para a Entrada do Zenzu e importá-los depois."
       }
     }
   },

@@ -40,7 +40,7 @@ const features = [
           <p class="text-ink-2 text-sm leading-relaxed">{desc}</p>
           <details class="group mt-3">
             <summary class="inline-flex items-center gap-2 cursor-pointer list-none [&::-webkit-details-marker]:hidden zz-kicker text-ink-3 hover:text-ink">
-              <span>{t.features.moreLabel}</span>
+              <span>{t.features.moreLabel}<span class="sr-only">: {title}</span></span>
               <span class="text-moss text-base leading-none transition-transform group-open:rotate-45" aria-hidden="true">+</span>
             </summary>
             <div class="mt-4 space-y-4">

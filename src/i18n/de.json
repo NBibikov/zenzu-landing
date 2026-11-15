@@ -91,9 +91,9 @@
       "title": "YouTube-Videos",
       "desc": "Mit Live-Transkript ansehen. Tippe auf ein Wort oder markiere eine Phrase — Zenzu speichert sie als Karte mit vollständigem Satzkontext und muttersprachlicher Aussprache.",
       "more": {
-        "what": "Sieh dir ein YouTube-Video mit Transkript unter dem Player an. Die aktuelle Zeile läuft mit dem Video mit. Tippe auf ein Wort für die Übersetzung und speichere das Wort, eine Phrase oder den ganzen Satz als Karte.",
-        "how": "Zenzu lädt die Untertitel, die das Video in deiner Lernsprache bereits hat. Jede Karte behält den Satz, aus dem sie stammt, samt Übersetzung, und „An der Quelle öffnen“ bringt dich an genau diese Stelle im Video zurück. Du kannst einen Satz in einer Schleife wiederholen und die Wiedergabegeschwindigkeit ändern.",
-        "note": "Das Video braucht Untertitel in deiner Lernsprache. Videos, deren Urheber die Wiedergabe auf anderen Websites abgeschaltet hat, lassen sich in Zenzu nicht abspielen."
+        "what": "Sieh dir ein YouTube-Video mit Transkript unter dem Player an. Die gerade gesprochene Zeile wird hervorgehoben, und das Transkript scrollt mit, damit sie sichtbar bleibt. Tippe auf ein Wort für die Übersetzung und speichere das Wort, eine Phrase oder den ganzen Satz als Karte.",
+        "how": "Zenzu lädt ein Transkript des Videos in deiner Lernsprache, meist die Untertitel, die das Video bereits hat. Jede Karte behält den Satz, aus dem sie stammt, samt Übersetzung, und „An der Quelle öffnen“ bringt dich an genau diese Stelle im Video zurück. Du kannst einen Satz in einer Schleife wiederholen und die Wiedergabegeschwindigkeit ändern.",
+        "note": "Zum Antippen und Speichern brauchst du ein Transkript in deiner Lernsprache; kann Zenzu keines laden, bleibt das Transkript leer. Videos, deren Urheber die Wiedergabe auf anderen Websites abgeschaltet hat, lassen sich in Zenzu nicht abspielen."
       }
     },
     "podcasts": {
@@ -110,8 +110,8 @@
       "desc": "18 handverlesene Stapel von A1 bis C1 — Alltagsvokabular, Business, Wissenschaft, Redewendungen und mehr. Stapelnamen passen sich deiner Spracheinstellung an.",
       "more": {
         "what": "Starte mit fertigen Stapeln aus Wörtern und Phrasen für den Alltag, von A1 bis C1: Essen, Reisen, Arbeit, Gefühle, Redewendungen, Business und Wissenschaft. Jede Karte hat einen Beispielsatz, so siehst du das Wort ab der ersten Wiederholung im Kontext.",
-        "how": "Jede Karte gibt es in neun Sprachen: Englisch, Deutsch, Spanisch, Französisch, Portugiesisch, Ukrainisch, Japanisch, Koreanisch und Chinesisch. Die Vorderseite steht in deiner Lernsprache, die Rückseite in deiner Muttersprache; fehlt deine Muttersprache in dieser Liste, wird die Rückseite beim Hinzufügen des Stapels übersetzt. Den Katalog kannst du nach Sprache und Niveau filtern.",
-        "note": "Manche Stapel gibt es nur für eine Sprache, etwa die Tabellen unregelmäßiger Verben oder die Stapel zu falschen Freunden für Englisch und Deutsch. Stapelnamen erscheinen in deiner Oberflächensprache."
+        "how": "In den meisten Stapeln gibt es jede Karte in neun Sprachen: Englisch, Deutsch, Spanisch, Französisch, Portugiesisch, Ukrainisch, Japanisch, Koreanisch und Chinesisch. Die Vorderseite steht in deiner Lernsprache, die Rückseite in deiner Muttersprache; fehlt deine Muttersprache in dieser Liste, wird die Rückseite beim Hinzufügen des Stapels übersetzt. Den Katalog kannst du nach Sprache und Niveau filtern.",
+        "note": "Manche Stapel gibt es nur für eine Sprache, etwa die Tabellen unregelmäßiger Verben oder die Stapel zu falschen Freunden für Englisch und Deutsch; ihre Karten gibt es in weniger Sprachen. Stapelnamen erscheinen in deiner Oberflächensprache."
       }
     },
     "interface": {
@@ -127,9 +127,9 @@
       "title": "KI-Kurse",
       "desc": "Personalisierte Grammatik- und Vokabelkurse für Englisch, Deutsch, Französisch und Spanisch — A1 bis C1. Übungen passen sich deinem Niveau an.",
       "more": {
-        "what": "Lerne Grammatik und Wortschatz in Lektionen für Englisch, Deutsch, Französisch oder Spanisch, Niveau für Niveau von A1 bis C1. Wörter aus einer Lektion kannst du zum Wiederholen in deine Stapel übernehmen.",
+        "what": "Lerne Grammatik und Wortschatz in Lektionen für Englisch, Deutsch, Französisch oder Spanisch, Niveau für Niveau von A1 bis C1. Erklärungen kommen in deiner Muttersprache, wenn es diese Fassung gibt, sonst auf Englisch. Wörter aus einer Lektion kannst du zum Wiederholen in deine Stapel übernehmen.",
         "how": "Eine Lektion hat Abschnitte wie neue Wörter, Grammatik, einen Dialog und eine Zusammenfassung, jeweils mit Übungen: Multiple Choice, Lückentext, Zuordnen, Sätze bauen und Diktat. Spätere Lektionen greifen frühere Wörter mit ihrer Übersetzung wieder auf. Ein kurzer Einstufungstest legt dein Niveau fest; alle Stufen bis dahin sind offen, ohne Test beginnst du bei A1.",
-        "note": "Die Lektionen sind vorab erstellt und für alle Lernenden eines Niveaus gleich."
+        "note": "Die Lektionen sind vorab erstellt und werden nicht für jede Person einzeln erzeugt."
       }
     },
     "srs": {
@@ -154,9 +154,9 @@
       "title": "Von überall importieren",
       "desc": "Texte, Fotos, Artikel — kopiere oder fotografiere alles. Die KI extrahiert Vokabeln, die deinem Niveau entsprechen.",
       "more": {
-        "what": "Füge einen Text oder einen Link zu einem Artikel ein, oder mach bis zu vier Fotos einer Seite: Buch, Speisekarte, Schild oder handschriftliche Notizen. Zenzu findet die Wörter, die zu deinem Niveau passen, und zeigt sie als Liste. Du wählst, welche davon Karten werden.",
-        "how": "Jedes Wort kommt mit dem Satz, in dem es stand, unverändert aus der Quelle übernommen, und mit einer Übersetzung dieses Satzes in deine Muttersprache. Jedes Wort ist mit seinem Niveau markiert; die Liste zeigt zuerst dein Niveau und die höheren. Lernst du mehrere Sprachen, entscheidet der Text selbst, zu welcher Sprache die Wörter gehören.",
-        "note": "Unter iOS kannst du Texte und Links aus anderen Apps in den Zenzu-Eingang teilen und später importieren."
+        "what": "Füge einen Text oder einen Link zu einem Artikel ein, oder mach bis zu vier Fotos einer Seite: Buch, Speisekarte, Schild oder handschriftliche Notizen. Zenzu findet Wörter, die zum Niveau des Stapels passen, in den du importierst, und zeigt sie als Liste. Du wählst, welche davon Karten werden.",
+        "how": "Jedes Wort kommt mit dem Satz, in dem es stand, aus der Quelle übernommen, und mit einer Übersetzung dieses Satzes in deine Muttersprache; hat die Quelle keinen ganzen Satz, etwa bei einer Speisekarte oder einem Schild, schreibt Zenzu einen kurzen Beispielsatz. Jedes Wort ist mit seinem Niveau markiert, und die Liste zeigt zuerst das Niveau des Stapels und die höheren. Hat der Stapel kein einheitliches Niveau, wählt Zenzu Wörter der mittleren und höheren Stufen und zeigt alle Niveaus.",
+        "note": "Lernst du mehrere Sprachen, entscheidet der Text selbst, zu welcher Sprache die Wörter gehören. Unter iOS kannst du Texte und Links aus anderen Apps in den Zenzu-Eingang teilen und später importieren."
       }
     }
   },
