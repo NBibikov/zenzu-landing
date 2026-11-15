@@ -15,7 +15,7 @@ rows:
     zenzu: "FSRS-6"
     other: "Its own spaced repetition algorithm; can import Anki decks"
   - feature: "AI"
-    zenzu: "Lisa, an AI coach replying in your language; AI courses A1–C1"
+    zenzu: "Lisa, an AI coach replying in your language; AI courses sorted by CEFR level"
     other: "AI explanations of words in context and sentence breakdowns"
   - feature: "Languages to learn"
     zenzu: "English, German, French, Spanish"

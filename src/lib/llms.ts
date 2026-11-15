@@ -20,7 +20,7 @@ export const PRODUCT_SUMMARY = `# Zenzu
 - Spaced repetition: FSRS-6, the same modern scheduler family used by Anki.
 - Content sources: YouTube with an interactive transcript, AI-transcribed podcasts, articles and pasted text, photos of text (OCR).
 - Phrases are saved with automatic cloze deletion; single words keep the full source sentence.
-- AI courses: grammar and vocabulary lessons for English, German, French and Spanish, CEFR A1 to C1.
+- AI courses: grammar and vocabulary lessons for English, German, French and Spanish, level by level from A1, up to C1 where the lessons are ready.
 - Starter decks: curated decks from A1 to C1 (everyday, business, academic, science, idioms and more).
 - Pronunciation: text-to-speech audio for every word and sentence.
 - MCP server: give Claude, Cursor or another assistant that supports remote MCP servers with a bearer token access to your decks, cards and progress (in the app: Settings → AI agents). Tools, setup and rules: ${SITE}/mcp/
