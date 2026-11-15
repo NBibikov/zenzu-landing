@@ -126,6 +126,16 @@ test('the MCP page description fits 160 characters in every locale', () => {
   }
 })
 
+// The home MCP block is a short pitch for the secondary audience: its intro
+// has two sentences at most. Setup and rules live on the MCP page.
+test('the home MCP intro has at most two sentences in every locale', () => {
+  for (const locale of LOCALES) {
+    const { mcp } = load(locale) as { mcp: { intro: string } }
+    const sentences = mcp.intro.split(/[.!?](?:\s|$)/).filter((part) => part.trim() !== '')
+    assert.ok(sentences.length <= 2, `${locale}: ${sentences.length} sentences`)
+  }
+})
+
 // The name block shows the pronunciation line; the IPA is the same in every locale.
 test('the name block has a pronunciation line with the IPA in every locale', () => {
   for (const locale of LOCALES) {

@@ -180,8 +180,7 @@
   "mcp": {
     "kicker": "Jetzt verfügbar",
     "title": "Deine Daten, wo immer du arbeitest.",
-    "intro": "MCP (Model Context Protocol) ist ein offener Standard, über den ein KI-Assistent Werkzeuge anderer Apps nutzt. Zenzu hat einen eigenen MCP-Server. Verbinde Claude, Cursor oder einen anderen Assistenten mit MCP-Unterstützung, dann kann er deine Stapel, Karten und Fortschritte lesen. Wenn du es erlaubst, kann er auch Karten hinzufügen, bearbeiten und löschen und deine Wiederholungen erfassen.",
-    "scenariosTitle": "Was du fragen kannst",
+    "intro": "Zenzu hat einen eigenen MCP-Server (Model Context Protocol): Verbinde Claude, Cursor oder einen anderen MCP-Assistenten, dann kann er deine Stapel, Karten und Fortschritte lesen. Mit deiner Erlaubnis kann er auch Karten hinzufügen, bearbeiten, löschen und deine Wiederholungen erfassen.",
     "scenarios": {
       "deck": "Füge einen Text oder Artikel ein. Der Assistent wählt die nützlichsten Wörter für dein Niveau und speichert sie als Karten in einem Stapel.",
       "review": "Wiederhole fällige Karten im Chat. Der Assistent fragt eine Karte nach der anderen ab und erfasst jede Antwort mit demselben FSRS-6-Planer wie die App.",
@@ -191,21 +190,6 @@
       "level": "Frag, wo du stehst: dein Niveau, deine Stelle im Kurs und die nächste Lektion."
     },
     "writeMark": "Braucht „Schreiben erlauben“",
-    "stepsTitle": "So verbindest du",
-    "steps": [
-      "Öffne in der App Einstellungen → KI-Agenten und wähle „Erzeugen“. Gib dem Token einen Namen und kopiere es sofort: Die App zeigt es nur einmal.",
-      "Füge Zenzu in deinem Assistenten als MCP-Server hinzu, mit der Server-URL vom selben Bildschirm und deinem Token.",
-      "Frag in normalen Worten. Der Assistent wählt selbst die Zenzu-Werkzeuge, die er braucht."
-    ],
-    "safetyTitle": "Du behältst die Kontrolle",
-    "safety": [
-      "Gib jedem Assistenten ein eigenes persönliches Token mit einem Namen deiner Wahl.",
-      "Ein Token kann nur lesen, außer du aktivierst beim Erstellen „Schreiben erlauben“. Mit Schreibrechten kann der Assistent Stapel und Karten erstellen, bearbeiten und löschen, Karten verschieben, Wiederholungen erfassen und Notizbücher schreiben.",
-      "Widerrufe ein Token jederzeit auf demselben Bildschirm. Es funktioniert dann sofort nicht mehr.",
-      "Du kannst bis zu 10 aktive Tokens haben.",
-      "Ein Assistent sieht nur dein Konto. An die Daten anderer kommt er nicht heran."
-    ],
-    "badge": "In der App: Einstellungen → KI-Agenten",
     "detailsLink": "Alle Werkzeuge, Einrichtung und Regeln"
   },
   "mcpPage": {
@@ -276,6 +260,7 @@
     "rulesTitle": "Regeln",
     "rules": [
       "Jede Anfrage braucht ein persönliches Token im Header Authorization: Bearer zmcp_…. Du erstellst das Token in der App unter Einstellungen → KI-Agenten.",
+      "Gib jedem Assistenten ein eigenes persönliches Token mit einem Namen deiner Wahl.",
       "Ein Token kann nur lesen, außer du aktivierst beim Erstellen „Schreiben erlauben“. Mit Schreibrechten kann der Assistent Stapel und Karten erstellen, bearbeiten und löschen, Karten verschieben, Wiederholungen erfassen und Notizbücher schreiben. Wird ein Stapel gelöscht, sind auch seine Karten weg, und das kann nicht rückgängig gemacht werden.",
       "Beim Erstellen wählst du, wann das Token abläuft: in 30 Tagen, in 90 Tagen, in einem Jahr oder nie. Standard sind 90 Tage. Ein abgelaufenes Token funktioniert nicht mehr.",
       "Du kannst bis zu 10 aktive Tokens haben und bis zu 20 Tokens pro Tag erstellen.",

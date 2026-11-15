@@ -5,23 +5,25 @@ import { MCP_SCENARIOS } from '../../data/mcp'
 interface Props { t: any; locale: Locale }
 const { t, locale } = Astro.props
 
+// The home block is a short pitch for the secondary audience: the first
+// three scenarios only. The setup, the token rules and every tool live on
+// /mcp (McpPage.astro).
+const HOME_SCENARIOS = 3
+
 // The scenarios come from src/data/mcp.ts, so the order and the write mark
 // follow the server data; the strings only carry the words.
-const scenarios = MCP_SCENARIOS.map(({ id, write }) => ({ text: t.mcp.scenarios[id], write }))
-const steps: string[] = t.mcp.steps
-const safety: string[] = t.mcp.safety
+const scenarios = MCP_SCENARIOS.slice(0, HOME_SCENARIOS).map(({ id, write }) => ({ text: t.mcp.scenarios[id], write }))
 ---
 
 <section class="py-24 px-6 bg-paper-2">
   <div class="max-w-3xl mx-auto" data-reveal>
     <p class="zz-kicker text-moss mb-6">{t.mcp.kicker}</p>
-    <h2 class="font-serif text-3xl md:text-4xl text-ink leading-[1.2] mb-6">{t.mcp.title}</h2>
+    <h2 class="font-serif text-3xl md:text-4xl text-ink leading-[1.2] mb-4">{t.mcp.title}</h2>
     <p class="text-ink-2 text-lg leading-relaxed">{t.mcp.intro}</p>
 
-    <h3 class="font-serif text-xl text-ink mt-16 mb-6">{t.mcp.scenariosTitle}</h3>
-    <ul>
+    <ul class="mt-6">
       {scenarios.map(({ text, write }) => (
-        <li class="py-4 border-t border-hairline">
+        <li class="py-3 border-t border-hairline">
           {/* The mark quotes the app's option label: it keeps the app's casing and has no kicker tracking. */}
           {write && <span class="block text-xs font-medium text-ink-3 mb-1">{t.mcp.writeMark}</span>}
           <p class="text-ink-2 leading-relaxed">{text}</p>
@@ -29,32 +31,9 @@ const safety: string[] = t.mcp.safety
       ))}
     </ul>
 
-    <h3 class="font-serif text-xl text-ink mt-16 mb-6">{t.mcp.stepsTitle}</h3>
-    <ol>
-      {steps.map((step, index) => (
-        <li class="flex items-start gap-6 sm:gap-8 py-6 border-t border-hairline">
-          <span class="zz-kicker text-[11px] text-ink-3 tabular-nums leading-none shrink-0 w-6 pt-1.5" aria-hidden="true">
-            {String(index + 1).padStart(2, '0')}
-          </span>
-          <p class="text-ink-2 leading-relaxed">{step}</p>
-        </li>
-      ))}
-    </ol>
-
-    <h3 class="font-serif text-xl text-ink mt-16 mb-6">{t.mcp.safetyTitle}</h3>
-    <ul>
-      {safety.map((item) => (
-        <li class="py-4 border-t border-hairline text-ink-2 leading-relaxed">{item}</li>
-      ))}
-    </ul>
-
-    <div class="mt-12 flex flex-wrap items-center gap-x-6 gap-y-4">
-      <span class="inline-block text-ink-2 text-sm border border-rule rounded-full px-4 py-1.5">
-        {t.mcp.badge}
-      </span>
-      <a href={localePath('/mcp/', locale)} class="text-moss hover:text-ink transition-colors">
-        {t.mcp.detailsLink}<span aria-hidden="true"> →</span>
-      </a>
-    </div>
+    {/* A quiet text link with an arrow, as under the hero button. min-h-11: 44px tap target. */}
+    <a href={localePath('/mcp/', locale)} class="mt-1 inline-flex items-center gap-1.5 min-h-11 text-ink-2 hover:text-ink transition-colors">
+      {t.mcp.detailsLink}<span aria-hidden="true">&rarr;</span>
+    </a>
   </div>
 </section>

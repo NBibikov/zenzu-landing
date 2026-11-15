@@ -180,8 +180,7 @@
   "mcp": {
     "kicker": "Ya disponible",
     "title": "Tus datos, dondequiera que trabajes.",
-    "intro": "MCP (Model Context Protocol) es un estándar abierto que permite a un asistente de IA usar herramientas de otras apps. Zenzu tiene su propio servidor MCP. Conecta Claude, Cursor u otro asistente compatible con MCP y podrá leer tus mazos, tarjetas y progreso. Si lo permites, también podrá añadir, editar y eliminar tarjetas y registrar tus repasos.",
-    "scenariosTitle": "Qué puedes pedir",
+    "intro": "Zenzu tiene su propio servidor MCP (Model Context Protocol): conecta Claude, Cursor u otro asistente compatible con MCP y podrá leer tus mazos, tarjetas y progreso. Si lo permites, también podrá añadir, editar y eliminar tarjetas y registrar tus repasos.",
     "scenarios": {
       "deck": "Pega un texto o un artículo. El asistente elige las palabras más útiles para tu nivel y las guarda como tarjetas en un mazo.",
       "review": "Repasa tus tarjetas pendientes en el chat. El asistente te pregunta una tarjeta cada vez y registra cada respuesta con el mismo planificador FSRS-6 que la app.",
@@ -191,21 +190,6 @@
       "level": "Pregunta dónde estás: tu nivel, tu lugar en el curso y la próxima lección."
     },
     "writeMark": "Requiere «Permitir escritura»",
-    "stepsTitle": "Cómo conectarlo",
-    "steps": [
-      "En la app, abre Ajustes → Agentes IA y elige «Generar». Ponle un nombre al token y cópialo enseguida: la app solo lo muestra una vez.",
-      "En tu asistente, añade Zenzu como servidor MCP con la URL del servidor de esa misma pantalla y tu token.",
-      "Pide lo que quieras con tus palabras. El asistente elige solo las herramientas de Zenzu que necesita."
-    ],
-    "safetyTitle": "Tú tienes el control",
-    "safety": [
-      "Da a cada asistente su propio token personal, con el nombre que elijas.",
-      "Un token solo puede leer, salvo que marques «Permitir escritura» al crearlo. Con escritura, el asistente puede crear, editar y eliminar mazos y tarjetas, mover tarjetas, registrar repasos y escribir cuadernos.",
-      "Revoca un token en cualquier momento en la misma pantalla. Deja de funcionar al instante.",
-      "Puedes tener hasta 10 tokens activos.",
-      "Un asistente solo ve tu cuenta. No puede acceder a los datos de otras personas."
-    ],
-    "badge": "En la app: Ajustes → Agentes IA",
     "detailsLink": "Todas las herramientas, la conexión y las reglas"
   },
   "mcpPage": {
@@ -276,6 +260,7 @@
     "rulesTitle": "Reglas",
     "rules": [
       "Cada solicitud necesita un token personal en el encabezado Authorization: Bearer zmcp_…. El token se crea en la app, en Ajustes → Agentes IA.",
+      "Da a cada asistente su propio token personal, con el nombre que elijas.",
       "Un token solo puede leer, salvo que marques «Permitir escritura» al crearlo. Con escritura, el asistente puede crear, editar y eliminar mazos y tarjetas, mover tarjetas, registrar repasos y escribir cuadernos. Al eliminar un mazo también se eliminan sus tarjetas, y no se puede deshacer.",
       "Al crear un token eliges cuándo caduca: en 30 días, en 90 días, en un año o nunca. Por defecto son 90 días. Un token caducado deja de funcionar.",
       "Puedes tener hasta 10 tokens activos y crear hasta 20 tokens al día.",

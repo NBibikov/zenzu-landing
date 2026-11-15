@@ -180,8 +180,7 @@
   "mcp": {
     "kicker": "Já disponível",
     "title": "Seus dados, onde quer que você trabalhe.",
-    "intro": "MCP (Model Context Protocol) é um padrão aberto que permite a um assistente de IA usar ferramentas de outros apps. O Zenzu tem seu próprio servidor MCP. Conecte o Claude, o Cursor ou outro assistente compatível com MCP, e ele poderá ler seus baralhos, cartões e progresso. Se você permitir, ele também poderá adicionar, editar e excluir cartões e registrar suas revisões.",
-    "scenariosTitle": "O que você pode pedir",
+    "intro": "O Zenzu tem seu servidor MCP (Model Context Protocol): conecte o Claude, o Cursor ou outro assistente MCP, e ele poderá ler seus baralhos, cartões e progresso. Se você permitir, ele poderá também adicionar, editar e excluir cartões e registrar revisões.",
     "scenarios": {
       "deck": "Cole um texto ou um artigo. O assistente escolhe as palavras mais úteis para o seu nível e as salva como cartões em um baralho.",
       "review": "Revise seus cartões pendentes no chat. O assistente pergunta um cartão por vez e registra cada resposta com o mesmo agendador FSRS-6 do app.",
@@ -191,21 +190,6 @@
       "level": "Pergunte onde você está: seu nível, sua posição no curso e a próxima lição."
     },
     "writeMark": "Requer “Permitir gravação”",
-    "stepsTitle": "Como conectar",
-    "steps": [
-      "No app, abra Configurações → Agentes de IA e escolha “Gerar”. Dê um nome ao token e copie-o na hora: o app mostra o token só uma vez.",
-      "No seu assistente, adicione o Zenzu como servidor MCP com a URL do servidor da mesma tela e o seu token.",
-      "Peça com suas próprias palavras. O assistente escolhe sozinho as ferramentas do Zenzu de que precisa."
-    ],
-    "safetyTitle": "Você no controle",
-    "safety": [
-      "Dê a cada assistente um token pessoal próprio, com o nome que você escolher.",
-      "Um token só pode ler, a menos que você marque “Permitir gravação” ao criá-lo. Com gravação, o assistente pode criar, editar e excluir baralhos e cartões, mover cartões, registrar revisões e escrever cadernos.",
-      "Revogue um token a qualquer momento na mesma tela. Ele para de funcionar na hora.",
-      "Você pode ter até 10 tokens ativos.",
-      "Um assistente só vê a sua conta. Ele não acessa os dados de outras pessoas."
-    ],
-    "badge": "No app: Configurações → Agentes de IA",
     "detailsLink": "Todas as ferramentas, a conexão e as regras"
   },
   "mcpPage": {
@@ -276,6 +260,7 @@
     "rulesTitle": "Regras",
     "rules": [
       "Toda requisição precisa de um token pessoal no cabeçalho Authorization: Bearer zmcp_…. Você cria o token no app, em Configurações → Agentes de IA.",
+      "Dê a cada assistente um token pessoal próprio, com o nome que você escolher.",
       "Um token só pode ler, a menos que você marque “Permitir gravação” ao criá-lo. Com gravação, o assistente pode criar, editar e excluir baralhos e cartões, mover cartões, registrar revisões e escrever cadernos. Excluir um baralho também exclui os cartões dele, e não dá para desfazer.",
       "Ao criar um token, você escolhe quando ele expira: em 30 dias, em 90 dias, em um ano ou nunca. O padrão é 90 dias. Um token expirado para de funcionar.",
       "Você pode ter até 10 tokens ativos e criar até 20 tokens por dia.",
