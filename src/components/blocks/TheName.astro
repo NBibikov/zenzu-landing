@@ -14,8 +14,10 @@ const { t } = Astro.props
     <p class="text-ink-2 text-sm tracking-wide mb-6">
       {t.name.pronunciation}
     </p>
-    <p class="text-ink-2 text-lg leading-relaxed">
-      {t.name.body}
-    </p>
+    <div class="space-y-5 text-ink-2 text-lg leading-relaxed">
+      {t.name.paragraphs.map((paragraph: string, index: number) => (
+        <p class={index === 1 ? 'font-serif italic text-ink' : undefined}>{paragraph}</p>
+      ))}
+    </div>
   </div>
 </section>
