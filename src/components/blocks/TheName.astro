@@ -19,5 +19,6 @@ const { t } = Astro.props
         <p class={index === 1 ? 'font-serif italic text-ink' : undefined}>{paragraph}</p>
       ))}
     </div>
+    <p class="font-serif text-2xl md:text-3xl text-ink mt-10">{t.name.closing}</p>
   </div>
 </section>
