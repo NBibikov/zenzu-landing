@@ -89,7 +89,7 @@
     },
     "youtube": {
       "title": "Videos de YouTube",
-      "desc": "Mira con transcripción en vivo. Toca una palabra o selecciona una frase — Zenzu la guarda como tarjeta con el contexto completo de la oración y pronunciación nativa.",
+      "desc": "Mira con transcripción en vivo. Toca una palabra o selecciona una frase — Zenzu la guarda como tarjeta con el contexto completo de la oración y audio de pronunciación.",
       "more": {
         "what": "Mira un video de YouTube con su transcripción debajo del reproductor. La línea que se está diciendo se resalta, y la transcripción se desplaza para mantenerla a la vista. Toca una palabra para ver su traducción y guarda la palabra, una frase o la oración completa como tarjeta.",
         "how": "Zenzu carga una transcripción del video en el idioma que aprendes, normalmente los subtítulos que el video ya tiene. Cada tarjeta conserva la oración de la que salió y su traducción, y «Abrir en el original» te lleva de vuelta a ese momento del video. Puedes repetir una oración en bucle y cambiar la velocidad de reproducción.",
@@ -107,7 +107,7 @@
     },
     "starterDecks": {
       "title": "Mazos iniciales",
-      "desc": "18 mazos elaborados a mano de A1 a C1 — vocabulario cotidiano, negocios, académico, ciencia, expresiones idiomáticas y más. Los nombres se adaptan al idioma de tu interfaz.",
+      "desc": "Mazos elaborados a mano de A1 a C1 — vocabulario cotidiano, negocios, académico, ciencia, expresiones idiomáticas y más. Los nombres se adaptan al idioma de tu interfaz.",
       "more": {
         "what": "Empieza con mazos listos de palabras y frases cotidianas, de A1 a C1: comida, viajes, trabajo, emociones, expresiones idiomáticas, negocios y ciencia. Cada tarjeta tiene una oración de ejemplo, así ves la palabra en contexto desde el primer repaso.",
         "how": "En la mayoría de los mazos, cada tarjeta está en nueve idiomas: inglés, alemán, español, francés, portugués, ucraniano, japonés, coreano y chino. El anverso está en el idioma que aprendes y el reverso en tu lengua materna; si tu lengua materna no está en esta lista, el reverso se traduce al añadir el mazo. Puedes filtrar el catálogo por idioma y nivel.",
@@ -125,7 +125,7 @@
     },
     "courses": {
       "title": "Cursos con IA",
-      "desc": "Lecciones personalizadas de gramática y vocabulario para inglés, alemán, francés y español — A1 a C1. Los ejercicios se adaptan a tu nivel.",
+      "desc": "Lecciones de gramática y vocabulario para inglés, alemán, francés y español — preparadas con antelación y ordenadas por nivel MCER.",
       "more": {
         "what": "Avanza por lecciones de gramática y vocabulario de inglés, alemán, francés o español, nivel a nivel desde A1 y hasta C1 donde las lecciones están listas. Una lección aparece solo cuando hay una versión lista para tu idioma; los cursos de alemán, francés y español también usan la versión en inglés. Así que, por ahora, algunos pares de idiomas tienen solo parte de las lecciones o todavía ninguna. Las palabras de una lección pueden pasar a tus mazos para repasarlas.",
         "how": "Una lección tiene etapas como palabras nuevas, gramática, un diálogo y un resumen, cada una con ejercicios: opción múltiple, completar huecos, emparejar, construir oraciones y dictado. Las lecciones posteriores retoman palabras anteriores con su traducción. Una prueba de nivel corta fija tu nivel; todos los niveles hasta ese quedan abiertos, y sin la prueba empiezas en A1.",
@@ -142,7 +142,7 @@
       }
     },
     "tts": {
-      "title": "Pronunciación Nativa",
+      "title": "Pronunciación para Cada Palabra",
       "desc": "TTS en la nube para cada palabra y frase. Escucha cómo suena desde el primer día.",
       "more": {
         "what": "Escucha cualquier palabra u oración en el idioma que aprendes con una voz en la nube. En los diálogos de las lecciones, cada palabra se resalta mientras suena.",
@@ -152,7 +152,7 @@
     },
     "import": {
       "title": "Importa desde Cualquier Lugar",
-      "desc": "Texto, fotos, artículos — pega o fotografía lo que sea. La IA extrae el vocabulario adaptado a tu nivel.",
+      "desc": "Texto, fotos, artículos — pega o fotografía lo que sea. La IA extrae el vocabulario del nivel de tu mazo.",
       "more": {
         "what": "Pega un texto o el enlace de un artículo, o toma hasta cuatro fotos de una misma página: un libro, un menú, un cartel o notas a mano. Zenzu encuentra las palabras que encajan con el nivel del mazo al que importas y te las muestra en una lista. Tú eliges cuáles se convierten en tarjetas.",
         "how": "Cada palabra llega con la oración en la que aparecía, copiada de la fuente, y la traducción de esa oración a tu lengua materna; si la fuente no tiene una oración completa, como un menú o un cartel, Zenzu escribe un ejemplo breve. Cada palabra lleva su nivel; al principio la lista muestra solo el nivel del mazo y los superiores, y puedes añadir los inferiores. Si el mazo no tiene un nivel único, Zenzu elige palabras de nivel intermedio y avanzado y muestra todos los niveles.",
