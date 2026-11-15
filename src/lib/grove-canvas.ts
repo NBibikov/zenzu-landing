@@ -7,7 +7,9 @@ import {
   buildTree,
   GROVE_TREES,
   INK,
+  keepLeaf,
   layoutTrees,
+  leafStep,
   LEAF_PALETTES,
   seasonFor,
   TEXT_HALF_WIDTH,
@@ -24,6 +26,11 @@ const FRAME_MS = 1000 / 30 // 30 fps limit
 const MAX_DELTA_MS = 50 // a longer gap (pause, slow frame) counts as 50 ms
 const MAX_DPR = 2
 const VISIBLE_RATIO = 0.25 // growth starts when this part of the canvas is visible
+// Frame cost guard: when the grown grove takes longer than FRAME_BUDGET_MS
+// to draw, on average over FRAME_SAMPLES frames, the loop stops and the
+// grove stays still.
+export const FRAME_BUDGET_MS = 12
+export const FRAME_SAMPLES = 10
 // Flank or strip: the same breakpoint as Tailwind `xl` in Hero.astro, which
 // moves the canvas behind the text. One source, so CSS and JS always agree.
 const FLANK_QUERY = '(min-width: 80rem)'
@@ -60,6 +67,23 @@ export function treeGrowth(time: number, growStart: number | null, index: number
 // The time after which every tree is fully grown.
 export function groveGrownAt(growStart: number): number {
   return growStart + (GROVE_TREES.length - 1) * STAGGER_MS + GROW_MS
+}
+
+// Returns a function that takes the draw time of one frame and tells if the
+// average of the last `samples` frames is above `budget` ms. Until it has
+// `samples` frames, it says no.
+export function createFrameCostGuard(
+  budget: number = FRAME_BUDGET_MS,
+  samples: number = FRAME_SAMPLES,
+): (frameMs: number) => boolean {
+  const costs: number[] = []
+  let total = 0
+  return (frameMs) => {
+    costs.push(frameMs)
+    total += frameMs
+    if (costs.length > samples) total -= costs.shift()!
+    return costs.length === samples && total / samples > budget
+  }
 }
 
 // Colour of one leaf. Some leaves (low `mix`) borrow a colour from another
@@ -241,6 +265,8 @@ export function mountGrove(canvas: HTMLCanvasElement, opts: { date?: Date } = {}
   let inView = false
   let raf = 0
   let lastFrame: number | null = null
+  let still = false // set by the frame cost guard: the loop does not run again
+  const overBudget = createFrameCostGuard()
 
   function leafPath(s: number) {
     ctx.beginPath()
@@ -283,7 +309,9 @@ export function mountGrove(canvas: HTMLCanvasElement, opts: { date?: Date } = {}
     const kind = GROVE_TREES[i].kind
     const shrink = season === 'spring' ? 0.8 : 1
     const unit = leafScale(treeSize) * open * shrink
+    const step = leafStep(treeSize, layout)
     for (const spot of shape.leaves) {
+      if (!keepLeaf(spot.leaf, step)) continue
       const hex = leafColor(season, kind, spot.leaf)
       if (!hex) continue
       const s = (3.2 + spot.leaf.s * 2.2) * unit
@@ -415,11 +443,24 @@ export function mountGrove(canvas: HTMLCanvasElement, opts: { date?: Date } = {}
     const dt = Math.min(elapsed, MAX_DELTA_MS)
     sceneTime += dt
     stepFallers(dt)
+    const grown = growStart !== null && sceneTime >= groveGrownAt(growStart)
+    const start = performance.now()
     render()
+    if (grown && overBudget(performance.now() - start)) stopForGood()
+  }
+
+  // The device cannot draw the grown grove in time. Draw it one last time
+  // without fallers, so the canvas shows complete, fully grown trees, and
+  // stop the loop.
+  function stopForGood() {
+    still = true
+    fallers = []
+    render()
+    updateLoop()
   }
 
   function updateLoop() {
-    const run = !reducedMotion && inView && document.visibilityState === 'visible'
+    const run = !reducedMotion && !still && inView && document.visibilityState === 'visible'
     if (run && raf === 0) {
       lastFrame = null // the first frame after a pause adds no time
       raf = requestAnimationFrame(tick)

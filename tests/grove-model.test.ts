@@ -5,12 +5,16 @@ import {
   buildTree,
   GROVE_TREES,
   INK,
+  keepLeaf,
   LEAF_PALETTES,
-  layoutFor,
+  LEAF_SPARSE_SIZE,
+  LEAF_THIN_SIZE,
+  leafStep,
   layoutTrees,
   rng,
   seasonFor,
   type Branch,
+  type Leaf,
 } from '../src/lib/grove-model.ts'
 
 // Date parts are local: the season follows the visitor's local date.
@@ -95,13 +99,8 @@ test('GROVE_TREES lists the five trees', () => {
   )
 })
 
-test('layoutFor switches to flank at 1280 px', () => {
-  assert.equal(layoutFor(1279), 'strip')
-  assert.equal(layoutFor(1280), 'flank')
-})
-
 test('layoutTrees(1440) puts 2 trees left and 3 right, clear of the text column', () => {
-  const slots = layoutTrees(1440)
+  const slots = layoutTrees(1440, 'flank')
   assert.equal(slots.length, 5)
   assert.equal(slots.filter((slot) => slot.x < 0.5).length, 2)
   for (const slot of slots) {
@@ -114,7 +113,7 @@ test('layoutTrees(1440) puts 2 trees left and 3 right, clear of the text column'
 
 test('layoutTrees keeps trees clear of the text column at every flank width', () => {
   for (const width of [1280, 1366, 1440, 1920, 2560]) {
-    const slots = layoutTrees(width)
+    const slots = layoutTrees(width, 'flank')
     assert.equal(slots.length, 5)
     assert.equal(slots.filter((slot) => slot.x < 0.5).length, 2, `width ${width}`)
     for (const slot of slots) {
@@ -140,12 +139,12 @@ test('layoutTrees takes the layout and the column width from the caller', () => 
       )
     }
   }
-  // The layout argument wins over the width.
-  assert.deepEqual(layoutTrees(1440, 'strip'), layoutTrees(390))
+  // The strip does not depend on the width.
+  assert.deepEqual(layoutTrees(1440, 'strip'), layoutTrees(390, 'strip'))
 })
 
 test('layoutTrees(390) lines the trees up in a strip', () => {
-  const slots = layoutTrees(390)
+  const slots = layoutTrees(390, 'strip')
   assert.equal(slots.length, 5)
   slots.forEach((slot, index) => {
     assert.ok(slot.x >= 0.08 && slot.x <= 0.92, `x=${slot.x} is outside [0.08, 0.92]`)
@@ -153,14 +152,47 @@ test('layoutTrees(390) lines the trees up in a strip', () => {
   })
 })
 
-test('layoutTrees uses the strip below 1280 px and sets scale and row', () => {
-  assert.deepEqual(layoutTrees(1279), layoutTrees(390))
-  for (const width of [390, 1279, 1280, 1440]) {
-    for (const slot of layoutTrees(width)) {
+test('layoutTrees gives the same strip at every width and sets scale and row', () => {
+  assert.deepEqual(layoutTrees(1279, 'strip'), layoutTrees(390, 'strip'))
+  for (const [width, layout] of [[390, 'strip'], [1279, 'strip'], [1280, 'flank'], [1440, 'flank']] as const) {
+    for (const slot of layoutTrees(width, layout)) {
       assert.ok(slot.scale > 0 && slot.scale <= 1, `scale ${slot.scale}`)
       assert.ok(slot.row === 0 || slot.row === 1, `row ${slot.row}`)
     }
   }
+})
+
+function allLeaves(branch: Branch): Leaf[] {
+  return [...branch.leaves, ...branch.kids.flatMap(allLeaves)]
+}
+
+test('leafStep thins the leaves of small strip trees only', () => {
+  assert.ok(LEAF_SPARSE_SIZE < LEAF_THIN_SIZE)
+  assert.equal(leafStep(LEAF_THIN_SIZE, 'strip'), 1)
+  assert.equal(leafStep(LEAF_THIN_SIZE - 1, 'strip'), 2)
+  assert.equal(leafStep(LEAF_SPARSE_SIZE, 'strip'), 2)
+  assert.equal(leafStep(LEAF_SPARSE_SIZE - 1, 'strip'), 3)
+  // The flank layout is the desktop look: it always keeps every leaf.
+  for (const size of [20, 42, 76, 200]) assert.equal(leafStep(size, 'flank'), 1)
+})
+
+test('keepLeaf keeps every leaf at step 1 and about one in step otherwise', () => {
+  const leaves = GROVE_TREES.flatMap((spec) => allLeaves(buildTree(spec.seed, spec.maturity).root))
+  assert.ok(leaves.length > 1000)
+  assert.ok(leaves.every((leaf) => keepLeaf(leaf, 1)))
+  for (const step of [2, 3]) {
+    const share = leaves.filter((leaf) => keepLeaf(leaf, step)).length / leaves.length
+    assert.ok(Math.abs(share - 1 / step) < 0.05, `step ${step}: share ${share}`)
+  }
+})
+
+test('keepLeaf depends only on the leaf, so the choice never flickers', () => {
+  const a = allLeaves(buildTree(7, 0.85).root)
+  const b = allLeaves(buildTree(7, 0.85).root)
+  // Same leaves in another order (as when branches finish growing in a
+  // different order): the same leaves are kept.
+  const kept = (leaves: Leaf[]) => leaves.filter((leaf) => keepLeaf(leaf, 3)).map((leaf) => leaf.fall).sort()
+  assert.deepEqual(kept(a), kept([...b].reverse()))
 })
 
 test('LEAF_PALETTES has four palettes of four colours, except bare winter', () => {

@@ -150,16 +150,14 @@ export interface TreeSlot {
   row: 0 | 1
 }
 
-// flank: the grove stands left and right of the text column.
-// strip: all trees stand in one row.
+// flank: the desktop layout. The canvas lies behind the text, and the trees
+// stand left and right of the text column.
+// strip: the canvas is a band below the text. The trees spread over its full
+// width; the back row (row 1) stands a little higher and lighter.
+// The page picks the layout with a CSS breakpoint; the canvas reads it.
 export type GroveLayout = 'flank' | 'strip'
 
-const FLANK_MIN_WIDTH = 1280
 export const TEXT_HALF_WIDTH = 384 // half of the text column (max-w-3xl, 768 px)
-
-export function layoutFor(width: number): GroveLayout {
-  return width >= FLANK_MIN_WIDTH ? 'flank' : 'strip'
-}
 
 interface SlotPlan {
   scale: number
@@ -182,11 +180,10 @@ const SLOT_PLANS: readonly SlotPlan[] = [
 
 // The page decides flank or strip with a CSS breakpoint, and the text column
 // width depends on the root font size. So the canvas passes both in. The
-// defaults (layoutFor(width), a 768 px column) fit a 16 px root font and no
-// scrollbar.
+// default column (768 px) fits a 16 px root font.
 export function layoutTrees(
   width: number,
-  layout: GroveLayout = layoutFor(width),
+  layout: GroveLayout,
   columnHalf: number = TEXT_HALF_WIDTH,
 ): TreeSlot[] {
   if (layout === 'strip') {
@@ -198,4 +195,25 @@ export function layoutTrees(
     scale,
     row,
   }))
+}
+
+// ───────── leaf thinning ─────────
+
+// A small tree in the strip draws only part of its leaves. Its leaves are
+// drawn at a minimum size, so the crown stays full, and the phone draws far
+// fewer paths per frame. The flank layout (desktop) keeps every leaf.
+export const LEAF_THIN_SIZE = 80 // below this tree size in px: every second leaf
+export const LEAF_SPARSE_SIZE = 50 // below this tree size in px: every third leaf
+
+// 1 keeps every leaf, 2 every second leaf, 3 every third leaf.
+export function leafStep(treeSize: number, layout: GroveLayout): 1 | 2 | 3 {
+  if (layout === 'flank' || treeSize >= LEAF_THIN_SIZE) return 1
+  return treeSize >= LEAF_SPARSE_SIZE ? 2 : 3
+}
+
+// The choice uses only a random value of the leaf itself, not its position
+// in a list. So the same leaves stay on screen in every frame, also while
+// the branches grow.
+export function keepLeaf(leaf: Leaf, step: number): boolean {
+  return step <= 1 || Math.floor(leaf.fall * 1_000_003) % step === 0
 }

@@ -3,7 +3,10 @@ import { test } from 'node:test'
 
 import {
   AMBIENT_FALLERS,
+  createFrameCostGuard,
   fitSize,
+  FRAME_BUDGET_MS,
+  FRAME_SAMPLES,
   GROW_MS,
   groveGrownAt,
   leafColor,
@@ -16,7 +19,6 @@ import {
   buildTree,
   GROVE_TREES,
   LEAF_PALETTES,
-  layoutFor,
   layoutTrees,
   TEXT_HALF_WIDTH,
   type Branch,
@@ -104,7 +106,7 @@ test('treeExtent contains the tree shape at any time', () => {
 function canopies(
   width: number,
   height: number,
-  layout: GroveLayout = layoutFor(width),
+  layout: GroveLayout,
   columnHalf = TEXT_HALF_WIDTH,
 ) {
   const slots = layoutTrees(width, layout, columnHalf)
@@ -156,11 +158,35 @@ test('fitSize keeps every canopy clear of the text column in the flank layout', 
 
 test('fitSize keeps the strip inside its canvas', () => {
   for (const width of [342, 768, 1200]) {
-    const { size, boxes } = canopies(width, 140)
+    const { size, boxes } = canopies(width, 140, 'strip')
     assert.ok(size >= 55, `width ${width}: size ${size} is too small`)
     for (const box of boxes) {
       assert.ok(box.x0 >= 0 && box.x1 <= width, `width ${width}: canopy off the canvas`)
       assert.ok(box.top >= 0, `width ${width}: canopy above the canvas`)
     }
   }
+})
+
+test('the frame cost guard waits for FRAME_SAMPLES frames', () => {
+  const overBudget = createFrameCostGuard()
+  for (let n = 1; n < FRAME_SAMPLES; n++) assert.equal(overBudget(100), false, `frame ${n}`)
+  assert.equal(overBudget(100), true)
+})
+
+test('the frame cost guard compares the average of the last FRAME_SAMPLES frames', () => {
+  const overBudget = createFrameCostGuard()
+  // One slow frame among fast ones keeps the average under the budget.
+  for (let n = 1; n < FRAME_SAMPLES; n++) overBudget(2)
+  assert.equal(overBudget(FRAME_BUDGET_MS * 2), false)
+  // Ten frames just over the budget push the average over it.
+  let over = false
+  for (let n = 0; n < FRAME_SAMPLES; n++) over = overBudget(FRAME_BUDGET_MS + 1)
+  assert.equal(over, true)
+})
+
+test('the frame cost guard accepts frames at the budget', () => {
+  const overBudget = createFrameCostGuard()
+  let over = false
+  for (let n = 0; n < FRAME_SAMPLES * 3; n++) over = overBudget(FRAME_BUDGET_MS)
+  assert.equal(over, false)
 })
