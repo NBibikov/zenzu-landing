@@ -202,12 +202,12 @@
   "mcp": {
     "kicker": "Jetzt verfügbar",
     "title": "Deine Daten, wo immer du arbeitest.",
-    "intro": "MCP (Model Context Protocol) ist ein offener Standard, über den ein KI-Assistent Werkzeuge anderer Apps nutzt. Zenzu hat einen eigenen MCP-Server. Verbinde Claude, Cursor oder einen anderen Assistenten mit MCP-Unterstützung, dann kann er deine Stapel, Karten und Fortschritte lesen. Wenn du es erlaubst, kann er auch Karten hinzufügen und deine Wiederholungen erfassen.",
+    "intro": "MCP (Model Context Protocol) ist ein offener Standard, über den ein KI-Assistent Werkzeuge anderer Apps nutzt. Zenzu hat einen eigenen MCP-Server. Verbinde Claude, Cursor oder einen anderen Assistenten mit MCP-Unterstützung, dann kann er deine Stapel, Karten und Fortschritte lesen. Wenn du es erlaubst, kann er auch Karten hinzufügen und bearbeiten und deine Wiederholungen erfassen.",
     "scenariosTitle": "Was du fragen kannst",
     "scenarios": {
       "deck": "Füge einen Text oder Artikel ein. Der Assistent wählt die nützlichsten Wörter für dein Niveau und speichert sie als Karten in einem Stapel.",
       "review": "Wiederhole fällige Karten im Chat. Der Assistent fragt eine Karte nach der anderen ab und erfasst jede Antwort mit demselben FSRS-6-Planer wie die App.",
-      "confused": "Finde die Wörter, die dir durcheinandergeraten. Der Assistent sieht, welche Karten du miteinander verwechselst und welche du immer wieder vergisst.",
+      "confused": "Finde die Wörter, die du durcheinanderbringst. Der Assistent sieht, welche Karten du miteinander verwechselst und welche du immer wieder vergisst.",
       "report": "Hol dir einen Wochenbericht: Wiederholungen, aktive Tage, Problemwörter, deine Stelle im Kurs und ein Schwerpunkt für die nächste Woche.",
       "media": "Finde einen fertigen Wortstapel zu einem Film oder einer Serie und sieh dir seine Karten an.",
       "level": "Frag, wo du stehst: dein Niveau, deine Stelle im Kurs und die nächste Lektion."
@@ -222,7 +222,7 @@
     "safetyTitle": "Du behältst die Kontrolle",
     "safety": [
       "Gib jedem Assistenten ein eigenes persönliches Token mit einem Namen deiner Wahl.",
-      "Ein Token kann nur lesen, außer du setzt beim Erstellen „Schreiben erlauben“.",
+      "Ein Token kann nur lesen, außer du aktivierst beim Erstellen „Schreiben erlauben“. Mit Schreibrechten kann der Assistent Stapel und Karten erstellen, bearbeiten und löschen, Karten verschieben, Wiederholungen erfassen und Notizbücher schreiben.",
       "Widerrufe ein Token jederzeit auf demselben Bildschirm. Es funktioniert dann sofort nicht mehr.",
       "Du kannst bis zu 10 aktive Tokens haben.",
       "Ein Assistent sieht nur dein Konto. An die Daten anderer kommt er nicht heran."

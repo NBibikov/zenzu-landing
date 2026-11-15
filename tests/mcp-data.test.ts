@@ -89,6 +89,11 @@ test('every scenario uses only server tools and prompts', () => {
   }
 })
 
+test('the en copy has one scenario string per scenario id', () => {
+  const en = JSON.parse(readFileSync(new URL('../src/i18n/en.json', import.meta.url), 'utf8'))
+  assert.deepEqual(Object.keys(en.mcp.scenarios).sort(), MCP_SCENARIOS.map((scenario) => scenario.id).sort())
+})
+
 test('a scenario is marked write exactly when it uses a write tool', { skip }, () => {
   const writeTools = serverWriteTools()
   for (const scenario of MCP_SCENARIOS) {

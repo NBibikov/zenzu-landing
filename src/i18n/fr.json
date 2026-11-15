@@ -202,32 +202,32 @@
   "mcp": {
     "kicker": "Disponible",
     "title": "Tes données, où que tu travailles.",
-    "intro": "MCP (Model Context Protocol) est un standard ouvert qui permet à un assistant IA d’utiliser les outils d’autres apps. Zenzu a son propre serveur MCP. Connecte Claude, Cursor ou un autre assistant compatible MCP : il pourra lire tes paquets, tes cartes et ta progression. Si tu l’autorises, il pourra aussi ajouter des cartes et enregistrer tes révisions.",
+    "intro": "MCP (Model Context Protocol) est un standard ouvert qui permet à un assistant IA d'utiliser les outils d'autres apps. Zenzu a son propre serveur MCP. Connecte Claude, Cursor ou un autre assistant compatible MCP : il pourra lire tes paquets, tes cartes et ta progression. Si tu l'autorises, il pourra aussi ajouter et modifier des cartes et enregistrer tes révisions.",
     "scenariosTitle": "Ce que tu peux demander",
     "scenarios": {
-      "deck": "Colle un texte ou un article. L’assistant choisit les mots les plus utiles pour ton niveau et les enregistre comme cartes dans un paquet.",
-      "review": "Révise tes cartes dues dans le chat. L’assistant te pose une carte à la fois et enregistre chaque réponse avec le même planificateur FSRS-6 que l’app.",
-      "confused": "Repère les mots que tu mélanges. L’assistant voit quelles cartes tu confonds entre elles et lesquelles tu oublies sans cesse.",
-      "report": "Reçois un bilan de la semaine : révisions, jours actifs, mots difficiles, ta place dans le cours et un point sur lequel te concentrer ensuite.",
+      "deck": "Colle un texte ou un article. L'assistant choisit les mots les plus utiles pour ton niveau et les enregistre comme cartes dans un paquet.",
+      "review": "Révise tes cartes dues dans le chat. L'assistant te pose une carte à la fois et enregistre chaque réponse avec le même planificateur FSRS-6 que l'app.",
+      "confused": "Repère les mots que tu mélanges. L'assistant voit quelles cartes tu confonds entre elles et lesquelles tu oublies sans cesse.",
+      "report": "Reçois un bilan de la semaine : révisions, jours actifs, mots difficiles, ta place dans le cours et un point sur lequel te concentrer la semaine prochaine.",
       "media": "Trouve un paquet de mots tout prêt pour un film ou une série et parcours ses cartes.",
       "level": "Demande où tu en es : ton niveau, ta place dans le cours et la prochaine leçon."
     },
-    "writeMark": "Nécessite « Autoriser l’écriture »",
+    "writeMark": "Nécessite « Autoriser l'écriture »",
     "stepsTitle": "Comment le connecter",
     "steps": [
-      "Dans l’app, ouvre Paramètres → Agents IA et choisis « Générer ». Donne un nom au jeton, puis copie-le : l’app ne l’affiche qu’une fois.",
-      "Dans ton assistant, ajoute Zenzu comme serveur MCP avec l’URL du serveur affichée sur le même écran et ton jeton.",
-      "Demande avec tes propres mots. L’assistant choisit lui-même les outils Zenzu dont il a besoin."
+      "Dans l'app, ouvre Paramètres → Agents IA et choisis « Générer ». Donne un nom au jeton, puis copie-le : l'app ne l'affiche qu'une fois.",
+      "Dans ton assistant, ajoute Zenzu comme serveur MCP avec l'URL du serveur affichée sur le même écran et ton jeton.",
+      "Demande avec tes propres mots. L'assistant choisit lui-même les outils Zenzu dont il a besoin."
     ],
     "safetyTitle": "Tu gardes le contrôle",
     "safety": [
       "Donne à chaque assistant son propre jeton personnel, avec le nom de ton choix.",
-      "Un jeton peut seulement lire, sauf si tu coches « Autoriser l’écriture » en le créant.",
+      "Un jeton peut seulement lire, sauf si tu coches « Autoriser l'écriture » en le créant. Avec l'écriture, l'assistant peut créer, modifier et supprimer des paquets et des cartes, déplacer des cartes, enregistrer des révisions et écrire des carnets.",
       "Révoque un jeton à tout moment sur le même écran. Il cesse aussitôt de fonctionner.",
-      "Tu peux avoir jusqu’à 10 jetons actifs.",
-      "Un assistant ne voit que ton compte. Il n’a pas accès aux données des autres."
+      "Tu peux avoir jusqu'à 10 jetons actifs.",
+      "Un assistant ne voit que ton compte. Il n'a pas accès aux données des autres."
     ],
-    "badge": "Dans l’app : Paramètres → Agents IA",
+    "badge": "Dans l'app : Paramètres → Agents IA",
     "detailsLink": "Tous les outils, la connexion et les règles"
   },
   "cta": {

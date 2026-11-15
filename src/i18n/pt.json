@@ -202,7 +202,7 @@
   "mcp": {
     "kicker": "Já disponível",
     "title": "Seus dados, onde quer que você trabalhe.",
-    "intro": "MCP (Model Context Protocol) é um padrão aberto que permite a um assistente de IA usar ferramentas de outros apps. O Zenzu tem seu próprio servidor MCP. Conecte o Claude, o Cursor ou outro assistente compatível com MCP, e ele poderá ler seus baralhos, cartões e progresso. Se você permitir, ele também poderá adicionar cartões e registrar suas revisões.",
+    "intro": "MCP (Model Context Protocol) é um padrão aberto que permite a um assistente de IA usar ferramentas de outros apps. O Zenzu tem seu próprio servidor MCP. Conecte o Claude, o Cursor ou outro assistente compatível com MCP, e ele poderá ler seus baralhos, cartões e progresso. Se você permitir, ele também poderá adicionar e editar cartões e registrar suas revisões.",
     "scenariosTitle": "O que você pode pedir",
     "scenarios": {
       "deck": "Cole um texto ou um artigo. O assistente escolhe as palavras mais úteis para o seu nível e as salva como cartões em um baralho.",
@@ -222,7 +222,7 @@
     "safetyTitle": "Você no controle",
     "safety": [
       "Dê a cada assistente um token pessoal próprio, com o nome que você escolher.",
-      "Um token só pode ler, a menos que você marque “Permitir gravação” ao criá-lo.",
+      "Um token só pode ler, a menos que você marque “Permitir gravação” ao criá-lo. Com gravação, o assistente pode criar, editar e excluir baralhos e cartões, mover cartões, registrar revisões e escrever cadernos.",
       "Revogue um token a qualquer momento na mesma tela. Ele para de funcionar na hora.",
       "Você pode ter até 10 tokens ativos.",
       "Um assistente só vê a sua conta. Ele não acessa os dados de outras pessoas."

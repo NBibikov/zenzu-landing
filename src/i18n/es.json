@@ -202,13 +202,13 @@
   "mcp": {
     "kicker": "Ya disponible",
     "title": "Tus datos, dondequiera que trabajes.",
-    "intro": "MCP (Model Context Protocol) es un estándar abierto que permite a un asistente de IA usar herramientas de otras apps. Zenzu tiene su propio servidor MCP. Conecta Claude, Cursor u otro asistente compatible con MCP y podrá leer tus mazos, tarjetas y progreso. Si lo permites, también podrá añadir tarjetas y registrar tus repasos.",
+    "intro": "MCP (Model Context Protocol) es un estándar abierto que permite a un asistente de IA usar herramientas de otras apps. Zenzu tiene su propio servidor MCP. Conecta Claude, Cursor u otro asistente compatible con MCP y podrá leer tus mazos, tarjetas y progreso. Si lo permites, también podrá añadir y editar tarjetas y registrar tus repasos.",
     "scenariosTitle": "Qué puedes pedir",
     "scenarios": {
       "deck": "Pega un texto o un artículo. El asistente elige las palabras más útiles para tu nivel y las guarda como tarjetas en un mazo.",
       "review": "Repasa tus tarjetas pendientes en el chat. El asistente te pregunta una tarjeta cada vez y registra cada respuesta con el mismo planificador FSRS-6 que la app.",
       "confused": "Encuentra las palabras que mezclas. El asistente ve qué tarjetas confundes entre sí y cuáles olvidas una y otra vez.",
-      "report": "Recibe un informe semanal: repasos, días activos, palabras difíciles, tu lugar en el curso y un punto en el que centrarte después.",
+      "report": "Recibe un informe semanal: repasos, días activos, palabras difíciles, tu lugar en el curso y un punto en el que centrarte la próxima semana.",
       "media": "Encuentra un mazo de palabras ya hecho para una película o una serie y revisa sus tarjetas.",
       "level": "Pregunta dónde estás: tu nivel, tu lugar en el curso y la próxima lección."
     },
@@ -222,7 +222,7 @@
     "safetyTitle": "Tú tienes el control",
     "safety": [
       "Da a cada asistente su propio token personal, con el nombre que elijas.",
-      "Un token solo puede leer, salvo que marques «Permitir escritura» al crearlo.",
+      "Un token solo puede leer, salvo que marques «Permitir escritura» al crearlo. Con escritura, el asistente puede crear, editar y eliminar mazos y tarjetas, mover tarjetas, registrar repasos y escribir cuadernos.",
       "Revoca un token en cualquier momento en la misma pantalla. Deja de funcionar al instante.",
       "Puedes tener hasta 10 tokens activos.",
       "Un asistente solo ve tu cuenta. No puede acceder a los datos de otras personas."

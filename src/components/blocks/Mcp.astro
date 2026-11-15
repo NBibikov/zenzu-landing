@@ -22,7 +22,8 @@ const safety: string[] = t.mcp.safety
     <ul>
       {scenarios.map(({ text, write }) => (
         <li class="py-4 border-t border-hairline">
-          {write && <span class="block zz-kicker text-ink-3 mb-1">{t.mcp.writeMark}</span>}
+          {/* normal-case: the mark quotes the app's option label, so it keeps the app's casing. */}
+          {write && <span class="block zz-kicker normal-case text-ink-3 mb-1">{t.mcp.writeMark}</span>}
           <p class="text-ink-2 leading-relaxed">{text}</p>
         </li>
       ))}
