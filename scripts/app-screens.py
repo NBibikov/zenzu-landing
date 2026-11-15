@@ -14,6 +14,9 @@ phone. The rows are measured on a 1320x2868 iPhone Pro Max capture: the
 status bar ends at y=125, the app header starts at y=240 and the tab bar
 ends at y=2740. The crop keeps a margin of paper on both sides. Use
 captures of that size: other devices have a different status bar.
+
+Set SCREENS_OUT to write into another directory, for example
+public/screens/uk for the Ukrainian set.
 """
 import os, sys
 from PIL import Image
@@ -21,7 +24,8 @@ from PIL import Image
 REF_W, REF_H = 1320, 2868
 CROP_TOP, CROP_BOTTOM = 180, 2790
 SIZES = {'': 660, '-sm': 440}
-OUT = os.path.join(os.path.dirname(__file__), '..', 'public', 'screens')
+OUT = os.environ.get('SCREENS_OUT') or os.path.join(
+    os.path.dirname(__file__), '..', 'public', 'screens')
 
 
 def prepare(name, path):
