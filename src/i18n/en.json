@@ -180,8 +180,7 @@
   "mcp": {
     "kicker": "Available now",
     "title": "Your data, wherever you work.",
-    "intro": "MCP (Model Context Protocol) is an open standard that lets an AI assistant use tools from other apps. Zenzu has its own MCP server. Connect Claude, Cursor or another assistant that supports MCP, and it can read your decks, cards and progress. If you allow it, it can also add, edit and delete cards and record your reviews.",
-    "scenariosTitle": "What you can ask for",
+    "intro": "Zenzu has its own MCP (Model Context Protocol) server: connect Claude, Cursor or another assistant that supports MCP, and it can read your decks, cards and progress. If you allow it, it can also add, edit and delete cards and record your reviews.",
     "scenarios": {
       "deck": "Paste a text or an article. The assistant picks the most useful words for your level and saves them as cards in a deck.",
       "review": "Review your due cards in the chat. The assistant asks one card at a time and records each answer with the same FSRS-6 scheduler as the app.",
@@ -191,21 +190,6 @@
       "level": "Ask where you stand: your level, your place in the course and the next lesson."
     },
     "writeMark": "Needs “Allow writes”",
-    "stepsTitle": "How to connect",
-    "steps": [
-      "In the app, open Settings → AI agents and choose Generate. Give the token a name, then copy it: the app shows it only once.",
-      "In your assistant, add Zenzu as an MCP server with the server URL from the same screen and your token.",
-      "Ask in plain words. The assistant picks the Zenzu tools it needs."
-    ],
-    "safetyTitle": "You stay in control",
-    "safety": [
-      "Give each assistant its own personal token, with a name you choose.",
-      "A token can only read, unless you tick “Allow writes” when you create it. Writing lets the assistant create, edit and delete decks and cards, move cards, record reviews and write notebooks.",
-      "Revoke a token at any time on the same screen. It stops working at once.",
-      "You can have up to 10 active tokens.",
-      "An assistant sees only your account. It cannot reach other people's data."
-    ],
-    "badge": "In the app: Settings → AI agents",
     "detailsLink": "All tools, setup and rules"
   },
   "mcpPage": {
@@ -276,6 +260,7 @@
     "rulesTitle": "Rules",
     "rules": [
       "Every request needs a personal token in the header Authorization: Bearer zmcp_…. You create the token in the app under Settings → AI agents.",
+      "Give each assistant its own personal token, with a name you choose.",
       "A token can only read, unless you tick “Allow writes” when you create it. Writing lets the assistant create, edit and delete decks and cards, move cards, record reviews and write notebooks. Deleting a deck also deletes its cards and cannot be undone.",
       "When you create a token, you choose when it expires: in 30 days, in 90 days, in a year or never. The default is 90 days. An expired token stops working.",
       "You can have up to 10 active tokens and create up to 20 tokens a day.",
