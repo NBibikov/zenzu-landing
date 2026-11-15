@@ -155,7 +155,7 @@ export interface TreeSlot {
 export type GroveLayout = 'flank' | 'strip'
 
 const FLANK_MIN_WIDTH = 1280
-const TEXT_HALF_WIDTH = 384 // half of the text column (max-w-3xl, 768 px)
+export const TEXT_HALF_WIDTH = 384 // half of the text column (max-w-3xl, 768 px)
 
 export function layoutFor(width: number): GroveLayout {
   return width >= FLANK_MIN_WIDTH ? 'flank' : 'strip'
@@ -173,11 +173,11 @@ interface SlotPlan {
 // 1280 px a side is 256 px wide, so edge 0.28 is 72 px from the column: the
 // tree centre keeps the 40 px minimum gap at every flank width.
 const SLOT_PLANS: readonly SlotPlan[] = [
-  { scale: 1, row: 0, side: -1, edge: 0.35, stripX: 0.1 },
-  { scale: 0.75, row: 1, side: 1, edge: 0.28, stripX: 0.3 },
+  { scale: 1, row: 0, side: -1, edge: 0.35, stripX: 0.16 },
+  { scale: 0.75, row: 1, side: 1, edge: 0.28, stripX: 0.33 },
   { scale: 0.9, row: 0, side: 1, edge: 0.52, stripX: 0.5 },
-  { scale: 0.7, row: 1, side: -1, edge: 0.72, stripX: 0.7 },
-  { scale: 0.55, row: 0, side: 1, edge: 0.76, stripX: 0.9 },
+  { scale: 0.7, row: 1, side: -1, edge: 0.72, stripX: 0.67 },
+  { scale: 0.55, row: 0, side: 1, edge: 0.76, stripX: 0.84 },
 ]
 
 export function layoutTrees(width: number): TreeSlot[] {
