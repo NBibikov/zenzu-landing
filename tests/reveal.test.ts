@@ -44,7 +44,12 @@ test('the layout sets html.js before any other script and reveals once', () => {
   const firstScript = layout.indexOf('<script')
   assert.ok(firstScript > 0)
   assert.match(layout.slice(firstScript), /^<script is:inline>document\.documentElement\.classList\.add\('js'\)<\/script>/)
-  assert.match(layout, /threshold: 0\.15/)
+  // A ratio threshold would never fire for a block taller than the
+  // viewport divided by the ratio, so the trigger must not use one.
+  assert.match(layout, /threshold: 0,/)
+  assert.match(layout, /rootMargin: '0px 0px -10% 0px'/)
+  assert.doesNotMatch(layout, /threshold: 0\.\d/)
+  assert.match(layout, /!\('IntersectionObserver' in window\)/)
   assert.match(layout, /classList\.add\('is-in'\)/)
   assert.match(layout, /observer\.unobserve\(entry\.target\)/)
 })

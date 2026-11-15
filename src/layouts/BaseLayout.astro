@@ -105,7 +105,9 @@ const socialTitle = ogTitle ?? title
     <slot />
 
     <!-- Section reveal: each [data-reveal] block fades in once, the first
-         time it scrolls into view, then stays. -->
+         time its top edge is 10% inside the viewport, then stays. The rule
+         does not depend on block height: a ratio threshold never fires for
+         a block taller than the viewport divided by the ratio. -->
     <script is:inline>
       (() => {
         const blocks = document.querySelectorAll('[data-reveal]')
@@ -119,7 +121,7 @@ const socialTitle = ogTitle ?? title
             entry.target.classList.add('is-in')
             observer.unobserve(entry.target)
           }
-        }, { threshold: 0.15 })
+        }, { threshold: 0, rootMargin: '0px 0px -10% 0px' })
         blocks.forEach((block) => observer.observe(block))
       })()
     </script>
