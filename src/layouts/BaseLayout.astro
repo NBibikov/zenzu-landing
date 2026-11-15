@@ -40,6 +40,9 @@ const socialTitle = ogTitle ?? title
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="generator" content={Astro.generator} />
+    <!-- Marks that scripts run. The hidden start of the section reveal
+         applies only under html.js, so no script means visible content. -->
+    <script is:inline>document.documentElement.classList.add('js')</script>
 
     <!-- SEO -->
     <title>{title}</title>
@@ -100,5 +103,25 @@ const socialTitle = ogTitle ?? title
   </head>
   <body class="bg-paper text-ink font-sans antialiased">
     <slot />
+
+    <!-- Section reveal: each [data-reveal] block fades in once, the first
+         time it scrolls into view, then stays. -->
+    <script is:inline>
+      (() => {
+        const blocks = document.querySelectorAll('[data-reveal]')
+        if (!('IntersectionObserver' in window)) {
+          blocks.forEach((block) => block.classList.add('is-in'))
+          return
+        }
+        const observer = new IntersectionObserver((entries) => {
+          for (const entry of entries) {
+            if (!entry.isIntersecting) continue
+            entry.target.classList.add('is-in')
+            observer.unobserve(entry.target)
+          }
+        }, { threshold: 0.15 })
+        blocks.forEach((block) => observer.observe(block))
+      })()
+    </script>
   </body>
 </html>
