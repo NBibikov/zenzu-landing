@@ -8,16 +8,16 @@ const { t } = Astro.props
 // eye gets a landing point per item without a second colour entering the
 // page. Each feature used to be a shadowed tile led by an emoji; the
 // redesign has no emoji and no cards, but removing the mark entirely left
-// nine headings reading as one undifferentiated block.
+// the headings reading as one undifferentiated block.
+// Interface languages and pronunciation are not rows of their own: they sit
+// as one line of plain facts under the list (features.also).
 const features = [
   { glyph: 'coach', ...t.features.lisa },
   { glyph: 'video', ...t.features.youtube },
   { glyph: 'podcast', ...t.features.podcasts },
   { glyph: 'decks', ...t.features.starterDecks },
-  { glyph: 'globe', ...t.features.interface },
   { glyph: 'book', ...t.features.courses },
   { glyph: 'clock', ...t.features.srs },
-  { glyph: 'sound', ...t.features.tts },
   { glyph: 'inbox', ...t.features.import },
 ]
 ---
@@ -30,23 +30,31 @@ const features = [
       <p class="text-ink-2 text-lg leading-relaxed">{t.features.subtitle}</p>
     </div>
 
-    <!-- items-start: an opened detail grows its own cell only; the other
-         cards in the row keep their height. The body opens without motion. -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 items-start">
+    <!-- One full-width row per feature. The detail opens below its own row
+         across the whole container, so an open item leaves no empty paper
+         beside it. All rows share name="feature": where the browser supports
+         it, opening one closes the others (exclusive accordion, no script). The body opens without motion. -->
+    <div class="border-b border-hairline">
       {features.map(({ glyph, title, desc, more }) => (
-        <div class="py-6 border-t border-hairline">
-          <Glyph name={glyph} size={32} class="text-moss mb-5" />
-          <h3 class="font-serif text-lg text-ink mb-2">{title}</h3>
-          <p class="text-ink-2 text-sm leading-relaxed">{desc}</p>
-          <details class="group mt-3">
-            <summary class="inline-flex items-center gap-2 py-3.5 -my-3.5 cursor-pointer list-none [&::-webkit-details-marker]:hidden zz-kicker text-ink-3 hover:text-ink">
-              <span>{t.features.moreLabel}<span class="sr-only">: {title}</span></span>
+        <div class="relative py-8 border-t border-hairline">
+          <div class="flex gap-5 md:pr-48">
+            <Glyph name={glyph} size={32} class="text-moss shrink-0" />
+            <div class="max-w-2xl">
+              <h3 class="font-serif text-lg text-ink mb-2">{title}</h3>
+              <p class="text-ink-2 text-sm md:text-base leading-relaxed">{desc}</p>
+            </div>
+          </div>
+          <details name="feature" class="group">
+            <!-- From md up the toggle sits at the right end of the row; on
+                 phones it follows the description. min-h-11: 44px tap target. -->
+            <summary class="inline-flex items-center gap-2 min-h-11 mt-2 ml-[52px] md:ml-0 md:mt-0 md:absolute md:top-7 md:right-0 cursor-pointer list-none [&::-webkit-details-marker]:hidden zz-kicker text-ink-3 hover:text-ink">
+              <span><span class="group-open:hidden">{t.features.moreLabel}</span><span class="hidden group-open:inline">{t.features.lessLabel}</span><span class="sr-only">: {title}</span></span>
               <span class="text-moss text-base leading-none transition-transform group-open:rotate-45" aria-hidden="true">+</span>
             </summary>
-            <div class="mt-4 space-y-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10 mt-6 md:mt-8">
               {(['what', 'how', 'note'] as const).map((part) => (
-                <p class="text-ink-2 text-sm leading-relaxed">
-                  <span class="block zz-kicker text-ink-3 mb-1">{t.features.labels[part]}</span>
+                <p class="text-ink-2 text-sm md:text-base leading-relaxed">
+                  <span class="block zz-kicker text-ink-3 mb-2">{t.features.labels[part]}</span>
                   {more[part]}
                 </p>
               ))}
@@ -55,5 +63,6 @@ const features = [
         </div>
       ))}
     </div>
+    <p class="mt-6 text-ink-3 text-sm leading-relaxed">{t.features.also}</p>
   </div>
 </section>

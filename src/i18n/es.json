@@ -80,6 +80,7 @@
     "title": "Todo lo que necesitas para aprender",
     "subtitle": "Una sola app para todo tu contenido de aprendizaje de idiomas. Importa lo que te gusta, aprende lo que importa.",
     "moreLabel": "Más detalles",
+    "lessLabel": "Menos detalles",
     "labels": {
       "what": "Qué obtienes",
       "how": "Cómo funciona",
@@ -121,15 +122,6 @@
         "note": "Algunos mazos existen solo para ciertos idiomas, como las tablas de verbos irregulares o los mazos de falsos amigos para inglés y alemán; sus tarjetas tienen menos idiomas. Los nombres de los mazos aparecen en el idioma de tu interfaz."
       }
     },
-    "interface": {
-      "title": "Interfaz en 6 idiomas",
-      "desc": "Usa la app en inglés, ucraniano, alemán, español, francés o portugués. Aprende desde tu lengua materna, no a través del inglés.",
-      "more": {
-        "what": "Los menús, las indicaciones y las respuestas de Lisa aparecen en tu idioma: inglés, ucraniano, alemán, español, francés o portugués. Las traducciones de las tarjetas van a tu lengua materna, sin pasar por el inglés.",
-        "how": "Por defecto, la app sigue la lengua materna de tu perfil. También puedes seguir el idioma de tu dispositivo o elegir uno en Ajustes.",
-        "note": "Puedes aprender inglés, alemán, francés o español. Si la interfaz no existe en tu lengua materna, por ejemplo italiano o polaco, las traducciones se hacen igualmente a ese idioma y la app se muestra en otro idioma."
-      }
-    },
     "courses": {
       "title": "Cursos con IA",
       "desc": "Lecciones de gramática y vocabulario para inglés, alemán, francés y español — preparadas con antelación y ordenadas por nivel MCER.",
@@ -148,15 +140,6 @@
         "note": "El calendario busca mostrar una tarjeta cuando tu probabilidad de recordarla baja a cerca del 90 %. Zenzu usa los parámetros predeterminados del algoritmo de código abierto FSRS-6."
       }
     },
-    "tts": {
-      "title": "Pronunciación para Cada Palabra",
-      "desc": "TTS en la nube para cada palabra y frase. Escucha cómo suena desde el primer día.",
-      "more": {
-        "what": "Escucha cualquier palabra u oración en el idioma que aprendes con una voz en la nube. En los diálogos de las lecciones, cada palabra se resalta mientras suena.",
-        "how": "Zenzu genera el audio en el servidor y lo guarda en caché; el audio de una tarjeta se carga en cuanto aparece. Tú eliges la velocidad de escucha, y el mismo clip se reproduce a esa velocidad.",
-        "note": "Las voces son sintéticas, no grabaciones de hablantes nativos. Si el audio en la nube está desactivado o no disponible, la app usa la voz de tu dispositivo."
-      }
-    },
     "import": {
       "title": "Importa desde Cualquier Lugar",
       "desc": "Texto, fotos, artículos — pega o fotografía lo que sea. La IA extrae el vocabulario del nivel de tu mazo.",
@@ -165,7 +148,8 @@
         "how": "Cada palabra llega con la oración en la que aparecía, copiada de la fuente, y la traducción de esa oración a tu lengua materna; si la fuente no tiene una oración completa, como un menú o un cartel, Zenzu escribe un ejemplo breve. Cada palabra lleva su nivel; al principio la lista muestra solo el nivel del mazo y los superiores, y puedes añadir los inferiores. Si el mazo no tiene un nivel único, Zenzu elige palabras de nivel intermedio y avanzado y muestra todos los niveles.",
         "note": "Si aprendes varios idiomas, el propio texto decide a cuál pertenecen las palabras. En iOS puedes compartir textos y enlaces desde otras apps a la bandeja de Zenzu e importarlos más tarde."
       }
-    }
+    },
+    "also": "Además: interfaz en 6 idiomas · voz en la nube para cada palabra y frase"
   },
   "forWhom": {
     "title": "Para quienes toman los idiomas en serio",

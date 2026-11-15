@@ -80,6 +80,7 @@
     "title": "Alles, was du zum Lernen brauchst",
     "subtitle": "Eine App für alle deine Inhalte zum Sprachenlernen. Importiere, was du liebst, lerne, was wichtig ist.",
     "moreLabel": "Mehr dazu",
+    "lessLabel": "Weniger",
     "labels": {
       "what": "Was du bekommst",
       "how": "So funktioniert es",
@@ -121,15 +122,6 @@
         "note": "Manche Stapel gibt es nur für bestimmte Sprachen, etwa die Tabellen unregelmäßiger Verben oder die Stapel zu falschen Freunden für Englisch und Deutsch; ihre Karten gibt es in weniger Sprachen. Stapelnamen erscheinen in deiner Oberflächensprache."
       }
     },
-    "interface": {
-      "title": "Oberfläche in 6 Sprachen",
-      "desc": "Nutze die App auf Englisch, Ukrainisch, Deutsch, Spanisch, Französisch oder Portugiesisch. Lerne aus deiner Muttersprache heraus, nicht über Englisch.",
-      "more": {
-        "what": "Menüs, Hinweise und Lisas Antworten erscheinen in deiner Sprache: Englisch, Ukrainisch, Deutsch, Spanisch, Französisch oder Portugiesisch. Übersetzungen auf den Karten stehen in deiner Muttersprache, so lernst du ohne Umweg über Englisch.",
-        "how": "Standardmäßig folgt die App der Muttersprache in deinem Profil. Du kannst auch der Sprache deines Geräts folgen oder eine Sprache in den Einstellungen wählen.",
-        "note": "Lernen kannst du Englisch, Deutsch, Französisch oder Spanisch. Gibt es die Oberfläche nicht in deiner Muttersprache, etwa Italienisch oder Polnisch, kommen die Übersetzungen trotzdem in dieser Sprache, und die App zeigt eine andere Oberflächensprache."
-      }
-    },
     "courses": {
       "title": "KI-Kurse",
       "desc": "Grammatik- und Vokabellektionen für Englisch, Deutsch, Französisch und Spanisch — im Voraus vorbereitet und nach GER-Niveau sortiert.",
@@ -148,15 +140,6 @@
         "note": "Der Zeitplan soll eine Karte dann zeigen, wenn die Chance, sie abzurufen, auf etwa 90 % sinkt. Zenzu nutzt die Standardparameter des Open-Source-Algorithmus FSRS-6."
       }
     },
-    "tts": {
-      "title": "Aussprache für jedes Wort",
-      "desc": "Cloud-TTS für jedes Wort und jeden Satz. Höre vom ersten Tag an, wie es klingt.",
-      "more": {
-        "what": "Spiel jedes Wort und jeden Satz in deiner Lernsprache mit einer Cloud-Stimme ab. In den Dialogen der Lektionen wird jedes Wort hervorgehoben, während es gesprochen wird.",
-        "how": "Zenzu erzeugt das Audio auf dem Server und speichert es zwischen; der Ton einer Karte lädt, sobald die Karte erscheint. Die Hörgeschwindigkeit stellst du selbst ein, und derselbe Clip läuft in diesem Tempo.",
-        "note": "Die Stimmen sind synthetisch, keine Aufnahmen von Muttersprachlern. Ist Cloud-Audio aus oder nicht verfügbar, nutzt die App die Stimme deines Geräts."
-      }
-    },
     "import": {
       "title": "Von überall importieren",
       "desc": "Texte, Fotos, Artikel — kopiere oder fotografiere alles. Die KI extrahiert Vokabeln auf dem Niveau deines Stapels.",
@@ -165,7 +148,8 @@
         "how": "Jedes Wort kommt mit dem Satz, in dem es stand, aus der Quelle übernommen, und mit einer Übersetzung dieses Satzes in deine Muttersprache; hat die Quelle keinen ganzen Satz, etwa bei einer Speisekarte oder einem Schild, schreibt Zenzu einen kurzen Beispielsatz. Jedes Wort ist mit seinem Niveau markiert; zuerst zeigt die Liste nur das Niveau des Stapels und die höheren, die niedrigeren kannst du dazunehmen. Hat der Stapel kein einheitliches Niveau, wählt Zenzu Wörter der mittleren und höheren Stufen und zeigt alle Niveaus.",
         "note": "Lernst du mehrere Sprachen, entscheidet der Text selbst, zu welcher Sprache die Wörter gehören. Unter iOS kannst du Texte und Links aus anderen Apps in den Zenzu-Eingang teilen und später importieren."
       }
-    }
+    },
+    "also": "Außerdem: Oberfläche in 6 Sprachen · Cloud-Sprachausgabe für jedes Wort und jeden Satz"
   },
   "forWhom": {
     "title": "Für alle, die Sprachen ernstnehmen",

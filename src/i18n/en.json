@@ -80,6 +80,7 @@
     "title": "Everything you need to learn",
     "subtitle": "One app for all your language learning content. Import what you love, learn what matters.",
     "moreLabel": "More",
+    "lessLabel": "Less",
     "labels": {
       "what": "What you get",
       "how": "How it works",
@@ -121,15 +122,6 @@
         "note": "Some decks are made for particular languages, such as the irregular-verb tables or the false-friend decks for English and German; their cards come in fewer languages. Deck names show in your interface language."
       }
     },
-    "interface": {
-      "title": "Interface in 6 Languages",
-      "desc": "Use the app in English, Ukrainian, German, Spanish, French, or Portuguese. Learn from your native tongue, not through English.",
-      "more": {
-        "what": "Menus, hints and Lisa's replies appear in your language: English, Ukrainian, German, Spanish, French or Portuguese. Card translations go into your native language, so you learn without English in between.",
-        "how": "By default, the app follows the native language in your profile. You can also follow the language of your device or choose one in Settings.",
-        "note": "You can learn English, German, French or Spanish. If the interface does not exist in your native language, for example Italian or Polish, translations still go into it, and the app shows another interface language."
-      }
-    },
     "courses": {
       "title": "AI Courses",
       "desc": "Grammar and vocabulary lessons for English, German, French, and Spanish, prepared in advance and sorted by CEFR level.",
@@ -148,15 +140,6 @@
         "note": "The schedule aims to show a card when your chance of recalling it drops to about 90%. Zenzu uses the default parameters of the open-source FSRS-6 algorithm."
       }
     },
-    "tts": {
-      "title": "Pronunciation for Every Word",
-      "desc": "Cloud TTS for every word and sentence. Hear how it sounds from day one.",
-      "more": {
-        "what": "Play any word or sentence in the language you learn with a cloud voice. In lesson dialogues, each word is highlighted as it is spoken.",
-        "how": "Zenzu creates the audio on the server and caches it; the audio of a card loads when the card appears. You set the listening speed, and the same clip plays at that speed.",
-        "note": "The voices are synthetic, not recordings of native speakers. When cloud audio is off or not available, the app uses the voice of your device."
-      }
-    },
     "import": {
       "title": "Import from Anywhere",
       "desc": "Text, photos, articles: paste or snap anything. AI extracts vocabulary at the level of your deck.",
@@ -165,7 +148,8 @@
         "how": "Each word comes with the sentence it stood in, copied from the source, and a translation of that sentence into your native language; when the source has no full sentence, such as a menu or a sign, Zenzu writes a short example instead. Each word is marked with its level; at first the list shows only the deck's level and higher, and you can add the lower levels. If the deck has no single level, Zenzu picks intermediate and advanced words and shows every level.",
         "note": "If you learn several languages, the text itself decides which language the words belong to. On iOS, you can share text and links from other apps to the Zenzu inbox and import them later."
       }
-    }
+    },
+    "also": "Also: the app in 6 interface languages · cloud voice for every word and sentence"
   },
   "forWhom": {
     "title": "For those who take language seriously",
