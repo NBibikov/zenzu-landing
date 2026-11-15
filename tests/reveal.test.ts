@@ -52,6 +52,21 @@ test('print shows every block and stroke, scrolled into view or not', () => {
   assert.match(rule, /transform: none;/)
 })
 
+test('under reduced motion no block is hidden and nothing transitions', () => {
+  const css = read('styles/global.css')
+  const motion = css.match(/@media \(prefers-reduced-motion:\s*reduce\)\s*\{([\s\S]*?)\n\}/)
+  assert.ok(motion, 'global.css has no prefers-reduced-motion rule')
+  const rule = motion[1].match(
+    /html\.js \[data-reveal\]\s*,\s*html\.js \[data-reveal\] \.zz-stroke\s*\{([^}]*)\}/,
+  )
+  assert.ok(rule, 'the reduced-motion rule does not cover the blocks and the strokes')
+  assert.match(rule[1], /opacity: 1;/)
+  assert.match(rule[1], /transform: none;/)
+  assert.match(rule[1], /transition: none;/)
+  // The hidden start has the same specificity, so only a later rule wins.
+  assert.ok(css.indexOf('html.js [data-reveal] {') < css.indexOf(motion[0]))
+})
+
 test('the layout sets html.js before any other script and reveals once', () => {
   const layout = read('layouts/BaseLayout.astro')
   const firstScript = layout.indexOf('<script')

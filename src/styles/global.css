@@ -316,10 +316,10 @@ html {
 /* ----------------------------------------------------------
    Section reveal: a block with data-reveal fades in and rises 12px
    the first time it scrolls into view, and its heading stroke draws
-   from the left. BaseLayout sets html.js and adds .is-in once; the
-   reduced-motion block below shortens these transitions to 0.01ms.
-   The hidden start applies only under html.js, so without scripts
-   all content stays visible.
+   from the left. BaseLayout sets html.js and adds .is-in once. The
+   hidden start applies only under html.js, so without scripts all
+   content stays visible; under reduced motion the reduced-motion
+   block below never hides a block at all.
    ---------------------------------------------------------- */
 html.js [data-reveal] {
   opacity: 0;
@@ -363,5 +363,14 @@ html.js [data-reveal].is-in .zz-stroke {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
     transition-duration: 0.01ms !important;
+  }
+  /* A reduced-motion reader gets the finished page: no block waits for
+     the viewport, and every heading stroke is already drawn. This rule
+     must stay after the hidden start above (same specificity). */
+  html.js [data-reveal],
+  html.js [data-reveal] .zz-stroke {
+    opacity: 1;
+    transform: none;
+    transition: none;
   }
 }

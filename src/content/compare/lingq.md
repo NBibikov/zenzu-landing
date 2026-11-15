@@ -15,7 +15,7 @@ rows:
     zenzu: "FSRS-6 — reviews are the centre of the daily routine"
     other: "SRS vocabulary review is included; the algorithm is not published"
   - feature: "AI"
-    zenzu: "Lisa, an AI coach replying in your language; AI courses A1–C1"
+    zenzu: "Lisa, an AI coach replying in your language; AI courses sorted by CEFR level"
     other: "AI transcription, AI voices, AI-simplified lessons, an AI chat assistant"
   - feature: "Languages to learn"
     zenzu: "English, German, French, Spanish"
