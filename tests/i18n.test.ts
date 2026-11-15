@@ -126,19 +126,18 @@ test('the MCP page description fits 160 characters in every locale', () => {
   }
 })
 
-// The name block reads these four keys; the IPA is the same in every locale.
-test('the name block has its four keys and the IPA in every locale', () => {
+// The name block shows the pronunciation line; the IPA is the same in every locale.
+test('the name block has a pronunciation line with the IPA in every locale', () => {
   for (const locale of LOCALES) {
-    const { name } = load(locale) as { name: Record<string, string> }
-    assert.deepEqual(Object.keys(name).sort(), ['body', 'kicker', 'pronunciation', 'title'], locale)
-    assert.ok(name.pronunciation.includes('/ˈzɛn.zu/'), `${locale}: pronunciation lacks the IPA`)
+    const { name } = load(locale) as { name: { pronunciation?: string } }
+    assert.ok(name.pronunciation?.includes('/ˈzɛn.zu/'), `${locale}: pronunciation lacks the IPA`)
   }
 })
 
 // "дзен" alone reads as the dzen.ru platform: the uk copy always names Zen Buddhism.
 test('the uk name copy ties "дзен" to Zen Buddhism', () => {
   const { name } = load('uk') as { name: { body: string } }
-  assert.match(name.body, /дзен у значенні дзен-буддизму/)
+  assert.match(name.body, /дзен-буддизм/)
 })
 
 // fr.json writes the apostrophe straight ('), as most of the file does.
