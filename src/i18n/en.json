@@ -202,8 +202,33 @@
   "mcp": {
     "kicker": "Available now",
     "title": "Your data, wherever you work.",
-    "body": "Connect Zenzu to your own AI agents through MCP. Claude, Cursor or any MCP-compatible assistant can reach your decks, cards and progress from your computer, from your favorite tools, from anywhere. Bring new material in, take your data out. It stays yours, and it goes where you go.",
-    "badge": "In the app: Settings → AI agents → Agent access"
+    "intro": "MCP (Model Context Protocol) is an open standard that lets an AI assistant use tools from other apps. Zenzu has its own MCP server. Connect Claude, Cursor or another assistant that supports MCP, and it can read your decks, cards and progress. If you allow it, it can also add cards and record your reviews.",
+    "scenariosTitle": "What you can ask for",
+    "scenarios": {
+      "deck": "Paste a text or an article. The assistant picks the most useful words for your level and saves them as cards in a deck.",
+      "review": "Review your due cards in the chat. The assistant asks one card at a time and records each answer with the same FSRS-6 scheduler as the app.",
+      "confused": "Find the words you mix up. The assistant sees which cards you confuse with each other and which ones you keep forgetting.",
+      "report": "Get a weekly report: reviews, active days, trouble words, your place in the course and one thing to focus on next week.",
+      "media": "Find a ready-made word deck for a film or a TV series and look through its cards.",
+      "level": "Ask where you stand: your level, your place in the course and the next lesson."
+    },
+    "writeMark": "Needs “Allow writes”",
+    "stepsTitle": "How to connect",
+    "steps": [
+      "In the app, open Settings → AI agents and choose Generate. Give the token a name, then copy it: the app shows it only once.",
+      "In your assistant, add Zenzu as an MCP server with the server URL from the same screen and your token.",
+      "Ask in plain words. The assistant picks the Zenzu tools it needs."
+    ],
+    "safetyTitle": "You stay in control",
+    "safety": [
+      "Give each assistant its own personal token, with a name you choose.",
+      "A token can only read, unless you tick “Allow writes” when you create it.",
+      "Revoke a token at any time on the same screen. It stops working at once.",
+      "You can have up to 10 active tokens.",
+      "An assistant sees only your account. It cannot reach other people's data."
+    ],
+    "badge": "In the app: Settings → AI agents",
+    "detailsLink": "All tools, setup and rules"
   },
   "cta": {
     "title": "Start learning from content you love",

@@ -202,8 +202,33 @@
   "mcp": {
     "kicker": "Já disponível",
     "title": "Seus dados, onde quer que você trabalhe.",
-    "body": "Conecte o Zenzu aos seus próprios agentes de IA via MCP — Claude, Cursor ou qualquer assistente compatível com MCP acessa seus baralhos, cartões e progresso do seu computador, das suas ferramentas favoritas, de qualquer lugar. Traga novo material, leve seus dados. Eles continuam seus e vão aonde você for.",
-    "badge": "No app: Ajustes → Agentes de IA → Acesso de agentes"
+    "intro": "MCP (Model Context Protocol) é um padrão aberto que permite a um assistente de IA usar ferramentas de outros apps. O Zenzu tem seu próprio servidor MCP. Conecte o Claude, o Cursor ou outro assistente compatível com MCP, e ele poderá ler seus baralhos, cartões e progresso. Se você permitir, ele também poderá adicionar cartões e registrar suas revisões.",
+    "scenariosTitle": "O que você pode pedir",
+    "scenarios": {
+      "deck": "Cole um texto ou um artigo. O assistente escolhe as palavras mais úteis para o seu nível e as salva como cartões em um baralho.",
+      "review": "Revise seus cartões pendentes no chat. O assistente pergunta um cartão por vez e registra cada resposta com o mesmo agendador FSRS-6 do app.",
+      "confused": "Descubra as palavras que você mistura. O assistente vê quais cartões você confunde entre si e quais esquece com frequência.",
+      "report": "Receba um relatório semanal: revisões, dias ativos, palavras difíceis, sua posição no curso e um ponto de foco para a próxima semana.",
+      "media": "Encontre um baralho de palavras pronto para um filme ou uma série e veja os cartões.",
+      "level": "Pergunte onde você está: seu nível, sua posição no curso e a próxima lição."
+    },
+    "writeMark": "Requer “Permitir gravação”",
+    "stepsTitle": "Como conectar",
+    "steps": [
+      "No app, abra Configurações → Agentes de IA e escolha “Gerar”. Dê um nome ao token e copie-o na hora: o app mostra o token só uma vez.",
+      "No seu assistente, adicione o Zenzu como servidor MCP com a URL do servidor da mesma tela e o seu token.",
+      "Peça com suas próprias palavras. O assistente escolhe sozinho as ferramentas do Zenzu de que precisa."
+    ],
+    "safetyTitle": "Você no controle",
+    "safety": [
+      "Dê a cada assistente um token pessoal próprio, com o nome que você escolher.",
+      "Um token só pode ler, a menos que você marque “Permitir gravação” ao criá-lo.",
+      "Revogue um token a qualquer momento na mesma tela. Ele para de funcionar na hora.",
+      "Você pode ter até 10 tokens ativos.",
+      "Um assistente só vê a sua conta. Ele não acessa os dados de outras pessoas."
+    ],
+    "badge": "No app: Configurações → Agentes de IA",
+    "detailsLink": "Todas as ferramentas, a conexão e as regras"
   },
   "cta": {
     "title": "Comece a aprender com o conteúdo que você ama",
