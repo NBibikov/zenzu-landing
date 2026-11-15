@@ -97,12 +97,13 @@ const jsonLd = {
        header is fixed, so it sits above it; <main> takes the focus. -->
   <a
     href="#main"
+    data-skip
     class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[60] focus:inline-flex focus:items-center focus:min-h-11 focus:px-5 focus:bg-paper focus:text-ink focus:text-sm focus:border focus:border-rule focus:rounded-[10px]"
   >
     {strings.nav.skip}
   </a>
   <Header t={strings} locale={locale} />
-  <main id="main" tabindex="-1" class="focus:outline-none">
+  <main id="main" class="focus:outline-none">
     <Hero t={strings} />
     <Screens t={strings} />
     <HowItWorks t={strings} />
@@ -115,3 +116,19 @@ const jsonLd = {
   </main>
   <Footer t={strings} locale={locale} />
 </BaseLayout>
+
+<script>
+  // Without a script the fragment still moves the Tab start point to <main>.
+  // With it, <main> takes the focus for screen readers too, and gives the
+  // tabindex back on blur, so a later click on page text does not focus it.
+  const skip = document.querySelector<HTMLAnchorElement>('[data-skip]')
+  const main = document.getElementById('main')
+  skip?.addEventListener('click', (e) => {
+    if (!main) return
+    e.preventDefault()
+    main.setAttribute('tabindex', '-1')
+    main.focus()
+    main.scrollIntoView()
+    main.addEventListener('blur', () => main.removeAttribute('tabindex'), { once: true })
+  })
+</script>

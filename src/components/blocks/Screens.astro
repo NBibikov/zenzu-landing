@@ -134,40 +134,49 @@ const screens = ['home', 'review', 'lisa', 'videos', 'books', 'news', 'courses',
       const view = track.clientWidth - parseFloat(style.paddingLeft) - parseFloat(style.paddingRight)
       return Math.max(1, Math.floor((view + parseFloat(style.columnGap || '0')) / pitch) - 1) * pitch
     }
-    // The position is the first frame whose left edge is in view; at the end
-    // of the row it is the last frame, so the count reaches "8 / 8".
-    let shown = 0
-    const position = (atEnd: boolean) => {
-      if (atEnd) return items.length
-      const left = track.getBoundingClientRect().left + parseFloat(getComputedStyle(track).paddingLeft)
-      const first = items.findIndex((item) => item.getBoundingClientRect().left >= left - 2)
-      return first < 0 ? items.length : first + 1
+    // The position is the first frame whose left edge is in view. All frames
+    // have one width, so it follows from scrollLeft and the frame pitch; the
+    // pitch is read again only on resize, not on every scroll event.
+    let pitch = 0
+    const measure = () => {
+      const item = items[0]
+      pitch = item ? item.offsetWidth + parseFloat(getComputedStyle(track).columnGap || '0') : 0
     }
+    const position = () =>
+      pitch ? Math.min(items.length, Math.ceil((track.scrollLeft - 2) / pitch) + 1) : 1
+    let shown = 0
     const update = () => {
-      const atEnd = track.scrollLeft + track.clientWidth >= track.scrollWidth - 1
       prev.disabled = track.scrollLeft <= 1
-      next.disabled = atEnd
-      const n = position(atEnd)
+      next.disabled = track.scrollLeft + track.clientWidth >= track.scrollWidth - 1
+      const n = position()
       if (n === shown || !items.length) return
       shown = n
       if (count) count.textContent = `${n} / ${items.length}`
-      // Only after the first move: the page load itself announces nothing.
-      if (status && track.dataset.moved) {
-        status.textContent = (status.dataset.template ?? '{n} / {total}')
-          .replace('{n}', String(n))
-          .replace('{total}', String(items.length))
-      }
+    }
+    // The live region speaks once, when a move by the reader has settled; a
+    // smooth scroll past three frames says only where it stopped. Page load
+    // and resize update the count but announce nothing.
+    let settle = 0
+    const announce = () => {
+      if (!status) return
+      status.textContent = (status.dataset.template ?? '{n} / {total}')
+        .replace('{n}', String(shown))
+        .replace('{total}', String(items.length))
+    }
+    let frame = 0
+    const onScroll = () => {
+      if (!frame) frame = requestAnimationFrame(() => { frame = 0; update() })
+      clearTimeout(settle)
+      settle = window.setTimeout(announce, 250)
     }
     const reduced = window.matchMedia('(prefers-reduced-motion: reduce)')
     const move = (dir: number) =>
       track.scrollBy({ left: dir * step(), behavior: reduced.matches ? 'auto' : 'smooth' })
     prev.addEventListener('click', () => move(-1))
     next.addEventListener('click', () => move(1))
-    track.addEventListener('scroll', () => {
-      track.dataset.moved = '1'
-      update()
-    }, { passive: true })
-    window.addEventListener('resize', update)
+    track.addEventListener('scroll', onScroll, { passive: true })
+    window.addEventListener('resize', () => { measure(); update() })
+    measure()
     update()
   }
 </script>

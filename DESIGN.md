@@ -166,7 +166,7 @@ The grove canvas in the hero is decorative illustration, not chrome. It has one 
 Single column, centred containers. Sections are 96px tall in padding (py-24) with a 24px side gutter. Rows inside a section are separated by a hairline and 24px to 32px of padding. The home page alternates paper and paper-2 sections.
 
 - **One left axis.** On the home page every left-aligned section (Screens, How it works, Features, For whom, MCP, FAQ) uses a 5xl (64rem) container inside the 24px gutter, so the left edge does not move between sections. Text inside it stays in a column of at most 3xl (48rem). The centred sections (Hero, The name, CTA) keep their own narrow centred containers.
-- **Carousel.** The screen carousel swipes on phones and has arrow buttons on desktop. A quiet position count ("3 / 8", ink-3, small text) shows the first frame in view; a polite live region says it in words after the reader moves the row.
+- **Carousel.** The screen carousel swipes on phones and has arrow buttons on desktop. A quiet position count ("3 / 8", ink-3, small text) shows the first frame in view; a polite live region says it in words once a move by the reader has settled.
 
 ## Elevation & Depth
 
@@ -196,7 +196,7 @@ Pills (fully rounded) for buttons; 16px corners for the store badges and blog co
 - Header: sans 14px, ink-2, hover to ink. The current item wears the swash and is bold.
 - Language menu: opens on hover and click, reports aria-expanded; 10px corners, rule border, paper ground; items 20px by 8px padding.
 - The header language menu shows on phones too, as a compact control with a 44px tap target. The footer also lists every language.
-- **Tap targets:** every link and control is at least 44px high: header links and logo, buttons, carousel arrows (44 by 44), footer links (one link per 44px row), FAQ rows. A link inside running text (the footer mail link) gets vertical padding, so its tap area grows and the lines do not move.
+- **Tap targets:** on the home page every link and control is at least 44px high: header links and logo, language menu items, buttons, carousel arrows (44 by 44), footer links (one link per 44px row), FAQ rows. A link inside running text (the footer mail link) gets vertical padding, so its tap area grows and the lines do not move.
 - **Skip link:** the first focusable element on the home page. It is hidden until it has focus, then shows at the top left over the fixed header, and moves focus to `<main id="main">`.
 - A swash on a 44px link sits on an inner span, so the brush covers the word and not the whole tap area.
 

@@ -73,7 +73,7 @@ const switchTarget = languageSwitchPath(Astro.url.pathname)
                 <a
                   href={localePath(switchTarget, loc)}
                   lang={loc}
-                  class="block px-5 py-2 text-sm text-ink-2 hover:text-ink transition-colors"
+                  class="block px-5 py-3 text-sm text-ink-2 hover:text-ink transition-colors"
                   aria-current={loc === locale ? 'true' : undefined}
                 >
                   <span class:list={[loc === locale && 'zz-swash text-ink font-semibold']}>{localeNames[loc]}</span>
