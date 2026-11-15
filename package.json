@@ -10,7 +10,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "test": "node --test \"functions/**/*.test.ts\""
+    "test": "node --test \"functions/**/*.test.ts\" \"tests/**/*.test.ts\""
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.19",
