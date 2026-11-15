@@ -128,17 +128,18 @@ A warm, near-monochrome palette: paper and ink tones with one muted green.
 - **Swash** and **Swash Cancel** (swash, swash-cancel): brush colours under a selected label and the alternative half of a button pair; also text selection.
 
 ### Named Rules
-**The One Accent Rule.** Moss is the only hue. No second accent, no warm sand, no gold, no blue.
+**The One Accent Rule.** Moss is the only hue. No second accent, no warm sand, no gold, no blue. The grove canvas is the one exception (see Illustration layer).
 **The Colour Never Carries the Control Rule.** A button label is always ink. A selected item is also bold; the swash is never the only signal.
 
 ### Illustration layer
 The grove canvas in the hero is decorative illustration, not chrome. It has one exception to the colour rules above.
 
-- Leaf colour follows the season, as in the app. Spring has blossom pink and light green. Summer has greens. Autumn has reds, oranges and golds. Winter has bare branches and snow.
+- Leaf colour follows the season. The palettes come from the grove mockup. Spring has blossom pink and light green. Summer has greens. Autumn has reds, oranges and golds. Winter has bare branches and snow.
 - Warm hues are allowed on the canvas. They break The One Accent Rule on purpose.
 - The exception covers the grove canvas only. No other element takes a leaf colour.
 - The leaf colours stay literals in `src/lib/grove-model.ts`. They never become tokens and never colour chrome.
-- Lines stay ink: branches in ink, the ground line in rule. The canvas draws no gradient, no shadow and no glow.
+- Branches are ink and the ground line is rule. Leaf outlines use the leaf colour. Snow is the literal grey `INK.snow`.
+- The canvas draws no gradient, no shadow and no glow.
 - The canvas is decorative and `aria-hidden`. Under forced colours it is not recoloured. The page loses no content, so this is an accepted limit.
 
 ## Typography
@@ -195,20 +196,24 @@ Pills (fully rounded) for buttons; 16px corners for the store badges and blog co
 
 ## Motion
 
-The page is calm. It has one looping scene and one-time reveals. Hover and press states keep their 150ms transition (see Buttons). Nothing else moves.
+The page is calm. It has one looping scene and one-time reveals. Nothing else loops. Other motion is short state feedback, smooth scrolling, and the reveals. Smooth scrolling (anchor links and the screen carousel) turns off with reduced motion.
 
 ### Named Rules
-**The One Scene Rule.** The grove canvas is the only motion that loops. Everything else moves once.
-**The Still Hero Text Rule.** The hero text never animates. It is the largest contentful paint (LCP) element.
-**The Reduced Motion Rule.** Reduced motion gives a static, fully grown grove. It cuts every reveal transition to 0.01ms.
+**The One Scene Rule.** The grove canvas is the only motion that loops. Other motion happens once or answers an action.
+**The Still Hero Text Rule.** The hero text never animates. It must stay the largest contentful paint (LCP) element, and the canvas must not delay it.
+**The Reduced Motion Rule.** Reduced motion gives a static, fully grown grove. It shortens the duration of every reveal transition to 0.01ms.
 
 ### Grove scene
-- The scene is the grove canvas in the hero: five trees on one ground line.
+- The scene is the grove canvas in the hero: five trees above one ground line. Two back-row trees are drawn at 55% opacity and stand 4px higher.
 - Each tree grows once. Growth starts when 25% of the canvas is visible. One tree takes 2600ms, and each tree starts 180ms after the one before.
-- After all trees are grown, ambient pieces fall by season: 6 leaves in autumn, 3 petals in spring, 16 snowflakes in winter, none in summer. The season follows the visitor's local date: March to May spring, June to August summer, September to November autumn, December to February winter.
+- Trees sway in every season, also after they are grown. This is why the loop runs in summer, when nothing falls.
+- After all trees are grown, ambient pieces fall by season: 6 leaves in autumn, 3 petals in spring, 16 snowflakes in winter, none in summer.
+- The season follows the visitor's local date, as in the app: March to May spring, June to August summer, September to November autumn, December to February winter.
 - The loop runs only while the canvas is on screen and the tab is visible. It is limited to 30 fps and to a device pixel ratio of 2.
-- From xl (80rem) the canvas is 320px high and spans the bottom of the hero behind the text. Trees stand left and right of the text column, and nothing falls in front of it. Below xl the canvas is a 140px strip under the store badges with all five trees in one row.
-- The canvas reads the same media query as the CSS xl breakpoint, `(min-width: 80rem)`, so CSS and script always agree on the layout. It measures the real width of the text column. No tree, leaves included, comes nearer than 16px to the column.
+- From xl (80rem) the canvas is 320px high and spans the bottom of the hero behind the text. This is the flank layout. Trees stand left and right of the text column, and nothing falls in front of it.
+- Below xl the canvas is a 140px strip under the store badges. This is the strip layout. The trees spread along one line.
+- The canvas reads the same media query as the CSS xl breakpoint, `(min-width: 80rem)`, so CSS and script always agree on the layout.
+- In the flank layout the canvas measures the real width of the text column. No tree, leaves included, comes nearer than 16px to it.
 - The two hero text blocks carry `relative z-10`, so the canvas stays behind them. The text column itself is not positioned.
 - Without JavaScript the canvas stays empty. It keeps its height, so the layout does not shift.
 - With reduced motion the canvas draws one frame of the fully grown grove. It starts no loop and no falling pieces.
@@ -216,13 +221,13 @@ The page is calm. It has one looping scene and one-time reveals. Hover and press
 ### Section reveals
 - Every section block except the hero has one inner container marked `data-reveal`.
 - A block starts at opacity 0, 12px lower. When it is revealed it fades in and rises over 400ms (ease-out). Its heading stroke (`.zz-stroke`) draws from the left, `scaleX` 0 to 1, over 600ms (ease-out) after a 150ms delay.
-- One `IntersectionObserver` in `BaseLayout.astro` triggers the reveal. It uses `threshold: 0` and `rootMargin: '0px 0px -10% 0px'`. A block reveals the first time its top edge is 10% inside the viewport.
+- One `IntersectionObserver` in `BaseLayout.astro` triggers the reveal. It uses `threshold: 0` and `rootMargin: '0px 0px -10% 0px'`. The observer ignores the bottom 10% of the viewport. A block reveals the first time any part of it is inside the rest of the viewport.
 - The trigger does not depend on block height. A ratio threshold never fires for a block taller than the viewport divided by the ratio.
 - Each block reveals once. The observer stops watching it after the first reveal, so scrolling up does not replay it.
 - The hidden start applies only under `html.js`. An inline script in the head sets this class, so a page without scripts shows all content.
 - Without `IntersectionObserver`, every block is revealed at once.
 - Print shows every block and stroke in full (`@media print` in `global.css`).
-- With reduced motion, the existing rule in `global.css` shortens each transition to 0.01ms.
+- With reduced motion, the existing rule in `global.css` shortens every transition duration to 0.01ms. The stroke keeps its 150ms delay.
 
 ## Do's and Don'ts
 
@@ -234,7 +239,7 @@ The page is calm. It has one looping scene and one-time reveals. Hover and press
 
 ### Don't:
 - **Don't** add shadows, gradients, glows or a dark theme.
-- **Don't** add a second accent colour or any warm hue (orange, gold, amber) (except the grove canvas).
+- **Don't** add a second accent colour or any warm hue (orange, gold, amber; except the grove canvas).
 - **Don't** remove the section labels, heading strokes or step numerals because a generic linter calls them AI scaffolding; they are the app's components.
 - **Don't** add mascots, confetti, streak counters or other game visuals.
 - **Don't** draw a phone or device frame around app screenshots; the ink frame names no device.
