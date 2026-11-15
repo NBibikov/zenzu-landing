@@ -111,7 +111,7 @@
       "more": {
         "what": "Starte mit fertigen Stapeln aus Wörtern und Phrasen für den Alltag, von A1 bis C1: Essen, Reisen, Arbeit, Gefühle, Redewendungen, Business und Wissenschaft. Jede Karte hat einen Beispielsatz, so siehst du das Wort ab der ersten Wiederholung im Kontext.",
         "how": "In den meisten Stapeln gibt es jede Karte in neun Sprachen: Englisch, Deutsch, Spanisch, Französisch, Portugiesisch, Ukrainisch, Japanisch, Koreanisch und Chinesisch. Die Vorderseite steht in deiner Lernsprache, die Rückseite in deiner Muttersprache; fehlt deine Muttersprache in dieser Liste, wird die Rückseite beim Hinzufügen des Stapels übersetzt. Den Katalog kannst du nach Sprache und Niveau filtern.",
-        "note": "Manche Stapel gibt es nur für eine Sprache, etwa die Tabellen unregelmäßiger Verben oder die Stapel zu falschen Freunden für Englisch und Deutsch; ihre Karten gibt es in weniger Sprachen. Stapelnamen erscheinen in deiner Oberflächensprache."
+        "note": "Manche Stapel gibt es nur für bestimmte Sprachen, etwa die Tabellen unregelmäßiger Verben oder die Stapel zu falschen Freunden für Englisch und Deutsch; ihre Karten gibt es in weniger Sprachen. Stapelnamen erscheinen in deiner Oberflächensprache."
       }
     },
     "interface": {
@@ -127,7 +127,7 @@
       "title": "KI-Kurse",
       "desc": "Personalisierte Grammatik- und Vokabelkurse für Englisch, Deutsch, Französisch und Spanisch — A1 bis C1. Übungen passen sich deinem Niveau an.",
       "more": {
-        "what": "Lerne Grammatik und Wortschatz in Lektionen für Englisch, Deutsch, Französisch oder Spanisch, Niveau für Niveau ab A1 und bis C1, wo die Lektionen fertig sind. Eine Lektion erscheint nur, wenn eine Fassung für deine Sprache fertig ist, daher haben manche Sprachpaare vorerst weniger Lektionen. Wörter aus einer Lektion kannst du zum Wiederholen in deine Stapel übernehmen.",
+        "what": "Lerne Grammatik und Wortschatz in Lektionen für Englisch, Deutsch, Französisch oder Spanisch, Niveau für Niveau ab A1 und bis C1, wo die Lektionen fertig sind. Eine Lektion erscheint nur, wenn eine Fassung für deine Sprache fertig ist; die Kurse für Deutsch, Französisch und Spanisch nutzen auch die englische Fassung. Daher gibt es für manche Sprachpaare vorerst nur einen Teil der Lektionen oder noch gar keine. Wörter aus einer Lektion kannst du zum Wiederholen in deine Stapel übernehmen.",
         "how": "Eine Lektion hat Abschnitte wie neue Wörter, Grammatik, einen Dialog und eine Zusammenfassung, jeweils mit Übungen: Multiple Choice, Lückentext, Zuordnen, Sätze bauen und Diktat. Spätere Lektionen greifen frühere Wörter mit ihrer Übersetzung wieder auf. Ein kurzer Einstufungstest legt dein Niveau fest; alle Stufen bis dahin sind offen, ohne Test beginnst du bei A1.",
         "note": "In den Kursen für Deutsch, Französisch und Spanisch kommen die Erklärungen auf Englisch, wenn es keine Fassung in deiner Sprache gibt. Die Lektionen sind vorab erstellt und werden nicht für jede Person einzeln erzeugt."
       }
@@ -233,7 +233,7 @@
   "mcpPage": {
     "meta": {
       "title": "Zenzu MCP-Server: Einrichtung, Werkzeuge und Regeln",
-      "description": "Verbinde Claude, Cursor oder einen anderen MCP-Assistenten mit deinen Zenzu-Stapeln, Karten und Fortschritten. Einrichtung, alle Werkzeuge, Prompts, Limits und Token-Regeln."
+      "description": "Verbinde Zenzu-Stapel und Fortschritt mit Claude, Cursor oder einem Assistenten, der Remote-MCP mit Bearer-Token unterstützt. Einrichtung, Werkzeuge, Regeln."
     },
     "title": "Zenzu MCP-Server",
     "lead": "Zenzu betreibt einen gehosteten MCP-Server, du musst also nichts installieren. Dein Assistent verbindet sich über Streamable HTTP mit einer URL und meldet sich mit einem persönlichen Token aus der App an. Hier findest du die Einrichtung, alle Werkzeuge, die fertigen Prompts und die Regeln, die der Server einhält.",
@@ -315,7 +315,7 @@
       },
       {
         "q": "Welche Assistenten können sich verbinden?",
-        "a": "Claude, Cursor oder ein anderer Assistent mit MCP-Unterstützung. Er muss sich über HTTP mit einem entfernten Server verbinden und dich den Authorization-Header setzen lassen."
+        "a": "Claude, Cursor oder ein anderer Assistent, wenn er sich über HTTP mit einem entfernten MCP-Server verbinden und deinen Token im Authorization-Header senden kann."
       },
       {
         "q": "Kann der Assistent meine Daten ändern oder löschen?",

@@ -111,7 +111,7 @@
       "more": {
         "what": "Empieza con mazos listos de palabras y frases cotidianas, de A1 a C1: comida, viajes, trabajo, emociones, expresiones idiomáticas, negocios y ciencia. Cada tarjeta tiene una oración de ejemplo, así ves la palabra en contexto desde el primer repaso.",
         "how": "En la mayoría de los mazos, cada tarjeta está en nueve idiomas: inglés, alemán, español, francés, portugués, ucraniano, japonés, coreano y chino. El anverso está en el idioma que aprendes y el reverso en tu lengua materna; si tu lengua materna no está en esta lista, el reverso se traduce al añadir el mazo. Puedes filtrar el catálogo por idioma y nivel.",
-        "note": "Algunos mazos existen solo para un idioma, como las tablas de verbos irregulares o los mazos de falsos amigos para inglés y alemán; sus tarjetas tienen menos idiomas. Los nombres de los mazos aparecen en el idioma de tu interfaz."
+        "note": "Algunos mazos existen solo para ciertos idiomas, como las tablas de verbos irregulares o los mazos de falsos amigos para inglés y alemán; sus tarjetas tienen menos idiomas. Los nombres de los mazos aparecen en el idioma de tu interfaz."
       }
     },
     "interface": {
@@ -127,7 +127,7 @@
       "title": "Cursos con IA",
       "desc": "Lecciones personalizadas de gramática y vocabulario para inglés, alemán, francés y español — A1 a C1. Los ejercicios se adaptan a tu nivel.",
       "more": {
-        "what": "Avanza por lecciones de gramática y vocabulario de inglés, alemán, francés o español, nivel a nivel desde A1 y hasta C1 donde las lecciones están listas. Una lección aparece solo cuando hay una versión lista para tu idioma, así que algunos pares de idiomas tienen menos lecciones por ahora. Las palabras de una lección pueden pasar a tus mazos para repasarlas.",
+        "what": "Avanza por lecciones de gramática y vocabulario de inglés, alemán, francés o español, nivel a nivel desde A1 y hasta C1 donde las lecciones están listas. Una lección aparece solo cuando hay una versión lista para tu idioma; los cursos de alemán, francés y español también usan la versión en inglés. Así que, por ahora, algunos pares de idiomas tienen solo parte de las lecciones o todavía ninguna. Las palabras de una lección pueden pasar a tus mazos para repasarlas.",
         "how": "Una lección tiene etapas como palabras nuevas, gramática, un diálogo y un resumen, cada una con ejercicios: opción múltiple, completar huecos, emparejar, construir oraciones y dictado. Las lecciones posteriores retoman palabras anteriores con su traducción. Una prueba de nivel corta fija tu nivel; todos los niveles hasta ese quedan abiertos, y sin la prueba empiezas en A1.",
         "note": "En los cursos de alemán, francés y español, las explicaciones están en inglés cuando tu idioma no tiene versión. Las lecciones están preparadas de antemano; no se generan para cada estudiante."
       }
@@ -233,7 +233,7 @@
   "mcpPage": {
     "meta": {
       "title": "Servidor MCP de Zenzu: configuración, herramientas y reglas",
-      "description": "Conecta Claude, Cursor u otro asistente MCP a tus mazos, tarjetas y progreso en Zenzu. Configuración, todas las herramientas, los prompts, los límites y las reglas de los tokens."
+      "description": "Conecta tus mazos y tu progreso de Zenzu a Claude, Cursor u otro asistente que admita MCP remoto con token Bearer. Configuración, herramientas, reglas."
     },
     "title": "Servidor MCP de Zenzu",
     "lead": "Zenzu aloja su propio servidor MCP, así que no tienes que instalar nada. Tu asistente se conecta a una sola URL por Streamable HTTP y se identifica con un token personal de la app. Aquí tienes la configuración, todas las herramientas, los prompts listos para usar y las reglas que aplica el servidor.",
@@ -315,7 +315,7 @@
       },
       {
         "q": "¿Qué asistentes pueden conectarse?",
-        "a": "Claude, Cursor u otro asistente compatible con MCP. Tiene que conectarse a un servidor remoto por HTTP y dejarte definir el encabezado Authorization."
+        "a": "Claude, Cursor u otro asistente, si puede conectarse por HTTP a un servidor MCP remoto y enviar tu token en el encabezado Authorization."
       },
       {
         "q": "¿Puede el asistente cambiar o eliminar mis datos?",

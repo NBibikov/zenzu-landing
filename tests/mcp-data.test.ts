@@ -20,6 +20,7 @@ const APP_REPO = process.env.ZENZU_APP_REPO ?? join(homedir(), 'Repositories', '
 const MCP_DIR = join(APP_REPO, 'supabase', 'functions', 'mcp')
 const TOOLS_FILE = join(MCP_DIR, 'tools.ts')
 const PROMPTS_FILE = join(MCP_DIR, 'prompts.ts')
+const LIMITS_FILE = join(MCP_DIR, 'limits.ts')
 const SCREEN_FILE = join(APP_REPO, 'lib', 'src', 'features', 'settings', 'presentation', 'mcp_access_screen.dart')
 
 const hasRepo = existsSync(TOOLS_FILE)
@@ -114,4 +115,33 @@ test('every write tool is a listed tool', () => {
 test('the site write tools equal the listed server write tools', { skip }, () => {
   const listedWrites = [...serverWriteTools()].filter((name) => siteTools.includes(name)).sort()
   assert.deepEqual([...MCP_WRITE_TOOLS].sort(), listedWrites)
+})
+
+// limits.ts declares each limit as `export const NAME = <number>;`, where the
+// number may be a product such as `256 * 1024`.
+function serverLimit(source: string, name: string): number {
+  const match = source.match(new RegExp(`^export const ${name} = ([\\d_ *]+);$`, 'm'))
+  assert.ok(match, `${name} not found in limits.ts`)
+  return match[1].split('*').reduce((product, factor) => product * Number(factor.trim().replaceAll('_', '')), 1)
+}
+
+test('the limits in the en rules equal the server limits', { skip: existsSync(LIMITS_FILE) ? false : `limits.ts not found at ${LIMITS_FILE}` }, () => {
+  const source = readFileSync(LIMITS_FILE, 'utf8')
+  const limit = (name: string) => serverLimit(source, name)
+  const n = (value: number) => value.toLocaleString('en-US')
+  const kb = (bytes: number) => {
+    assert.equal(bytes % 1024, 0, `${bytes} is not a whole number of KB`)
+    return `${bytes / 1024} KB`
+  }
+  const en = JSON.parse(readFileSync(new URL('../src/i18n/en.json', import.meta.url), 'utf8'))
+  const rules: string = en.mcpPage.rules.join('\n')
+  const expected = [
+    `${n(limit('RATE_PER_MINUTE'))} requests a minute and ${n(limit('RATE_PER_HOUR'))} an hour for each token`,
+    `${n(limit('USER_RATE_PER_MINUTE'))} a minute and ${n(limit('USER_RATE_PER_HOUR'))} an hour for your account`,
+    `${n(limit('DAILY_REVIEWS'))} recorded reviews`,
+    `${n(limit('DAILY_WRITE_UNITS'))} write units`,
+    `each started ${kb(limit('WORKSPACE_TEXT_UNIT_BYTES'))}`,
+    `up to ${kb(limit('MAX_BODY_BYTES'))}`,
+  ]
+  for (const phrase of expected) assert.ok(rules.includes(phrase), `en mcpPage.rules lacks "${phrase}"`)
 })

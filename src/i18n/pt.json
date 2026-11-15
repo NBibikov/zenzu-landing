@@ -111,7 +111,7 @@
       "more": {
         "what": "Comece com baralhos prontos de palavras e expressões do dia a dia, de A1 a C1: comida, viagens, trabalho, sentimentos, expressões idiomáticas, negócios e ciência. Cada cartão tem uma frase de exemplo, então você vê a palavra em contexto desde a primeira revisão.",
         "how": "Na maioria dos baralhos, cada cartão existe em nove idiomas: inglês, alemão, espanhol, francês, português, ucraniano, japonês, coreano e chinês. A frente fica no idioma que você aprende e o verso na sua língua nativa; se a sua língua nativa não estiver nessa lista, o verso é traduzido quando você adiciona o baralho. Você pode filtrar o catálogo por idioma e nível.",
-        "note": "Alguns baralhos existem só para um idioma, como as tabelas de verbos irregulares ou os baralhos de falsos cognatos para inglês e alemão; os cartões deles têm menos idiomas. Os nomes dos baralhos aparecem no idioma da sua interface."
+        "note": "Alguns baralhos existem só para certos idiomas, como as tabelas de verbos irregulares ou os baralhos de falsos cognatos para inglês e alemão; os cartões deles têm menos idiomas. Os nomes dos baralhos aparecem no idioma da sua interface."
       }
     },
     "interface": {
@@ -127,7 +127,7 @@
       "title": "Cursos com IA",
       "desc": "Lições personalizadas de gramática e vocabulário para inglês, alemão, francês e espanhol — A1 a C1. Os exercícios adaptam-se ao seu nível.",
       "more": {
-        "what": "Avance por lições de gramática e vocabulário de inglês, alemão, francês ou espanhol, nível a nível a partir do A1 e até o C1 onde as lições estão prontas. Uma lição só aparece quando há uma versão pronta para o seu idioma, então alguns pares de idiomas têm menos lições por enquanto. As palavras de uma lição podem ir para os seus baralhos para revisão.",
+        "what": "Avance por lições de gramática e vocabulário de inglês, alemão, francês ou espanhol, nível a nível a partir do A1 e até o C1 onde as lições estão prontas. Uma lição só aparece quando há uma versão pronta para o seu idioma; os cursos de alemão, francês e espanhol também usam a versão em inglês. Por isso, por enquanto, alguns pares de idiomas têm só parte das lições ou ainda nenhuma. As palavras de uma lição podem ir para os seus baralhos para revisão.",
         "how": "Uma lição tem etapas como palavras novas, gramática, um diálogo e uma recapitulação, cada uma com exercícios: múltipla escolha, lacunas, associação, montagem de frases e ditado. As lições seguintes retomam palavras anteriores com a tradução. Um teste de nivelamento curto define seu nível; todos os níveis até ele ficam abertos, e sem o teste você começa no A1.",
         "note": "Nos cursos de alemão, francês e espanhol, as explicações vêm em inglês quando o seu idioma não tem versão. As lições são preparadas com antecedência; não são geradas para cada aluno."
       }
@@ -233,7 +233,7 @@
   "mcpPage": {
     "meta": {
       "title": "Servidor MCP do Zenzu: configuração, ferramentas e regras",
-      "description": "Conecte o Claude, o Cursor ou outro assistente MCP aos seus baralhos, cartões e progresso no Zenzu. Configuração, todas as ferramentas, os prompts, os limites e as regras dos tokens."
+      "description": "Conecte seus baralhos e progresso do Zenzu ao Claude, ao Cursor ou a outro assistente que aceite MCP remoto com token Bearer. Configuração, ferramentas, regras."
     },
     "title": "Servidor MCP do Zenzu",
     "lead": "O Zenzu hospeda o próprio servidor MCP, então não há nada para instalar. Seu assistente se conecta a uma única URL por Streamable HTTP e se identifica com um token pessoal do app. Aqui estão a configuração, todas as ferramentas, os prompts prontos e as regras que o servidor segue.",
@@ -315,7 +315,7 @@
       },
       {
         "q": "Quais assistentes podem se conectar?",
-        "a": "O Claude, o Cursor ou outro assistente compatível com MCP. Ele precisa se conectar a um servidor remoto por HTTP e deixar você definir o cabeçalho Authorization."
+        "a": "O Claude, o Cursor ou outro assistente, se ele puder se conectar por HTTP a um servidor MCP remoto e enviar o seu token no cabeçalho Authorization."
       },
       {
         "q": "O assistente pode alterar ou excluir meus dados?",

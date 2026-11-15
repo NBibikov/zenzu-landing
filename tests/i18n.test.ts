@@ -79,10 +79,55 @@ test('mcpPage.prompts has exactly MCP_PROMPTS', () => {
   for (const locale of LOCALES) assert.deepEqual(keysOf(locale, 'prompts'), [...MCP_PROMPTS].sort(), locale)
 })
 
-// Site-owner rule: the MCP page says nothing about plans, prices or quotas.
-test('mcpPage never mentions Plus', () => {
-  for (const locale of LOCALES) {
-    const root = load(locale) as { mcpPage?: Json }
-    assert.doesNotMatch(JSON.stringify(root.mcpPage ?? {}), /\bPlus\b/, locale)
+// Site-owner rule: the MCP copy (home block and page) and the feature
+// details say nothing about plans, prices or quotas of a plan. The match is
+// case-sensitive on purpose: the plan name is "Plus", while French "plus"
+// ("more") is an ordinary word. A price is a number next to a currency sign.
+const PLAN_OR_PRICE = /\bPlus\b|\bPremium\b|[$€£₴]\s?\d|\d\s?[$€£₴]/
+
+function planFreeSections(locale: string): [string, Json][] {
+  const root = load(locale) as {
+    mcp?: Json
+    mcpPage?: Json
+    features?: Record<string, Json>
   }
+  assert.ok(root.mcp && root.mcpPage && root.features, `${locale}: a section is missing`)
+  const more = Object.entries(root.features)
+    .filter(([, value]) => value !== null && typeof value === 'object' && !Array.isArray(value) && 'more' in value)
+    .map(([key, value]): [string, Json] => [`features.${key}.more`, (value as { more: Json }).more])
+  assert.ok(more.length >= 9, `${locale}: found ${more.length} feature details`)
+  return [['mcp', root.mcp], ['mcpPage', root.mcpPage], ...more]
+}
+
+test('MCP copy and feature details never mention plans or prices', () => {
+  for (const locale of LOCALES) {
+    for (const [section, node] of planFreeSections(locale)) {
+      for (const [path, value] of flatten(node, section)) {
+        if (typeof value !== 'string') continue
+        assert.doesNotMatch(value, PLAN_OR_PRICE, `${locale}: ${path}`)
+      }
+    }
+  }
+})
+
+test('the plan check catches a plan name and a price, not French "plus"', () => {
+  assert.match('Available with Zenzu Plus.', PLAN_OR_PRICE)
+  assert.match('Only $4.99 a month.', PLAN_OR_PRICE)
+  assert.match('Nur 4,99 € im Monat.', PLAN_OR_PRICE)
+  assert.doesNotMatch('Il pourra aussi ajouter plus de cartes.', PLAN_OR_PRICE)
+})
+
+// Search engines cut a description after about 160 characters.
+test('the MCP page description fits 160 characters in every locale', () => {
+  for (const locale of LOCALES) {
+    const root = load(locale) as { mcpPage: { meta: { description: string } } }
+    const length = [...root.mcpPage.meta.description].length
+    assert.ok(length <= 160, `${locale}: ${length} characters`)
+  }
+})
+
+// fr.json writes the apostrophe straight ('), as most of the file does.
+test('the French MCP copy uses the straight apostrophe', () => {
+  const root = load('fr') as { mcp: Json; mcpPage: Json }
+  assert.doesNotMatch(JSON.stringify([root.mcp, root.mcpPage]), /’/)
 })

@@ -23,7 +23,7 @@ export const PRODUCT_SUMMARY = `# Zenzu
 - AI courses: grammar and vocabulary lessons for English, German, French and Spanish, CEFR A1 to C1.
 - Starter decks: 18 curated decks from A1 to C1 (everyday, business, academic, science, idioms and more).
 - Pronunciation: text-to-speech audio for every word and sentence.
-- MCP server: connect Claude, Cursor or any MCP-compatible assistant to your decks, cards and progress (in the app: Settings → AI agents). Tools, setup and rules: ${SITE}/mcp/
+- MCP server: give Claude, Cursor or another assistant that supports remote MCP servers with a bearer token access to your decks, cards and progress (in the app: Settings → AI agents). Tools, setup and rules: ${SITE}/mcp/
 - Who it is for: serious, self-directed learners who want immersion in authentic content. It deliberately has no mascots, streak games or trophies.
 
 ## Links

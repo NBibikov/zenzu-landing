@@ -111,7 +111,7 @@
       "more": {
         "what": "Start with ready decks of everyday words and phrases, from A1 to C1: food, travel, work, feelings, idioms, business and science. Every card has an example sentence, so you see the word in context from the first review.",
         "how": "In most decks, each card exists in nine languages: English, German, Spanish, French, Portuguese, Ukrainian, Japanese, Korean and Chinese. The front is in the language you learn and the back is in your native language; if your native language is not on this list, the backs are translated when you add the deck. You can filter the catalog by language and level.",
-        "note": "Some decks are for one language only, such as the irregular-verb tables or the false-friend decks for English and German; their cards come in fewer languages. Deck names show in your interface language."
+        "note": "Some decks are made for particular languages, such as the irregular-verb tables or the false-friend decks for English and German; their cards come in fewer languages. Deck names show in your interface language."
       }
     },
     "interface": {
@@ -127,7 +127,7 @@
       "title": "AI Courses",
       "desc": "Personalized grammar and vocabulary lessons for English, German, French, and Spanish, from A1 to C1. Exercises adapt to your level.",
       "more": {
-        "what": "Work through grammar and vocabulary lessons for English, German, French or Spanish, level by level from A1, up to C1 where the lessons are ready. A lesson appears only when a version for your language is ready, so some language pairs have fewer lessons for now. Words from a lesson can go into your decks for review.",
+        "what": "Work through grammar and vocabulary lessons for English, German, French or Spanish, level by level from A1, up to C1 where the lessons are ready. A lesson appears only when a version for your language is ready; the German, French and Spanish courses also use the English version. So for now some language pairs have only part of the lessons, or none yet. Words from a lesson can go into your decks for review.",
         "how": "A lesson has stages such as new words, grammar, a dialogue and a recap, each with exercises: multiple choice, gap fill, matching, sentence building and dictation. Later lessons bring back earlier words with their translation. A short placement test sets your level; all levels up to it are open, and without the test you start at A1.",
         "note": "In the German, French and Spanish courses, explanations come in English when your language has no version. Lessons are prepared in advance; they are not generated for each learner."
       }
@@ -233,7 +233,7 @@
   "mcpPage": {
     "meta": {
       "title": "Zenzu MCP server: setup, tools and rules",
-      "description": "Connect Claude, Cursor or another MCP assistant to your Zenzu decks, cards and progress. Setup, every tool, the prompts, the limits and the token rules."
+      "description": "Connect your Zenzu decks and progress to Claude, Cursor or another assistant that supports remote MCP with a bearer token. Setup, tools, rules."
     },
     "title": "Zenzu MCP server",
     "lead": "Zenzu runs a hosted MCP server, so there is nothing to install. Your assistant connects to one URL over Streamable HTTP and signs in with a personal token from the app. This page shows the setup, every tool, the ready-made prompts and the rules the server keeps.",
@@ -315,7 +315,7 @@
       },
       {
         "q": "Which assistants can connect?",
-        "a": "Claude, Cursor or another assistant that supports MCP. It must connect to a remote server over HTTP and let you set the Authorization header."
+        "a": "Claude, Cursor or another assistant, if it can connect to a remote MCP server over HTTP and send your token in the Authorization header."
       },
       {
         "q": "Can the assistant change or delete my data?",
