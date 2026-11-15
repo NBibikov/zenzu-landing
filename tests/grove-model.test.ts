@@ -1,0 +1,171 @@
+import assert from 'node:assert/strict'
+import { test } from 'node:test'
+
+import {
+  buildTree,
+  GROVE_TREES,
+  INK,
+  LEAF_PALETTES,
+  layoutFor,
+  layoutTrees,
+  rng,
+  seasonFor,
+  type Branch,
+} from '../src/lib/grove-model.ts'
+
+// Date parts are local: the season follows the visitor's local date.
+test('seasonFor maps months to seasons', () => {
+  assert.equal(seasonFor(new Date(2026, 2, 1)), 'spring')
+  assert.equal(seasonFor(new Date(2026, 7, 31)), 'summer')
+  assert.equal(seasonFor(new Date(2026, 10, 15)), 'autumn')
+  assert.equal(seasonFor(new Date(2026, 11, 1)), 'winter')
+  assert.equal(seasonFor(new Date(2027, 1, 28)), 'winter')
+})
+
+test('rng gives the same sequence for the same seed, in [0, 1)', () => {
+  const a = rng(7)
+  const b = rng(7)
+  const first = Array.from({ length: 10 }, () => a())
+  const second = Array.from({ length: 10 }, () => b())
+  assert.deepEqual(first, second)
+  for (const value of first) {
+    assert.ok(value >= 0 && value < 1, `${value} is outside [0, 1)`)
+  }
+})
+
+// Fixed values from the mockup's mulberry32. They catch any change to the port.
+test('rng matches the mockup sequence', () => {
+  const next = rng(7)
+  assert.deepEqual(
+    [next(), next(), next()],
+    [0.011704753153026104, 0.06195825757458806, 0.97690763277933],
+  )
+})
+
+test('buildTree is deterministic and maxDepth follows maturity', () => {
+  assert.deepEqual(buildTree(7, 0.85), buildTree(7, 0.85))
+  assert.equal(buildTree(7, 0.85).maxDepth, 4 + Math.round(0.85 * 3))
+  assert.ok(buildTree(7, 0.25).maxDepth < buildTree(7, 0.85).maxDepth)
+})
+
+function count(branch: Branch): { branches: number; leaves: number } {
+  return branch.kids.reduce(
+    (sum, kid) => {
+      const inner = count(kid)
+      return { branches: sum.branches + inner.branches, leaves: sum.leaves + inner.leaves }
+    },
+    { branches: 1, leaves: branch.leaves.length },
+  )
+}
+
+// Fixed totals from the mockup's buildTree(7, 0.85).
+test('buildTree matches the mockup tree for seed 7', () => {
+  const tree = buildTree(7, 0.85)
+  assert.deepEqual(count(tree.root), { branches: 460, leaves: 1746 })
+})
+
+test('buildTree gives each branch its depth and keeps leaf values in range', () => {
+  const walk = (branch: Branch, depth: number): void => {
+    assert.equal(branch.d, depth)
+    for (const leaf of branch.leaves) {
+      assert.ok(leaf.t >= 0.35 && leaf.t < 1)
+      assert.ok(Number.isInteger(leaf.c) && leaf.c >= 0 && leaf.c < 4)
+      assert.ok(leaf.fall >= 0 && leaf.fall < 1)
+      assert.ok(leaf.mix >= 0 && leaf.mix < 1)
+    }
+    for (const kid of branch.kids) walk(kid, depth + 1)
+  }
+  for (const { seed, maturity } of GROVE_TREES) {
+    const tree = buildTree(seed, maturity)
+    assert.equal(tree.root.d, 0)
+    walk(tree.root, 0)
+  }
+})
+
+test('GROVE_TREES lists the five trees', () => {
+  assert.deepEqual(
+    GROVE_TREES.map((tree) => [tree.seed, tree.maturity, tree.kind]),
+    [
+      [7, 0.85, 0],
+      [19, 0.55, 2],
+      [33, 0.7, 1],
+      [41, 0.4, 3],
+      [58, 0.25, 1],
+    ],
+  )
+})
+
+test('layoutFor switches to flank at 1280 px', () => {
+  assert.equal(layoutFor(1279), 'strip')
+  assert.equal(layoutFor(1280), 'flank')
+})
+
+test('layoutTrees(1440) puts 2 trees left and 3 right, clear of the text column', () => {
+  const slots = layoutTrees(1440)
+  assert.equal(slots.length, 5)
+  assert.equal(slots.filter((slot) => slot.x < 0.5).length, 2)
+  for (const slot of slots) {
+    assert.ok(
+      Math.abs(slot.x - 0.5) * 1440 >= 384 + 40,
+      `x=${slot.x} is too close to the text column`,
+    )
+  }
+})
+
+test('layoutTrees keeps trees clear of the text column at every flank width', () => {
+  for (const width of [1280, 1366, 1440, 1920, 2560]) {
+    const slots = layoutTrees(width)
+    assert.equal(slots.length, 5)
+    assert.equal(slots.filter((slot) => slot.x < 0.5).length, 2, `width ${width}`)
+    for (const slot of slots) {
+      assert.ok(slot.x > 0 && slot.x < 1, `width ${width}: x=${slot.x} is off the canvas`)
+      assert.ok(
+        Math.abs(slot.x - 0.5) * width >= 384 + 40,
+        `width ${width}: x=${slot.x} is too close to the text column`,
+      )
+    }
+  }
+})
+
+test('layoutTrees(390) lines the trees up in a strip', () => {
+  const slots = layoutTrees(390)
+  assert.equal(slots.length, 5)
+  slots.forEach((slot, index) => {
+    assert.ok(slot.x >= 0.08 && slot.x <= 0.92, `x=${slot.x} is outside [0.08, 0.92]`)
+    if (index > 0) assert.ok(slot.x > slots[index - 1].x, 'x must increase')
+  })
+})
+
+test('layoutTrees uses the strip below 1280 px and sets scale and row', () => {
+  assert.deepEqual(layoutTrees(1279), layoutTrees(390))
+  for (const width of [390, 1279, 1280, 1440]) {
+    for (const slot of layoutTrees(width)) {
+      assert.ok(slot.scale > 0 && slot.scale <= 1, `scale ${slot.scale}`)
+      assert.ok(slot.row === 0 || slot.row === 1, `row ${slot.row}`)
+    }
+  }
+})
+
+test('LEAF_PALETTES has four palettes of four colours, except bare winter', () => {
+  assert.equal(LEAF_PALETTES.winter, null)
+  for (const season of ['spring', 'summer', 'autumn'] as const) {
+    const palettes = LEAF_PALETTES[season]
+    assert.ok(palettes)
+    assert.equal(palettes.length, 4)
+    for (const palette of palettes) {
+      assert.equal(palette.length, 4)
+      for (const hex of palette) assert.match(hex, /^#[0-9A-F]{6}$/)
+    }
+  }
+})
+
+test('INK holds the light theme colours', () => {
+  assert.deepEqual(INK, {
+    ink: '#1C1B18',
+    rule: '#CEC7B9',
+    ink4: '#948D82',
+    grey: '#B7B1A6',
+    paper: '#FDFCFA',
+    snow: '#A9A398',
+  })
+})
